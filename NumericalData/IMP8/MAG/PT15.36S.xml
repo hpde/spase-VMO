@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--$Id$-->
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
   <Version>1.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2007-08-14T04:17:00Z</ReleaseDate>
+      <ReleaseDate>2007-08-15T19:40:43Z</ReleaseDate>
       <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second.</Description>
       <Acknowledgement>User will acknowledge the IMP-8 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -26,7 +25,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>15-second Magnetic Field Data from IMP-8</Name>
-	<URL>ftp://cdaweb.gsfc.nasa.gov/pub/istop/imp8/mag_15sec</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istop/imp8/mag_15sec</URL>
         <Description>A web-accessible directory hosting 15s magnetic field data from IMP-8.</Description>
       </AccessURL>
       <Format>CDF</Format>
@@ -70,6 +69,7 @@
       <Structure>
         <StructureType>Scalar</StructureType>
       </Structure>
+      <Support>Other</Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Spacecraft Position GSE</Name>
@@ -79,22 +79,23 @@
       <Units>Earth Radii</Units>
       <Structure>
         <StructureType>Vector</StructureType>
-	<Element>
+        <Element>
           <Name>GSE X Component</Name>
-	  <Component>X</Component>
-	  <Index>0</Index>
-	</Element>
-	<Element>
-	  <Name>GSE Y Component</Name>
-	  <Component>Y</Component>
-	  <Index>1</Index>
+          <Component>X</Component>
+          <Index>0</Index>
         </Element>
-	<Element>
+        <Element>
+          <Name>GSE Y Component</Name>
+          <Component>Y</Component>
+          <Index>1</Index>
+        </Element>
+        <Element>
           <Name>GSE Z Component</Name>
-	  <Component>Z</Component>
-	  <Index>2</Index>
-	</Element>
+          <Component>Z</Component>
+          <Index>2</Index>
+        </Element>
       </Structure>
+      <Support>Positional</Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Spacecraft Position GSM</Name>
@@ -104,22 +105,23 @@
       <Units>Earth Radii</Units>
       <Structure>
         <StructureType>Vector</StructureType>
-	<Element>
+        <Element>
           <Name>GSM X Component</Name>
-	  <Component>X</Component>
-	  <Index>0</Index>
-	</Element>
-	<Element>
+          <Component>X</Component>
+          <Index>0</Index>
+        </Element>
+        <Element>
           <Name>GSM Y Component</Name>
-	  <Component>Y</Component>
-	  <Index>1</Index>
-	</Element>
-	<Element>
+          <Component>Y</Component>
+          <Index>1</Index>
+        </Element>
+        <Element>
           <Name>GSM Z Component</Name>
-	  <Component>Z</Component>
-	  <Index>2</Index>
-	</Element>
+          <Component>Z</Component>
+          <Index>2</Index>
+        </Element>
       </Structure>
+      <Support>Positional</Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Magnetic Field Magnitude</Name>
@@ -130,56 +132,85 @@
       <Structure>
         <StructureType>Scalar</StructureType>
       </Structure>
+      <Measured>
+        <Field>
+          <FieldQualifier>Average</FieldQualifier>
+          <FieldQualifier>Magnitude</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Magnetic Field Vector GSE</Name>
       <ParameterKey>B_Vector_GSE</ParameterKey>
-      <Description>Matrix containing magnetic field vector in GSE coordinates</Description>
+      <Description>Magnetic field vector in GSE coordinates</Description>
       <Cadence>PT15.36S</Cadence>
       <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
       <Structure>
         <StructureType>Vector</StructureType>
         <Element>
           <Name>GSE X Component</Name>
-	  <Component>X</Component>
-	  <Index>0</Index>
-	</Element>
-	<Element>
-	  <Name>GSE Y Component</Name>
-	  <Component>Y</Component>
-	  <Index>1</Index>
+          <Component>X</Component>
+          <Index>0</Index>
         </Element>
-	<Element>
+        <Element>
+          <Name>GSE Y Component</Name>
+          <Component>Y</Component>
+          <Index>1</Index>
+        </Element>
+        <Element>
           <Name>GSE Z Component</Name>
-	  <Component>Z</Component>
-	  <Index>2</Index>
-	</Element>
+          <Component>Z</Component>
+          <Index>2</Index>
+        </Element>
       </Structure>
+      <Measured>
+        <Field>
+          <FieldQualifier>Vector</FieldQualifier>
+          <FieldQualifier>Average</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Magnetic Field Vector GSM</Name>
       <ParameterKey>B_Vector_GSM</ParameterKey>
-      <Description>Matrix containing magnetic field vector in GSM coordinates</Description>
+      <Description>Magnetic field vector in GSM coordinates</Description>
       <Cadence>PT15.36S</Cadence>
       <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSM</CoordinateSystemName>
+      </CoordinateSystem>
       <Structure>
         <StructureType>Vector</StructureType>
         <Element>
           <Name>GSM X Component</Name>
-	  <Component>X</Component>
-	  <Index>0</Index>
-	</Element>
-	<Element>
+          <Component>X</Component>
+          <Index>0</Index>
+        </Element>
+        <Element>
           <Name>GSM Y Component</Name>
-	  <Component>Y</Component>
-	  <Index>1</Index>
-	</Element>
-	<Element>
+          <Component>Y</Component>
+          <Index>1</Index>
+        </Element>
+        <Element>
           <Name>GSM Z Component</Name>
-	  <Component>Z</Component>
-	  <Index>2</Index>
-	</Element>
+          <Component>Z</Component>
+          <Index>2</Index>
+        </Element>
       </Structure>
+      <Measured>
+        <Field>
+          <FieldQualifier>Vector</FieldQualifier>
+          <FieldQualifier>Average</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Magnetic Field Diagonal Variances</Name>
@@ -187,22 +218,32 @@
       <Description>Matrix containing magnetic field variances; diagonal elements Bxx, Byy, Bzz; GSE coordinates</Description>
       <Cadence>PT15.36S</Cadence>
       <Units>nT^2</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
       <Structure>
         <StructureType>Vector</StructureType>
         <Element>
           <Name>GSE Bxx</Name>
-	  <Index>0</Index>
-	</Element>
-	<Element>
+          <Index>0</Index>
+        </Element>
+        <Element>
           <Name>GSE Byy</Name>
-	  <Index>1</Index>
-	</Element>
-	<Element>
+          <Index>1</Index>
+        </Element>
+        <Element>
           <Name>GSE Bzz</Name>
-	  <Component>Z</Component>
-	  <Index>2</Index>
-	</Element>
+          <Component>Z</Component>
+          <Index>2</Index>
+        </Element>
       </Structure>
+      <Measured>
+        <Field>
+          <FieldQualifier>Variance</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Magnetic Field Off-Diagonal Variances</Name>
@@ -210,22 +251,32 @@
       <Description>Matrix containing magnetic field variances; off-diagonal elements Byx, Bzx, Bzy; GSE coordinates</Description>
       <Cadence>PT15.36S</Cadence>
       <Units>nT^2</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
       <Structure>
         <StructureType>Vector</StructureType>
         <Element>
           <Name>GSE Byx</Name>
-	  <Index>0</Index>
-	</Element>
-	<Element>
+          <Index>0</Index>
+        </Element>
+        <Element>
           <Name>GSE Bzx</Name>
-	  <Index>1</Index>
-	</Element>
-	<Element>
+          <Index>1</Index>
+        </Element>
+        <Element>
           <Name>GSE Bzy</Name>
-	  <Component>Z</Component>
-	  <Index>2</Index>
-	</Element>
+          <Component>Z</Component>
+          <Index>2</Index>
+        </Element>
       </Structure>
-     </PhysicalParameter>
+      <Measured>
+        <Field>
+          <FieldQualifier>Variance</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
+    </PhysicalParameter>
   </NumericalData>
 </Spase>
