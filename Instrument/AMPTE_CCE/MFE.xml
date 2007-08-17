@@ -25,7 +25,7 @@
       </InformationURL>
       <InformationURL>
         <Name>NSSDC's Master Catalog</Name>
-        <URL>http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=2006-008A&amp;ex=5</URL>
+        <URL>http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1984-088A&amp;ex=5</URL>
         <Description>NSSDC information about the AMPTE/CCE Magnetometer</Description>
       </InformationURL>
     </ResourceHeader>
