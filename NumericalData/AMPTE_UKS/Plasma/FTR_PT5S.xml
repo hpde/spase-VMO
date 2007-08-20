@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
+  <Version>1.2.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/AMPTE_UKS/Plasma/FTR_PT5S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>AMPTE/UKS Ion Plasma Data</ResourceName>
+      <ReleaseDate>2007-08-20T21:21:57Z</ReleaseDate>
+      <Description>AMPTE/UKS 5-second (spin) averaged ion plasma moments</Description>
+      <Acknowledgement>UKS/IRM Prime Parameters, UKS/IRM High Resolution Data, or products derived from them may NOT be published or shown in any form without the consent of the Principal Investigators concerned. Acknowledgements to the PI and the UK CDHF would
+be appropriate in any published work; full-authorship may be required
+in some cases.
+
+Scientists intending to embark on studies involving AMPTE UKS/IRM data
+products are advised to contact the relevant Principal Investigator(s)
+early in order to ensure that the data is suitable for the study, that
+the project does not infringe on other ongoing work, and that the
+Principal Investigator in general consents to the intended use of the
+data. PIs can provide this support only on a best efforts basis, so please
+be as precise and succinct as possible, and please be patient when awaiting 
+a PI response.</Acknowledgement>
+      <Contact>
+        <!-- Alan D. Johnstone -->
+        <PersonID>spase://nssdc/person/Alan.Johnstone</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <InformationURL>
+        <Name>AMPTE/UKS documents</Name>
+        <URL>http://www.space-plasma.qmul.ac.uk/CDHF/</URL>
+        <Description>A collection of documents describing AMPTE/UKS instruments and data. Possibly outdated.</Description>
+      </InformationURL>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://VMO/Repository/VHO-VMO</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>AMPTE/UKS Data</Name>
+        <URL>http://vmo.nasa.gov/mission/ampte_uks/ftr</URL>
+        <Description>A web-accessible directory hosting AMPTE/UKS spin-averaged ion plasma data.</Description>
+      </AccessURL>
+      <Format>Text</Format>
+      <Encoding>ASCII</Encoding>
+    </AccessInformation>
+    <InstrumentID>spase://VMO/Instrument/AMPTE_UKS/Plasma</InstrumentID>
+     <MeasurementType>ThermalPlasma</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>1984-08-27T14:10:53Z</StartDate>
+        <EndDate>1985-01-15T07:50:33Z</EndDate>
+      </TimeSpan>
+      <Cadence>PT5S</Cadence>
+    </TemporalDescription>
+    <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
+    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    <Caveats>The time tags represent the start times of accumulation intervals (spin). UKS times are UT stamped on board while IRM time stamps are UT at time of ground receipt. Thus for time-critical science, the IRM times need to be corrected by subtracting the light travel time from the spacecraft to the ground-station (at Weilheim in Germany apart special events requiring NASA DSN). For the transmission frequencies used, the vacuum light speed is appropriate. At apogee, this correction is more than a third of a second. There are no other known time delays.
+</Caveats>
+    <PhysicalParameter>
+      <Name>Epoch</Name>
+      <ParameterKey>Column 1</ParameterKey>
+      <Description>The start of the accumulation time interval for the data point, in DA/MO/YR HR:MI:SS.MS format.</Description>
+      <Structure>
+        <StructureType>Scalar</StructureType>
+      </Structure>
+      <Support>Temporal</Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>Ni</Name>
+      <ParameterKey>Column 2</ParameterKey>
+      <Description>Ion density</Description>
+      <Units>cm^-3</Units>
+      <UnitsConversion>1e6&gt;m^-3</UnitsConversion>
+      <Structure>
+        <StructureType>Scalar</StructureType>
+      </Structure>
+      <FillValue>-1e31</FillValue>
+      <Measured>
+        <Particle>
+          <ParticleType>Proton</ParticleType>
+          <ParticleType>Ion</ParticleType>
+          <ParticleQualifier>Moment</ParticleQualifier>
+          <ParticleQualifier>Scalar</ParticleQualifier>
+          <ParticleQuantity>NumberDensity</ParticleQuantity>
+        </Particle>
+      </Measured>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>Ti</Name>
+      <ParameterKey>Column 3</ParameterKey>
+      <Description>Ion temperature</Description>
+      <Units>eV</Units>
+      <UnitsConversion>1.16045e4&gt;K</UnitsConversion>
+      <Structure>
+        <StructureType>Scalar</StructureType>
+      </Structure>
+      <FillValue>-1e31</FillValue>
+      <Measured>
+        <Particle>
+          <ParticleType>Proton</ParticleType>
+          <ParticleType>Ion</ParticleType>
+          <ParticleQualifier>Moment</ParticleQualifier>
+          <ParticleQualifier>Scalar</ParticleQualifier>
+          <ParticleQuantity>Temperature</ParticleQuantity>
+        </Particle>
+      </Measured>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>Vi</Name>
+      <Description>Bulk ion velocity</Description>
+      <Units>km/s</Units>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <StructureType>Vector</StructureType>
+        <Size>3</Size>
+        <Element>
+          <Name>Vx</Name>
+          <Component>X</Component>
+          <Index>1</Index>
+          <ParameterKey>Column 4</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Vy</Name>
+          <Component>Y</Component>
+          <Index>2</Index>
+          <ParameterKey>Column 5</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Vz</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <ParameterKey>Column 6</ParameterKey>
+        </Element>
+      </Structure>
+      <FillValue>-1e31</FillValue>
+      <Measured>
+        <Particle>
+          <ParticleType>Proton</ParticleType>
+          <ParticleType>Ion</ParticleType>
+          <ParticleQualifier>Moment</ParticleQualifier>
+          <ParticleQualifier>Vector</ParticleQualifier>
+          <ParticleQuantity>Velocity</ParticleQuantity>
+        </Particle>
+      </Measured>
+    </PhysicalParameter>
+  </NumericalData>
+</Spase>
