@@ -40,7 +40,7 @@
       <TimeSpan>
         <StartDate>1973-10-30T15:00:32Z</StartDate>
         <EndDate>2000-06-10T18:29:50Z</EndDate>
-        <Note>Instrument stopped working on 2006-06-10.</Note>
+        <Note>Instrument stopped working on 2000-06-10.</Note>
       </TimeSpan>
       <Cadence>PT15.36S</Cadence>
     </TemporalDescription>
