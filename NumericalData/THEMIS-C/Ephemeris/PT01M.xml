@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-C/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-C probe state</ResourceName>
-      <ReleaseDate>2007-11-28T19:49:39Z</ReleaseDate>
+      <ReleaseDate>2007-11-28T22:23:35Z</ReleaseDate>
       <Description>The probe state files contain position, attitude, and sun pulse data. Produced by Mission Ops, Science Ops and Science Team.
      V00: Predictive on all, pre-pass.
      V01: Intermediate: added definitive spinper, spinphase others predictive, expected shortly after pass.
@@ -29,7 +29,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/tha/or/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/or/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <Format>CDF</Format>
@@ -52,7 +52,7 @@
     <Caveats>Typical cadence is 1 min, occasinally 3s.</Caveats>
     <PhysicalParameter>
       <Name>THEMIS-C Position</Name>
-      <ParameterKey>tha_pos</ParameterKey>
+      <ParameterKey>thc_pos</ParameterKey>
       <Description>THEMIS-C position vector in GEI coordinates</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
@@ -95,7 +95,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C velocity</Name>
-      <ParameterKey>tha_vel</ParameterKey>
+      <ParameterKey>thc_vel</ParameterKey>
       <Description>THEMIS-C velocity vector in GEI coordinates</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
@@ -138,7 +138,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C maneuver code</Name>
-      <ParameterKey>tha_man</ParameterKey>
+      <ParameterKey>thc_man</ParameterKey>
       <Description>THEMIS-C maneuver status code</Description>
       <ValidMin>0</ValidMin>
       <ValidMax>4294967295</ValidMax>
@@ -149,7 +149,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C roi</Name>
-      <ParameterKey>tha_roi</ParameterKey>
+      <ParameterKey>thc_roi</ParameterKey>
       <Description>Region of interest</Description>
       <ValidMin>0 </ValidMin>
       <ValidMax>4294967295 </ValidMax>
@@ -160,7 +160,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C spinras </Name>
-      <ParameterKey>tha_spinras</ParameterKey>
+      <ParameterKey>thc_spinras</ParameterKey>
       <Description>THEMIS-C spin right ascension, GEI coordinates </Description>
       <Units>deg</Units>
       <CoordinateSystem>
@@ -184,7 +184,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C spindec </Name>
-      <ParameterKey>tha_spindec</ParameterKey>
+      <ParameterKey>thc_spindec</ParameterKey>
       <Description>THEMIS-C spin declination, GEI coordinates </Description>
       <Units>deg</Units>
       <CoordinateSystem>
@@ -208,7 +208,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C spinalpha</Name>
-      <ParameterKey>tha_spinalpha</ParameterKey>
+      <ParameterKey>thc_spinalpha</ParameterKey>
       <Description>THEMIS-C spin axis azimuth, alpha, in Probe Geometric coordinates </Description>
       <Units>deg</Units>
       <CoordinateSystem>
@@ -232,7 +232,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C spinbeta</Name>
-      <ParameterKey>tha_spinbeta</ParameterKey>
+      <ParameterKey>thc_spinbeta</ParameterKey>
       <Description>THEMIS-C spin colatitude, beta, in Probe Geometric coordinates </Description>
       <Units>deg</Units>
       <CoordinateSystem>
@@ -256,7 +256,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C spinper</Name>
-      <ParameterKey>tha_spinper</ParameterKey>
+      <ParameterKey>thc_spinper</ParameterKey>
       <Description>THEMIS-C spinperiod, regularized and boxcar averaged</Description>
       <Units>sec</Units>
       <ValidMin>0.0</ValidMin>
@@ -268,7 +268,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>THEMIS-C spinphase</Name>
-      <ParameterKey>tha_spinphase</ParameterKey>
+      <ParameterKey>thc_spinphase</ParameterKey>
       <Description>THEMIS-C spinphase, regularized and boxcar averaged angle the probe rotated since the sun sensor registered the sun pulse</Description>
       <Units>deg</Units>
       <ValidMin>0.0</ValidMin>
@@ -280,7 +280,7 @@
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Time</Name>
-      <ParameterKey>tha_state_time</ParameterKey>
+      <ParameterKey>thc_state_time</ParameterKey>
       <Description>Time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
       <Caveats>Unleaped seconds</Caveats>
       <Units>sec</Units>
