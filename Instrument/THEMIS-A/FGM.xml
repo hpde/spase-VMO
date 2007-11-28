@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Spase xmlns="http://www.spase-group.org/data/schema">
+<Version>1.2.0 </Version>
+<Instrument>
+   <ResourceID>spase://VMO/Instrument/THEMIS/THEMIS-A/FGM</ResourceID>
+   <ResourceHeader>
+      <ResourceName>THEMIS-A Fluxgate Magnetometer</ResourceName>
+      <AlternateName>2007-004A-01</AlternateName>
+      <ReleaseDate>2007-07-24T11:13:00</ReleaseDate>
+      <Description>THEMIS-A Fluxgate Magnetometer</Description>
+      <Acknowledgement>Vassilis Angelopoulos, Rumi Nakamura, Wolfgang Baumjohann, Karl-Heinz Glassmeier, National Aeronautics and Space Administration/United States</Acknowledgement>
+      <Contact>
+         <PersonID>spase://VMO/Person/Rumi.Nakamura</PersonID>
+         <Role>CoInvestigator</Role>
+      </Contact>
+      <Contact>
+         <PersonID>spase://VMO/Person/Wolfgang.Baumjohann</PersonID>
+         <Role>CoInvestigator</Role>
+      </Contact>
+   		<Contact>
+         <PersonID>spase://VMO/Person/Karl-Heinz.Glassmeier</PersonID>
+         <Role>CoInvestigator</Role>
+      </Contact>
+      <Contact>
+         <PersonID>spase://VMO/Person/James.M.Weygand</PersonID>
+         <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+         <Name>THEMIS-A Magnetometer</Name>
+         <URL>http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=2007-004A&amp;ex=1</URL>
+         <Description>The FGM is a triaxial fluxgate magnetometer measures the background maggnetic field and any low frequency (to 64 Hz) fluctuations superimposed upon it. It can detect variations with an accuracy of 0.01 nT.  </Description>
+      </InformationURL>
+      <AssociationID>spase://VMO/Instrument/THEMIS/THEMIS-A</AssociationID>
+   </ResourceHeader>
+   <InstrumentType>Magnetometer</InstrumentType>
+   <InvestigationName>Tri-axial Fluxgate Magnetometer</InvestigationName>
+   <ObservatoryID>spase://VMO/Observatory/THEMIS/THEMIS-A</ObservatoryID>
+   <Caveats></Caveats>
+</Instrument>
+</Spase>
