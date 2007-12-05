@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Polar Magnetic Field KP</ResourceName>
       <AlternateName>Polar Magnetic Field High Resolution Data</AlternateName>
-      <ReleaseDate>2007-12-05T00:26:10Z</ReleaseDate>
+      <ReleaseDate>2007-12-05T01:13:44Z</ReleaseDate>
       <Description>Polar Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
       <Contact>
         <!-- C. T. Russell -->
@@ -30,7 +30,7 @@
       <Format>CDF</Format>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
-    <InstrumentID>spase://VMO/Instrument/MFE</InstrumentID>
+    <InstrumentID>spase://VMO/Instrument/Polar/MFE</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
