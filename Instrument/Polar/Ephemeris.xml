@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
+  <Instrument>
+    <ResourceID>spase://VMO/Instrument/Polar/Ephemeris</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Polar Orbit</ResourceName>
+      <ReleaseDate>2007-12-05T00:31:46Z</ReleaseDate>
+      <Description>Polar orbit data</Description>
+      <Contact>
+        <!-- Jan Merka -->
+        <PersonID>spase://nssdc/person/65336</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+    </ResourceHeader>
+    <InstrumentType>Ephemeris</InstrumentType>
+    <InvestigationName>Polar Spacecraft position</InvestigationName>
+    <ObservatoryID>spase://nssdc/observatory/1996-013A</ObservatoryID>
+  </Instrument>
+</Spase>
