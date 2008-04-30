@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-B/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B probe state</ResourceName>
-      <ReleaseDate>2007-11-28T22:23:29Z</ReleaseDate>
+      <ReleaseDate>2008-04-30T21:16:09Z</ReleaseDate>
       <Description>The probe state files contain position, attitude, and sun pulse data. Produced by Mission Ops, Science Ops and Science Team.
      V00: Predictive on all, pre-pass.
      V01: Intermediate: added definitive spinper, spinphase others predictive, expected shortly after pass.
@@ -59,7 +59,6 @@
         <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X GEI</Name>
@@ -102,7 +101,6 @@
         <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X GEI</Name>
@@ -168,7 +166,6 @@
         <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>THEMIS-B spinras</Name>
           <Component>Phi</Component>
@@ -192,7 +189,6 @@
         <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>THEMIS-B spindec</Name>
           <Component>Theta</Component>
@@ -216,7 +212,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>THEMIS-B spinalpha</Name>
           <Component>Phi</Component>
@@ -240,7 +235,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>THEMIS-B spinbeta</Name>
           <Component>Theta</Component>

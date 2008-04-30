@@ -5,8 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-B/FGM/PT0.0078125S</ResourceID>
     <ResourceHeader>
       <ResourceName>Fluxgate Magnetometer Measurements 1/128s</ResourceName>
-      <ReleaseDate>2007-11-28T22:28:59Z</ReleaseDate>
-      <Description>Spacecraft-collected fluxgate magnetometer measurements, Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 1/4-1/128s. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes) </Description>
+      <ReleaseDate>2008-04-30T21:40:26Z</ReleaseDate>
+      <Description>Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes) </Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission, K. H. Glassmeier, U. Auster and W. Baumjohann for the use of FGM data provided under the lead of the Technical University of Braunschweig and with financial support through the German Ministry for Economy and Technology and the German Center for Aviation and Space (DLR) under contract 50 OC 0302</Acknowledgement>
       <Contact>
         <!-- Rumi Nakamura -->
@@ -68,7 +68,6 @@
         <CoordinateSystemName>SR</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGE</Name>
@@ -114,7 +113,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGE</Name>
@@ -160,7 +158,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGE</Name>
@@ -206,7 +203,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGE</Name>
@@ -258,7 +254,7 @@
       <Name>B FGL SSL</Name>
       <ParameterKey>thb_fgl_ssl</ParameterKey>
       <Description>FGL (low-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL) </Description>
-      <Cadence>PT0.0078125S</Cadence>
+      <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -266,7 +262,6 @@
         <CoordinateSystemName>SR</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGL</Name>
@@ -304,7 +299,7 @@
       <Name>B FGL DSL</Name>
       <ParameterKey>thb_fgl_dsl</ParameterKey>
       <Description>FGL (low-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
-      <Cadence>PT0.0078125S</Cadence>
+      <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -312,7 +307,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGL</Name>
@@ -350,7 +344,7 @@
       <Name>B FGL GSE</Name>
       <ParameterKey>thb_fgl_gse</ParameterKey>
       <Description>FGL (low-resolution) magnetic field B in XYZ GSE Coordinates </Description>
-      <Cadence>PT0.0078125S</Cadence>
+      <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -358,7 +352,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGL</Name>
@@ -396,7 +389,7 @@
       <Name>B FGL GSM</Name>
       <ParameterKey>thb_fgl_gsm</ParameterKey>
       <Description>FGL (low-resolution) magnetic field B in XYZ GSM Coordinates </Description>
-      <Cadence>PT0.0078125S</Cadence>
+      <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -404,7 +397,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGL</Name>
@@ -442,7 +434,7 @@
       <Name>FGL Time</Name>
       <ParameterKey>thb_fgl_time</ParameterKey>
       <Description>FGL time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
-      <Cadence>PT0.0078125S</Cadence>
+      <Cadence>PT0.25S</Cadence>
       <Units>s</Units>
       <ValidMin>0.0 </ValidMin>
       <ValidMax>5.0E9 </ValidMax>
@@ -463,7 +455,6 @@
         <CoordinateSystemName>SR</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGH</Name>
@@ -509,7 +500,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGH</Name>
@@ -555,7 +545,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGH</Name>
@@ -601,7 +590,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGH</Name>
@@ -639,6 +627,7 @@
       <Name>FGH Time</Name>
       <ParameterKey>thb_fgh_time</ParameterKey>
       <Description>FGH time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Cadence>PT0.0078125S</Cadence>
       <Units>s</Units>
       <ValidMin>0.0 </ValidMin>
       <ValidMax>5.0E9 </ValidMax>
@@ -650,7 +639,8 @@
     <PhysicalParameter>
       <Name>B FGS DSL</Name>
       <ParameterKey>thb_fgs_dsl</ParameterKey>
-      <Description>FGS (spin-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
+      <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -658,7 +648,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGS</Name>
@@ -695,7 +684,8 @@
     <PhysicalParameter>
       <Name>B FGS GSE</Name>
       <ParameterKey>thb_fgs_gse</ParameterKey>
-      <Description>FGS (spin-resolution) magnetic field B in XYZ GSE Coordinates </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ GSE Coordinates </Description>
+      <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -703,7 +693,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGS</Name>
@@ -740,7 +729,8 @@
     <PhysicalParameter>
       <Name>B FGS GSM</Name>
       <ParameterKey>thb_fgs_gsm</ParameterKey>
-      <Description>FGS (spin-resolution) magnetic field B in XYZ GSM Coordinates </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ GSM Coordinates </Description>
+      <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -748,7 +738,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx FGS</Name>
@@ -786,6 +775,7 @@
       <Name>FGS Time</Name>
       <ParameterKey>thb_fgs_time</ParameterKey>
       <Description>FGS time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Cadence>PT3S</Cadence>
       <Units>s</Units>
       <ValidMin>0.0 </ValidMin>
       <ValidMax>5.0E9 </ValidMax>
