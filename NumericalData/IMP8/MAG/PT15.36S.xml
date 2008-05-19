@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
-  <Version>1.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2007-08-15T19:40:43Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:34:09Z</ReleaseDate>
       <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second.</Description>
       <Acknowledgement>User will acknowledge the IMP-8 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -57,12 +57,13 @@
       <Cadence>PT15.36S</Cadence>
       <Units>Milliseconds</Units>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
       <ValidMin>01-Jan-1973 00:00:00.000</ValidMin>
       <ValidMax>31-Dec-2000 00:00:00.000</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Number of Sequences</Name>
@@ -70,12 +71,13 @@
       <Description>The number of vectors used in the data average is 4 times this value.</Description>
       <Cadence>PT15.36S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
       <ValidMin>0</ValidMin>
       <ValidMax>999</ValidMax>
       <FillValue>-2147483648</FillValue>
-      <Support>Other</Support>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Spacecraft Position GSE</Name>
@@ -90,7 +92,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Element>
           <Name>Xgse</Name>
           <Component>X</Component>
@@ -110,7 +111,9 @@
       <ValidMin>-50.0</ValidMin>
       <ValidMax>50.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Spacecraft Position GSM</Name>
@@ -124,7 +127,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Element>
           <Name>Xgsm</Name>
           <Component>X</Component>
@@ -144,7 +146,9 @@
       <ValidMin>-50.0</ValidMin>
       <ValidMax>50.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>B magnitude</Name>
@@ -154,7 +158,6 @@
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
       <ValidMin>0.0</ValidMin>
       <ValidMax>100.0</ValidMax>
@@ -179,7 +182,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Element>
           <Name>Bx GSE</Name>
           <Component>X</Component>
@@ -219,7 +221,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Element>
           <Name>Bx GSM</Name>
           <Component>X</Component>
@@ -259,7 +260,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Element>
           <Name>Bxx GSE</Name>
           <Index>1</Index>
@@ -295,7 +295,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Element>
           <Name>Byx GSE</Name>
           <Index>1</Index>

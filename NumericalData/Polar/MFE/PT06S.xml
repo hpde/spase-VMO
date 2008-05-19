@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Polar Magnetic Field KP</ResourceName>
       <AlternateName>Polar Magnetic Field High Resolution Data</AlternateName>
-      <ReleaseDate>2007-12-05T01:13:44Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:27:49Z</ReleaseDate>
       <Description>Polar Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
       <Contact>
         <!-- C. T. Russell -->
@@ -73,7 +73,6 @@
       <ParameterKey>Time_PB5</ParameterKey>
       <Description>0.92 min PB5 Time </Description>
       <Structure>
-        <StructureType>Array</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Year</Name>
@@ -114,7 +113,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X (GSE)</Name>
@@ -155,7 +153,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X (GSM)</Name>
@@ -196,7 +193,6 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X-pos (SM)</Name>
@@ -237,7 +233,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>Radial Distance</Name>
@@ -315,7 +310,6 @@
         <CoordinateSystemName>SC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX (S/C)</Name>
@@ -411,7 +405,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX (GSE)</Name>
@@ -457,7 +450,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX (GSM)</Name>
@@ -503,7 +495,6 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX (SM)</Name>
@@ -565,7 +556,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BXGSE IGRF</Name>
@@ -610,7 +600,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BXGSM IGRF</Name>
@@ -655,7 +644,6 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX SM IGRF</Name>
@@ -716,7 +704,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX GSE TSY</Name>
@@ -761,7 +748,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX GSM TSY</Name>
@@ -806,7 +792,6 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>BX SM TSY</Name>
@@ -850,7 +835,6 @@
         <CoordinateSystemName>GEO</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>2</Size>
         <Element>
           <Name>N Lat</Name>
@@ -883,7 +867,6 @@
         <CoordinateSystemName>GEO</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>2</Size>
         <Element>
           <Name>S Lat</Name>

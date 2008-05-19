@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
-  <Version>1.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ST5-155/MAG/v1_PT01S</ResourceID>
     <ResourceHeader>
       <ResourceName>ST5-155 MAG Data</ResourceName>
-      <ReleaseDate>2007-08-28T20:33:06Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:35:37Z</ReleaseDate>
       <Description>Magnetic field and position data from the ST5-155 satellite. Calibrated science quality data.</Description>
       <Acknowledgement>User will acknowledge the ST5 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -46,9 +46,10 @@
       <Description>Year of the observation</Description>
       <Cadence>PT01S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Month</Name>
@@ -56,9 +57,10 @@
       <Description>Month of year of the observation</Description>
       <Cadence>PT01S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Day</Name>
@@ -66,9 +68,10 @@
       <Description>Day of month of the observation</Description>
       <Cadence>PT01S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Hour</Name>
@@ -76,9 +79,10 @@
       <Description>Hour of the observation</Description>
       <Cadence>PT01S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Minute</Name>
@@ -86,9 +90,10 @@
       <Description>Minute of the observation</Description>
       <Cadence>PT01S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Second</Name>
@@ -96,9 +101,10 @@
       <Description>Second of the observation</Description>
       <Cadence>PT01S</Cadence>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Bx</Name>
@@ -223,14 +229,15 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>X</Name>
           <Component>X</Component>
           <Index>1</Index>
         </Element>
       </Structure>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Y</Name>
@@ -244,14 +251,15 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>Y</Name>
           <Component>Y</Component>
           <Index>2</Index>
         </Element>
       </Structure>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Z</Name>
@@ -265,14 +273,15 @@
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Element>
           <Name>Z</Name>
           <Component>Z</Component>
           <Index>1</Index>
         </Element>
       </Structure>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
   </NumericalData>
 </Spase>

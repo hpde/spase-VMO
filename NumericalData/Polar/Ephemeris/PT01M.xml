@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Polar/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar Predicted Orbit</ResourceName>
-      <ReleaseDate>2007-12-05T01:07:40Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:27:49Z</ReleaseDate>
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -51,7 +51,6 @@
       <Name>Orbit PB5 Time </Name>
       <ParameterKey>Time_PB5</ParameterKey>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Year</Name>
@@ -95,7 +94,6 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X GCI</Name>
@@ -135,7 +133,6 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
@@ -176,7 +173,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X GSE</Name>
@@ -217,7 +213,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
@@ -258,7 +253,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X GSM</Name>
@@ -299,7 +293,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
@@ -339,7 +332,6 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Xsun</Name>
@@ -379,7 +371,6 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>X HEC</Name>
@@ -419,7 +410,6 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
@@ -470,7 +460,6 @@
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>Heliographic Long of the Earth</Name>
@@ -494,7 +483,6 @@
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>Heliographic Lat of the Earth</Name>
@@ -529,7 +517,6 @@
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>Heliographic Lon of the s/c</Name>
@@ -553,7 +540,6 @@
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>Heliographic Lat of the s/c</Name>
@@ -579,7 +565,6 @@
         <CoordinateSystemName>MAG</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>EDMLT</Name>
@@ -604,7 +589,6 @@
         <CoordinateSystemName>MAG</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
         <Size>1</Size>
         <Element>
           <Name>Magnetic Latitude</Name>

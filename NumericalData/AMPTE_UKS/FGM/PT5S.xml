@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
-  <Version>1.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/AMPTE_UKS/FGM/PT5S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/UKS Magnetic Field Data</ResourceName>
-      <ReleaseDate>2007-08-20T21:40:54Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:32:34Z</ReleaseDate>
       <Description>AMPTE/UKS 5-second (spin) averaged magnetic field measurements</Description>
       <Acknowledgement>UKS/IRM Prime Parameters, UKS/IRM High Resolution Data, or products derived from them may NOT be published or shown in any form without the consent of the Principal Investigators concerned. Acknowledgements to the PI and the UK CDHF would
 be appropriate in any published work; full-authorship may be required
@@ -67,9 +67,10 @@ a PI response.</Acknowledgement>
       <ParameterKey>Column 1</ParameterKey>
       <Description>The start of the accumulation time interval for the data point, in DA/MO/YR HR:MI:SS.MS format.</Description>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Bm</Name>
@@ -78,7 +79,6 @@ a PI response.</Acknowledgement>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
       <FillValue>-1e31</FillValue>
       <Measured>
@@ -99,7 +99,6 @@ a PI response.</Acknowledgement>
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx</Name>

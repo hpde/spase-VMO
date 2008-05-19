@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
-  <Version>1.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/AMPTE_CCE/MFE/PT5.83S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/CCE Spin-averaged Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2007-08-17T22:38:16Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:31:26Z</ReleaseDate>
       <Description>AMPTE/CCE spin-averaged DC magnetic field at ~5.83 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/CCE magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -51,10 +51,9 @@
       <ParameterKey>Column 1</ParameterKey>
       <Description>Time tag: Two-digit year</Description>
       <Units>year</Units>
-      <Structure>
-        <StructureType>Scalar</StructureType>
-      </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Day of year</Name>
@@ -63,9 +62,10 @@
       <Units>day</Units>
       <UnitsConversion>86400&gt;s</UnitsConversion>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Hour</Name>
@@ -74,9 +74,10 @@
       <Units>hr</Units>
       <UnitsConversion>3600&gt;s</UnitsConversion>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Minute</Name>
@@ -85,9 +86,10 @@
       <Units>min</Units>
       <UnitsConversion>60&gt;s</UnitsConversion>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Second</Name>
@@ -95,9 +97,10 @@
       <Description>Time tag: Decimal second of the minute</Description>
       <Units>s</Units>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Temporal</Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <!-- Is the Re=6378km for AMPTE_CCE? -->
     <PhysicalParameter>
@@ -111,9 +114,10 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Spacecraft position GSE Y component</Name>
@@ -126,9 +130,10 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Spacecraft position GSE Z component</Name>
@@ -141,9 +146,10 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Scalar</StructureType>
       </Structure>
-      <Support>Positional</Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </PhysicalParameter>
     <PhysicalParameter>
       <Name>Magnetic field cartesian GSE X component</Name>
