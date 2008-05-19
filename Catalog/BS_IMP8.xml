@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/Catalog/BS_IMP8</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 bow shock crossings</ResourceName>
-      <ReleaseDate>2008-04-01T21:54:50Z</ReleaseDate>
+      <ReleaseDate>2008-05-19T19:24:19Z</ReleaseDate>
       <Description>A complete list of bow shock crossings observed by IMP 8 spacecraft. The shock crossings were manually identified in magnetic field and/or thermal plasma measurements by J. Merka, A. Szabo, K. Paularena, J. Richardson, and T. Narock. 
       Each identified crossing was reviewed by at least two persons from the team. 
       
@@ -49,7 +49,6 @@
 </Description>
       <Caveats>Truncated to a minute precision.</Caveats>
       <Structure>
-        <StructureType>Array</StructureType>
         <Size>4</Size>
         <Element>
           <Name>Year</Name>
@@ -162,7 +161,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Xgse</Name>
@@ -199,7 +197,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Array</StructureType>
         <Size>2</Size>
         <Element>
           <Name>Ygsm</Name>
@@ -230,7 +227,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>Bx GSE</Name>
@@ -271,7 +267,6 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Array</StructureType>
         <Size>2</Size>
         <Element>
           <Name>By GSE</Name>
@@ -308,7 +303,6 @@
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Element>
           <Name>-Vx GSE</Name>
@@ -434,8 +428,8 @@
         <Particle>
           <ParticleType>Proton</ParticleType>
           <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>SoundSpeed</ParticleQuantity>
-        </Particle>
+         <ParticleQuantity>SoundSpeed</ParticleQuantity>
+      </Particle>
       </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
