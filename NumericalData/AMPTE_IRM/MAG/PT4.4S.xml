@@ -10,12 +10,12 @@
       <Acknowledgement>User will acknowledge the AMPTE/IRM magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Hermann Luhr -->
-        <PersonID>spase://nssdc/person/15294</PersonID>
+        <PersonID>spase://swg/Person/Hermann.Luhr</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Lynn Kistler -->
-        <PersonID>spase://nssdc/person/42587</PersonID>
+        <PersonID>spase://swg/Person/Lynn.M.Kistler</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

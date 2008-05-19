@@ -11,7 +11,7 @@
       <Description>This document provides detailed description of the WIND MFI instrument.</Description>
       <Contact>
         <!-- Adam Szabo -->
-        <PersonID>spase://nssdc/person/57837</PersonID>
+        <PersonID>spase://swg/Person/Adam.Szabo</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

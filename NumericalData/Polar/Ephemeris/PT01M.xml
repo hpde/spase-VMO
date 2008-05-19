@@ -9,7 +9,7 @@
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
-        <PersonID>spase://nssdc/person/65336</PersonID>
+        <PersonID>spase://swg/Person/Jan.Merka</PersonID>
         <Role>MetadataContact</Role>
       </Contact>
     </ResourceHeader>

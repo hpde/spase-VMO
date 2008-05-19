@@ -9,7 +9,7 @@
       <Description>Coordinated Data Analysis Web (CDAWeb) supports not only interactive plotting of variables from multiple instruments on multiple investigations simultaneously on arbitrary, user-defined time-scales. It also supports data retrieval in various formats using its interactive web interface or ftp service.</Description>
       <Contact>
         <!-- Robert McGuire -->
-        <PersonID>spase://nssdc/person/18824</PersonID>
+        <PersonID>spase://swg/Person/Robert.E.McGuire</PersonID>
         <Role>ProjectScientist</Role>
       </Contact>
       <InformationURL>

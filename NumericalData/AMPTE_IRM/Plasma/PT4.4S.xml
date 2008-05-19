@@ -10,12 +10,12 @@
       <Acknowledgement>User will acknowledge the AMPTE/IRM 3-D Plasma Analyser team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Goetz Paschmann -->
-        <PersonID>spase://nssdc/person/7242</PersonID>
+        <PersonID>spase://swg/Person/Goetz.Paschmann</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Lynn Kistler -->
-        <PersonID>spase://nssdc/person/42587</PersonID>
+        <PersonID>spase://swg/Person/Lynn.M.Kistler</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

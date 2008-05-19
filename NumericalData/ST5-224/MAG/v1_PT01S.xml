@@ -10,7 +10,7 @@
       <Acknowledgement>User will acknowledge the ST5 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- G. Le -->
-        <PersonID>spase://nssdc/person/43213</PersonID>
+        <PersonID>spase://swg/Person/Guan.Le</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
     </ResourceHeader>

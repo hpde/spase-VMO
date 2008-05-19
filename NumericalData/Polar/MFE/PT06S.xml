@@ -10,7 +10,7 @@
       <Description>Polar Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
       <Contact>
         <!-- C. T. Russell -->
-        <PersonID>spase://nssdc/person/1999</PersonID>
+        <PersonID>spase://swg/Person/Christopher.T.Russell</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

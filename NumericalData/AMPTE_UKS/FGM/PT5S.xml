@@ -21,12 +21,12 @@ be as precise and succinct as possible, and please be patient when awaiting
 a PI response.</Acknowledgement>
       <Contact>
         <!-- David Southwood -->
-        <PersonID>spase://nssdc/person/6352</PersonID>
+        <PersonID>spase://swg/Person/David.J.Southwood</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Malcolm Dunlop -->
-        <PersonID>spase://nssdc/person/39691</PersonID>
+        <PersonID>spase://swg/Person/Malcolm.W.Dunlop</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

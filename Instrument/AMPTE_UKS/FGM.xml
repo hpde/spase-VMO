@@ -16,12 +16,12 @@ For more details, see D.J. Southwood, et al., IEEE Transaction on Geoscience and
       <Acknowledgement>User will acknowledge the AMPTE/UKS magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- David Southwood -->
-        <PersonID>spase://nssdc/person/6352</PersonID>
+        <PersonID>spase://swg/Person/David.J.Southwood</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Malcolm Dunlop -->
-        <PersonID>spase://nssdc/person/39691</PersonID>
+        <PersonID>spase://swg/Person/Malcolm.W.Dunlop</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

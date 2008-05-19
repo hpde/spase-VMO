@@ -14,7 +14,7 @@
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission.</Acknowledgement>
       <Contact>
         <!-- Vassilis Angelopoulos -->
-        <PersonID>spase://nssdc/person/37757</PersonID>
+        <PersonID>spase://swg/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

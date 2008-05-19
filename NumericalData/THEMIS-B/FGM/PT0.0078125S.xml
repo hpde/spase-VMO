@@ -10,22 +10,22 @@
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission, K. H. Glassmeier, U. Auster and W. Baumjohann for the use of FGM data provided under the lead of the Technical University of Braunschweig and with financial support through the German Ministry for Economy and Technology and the German Center for Aviation and Space (DLR) under contract 50 OC 0302</Acknowledgement>
       <Contact>
         <!-- Rumi Nakamura -->
-        <PersonID>spase://nssdc/person/11575</PersonID>
+        <PersonID>spase://swg/Person/Rumi.Nakamura</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Wolfgang Baumjohann -->
-        <PersonID>spase://nssdc/person/18810</PersonID>
+        <PersonID>spase://swg/Person/Wolfgang.Baumjohann</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Karl-Heinz Glassmeier -->
-        <PersonID>spase://nssdc/person/29400</PersonID>
+        <PersonID>spase://swg/Person/Karl-Heinz.Glassmeier</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Vassilis Angelopoulos -->
-        <PersonID>spase://nssdc/person/37757</PersonID>
+        <PersonID>spase://swg/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
     </ResourceHeader>

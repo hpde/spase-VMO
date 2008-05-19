@@ -13,7 +13,7 @@ For more details, see A.J. Coates, et al., IEEE Transaction on Geoscience and Re
       <Acknowledgement>User will acknowledge the AMPTE/UKS 3-D Plasma Analyzer instrument team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Alan D. Johnstone -->
-        <PersonID>spase://nssdc/person/11610</PersonID>
+        <PersonID>spase://swg/Person/Alan.D.Johnstone</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

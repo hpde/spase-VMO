@@ -10,12 +10,12 @@
       <Description>THEMIS-A probe status (including position)</Description>
       <Contact>
         <!-- Vassilis Angelopoulos -->
-        <PersonID>spase://nssdc/person/37757</PersonID>
+        <PersonID>spase://swg/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Jan Merka -->
-        <PersonID>spase://nssdc/person/65336</PersonID>
+        <PersonID>spase://swg/Person/Jan.Merka</PersonID>
         <Role>MetadataContact</Role>
       </Contact>
     </ResourceHeader>

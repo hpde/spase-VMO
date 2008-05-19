@@ -13,7 +13,7 @@
       <Acknowledgement>User will acknowledge the AMPTE/CCE magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Brian J. Anderson -->
-        <PersonID>spase://nssdc/person/57264</PersonID>
+        <PersonID>spase://swg/Person/Brian.Jay.Anderson</PersonID>
         <Role>PrincipalInvestigator</Role>
         <Role>DataProducer</Role>
       </Contact>

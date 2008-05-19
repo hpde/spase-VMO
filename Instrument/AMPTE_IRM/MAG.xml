@@ -16,7 +16,7 @@ For more details, see H. Luhr et al., The IRM Fluxgate Magnetometer, IEEE Transa
       <Acknowledgement>User will acknowledge the AMPTE/IRM magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Hermann Luhr -->
-        <PersonID>spase://nssdc/person/15294</PersonID>
+        <PersonID>spase://swg/Person/Hermann.Luhr</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

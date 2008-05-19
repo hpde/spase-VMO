@@ -22,7 +22,7 @@ Parameters derived on a routine basis are proton velocity, number density, and t
 Key Parameters for the Plasma instrument are computed at MIT using Level Zero data that are staged to the ISTP/CDHF approximately two weeks after being received on Earth. Thus the plasma instrument's Key Parameters lag real time by something greater than 2 weeks, but less than four.
       </Description>
       <Contact>
-        <PersonID>spase://nssdc/person/3585</PersonID>
+        <PersonID>spase://swg/Person/Alan.J.Lazarus</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

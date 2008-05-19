@@ -15,7 +15,7 @@ The fluxgate sensors are ring core-types, each composed of a 'driver' coil and a
  The instrument consists of dual triaxial magnetometers with flippers. Dual microprocessors and random access memory are used to process the data so that the data sent to earth are immediately usable by all ISTP program investigators without extensive calculations, as well as available on board the spacecraft to other instruments in final corrected form. One million bits of internal storage under microprocessor control provide snapshots with up to 4-ms resolution on command or triggered by changes in the data. The instrument ranges are plus and minus 256, 4096, and 65,536 nT, with corresponding resolutions of 0.004, 0.06, and 1 nT.</Description>
       <Contact>
         <!-- Chris Russell -->
-        <PersonID>spase://nssdc/person/1999</PersonID>
+        <PersonID>spase://swg/Person/Christopher.T.Russell</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

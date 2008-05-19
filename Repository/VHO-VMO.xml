@@ -10,7 +10,7 @@
       <Description>Data repository co-located with the VHO and VMO at NASA Goddard Space Flight Center.</Description>
       <Contact>
         <!-- Jan Merka -->
-        <PersonID>spase://nssdc/person/65336</PersonID>
+        <PersonID>spase://swg/Person/Jan.Merka</PersonID>
         <Role>GeneralContact</Role>
         <Role>TechnicalContact</Role>
       </Contact>

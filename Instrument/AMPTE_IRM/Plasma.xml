@@ -15,7 +15,7 @@ For more details, see Paschmann, G., et al., The Plasma Instrument for AMPTE IRM
       <Acknowledgement>User will acknowledge the AMPTE/IRM plasma instrument team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Goetz Paschmann -->
-        <PersonID>spase://nssdc/person/7242</PersonID>
+        <PersonID>spase://swg/Person/Goetz.Paschmann</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

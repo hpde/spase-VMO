@@ -34,7 +34,7 @@ Data Resolution: 	      	18 bits (1:range, 1:sign, 16:value)
       <Acknowledgement>User will acknowledge the ST5 magnetometer instrument team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- R. J. Strangeway -->
-        <PersonID>spase://nssdc/person/22599</PersonID>
+        <PersonID>spase://swg/Person/Robert.J.Strangeway</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

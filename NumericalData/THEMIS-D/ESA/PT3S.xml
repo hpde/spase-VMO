@@ -10,17 +10,17 @@
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: C. W. Carlson and J. P. McFadden for use of ESA data.</Acknowledgement>
       <Contact>
         <!--Vassilis Angelopoulos -->
-        <PersonID>spase://nssdc/person/37757</PersonID>
+        <PersonID>spase://swg/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!--Charles Carlson -->
-        <PersonID>spase://nssdc/person/377</PersonID>
+        <PersonID>spase://swg/Person/Charles.W.Carlson</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
       <Contact>
         <!--James Mcfadden -->
-        <PersonID>spase://nssdc/person/33892</PersonID>
+        <PersonID>spase://swg/Person/James.P.McFadden</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
     </ResourceHeader>

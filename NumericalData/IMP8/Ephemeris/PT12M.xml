@@ -10,7 +10,7 @@
       <Description>IMP-8 spacecraft positions in various coordinate systems</Description>
       <Contact>
         <!-- Adam Szabo -->
-        <PersonID>spase://nssdc/person/57837</PersonID>
+        <PersonID>spase://swg/Person/Adam.Szabo</PersonID>
         <Role>Scientist</Role>
       </Contact>
     </ResourceHeader>
