@@ -8,7 +8,7 @@
       <AlternateName>IMP 8 PLS</AlternateName>
       <AlternateName>IMP 8 PLA</AlternateName>
       <AlternateName>1973-078A-02</AlternateName>
-      <ReleaseDate>2007-10-18T02:11:00Z</ReleaseDate>
+      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
       <Description>A modulated split-collector Faraday cup, perpendicular to the spacecraft spin axis, was used to study the directional intensity of positive ions and electrons in the solar wind, transition region, and magnetotail. The collector plate split is perpendicular to the spacecraft spin axis in order to measure the flow angle of the ions in a meridional plane; the flow angle in the spacecraft equatorial plane is determined from the fluxes measured as the spacecraft rotates.
 
 Electrons are measured using 21 logarithmically-spaced energy windows covering the energy/charge range between 23 and 1935 volts. Positive ions are studied using 24 energy windows covering the range between 50 and 7000 volts.
@@ -38,6 +38,6 @@ Key Parameters for the Plasma instrument are computed at MIT using Level Zero da
     </ResourceHeader>
     <InstrumentType>FaradayCup</InstrumentType>
     <InvestigationName>Solar Plasma Faraday Cup on IMP-J</InvestigationName>
-    <ObservatoryID>spase://swg/observatory/1973-078A</ObservatoryID>
+    <ObservatoryID>spase://swg/Observatory/IMP8</ObservatoryID>
   </Instrument>
 </Spase>

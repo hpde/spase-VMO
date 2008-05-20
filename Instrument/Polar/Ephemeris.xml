@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/Instrument/Polar/Ephemeris</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar Orbit</ResourceName>
-      <ReleaseDate>2007-12-05T00:31:46Z</ReleaseDate>
+      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
       <Description>Polar orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -15,6 +15,6 @@
     </ResourceHeader>
     <InstrumentType>Ephemeris</InstrumentType>
     <InvestigationName>Polar Spacecraft position</InvestigationName>
-    <ObservatoryID>spase://swg/observatory/1996-013A</ObservatoryID>
+    <ObservatoryID>spase://swg/Observatory/Polar</ObservatoryID>
   </Instrument>
 </Spase>

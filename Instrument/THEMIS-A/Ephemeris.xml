@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>THEMIS-A Probe Status</ResourceName>
       <AlternateName>THEMIS-A Positions</AlternateName>
-      <ReleaseDate>2007-11-28T19:55:27Z</ReleaseDate>
+      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
       <Description>THEMIS-A probe status (including position)</Description>
       <Contact>
         <!-- Vassilis Angelopoulos -->
@@ -21,6 +21,6 @@
     </ResourceHeader>
     <InstrumentType>Ephemeris</InstrumentType>
     <InvestigationName>Spacecraft position</InvestigationName>
-    <ObservatoryID>spase://swg/observatory/2007-004A</ObservatoryID>
+    <ObservatoryID>spase://swg/Observatory/THEMIS-A</ObservatoryID>
   </Instrument>
 </Spase>
