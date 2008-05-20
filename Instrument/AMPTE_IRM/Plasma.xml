@@ -31,7 +31,7 @@ For more details, see Paschmann, G., et al., The Plasma Instrument for AMPTE IRM
     </ResourceHeader>
     <InstrumentType>QuadrisphericalAnalyser</InstrumentType>
     <InvestigationName>IRM Plasma Instrument</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1984-088B</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1984-088B</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

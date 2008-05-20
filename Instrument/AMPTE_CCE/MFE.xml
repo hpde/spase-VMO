@@ -31,7 +31,7 @@
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Magnetic Field Experiment</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1984-088A</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1984-088A</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

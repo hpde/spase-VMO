@@ -45,6 +45,6 @@ Data Resolution: 	      	18 bits (1:range, 1:sign, 16:value)
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Magnetic Field Investigation</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/2006-008B</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/2006-008B</ObservatoryID>
   </Instrument>
 </Spase>

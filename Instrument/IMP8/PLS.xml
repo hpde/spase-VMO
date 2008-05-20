@@ -34,10 +34,10 @@ Key Parameters for the Plasma instrument are computed at MIT using Level Zero da
         <URL>http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1973-078A&amp;ex=2</URL>
         <Description>Information about the Solar Plasma Faraday Cup experiment on the IMP-J mission.</Description>
       </InformationURL>
-      <PriorID>spase://nssdc/instrument/1973-078A-02</PriorID>
+      <PriorID>spase://swg/instrument/1973-078A-02</PriorID>
     </ResourceHeader>
     <InstrumentType>FaradayCup</InstrumentType>
     <InvestigationName>Solar Plasma Faraday Cup on IMP-J</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1973-078A</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1973-078A</ObservatoryID>
   </Instrument>
 </Spase>

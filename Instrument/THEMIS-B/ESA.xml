@@ -32,7 +32,7 @@
     </ResourceHeader>
     <InstrumentType>ElectrostaticAnalyser</InstrumentType>
     <InvestigationName>Dual Full Distribution Electrostatic Analyzers</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/2007-004B</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/2007-004B</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

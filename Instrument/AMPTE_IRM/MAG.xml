@@ -32,7 +32,7 @@ For more details, see H. Luhr et al., The IRM Fluxgate Magnetometer, IEEE Transa
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Triaxial Fluxgate Magnetometer</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1984-088B</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1984-088B</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

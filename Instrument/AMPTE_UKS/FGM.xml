@@ -37,7 +37,7 @@ For more details, see D.J. Southwood, et al., IEEE Transaction on Geoscience and
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Triaxial Fluxgate Magnetometer</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1984-088C</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1984-088C</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

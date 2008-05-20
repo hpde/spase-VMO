@@ -15,6 +15,6 @@
     </ResourceHeader>
     <InstrumentType>Ephemeris</InstrumentType>
     <InvestigationName>Polar Spacecraft position</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1996-013A</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1996-013A</ObservatoryID>
   </Instrument>
 </Spase>

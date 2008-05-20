@@ -28,10 +28,10 @@ The fluxgate sensors are ring core-types, each composed of a 'driver' coil and a
         <URL>http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1996-013A&amp;ex=8</URL>
         <Description>Information about the Magnetic Fields Experiment (MFE) experiment on the Polar mission.</Description>
       </InformationURL>
-      <PriorID>spase://nssdc/instrument/1996-013A-08</PriorID>
+      <PriorID>spase://swg/instrument/1996-013A-08</PriorID>
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Magnetic Fields Experiment (MFE) on Polar</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1996-013A</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1996-013A</ObservatoryID>
   </Instrument>
 </Spase>

@@ -35,7 +35,7 @@ FGM Lead: K. H. Glassmeier (TUBS)</Description>
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Tri-axial Fluxgate Magnetometer</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/2007-004A</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/2007-004A</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

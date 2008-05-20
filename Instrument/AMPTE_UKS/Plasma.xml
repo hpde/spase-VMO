@@ -29,7 +29,7 @@ For more details, see A.J. Coates, et al., IEEE Transaction on Geoscience and Re
     </ResourceHeader>
     <InstrumentType>ElectrostaticAnalyser</InstrumentType>
     <InvestigationName>UKS 3D Plasma Analyzer</InvestigationName>
-    <ObservatoryID>spase://nssdc/observatory/1984-088C</ObservatoryID>
+    <ObservatoryID>spase://swg/observatory/1984-088C</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>
