@@ -816,7 +816,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxy_ion Full ESA-A</Name>
+          <Name>Pyy_ion Full ESA-A</Name>
           <Index>2</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -824,7 +824,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxz_ion Full ESA-A</Name>
+          <Name>Pzz_ion Full ESA-A</Name>
           <Index>3</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -832,7 +832,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pyy_ion Full ESA-A</Name>
+          <Name>Pxy_ion Full ESA-A</Name>
           <Index>4</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -840,7 +840,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pzz_ion Full ESA-A</Name>
+          <Name>Pxz_ion Full ESA-A</Name>
           <Index>5</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -2074,7 +2074,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxy_elec Full ESA-A</Name>
+          <Name>Pyy_elec Full ESA-A</Name>
           <Index>2</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -2082,7 +2082,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxz_elec Full ESA-A</Name>
+          <Name>Pzz_elec Full ESA-A</Name>
           <Index>3</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -2090,7 +2090,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pyy_elec Full ESA-A</Name>
+          <Name>Pxy_elec Full ESA-A</Name>
           <Index>4</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -2098,7 +2098,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pzz_elec Full ESA-A</Name>
+          <Name>Pxz_elec Full ESA-A</Name>
           <Index>5</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -3332,7 +3332,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxy_ion Rdcd ESA-A</Name>
+          <Name>Pyy_ion Rdcd ESA-A</Name>
           <Index>2</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -3340,7 +3340,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxz_ion Rdcd ESA-A</Name>
+          <Name>Pzz_ion Rdcd ESA-A</Name>
           <Index>3</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -3348,7 +3348,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pyy_ion Rdcd ESA-A</Name>
+          <Name>Pxy_ion Rdcd ESA-A</Name>
           <Index>4</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -3356,7 +3356,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pzz_ion Rdcd ESA-A</Name>
+          <Name>Pxz_ion Rdcd ESA-A</Name>
           <Index>5</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -4590,7 +4590,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxy_elec Rdcd ESA-A</Name>
+          <Name>Pyy_elec Rdcd ESA-A</Name>
           <Index>2</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -4598,7 +4598,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxz_elec Rdcd ESA-A</Name>
+          <Name>Pzz_elec Rdcd ESA-A</Name>
           <Index>3</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -4606,7 +4606,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pyy_elec Rdcd ESA-A</Name>
+          <Name>Pxy_elec Rdcd ESA-A</Name>
           <Index>4</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -4614,7 +4614,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pzz_elec Rdcd ESA-A</Name>
+          <Name>Pxz_elec Rdcd ESA-A</Name>
           <Index>5</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -5848,7 +5848,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxy_ion Brst ESA-A</Name>
+          <Name>Pyy_ion Brst ESA-A</Name>
           <Index>2</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -5856,7 +5856,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxz_ion Brst ESA-A</Name>
+          <Name>Pzz_ion Brst ESA-A</Name>
           <Index>3</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -5864,7 +5864,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pyy_ion Brst ESA-A</Name>
+          <Name>Pxy_ion Brst ESA-A</Name>
           <Index>4</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -5872,7 +5872,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pzz_ion Brst ESA-A</Name>
+          <Name>Pxz_ion Brst ESA-A</Name>
           <Index>5</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -7106,7 +7106,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxy_elec Brst ESA-A</Name>
+          <Name>Pyy_elec Brst ESA-A</Name>
           <Index>2</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -7114,7 +7114,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pxz_elec Brst ESA-A</Name>
+          <Name>Pzz_elec Brst ESA-A</Name>
           <Index>3</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -7122,7 +7122,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pyy_elec Brst ESA-A</Name>
+          <Name>Pxy_elec Brst ESA-A</Name>
           <Index>4</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
@@ -7130,7 +7130,7 @@
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
-          <Name>Pzz_elec Brst ESA-A</Name>
+          <Name>Pxz_elec Brst ESA-A</Name>
           <Index>5</Index>
           <Units/>
           <ValidMin>-1.0E10</ValidMin>
