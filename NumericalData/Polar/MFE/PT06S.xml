@@ -6,11 +6,11 @@
     <ResourceHeader>
       <ResourceName>Polar Magnetic Field KP</ResourceName>
       <AlternateName>Polar Magnetic Field High Resolution Data</AlternateName>
-      <ReleaseDate>2008-05-19T19:27:49Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:44Z</ReleaseDate>
       <Description>Polar Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
       <Contact>
         <!-- C. T. Russell -->
-        <PersonID>spase://swg/Person/Christopher.T.Russell</PersonID>
+        <PersonID>spase://SMWG/Person/Christopher.T.Russell</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

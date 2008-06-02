@@ -5,11 +5,11 @@
     <ResourceID>spase://VMO/NumericalData/Polar/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar Predicted Orbit</ResourceName>
-      <ReleaseDate>2008-05-19T19:27:49Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:44Z</ReleaseDate>
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
-        <PersonID>spase://swg/Person/Jan.Merka</PersonID>
+        <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
         <Role>MetadataContact</Role>
       </Contact>
     </ResourceHeader>

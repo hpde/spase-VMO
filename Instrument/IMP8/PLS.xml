@@ -8,7 +8,7 @@
       <AlternateName>IMP 8 PLS</AlternateName>
       <AlternateName>IMP 8 PLA</AlternateName>
       <AlternateName>1973-078A-02</AlternateName>
-      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:43Z</ReleaseDate>
       <Description>A modulated split-collector Faraday cup, perpendicular to the spacecraft spin axis, was used to study the directional intensity of positive ions and electrons in the solar wind, transition region, and magnetotail. The collector plate split is perpendicular to the spacecraft spin axis in order to measure the flow angle of the ions in a meridional plane; the flow angle in the spacecraft equatorial plane is determined from the fluxes measured as the spacecraft rotates.
 
 Electrons are measured using 21 logarithmically-spaced energy windows covering the energy/charge range between 23 and 1935 volts. Positive ions are studied using 24 energy windows covering the range between 50 and 7000 volts.
@@ -22,7 +22,7 @@ Parameters derived on a routine basis are proton velocity, number density, and t
 Key Parameters for the Plasma instrument are computed at MIT using Level Zero data that are staged to the ISTP/CDHF approximately two weeks after being received on Earth. Thus the plasma instrument's Key Parameters lag real time by something greater than 2 weeks, but less than four.
       </Description>
       <Contact>
-        <PersonID>spase://swg/Person/Alan.J.Lazarus</PersonID>
+        <PersonID>spase://SMWG/Person/Alan.J.Lazarus</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
@@ -34,10 +34,10 @@ Key Parameters for the Plasma instrument are computed at MIT using Level Zero da
         <URL>http://nssdc.gsfc.nasa.gov/database/MasterCatalog?sc=1973-078A&amp;ex=2</URL>
         <Description>Information about the Solar Plasma Faraday Cup experiment on the IMP-J mission.</Description>
       </InformationURL>
-      <PriorID>spase://swg/instrument/1973-078A-02</PriorID>
+      <PriorID>spase://SMWG/instrument/1973-078A-02</PriorID>
     </ResourceHeader>
     <InstrumentType>FaradayCup</InstrumentType>
     <InvestigationName>Solar Plasma Faraday Cup on IMP-J</InvestigationName>
-    <ObservatoryID>spase://swg/Observatory/IMP8</ObservatoryID>
+    <ObservatoryID>spase://SMWG/Observatory/IMP8</ObservatoryID>
   </Instrument>
 </Spase>

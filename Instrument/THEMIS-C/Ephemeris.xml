@@ -6,21 +6,21 @@
     <ResourceHeader>
       <ResourceName>THEMIS-C Probe Status</ResourceName>
       <AlternateName>THEMIS-C Positions</AlternateName>
-      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:43Z</ReleaseDate>
       <Description>THEMIS-C probe status (including position)</Description>
       <Contact>
         <!-- Vassilis Angelopoulos -->
-        <PersonID>spase://swg/Person/Vassilis.Angelopoulos</PersonID>
+        <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Jan Merka -->
-        <PersonID>spase://swg/Person/Jan.Merka</PersonID>
+        <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
         <Role>MetadataContact</Role>
       </Contact>
     </ResourceHeader>
     <InstrumentType>Ephemeris</InstrumentType>
     <InvestigationName>Spacecraft position</InvestigationName>
-    <ObservatoryID>spase://swg/Observatory/THEMIS-C</ObservatoryID>
+    <ObservatoryID>spase://SMWG/Observatory/THEMIS-C</ObservatoryID>
   </Instrument>
 </Spase>

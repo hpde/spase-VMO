@@ -6,11 +6,11 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/Ephemeris/PT12M</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP-8 Spacecraft Positions</ResourceName>
-      <ReleaseDate>2008-05-19T19:33:55Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:44Z</ReleaseDate>
       <Description>IMP-8 spacecraft positions in various coordinate systems</Description>
       <Contact>
         <!-- Adam Szabo -->
-        <PersonID>spase://swg/Person/Adam.Szabo</PersonID>
+        <PersonID>spase://SMWG/Person/Adam.Szabo</PersonID>
         <Role>Scientist</Role>
       </Contact>
     </ResourceHeader>

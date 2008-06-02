@@ -7,16 +7,16 @@
     <ResourceHeader>
       <ResourceName>IMP 8 Spacecraft Position</ResourceName>
       <AlternateName>IMP 8 Position</AlternateName>
-      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:43Z</ReleaseDate>
       <Description>IMP 8 spacecraft position in various coordinate systems</Description>
       <Contact>
         <!-- Adam Szabo -->
-        <PersonID>spase://swg/Person/Adam.Szabo</PersonID>
+        <PersonID>spase://SMWG/Person/Adam.Szabo</PersonID>
         <Role>DataProducer</Role>
       </Contact>
     </ResourceHeader>
     <InstrumentType>Ephemeris</InstrumentType>
     <InvestigationName>Spacecraft position</InvestigationName>
-    <ObservatoryID>spase://swg/Observatory/IMP8</ObservatoryID>
+    <ObservatoryID>spase://SMWG/Observatory/IMP8</ObservatoryID>
   </Instrument>
 </Spase>

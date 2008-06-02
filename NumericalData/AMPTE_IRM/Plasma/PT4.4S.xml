@@ -5,17 +5,17 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_IRM/Plasma/PT4.4S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/IRM Plasma Data</ResourceName>
-      <ReleaseDate>2008-05-19T19:32:11Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:45Z</ReleaseDate>
       <Description>AMPTE/IRM spin-averaged plasma moments at ~4.4 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/IRM 3-D Plasma Analyser team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Goetz Paschmann -->
-        <PersonID>spase://swg/Person/Goetz.Paschmann</PersonID>
+        <PersonID>spase://SMWG/Person/Goetz.Paschmann</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <!-- Lynn Kistler -->
-        <PersonID>spase://swg/Person/Lynn.M.Kistler</PersonID>
+        <PersonID>spase://SMWG/Person/Lynn.M.Kistler</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

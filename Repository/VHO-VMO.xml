@@ -6,11 +6,11 @@
     <ResourceID>spase://VMO/Repository/VHO-VMO</ResourceID>
     <ResourceHeader>
       <ResourceName>VHO and VMO Data Repository at NASA/GSFC</ResourceName>
-      <ReleaseDate>2007-08-10T19:47:21Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:45Z</ReleaseDate>
       <Description>Data repository co-located with the VHO and VMO at NASA Goddard Space Flight Center.</Description>
       <Contact>
         <!-- Jan Merka -->
-        <PersonID>spase://swg/Person/Jan.Merka</PersonID>
+        <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
         <Role>GeneralContact</Role>
         <Role>TechnicalContact</Role>
       </Contact>

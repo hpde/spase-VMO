@@ -5,12 +5,12 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_CCE/MFE/PT5.83S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/CCE Spin-averaged Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2008-05-19T19:31:26Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:44Z</ReleaseDate>
       <Description>AMPTE/CCE spin-averaged DC magnetic field at ~5.83 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/CCE magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Brian J. Anderson -->
-        <PersonID>spase://swg/Person/Brian.Jay.Anderson</PersonID>
+        <PersonID>spase://SMWG/Person/Brian.Jay.Anderson</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>

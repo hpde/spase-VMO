@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-C/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-C probe state</ResourceName>
-      <ReleaseDate>2008-04-30T21:16:09Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:44Z</ReleaseDate>
       <Description>The probe state files contain position, attitude, and sun pulse data. Produced by Mission Ops, Science Ops and Science Team.
      V00: Predictive on all, pre-pass.
      V01: Intermediate: added definitive spinper, spinphase others predictive, expected shortly after pass.
@@ -14,7 +14,7 @@
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission.</Acknowledgement>
       <Contact>
         <!-- Vassilis Angelopoulos -->
-        <PersonID>spase://swg/Person/Vassilis.Angelopoulos</PersonID>
+        <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>

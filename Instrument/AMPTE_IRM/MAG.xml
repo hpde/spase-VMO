@@ -8,7 +8,7 @@
       <AlternateName>AMPTE/IRM MAG</AlternateName>
       <AlternateName>AMPTE/IRM Triaxial Fluxgate Magnetometer</AlternateName>
       <AlternateName>1984-088B-02</AlternateName>
-      <ReleaseDate>2008-05-20T18:06:08Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:43Z</ReleaseDate>
       <Description>The instrument was a three-axis fluxgate magnetometer mounted on a 2-m boom. It had two switchable ranges (plus and minus 4 microtesla, and plus and minus 60 microtesla) with resolutions of 0.12 and 1.8 nT, respectively and was read out at 32, 16, 8, or 4 vector samples per second, depending on the T/M rate. Signals from each sensor were also fed into four band pass filters with 5.5, 11, 22, and 44-Hz center frequencies and were read out up to two times per second. 
   
 For more details, see H. Luhr et al., The IRM Fluxgate Magnetometer, IEEE Transaction on Geoscience and Remote Sensing, Vol. GE-23, p 259, 1985.
@@ -16,7 +16,7 @@ For more details, see H. Luhr et al., The IRM Fluxgate Magnetometer, IEEE Transa
       <Acknowledgement>User will acknowledge the AMPTE/IRM magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
         <!-- Hermann Luhr -->
-        <PersonID>spase://swg/Person/Hermann.Luhr</PersonID>
+        <PersonID>spase://SMWG/Person/Hermann.Luhr</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
@@ -32,7 +32,7 @@ For more details, see H. Luhr et al., The IRM Fluxgate Magnetometer, IEEE Transa
     </ResourceHeader>
     <InstrumentType>Magnetometer</InstrumentType>
     <InvestigationName>Triaxial Fluxgate Magnetometer</InvestigationName>
-    <ObservatoryID>spase://swg/Observatory/AMPTE_IRM</ObservatoryID>
+    <ObservatoryID>spase://SMWG/Observatory/AMPTE_IRM</ObservatoryID>
     <Caveats/>
   </Instrument>
 </Spase>

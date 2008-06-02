@@ -7,11 +7,11 @@
     <ResourceHeader>
       <ResourceName>Documentation for Magnetic Field Investigation on WIND</ResourceName>
       <AlternateName>MFI Documentation</AlternateName>
-      <ReleaseDate>2006-10-26T13:57:37Z</ReleaseDate>
+      <ReleaseDate>2008-06-02T18:53:43Z</ReleaseDate>
       <Description>This document provides detailed description of the WIND MFI instrument.</Description>
       <Contact>
         <!-- Adam Szabo -->
-        <PersonID>spase://swg/Person/Adam.Szabo</PersonID>
+        <PersonID>spase://SMWG/Person/Adam.Szabo</PersonID>
         <Role>DataProducer</Role>
       </Contact>
       <InformationURL>
