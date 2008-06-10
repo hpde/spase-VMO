@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS High-resolution Level 1 Data</ResourceName>
-      <ReleaseDate>2008-06-10T04:25:06Z</ReleaseDate>
+      <ReleaseDate>2008-06-10T16:08:30Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ number fluxes and statistical uncertainties processed by the TIMAS science team. Data acquired with various anglular and energy resolutions are combined here. Data Quality and other indicators are provided to allow selection of high resolution data (PA_status(ion)=0 and Energy_status(ion)=0 ) and High Quality data (Quality=0). See caveats for the following variables for more detailed information: Quality, PA_status, Energy_status Bcr, Fec, Even_odd,  Energy_Range_ID and Spins. 
       
 Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
@@ -21,7 +21,7 @@ Version 3: June, 2002
 Algorithm for V_02 had an error that resulted in under estimation of fluxes in high count regions, i.e. the cusp/cleft and radiation belts. V_03 corrects this error and has been expanded to included calculation of fluxes obtained after December 8, 1998, when TIMAS had a damaging high voltage breakdown that resulted in reduced sensitivity.
 </Description>
       <Contact>
-        <PersonID>spase://SMWG/Person/William.K.Peterson</PersonID>
+        <PersonID>spase://SMWG/Person/W.K.Peterson</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
