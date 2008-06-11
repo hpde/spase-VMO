@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS High-resolution Level 1 Data</ResourceName>
-      <ReleaseDate>2008-06-10T16:08:30Z</ReleaseDate>
+      <ReleaseDate>2008-06-11T21:26:56Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ number fluxes and statistical uncertainties processed by the TIMAS science team. Data acquired with various anglular and energy resolutions are combined here. Data Quality and other indicators are provided to allow selection of high resolution data (PA_status(ion)=0 and Energy_status(ion)=0 ) and High Quality data (Quality=0). See caveats for the following variables for more detailed information: Quality, PA_status, Energy_status Bcr, Fec, Even_odd,  Energy_Range_ID and Spins. 
       
 Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
@@ -39,8 +39,13 @@ Algorithm for V_02 had an error that resulted in under estimation of fluxes in h
       </InformationURL>
       <InformationURL>
         <Name>TIMAS PAPCO Module</Name>
-        <URL>http://www.mpae.gwdg.de/mpae_projects/CCR/software/papco/papco.html</URL>
+        <URL>http://lasp.colorado.edu/timas/PAPCO/timas.html</URL>
         <Description>A PAPCO module for reading and displaying TIMAS (and other POLAR) data.</Description>
+      </InformationURL>
+      <InformationURL>
+        <Name>PAPCO Software</Name>
+        <URL>http://www.papco.org/</URL>
+        <Description>PaPCo is IDL software for data visualization and analysis. It is modular, PaPCo modules built by various institutions and individuals plug into PaPCo core to provide data products. These modules provide graphic panels that are stacked on a time axis. About 60 modules exist, and 30 are supported as “core modules” that come with PaPCo. There are modules from 15+ spacecraft, including CRRES, Polar, Cassini and Cluster. Data from CDAWeb is plottable as well. The software is open-source, making it very flexible and well-suited for science use.</Description>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
@@ -62,30 +67,27 @@ Algorithm for V_02 had an error that resulted in under estimation of fluxes in h
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>1996-03-17T00:03:13.109Z</StartDate>
-        <StopDate>2004-04-03T09:04:53.243Z</StopDate>
+        <StartDate>1996-03-17T00:03:13Z</StartDate>
+        <StopDate>2004-04-04T00:00:00Z</StopDate>
       </TimeSpan>
       <Cadence>PT12S</Cadence>
     </TemporalDescription>
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
-    <Caveats>The Epoch_xx times are the center times of the accumulation interval over which the data were acquired. Depending on instrument mode, fluxes for each major species are accumulated for 2, 4, 8, 16, or 32 spins on-board. This corresponds to 12, 24, 48, 96, or 192 second resolution.  The spin accumulation indicator shows the number of spins accumulated for each major ion species for each data record.
+    <Caveats>The Epoch_xx times are the center times of the accumulation interval over which the data were acquired. Depending on instrument mode, fluxes for each major species are accumulated for 2, 4, 8, 16, or 32 spins on-board. This corresponds to 12, 24, 48, 96, or 192 second resolution. The spin accumulation indicator shows the number of spins accumulated for each major ion species for each data record. 
     
-Note that data with both high and medium resolution are combined in these files. This means that the energy, angle, and time resolution of some data are less than the resolution provided in the data file. High resolution data is available, but to get it you have to use the data quality and resolution flags described below.
+Note that data with both high and medium resolution are combined in these files. This means that the energy, angle, and time resolution of some data are less than the resolution provided in the data file. 
 
-Early in the mission, The TIMAS high energy limit was 22 keV/e.  It was later changed to 33 keV/e. The Energy_Range_ID flag indicates which energy range the TIMAS instrument was in at the time of data acquisition.  Note that no data from the lowest energy range are included in the high resolution data files.
+Early in the mission, The TIMAS high energy limit was 22 keV/e. It was changed to 33 keV/e on June 26, 1996. The Energy_Range_ID flag indicates which energy range the TIMAS instrument was in at the time of data acquisition. Even energy steps (0, 2, ...) are acquired on even spin numbers and odd energy steps (1,3, ...) are acquired on odd spin numbers. High resolution data are included from two spins. To resolve timing uncertainties the Even/Odd indicator is set to indicate which set of energy steps were acquired in the first 6 seconds of the two spin accumulation interval. 
 
-Even energy steps (0, 2, ...) are acquired on even spin numbers and odd energy steps (1,3, ...) are acquired on odd spin numbers. High resolution data are included from two spins only. To resolve timing uncertainties the Even/Odd indicator is set to indicate which set of energy steps were acquired in the first 6 seconds of the two spin accumulation interval.
+The quality of TIMAS data depends on the total number of counts processed by the detector. Some summary quality information is provided in the Quality Flags. The Quality Flags are derived from the fast event counter and other data sources. The TIMAS sensor responds to penetrating radiation that is particularly intense in the radiation belt part of each orbit. The Fluxes returned have been corrected for the background counting rate. Correction of TIMAS fluxes for high count rates increases the uncertainty in the flux values reported. The quality flag is provided as a convenient flag to use to select data that has been acquired in the linear response range of the instrument. 
 
-The quality of TIMAS data depends on the total number of counts processed by the detector.  Some summary quality information is provided in the Quality Flags.  The Quality Flags are derived from the fast event counter and other data sources.
+Depending on instrument mode, fluxes for each major species are averaged or not averaged over energy ranges on-board. The energy resolution indicator provides a summary of the energy resolution of the data in each record for each ion species. 
 
-The TIMAS sensor responds to penetrating radiation that is particularly intense in the radiation belt part of each orbit. The Fluxes returned have been corrected for the background counting rate. Correction of TIMAS fluxes for high count rates increases the uncertainty in the flux values reported.  The quality flag is provided as a convenient flag to use to select data that has been acquired in the linear response range of the instrument.
+Depending on instrument mode, fluxes for each major species are averaged with one of three angular resolutions on-board. The pitch angle resolution indicator provides a summary of the angular resolution of the data in each record for each ion species. 
 
-Depending on instrument mode, fluxes for each major species are averaged or not averaged over energy ranges on-board.  The energy resolution indicator provides a summary of the energy resolution of the data in each record for each ion species.
-
-Depending on instrument mode, fluxes for each major species are averaged with one of three angular resolutions on-board. The pitch angle resolution indicator provides a summary of the angular resolution of the data in each record for each ion species.
-</Caveats>
+On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q.</Caveats>
     <PhysicalParameter>
       <Name>Center Epoch for Flux_H</Name>
       <ParameterKey>Epoch_H</ParameterKey>
@@ -214,7 +216,7 @@ Depending on instrument mode, fluxes for each major species are averaged with on
       <Units>#/(cm^2-s-keV/e-sr)</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>-0.01</ValidMin>
       <ValidMax>1.0E8</ValidMax>
@@ -376,12 +378,12 @@ Depending on instrument mode, fluxes for each major species are averaged with on
     <PhysicalParameter>
       <Name>Sigma for H+ number flux</Name>
       <ParameterKey>Sigma_H</ParameterKey>
-      <Description>Sigma for H+ number flux for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_H, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
+      <Description>One standard deviation (sigma) of the H+ number flux based on the observed counts for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_H, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
       <Caveats>Value clipped at 255% of flux.</Caveats>
       <Units>% of Flux</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>0</ValidMin>
       <ValidMax>255</ValidMax>
@@ -549,7 +551,7 @@ Depending on instrument mode, fluxes for each major species are averaged with on
       <Units>#/(cm^2-s-keV/e-sr)</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>-0.01</ValidMin>
       <ValidMax>1.0E8</ValidMax>
@@ -711,12 +713,12 @@ Depending on instrument mode, fluxes for each major species are averaged with on
     <PhysicalParameter>
       <Name>Sigma for O+ number flux</Name>
       <ParameterKey>Sigma_O</ParameterKey>
-      <Description>Sigma for O+ number flux for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_O, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
+      <Description>One standard deviation (sigma) of the O+ number flux based on the observed counts for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_O, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
       <Caveats>Value clipped at 255% of flux.</Caveats>
       <Units>% of Flux</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>0</ValidMin>
       <ValidMax>255</ValidMax>
@@ -884,7 +886,7 @@ Depending on instrument mode, fluxes for each major species are averaged with on
       <Units>#/(cm^2-s-keV/e-sr)</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>-0.01</ValidMin>
       <ValidMax>1.0E8</ValidMax>
@@ -1046,12 +1048,12 @@ Depending on instrument mode, fluxes for each major species are averaged with on
     <PhysicalParameter>
       <Name>Sigma for He+ number flux</Name>
       <ParameterKey>Sigma_He_1</ParameterKey>
-      <Description>Sigma for He+ number flux for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_He_1, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
+      <Description>One standard deviation (sigma) of the He+ number flux based on the observed counts for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_He_1, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
       <Caveats>Value clipped at 255% of flux.</Caveats>
       <Units>% of Flux</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>0</ValidMin>
       <ValidMax>255</ValidMax>
@@ -1219,7 +1221,7 @@ Depending on instrument mode, fluxes for each major species are averaged with on
       <Units>#/(cm^2-s-keV/e-sr)</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>-0.01</ValidMin>
       <ValidMax>1.0E8</ValidMax>
@@ -1381,12 +1383,12 @@ Depending on instrument mode, fluxes for each major species are averaged with on
     <PhysicalParameter>
       <Name>Sigma for He++ number flux</Name>
       <ParameterKey>Sigma_He_2</ParameterKey>
-      <Description>Sigma for He++ number flux for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_He_2, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
+      <Description>One standard deviation (sigma) of the He+ number flux based on the observed counts for 28 energy and 12 pitch angle bins. Depends on parameters Epoch_He_2, energy (lower_energy, upper_energy) and angle (delta_angle).</Description>
       <Caveats>Value clipped at 255% of flux.</Caveats>
       <Units>% of Flux</Units>
       <Structure>
         <Size>28 12</Size>
-        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
+        <Description>28 energy bins (described by the Energy Range SPASE element) and 12 pitch angle bins. Center of pitch angle bins in degrees (delta = +/- 7.5 deg): 7.5, 22.5, 37.5, 52.5, 67.5, 82.5, 97.5, 112.5, 127.5, 142.5, 157.5, 172.5.</Description>
       </Structure>
       <ValidMin>0</ValidMin>
       <ValidMax>255</ValidMax>
@@ -1549,27 +1551,46 @@ Depending on instrument mode, fluxes for each major species are averaged with on
     <PhysicalParameter>
       <Name>Energy Range</Name>
       <ParameterKey>Energy_Range_ID</ParameterKey>
-      <Description>Energy Range Identification:  0: Full energy range;  1: Reduced energy range;  2: Low energy range.
+      <Description>Energy Range Identification: 0: Full energy range; 1: Reduced energy range; 2: Low energy range.
       
-TIMAS is operated in one of 3  energy ranges. Energy_Range_ID indicates which of the 3 instrumental energy ranges is currently active. Each instrumental energy range further divided into 3 Key Parameter (KP) energy channels (low - medium - and high). The table below gives the full energy range and limits of the thee KP energy ranges.
-      
-Energy_Range_ID=0: (Full instrumental energy range) 
-Full range (0.015 - 33.3 keV/e)
-low E channel (0.015 - 0.37 keV/e)
-mid E channel (0.37 - 3.3 keV/e)
-high E channel (3.3 - 33.3 keV/e)
+TIMAS is operated in one of 3  energy ranges. Energy_Range_ID indicates which of the 3 instrumental energy ranges is currently active:
 
-Energy_Range_ID=1: (Reduced instrumental energy range)
-Full range (0.015 - 22.45 keV/e)
-low E channel (0.015 - 0.37 keV/e)
-mid E channel (0.37 - 3.3 keV/e)
-high E channel (3.3 - 22.45 keV/e)
+Energy_Range_ID=0: Full instrumental energy range,  valid data are in energy steps 1 through 28)
+ Energy_Range_ID=1: Reduced instrumental energy range, valid data are in energy steps 1 through 26
+ Energy_Range_ID=2: Low instrumental energy range, no valid data were acquired in this mode.
+ 
+In the table below the lower, center, and upper energies for each of the 28 fixed energy steps are given. The upper and lower energies bound the full width at half maximum energy response of the detector. 
 
-Energy_Range_ID=2: (Low instrumental energy range)
-Full range (0.015 - 2.18 keV/e)
-low E channel (0.015 - 0.11 keV/e)
-mid E channel (0.11 - 0.37 keV/e)
-high E channel (0.37 - 2.18 keV/e)</Description>
+ Step     E_lower      E_center     E_upper
+1        16.0          25.0            34.0
+2        35.2          45.0            54.8
+3        54.1          68.0            81.9
+4        74.6          92.5           110.4
+5       102.8         125.8           148.8
+6       141.5         171.0           200.5
+7       194.8         232.6           270.4
+8       268.1         316.2           364.3
+9       369.2         430.1           491.0
+10       508.1        584.8           661.5
+11       699.2        795.3           891.4
+12       962.1       1081.5          1200.9
+13      1323.6       1470.7          1617.8
+14      1820.8       2000.0          2179.2
+15      2228.5       2438.0          2647.5
+16      2733.1       2972.0          3210.9
+17      3358.0       3622.9          3887.8
+18      4119.7       4416.4          4713.1
+19      5048.3       5383.6          5718.9
+20      6180.2       6562.7          6945.2
+21      7560.0       8000.0          8440.0
+22      9242.0       9752.1         10262.2
+23     11313.3      11888.0         12462.7
+24     13823.7      14491.6         15159.5
+25     16894.5      17665.4         18436.3
+26     20619.7      21534.4         22449.1
+27     25165.3      26250.7         27336.1
+28     30702.0      32000.0         33298.0
+</Description>
       <ValidMin>0</ValidMin>
       <ValidMax>3</ValidMax>
       <FillValue>255</FillValue>
