@@ -5,8 +5,10 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS High-resolution Level 1 Data</ResourceName>
-      <ReleaseDate>2008-06-11T21:26:56Z</ReleaseDate>
-      <Description>H+, O+, He+ and He++ number fluxes and statistical uncertainties processed by the TIMAS science team. Data acquired with various anglular and energy resolutions are combined here. Data Quality and other indicators are provided to allow selection of high resolution data (PA_status(ion)=0 and Energy_status(ion)=0 ) and High Quality data (Quality=0). See caveats for the following variables for more detailed information: Quality, PA_status, Energy_status Bcr, Fec, Even_odd,  Energy_Range_ID and Spins. 
+      <ReleaseDate>2008-06-16T22:09:49Z</ReleaseDate>
+      <Description>Mass resolved ion Energy angle spectra covering nearly the full 4pi solid angle and the energy range 15 eV/q to 33 eV/q. 
+      
+  H+, O+, He+ and He++ number fluxes and statistical uncertainties processed by the TIMAS science team. Data acquired with various anglular and energy resolutions are combined here. Data Quality and other indicators are provided to allow selection of high resolution data (PA_status(ion)=0 and Energy_status(ion)=0 ) and High Quality data (Quality=0). See caveats for the following variables for more detailed information: Quality, PA_status, Energy_status Bcr, Fec, Even_odd,  Energy_Range_ID and Spins. 
       
 Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
 
@@ -95,8 +97,8 @@ On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resul
       <Caveats>Center epoch in milliseconds since 0 AD of VARIABLE accumulation intervals for H+. See also variables Epoch_start, Epoch_stop, and Spins</Caveats>
       <Units>ms</Units>
       <UnitsConversion>1e-3&gt;s</UnitsConversion>
-      <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMin>17-Mar-1996 00:03:13</ValidMin>
+      <ValidMax>04-Apr-2004 00:00:00</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
@@ -109,8 +111,8 @@ On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resul
       <Caveats>Center epoch in milliseconds since 0 AD of VARIABLE accumulation intervals for O+. See also variables Epoch_start, Epoch_stop, and Spins</Caveats>
       <Units>ms</Units>
       <UnitsConversion>1e-3&gt;s</UnitsConversion>
-      <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMin>17-Mar-1996 00:03:13</ValidMin>
+      <ValidMax>04-Apr-2004 00:00:00</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
@@ -123,8 +125,8 @@ On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resul
       <Caveats>Center epoch in milliseconds since 0 ADof VARIABLE accumulation intervals for He+. See also variables Epoch_start, Epoch_stop, and Spins</Caveats>
       <Units>ms</Units>
       <UnitsConversion>1e-3&gt;s</UnitsConversion>
-      <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMin>17-Mar-1996 00:03:13</ValidMin>
+      <ValidMax>04-Apr-2004 00:00:00</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
@@ -137,8 +139,8 @@ On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resul
       <Caveats>Center epoch in milliseconds since 0 ADof VARIABLE accumulation intervals for He++. See also variables Epoch_start, Epoch_stop, and Spins</Caveats>
       <Units>ms</Units>
       <UnitsConversion>1e-3&gt;s</UnitsConversion>
-      <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMin>17-Mar-1996 00:03:13</ValidMin>
+      <ValidMax>04-Apr-2004 00:00:00</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
@@ -169,8 +171,8 @@ On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resul
           <Index>4</Index>
         </Element>
       </Structure>
-      <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMin>17-Mar-1996 00:03:13</ValidMin>
+      <ValidMax>04-Apr-2004 00:00:00</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
@@ -201,8 +203,8 @@ On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resul
           <Index>4</Index>
         </Element>
       </Structure>
-      <ValidMin>01-Jan-1995 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMin>17-Mar-1996 00:03:13</ValidMin>
+      <ValidMax>04-Apr-2004 00:00:00</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
@@ -1641,7 +1643,7 @@ In the table below the lower, center, and upper energies for each of the 28 fixe
       </Support>
     </PhysicalParameter>
     <PhysicalParameter>
-      <Name>Spins Accumulatated</Name>
+      <Name>Spins Accumulated</Name>
       <ParameterKey>Spins</ParameterKey>
       <Description>Number of spins accumulated for each of the four ion species</Description>
       <Units># of spins</Units>
