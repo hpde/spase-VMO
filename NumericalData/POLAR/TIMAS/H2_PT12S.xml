@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS Level 1 Ion Uplflowing Fluxes Data</ResourceName>
-      <ReleaseDate>2008-06-17T20:35:27Z</ReleaseDate>
+      <ReleaseDate>2008-06-17T20:55:55Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
       
   Includes also non-TIMAS Data: 
@@ -91,6 +91,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
     <InputResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</InputResourceID>
     <InputResourceID>spase://VHO/NumericalData/WIND/MFI/v4_PT03S</InputResourceID>
     <InputResourceID>spase://VHO/NumericalData/WIND/SWE/apbimax</InputResourceID>
+    <InputResourceID>spase://VMO/NumericalData/POLAR/MFE/PT06S</InputResourceID>
     <InputResourceID>POLAR EFI</InputResourceID>
     <PhysicalParameter>
       <Name>Center Epoch for H_Fluence</Name>
