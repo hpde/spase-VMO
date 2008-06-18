@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>POLAR Predicted Orbit</ResourceName>
-      <ReleaseDate>2008-06-10T04:29:44Z</ReleaseDate>
+      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->

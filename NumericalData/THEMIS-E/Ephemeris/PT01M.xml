@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-E/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-E probe state</ResourceName>
-      <ReleaseDate>2008-06-02T18:53:44Z</ReleaseDate>
+      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
       <Description>The probe state files contain position, attitude, and sun pulse data. Produced by Mission Ops, Science Ops and Science Team.
      V00: Predictive on all, pre-pass.
      V01: Intermediate: added definitive spinper, spinphase others predictive, expected shortly after pass.

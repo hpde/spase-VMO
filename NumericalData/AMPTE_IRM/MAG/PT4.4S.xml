@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_IRM/MAG/PT4.4S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/IRM Magnetic Field</ResourceName>
-      <ReleaseDate>2008-06-02T18:53:45Z</ReleaseDate>
+      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
       <Description>AMPTE/IRM spin-averaged magnetic field at ~4.4 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/IRM magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
