@@ -47,7 +47,7 @@ a PI response.</Acknowledgement>
       <Format>Text</Format>
       <Encoding>ASCII</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://VMO/Instrument/AMPTE_UKS/FGM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/AMPTE_UKS/FGM</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

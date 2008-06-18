@@ -42,7 +42,7 @@ a PI response.</Acknowledgement>
       <Format>Text</Format>
       <Encoding>ASCII</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://VMO/Instrument/AMPTE_UKS/Plasma</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/AMPTE_UKS/Plasma</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

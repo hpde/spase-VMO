@@ -28,7 +28,7 @@
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://VMO/Instrument/IMP8/Ephemeris</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/Ephemeris</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

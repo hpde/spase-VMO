@@ -36,7 +36,7 @@
       <Format>Text</Format>
       <Encoding>ASCII</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://VMO/Instrument/AMPTE_IRM/Plasma</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/AMPTE_IRM/Plasma</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>

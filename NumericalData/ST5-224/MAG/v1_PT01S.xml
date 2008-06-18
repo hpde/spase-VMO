@@ -29,7 +29,7 @@
     <ProviderResourceName>ST5 MAG Data</ProviderResourceName>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>1</ProviderVersion>
-    <InstrumentID>spase://VMO/Instrument/ST5-224/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/ST5-224/MAG</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>

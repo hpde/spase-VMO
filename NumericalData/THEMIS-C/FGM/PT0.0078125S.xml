@@ -43,7 +43,7 @@
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
-    <InstrumentID>spase://VMO/Instrument/THEMIS-C/FGM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS-C/FGM</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

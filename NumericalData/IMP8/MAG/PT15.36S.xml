@@ -34,7 +34,7 @@
     <ProviderResourceName>IMP8 MAG15</ProviderResourceName>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>2</ProviderVersion>
-    <InstrumentID>spase://VMO/Instrument/IMP8/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

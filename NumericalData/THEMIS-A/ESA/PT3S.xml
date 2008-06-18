@@ -39,7 +39,7 @@
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>Version 01</ProviderVersion>
-    <InstrumentID>spase://VMO/Instrument/THEMIS-A/ESA</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS-A/ESA</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

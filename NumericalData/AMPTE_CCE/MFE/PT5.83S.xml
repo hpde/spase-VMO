@@ -32,7 +32,7 @@
       <Format>Text</Format>
       <Encoding>GZIP</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://VMO/Instrument/AMPTE_CCE/MFE</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/AMPTE_CCE/MFE</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>

@@ -30,7 +30,7 @@
       <Format>CDF</Format>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
-    <InstrumentID>spase://VMO/Instrument/POLAR/MFE</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/POLAR/MFE</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

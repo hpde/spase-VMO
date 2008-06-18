@@ -25,7 +25,7 @@
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://VMO/Instrument/POLAR/Ephemeris</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/POLAR/Ephemeris</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

@@ -36,7 +36,7 @@
       <Encoding>None</Encoding>
     </AccessInformation>
     <ProviderProcessingLevel>Level1</ProviderProcessingLevel>
-    <InstrumentID>spase://VMO/Instrument/THEMIS-E/Ephemeris</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS-E/Ephemeris</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>

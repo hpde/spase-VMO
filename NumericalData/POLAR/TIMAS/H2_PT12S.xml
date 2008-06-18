@@ -72,7 +72,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <ProviderProcessingLevel>Level 1</ProviderProcessingLevel>
     <ProviderVersion>v_01</ProviderVersion>
-    <InstrumentID>spase://VMO/Instrument/POLAR/TIMAS</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/POLAR/TIMAS</InstrumentID>
     <MeasurementType>IonComposition</MeasurementType>
     <MeasurementType>Spectrum</MeasurementType>
     <MeasurementType>ThermalPlasma</MeasurementType>
