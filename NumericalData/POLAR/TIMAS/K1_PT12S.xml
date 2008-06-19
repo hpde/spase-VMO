@@ -2,10 +2,10 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
   <Version>1.3.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT12S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT96S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS Key Parameter data</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-06-19T20:01:10Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ number fluxes for survey purposes only 
       
 Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
@@ -45,21 +45,27 @@ Version 0: June, 2001
     <ProviderProcessingLevel>Level 1</ProviderProcessingLevel>
     <ProviderVersion>v_01</ProviderVersion>
     <InstrumentID>spase://SMWG/Instrument/POLAR/TIMAS</InstrumentID>
+    <MeasurementType>ChargedParticleFlux</MeasurementType>
     <MeasurementType>IonComposition</MeasurementType>
     <MeasurementType>Spectrum</MeasurementType>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1999-06-01T00:00:00Z</StartDate>
-        <StopDate>2008-04-16T13:23:00Z</StopDate>
+        <StopDate>2008-04-17T00:00:00Z</StopDate>
       </TimeSpan>
-      <Cadence>PT12S</Cadence>
+      <Cadence>PT96S</Cadence>
     </TemporalDescription>
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
-    <Caveats>Any?</Caveats>
-    <Keyword>Any?</Keyword>
+    <Caveats>On December 8, 1998 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q. The data from the two lowest energy channels in this data set (430 and 585 eV respectively) should be used with caution.  
+
+The data are averaged over time (96 seconds) and angle (nearly the full 4 pi), so narrow angular and/or temporal features are not shown. Higher temporal and angular resolution data can be interactively generated at http://lasp.colorado.edu/timas/mrdf/  
+</Caveats>
+    <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
+    <Keyword>Omni-directional Number Flux</Keyword>
+    <Keyword>Three dimensional Angular Response</Keyword>
     <PhysicalParameter>
       <Name>Epoch</Name>
       <ParameterKey>Epoch</ParameterKey>
@@ -67,7 +73,7 @@ Version 0: June, 2001
       <Units>ms</Units>
       <UnitsConversion>1e-3&gt;s</UnitsConversion>
       <ValidMin>01-Jun-1999 00:00:00.000</ValidMin>
-      <ValidMax>01-Jan-2020 23:59:59.999</ValidMax>
+      <ValidMax>17-Apr-2008 00:00:00.000</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>

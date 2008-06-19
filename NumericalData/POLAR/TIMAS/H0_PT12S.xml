@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS High-resolution Level 1 Data</ResourceName>
-      <ReleaseDate>2008-06-19T15:40:22Z</ReleaseDate>
+      <ReleaseDate>2008-06-19T20:01:15Z</ReleaseDate>
       <Description>Mass resolved ion Energy angle spectra covering nearly the full 4pi solid angle and the energy range 15 eV/q to 33 eV/q. 
       
   H+, O+, He+ and He++ number fluxes and statistical uncertainties processed by the TIMAS science team. Data acquired with various anglular and energy resolutions are combined here. Data Quality and other indicators are provided to allow selection of high resolution data (PA_status(ion)=0 and Energy_status(ion)=0 ) and High Quality data (Quality=0). See caveats for the following variables for more detailed information: Quality, PA_status, Energy_status Bcr, Fec, Even_odd,  Energy_Range_ID and Spins. 
@@ -64,13 +64,14 @@ Algorithm for V_02 had an error that resulted in under estimation of fluxes in h
     <ProviderProcessingLevel>Level 1</ProviderProcessingLevel>
     <ProviderVersion>v_03</ProviderVersion>
     <InstrumentID>spase://SMWG/Instrument/POLAR/TIMAS</InstrumentID>
+    <MeasurementType>ChargedParticleFlux</MeasurementType>
     <MeasurementType>IonComposition</MeasurementType>
     <MeasurementType>Spectrum</MeasurementType>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1996-03-17T00:03:13Z</StartDate>
-        <StopDate>2004-04-04T00:00:00Z</StopDate>
+        <StopDate>1998-12-09T00:00:00Z</StopDate>
       </TimeSpan>
       <Cadence>PT12S</Cadence>
     </TemporalDescription>
@@ -89,9 +90,9 @@ Depending on instrument mode, fluxes for each major species are averaged or not 
 
 Depending on instrument mode, fluxes for each major species are averaged with one of three angular resolutions on-board. The pitch angle resolution indicator provides a summary of the angular resolution of the data in each record for each ion species. 
 
-On December 8, 1996 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q.</Caveats>
-<Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
-<Keyword>Three dimensional Angular Response</Keyword>
+On December 8, 1998 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q.</Caveats>
+    <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
+    <Keyword>Three dimensional Angular Response</Keyword>
     <PhysicalParameter>
       <Name>Center Epoch for Flux_H</Name>
       <ParameterKey>Epoch_H</ParameterKey>

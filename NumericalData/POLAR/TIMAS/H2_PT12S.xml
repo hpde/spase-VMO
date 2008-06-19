@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS Level 1 Ion Uplflowing Fluxes Data</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-06-19T20:01:04Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
       
   Includes also non-TIMAS Data: 
@@ -40,6 +40,12 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         <URL>http://lasp.colorado.edu/timas/h12-data/h12-data.html</URL>
       </InformationURL>
       <InformationURL>
+        <Name>Description of H1/H2 database</Name>
+        <URL>http://lasp.colorado.edu/timas/h12-data/1-flow_db_spec.html
+</URL>
+        <Description>Description of the data base included in this data set</Description>
+      </InformationURL>
+      <InformationURL>
         <Name>IDL code to read the po_h2_v01 data files and display them</Name>
         <URL>http://lasp.colorado.edu/timas/h12-data/read_h2.pro</URL>
       </InformationURL>
@@ -58,6 +64,16 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         <URL>http://lasp.colorado.edu/timas/papers/Lennartsson/Lennartsson_2004.pdf</URL>
         <Description>Solar wind control of Earth's H+ and O+ outflow rates in the 15-eV to 33-keV energy range, O.W Lennartsson, W.K. Peterson, and H.L. Collin, J. Geophys. Res., Vol. 109, No. A12, A12212 10.1029/2004JA010690, 15 December 2004.</Description>
       </InformationURL>
+      <InformationURL>
+        <Name>Peterson et al., JGR, 2001</Name>
+        <URL>http://www.agu.org/pubs/crossref/2001/2000JA003006.shtml</URL>
+        <Description>Polar/TIMAS Observations of Suprathermal Ion Outflow During Solar Minimum Conditions, W.K. Peterson, H.L. Collin, A.W. Yau, and O.W. Lennartsson, J. Geophys. Res., 106, 6059, 2001.</Description>
+      </InformationURL>
+      <InformationURL>
+        <Name>Collin et al., GRL, 1998</Name>
+        <URL>http://www.agu.org/pubs/crossref/1998/1998GL900090.shtml</URL>
+        <Description>The Seasonal Variation of Auroral Ion Beams, H.L. Collin, W.K. Peterson, O.W. Lennartsson, and J.F. Drake, Geophysical Research Letters, 25, 4071, 1998.</Description>
+      </InformationURL>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://VMO/Repository/LASP_TIMAS_H2</RepositoryID>
@@ -73,6 +89,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
     <ProviderProcessingLevel>Level 1</ProviderProcessingLevel>
     <ProviderVersion>v_01</ProviderVersion>
     <InstrumentID>spase://SMWG/Instrument/POLAR/TIMAS</InstrumentID>
+    <MeasurementType>ChargedParticleFlux</MeasurementType>
     <MeasurementType>IonComposition</MeasurementType>
     <MeasurementType>Spectrum</MeasurementType>
     <MeasurementType>ThermalPlasma</MeasurementType>
@@ -87,7 +104,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
     <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
     <Caveats>Several compromises were made in assembling the data base. In particular background subtraction, short averaging intervals and the normally low count rates for minor ions (O+, He+, and He++) lead to many data intervals where the data values reported are not statistically significant. The data files therefore contain many diagnostic parameters and data quality flags.</Caveats>
-    <Keyword>Any?</Keyword>
+    <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
+    <Keyword>Net outflowing number flux</Keyword>
     <InputResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</InputResourceID>
     <InputResourceID>spase://VHO/NumericalData/WIND/MFI/v4_PT03S</InputResourceID>
     <InputResourceID>spase://VHO/NumericalData/WIND/SWE/apbimax</InputResourceID>
@@ -153,7 +171,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Name>H+ Fluence</Name>
       <ParameterKey>H_Fluence</ParameterKey>
       <Description>H+ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
-      <Caveats>For statistical studies normalize to a standard altitude!</Caveats>
+      <Caveats>For statistical studies normalize to a standard altitude! Negative flux values correspond to downflowing fluxes.</Caveats>
       <Units>#/cm^2-sec</Units>
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
@@ -176,7 +194,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Name>O+ Fluence</Name>
       <ParameterKey>O_Fluence</ParameterKey>
       <Description>O+ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
-      <Caveats>For statistical studies normalize to a standard altitude!</Caveats>
+      <Caveats>For statistical studies normalize to a standard altitude! Negative flux values correspond to downflowing fluxes.</Caveats>
       <Units>#/cm^2-sec</Units>
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
@@ -199,7 +217,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Name>He+ Fluence</Name>
       <ParameterKey>He1_Fluence</ParameterKey>
       <Description>He+ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
-      <Caveats>For statistical studies normalize to a standard altitude!</Caveats>
+      <Caveats>For statistical studies normalize to a standard altitude! Negative flux values correspond to downflowing fluxes.</Caveats>
       <Units>#/cm^2-sec</Units>
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
@@ -222,7 +240,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Name>He++ Fluence</Name>
       <ParameterKey>He2_Fluence</ParameterKey>
       <Description>He++ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
-      <Caveats>For statistical studies normalize to a standard altitude!</Caveats>
+      <Caveats>For statistical studies normalize to a standard altitude! Negative flux values correspond to downflowing fluxes.</Caveats>
       <Units>#/cm^2-sec</Units>
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
@@ -701,8 +719,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Name>Geocentric Distance</Name>
       <ParameterKey>R</ParameterKey>
       <Description>Geocentric Distance</Description>
-      <Units>Earth Radii</Units>
-      <UnitsConversion>FILL IN!</UnitsConversion>
+      <Units>Re</Units>
+      <UnitsConversion>6.370e6&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
@@ -718,8 +736,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Name>L parameter</Name>
       <ParameterKey>L</ParameterKey>
       <Description>MacIlwain L Parameter</Description>
-      <Units>Earth Radii</Units>
-      <UnitsConversion>FILL IN!</UnitsConversion>
+      <Units>Re</Units>
+      <UnitsConversion>6.370e6&gt;m</UnitsConversion>
       <ValidMin>0</ValidMin>
       <ValidMax>10</ValidMax>
       <FillValue>-1.0E31</FillValue>
@@ -840,7 +858,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ParameterKey>SC_Potential</ParameterKey>
       <Description>Space craft potential from EFI</Description>
       <Caveats>This Variable has not been extensively validated ... use with caution.</Caveats>
-      <Units>eV (really?)</Units>
+      <Units>V</Units>
       <ValidMin>-50.0</ValidMin>
       <ValidMax>100.0</ValidMax>
       <FillValue>-1.0E31</FillValue>
