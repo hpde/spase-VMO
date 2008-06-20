@@ -4,8 +4,8 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT96S</ResourceID>
     <ResourceHeader>
-      <ResourceName>Polar TIMAS Key Parameter data</ResourceName>
-      <ReleaseDate>2008-06-19T20:01:10Z</ReleaseDate>
+      <ResourceName>Polar TIMAS K1 Key Parameter data</ResourceName>
+      <ReleaseDate>2008-06-20T19:00:52Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ number fluxes for survey purposes only 
       
 Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
@@ -59,9 +59,9 @@ Version 0: June, 2001
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
-    <Caveats>On December 8, 1998 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q. The data from the two lowest energy channels in this data set (430 and 585 eV respectively) should be used with caution.  
+    <Caveats>On December 8, 1998 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q. The data from the two lowest energy channels in this data set (430 and 585 eV respectively) should be used with caution. Prior to the breakdown, the TIMAS H0 data product provides higher time resolution data in the full energy and angular range.
 
-The data are averaged over time (96 seconds) and angle (nearly the full 4 pi), so narrow angular and/or temporal features are not shown. Higher temporal and angular resolution data can be interactively generated at http://lasp.colorado.edu/timas/mrdf/  
+The K1 data are averaged over time (96 seconds) and angle (nearly the full 4 pi), so narrow angular and/or temporal features are not shown. Higher temporal and angular resolution data can be interactively generated at http://lasp.colorado.edu/timas/mrdf/  
 </Caveats>
     <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
     <Keyword>Omni-directional Number Flux</Keyword>
