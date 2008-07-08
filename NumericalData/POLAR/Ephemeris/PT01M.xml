@@ -166,7 +166,7 @@
     <PhysicalParameter>
       <Name>GSE Cartesian Position </Name>
       <ParameterKey>GSE_POS</ParameterKey>
-      <Units>km/s</Units>
+      <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
@@ -246,7 +246,7 @@
     <PhysicalParameter>
       <Name>GSM Cartesian Position </Name>
       <ParameterKey>GSM_POS</ParameterKey>
-      <Units>km/s</Units>
+      <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
@@ -326,7 +326,7 @@
     <PhysicalParameter>
       <Name>GCI Sun Postion Vector </Name>
       <ParameterKey>SUN_VECTOR</ParameterKey>
-      <Units>km/s</Units>
+      <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
@@ -365,7 +365,7 @@
     <PhysicalParameter>
       <Name>HEC Cartesian Position </Name>
       <ParameterKey>HEC_POS</ParameterKey>
-      <Units>km/s</Units>
+      <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
