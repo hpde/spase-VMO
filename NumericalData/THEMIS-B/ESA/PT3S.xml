@@ -379,7 +379,7 @@
           <ParticleQualifier>Array</ParticleQualifier>
           <ParticleQuantity>EnergyFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>6</Low>
+            <Low>5</Low>
             <High>25000</High>
             <Units>eV</Units>
           </EnergyRange>
@@ -2687,7 +2687,7 @@
           <ParticleQualifier>Array</ParticleQualifier>
           <ParticleQuantity>EnergyFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>6</Low>
+            <Low>5</Low>
             <High>25000</High>
             <Units>eV</Units>
           </EnergyRange>
@@ -4995,7 +4995,7 @@
           <ParticleQualifier>Array</ParticleQualifier>
           <ParticleQuantity>EnergyFlux</ParticleQuantity>
           <EnergyRange>
-            <Low>6</Low>
+            <Low>5</Low>
             <High>25000</High>
             <Units>eV</Units>
           </EnergyRange>
