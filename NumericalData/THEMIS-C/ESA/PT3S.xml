@@ -126,11 +126,6 @@
         <Field>
           <FieldQualifier>Scalar</FieldQualifier>
           <FieldQuantity>Potential</FieldQuantity>
-          <FrequencyRange>
-            <Low>0</Low>
-            <High>8</High>
-            <Units>kHz</Units>
-          </FrequencyRange>
         </Field>
       </Measured>
     </PhysicalParameter>
@@ -1280,11 +1275,6 @@
         <Field>
           <FieldQualifier>Scalar</FieldQualifier>
           <FieldQuantity>Potential</FieldQuantity>
-          <FrequencyRange>
-            <Low>0</Low>
-            <High>8</High>
-            <Units>kHz</Units>
-          </FrequencyRange>
         </Field>
       </Measured>
     </PhysicalParameter>
@@ -2434,11 +2424,6 @@
         <Field>
           <FieldQualifier>Scalar</FieldQualifier>
           <FieldQuantity>Potential</FieldQuantity>
-          <FrequencyRange>
-            <Low>0</Low>
-            <High>8</High>
-            <Units>kHz</Units>
-          </FrequencyRange>
         </Field>
       </Measured>
     </PhysicalParameter>
@@ -3588,11 +3573,6 @@
         <Field>
           <FieldQualifier>Scalar</FieldQualifier>
           <FieldQuantity>Potential</FieldQuantity>
-          <FrequencyRange>
-            <Low>0</Low>
-            <High>8</High>
-            <Units>kHz</Units>
-          </FrequencyRange>
         </Field>
       </Measured>
     </PhysicalParameter>
@@ -4742,11 +4722,6 @@
         <Field>
           <FieldQualifier>Scalar</FieldQualifier>
           <FieldQuantity>Potential</FieldQuantity>
-          <FrequencyRange>
-            <Low>0</Low>
-            <High>8</High>
-            <Units>kHz</Units>
-          </FrequencyRange>
         </Field>
       </Measured>
     </PhysicalParameter>
@@ -5896,11 +5871,6 @@
         <Field>
           <FieldQualifier>Scalar</FieldQualifier>
           <FieldQuantity>Potential</FieldQuantity>
-          <FrequencyRange>
-            <Low>0</Low>
-            <High>8</High>
-            <Units>kHz</Units>
-          </FrequencyRange>
         </Field>
       </Measured>
     </PhysicalParameter>
