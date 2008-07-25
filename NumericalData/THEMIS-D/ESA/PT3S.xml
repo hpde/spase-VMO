@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-D/ESA/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-D ESA electron/ion energy fluxes and moments</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-07-25T18:55:10Z</ReleaseDate>
       <Description>THEMIS-D: Electrostatic Analyzers (ESA): Electron/Ion Ground-Calculated Energy Fluxes (5eV - 25 keV for Ions and 6eV - 30 KeV for Electrons)  and Moments (density, velocity, pressure, and temperature). The satellite has 2 modes Fast and Slow survey and 3 data types: FULL, REDUCED and BURST. FULL: 88 angles x 32 energies, time resolution of 128 spins(395 seconds) in slow survey and 32 spins(98 seconds) in fast survey. REDUCED:  spin time resolution(3 sec) but angles averaged into 1 angular spectra x 32 energies in slow survey or 6 angular spectra(90 degree x 90 degree window) x 32 energies in fast survey. BURST: 88 angles x 32 energies and spin time resolution(3 sec) but only available sporadically and for short duration. Note that angular resolution affects moments since they are obtained integrating over the mode-specific angular distribution.  These moments are processed on the ground.  They should be regarded as approximations but will improve in quality as our processing routines are improved over the course of the mission to account for additional sources of variance.</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: C. W. Carlson and J. P. McFadden for use of ESA data.</Acknowledgement>
       <Contact>
@@ -58,7 +58,7 @@
       <Name>ESA Full Mode, Ion Density</Name>
       <ParameterKey>thd_peif_density</ParameterKey>
       <Description>ESA Ion Density from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>cm^-3</Units>
       <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
@@ -77,7 +77,7 @@
       <Name>ESA Ion Average Temperature: Full Distribution</Name>
       <ParameterKey>thd_peif_avgtemp</ParameterKey>
       <Description>ESA Ion Average Temperature from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -97,7 +97,7 @@
       <Name>ESA Ion Thermal Velocity: Full Distribution</Name>
       <ParameterKey>thd_peif_vthermal</ParameterKey>
       <Description>ESA Ion Thermal Velocity from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -116,7 +116,7 @@
       <Name>SC Potential at full distribution cadence</Name>
       <ParameterKey>thd_peif_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the full angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa full distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -138,7 +138,7 @@
       <Name>ESA Ion energy spectrogram: full distribution</Name>
       <ParameterKey>thd_peif_en_eflux</ParameterKey>
       <Description>ESA Ion energy spectrogram energy flux calculated from full angle distribution.</Description>
-      <Caveats>Energy levels of eflux bins are stored in thd_peif_en_eflux_yaxis. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Energy levels of eflux bins are stored in thd_peif_en_eflux_yaxis. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/(cm^2*s*sr*eV)</Units>
       <UnitsConversion>1e4&gt;1/(m^2*s*sr)</UnitsConversion>
@@ -151,7 +151,6 @@
         <Element>
           <Name>thd_peif_en_eflux1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -159,7 +158,6 @@
         <Element>
           <Name>thd_peif_en_eflux2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -167,7 +165,6 @@
         <Element>
           <Name>thd_peif_en_eflux3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -175,7 +172,6 @@
         <Element>
           <Name>thd_peif_en_eflux4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -183,7 +179,6 @@
         <Element>
           <Name>thd_peif_en_eflux5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -191,7 +186,6 @@
         <Element>
           <Name>thd_peif_en_eflux6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -199,7 +193,6 @@
         <Element>
           <Name>thd_peif_en_eflux7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -207,7 +200,6 @@
         <Element>
           <Name>thd_peif_en_eflux8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -215,7 +207,6 @@
         <Element>
           <Name>thd_peif_en_eflux9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -223,7 +214,6 @@
         <Element>
           <Name>thd_peif_en_eflux10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -231,7 +221,6 @@
         <Element>
           <Name>thd_peif_en_eflux11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -239,7 +228,6 @@
         <Element>
           <Name>thd_peif_en_eflux12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -247,7 +235,6 @@
         <Element>
           <Name>thd_peif_en_eflux13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -255,7 +242,6 @@
         <Element>
           <Name>thd_peif_en_eflux14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -263,7 +249,6 @@
         <Element>
           <Name>thd_peif_en_eflux15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -271,7 +256,6 @@
         <Element>
           <Name>thd_peif_en_eflux16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -279,7 +263,6 @@
         <Element>
           <Name>thd_peif_en_eflux17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -287,7 +270,6 @@
         <Element>
           <Name>thd_peif_en_eflux18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -295,7 +277,6 @@
         <Element>
           <Name>thd_peif_en_eflux19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -303,7 +284,6 @@
         <Element>
           <Name>thd_peif_en_eflux20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -311,7 +291,6 @@
         <Element>
           <Name>thd_peif_en_eflux21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -319,7 +298,6 @@
         <Element>
           <Name>thd_peif_en_eflux22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -327,7 +305,6 @@
         <Element>
           <Name>thd_peif_en_eflux23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -335,7 +312,6 @@
         <Element>
           <Name>thd_peif_en_eflux24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -343,7 +319,6 @@
         <Element>
           <Name>thd_peif_en_eflux25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -351,7 +326,6 @@
         <Element>
           <Name>thd_peif_en_eflux26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -359,7 +333,6 @@
         <Element>
           <Name>thd_peif_en_eflux27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -367,7 +340,6 @@
         <Element>
           <Name>thd_peif_en_eflux28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -375,7 +347,6 @@
         <Element>
           <Name>thd_peif_en_eflux29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -383,7 +354,6 @@
         <Element>
           <Name>thd_peif_en_eflux30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -391,7 +361,6 @@
         <Element>
           <Name>thd_peif_en_eflux31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -399,7 +368,6 @@
         <Element>
           <Name>thd_peif_en_eflux32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -422,7 +390,7 @@
       <Name>thd_peif_en_eflux_yaxis: full distribution</Name>
       <ParameterKey>thd_peif_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for thd_peif_en_eflux</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -431,7 +399,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -439,7 +406,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -447,7 +413,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -455,7 +420,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -463,7 +427,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -471,7 +434,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -479,7 +441,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -487,7 +448,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -495,7 +455,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -503,7 +462,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -511,7 +469,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -519,7 +476,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -527,7 +483,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -535,7 +490,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -543,7 +497,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -551,7 +504,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -559,7 +511,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -567,7 +518,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -575,7 +525,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -583,7 +532,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -591,7 +539,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -599,7 +546,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -607,7 +553,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -615,7 +560,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -623,7 +567,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -631,7 +574,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -639,7 +581,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -647,7 +588,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -655,7 +595,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -663,7 +602,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -671,7 +609,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -679,7 +616,6 @@
         <Element>
           <Name>thd_peif_en_eflux_yaxis32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -703,7 +639,7 @@
       <Name>thd_peif_t3</Name>
       <ParameterKey>thd_peif_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -716,7 +652,6 @@
         <Element>
           <Name>Tprp1_ion Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -724,7 +659,6 @@
         <Element>
           <Name>Tprp2_ion Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -732,7 +666,6 @@
         <Element>
           <Name>Tpar_ion Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -750,7 +683,7 @@
       <Name>thd_peif_magt3</Name>
       <ParameterKey>thd_peif_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from full angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
-      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -763,7 +696,6 @@
         <Element>
           <Name>Tprp1_ion FA Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -771,7 +703,6 @@
         <Element>
           <Name>Tprp2_ion FA Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -779,7 +710,6 @@
         <Element>
           <Name>Tpar_ion FA Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -797,7 +727,7 @@
       <Name>Ion Pressure Tensor: Full Distribution</Name>
       <ParameterKey>thd_peif_ptens</ParameterKey>
       <Description>Ion pressure tensor calculated from full angle distribution.  Elements from symmetric ion pressure covariance matrix.</Description>
-      <Caveats>Only 6 elements are provided since matrix is symmetrical. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Only 6 elements are provided since matrix is symmetrical. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -810,7 +740,6 @@
         <Element>
           <Name>Pxx_ion Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -818,7 +747,6 @@
         <Element>
           <Name>Pyy_ion Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -826,7 +754,6 @@
         <Element>
           <Name>Pzz_ion Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -834,7 +761,6 @@
         <Element>
           <Name>Pxy_ion Full ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -842,7 +768,6 @@
         <Element>
           <Name>Pxz_ion Full ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -850,7 +775,6 @@
         <Element>
           <Name>Pyz_ion Full ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -868,7 +792,7 @@
       <Name>Ion Momentum Flux Tensor: Full Distribution</Name>
       <ParameterKey>thd_peif_mftens</ParameterKey>
       <Description>Ion Momentum Flux Tensor calculated from full angle distribution.  Elements from symmetric ion momentum flux matrix.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -881,7 +805,6 @@
         <Element>
           <Name>MFxx_ion Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -889,7 +812,6 @@
         <Element>
           <Name>MFxy_ion Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -897,7 +819,6 @@
         <Element>
           <Name>MFxz_ion Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -905,7 +826,6 @@
         <Element>
           <Name>MFyy_ion Full ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -913,7 +833,6 @@
         <Element>
           <Name>MFzz_ion Full ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -921,7 +840,6 @@
         <Element>
           <Name>MFyz_ion Full ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -939,7 +857,7 @@
       <Name>Ion Particle Flux Vector: Full Distribution</Name>
       <ParameterKey>thd_peif_flux</ParameterKey>
       <Description>Ion Particle Flux Vector calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -952,7 +870,6 @@
         <Element>
           <Name>Fx_ion DSL Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -960,7 +877,6 @@
         <Element>
           <Name>Fy_ion DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -968,7 +884,6 @@
         <Element>
           <Name>Fz_ion DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -986,7 +901,7 @@
       <Name>Ion Symmetry Vector: Full Distribution</Name>
       <ParameterKey>thd_peif_symm</ParameterKey>
       <Description>Ion Symmetry Vector is the direction of pressure tensor(peif_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the full angle distibution quantities.</Description>
-      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>None</Units>
       <CoordinateSystem>
@@ -998,7 +913,6 @@
         <Element>
           <Name>Symm_xi Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1006,7 +920,6 @@
         <Element>
           <Name>Symm_yi Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1014,7 +927,6 @@
         <Element>
           <Name>Symm_zi Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1028,7 +940,7 @@
       <Name>Ion Symmetry Angle (between symmetry direction and B): Full Distribution</Name>
       <ParameterKey>thd_peif_symm_ang</ParameterKey>
       <Description>Ion Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peif_t3 and the peif_magt3 quantities. Calculated from the full angle distribution quantities.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>degrees</Units>
       <ValidMin>0.0</ValidMin>
@@ -1042,7 +954,7 @@
       <Name>Magnetic Field Vector SC: Full Distribution/Ion </Name>
       <ParameterKey>thd_peif_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the full distribution moments. It was taken from the FGM data and interpolated to match the cadence of the full distribution ESA data.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>10e-9&gt;T</UnitsConversion>
@@ -1055,7 +967,6 @@
         <Element>
           <Name>Bx_ion DSL Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1063,7 +974,6 @@
         <Element>
           <Name>By_ion DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1071,7 +981,6 @@
         <Element>
           <Name>Bz_ion DSL Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1088,7 +997,7 @@
       <Name>Ion Velocity Vector SC: Full Distribution</Name>
       <ParameterKey>thd_peif_velocity_dsl</ParameterKey>
       <Description>Ion Velocity Vector in Despun spacecraft coordinates. Calculated from full distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -1101,7 +1010,6 @@
         <Element>
           <Name>Vx_ion DSL Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1109,7 +1017,6 @@
         <Element>
           <Name>Vy_ion DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1117,7 +1024,6 @@
         <Element>
           <Name>Vz_ion DSL Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1135,7 +1041,7 @@
       <Name>Ion Velocity Vector in GSE: Full Distribution</Name>
       <ParameterKey>thd_peif_velocity_gse</ParameterKey>
       <Description>Ion Velocity Vector in GSE coordinates. Calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -1148,7 +1054,6 @@
         <Element>
           <Name>Vx_ion GSE Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1156,7 +1061,6 @@
         <Element>
           <Name>Vy_ion GSE Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1164,7 +1068,6 @@
         <Element>
           <Name>Vz_ion GSE Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1182,7 +1085,7 @@
       <Name>Ion Velocity Vector in GSM: Full Distribution</Name>
       <ParameterKey>thd_peif_velocity_gsm</ParameterKey>
       <Description>Ion Velocity Vector in GSM coordinates. Calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -1195,7 +1098,6 @@
         <Element>
           <Name>Vx_ion GSM Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1203,7 +1105,6 @@
         <Element>
           <Name>Vy_ion GSM Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1211,7 +1112,6 @@
         <Element>
           <Name>Vz_ion GSM Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1229,7 +1129,7 @@
       <Name>thd_peif_time</Name>
       <ParameterKey>thd_peif_time</ParameterKey>
       <Description>thd_peif_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA full distribution data</Description>
-      <Caveats>Unleaped seconds. Sample start and end time can be calculated from thd_peif_delta_time (sample duration). Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Unleaped seconds. Sample start and end time can be calculated from thd_peif_delta_time (sample duration). Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>sec</Units>
       <ValidMin>0.0</ValidMin>
@@ -1255,7 +1155,7 @@
       <Name>thd_peif_mode</Name>
       <ParameterKey>thd_peif_mode</ParameterKey>
       <Description>Ion survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>none</Units>
       <Structure>
@@ -1263,7 +1163,6 @@
         <Element>
           <Name>cfg1_ion Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1271,7 +1170,6 @@
         <Element>
           <Name>cfg2_ion Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1279,7 +1177,6 @@
         <Element>
           <Name>mode_ion Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1301,7 +1198,6 @@
         <Element>
           <Name>Epoch</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>01-Jan-1900</ValidMin>
           <ValidMax>31-Dec-2100</ValidMax>
           <FillValue>31-Dec-9999</FillValue>
@@ -1316,7 +1212,7 @@
       <Name>ESA Full Mode, Electron Density</Name>
       <ParameterKey>thd_peef_density</ParameterKey>
       <Description>ESA Electron Density from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>cm^-3</Units>
       <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
@@ -1335,7 +1231,7 @@
       <Name>ESA Electron Average Temperature: Full Distribution</Name>
       <ParameterKey>thd_peef_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1355,7 +1251,7 @@
       <Name>ESA Electron Thermal Velocity: Full Distribution</Name>
       <ParameterKey>thd_peef_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -1374,7 +1270,7 @@
       <Name>SC Potential at full distribution cadence</Name>
       <ParameterKey>thd_peef_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the full angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa full distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -1396,7 +1292,7 @@
       <Name>ESA Electron energy spectrogram: full distribution</Name>
       <ParameterKey>thd_peef_en_eflux</ParameterKey>
       <Description>ESA Electron energy spectrogram energy flux calculated from full angle distribution.</Description>
-      <Caveats>Energy levels of eflux bins are stored in thd_peef_en_eflux_yaxis. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Energy levels of eflux bins are stored in thd_peef_en_eflux_yaxis. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/(cm^2*s*sr*eV)</Units>
       <UnitsConversion>1e4&gt;1/(m^2*s*sr)</UnitsConversion>
@@ -1409,7 +1305,6 @@
         <Element>
           <Name>thd_peef_en_eflux1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1417,7 +1312,6 @@
         <Element>
           <Name>thd_peef_en_eflux2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1425,7 +1319,6 @@
         <Element>
           <Name>thd_peef_en_eflux3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1433,7 +1326,6 @@
         <Element>
           <Name>thd_peef_en_eflux4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1441,7 +1333,6 @@
         <Element>
           <Name>thd_peef_en_eflux5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1449,7 +1340,6 @@
         <Element>
           <Name>thd_peef_en_eflux6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1457,7 +1347,6 @@
         <Element>
           <Name>thd_peef_en_eflux7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1465,7 +1354,6 @@
         <Element>
           <Name>thd_peef_en_eflux8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1473,7 +1361,6 @@
         <Element>
           <Name>thd_peef_en_eflux9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1481,7 +1368,6 @@
         <Element>
           <Name>thd_peef_en_eflux10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1489,7 +1375,6 @@
         <Element>
           <Name>thd_peef_en_eflux11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1497,7 +1382,6 @@
         <Element>
           <Name>thd_peef_en_eflux12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1505,7 +1389,6 @@
         <Element>
           <Name>thd_peef_en_eflux13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1513,7 +1396,6 @@
         <Element>
           <Name>thd_peef_en_eflux14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1521,7 +1403,6 @@
         <Element>
           <Name>thd_peef_en_eflux15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1529,7 +1410,6 @@
         <Element>
           <Name>thd_peef_en_eflux16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1537,7 +1417,6 @@
         <Element>
           <Name>thd_peef_en_eflux17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1545,7 +1424,6 @@
         <Element>
           <Name>thd_peef_en_eflux18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1553,7 +1431,6 @@
         <Element>
           <Name>thd_peef_en_eflux19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1561,7 +1438,6 @@
         <Element>
           <Name>thd_peef_en_eflux20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1569,7 +1445,6 @@
         <Element>
           <Name>thd_peef_en_eflux21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1577,7 +1452,6 @@
         <Element>
           <Name>thd_peef_en_eflux22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1585,7 +1459,6 @@
         <Element>
           <Name>thd_peef_en_eflux23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1593,7 +1466,6 @@
         <Element>
           <Name>thd_peef_en_eflux24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1601,7 +1473,6 @@
         <Element>
           <Name>thd_peef_en_eflux25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1609,7 +1480,6 @@
         <Element>
           <Name>thd_peef_en_eflux26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1617,7 +1487,6 @@
         <Element>
           <Name>thd_peef_en_eflux27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1625,7 +1494,6 @@
         <Element>
           <Name>thd_peef_en_eflux28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1633,7 +1501,6 @@
         <Element>
           <Name>thd_peef_en_eflux29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1641,7 +1508,6 @@
         <Element>
           <Name>thd_peef_en_eflux30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1649,7 +1515,6 @@
         <Element>
           <Name>thd_peef_en_eflux31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1657,7 +1522,6 @@
         <Element>
           <Name>thd_peef_en_eflux32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1680,7 +1544,7 @@
       <Name>thd_peef_en_eflux_yaxis: full distribution</Name>
       <ParameterKey>thd_peef_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for thd_peef_en_eflux</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1689,7 +1553,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1697,7 +1560,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1705,7 +1567,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1713,7 +1574,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1721,7 +1581,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1729,7 +1588,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1737,7 +1595,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1745,7 +1602,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1753,7 +1609,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1761,7 +1616,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1769,7 +1623,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1777,7 +1630,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1785,7 +1637,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1793,7 +1644,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1801,7 +1651,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1809,7 +1658,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1817,7 +1665,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1825,7 +1672,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1833,7 +1679,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1841,7 +1686,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1849,7 +1693,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1857,7 +1700,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1865,7 +1707,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1873,7 +1714,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1881,7 +1721,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1889,7 +1728,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1897,7 +1735,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1905,7 +1742,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1913,7 +1749,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1921,7 +1756,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1929,7 +1763,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1937,7 +1770,6 @@
         <Element>
           <Name>thd_peef_en_eflux_yaxis32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1961,7 +1793,7 @@
       <Name>Electron Diagonalized Temperature</Name>
       <ParameterKey>thd_peef_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1974,7 +1806,6 @@
         <Element>
           <Name>Tprp1_elec Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1982,7 +1813,6 @@
         <Element>
           <Name>Tprp2_elec Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1990,7 +1820,6 @@
         <Element>
           <Name>Tpar_elec Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2008,7 +1837,7 @@
       <Name>Electron Diagonalized Temperature, Field Aligned</Name>
       <ParameterKey>thd_peef_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from full angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -2021,7 +1850,6 @@
         <Element>
           <Name>Tprp1_elec FA Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2029,7 +1857,6 @@
         <Element>
           <Name>Tprp2_elec FA Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2037,7 +1864,6 @@
         <Element>
           <Name>Tpar_elec FA Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2055,7 +1881,7 @@
       <Name>Electron Pressure Tensor: Full Distribution</Name>
       <ParameterKey>thd_peef_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from full angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
-      <Caveats>Only 6 elements are provided since matrix is symmetrical. Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Only 6 elements are provided since matrix is symmetrical. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -2068,7 +1894,6 @@
         <Element>
           <Name>Pxx_elec Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2076,7 +1901,6 @@
         <Element>
           <Name>Pyy_elec Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2084,7 +1908,6 @@
         <Element>
           <Name>Pzz_elec Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2092,7 +1915,6 @@
         <Element>
           <Name>Pxy_elec Full ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2100,7 +1922,6 @@
         <Element>
           <Name>Pxz_elec Full ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2108,7 +1929,6 @@
         <Element>
           <Name>Pyz_elec Full ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2126,7 +1946,7 @@
       <Name>Electron Momentum Flux Tensor: Full Distribution</Name>
       <ParameterKey>thd_peef_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from full angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -2139,7 +1959,6 @@
         <Element>
           <Name>MFxx_elec Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2147,7 +1966,6 @@
         <Element>
           <Name>MFxy_elec Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2155,7 +1973,6 @@
         <Element>
           <Name>MFxz_elec Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2163,7 +1980,6 @@
         <Element>
           <Name>MFyy_elec Full ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2171,7 +1987,6 @@
         <Element>
           <Name>MFzz_elec Full ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2179,7 +1994,6 @@
         <Element>
           <Name>MFyz_elec Full ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2197,7 +2011,7 @@
       <Name>Electron Particle Flux Vector: Full Distribution</Name>
       <ParameterKey>thd_peef_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -2210,7 +2024,6 @@
         <Element>
           <Name>Fx_elec DSL Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2218,7 +2031,6 @@
         <Element>
           <Name>Fy_elec DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2226,7 +2038,6 @@
         <Element>
           <Name>Fz_elec DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2244,7 +2055,7 @@
       <Name>Electron Symmetry Vector: Full Distribution</Name>
       <ParameterKey>thd_peef_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peef_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the full angle distibution quantities.</Description>
-      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>None</Units>
       <CoordinateSystem>
@@ -2256,7 +2067,6 @@
         <Element>
           <Name>Symm_xi Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2264,7 +2074,6 @@
         <Element>
           <Name>Symm_yi Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2272,7 +2081,6 @@
         <Element>
           <Name>Symm_zi Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2286,7 +2094,7 @@
       <Name>Electron Symmetry Angle (between symmetry direction and B): Full Distribution</Name>
       <ParameterKey>thd_peef_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peef_t3 and the peef_magt3 quantities. Calculated from the full angle distribution quantities.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>degrees</Units>
       <ValidMin>0.0</ValidMin>
@@ -2300,7 +2108,7 @@
       <Name>Magnetic Field Vector SC: Full Distribution/Electron</Name>
       <ParameterKey>thd_peef_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the full distribution moments. It was taken from the FGM data and interpolated to match the cadence of the full distribution ESA data.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>10e-9&gt;T</UnitsConversion>
@@ -2313,7 +2121,6 @@
         <Element>
           <Name>Bx_elec DSL Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2321,7 +2128,6 @@
         <Element>
           <Name>By_elec DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2329,7 +2135,6 @@
         <Element>
           <Name>Bz_elec DSL Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2346,7 +2151,7 @@
       <Name>Electron Velocity Vector SC: Full Distribution</Name>
       <ParameterKey>thd_peef_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from full distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -2359,7 +2164,6 @@
         <Element>
           <Name>Vx_elec DSL Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2367,7 +2171,6 @@
         <Element>
           <Name>Vy_elec DSL Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2375,7 +2178,6 @@
         <Element>
           <Name>Vz_elec DSL Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2393,7 +2195,7 @@
       <Name>Electron Velocity Vector in GSE: Full Distribution</Name>
       <ParameterKey>thd_peef_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -2406,7 +2208,6 @@
         <Element>
           <Name>Vx_elec GSE Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2414,7 +2215,6 @@
         <Element>
           <Name>Vy_elec GSE Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2422,7 +2222,6 @@
         <Element>
           <Name>Vz_elec GSE Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2440,7 +2239,7 @@
       <Name>Electron Velocity Vector in GSM: Full Distribution</Name>
       <ParameterKey>thd_peef_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates. Calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -2453,7 +2252,6 @@
         <Element>
           <Name>Vx_elec GSM Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2461,7 +2259,6 @@
         <Element>
           <Name>Vy_elec GSM Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2469,7 +2266,6 @@
         <Element>
           <Name>Vz_elec GSM Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2487,7 +2283,7 @@
       <Name>thd_peef_time</Name>
       <ParameterKey>thd_peef_time</ParameterKey>
       <Description>thd_peef_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA full distribution data</Description>
-      <Caveats>Unleaped seconds. Sample start and end time can be calculated from thd_peef_delta_time (sample duration). Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Unleaped seconds. Sample start and end time can be calculated from thd_peef_delta_time (sample duration). Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>sec</Units>
       <ValidMin>0.0</ValidMin>
@@ -2513,7 +2309,7 @@
       <Name>thd_peef_mode</Name>
       <ParameterKey>thd_peef_mode</ParameterKey>
       <Description>Electron survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
-      <Caveats>Some of the data are at a cadence of PT395S, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>none</Units>
       <Structure>
@@ -2521,7 +2317,6 @@
         <Element>
           <Name>cfg1_elec Full ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2529,7 +2324,6 @@
         <Element>
           <Name>cfg2_elec Full ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2537,7 +2331,6 @@
         <Element>
           <Name>mode_elec Full ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2559,7 +2352,6 @@
         <Element>
           <Name>Epoch</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>01-Jan-1900</ValidMin>
           <ValidMax>31-Dec-2100</ValidMax>
           <FillValue>31-Dec-9999</FillValue>
@@ -2667,7 +2459,6 @@
         <Element>
           <Name>thd_peir_en_eflux1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2675,7 +2466,6 @@
         <Element>
           <Name>thd_peir_en_eflux2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2683,7 +2473,6 @@
         <Element>
           <Name>thd_peir_en_eflux3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2691,7 +2480,6 @@
         <Element>
           <Name>thd_peir_en_eflux4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2699,7 +2487,6 @@
         <Element>
           <Name>thd_peir_en_eflux5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2707,7 +2494,6 @@
         <Element>
           <Name>thd_peir_en_eflux6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2715,7 +2501,6 @@
         <Element>
           <Name>thd_peir_en_eflux7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2723,7 +2508,6 @@
         <Element>
           <Name>thd_peir_en_eflux8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2731,7 +2515,6 @@
         <Element>
           <Name>thd_peir_en_eflux9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2739,7 +2522,6 @@
         <Element>
           <Name>thd_peir_en_eflux10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2747,7 +2529,6 @@
         <Element>
           <Name>thd_peir_en_eflux11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2755,7 +2536,6 @@
         <Element>
           <Name>thd_peir_en_eflux12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2763,7 +2543,6 @@
         <Element>
           <Name>thd_peir_en_eflux13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2771,7 +2550,6 @@
         <Element>
           <Name>thd_peir_en_eflux14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2779,7 +2557,6 @@
         <Element>
           <Name>thd_peir_en_eflux15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2787,7 +2564,6 @@
         <Element>
           <Name>thd_peir_en_eflux16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2795,7 +2571,6 @@
         <Element>
           <Name>thd_peir_en_eflux17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2803,7 +2578,6 @@
         <Element>
           <Name>thd_peir_en_eflux18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2811,7 +2585,6 @@
         <Element>
           <Name>thd_peir_en_eflux19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2819,7 +2592,6 @@
         <Element>
           <Name>thd_peir_en_eflux20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2827,7 +2599,6 @@
         <Element>
           <Name>thd_peir_en_eflux21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2835,7 +2606,6 @@
         <Element>
           <Name>thd_peir_en_eflux22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2843,7 +2613,6 @@
         <Element>
           <Name>thd_peir_en_eflux23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2851,7 +2620,6 @@
         <Element>
           <Name>thd_peir_en_eflux24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2859,7 +2627,6 @@
         <Element>
           <Name>thd_peir_en_eflux25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2867,7 +2634,6 @@
         <Element>
           <Name>thd_peir_en_eflux26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2875,7 +2641,6 @@
         <Element>
           <Name>thd_peir_en_eflux27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2883,7 +2648,6 @@
         <Element>
           <Name>thd_peir_en_eflux28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2891,7 +2655,6 @@
         <Element>
           <Name>thd_peir_en_eflux29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2899,7 +2662,6 @@
         <Element>
           <Name>thd_peir_en_eflux30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2907,7 +2669,6 @@
         <Element>
           <Name>thd_peir_en_eflux31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2915,7 +2676,6 @@
         <Element>
           <Name>thd_peir_en_eflux32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2947,7 +2707,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2955,7 +2714,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2963,7 +2721,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2971,7 +2728,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2979,7 +2735,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2987,7 +2742,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -2995,7 +2749,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3003,7 +2756,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3011,7 +2763,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3019,7 +2770,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3027,7 +2777,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3035,7 +2784,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3043,7 +2791,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3051,7 +2798,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3059,7 +2805,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3067,7 +2812,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3075,7 +2819,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3083,7 +2826,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3091,7 +2833,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3099,7 +2840,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3107,7 +2847,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3115,7 +2854,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3123,7 +2861,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3131,7 +2868,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3139,7 +2875,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3147,7 +2882,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3155,7 +2889,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3163,7 +2896,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3171,7 +2903,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3179,7 +2910,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3187,7 +2917,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3195,7 +2924,6 @@
         <Element>
           <Name>thd_peir_en_eflux_yaxis32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3232,7 +2960,6 @@
         <Element>
           <Name>Tprp1_ion Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3240,7 +2967,6 @@
         <Element>
           <Name>Tprp2_ion Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3248,7 +2974,6 @@
         <Element>
           <Name>Tpar_ion Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3279,7 +3004,6 @@
         <Element>
           <Name>Tprp1_ion FA Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3287,7 +3011,6 @@
         <Element>
           <Name>Tprp2_ion FA Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3295,7 +3018,6 @@
         <Element>
           <Name>Tpar_ion FA Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3326,7 +3048,6 @@
         <Element>
           <Name>Pxx_ion Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3334,7 +3055,6 @@
         <Element>
           <Name>Pyy_ion Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3342,7 +3062,6 @@
         <Element>
           <Name>Pzz_ion Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3350,7 +3069,6 @@
         <Element>
           <Name>Pxy_ion Rdcd ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3358,7 +3076,6 @@
         <Element>
           <Name>Pxz_ion Rdcd ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3366,7 +3083,6 @@
         <Element>
           <Name>Pyz_ion Rdcd ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3397,7 +3113,6 @@
         <Element>
           <Name>MFxx_ion Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3405,7 +3120,6 @@
         <Element>
           <Name>MFxy_ion Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3413,7 +3127,6 @@
         <Element>
           <Name>MFxz_ion Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3421,7 +3134,6 @@
         <Element>
           <Name>MFyy_ion Rdcd ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3429,7 +3141,6 @@
         <Element>
           <Name>MFzz_ion Rdcd ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3437,7 +3148,6 @@
         <Element>
           <Name>MFyz_ion Rdcd ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3468,7 +3178,6 @@
         <Element>
           <Name>Fx_ion DSL Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3476,7 +3185,6 @@
         <Element>
           <Name>Fy_ion DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3484,7 +3192,6 @@
         <Element>
           <Name>Fz_ion DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3514,7 +3221,6 @@
         <Element>
           <Name>Symm_xi Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3522,7 +3228,6 @@
         <Element>
           <Name>Symm_yi Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3530,7 +3235,6 @@
         <Element>
           <Name>Symm_zi Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3571,7 +3275,6 @@
         <Element>
           <Name>Bx_ion DSL Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3579,7 +3282,6 @@
         <Element>
           <Name>By_ion DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3587,7 +3289,6 @@
         <Element>
           <Name>Bz_ion DSL Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3617,7 +3318,6 @@
         <Element>
           <Name>Vx_ion DSL Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3625,7 +3325,6 @@
         <Element>
           <Name>Vy_ion DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3633,7 +3332,6 @@
         <Element>
           <Name>Vz_ion DSL Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3664,7 +3362,6 @@
         <Element>
           <Name>Vx_ion GSE Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3672,7 +3369,6 @@
         <Element>
           <Name>Vy_ion GSE Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3680,7 +3376,6 @@
         <Element>
           <Name>Vz_ion GSE Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3711,7 +3406,6 @@
         <Element>
           <Name>Vx_ion GSM Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3719,7 +3413,6 @@
         <Element>
           <Name>Vy_ion GSM Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3727,7 +3420,6 @@
         <Element>
           <Name>Vz_ion GSM Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3779,7 +3471,6 @@
         <Element>
           <Name>cfg1_ion Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3787,7 +3478,6 @@
         <Element>
           <Name>cfg2_ion Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3795,7 +3485,6 @@
         <Element>
           <Name>mode_ion Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3817,7 +3506,6 @@
         <Element>
           <Name>Epoch</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>01-Jan-1900</ValidMin>
           <ValidMax>31-Dec-2100</ValidMax>
           <FillValue>31-Dec-9999</FillValue>
@@ -3925,7 +3613,6 @@
         <Element>
           <Name>thd_peer_en_eflux1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3933,7 +3620,6 @@
         <Element>
           <Name>thd_peer_en_eflux2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3941,7 +3627,6 @@
         <Element>
           <Name>thd_peer_en_eflux3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3949,7 +3634,6 @@
         <Element>
           <Name>thd_peer_en_eflux4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3957,7 +3641,6 @@
         <Element>
           <Name>thd_peer_en_eflux5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3965,7 +3648,6 @@
         <Element>
           <Name>thd_peer_en_eflux6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3973,7 +3655,6 @@
         <Element>
           <Name>thd_peer_en_eflux7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3981,7 +3662,6 @@
         <Element>
           <Name>thd_peer_en_eflux8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3989,7 +3669,6 @@
         <Element>
           <Name>thd_peer_en_eflux9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -3997,7 +3676,6 @@
         <Element>
           <Name>thd_peer_en_eflux10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4005,7 +3683,6 @@
         <Element>
           <Name>thd_peer_en_eflux11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4013,7 +3690,6 @@
         <Element>
           <Name>thd_peer_en_eflux12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4021,7 +3697,6 @@
         <Element>
           <Name>thd_peer_en_eflux13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4029,7 +3704,6 @@
         <Element>
           <Name>thd_peer_en_eflux14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4037,7 +3711,6 @@
         <Element>
           <Name>thd_peer_en_eflux15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4045,7 +3718,6 @@
         <Element>
           <Name>thd_peer_en_eflux16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4053,7 +3725,6 @@
         <Element>
           <Name>thd_peer_en_eflux17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4061,7 +3732,6 @@
         <Element>
           <Name>thd_peer_en_eflux18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4069,7 +3739,6 @@
         <Element>
           <Name>thd_peer_en_eflux19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4077,7 +3746,6 @@
         <Element>
           <Name>thd_peer_en_eflux20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4085,7 +3753,6 @@
         <Element>
           <Name>thd_peer_en_eflux21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4093,7 +3760,6 @@
         <Element>
           <Name>thd_peer_en_eflux22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4101,7 +3767,6 @@
         <Element>
           <Name>thd_peer_en_eflux23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4109,7 +3774,6 @@
         <Element>
           <Name>thd_peer_en_eflux24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4117,7 +3781,6 @@
         <Element>
           <Name>thd_peer_en_eflux25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4125,7 +3788,6 @@
         <Element>
           <Name>thd_peer_en_eflux26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4133,7 +3795,6 @@
         <Element>
           <Name>thd_peer_en_eflux27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4141,7 +3802,6 @@
         <Element>
           <Name>thd_peer_en_eflux28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4149,7 +3809,6 @@
         <Element>
           <Name>thd_peer_en_eflux29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4157,7 +3816,6 @@
         <Element>
           <Name>thd_peer_en_eflux30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4165,7 +3823,6 @@
         <Element>
           <Name>thd_peer_en_eflux31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4173,7 +3830,6 @@
         <Element>
           <Name>thd_peer_en_eflux32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4205,7 +3861,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4213,7 +3868,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4221,7 +3875,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4229,7 +3882,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4237,7 +3889,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4245,7 +3896,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4253,7 +3903,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4261,7 +3910,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4269,7 +3917,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4277,7 +3924,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4285,7 +3931,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4293,7 +3938,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4301,7 +3945,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4309,7 +3952,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4317,7 +3959,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4325,7 +3966,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4333,7 +3973,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4341,7 +3980,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4349,7 +3987,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4357,7 +3994,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4365,7 +4001,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4373,7 +4008,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4381,7 +4015,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4389,7 +4022,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4397,7 +4029,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4405,7 +4036,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4413,7 +4043,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4421,7 +4050,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4429,7 +4057,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4437,7 +4064,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4445,7 +4071,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4453,7 +4078,6 @@
         <Element>
           <Name>thd_peer_en_eflux_yaxis32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4490,7 +4114,6 @@
         <Element>
           <Name>Tprp1_elec Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4498,7 +4121,6 @@
         <Element>
           <Name>Tprp2_elec Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4506,7 +4128,6 @@
         <Element>
           <Name>Tpar_elec Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4537,7 +4158,6 @@
         <Element>
           <Name>Tprp1_elec FA Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4545,7 +4165,6 @@
         <Element>
           <Name>Tprp2_elec FA Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4553,7 +4172,6 @@
         <Element>
           <Name>Tpar_elec FA Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4584,7 +4202,6 @@
         <Element>
           <Name>Pxx_elec Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4592,7 +4209,6 @@
         <Element>
           <Name>Pyy_elec Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4600,7 +4216,6 @@
         <Element>
           <Name>Pzz_elec Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4608,7 +4223,6 @@
         <Element>
           <Name>Pxy_elec Rdcd ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4616,7 +4230,6 @@
         <Element>
           <Name>Pxz_elec Rdcd ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4624,7 +4237,6 @@
         <Element>
           <Name>Pyz_elec Rdcd ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4655,7 +4267,6 @@
         <Element>
           <Name>MFxx_elec Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4663,7 +4274,6 @@
         <Element>
           <Name>MFxy_elec Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4671,7 +4281,6 @@
         <Element>
           <Name>MFxz_elec Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4679,7 +4288,6 @@
         <Element>
           <Name>MFyy_elec Rdcd ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4687,7 +4295,6 @@
         <Element>
           <Name>MFzz_elec Rdcd ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4695,7 +4302,6 @@
         <Element>
           <Name>MFyz_elec Rdcd ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4726,7 +4332,6 @@
         <Element>
           <Name>Fx_elec DSL Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4734,7 +4339,6 @@
         <Element>
           <Name>Fy_elec DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4742,7 +4346,6 @@
         <Element>
           <Name>Fz_elec DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4772,7 +4375,6 @@
         <Element>
           <Name>Symm_xi Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4780,7 +4382,6 @@
         <Element>
           <Name>Symm_yi Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4788,7 +4389,6 @@
         <Element>
           <Name>Symm_zi Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4829,7 +4429,6 @@
         <Element>
           <Name>Bx_elec DSL Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4837,7 +4436,6 @@
         <Element>
           <Name>By_elec DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4845,7 +4443,6 @@
         <Element>
           <Name>Bz_elec DSL Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4875,7 +4472,6 @@
         <Element>
           <Name>Vx_elec DSL Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4883,7 +4479,6 @@
         <Element>
           <Name>Vy_elec DSL Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4891,7 +4486,6 @@
         <Element>
           <Name>Vz_elec DSL Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4922,7 +4516,6 @@
         <Element>
           <Name>Vx_elec GSE Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4930,7 +4523,6 @@
         <Element>
           <Name>Vy_elec GSE Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4938,7 +4530,6 @@
         <Element>
           <Name>Vz_elec GSE Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4969,7 +4560,6 @@
         <Element>
           <Name>Vx_elec GSM Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4977,7 +4567,6 @@
         <Element>
           <Name>Vy_elec GSM Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -4985,7 +4574,6 @@
         <Element>
           <Name>Vz_elec GSM Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5037,7 +4625,6 @@
         <Element>
           <Name>cfg1_elec Rdcd ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5045,7 +4632,6 @@
         <Element>
           <Name>cfg2_elec Rdcd ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5053,7 +4639,6 @@
         <Element>
           <Name>mode_elec Rdcd ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5075,7 +4660,6 @@
         <Element>
           <Name>Epoch</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>01-Jan-1900</ValidMin>
           <ValidMax>31-Dec-2100</ValidMax>
           <FillValue>31-Dec-9999</FillValue>
@@ -5183,7 +4767,6 @@
         <Element>
           <Name>thd_peib_en_eflux1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5191,7 +4774,6 @@
         <Element>
           <Name>thd_peib_en_eflux2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5199,7 +4781,6 @@
         <Element>
           <Name>thd_peib_en_eflux3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5207,7 +4788,6 @@
         <Element>
           <Name>thd_peib_en_eflux4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5215,7 +4795,6 @@
         <Element>
           <Name>thd_peib_en_eflux5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5223,7 +4802,6 @@
         <Element>
           <Name>thd_peib_en_eflux6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5231,7 +4809,6 @@
         <Element>
           <Name>thd_peib_en_eflux7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5239,7 +4816,6 @@
         <Element>
           <Name>thd_peib_en_eflux8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5247,7 +4823,6 @@
         <Element>
           <Name>thd_peib_en_eflux9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5255,7 +4830,6 @@
         <Element>
           <Name>thd_peib_en_eflux10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5263,7 +4837,6 @@
         <Element>
           <Name>thd_peib_en_eflux11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5271,7 +4844,6 @@
         <Element>
           <Name>thd_peib_en_eflux12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5279,7 +4851,6 @@
         <Element>
           <Name>thd_peib_en_eflux13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5287,7 +4858,6 @@
         <Element>
           <Name>thd_peib_en_eflux14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5295,7 +4865,6 @@
         <Element>
           <Name>thd_peib_en_eflux15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5303,7 +4872,6 @@
         <Element>
           <Name>thd_peib_en_eflux16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5311,7 +4879,6 @@
         <Element>
           <Name>thd_peib_en_eflux17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5319,7 +4886,6 @@
         <Element>
           <Name>thd_peib_en_eflux18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5327,7 +4893,6 @@
         <Element>
           <Name>thd_peib_en_eflux19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5335,7 +4900,6 @@
         <Element>
           <Name>thd_peib_en_eflux20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5343,7 +4907,6 @@
         <Element>
           <Name>thd_peib_en_eflux21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5351,7 +4914,6 @@
         <Element>
           <Name>thd_peib_en_eflux22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5359,7 +4921,6 @@
         <Element>
           <Name>thd_peib_en_eflux23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5367,7 +4928,6 @@
         <Element>
           <Name>thd_peib_en_eflux24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5375,7 +4935,6 @@
         <Element>
           <Name>thd_peib_en_eflux25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5383,7 +4942,6 @@
         <Element>
           <Name>thd_peib_en_eflux26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5391,7 +4949,6 @@
         <Element>
           <Name>thd_peib_en_eflux27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5399,7 +4956,6 @@
         <Element>
           <Name>thd_peib_en_eflux28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5407,7 +4963,6 @@
         <Element>
           <Name>thd_peib_en_eflux29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5415,7 +4970,6 @@
         <Element>
           <Name>thd_peib_en_eflux30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5423,7 +4977,6 @@
         <Element>
           <Name>thd_peib_en_eflux31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5431,7 +4984,6 @@
         <Element>
           <Name>thd_peib_en_eflux32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5463,7 +5015,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5471,7 +5022,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5479,7 +5029,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5487,7 +5036,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5495,7 +5043,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5503,7 +5050,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5511,7 +5057,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5519,7 +5064,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5527,7 +5071,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5535,7 +5078,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5543,7 +5085,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5551,7 +5092,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5559,7 +5099,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5567,7 +5106,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5575,7 +5113,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5583,7 +5120,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5591,7 +5127,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5599,7 +5134,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5607,7 +5141,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5615,7 +5148,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5623,7 +5155,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5631,7 +5162,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5639,7 +5169,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5647,7 +5176,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5655,7 +5183,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5663,7 +5190,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5671,7 +5197,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5679,7 +5204,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5687,7 +5211,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5695,7 +5218,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5703,7 +5225,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5711,7 +5232,6 @@
         <Element>
           <Name>thd_peib_en_eflux_yaxis32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5748,7 +5268,6 @@
         <Element>
           <Name>Tprp1_ion Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5756,7 +5275,6 @@
         <Element>
           <Name>Tprp2_ion Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5764,7 +5282,6 @@
         <Element>
           <Name>Tpar_ion Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5795,7 +5312,6 @@
         <Element>
           <Name>Tprp1_ion FA Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5803,7 +5319,6 @@
         <Element>
           <Name>Tprp2_ion FA Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5811,7 +5326,6 @@
         <Element>
           <Name>Tpar_ion FA Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5842,7 +5356,6 @@
         <Element>
           <Name>Pxx_ion Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5850,7 +5363,6 @@
         <Element>
           <Name>Pyy_ion Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5858,7 +5370,6 @@
         <Element>
           <Name>Pzz_ion Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5866,7 +5377,6 @@
         <Element>
           <Name>Pxy_ion Brst ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5874,7 +5384,6 @@
         <Element>
           <Name>Pxz_ion Brst ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5882,7 +5391,6 @@
         <Element>
           <Name>Pyz_ion Brst ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5913,7 +5421,6 @@
         <Element>
           <Name>MFxx_ion Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5921,7 +5428,6 @@
         <Element>
           <Name>MFxy_ion Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5929,7 +5435,6 @@
         <Element>
           <Name>MFxz_ion Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5937,7 +5442,6 @@
         <Element>
           <Name>MFyy_ion Brst ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5945,7 +5449,6 @@
         <Element>
           <Name>MFzz_ion Brst ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5953,7 +5456,6 @@
         <Element>
           <Name>MFyz_ion Brst ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5984,7 +5486,6 @@
         <Element>
           <Name>Fx_ion DSL Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -5992,7 +5493,6 @@
         <Element>
           <Name>Fy_ion DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6000,7 +5500,6 @@
         <Element>
           <Name>Fz_ion DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6030,7 +5529,6 @@
         <Element>
           <Name>Symm_xi Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6038,7 +5536,6 @@
         <Element>
           <Name>Symm_yi Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6046,7 +5543,6 @@
         <Element>
           <Name>Symm_zi Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6087,7 +5583,6 @@
         <Element>
           <Name>Bx_ion DSL Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6095,7 +5590,6 @@
         <Element>
           <Name>By_ion DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6103,7 +5597,6 @@
         <Element>
           <Name>Bz_ion DSL Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6133,7 +5626,6 @@
         <Element>
           <Name>Vx_ion DSL Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6141,7 +5633,6 @@
         <Element>
           <Name>Vy_ion DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6149,7 +5640,6 @@
         <Element>
           <Name>Vz_ion DSL Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6180,7 +5670,6 @@
         <Element>
           <Name>Vx_ion GSE Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6188,7 +5677,6 @@
         <Element>
           <Name>Vy_ion GSE Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6196,7 +5684,6 @@
         <Element>
           <Name>Vz_ion GSE Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6227,7 +5714,6 @@
         <Element>
           <Name>Vx_ion GSM Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6235,7 +5721,6 @@
         <Element>
           <Name>Vy_ion GSM Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6243,7 +5728,6 @@
         <Element>
           <Name>Vz_ion GSM Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6295,7 +5779,6 @@
         <Element>
           <Name>cfg1_ion Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6303,7 +5786,6 @@
         <Element>
           <Name>cfg2_ion Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6311,7 +5793,6 @@
         <Element>
           <Name>mode_ion Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6333,7 +5814,6 @@
         <Element>
           <Name>Epoch</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>01-Jan-1900</ValidMin>
           <ValidMax>31-Dec-2100</ValidMax>
           <FillValue>31-Dec-9999</FillValue>
@@ -6441,7 +5921,6 @@
         <Element>
           <Name>thd_peeb_en_eflux1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6449,7 +5928,6 @@
         <Element>
           <Name>thd_peeb_en_eflux2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6457,7 +5935,6 @@
         <Element>
           <Name>thd_peeb_en_eflux3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6465,7 +5942,6 @@
         <Element>
           <Name>thd_peeb_en_eflux4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6473,7 +5949,6 @@
         <Element>
           <Name>thd_peeb_en_eflux5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6481,7 +5956,6 @@
         <Element>
           <Name>thd_peeb_en_eflux6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6489,7 +5963,6 @@
         <Element>
           <Name>thd_peeb_en_eflux7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6497,7 +5970,6 @@
         <Element>
           <Name>thd_peeb_en_eflux8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6505,7 +5977,6 @@
         <Element>
           <Name>thd_peeb_en_eflux9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6513,7 +5984,6 @@
         <Element>
           <Name>thd_peeb_en_eflux10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6521,7 +5991,6 @@
         <Element>
           <Name>thd_peeb_en_eflux11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6529,7 +5998,6 @@
         <Element>
           <Name>thd_peeb_en_eflux12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6537,7 +6005,6 @@
         <Element>
           <Name>thd_peeb_en_eflux13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6545,7 +6012,6 @@
         <Element>
           <Name>thd_peeb_en_eflux14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6553,7 +6019,6 @@
         <Element>
           <Name>thd_peeb_en_eflux15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6561,7 +6026,6 @@
         <Element>
           <Name>thd_peeb_en_eflux16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6569,7 +6033,6 @@
         <Element>
           <Name>thd_peeb_en_eflux17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6577,7 +6040,6 @@
         <Element>
           <Name>thd_peeb_en_eflux18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6585,7 +6047,6 @@
         <Element>
           <Name>thd_peeb_en_eflux19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6593,7 +6054,6 @@
         <Element>
           <Name>thd_peeb_en_eflux20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6601,7 +6061,6 @@
         <Element>
           <Name>thd_peeb_en_eflux21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6609,7 +6068,6 @@
         <Element>
           <Name>thd_peeb_en_eflux22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6617,7 +6075,6 @@
         <Element>
           <Name>thd_peeb_en_eflux23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6625,7 +6082,6 @@
         <Element>
           <Name>thd_peeb_en_eflux24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6633,7 +6089,6 @@
         <Element>
           <Name>thd_peeb_en_eflux25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6641,7 +6096,6 @@
         <Element>
           <Name>thd_peeb_en_eflux26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6649,7 +6103,6 @@
         <Element>
           <Name>thd_peeb_en_eflux27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6657,7 +6110,6 @@
         <Element>
           <Name>thd_peeb_en_eflux28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6665,7 +6117,6 @@
         <Element>
           <Name>thd_peeb_en_eflux29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6673,7 +6124,6 @@
         <Element>
           <Name>thd_peeb_en_eflux30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6681,7 +6131,6 @@
         <Element>
           <Name>thd_peeb_en_eflux31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6689,7 +6138,6 @@
         <Element>
           <Name>thd_peeb_en_eflux32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6721,7 +6169,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6729,7 +6176,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6737,7 +6183,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6745,7 +6190,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6753,7 +6197,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6761,7 +6204,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6769,7 +6211,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis7</Name>
           <Index>7</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6777,7 +6218,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis8</Name>
           <Index>8</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6785,7 +6225,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis9</Name>
           <Index>9</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6793,7 +6232,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis10</Name>
           <Index>10</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6801,7 +6239,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis11</Name>
           <Index>11</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6809,7 +6246,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis12</Name>
           <Index>12</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6817,7 +6253,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis13</Name>
           <Index>13</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6825,7 +6260,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis14</Name>
           <Index>14</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6833,7 +6267,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis15</Name>
           <Index>15</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6841,7 +6274,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis16</Name>
           <Index>16</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6849,7 +6281,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis17</Name>
           <Index>17</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6857,7 +6288,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis18</Name>
           <Index>18</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6865,7 +6295,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis19</Name>
           <Index>19</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6873,7 +6302,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis20</Name>
           <Index>20</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6881,7 +6309,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis21</Name>
           <Index>21</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6889,7 +6316,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis22</Name>
           <Index>22</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6897,7 +6323,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis23</Name>
           <Index>23</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6905,7 +6330,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis24</Name>
           <Index>24</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6913,7 +6337,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis25</Name>
           <Index>25</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6921,7 +6344,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis26</Name>
           <Index>26</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6929,7 +6351,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis27</Name>
           <Index>27</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6937,7 +6358,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis28</Name>
           <Index>28</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6945,7 +6365,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis29</Name>
           <Index>29</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6953,7 +6372,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis30</Name>
           <Index>30</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6961,7 +6379,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis31</Name>
           <Index>31</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -6969,7 +6386,6 @@
         <Element>
           <Name>thd_peeb_en_eflux_yaxis32</Name>
           <Index>32</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7006,7 +6422,6 @@
         <Element>
           <Name>Tprp1_elec Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7014,7 +6429,6 @@
         <Element>
           <Name>Tprp2_elec Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7022,7 +6436,6 @@
         <Element>
           <Name>Tpar_elec Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7053,7 +6466,6 @@
         <Element>
           <Name>Tprp1_elec FA Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7061,7 +6473,6 @@
         <Element>
           <Name>Tprp2_elec FA Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7069,7 +6480,6 @@
         <Element>
           <Name>Tpar_elec FA Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7100,7 +6510,6 @@
         <Element>
           <Name>Pxx_elec Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7108,7 +6517,6 @@
         <Element>
           <Name>Pyy_elec Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7116,7 +6524,6 @@
         <Element>
           <Name>Pzz_elec Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7124,7 +6531,6 @@
         <Element>
           <Name>Pxy_elec Brst ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7132,7 +6538,6 @@
         <Element>
           <Name>Pxz_elec Brst ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7140,7 +6545,6 @@
         <Element>
           <Name>Pyz_elec Brst ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7171,7 +6575,6 @@
         <Element>
           <Name>MFxx_elec Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7179,7 +6582,6 @@
         <Element>
           <Name>MFxy_elec Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7187,7 +6589,6 @@
         <Element>
           <Name>MFxz_elec Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7195,7 +6596,6 @@
         <Element>
           <Name>MFyy_elec Brst ESA-A</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7203,7 +6603,6 @@
         <Element>
           <Name>MFzz_elec Brst ESA-A</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7211,7 +6610,6 @@
         <Element>
           <Name>MFyz_elec Brst ESA-A</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7242,7 +6640,6 @@
         <Element>
           <Name>Fx_elec DSL Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7250,7 +6647,6 @@
         <Element>
           <Name>Fy_elec DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7258,7 +6654,6 @@
         <Element>
           <Name>Fz_elec DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7288,7 +6683,6 @@
         <Element>
           <Name>Symm_xi Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7296,7 +6690,6 @@
         <Element>
           <Name>Symm_yi Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7304,7 +6697,6 @@
         <Element>
           <Name>Symm_zi Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0</ValidMin>
           <ValidMax>1.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7345,7 +6737,6 @@
         <Element>
           <Name>Bx_elec DSL Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7353,7 +6744,6 @@
         <Element>
           <Name>By_elec DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7361,7 +6751,6 @@
         <Element>
           <Name>Bz_elec DSL Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7391,7 +6780,6 @@
         <Element>
           <Name>Vx_elec DSL Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7399,7 +6787,6 @@
         <Element>
           <Name>Vy_elec DSL Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7407,7 +6794,6 @@
         <Element>
           <Name>Vz_elec DSL Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7438,7 +6824,6 @@
         <Element>
           <Name>Vx_elec GSE Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7446,7 +6831,6 @@
         <Element>
           <Name>Vy_elec GSE Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7454,7 +6838,6 @@
         <Element>
           <Name>Vz_elec GSE Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7485,7 +6868,6 @@
         <Element>
           <Name>Vx_elec GSM Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7493,7 +6875,6 @@
         <Element>
           <Name>Vy_elec GSM Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7501,7 +6882,6 @@
         <Element>
           <Name>Vz_elec GSM Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7553,7 +6933,6 @@
         <Element>
           <Name>cfg1_elec Brst ESA-A</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7561,7 +6940,6 @@
         <Element>
           <Name>cfg2_elec Brst ESA-A</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7569,7 +6947,6 @@
         <Element>
           <Name>mode_elec Brst ESA-A</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>10.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -7591,7 +6968,6 @@
         <Element>
           <Name>Epoch</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>01-Jan-1900</ValidMin>
           <ValidMax>31-Dec-2100</ValidMax>
           <FillValue>31-Dec-9999</FillValue>
