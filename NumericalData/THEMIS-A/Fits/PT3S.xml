@@ -779,6 +779,8 @@
       The system of equations is solved and outliers are removed until no more outliers can be removed.</Description>
       <Caveats>Calculations of spin-fit is performed on-board.</Caveats>
       <Cadence>PT3S</Cadence>
+			<Units> mV/m  </Units>
+			<UnitsConversion>10e-3&gt;V/m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SC</CoordinateSystemName>
