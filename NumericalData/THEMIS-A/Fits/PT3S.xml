@@ -86,7 +86,7 @@
       <UnitsConversion>10e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -259,7 +259,7 @@
       <UnitsConversion>10e-3&gt;V/m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -306,7 +306,7 @@
       <UnitsConversion>10e-3&gt;V/m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -353,7 +353,7 @@
       <UnitsConversion>10e-3&gt;V/m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
