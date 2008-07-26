@@ -698,7 +698,8 @@
       Gamma = sqrt(F/(N-1))
       
       The system of equations is solved and outliers are removed until no more outliers can be removed.</Description>
-      <Caveats>Calculations of spin-fit is performed on-board.</Caveats>
+      <Caveats>Calculations of spin-fit is performed on-board.
+				       The B,C, & Average components of this parameter are very close to the X,Y and Z components(respectively) of the fgs quantity. In this parameter scaling factors are applied, but the data do not have finer calibrations applied.  These data are also in despun sensor coordinates, rather than despun spacecraft coordinates.  Practically, this means the Z axis is the opposite of the normal DSL coordinate system.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>10e-9&gt;T</UnitsConversion>
@@ -777,7 +778,8 @@
       Gamma = sqrt(F/(N-1))  
       
       The system of equations is solved and outliers are removed until no more outliers can be removed.</Description>
-      <Caveats>Calculations of spin-fit is performed on-board.</Caveats>
+      <Caveats>Calculations of spin-fit is performed on-board.
+               The B,C, & Average components of this parameter are very close to the X,Y and Z components(respectively) of the efs quantity. In this parameter scaling factors are applied, but the data do not have finer calibrations applied. </Caveats>
       <Cadence>PT3S</Cadence>
 			<Units> mV/m  </Units>
 			<UnitsConversion>10e-3&gt;V/m</UnitsConversion>
