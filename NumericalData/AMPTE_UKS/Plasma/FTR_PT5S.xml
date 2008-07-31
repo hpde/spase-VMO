@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_UKS/Plasma/FTR_PT5S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/UKS Ion Plasma Data</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
       <Description>AMPTE/UKS 5-second (spin) averaged ion plasma moments</Description>
       <Acknowledgement>UKS/IRM Prime Parameters, UKS/IRM High Resolution Data, or products derived from them may NOT be published or shown in any form without the consent of the Principal Investigators concerned. Acknowledgements to the PI and the UK CDHF would
 be appropriate in any published work; full-authorship may be required
@@ -47,7 +47,7 @@ a PI response.</Acknowledgement>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1984-08-27T14:10:53Z</StartDate>
-        <EndDate>1985-01-15T07:50:33Z</EndDate>
+        <StopDate>1985-01-15T07:50:33Z</StopDate>
       </TimeSpan>
       <Cadence>PT5S</Cadence>
     </TemporalDescription>

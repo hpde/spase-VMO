@@ -6,7 +6,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/Ephemeris/PT12M</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP-8 Spacecraft Positions</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
       <Description>IMP-8 spacecraft positions in various coordinate systems</Description>
       <Contact>
         <!-- Adam Szabo -->
@@ -33,7 +33,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1973-10-30T00:00:00Z</StartDate>
-        <RelativeEndDate>P0D</RelativeEndDate>
+        <RelativeStopDate>P0D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT12M</Cadence>
     </TemporalDescription>

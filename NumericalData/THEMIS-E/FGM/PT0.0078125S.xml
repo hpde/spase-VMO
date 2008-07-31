@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-E/FGM/PT0.0078125S</ResourceID>
     <ResourceHeader>
       <ResourceName>Fluxgate Magnetometer Measurements 1/128s</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
       <Description>Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes) </Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission, K. H. Glassmeier, U. Auster and W. Baumjohann for the use of FGM data provided under the lead of the Technical University of Braunschweig and with financial support through the German Ministry for Economy and Technology and the German Center for Aviation and Space (DLR) under contract 50 OC 0302</Acknowledgement>
       <Contact>
@@ -48,7 +48,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2007-02-16T00:00:00Z</StartDate>
-        <RelativeEndDate>P07D</RelativeEndDate>
+        <RelativeStopDate>P07D</RelativeStopDate>
       </TimeSpan>
     </TemporalDescription>
     <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
