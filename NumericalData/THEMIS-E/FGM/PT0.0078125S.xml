@@ -55,7 +55,7 @@
     <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
-    <Caveats>See THEMIS website for caveats.</Caveats>
+    <Caveats>The THEMIS mission uses the coordinate name &quot; DSL&quot; for the coordinate system that is called &quot;SR2&quot; is the SPASE data model.  See THEMIS website for caveats.</Caveats>
     <PhysicalParameter>
       <Name>B FGE SSL</Name>
       <ParameterKey>the_fge_ssl</ParameterKey>
@@ -104,13 +104,13 @@
     <PhysicalParameter>
       <Name>B FGE DSL</Name>
       <ParameterKey>the_fge_dsl</ParameterKey>
-      <Description>FGE (engineering) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
+      <Description>FGE (engineering) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
       <Cadence>PT0.125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -298,13 +298,13 @@
     <PhysicalParameter>
       <Name>B FGL DSL</Name>
       <ParameterKey>the_fgl_dsl</ParameterKey>
-      <Description>FGL (low-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
+      <Description>FGL (low-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
       <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -491,13 +491,13 @@
     <PhysicalParameter>
       <Name>B FGH DSL</Name>
       <ParameterKey>the_fgh_dsl</ParameterKey>
-      <Description>FGH (high-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
+      <Description>FGH (high-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
       <Cadence>PT0.0078125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -639,13 +639,13 @@
     <PhysicalParameter>
       <Name>B FGS DSL</Name>
       <ParameterKey>the_fgs_dsl</ParameterKey>
-      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL) </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-        <CoordinateSystemName>SC</CoordinateSystemName>
+        <CoordinateSystemName>SR2</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
