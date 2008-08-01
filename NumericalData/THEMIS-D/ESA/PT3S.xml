@@ -632,7 +632,7 @@
       <Name>thd_peif_t3</Name>
       <ParameterKey>thd_peif_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The &quot;degenerate&quot; eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1779,7 +1779,7 @@
       <Name>Electron Diagonalized Temperature</Name>
       <ParameterKey>thd_peef_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS D(P3) efi boom deployment date: 2007-06-07/17:00:00 UT.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The &quot;degenerate&quot; eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS D(P3) efi boom deployment date: 2007-06-07/17:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -2926,7 +2926,7 @@
       <Name>Ion Diagonalized Temperature: reduced angle distribution</Name>
       <ParameterKey>thd_peir_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the reduced angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The &quot;degenerate&quot; eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -4073,7 +4073,7 @@
       <Name>Electron Diagonalized Temperature: reduced angle distribution</Name>
       <ParameterKey>thd_peer_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the reduced angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS D(P3) efi boom deployment date: 2007-06-07/17:00:00 UT.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The &quot;degenerate&quot; eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS D(P3) efi boom deployment date: 2007-06-07/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -5220,7 +5220,7 @@
       <Name>Ion Diagonalized Temperature: burst angle distribution</Name>
       <ParameterKey>thd_peib_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the burst angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The &quot;degenerate&quot; eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -6367,7 +6367,7 @@
       <Name>Electron Diagonalized Temperature: burst angle distribution</Name>
       <ParameterKey>thd_peeb_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the burst angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS D(P3) efi boom deployment date: 2007-06-07/17:00:00 UT.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The &quot;degenerate&quot; eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS D(P3) efi boom deployment date: 2007-06-07/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
