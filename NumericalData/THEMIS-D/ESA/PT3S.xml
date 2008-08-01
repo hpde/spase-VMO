@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-D/ESA/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-D ESA electron/ion energy fluxes and moments</ResourceName>
-      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
+      <ReleaseDate>2008-08-01T20:05:31Z</ReleaseDate>
       <Description>THEMIS-D: Electrostatic Analyzers (ESA): Electron/Ion Ground-Calculated Energy Fluxes (5eV - 25 keV for Ions and 6eV - 30 KeV for Electrons)  and Moments (density, velocity, pressure, and temperature). The satellite has 2 modes Fast and Slow survey and 3 data types: FULL, REDUCED and BURST. FULL: 88 angles x 32 energies, time resolution of 128 spins(395 seconds) in slow survey and 32 spins(98 seconds) in fast survey. REDUCED:  spin time resolution(3 sec) but angles averaged into 1 angular spectra x 32 energies in slow survey or 6 angular spectra(90 degree x 90 degree window) x 32 energies in fast survey. BURST: 88 angles x 32 energies and spin time resolution(3 sec) but only available sporadically and for short duration. Note that angular resolution affects moments since they are obtained integrating over the mode-specific angular distribution.  These moments are processed on the ground.  They should be regarded as approximations but will improve in quality as our processing routines are improved over the course of the mission to account for additional sources of variance.</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: C. W. Carlson and J. P. McFadden for use of ESA data.</Acknowledgement>
       <Contact>
@@ -944,7 +944,7 @@
       </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
-      <Name>Magnetic Field Vector SC: Full Distribution/Ion </Name>
+      <Name>Magnetic Field Vector SC: Full Distribution/Ion</Name>
       <ParameterKey>thd_peif_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the full distribution moments. It was taken from the FGM data and interpolated to match the cadence of the full distribution ESA data.</Description>
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
@@ -3238,7 +3238,7 @@
       </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
-      <Name>Magnetic Field Vector SC: Reduced Distribution/Ion </Name>
+      <Name>Magnetic Field Vector SC: Reduced Distribution/Ion</Name>
       <ParameterKey>thd_peir_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the reduced distribution moments. It was taken from the FGM data and interpolated to match the cadence of the reduced distribution ESA data.</Description>
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
@@ -5532,7 +5532,7 @@
       </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
-      <Name>Magnetic Field Vector SC: Burst Distribution/Ion </Name>
+      <Name>Magnetic Field Vector SC: Burst Distribution/Ion</Name>
       <ParameterKey>thd_peib_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the burst distribution moments. It was taken from the FGM data and interpolated to match the cadence of the burst distribution ESA data.</Description>
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>

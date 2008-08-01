@@ -5,8 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-C/FGM/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>Fluxgate Magnetometer Measurements 3s</ResourceName>
-      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
-      <Description>Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes) </Description>
+      <ReleaseDate>2008-08-01T20:05:31Z</ReleaseDate>
+      <Description>Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes)</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission, K. H. Glassmeier, U. Auster and W. Baumjohann for the use of FGM data provided under the lead of the Technical University of Braunschweig and with financial support through the German Ministry for Economy and Technology and the German Center for Aviation and Space (DLR) under contract 50 OC 0302</Acknowledgement>
       <Contact>
         <!-- Rumi Nakamura -->
@@ -59,7 +59,7 @@
     <PhysicalParameter>
       <Name>B FGE SSL</Name>
       <ParameterKey>thc_fge_ssl</ParameterKey>
-      <Description>FGE (engineering) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL) </Description>
+      <Description>FGE (engineering) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL)</Description>
       <Cadence>PT0.125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -104,7 +104,7 @@
     <PhysicalParameter>
       <Name>B FGE DSL</Name>
       <ParameterKey>thc_fge_dsl</ParameterKey>
-      <Description>FGE (engineering) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
+      <Description>FGE (engineering) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)</Description>
       <Cadence>PT0.125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -149,7 +149,7 @@
     <PhysicalParameter>
       <Name>B FGE GSE</Name>
       <ParameterKey>thc_fge_gse</ParameterKey>
-      <Description>FGE (engineering) magnetic field B in XYZ GSE Coordinates </Description>
+      <Description>FGE (engineering) magnetic field B in XYZ GSE Coordinates</Description>
       <Cadence>PT0.125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -194,7 +194,7 @@
     <PhysicalParameter>
       <Name>B FGE GSM</Name>
       <ParameterKey>thc_fge_gsm</ParameterKey>
-      <Description>FGE (engineering) magnetic field B in XYZ GSM Coordinates </Description>
+      <Description>FGE (engineering) magnetic field B in XYZ GSM Coordinates</Description>
       <Cadence>PT0.125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -239,7 +239,7 @@
     <PhysicalParameter>
       <Name>FGE Time</Name>
       <ParameterKey>thc_fge_time</ParameterKey>
-      <Description>FGE time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Description>FGE time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Caveats>Unleaped seconds</Caveats>
       <Cadence>PT0.125S</Cadence>
       <Units>s</Units>
@@ -253,7 +253,7 @@
     <PhysicalParameter>
       <Name>B FGL SSL</Name>
       <ParameterKey>thc_fgl_ssl</ParameterKey>
-      <Description>FGL (low-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL) </Description>
+      <Description>FGL (low-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL)</Description>
       <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -298,7 +298,7 @@
     <PhysicalParameter>
       <Name>B FGL DSL</Name>
       <ParameterKey>thc_fgl_dsl</ParameterKey>
-      <Description>FGL (low-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
+      <Description>FGL (low-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)</Description>
       <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -343,7 +343,7 @@
     <PhysicalParameter>
       <Name>B FGL GSE</Name>
       <ParameterKey>thc_fgl_gse</ParameterKey>
-      <Description>FGL (low-resolution) magnetic field B in XYZ GSE Coordinates </Description>
+      <Description>FGL (low-resolution) magnetic field B in XYZ GSE Coordinates</Description>
       <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -388,7 +388,7 @@
     <PhysicalParameter>
       <Name>B FGL GSM</Name>
       <ParameterKey>thc_fgl_gsm</ParameterKey>
-      <Description>FGL (low-resolution) magnetic field B in XYZ GSM Coordinates </Description>
+      <Description>FGL (low-resolution) magnetic field B in XYZ GSM Coordinates</Description>
       <Cadence>PT0.25S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -433,12 +433,12 @@
     <PhysicalParameter>
       <Name>FGL Time</Name>
       <ParameterKey>thc_fgl_time</ParameterKey>
-      <Description>FGL time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Description>FGL time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Cadence>PT0.25S</Cadence>
       <Units>s</Units>
-      <ValidMin>0.0 </ValidMin>
-      <ValidMax>5.0E9 </ValidMax>
-      <FillValue>NaN </FillValue>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
@@ -446,7 +446,7 @@
     <PhysicalParameter>
       <Name>B FGH SSL</Name>
       <ParameterKey>thc_fgh_ssl</ParameterKey>
-      <Description>FGH (high-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL) </Description>
+      <Description>FGH (high-resolution) magnetic field B in XYZ Spinning Spacecraft Coordinates (SSL)</Description>
       <Cadence>PT0.0078125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -491,7 +491,7 @@
     <PhysicalParameter>
       <Name>B FGH DSL</Name>
       <ParameterKey>thc_fgh_dsl</ParameterKey>
-      <Description>FGH (high-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
+      <Description>FGH (high-resolution) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)</Description>
       <Cadence>PT0.0078125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -536,7 +536,7 @@
     <PhysicalParameter>
       <Name>B FGH GSE</Name>
       <ParameterKey>thc_fgh_gse</ParameterKey>
-      <Description>FGH (high-resolution) magnetic field B in XYZ GSE Coordinates </Description>
+      <Description>FGH (high-resolution) magnetic field B in XYZ GSE Coordinates</Description>
       <Cadence>PT0.0078125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -581,7 +581,7 @@
     <PhysicalParameter>
       <Name>B FGH GSM</Name>
       <ParameterKey>thc_fgh_gsm</ParameterKey>
-      <Description>FGH (high-resolution) magnetic field B in XYZ GSM Coordinates </Description>
+      <Description>FGH (high-resolution) magnetic field B in XYZ GSM Coordinates</Description>
       <Cadence>PT0.0078125S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -626,12 +626,12 @@
     <PhysicalParameter>
       <Name>FGH Time</Name>
       <ParameterKey>thc_fgh_time</ParameterKey>
-      <Description>FGH time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Description>FGH time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Cadence>PT0.0078125S</Cadence>
       <Units>s</Units>
-      <ValidMin>0.0 </ValidMin>
-      <ValidMax>5.0E9 </ValidMax>
-      <FillValue>NaN </FillValue>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
@@ -639,7 +639,7 @@
     <PhysicalParameter>
       <Name>B FGS DSL</Name>
       <ParameterKey>thc_fgs_dsl</ParameterKey>
-      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2) </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ Despun Spacecraft Coordinates (DSL/SR2)</Description>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -684,7 +684,7 @@
     <PhysicalParameter>
       <Name>B FGS GSE</Name>
       <ParameterKey>thc_fgs_gse</ParameterKey>
-      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ GSE Coordinates </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ GSE Coordinates</Description>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -729,7 +729,7 @@
     <PhysicalParameter>
       <Name>B FGS GSM</Name>
       <ParameterKey>thc_fgs_gsm</ParameterKey>
-      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ GSM Coordinates </Description>
+      <Description>FGS (spin-resolution/3s) magnetic field B in XYZ GSM Coordinates</Description>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -774,12 +774,12 @@
     <PhysicalParameter>
       <Name>FGS Time</Name>
       <ParameterKey>thc_fgs_time</ParameterKey>
-      <Description>FGS time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Description>FGS time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Cadence>PT3S</Cadence>
       <Units>s</Units>
-      <ValidMin>0.0 </ValidMin>
-      <ValidMax>5.0E9 </ValidMax>
-      <FillValue>NaN </FillValue>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>

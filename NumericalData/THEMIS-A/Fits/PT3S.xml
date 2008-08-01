@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-A/Fits/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-A:  On Board spin fits of Electric (EFI) and Magnetic (FGM) field. On-Board Spin-fit electric and magnetic field data</ResourceName>
-      <ReleaseDate>2008-07-31T19:40:13Z</ReleaseDate>
+      <ReleaseDate>2008-08-01T20:05:30Z</ReleaseDate>
       <Description>THEMIS-A:  On Board spin fits of Electric (EFI) and Magnetic (FGM) fields. This file contains data EFI and FGM that has been despun on-board to 3 second resolution. It stores meta information like the number of points that contributed to each spin and the standard deviation of those points. For the EFI data it also stores variables with the Z component of the EFI data zeroed and the Z component of the EFI estimated using the E.B=0 equality. The need to use an estimated Z axis for the EFI is due to error in measurements from the EFI axial booms. These data are provided in DSL (despun spacecraft L-Z vector), GSM, and GSE coordinates.</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: J. W. Bonnell and F. S. Mozer for use of EFI data.</Acknowledgement>
       <Contact>
@@ -234,7 +234,7 @@
     <PhysicalParameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Deviation</Name>
       <ParameterKey>tha_efs_sigma</ParameterKey>
-      <Description>Electric Field Instrument on-board measurements are at higher resolution.   This parameter stores the standard deviation of the electric field instrument spin fit for each spin resolution element of this data quantity in mV/m.  </Description>
+      <Description>Electric Field Instrument on-board measurements are at higher resolution.   This parameter stores the standard deviation of the electric field instrument spin fit for each spin resolution element of this data quantity in mV/m.</Description>
       <Caveats>Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS A were deployed on January 14 2008 at 1700 UT.  Measurements should not be considered valid before the deploy date.  Z-axis measurements should be treated very carefully.  Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>mV/m</Units>
@@ -393,7 +393,7 @@
     <PhysicalParameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Data GSE</Name>
       <ParameterKey>tha_efs_gse</ParameterKey>
-      <Description>EFS (spin-fit) electric field vector in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).  </Description>
+      <Description>EFS (spin-fit) electric field vector in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).</Description>
       <Caveats>Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS A were deployed on January 14 2008 at 1700 UT.  Measurments should not be considered valid before the deploy date.  Z-axis measurements should be treated very carefully.  Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>mV/m</Units>
@@ -440,7 +440,7 @@
     <PhysicalParameter>
       <Name>THEMIS A Electric Field Instrument Z=0 Spin-Fit Data GSE</Name>
       <ParameterKey>tha_efs_0_gse</ParameterKey>
-      <Description>EFS (spin-fit) electric field vector with Z=0 in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).   Since the Z component of the electric field has large error, it has been set to zero in this data quantity. </Description>
+      <Description>EFS (spin-fit) electric field vector with Z=0 in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).   Since the Z component of the electric field has large error, it has been set to zero in this data quantity.</Description>
       <Caveats>Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS A were deployed on January 14 2008 at 1700 UT.  Measurments should not be considered valid before the deploy date. The Z axis is zeroed for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate. The Z-axis is zeroed prior to conversion to GSE coordinates, so the zeroed axis will probably not be colinear with the Z axis of the GSE coordinate system.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>mV/m</Units>
@@ -534,7 +534,7 @@
     <PhysicalParameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Data GSM</Name>
       <ParameterKey>tha_efs_gsm</ParameterKey>
-      <Description>EFS (spin-fit) electric field vector in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).  </Description>
+      <Description>EFS (spin-fit) electric field vector in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).</Description>
       <Caveats>Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS A were deployed on January 14 2008 at 1700 UT.  Measurments should not be considered valid before the deploy date.  Z-axis measurements should be treated very carefully.  Because the Z-axis booms are much shorter than the spin plane booms, the measurements in the Z-axis are much more inaccurate.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>mV/m</Units>
@@ -581,7 +581,7 @@
     <PhysicalParameter>
       <Name>THEMIS A Electric Field Instrument Z=0 Spin-Fit Data GSM</Name>
       <ParameterKey>tha_efs_0_gsm</ParameterKey>
-      <Description>EFS (spin-fit) electric field vector with Z=0 in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).   Since the Z component of the electric field has large error, it has been set to zero in this data quantity. </Description>
+      <Description>EFS (spin-fit) electric field vector with Z=0 in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).   Since the Z component of the electric field has large error, it has been set to zero in this data quantity.</Description>
       <Caveats>Calculations of spin-fit for these data are performed on-board. Electric Field Booms for THEMIS A were deployed on January 14 2008 at 1700 UT.  Measurments should not be considered valid before the deploy date. The Z axis is zeroed for this quantity because the Z-axis booms are much shorter than the spin plane booms and thus the measurements in the Z axis are much more inaccurate. The Z-axis is zeroed prior to conversion to GSM coordinates, so the zeroed axis will probably not be colinear with the Z axis of the GSM coordinate system.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>mV/m</Units>

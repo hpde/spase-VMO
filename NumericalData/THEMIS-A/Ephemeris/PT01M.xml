@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-A/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-A probe state</ResourceName>
-      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
+      <ReleaseDate>2008-08-01T20:05:30Z</ReleaseDate>
       <Description>The probe state files contain position, attitude, and sun pulse data. Produced by Mission Ops, Science Ops and Science Team.
      V00: Predictive on all, pre-pass.
      V01: Intermediate: added definitive spinper, spinphase others predictive, expected shortly after pass.
@@ -156,7 +156,7 @@ Bit 4(8)      : South Atlantic Anomaly
 Bit 5(16)     : Northern Auroral Zone
 Bit 6(32)     : Southern Auroral Zone
 Bit 7(64)     : Perigee Passage
-Bit 8(128)    : Inner & Outer Radiation Belts
+Bit 8(128)    : Inner &amp; Outer Radiation Belts
 Bit 9(256)    : Deep Plasma Sphere
 Bit 10(512)   : Foreshock Solar Wind
 Bit 11(1024)  : Solar Wind Beam
@@ -168,17 +168,17 @@ Bit 16(32768) : Ground Based Observatories
 Bit 17(65536) : 2-Day Conjunctions
 Bit 18(131072): 4-Day Conjunctions
  </Description>
-      <ValidMin>0 </ValidMin>
-      <ValidMax>4294967295 </ValidMax>
-      <FillValue>4294967295 </FillValue>
+      <ValidMin>0</ValidMin>
+      <ValidMax>4294967295</ValidMax>
+      <FillValue>4294967295</FillValue>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </PhysicalParameter>
     <PhysicalParameter>
-      <Name>THEMIS-A spinras </Name>
+      <Name>THEMIS-A spinras</Name>
       <ParameterKey>tha_spinras</ParameterKey>
-      <Description>THEMIS-A spin right ascension, GEI coordinates </Description>
+      <Description>THEMIS-A spin right ascension, GEI coordinates</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -199,9 +199,9 @@ Bit 18(131072): 4-Day Conjunctions
       </Support>
     </PhysicalParameter>
     <PhysicalParameter>
-      <Name>THEMIS-A spindec </Name>
+      <Name>THEMIS-A spindec</Name>
       <ParameterKey>tha_spindec</ParameterKey>
-      <Description>THEMIS-A spin declination, GEI coordinates </Description>
+      <Description>THEMIS-A spin declination, GEI coordinates</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -224,7 +224,7 @@ Bit 18(131072): 4-Day Conjunctions
     <PhysicalParameter>
       <Name>THEMIS-A spinalpha</Name>
       <ParameterKey>tha_spinalpha</ParameterKey>
-      <Description>THEMIS-A spin axis azimuth, alpha, in Probe Geometric coordinates </Description>
+      <Description>THEMIS-A spin axis azimuth, alpha, in Probe Geometric coordinates</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -237,9 +237,9 @@ Bit 18(131072): 4-Day Conjunctions
           <Index>1</Index>
         </Element>
       </Structure>
-      <ValidMin>0.0 </ValidMin>
-      <ValidMax>360.0 </ValidMax>
-      <FillValue>NaN </FillValue>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>360.0</ValidMax>
+      <FillValue>NaN</FillValue>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
@@ -247,7 +247,7 @@ Bit 18(131072): 4-Day Conjunctions
     <PhysicalParameter>
       <Name>THEMIS-A spinbeta</Name>
       <ParameterKey>tha_spinbeta</ParameterKey>
-      <Description>THEMIS-A spin colatitude, beta, in Probe Geometric coordinates </Description>
+      <Description>THEMIS-A spin colatitude, beta, in Probe Geometric coordinates</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -294,7 +294,7 @@ Bit 18(131072): 4-Day Conjunctions
     <PhysicalParameter>
       <Name>Time</Name>
       <ParameterKey>tha_state_time</ParameterKey>
-      <Description>Time, UTC, in seconds since 01-Jan-1970 00:00:00 </Description>
+      <Description>Time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Caveats>Unleaped seconds</Caveats>
       <Units>sec</Units>
       <ValidMin>0.0</ValidMin>
