@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/Catalog/BS_IMP8</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 bow shock crossings</ResourceName>
-      <ReleaseDate>2008-05-19T19:24:19Z</ReleaseDate>
+      <ReleaseDate>2008-08-01T19:31:32Z</ReleaseDate>
       <Description>A complete list of bow shock crossings observed by IMP 8 spacecraft. The shock crossings were manually identified in magnetic field and/or thermal plasma measurements by J. Merka, A. Szabo, K. Paularena, J. Richardson, and T. Narock. 
       Each identified crossing was reviewed by at least two persons from the team. 
       
@@ -34,13 +34,10 @@
     <InstrumentID>spase://VMO/Instrument/IMP8/MAG</InstrumentID>
     <InstrumentID>spase://VMO/Instrument/IMP8/PLS</InstrumentID>
     <PhenomenonType>BowShockCrossing</PhenomenonType>
-    <TemporalDescription>
-      <TimeSpan>
-        <StartDate>1973-10-31T07:31:00Z</StartDate>
-        <EndDate>2000-06-08T16:45:00Z</EndDate>
-      </TimeSpan>
-    </TemporalDescription>
-    <ObservedRegion>Earth</ObservedRegion>
+    <TimeSpan>
+      <StartDate>1973-10-31T07:31:00Z</StartDate>
+      <StopDate>2000-06-08T16:45:00Z</StopDate>
+    </TimeSpan>
     <Caveats>The times are estimated to a minute (truncated).</Caveats>
     <PhysicalParameter>
       <Name>Time</Name>
@@ -428,8 +425,8 @@
         <Particle>
           <ParticleType>Proton</ParticleType>
           <ParticleQualifier>Average</ParticleQualifier>
-         <ParticleQuantity>SoundSpeed</ParticleQuantity>
-      </Particle>
+          <ParticleQuantity>SoundSpeed</ParticleQuantity>
+        </Particle>
       </Measured>
     </PhysicalParameter>
     <PhysicalParameter>
