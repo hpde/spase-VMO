@@ -51,7 +51,7 @@
     <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
-    <Caveats>See THEMIS website for caveats(http://themis.ssl.berkeley.edu)</Caveats>
+    <Caveats>See THEMIS website for caveats(http://themis.ssl.berkeley.edu). EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time the spacecraft potential was not calculated accurately.  Electron moments will not be distributed prior to this date and ion moments will less accurate. </Caveats>
     <!-- All params from the full distribution switch between a cadence of 98 and 395 S, but spend more time at 395-->
     <!-- Begin Full Distribution Ion Quantities -->
     <PhysicalParameter>
@@ -116,7 +116,7 @@
       <Name>SC Potential at full distribution cadence</Name>
       <ParameterKey>the_peif_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the full angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa full distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time this spacecraft potential was not calculated accurately.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -1205,7 +1205,7 @@
       <Name>ESA Full Mode, Electron Density</Name>
       <ParameterKey>the_peef_density</ParameterKey>
       <Description>ESA Electron Density from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>cm^-3</Units>
       <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
@@ -1224,7 +1224,7 @@
       <Name>ESA Electron Average Temperature: Full Distribution</Name>
       <ParameterKey>the_peef_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe. This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1244,7 +1244,7 @@
       <Name>ESA Electron Thermal Velocity: Full Distribution</Name>
       <ParameterKey>the_peef_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe. This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -1263,7 +1263,7 @@
       <Name>SC Potential at full distribution cadence</Name>
       <ParameterKey>the_peef_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the full angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa full distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time this spacecraft potential was not calculated accurately and will not be available.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -1280,7 +1280,7 @@
       <Name>ESA Electron energy spectrogram: full distribution</Name>
       <ParameterKey>the_peef_en_eflux</ParameterKey>
       <Description>ESA Electron energy spectrogram energy flux calculated from full angle distribution.</Description>
-      <Caveats>Energy levels of eflux bins are stored in the_peef_en_eflux_yaxis. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Energy levels of eflux bins are stored in the_peef_en_eflux_yaxis. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe. </Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/(cm^2*s*sr*eV)</Units>
       <UnitsConversion>1e4&gt;1/(m^2*s*sr)</UnitsConversion>
@@ -1779,7 +1779,7 @@
       <Name>Electron Diagonalized Temperature</Name>
       <ParameterKey>the_peef_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1823,7 +1823,7 @@
       <Name>Electron Diagonalized Temperature, Field Aligned</Name>
       <ParameterKey>the_peef_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from full angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -1867,7 +1867,7 @@
       <Name>Electron Pressure Tensor: Full Distribution</Name>
       <ParameterKey>the_peef_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from full angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
-      <Caveats>Only 6 elements are provided since matrix is symmetrical. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Only 6 elements are provided since matrix is symmetrical. Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -1932,7 +1932,7 @@
       <Name>Electron Momentum Flux Tensor: Full Distribution</Name>
       <ParameterKey>the_peef_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from full angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -1997,7 +1997,7 @@
       <Name>Electron Particle Flux Vector: Full Distribution</Name>
       <ParameterKey>the_peef_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -2041,7 +2041,7 @@
       <Name>Electron Symmetry Vector: Full Distribution</Name>
       <ParameterKey>the_peef_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peef_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the full angle distibution quantities.</Description>
-      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>None</Units>
       <CoordinateSystem>
@@ -2080,7 +2080,7 @@
       <Name>Electron Symmetry Angle (between symmetry direction and B): Full Distribution</Name>
       <ParameterKey>the_peef_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peef_t3 and the peef_magt3 quantities. Calculated from the full angle distribution quantities.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>degrees</Units>
       <ValidMin>0.0</ValidMin>
@@ -2137,7 +2137,7 @@
       <Name>Electron Velocity Vector SC: Full Distribution</Name>
       <ParameterKey>the_peef_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from full distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -2181,7 +2181,7 @@
       <Name>Electron Velocity Vector in GSE: Full Distribution</Name>
       <ParameterKey>the_peef_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -2225,7 +2225,7 @@
       <Name>Electron Velocity Vector in GSM: Full Distribution</Name>
       <ParameterKey>the_peef_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates. Calculated from full angle distribution.</Description>
-      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
+      <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -2410,7 +2410,7 @@
       <Name>SC Potential at reduced distribution cadence</Name>
       <ParameterKey>the_peir_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the reduced angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa reduced distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time this spacecraft potential was not calculated accurately and will not be available.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -3499,7 +3499,7 @@
       <Name>ESA Reduced Mode, Electron Density</Name>
       <ParameterKey>the_peer_density</ParameterKey>
       <Description>ESA Electron Density from reduced angle distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>cm^-3</Units>
       <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
@@ -3518,7 +3518,7 @@
       <Name>ESA Electron Average Temperature: Reduced Distribution</Name>
       <ParameterKey>the_peer_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from reduced angle distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -3538,7 +3538,7 @@
       <Name>ESA Electron Thermal Velocity: Reduced Distribution</Name>
       <ParameterKey>the_peer_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from reduced angle distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -3557,7 +3557,7 @@
       <Name>SC Potential at reduced distribution cadence</Name>
       <ParameterKey>the_peer_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the reduced angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa reduced distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time this spacecraft potential was not calculated accurately and will not be available.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -4073,7 +4073,7 @@
       <Name>Electron Diagonalized Temperature: reduced angle distribution</Name>
       <ParameterKey>the_peer_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the reduced angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -4117,7 +4117,7 @@
       <Name>Electron Diagonalized Temperature, Field Aligned: reduced angle distribution</Name>
       <ParameterKey>the_peer_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from reduced angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -4161,7 +4161,7 @@
       <Name>Electron Pressure Tensor: Reduced Distribution</Name>
       <ParameterKey>the_peer_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from reduced angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
-      <Caveats>Only 6 elements are provided since matrix is symmetrical. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Only 6 elements are provided since matrix is symmetrical. Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -4226,7 +4226,7 @@
       <Name>Electron Momentum Flux Tensor: Reduced Distribution</Name>
       <ParameterKey>the_peer_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from reduced angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -4291,7 +4291,7 @@
       <Name>Electron Particle Flux Vector: Reduced Distribution</Name>
       <ParameterKey>the_peer_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from reduced angle distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -4335,7 +4335,7 @@
       <Name>Electron Symmetry Vector: Reduced Distribution</Name>
       <ParameterKey>the_peer_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peer_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the reduced angle distibution quantities.</Description>
-      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>None</Units>
       <CoordinateSystem>
@@ -4374,7 +4374,7 @@
       <Name>Electron Symmetry Angle (between symmetry direction and B): Reduced Distribution</Name>
       <ParameterKey>the_peer_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peer_t3 and the peer_magt3 quantities. Calculated from the reduced angle distribution quantities.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>degrees</Units>
       <ValidMin>0.0</ValidMin>
@@ -4431,7 +4431,7 @@
       <Name>Electron Velocity Vector SC: Reduced Distribution</Name>
       <ParameterKey>the_peer_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from reduced distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -4475,7 +4475,7 @@
       <Name>Electron Velocity Vector in GSE: Reduced Distribution</Name>
       <ParameterKey>the_peer_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from reduced angle distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -4519,7 +4519,7 @@
       <Name>Electron Velocity Vector in GSM: Reduced Distribution</Name>
       <ParameterKey>the_peer_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates. Calculated from reduced angle distribution.</Description>
-      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
+      <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -4704,7 +4704,7 @@
       <Name>SC Potential at burst distribution cadence</Name>
       <ParameterKey>the_peib_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the burst angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa burst distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time this spacecraft potential was not calculated accurately and will not be available.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -5793,7 +5793,7 @@
       <Name>ESA Burst Mode, Electron Density</Name>
       <ParameterKey>the_peeb_density</ParameterKey>
       <Description>ESA Electron Density from burst angle distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>cm^-3</Units>
       <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
@@ -5812,7 +5812,7 @@
       <Name>ESA Electron Average Temperature: Burst Distribution</Name>
       <ParameterKey>the_peeb_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from burst angle distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -5832,7 +5832,7 @@
       <Name>ESA Electron Thermal Velocity: Burst Distribution</Name>
       <ParameterKey>the_peeb_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from burst angle distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -5851,7 +5851,7 @@
       <Name>SC Potential at burst distribution cadence</Name>
       <ParameterKey>the_peeb_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the burst angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa burst distribution data.</Description>
-      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>This spacecraft potential parameter is the current best estimate of the spacecraft potential, estimates will improve as the mission continues. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  EFI booms for THEMIS E(P4) were deployed on 2007-06-07/19:00:00 UT. Before this time this spacecraft potential was not calculated accurately and will not be available.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
@@ -6367,7 +6367,7 @@
       <Name>Electron Diagonalized Temperature: burst angle distribution</Name>
       <ParameterKey>the_peeb_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the burst angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>The first eigenvalue  and eigenvector  are the distinguisheable eigenvalue and the major (symmetry) axis, respectively.  .The "degenerate" eigenvalues are sorted such that the 2nd eigenvalue is smaller than the third one.  Coordinate system is ostensibly magnetic field aligned but may deviate if the particle distribution is strongly isotropic. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -6411,7 +6411,7 @@
       <Name>Electron Diagonalized Temperature, Field Aligned: burst angle distribution</Name>
       <ParameterKey>the_peeb_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from burst angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
-      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV</Units>
       <UnitsConversion>1.60217653e-19&gt;J</UnitsConversion>
@@ -6455,7 +6455,7 @@
       <Name>Electron Pressure Tensor: Burst Distribution</Name>
       <ParameterKey>the_peeb_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from burst angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
-      <Caveats>Only 6 elements are provided since matrix is symmetrical. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Only 6 elements are provided since matrix is symmetrical. Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -6520,7 +6520,7 @@
       <Name>Electron Momentum Flux Tensor: Burst Distribution</Name>
       <ParameterKey>the_peeb_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from burst angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -6585,7 +6585,7 @@
       <Name>Electron Particle Flux Vector: Burst Distribution</Name>
       <ParameterKey>the_peeb_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from burst angle distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -6629,7 +6629,7 @@
       <Name>Electron Symmetry Vector: Burst Distribution</Name>
       <ParameterKey>the_peeb_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peeb_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the burst angle distibution quantities.</Description>
-      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>This is the direction vector of the principal axis of the pressure tensor in despun spacecraft coordinates.  Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>None</Units>
       <CoordinateSystem>
@@ -6668,7 +6668,7 @@
       <Name>Electron Symmetry Angle (between symmetry direction and B): Burst Distribution</Name>
       <ParameterKey>the_peeb_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peeb_t3 and the peeb_magt3 quantities. Calculated from the burst angle distribution quantities.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>degrees</Units>
       <ValidMin>0.0</ValidMin>
@@ -6725,7 +6725,7 @@
       <Name>Electron Velocity Vector SC: Burst Distribution</Name>
       <ParameterKey>the_peeb_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from burst distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -6769,7 +6769,7 @@
       <Name>Electron Velocity Vector in GSE: Burst Distribution</Name>
       <ParameterKey>the_peeb_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from burst angle distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
@@ -6813,7 +6813,7 @@
       <Name>the_peeb_velocity_gsm</Name>
       <ParameterKey>the_peeb_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates: Burst distribution. Calculated from burst angle distribution.</Description>
-      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
+      <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS E(P4) efi boom deployment date: 2007-06-07/19:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>10e3&gt;m/s</UnitsConversion>
