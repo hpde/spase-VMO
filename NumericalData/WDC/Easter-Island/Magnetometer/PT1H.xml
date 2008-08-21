@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
+  <Version>1.2.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/WDC/Easter-Island/Magnetometer/PT1H</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Easter Island Fluxgate Magnetometer Data</ResourceName>
+      <AlternateName/>
+      <ReleaseDate>2007-10-17T09:22:04.000</ReleaseDate>
+      <ExpirationDate>2099-12-31T23:59:59.999</ExpirationDate>
+      <Description>Easter Island Magnetometer PT1H data; Station Id: EIC; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
+      <Acknowledgement>N/A</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/UNKNOWN</PersonID>
+        <Role>GeneralContact</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+        <Name>WDC for Geomagnetism, Edinburgh; Geomagnetic Data Master Catalog</Name>
+        <URL>http://www.wdc.bgs.ac.uk/catalog/intro.html</URL>
+        <Description>Download web site for magnetometer data from the WDC</Description>
+      </InformationURL>
+      <AssociationID>spase://SMWG/Instrument/WDC/Easter-Island/Magnetometer</AssociationID>
+      <PriorID>spase://VMO/NumericalData/WDC/Easter-Island/Magnetometer/PT1H</PriorID>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/WDC</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>FTP Site of the WDC at the British Geological Survey; Geomagnetic Data Master Catalog</Name>
+        <URL>ftp://ftp.nmh.ac.uk/wdc/obsdata/hourval</URL>
+        <Description>FTP site for downloading ground magnetogram data from the WDC hosted by the British Geological Survey</Description>
+      </AccessURL>
+      <Format>Text</Format>
+      <Encoding>ASCII</Encoding>
+      <DataExtent>
+        <Bytes>178120</Bytes>
+        <Units>bytes</Units>
+        <Per>P1Y</Per>
+      </DataExtent>
+      <Acknowledgement>British Geological Survey</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <ProviderResourceName/>
+    <ProviderProcessingLevel/>
+    <ProviderVersion/>
+    <InstrumentID>spase://SMWG/Instrument/WDC/Easter-Island/Magnetometer</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>1964-01-01T00:00:00.000</StartDate>
+        <EndDate>1964-12-31T23:00:00.000</EndDate>
+        <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
+      </TimeSpan>
+      <Cadence>PT1H</Cadence>
+    </TemporalDescription>
+    <ObservedRegion>Earth.Surface</ObservedRegion>
+    <Caveats/>
+    <Keyword/>
+    <InputResourceID>N/A</InputResourceID>
+    <PhysicalParameter>
+      <Name>Universal Time</Name>
+      <ParameterKey>Time</ParameterKey>
+      <Description>Time is expressed using a five column format with the following order:  year, month, day, hour, and minute, each stored in interger format.  The time columns are the first five columns in the flat file.</Description>
+      <Structure>
+        <StructureType>Vector</StructureType>
+        <Size>5</Size>
+        <Description>Universal Time expressed using a 5-column year, month, day, hour, minute representation</Description>
+        <Element>
+          <Name>Year</Name>
+          <Index>1</Index>
+          <ParameterKey>Year</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Month</Name>
+          <Index>2</Index>
+          <ParameterKey>Month</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Day</Name>
+          <Index>3</Index>
+          <ParameterKey>Day</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Hour</Name>
+          <Index>4</Index>
+          <ParameterKey>Hour</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Minute</Name>
+          <Index>5</Index>
+          <ParameterKey>Minute</ParameterKey>
+        </Element>
+      </Structure>
+      <Support>Temporal</Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>Easter Island PT1H Magnetic Field DHZ</Name>
+      <ParameterKey>B Field DHZ</ParameterKey>
+      <Description>Easter Island PT1H Magnetic Field DHZ</Description>
+      <Caveats/>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <UnitsConversion>10^9 nT/T</UnitsConversion>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cylindrical</CoordinateRepresentation>
+        <CoordinateSystemName>CGM</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <StructureType>Vector</StructureType>
+        <Size>3</Size>
+        <Description>Easter Island Magnetic Field Data in DHZ Coordinates</Description>
+        <Element>
+          <Name>D</Name>
+          <Component>Phi</Component>
+          <Index>1</Index>
+          <ParameterKey>D</ParameterKey>
+        </Element>
+        <Element>
+          <Name>H</Name>
+          <Component>R</Component>
+          <Index>2</Index>
+          <ParameterKey>H</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Z</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <ParameterKey>Z</ParameterKey>
+        </Element>
+      </Structure>
+      <ValidMin>-60000</ValidMin>
+      <ValidMax>60000</ValidMax>
+      <FillValue>-99999</FillValue>
+      <Measured>
+        <Field>
+          <FieldQualifier>Vector</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
+    </PhysicalParameter>
+  </NumericalData>
+</Spase>
