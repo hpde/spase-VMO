@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT96S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS K1 Key Parameter data</ResourceName>
-      <ReleaseDate>2008-06-20T19:00:52Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ number fluxes for survey purposes only 
       
 Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
@@ -32,7 +32,7 @@ Version 0: June, 2001
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/CDAWeb</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>

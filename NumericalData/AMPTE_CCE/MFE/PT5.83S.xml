@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_CCE/MFE/PT5.83S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/CCE Spin-averaged Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:09:23Z</ReleaseDate>
       <Description>AMPTE/CCE spin-averaged DC magnetic field at ~5.83 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/CCE magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -21,7 +21,7 @@
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/VHO-VMO</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/VHO-VMO</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>

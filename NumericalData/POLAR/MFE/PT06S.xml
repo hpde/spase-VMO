@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>POLAR Magnetic Field KP</ResourceName>
       <AlternateName>POLAR Magnetic Field High Resolution Data</AlternateName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
       <Description>POLAR Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
       <Contact>
         <!-- C. T. Russell -->
@@ -20,7 +20,7 @@
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/CDAWeb</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>

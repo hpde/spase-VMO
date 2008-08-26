@@ -6,7 +6,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/Ephemeris/PT12M</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP-8 Spacecraft Positions</ResourceName>
-      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
       <Description>IMP-8 spacecraft positions in various coordinate systems</Description>
       <Contact>
         <!-- Adam Szabo -->
@@ -15,7 +15,7 @@
       </Contact>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/CDAWeb</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>

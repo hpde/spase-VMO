@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>POLAR Predicted Orbit</ResourceName>
-      <ReleaseDate>2008-06-18T19:25:30Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -14,7 +14,7 @@
       </Contact>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/CDAWeb</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>

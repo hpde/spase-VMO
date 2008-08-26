@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/ST5-224/MAG/v1_PT01S</ResourceID>
     <ResourceHeader>
       <ResourceName>ST5-224 MAG Data</ResourceName>
-      <ReleaseDate>2008-07-31T20:38:49Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:09:24Z</ReleaseDate>
       <Description>Magnetic field and position data from the ST5-224 satellite. Calibrated science quality data.</Description>
       <Acknowledgement>User will acknowledge the ST5 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -15,7 +15,7 @@
       </Contact>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/VHO-VMO</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/VHO-VMO</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>

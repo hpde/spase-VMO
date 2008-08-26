@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
   <Version>1.3.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-      <ReleaseDate>2008-06-20T19:11:16Z</ReleaseDate>
+      <ReleaseDate>2008-08-26T22:07:51Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
       
   Includes also non-TIMAS Data: 
@@ -76,7 +76,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://VMO/Repository/LASP_TIMAS_H2</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/UCOLO/LASP/TIMAS_H2</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
