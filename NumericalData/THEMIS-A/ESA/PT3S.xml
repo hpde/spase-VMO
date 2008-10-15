@@ -61,7 +61,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>cm^-3</Units>
-      <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
+      <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -100,7 +100,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -950,7 +950,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10e-9&gt;T</UnitsConversion>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -993,7 +993,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -1037,7 +1037,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
@@ -1081,7 +1081,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
@@ -1156,22 +1156,22 @@
         <Element>
           <Name>cfg1_ion Full ESA-A</Name>
           <Index>1</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>cfg2_ion Full ESA-A</Name>
           <Index>2</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>mode_ion Full ESA-A</Name>
           <Index>3</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
@@ -1185,7 +1185,7 @@
       <Description>EPOCH of THEMIS time base</Description>
       <Caveats>EPOCH of 01-Jan-1970 00:00:00</Caveats>
       <Units>msec</Units>
-      <UnitsConversion>10e-3&gt;sec</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
       <Structure>
         <Size>1</Size>
         <Element>
@@ -1208,7 +1208,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>cm^-3</Units>
-      <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
+      <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -1247,7 +1247,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -2097,7 +2097,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10e-9&gt;T</UnitsConversion>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -2140,7 +2140,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.   This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -2184,7 +2184,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.   This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
@@ -2228,7 +2228,7 @@
       <Caveats>Some of the data are at a cadence of 395 seconds, cadences switch due to mode changes on the probe.   This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT98S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
@@ -2303,22 +2303,22 @@
         <Element>
           <Name>cfg1_elec Full ESA-A</Name>
           <Index>1</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>cfg2_elec Full ESA-A</Name>
           <Index>2</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>mode_elec Full ESA-A</Name>
           <Index>3</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
@@ -2332,7 +2332,7 @@
       <Description>EPOCH of THEMIS time base</Description>
       <Caveats>EPOCH of 01-Jan-1970 00:00:00</Caveats>
       <Units>msec</Units>
-      <UnitsConversion>10e-3&gt;sec</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
       <Structure>
         <Size>1</Size>
         <Element>
@@ -2355,7 +2355,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>cm^-3</Units>
-      <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
+      <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -2394,7 +2394,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -3244,7 +3244,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10e-9&gt;T</UnitsConversion>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -3287,7 +3287,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -3331,7 +3331,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
@@ -3375,7 +3375,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
@@ -3450,22 +3450,22 @@
         <Element>
           <Name>cfg1_ion Rdcd ESA-A</Name>
           <Index>1</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>cfg2_ion Rdcd ESA-A</Name>
           <Index>2</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>mode_ion Rdcd ESA-A</Name>
           <Index>3</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
@@ -3479,7 +3479,7 @@
       <Description>EPOCH of THEMIS time base</Description>
       <Caveats>EPOCH of 01-Jan-1970 00:00:00</Caveats>
       <Units>msec</Units>
-      <UnitsConversion>10e-3&gt;sec</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
       <Structure>
         <Size>1</Size>
         <Element>
@@ -3502,7 +3502,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>cm^-3</Units>
-      <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
+      <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -3541,7 +3541,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -4391,7 +4391,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10e-9&gt;T</UnitsConversion>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -4434,7 +4434,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -4478,7 +4478,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
@@ -4522,7 +4522,7 @@
       <Caveats>Data are produced from distributions that are reduced by averaging over angles. In slow survey mode a single angular bin is used. In fast survey six 90 degree by 90 degree bins are used.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
@@ -4597,22 +4597,22 @@
         <Element>
           <Name>cfg1_elec Rdcd ESA-A</Name>
           <Index>1</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>cfg2_elec Rdcd ESA-A</Name>
           <Index>2</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>mode_elec Rdcd ESA-A</Name>
           <Index>3</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
@@ -4626,7 +4626,7 @@
       <Description>EPOCH of THEMIS time base</Description>
       <Caveats>EPOCH of 01-Jan-1970 00:00:00</Caveats>
       <Units>msec</Units>
-      <UnitsConversion>10e-3&gt;sec</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
       <Structure>
         <Size>1</Size>
         <Element>
@@ -4649,7 +4649,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>cm^-3</Units>
-      <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
+      <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -4688,7 +4688,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -5538,7 +5538,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10e-9&gt;T</UnitsConversion>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -5581,7 +5581,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -5625,7 +5625,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
@@ -5669,7 +5669,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
@@ -5744,22 +5744,22 @@
         <Element>
           <Name>cfg1_ion Brst ESA-A</Name>
           <Index>1</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>cfg2_ion Brst ESA-A</Name>
           <Index>2</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>mode_ion Brst ESA-A</Name>
           <Index>3</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
@@ -5773,7 +5773,7 @@
       <Description>EPOCH of THEMIS time base</Description>
       <Caveats>EPOCH of 01-Jan-1970 00:00:00</Caveats>
       <Units>msec</Units>
-      <UnitsConversion>10e-3&gt;sec</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
       <Structure>
         <Size>1</Size>
         <Element>
@@ -5796,7 +5796,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>cm^-3</Units>
-      <UnitsConversion>10e6&gt;m^-3</UnitsConversion>
+      <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -5835,7 +5835,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
@@ -6685,7 +6685,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10e-9&gt;T</UnitsConversion>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -6728,7 +6728,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SR2</CoordinateSystemName>
@@ -6772,7 +6772,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
@@ -6816,7 +6816,7 @@
       <Caveats>Burst distribution is used to generate these quantities. It is available at high temporal(3s/1spin) resolution and high angular resolution(88 angles), but it is only available very infrequently.  This quantity will not be available before the THEMIS A(P5) efi boom deployment date: 2008-01-14/17:00:00 UT.</Caveats>
       <Cadence>PT3S</Cadence>
       <Units>km/s</Units>
-      <UnitsConversion>10e3&gt;m/s</UnitsConversion>
+      <UnitsConversion>1.0e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
@@ -6891,22 +6891,22 @@
         <Element>
           <Name>cfg1_elec Brst ESA-A</Name>
           <Index>1</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>cfg2_elec Brst ESA-A</Name>
           <Index>2</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
         <Element>
           <Name>mode_elec Brst ESA-A</Name>
           <Index>3</Index>
-          <ValidMin>10.0</ValidMin>
-          <ValidMax>0.0</ValidMax>
+          <ValidMin>0.0</ValidMin>
+          <ValidMax>10.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
@@ -6920,7 +6920,7 @@
       <Description>EPOCH of THEMIS time base</Description>
       <Caveats>EPOCH of 01-Jan-1970 00:00:00</Caveats>
       <Units>msec</Units>
-      <UnitsConversion>10e-3&gt;sec</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
       <Structure>
         <Size>1</Size>
         <Element>
