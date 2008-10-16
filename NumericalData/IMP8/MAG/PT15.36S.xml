@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
+      <ReleaseDate>2008-10-15T22:38:14Z</ReleaseDate>
       <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second.</Description>
       <Acknowledgement>User will acknowledge the IMP-8 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -45,7 +45,6 @@
       <Cadence>PT15.36S</Cadence>
     </TemporalDescription>
     <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
-    <ObservedRegion>Heliosphere.Inner</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
     <Caveats>The time resolution (cadence) is not constant. The time tag corresponds to the last complete record received in a major frame. Since the data is on average 70% complete, this is quite often different from 15.36 seconds from the previous time tag. On average, however, it should be about 15.36 seconds.</Caveats>

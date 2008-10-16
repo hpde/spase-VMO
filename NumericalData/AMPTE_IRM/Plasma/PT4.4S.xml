@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_IRM/Plasma/PT4.4S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/IRM Plasma Data</ResourceName>
-      <ReleaseDate>2008-08-26T22:09:23Z</ReleaseDate>
+      <ReleaseDate>2008-10-16T19:51:02Z</ReleaseDate>
       <Description>AMPTE/IRM spin-averaged plasma moments at ~4.4 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/IRM 3-D Plasma Analyser team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -262,8 +262,8 @@ IRM time stamps are UT at time of ground receipt. Thus for time-critical science
       <Name>Tp</Name>
       <ParameterKey>Column 13</ParameterKey>
       <Description>Temperature of protons</Description>
-      <Units>keV</Units>
-      <UnitsConversion>1.16e7&gt;K</UnitsConversion>
+      <Units>MK</Units>
+      <UnitsConversion>1e6&gt;K</UnitsConversion>
       <Structure>
       </Structure>
       <Measured>
@@ -336,8 +336,8 @@ IRM time stamps are UT at time of ground receipt. Thus for time-critical science
       <Name>Te</Name>
       <ParameterKey>Column 18</ParameterKey>
       <Description>Temperature of electrons</Description>
-      <Units>keV</Units>
-      <UnitsConversion>1.16e7&gt;K</UnitsConversion>
+      <Units>MK</Units>
+      <UnitsConversion>1e6&gt;K</UnitsConversion>
       <Structure>
       </Structure>
       <Measured>
