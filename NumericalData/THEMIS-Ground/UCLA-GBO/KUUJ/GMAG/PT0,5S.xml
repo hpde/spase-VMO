@@ -30,7 +30,6 @@
         <URL>http://themis.ssl.berkeley.edu/instrument_gmags.shtml</URL>
         <Description>THEMIS Web Site page on ground magnetometers. Contains links to papers, general purpose information and caveats.</Description>
       </InformationURL>
-      <PriorID>spase://VMOU/Instrument/THEMIS/KUUJ/Magnetometer</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
