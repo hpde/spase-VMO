@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/THEMIS-Ground/UCLA-GBO/KAPU/MAG/PT0.5S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Ground-based Vector Magnetic Field at Kapuskasing, ON, Canada.</ResourceName>
+      <ReleaseDate>2008-11-10T19:18:24Z</ReleaseDate>
+      <Description>KAPU is part of the UCLA GBO Network. This magnetometer was produced at UCLA.  It records 3-axis magnetic field measurements at 2Hz frequency.  Calibration files used are at: http://www-ssc.igpp.ucla.edu/themis_data/calib_files/</Description>
+      <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically:S. Mende and C. T. Russell for use of the data</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://VMO/Person/Christopher-T-Russell</PersonID>
+        <Role>CoInvestigator</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Stephen.B.Mende</PersonID>
+        <Role>CoInvestigator</Role>
+      </Contact>
+      <InformationURL>
+        <Name>THEMIS Ground Magnetometer Data Center at UCLA</Name>
+        <URL>http://spc.igpp.ucla.edu/uclamag/themis_center/</URL>
+        <Description>Web server for displaying and downloading THEMIS ground magnetometer data</Description>
+      </InformationURL>
+      <InformationURL>
+        <Name>THEMIS Web site ground magnetometer page.</Name>
+        <URL>http://themis.ssl.berkeley.edu/instrument_gmags.shtml</URL>
+        <Description>THEMIS Web Site page on ground magnetometers. Contains links to papers, general purpose information and caveats.</Description>
+      </InformationURL>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb FTP Access</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/mag/kapu/</URL>
+        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Encoding>None</Encoding>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS-Ground/UCLA-GBO/KAPU/MAG</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+    <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+    <PhysicalParameter>
+      <Name>B in HDZ Components</Name>
+      <ParameterKey>thg_mag_kapu</ParameterKey>
+      <Description>Magnetic field B in HDZ vector components</Description>
+      <Cadence>PT0.5S</Cadence>
+      <Units>nT</Units>
+      <UnitsConversion>1e-9&gt;T</UnitsConversion>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>LGM</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>Magnetic North, local</Name>
+          <Index>1</Index>
+          <ValidMin>-60000.0</ValidMin>
+          <ValidMax>60000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+        <Element>
+          <Name>Magnetic East, local</Name>
+          <Index>2</Index>
+          <ValidMin>-60000.0</ValidMin>
+          <ValidMax>60000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+        <Element>
+          <Name>Vertical Down, local</Name>
+          <Index>3</Index>
+          <ValidMin>-60000.0</ValidMin>
+          <ValidMax>60000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+      </Structure>
+      <Measured>
+        <Field>
+          <FieldQualifier>Vector</FieldQualifier>
+          <FieldQuantity>Magnetic</FieldQuantity>
+        </Field>
+      </Measured>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>thg_mag_kapu_time</Name>
+      <ParameterKey>thg_mag_kapu_time</ParameterKey>
+      <Description>thg_mag_kapu_time,.UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Caveats>Unleaped seconds</Caveats>
+      <Units>S</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+  </NumericalData>
+</Spase>
