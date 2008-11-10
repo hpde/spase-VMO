@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS-Ground/UCLA-EPO/FYTS/MAG/PT0.5S</ResourceID>
     <ResourceHeader>
       <ResourceName>Ground-based Vector Magnetic Field at Fort Yates, North Dakota</ResourceName>
-      <ReleaseDate>2008-11-10T19:18:24Z</ReleaseDate>
+      <ReleaseDate>2008-11-10T19:34:58Z</ReleaseDate>
       <Description>Geomagnetic Event Observation Network by Students (GEONS),  part of the THEMIS EPO Effort.  This is an Educational Public Outreach magnetometer operated by the NASA THEMIS mission.  EPO magnetometers should be used carefully, as they may be subject to environmental noise. This magnetometer was produced at UCLA.  It records 3-axis magnetic field measurements at 2Hz frequency.  Calibration files used are at: http://www-ssc.igpp.ucla.edu/themis_data/calib_files/</Description>
       <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically:S. Mende and C. T. Russell for use of the data</Acknowledgement>
       <Contact>
@@ -13,7 +13,7 @@
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
-        <PersonID>spase://VMO/Person/Christopher-T-Russell</PersonID>
+        <PersonID>spase://SMWG/Person/Christopher.T.Russell</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
       <Contact>
