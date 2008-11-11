@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+  <Version>1.3.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/THEMIS/C/Ephemeris/PT01M</ResourceID>
+    <ResourceHeader>
+      <ResourceName>THEMIS-C probe state</ResourceName>
+      <ReleaseDate>2008-11-11T22:43:36Z</ReleaseDate>
+      <Description>The probe state files contain position, attitude, and sun pulse data. Produced by Mission Ops, Science Ops and Science Team.
+     V00: Predictive on all, pre-pass.
+     V01: Intermediate: added definitive spinper, spinphase others predictive, expected shortly after pass.
+     V02: Preliminary: added definitive position, expected shortly after OD update (1 day after pass).
+     V03: Definitive: added science attitude determination using perigee data post-processing </Description>
+      <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission.</Acknowledgement>
+      <Contact>
+        <!-- Vassilis Angelopoulos -->
+        <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <InformationURL>
+        <Name>THEMIS Home Page</Name>
+        <URL>http://sprg.ssl.berkeley.edu/themis</URL>
+        <Description>Mission data and information portal</Description>
+      </InformationURL>
+      <PriorID>spase://VMO/NumericalData/THEMIS-C/Ephemeris/PT01M</PriorID>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb FTP Access</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/or/</URL>
+        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Encoding>None</Encoding>
+    </AccessInformation>
+    <ProviderProcessingLevel>Level1</ProviderProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS/C/Ephemeris</InstrumentID>
+    <MeasurementType>Ephemeris</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>2007-02-17T23:36:00Z</StartDate>
+        <RelativeStopDate>P5D</RelativeStopDate>
+      </TimeSpan>
+      <Cadence>PT01M</Cadence>
+    </TemporalDescription>
+    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+    <Caveats>Typical cadence is 1 min, occasinally 3s.</Caveats>
+    <PhysicalParameter>
+      <Name>THEMIS-C Position</Name>
+      <ParameterKey>thc_pos</ParameterKey>
+      <Description>THEMIS-C position vector in GEI coordinates</Description>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>X GEI</Name>
+          <Component>X</Component>
+          <Index>1</Index>
+          <Units>km</Units>
+          <ValidMin>-1000000.0</ValidMin>
+          <ValidMax>1000000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+        <Element>
+          <Name>Y GEI</Name>
+          <Component>Y</Component>
+          <Index>2</Index>
+          <Units>km</Units>
+          <ValidMin>-1000000.0</ValidMin>
+          <ValidMax>1000000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+        <Element>
+          <Name>Z GEI</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <Units>km</Units>
+          <ValidMin>-1000000.0</ValidMin>
+          <ValidMax>1000000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C velocity</Name>
+      <ParameterKey>thc_vel</ParameterKey>
+      <Description>THEMIS-C velocity vector in GEI coordinates</Description>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>X GEI</Name>
+          <Component>X</Component>
+          <Index>1</Index>
+          <Units>km/s</Units>
+          <ValidMin>-1000.0</ValidMin>
+          <ValidMax>1000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+        <Element>
+          <Name>Y GEI</Name>
+          <Component>Y</Component>
+          <Index>2</Index>
+          <Units>km/s</Units>
+          <ValidMin>-1000.0</ValidMin>
+          <ValidMax>1000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+        <Element>
+          <Name>Z GEI</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <Units>km/s</Units>
+          <ValidMin>-1000.0</ValidMin>
+          <ValidMax>1000.0</ValidMax>
+          <FillValue>NaN</FillValue>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C maneuver code</Name>
+      <ParameterKey>thc_man</ParameterKey>
+      <Description>THEMIS-C maneuver status code.  Values indicate if/what maneuver is being performed. Spacecraft data will be unreliable during maneuvers. 0=No Maneuver,1=Axial-thrust Maneuver,2=Side-thrust Maneuver,3=Beta-thrust Maneuver,4=Attitude Precession,5= Spin-Rate Change</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>4294967295</ValidMax>
+      <FillValue>4294967295</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C roi</Name>
+      <ParameterKey>thc_roi</ParameterKey>
+      <Description>Region of interest.  Different bits of this parameter give a general indication of the region that the spacecraft is in.  The first 18 bits are significant.  An active bit indicates the spacecraft is in a given region.  Multiple bits may be set simultaneously. The value of the bit is in parentheses in the following table.  
+Bit 1(1)      : Earth Shadow
+Bit 2(2)      : Lunar Shadow
+Bit 3(4)      : Atmospheric absorbtion zone
+Bit 4(8)      : South Atlantic Anomaly
+Bit 5(16)     : Northern Auroral Zone
+Bit 6(32)     : Southern Auroral Zone
+Bit 7(64)     : Perigee Passage
+Bit 8(128)    : Inner &amp; Outer Radiation Belts
+Bit 9(256)    : Deep Plasma Sphere
+Bit 10(512)   : Foreshock Solar Wind
+Bit 11(1024)  : Solar Wind Beam
+Bit 12(2048)  : High Magnetic Field
+Bit 13(4096)  : Average Plasma Sheet
+Bit 14(8192)  : Bowshock Crossing
+Bit 15(16384) : Magnetopause Crossing
+Bit 16(32768) : Ground Based Observatories
+Bit 17(65536) : 2-Day Conjunctions
+Bit 18(131072): 4-Day Conjunctions
+</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>4294967295</ValidMax>
+      <FillValue>4294967295</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C spinras</Name>
+      <ParameterKey>thc_spinras</ParameterKey>
+      <Description>THEMIS-C spin right ascension, GEI coordinates</Description>
+      <Units>deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Element>
+          <Name>THEMIS-C spinras</Name>
+          <Component>Phi</Component>
+          <Index>1</Index>
+        </Element>
+      </Structure>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>360.0</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C spindec</Name>
+      <ParameterKey>thc_spindec</ParameterKey>
+      <Description>THEMIS-C spin declination, GEI coordinates</Description>
+      <Units>deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Element>
+          <Name>THEMIS-C spindec</Name>
+          <Component>Theta</Component>
+          <Index>1</Index>
+        </Element>
+      </Structure>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>180.0</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C spinalpha</Name>
+      <ParameterKey>thc_spinalpha</ParameterKey>
+      <Description>THEMIS-C spin axis azimuth, alpha, in Probe Geometric coordinates</Description>
+      <Units>deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>SC</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Element>
+          <Name>THEMIS-C spinalpha</Name>
+          <Component>Phi</Component>
+          <Index>1</Index>
+        </Element>
+      </Structure>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>360.0</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C spinbeta</Name>
+      <ParameterKey>thc_spinbeta</ParameterKey>
+      <Description>THEMIS-C spin colatitude, beta, in Probe Geometric coordinates</Description>
+      <Units>deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>SC</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Element>
+          <Name>THEMIS-C spinbeta</Name>
+          <Component>Theta</Component>
+          <Index>1</Index>
+        </Element>
+      </Structure>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>180.0</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C spinper</Name>
+      <ParameterKey>thc_spinper</ParameterKey>
+      <Description>THEMIS-C spinperiod, regularized and boxcar averaged</Description>
+      <Units>sec</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>30.0</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>THEMIS-C spinphase</Name>
+      <ParameterKey>thc_spinphase</ParameterKey>
+      <Description>THEMIS-C spinphase, regularized and boxcar averaged angle the probe rotated since the sun sensor registered the sun pulse</Description>
+      <Units>deg</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>360.0</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+    <PhysicalParameter>
+      <Name>Time</Name>
+      <ParameterKey>thc_state_time</ParameterKey>
+      <Description>Time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Caveats>Unleaped seconds</Caveats>
+      <Units>sec</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </PhysicalParameter>
+  </NumericalData>
+</Spase>
