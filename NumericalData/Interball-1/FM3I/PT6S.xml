@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Interball-1 6-sec vector magnetic field data</ResourceName>
       <AlternateName>Interball-1 MFI H0 data</AlternateName>
-      <ReleaseDate>2008-11-26T23:36:46Z</ReleaseDate>
+      <ReleaseDate>2008-11-27T00:43:17Z</ReleaseDate>
       <Description>Magnetic field measurements on-board the Interball 1 probe are carried out by the FM-3I and MFI (FGM-I) instruments. Data presented here are the combination of the data of all magnetometers. First, all FM-3I M1 data are used, if they are absent, the MFI data are used, and if data from both magnetometer are absent, FM-3I M2 data presented. The FM-3 M1 and MFI data are averaged over 6-second time intervals.</Description>
       <Acknowledgement>The Interball project, IZMIRAN and Space Research Institute RAS  (SRI).</Acknowledgement>
       <Contact>
@@ -55,7 +55,9 @@
     <Parameter>
       <Name>Epoch</Name>
       <ParameterKey>Epoch</ParameterKey>
-      <Description>Time as a CDF epoch</Description>
+      <Description>Time in miliseconds since CDF epoch</Description>
+      <Units>ms</Units>
+      <UnitsConversion>1e-3&gt;s</UnitsConversion>
       <ValidMin>01-Jan-1990 00:00:00.000</ValidMin>
       <ValidMax>31-Dec-2010 00:00:00.000</ValidMax>
       <FillValue>-1.0E31</FillValue>
