@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>POLAR Predicted Orbit</ResourceName>
-      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
+      <ReleaseDate>2008-12-03T19:29:48Z</ReleaseDate>
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -66,7 +66,7 @@
           <Component>X</Component>
           <Index>2</Index>
           <Units>day</Units>
-          <ValidMin>183</ValidMin>
+          <ValidMin>1</ValidMin>
           <ValidMax>366</ValidMax>
           <FillValue>-2147483648</FillValue>
         </Element>

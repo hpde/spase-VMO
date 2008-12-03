@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>POLAR Magnetic Field KP</ResourceName>
       <AlternateName>POLAR Magnetic Field High Resolution Data</AlternateName>
-      <ReleaseDate>2008-08-26T22:06:38Z</ReleaseDate>
+      <ReleaseDate>2008-12-03T19:29:15Z</ReleaseDate>
       <Description>POLAR Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
       <Contact>
         <!-- C. T. Russell -->
@@ -79,15 +79,15 @@
           <Index>1</Index>
           <Units>year</Units>
           <ValidMin>1996</ValidMin>
-          <ValidMax>1996</ValidMax>
+          <ValidMax>2006</ValidMax>
           <FillValue>-2147483648</FillValue>
         </Element>
         <Element>
           <Name>Day of Year (Jan 1 = Day 1)</Name>
           <Index>2</Index>
           <Units>day</Units>
-          <ValidMin>076</ValidMin>
-          <ValidMax>076</ValidMax>
+          <ValidMin>1</ValidMin>
+          <ValidMax>366</ValidMax>
           <FillValue>-2147483648</FillValue>
         </Element>
         <Element>
