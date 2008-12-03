@@ -5,8 +5,12 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/Ephemeris/PT10M</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Spacecraft Definitive Positions</ResourceName>
-      <ReleaseDate>2008-12-03T22:04:40Z</ReleaseDate>
+      <ReleaseDate>2008-12-03T22:15:49Z</ReleaseDate>
       <Description>Definitive Geotail spacecraft positions in various coordinate systems</Description>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Gerald.Blackwell</PersonID>
+        <Role>DataProducer</Role>
+      </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
         <Role>MetadataContact</Role>
