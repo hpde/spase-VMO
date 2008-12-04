@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
+     <Version> 1.3.0 </Version>
+       <NumericalData>
+	 <ResourceID>spase://VMO/NumericalData/THEMIS-B/MOM/PT3S</ResourceID>
+           <ResourceHeader>
+             <ResourceName> THEMIS-B:  On Board moments:  ESA and SST Electron/Ion moments, density, flux, velocity, pressure and temperature.</ResourceName>
+	     <AlternateName>THEMIS-B MOM</AlternateName>
+	     <ReleaseDate>2008-07-17T20:37:36Z</ReleaseDate>
+             <Description> THEMIS-B On Board moments.  On board data outputs include number density, particle flux, energy flux, and a six component symetric momentum flux tensor.  Other moments are calculated from these partial moments on the ground adding total pressure, velocity, plasma temperature (measured as a three dimensional energy vector), and a six component symetric pressure tensor to the list of data products.  Number density and total pressure are scalar outputs.  Velocity is calculated in DSL, GSE, GSM, and MFA coordinates (coordinate descriptions are listed below in Table 1).  Magnetic Field Aligned pressure tensor and temperature are calculated as well.  All quantities are calculated for both ions and electrons from a combination of ESA and SST data.  Moments data are taken at spin resolution in all ESA survey modes except burst.  The spacecraft potential, as measure by the EFI, is used to correct for spacecraft charging by shifting the particle energies for calculation; this eliminates contamination from photo-electrons.  Also, weighting factors are used to account for instrument specific energy and angle efficiency variations.
+
+Table 1: Coordinate Descriptions.
+
+Despun Sun - L-vector (DSL):   Z-axis points towards the spin axis, the Y-axis is obtained from the cross product of Z and the Spacecraft-Sun direction as viewed from the probe.  The X-axis sits in the Z-axis-Sun plane and completes a right handed system.
+Geocentric Solar Ecliptic (GSE):   Z-axis is normal to the solar ecliptic, the X-axis points from earth towards the Sun, and Y complets a right handed system.
+Geocentric solar Magnetosphereic (GSM):   X-axis points from Earth to the Sun, the Y-axis is orthogonal to the Earth's magnetic dipole and points towards the dusk side, and the X-Z plane contains the dipole axis.
+Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-axis is the orthonormal cross product of the Z-axis and a vector pointing towards the Sun, and the X-axis completes the right handed system.
+
+	     </Description>
+             <Acknowledgement> NASA Contract NAS5-02099, V. Angelopoulos for use of data from the THEMIS Mission, C.W. Carlson, and J. McFadden.</Acknowledgement>
+      <Contact>
+        <!--Vassilis Angelopoulos -->
+        <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+        <!--C.W. Carlson-->
+        <PersonID>spase://SMWG/Person/Charles.W.Carlson</PersonID>
+        <Role>CoInvestigator</Role>
+      </Contact>
+      <Contact>
+        <!--J. McFadden-->
+        <PersonID>spase://SMWG/Person/James.P.McFadden</PersonID>
+        <Role>CoInvestigator</Role>
+      </Contact>
+         </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb FTP Access</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thb/l2/mom/</URL>
+        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Encoding>None</Encoding>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
+    <ProviderVersion> xxxx </ProviderVersion>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS-B/MOM</InstrumentID>
+    <MeasurementType>ThermalPlasma</MeasurementType>
+    <MeasurementType>EnergeticParticles</MeasurementType>
+    <MeasurementType>ChargedParticleFlux</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>2007-12-11T00:00:00Z</StartDate>
+        <RelativeStopDate>P7D</RelativeStopDate>
+      </TimeSpan>
+      <Cadence>PT3S</Cadence>
+    </TemporalDescription>
+    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+    <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+    <Caveats>Due to bit errors and data misdirection, ESA data (including moments) before April 27, 2007 should be considered dubious.  Other data loss and formatting errors in the moments calculations and the ETC were not corrected until Aug. 6, 2007.  Potential data from the EFI was not properly included in calculations between Nov. 18-22, 2007.  EFI booms on THEMIS-B were not deployed until Nov 17 2008, 06:00:00 UT.  Moments data before this date is suspect to error from photoelectrons and spacecraft charging.</Caveats>
+         <PhysicalParameter>
+             <Name> ESA On Board Moment (MOM) Ion Density, THEMIS-B  </Name>
+             <ParameterKey> thb_peim_density </ParameterKey>
+             <Description> ESA Scalar ion number density calculated on board the spacecraft.</Description>
+             <Units> cm^-3  </Units>
+	     <UnitsConversion>1e6> m^-3</UnitsConversion>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 1.0E10  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>NumberDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Total Pressure  </Name>
+             <ParameterKey> thb_peim_ptot </ParameterKey>
+             <Description> Total ion pressure calculated on the ground from on board moments.</Description>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13> Pa </UnitsConversion>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 1.0E10  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Particle Flux Vector  </Name>
+             <ParameterKey> thb_peim_flux </ParameterKey>
+             <Description> ESA ion particle flux vector (in DSL coordinates) calculated on board the spacecraft.  </Description>
+             <Units> #/(cm^2*s)  </Units>
+	     <UnitsConversion>1e4> #/(m^2*s)</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+                <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Fx_ion MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Fy_ion MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Fz_ion MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>NumberFlux</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Momentum Flux Tensor  </Name>
+             <ParameterKey> thb_peim_mftens </ParameterKey>
+             <Description> ESA ion momentum flux tensor (in DSL coordinates) calculated on board the spacecraft (six-component, off-diagonal terms are symetric).   </Description>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13>J/(m^3)</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 6 </Size>
+                   <Element>
+                     <Name> MFxx_ion MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFyy_ion MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFzz_ion MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFxy_ion MOM ESA-B </Name>
+                     <Index> 4 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFxz_ion MOM ESA-B </Name>
+                     <Index> 5 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFyz_ion MOM ESA-B </Name>
+                     <Index> 6 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQualifier>Tensor</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Energy Flux Vector  </Name>
+             <ParameterKey> thb_peim_eflux </ParameterKey>
+             <Description> ESA Ion energy flux vector (in DSL coordinates) calculated on board the spacecraft.</Description>
+             <Units> eV/(cm^2*s)  </Units>
+	     <UnitsConversion>1.60217653e-15> J/(m^2*s) </UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Efx_ion MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Efy_ion MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Efz_ion MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyFlux</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Velocity Vector in DSL  </Name>
+             <ParameterKey> thb_peim_velocity_dsl </ParameterKey>
+             <Description> ESA Ion velocity vector (in DSL coordinates, see chart in data description) calculated on the ground from spacecraft moments.</Description>             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_ion DSL MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_ion DSL MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_ion DSL MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Velocity Vector in GSE  </Name>
+             <ParameterKey> thb_peim_velocity_gse </ParameterKey>
+             <Description> ESA Ion velocity vector (in GSE coordinates, see chart in data description) calculated on the ground from spacecraft moments.</Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>GSE</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_ion GSE MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_ion GSE MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_io n GSE MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Velocity Vector in GSM  </Name>
+             <ParameterKey> thb_peim_velocity_gsm </ParameterKey>
+             <Description> ESA Ion velocity vector (in GSM coordinates, see chart in data description) calculated on the ground from spacecraft moments. </Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>GSM</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_ion GSM MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_ion GSM MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_ion GSM MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Pressure Tensor  </Name>
+             <ParameterKey> thb_peim_ptens </ParameterKey>
+             <Description> ESA Ion pressure tensor (in DSL coordinates, see chart in data description) calculated on the ground from spacecraft moments. </Description>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13> Pa </UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 6 </Size>
+                   <Element>
+                     <Name> Pxx_ion MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyy_ion MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pzz_ion MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxy_ion MOM ESA-B </Name>
+                     <Index> 4 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxz_ion MOM ESA-B </Name>
+                     <Index> 5 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyz_ion MOM ESA-B </Name>
+                     <Index> 6 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Tensor</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Magnetic Field Vector DSL (Same time array as MOM Ion ESA data)  </Name>
+             <ParameterKey> thb_peim_mag </ParameterKey>
+             <Description> Magnetic field vector in DSL coordinates (same time array as MOM Ion ESA data); for calculated of field aligned moments. </Description>
+             <Units> nT  </Units>
+	     <UnitsConversion>1e-9> T </UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Bx_ion DSL MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> By_ion DSL MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Bz_ion DSL MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Field>
+		 <FieldQualifier>Vector</FieldQualifier>
+		 <FieldQuantity>Magnetic</FieldQuantity>
+               </Field>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Velocity Vector, Field Aligned  </Name>
+             <ParameterKey> thb_peim_velocity_mag </ParameterKey>
+             <Description>ESA Ion velocity vector in magnetic field aligned coordinates; calculated on the ground from spacecraft moments. </Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>MFA</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_ion FA MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_ion FA MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_ion FA MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Temperature, Field Aligned (TprpFA1, TprpFA2, TparFA)  </Name>
+             <ParameterKey> thb_peim_t3_mag </ParameterKey>
+             <Description> Ion Temperature, Field Aligned (TprpFA1, TprpFA2, TparFA)  </Description>
+             <Caveats> ESA Three dimentional temperature in magnetic field aligned coordinates (see chart in data description). </Caveats>
+             <Units> eV  </Units>
+	     <UnitsConversion>1.60217653e-19> J</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>MFA</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Tx_ion FA MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> 0.0 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Ty_ion FA MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> 0.0 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Tz_ion FA MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> 0.0 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Energy</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Ion Pressure Tensor, Field Aligned  </Name>
+             <ParameterKey> thb_peim_ptens_mag </ParameterKey>
+             <Description> Ion Pressure Tensor, Field Aligned  </Description>
+             <Caveats> ESA Symmetric pressure tensor about magnetic field aligned coordinates (see chart in data description); calculated on the ground from spacecraft moments. </Caveats>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13>Pa</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>MFA</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 6 </Size>
+                   <Element>
+                     <Name> Pxx_ion FA MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                      <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyy_ion FA MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pzz_ion FA MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxy_ion FA MOM ESA-B </Name>
+                     <Index> 4 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxz_ion FA MOM ESA-B </Name>
+                     <Index> 5 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyz_ion FA MOM ESA-B </Name>
+                     <Index> 6 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Ion</ParticleType>
+		 <ParticleQualifier>Tensor</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> thb_peim_time  </Name>
+             <ParameterKey> thb_peim_time </ParameterKey>
+             <Description> thb_peim_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample. </Description>
+             <Caveats> Not including leap seconds.  </Caveats>
+             <Units> s  </Units>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 5.0E9  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Support>
+	       <SupportQuantity>Temporal</SupportQuantity>
+	       </Support>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> ESA On Board Moment (MOM) Electron Density, THEMIS-B  </Name>
+             <ParameterKey> thb_peem_density </ParameterKey>
+             <Description> ESA electron density calculated on board the spacecraft. </Description>
+             <Units> cm^-3  </Units>
+	     <UnitsConversion>1e6> m^-3</UnitsConversion>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 1.0E10  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Scalar</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>NumberDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>	     
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Total Pressure  </Name>
+             <ParameterKey> thb_peem_ptot </ParameterKey>
+             <Description> ESA Electron total pressure calculated on the ground from spacecraft moments.</Description>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13>Pa</UnitsConversion>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 1.0E10  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Scalar</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Particle Flux Vector  </Name>
+             <ParameterKey> thb_peem_flux </ParameterKey>
+             <Description> ESA Electron particle flux vector (in DSL coordinates) calculated on board the spacecraft.</Description>
+             <Units> #/(cm^2*s)  </Units>
+	     <UnitsConversion>1e4> #/(m^2*s)</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Fx_elec MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Fy_elec MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Fz_elec MOM  ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>NumberFlux</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Momentum Flux Tensor  </Name>
+             <ParameterKey> thb_peem_mftens </ParameterKey>
+             <Description> ESA Electron momentum flux tensor (in DSL coordinates) calculated on board the spacecraft.</Description>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13>J/(m^3)</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 6 </Size>
+                   <Element>
+                     <Name> MFxx_elec MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFyy_elec MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFzz_elec MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFxy_elec MOM ESA-B </Name>
+                     <Index> 4 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFxz_elec MOM ESA-B </Name>
+                     <Index> 5 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> MFyz_elec MOM ESA-B </Name>
+                     <Index> 6 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Tensor</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Energy Flux Vector  </Name>
+             <ParameterKey> thb_peem_eflux </ParameterKey>
+             <Description> ESA Electron energy flux vector (in DSL coordinates) calculated on board the spacecraft. </Description>
+             <Units> eV/(cm^2*s)  </Units>
+	     <UnitsConversion>1.60217653e-15> J/(m^2*s) </UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Efx_elec MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Efy_elec MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Efz_elec MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyFlux</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Velocity Vector in DSL  </Name>
+             <ParameterKey> thb_peem_velocity_dsl </ParameterKey>
+             <Description> ESA Electron velocity vectors (in DSL coordinates) calculated on the ground from spacecraft moments. </Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_elec DSL MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_elec DSL MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_elec DSL MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Velocity Vector in GSE  </Name>
+             <ParameterKey> thb_peem_velocity_gse </ParameterKey>
+             <Description> ESA Electron velocity vector (in GSE coordinates) calculated on the ground from spacecraft moments. </Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>GSE</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_elec GSE MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_elec GSE MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_elec GSE MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Velocity Vector in GSM  </Name>
+             <ParameterKey> thb_peem_velocity_gsm </ParameterKey>
+             <Description> ESA Electron velocity vector (in GSM coordinates) calculated on the ground from spacecraft moments. </Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>GSM</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_elec GSM MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_elec GSM MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_elec GSM MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Pressure Tensor  </Name>
+             <ParameterKey> thb_peem_ptens </ParameterKey>
+             <Description> ESA Electron pressure tensor (in DSL coordinates) calculated on the ground from spacecraft moments. </Description>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13>Pa</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 6 </Size>
+                   <Element>
+                     <Name> Pxx_elec MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyy_elec MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pzz_elec MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxy_elec MOM ESA-B </Name>
+                     <Index> 4 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxz_elec MOM ESA-B </Name>
+                     <Index> 5 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyz_elec MOM ESA-B </Name>
+                     <Index> 6 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Tensor</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Magnetic Field Vector DSL (Same time array as MOM Electron ESA data)  </Name>
+             <ParameterKey> thb_peem_mag </ParameterKey>
+             <Description> Magnetic Field Vector in DSL coordinates (same time array as MOM Electron ESA data); for calculation of field-aligned moments.  </Description>
+             <Units> nT  </Units>
+	     <UnitsConversion>1e-9> T</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>SR2</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Bx_elec DSL MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> By_elec DSL MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Bz_elec DSL MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	   <Measured>
+	     <Field>
+	       <FieldQualifier>Vector</FieldQualifier>
+	       <FieldQuantity>Magnetic</FieldQuantity>
+	     </Field>
+	   </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Velocity Vector, Field Aligned  </Name>
+             <ParameterKey> thb_peem_velocity_mag </ParameterKey>
+             <Description> ESA Electron velocity vector in magnetic field aligned coordinates; calculated on the ground from spacecraft moments. </Description>
+             <Units> km/s  </Units>
+	     <UnitsConversion>1e3> m/s</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>MFA</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Vx_elec FA MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vy_elec FA MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Vz_elec FA MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -10000.0 </ValidMin>
+                     <ValidMax> 10000.0 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Velocity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Temperature, Field Aligned (TprpFA1, TprpFA2, TparFA)  </Name>
+             <ParameterKey> thb_peem_t3_mag </ParameterKey>
+             <Description> Three dimentional electron temperature in magnetic field aligned coordinates; calculated on the ground from spacecraft moments. (TprpFA1, TprpFA2, TparFA)  </Description>
+             <Caveats> 3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system.  </Caveats>
+             <Units> eV  </Units>
+	     <UnitsConversion>1.60217653e-19> J </UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>MFA</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 3 </Size>
+                   <Element>
+                     <Name> Tx_elec FA MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> 0.0 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Ty_elec FA MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> 0.0 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Tz_elec FA MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> 0.0 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Vector</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>Energy</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Electron Pressure Tensor, Field Aligned  </Name>
+             <ParameterKey> thb_peem_ptens_mag </ParameterKey>
+             <Description> ESA Electron pressure tensor in magnetic field aligned coordinates; calculated on the ground from spacecraft moments. </Description>
+             <Caveats> Pressure tensor around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system.  </Caveats>
+             <Units> eV/cm^3  </Units>
+	     <UnitsConversion>1.60217653e-13>Pa</UnitsConversion>
+               <CoordinateSystem>
+                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                 <CoordinateSystemName>MFA</CoordinateSystemName>
+             </CoordinateSystem>
+               <Structure>
+           
+                 <Size> 6 </Size>
+                   <Element>
+                     <Name> Pxx_elec FA MOM ESA-B </Name>
+                     <Index> 1 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyy_elec FA MOM ESA-B </Name>
+                     <Index> 2 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pzz_elec FA MOM ESA-B </Name>
+                     <Index> 3 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E 10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxy_elec FA MOM ESA-B </Name>
+                     <Index> 4 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pxz_elec FA MOM ESA-B </Name>
+                     <Index> 5 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+                   <Element>
+                     <Name> Pyz_elec FA MOM ESA-B </Name>
+                     <Index> 6 </Index>
+                     <Units> </Units>
+                     <ValidMin> -1.0E10 </ValidMin>
+                     <ValidMax> 1.0E10 </ValidMax>
+                     <FillValue> NaN </FillValue>
+                 </Element>
+             </Structure>
+	     <Measured>
+               <Particle>
+		 <ParticleType>Electron</ParticleType>
+		 <ParticleQualifier>Tensor</ParticleQualifier>
+		 <ParticleQualifier>Moment</ParticleQualifier>
+		 <ParticleQuantity>EnergyDensity</ParticleQuantity>
+               </Particle>
+	     </Measured>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> thb_peem_time  </Name>
+             <ParameterKey> thb_peem_time </ParameterKey>
+             <Description> thb_peem_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample. </Description>
+             <Caveats> Not including leap seconds.  </Caveats>
+             <Units> s  </Units>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 5.0E9  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Support>
+	       <SupportQuantity>Temporal</SupportQuantity>
+	       </Support>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> Spacecraft Potential, THEMIS-B  </Name>
+             <ParameterKey> thb_pxxm_pot </ParameterKey>
+             <Description> Spacecraft potential as measured by the EFI.</Description>
+             <Units> V  </Units>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 1.0E10  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Support>
+	       <SupportQuantity>Other</SupportQuantity>
+	       </Support>
+         </PhysicalParameter>
+           <PhysicalParameter>
+             <Name> thb_pxxm_time  </Name>
+             <ParameterKey> thb_pxxm_time </ParameterKey>
+             <Description> thb_pxxm_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample. </Description>
+             <Caveats> Not including leap seconds.  </Caveats>
+             <Units> s  </Units>
+             <ValidMin> 0.0  </ValidMin>
+             <ValidMax> 5.0E9  </ValidMax>
+             <FillValue> NaN  </FillValue>
+	     <Support>
+	       <SupportQuantity>Temporal</SupportQuantity>
+	       </Support>
+         </PhysicalParameter>
+     </NumericalData>
+</Spase>
