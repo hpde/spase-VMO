@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.spase-group.org/data/schema spase-1_3_0.xsd"
+ xsi:schemaLocation="http://www.spase-group.org/data/schema ../../../../../Desktop/spase-1_3_0.xsd"
  xmlns="http://www.spase-group.org/data/schema">
   <Version>1.3.0</Version>
   <NumericalData>
@@ -85,6 +85,7 @@
       <Name>Magnetic Field Vector GSE</Name>
       <ParameterKey>B_GSE_c</ParameterKey>
       <Description>Magnetic Field vector in GSE coordinates</Description>
+      <Caveats>The Bz component is on average roughly 7 nT too high</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
@@ -122,6 +123,7 @@
       <Name>Magnetic Field vector GSM</Name>
       <ParameterKey>B_GSM_c</ParameterKey>
       <Description>Magnetic Field vector in GSM coordinates</Description>
+      <Caveats>The Bz component is on average roughly 7 nT too high</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
@@ -161,6 +163,7 @@
       <Description>Magnetic Field vector in spacecraft coordinates. Spacecraft magnetic field (P,E,N) is defined as: P - perpendicular to the spacecraft
         orbital plane or parallel to the Earth's spin axis in the case of a zero degree inclination orbit; E - perpendicular to P and directed earhtwards;
         and N - perpendicular to both P and E and directed eastwards.</Description>
+      <Caveats>The Bz component is on average roughly 7 nT too high</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
