@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.spase-group.org/data/schema ../../../../../Desktop/spase-1_3_0.xsd"
+ xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd"
  xmlns="http://www.spase-group.org/data/schema">
   <Version>1.3.0</Version>
   <NumericalData>
@@ -42,7 +42,9 @@
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>4</ProviderVersion>
     <InstrumentID>spase://SMWG/Instrument/GOES8/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/GOES8/Ephemeris</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
+    <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1995-12-01T00:00:00Z</StartDate>
