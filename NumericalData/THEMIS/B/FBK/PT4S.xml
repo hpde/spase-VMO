@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
+  <Version>1.3.2</Version>
   <NumericalData>
     <ResourceID>spase://SMWG/Instrument/THEMIS-B/FBK/PT4S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B: Probe Electric Field Instrument and Search Coil Magnetometer Instrument, Digital Fields Board - digitally computed Filter Bank spectra and E12 peak and average in HF band.</ResourceName>
-      <ReleaseDate>2008-01-01T00:01:00Z</ReleaseDate>
+      <ReleaseDate>2008-12-06T00:56:08Z</ReleaseDate>
       <Description>The Filter Bank is part of the Digital fields board and provides band-pass filtering for EFI and SCM spectra as well as E12HF peak and average value calculations.  The Filter Bank provides band-pass filtering for less computationally and power intensive spectra than the FFT would provide.  The process is as follows:   Signals are fed to the Filter Bank via a low-pass FIR filter with a cut-off frequency half that of the original signal maximum.  The output is passed to the band-pass filters, is differenced from the original signal, then absolute value of the data is taken and averaged.  The output from the low-pass filter is also sent to a second FIR filter with 2:1 decimation.  This output is then fed back through the system.  The process runs through 12 cascades for input at 8,192 samples/s and 13 for input at 16,384 samples/sec (EAC input only), reducing the signal and computing power by a factor 2 at each cascade.  At each cascade a set of data is produced at a sampling frequency of 2^n from 2 Hz to the initial sampling frequency (frequency characteristics for each step are shown below in Table 1).  The average from the Filter Bank is compressed to 8 bits with a pseudo-logarithmic encoder.  The data is stored in sets of six frequency bins at 2.689 kHz, 572 Hz, 144.2 Hz, 36.2 Hz, 9.05 Hz, and 2.26 Hz.  The average of the coupled E12HF signal and it's peak value are recorded over 62.5 ms windows (i.e. a 16 Hz sampling rate).  Accumulation of values from signal 31.25 ms windows is performed externally.  The  analog signals fed into the FBK are E12DC and SCM1.  Sensor and electronics design provided by UCB (J. W. Bonnell, F. S. Mozer), Digital Fields Board provided by LASP (R. Ergun), Search coil data provided by CETP (A. Roux).
 
 Table 1:  Frequency Properties.
@@ -75,7 +75,7 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       </TimeSpan>
       <Cadence>PT4S</Cadence>
     </TemporalDescription>
-    <PhysicalParameter>
+    <Parameter>
       <Name>thb_fbh</Name>
       <ParameterKey>thb_fb_hff</ParameterKey>
       <Description>Peak and average values from the coupled, high-frequency signal off opposing EFI booms 1 and 2.  Booms 1 and 2 are situated in the spin plane of the spacecraft, boom 1 along the positive x-axis (SPG coordinates).</Description>
@@ -100,13 +100,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fbh_time</Name>
       <ParameterKey>thb_fb_hff_time</ParameterKey>
       <Description>thb_fbh_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -118,8 +116,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_fbh_compno</Name>
       <ParameterKey>thb_fb_hff_compno</ParameterKey>
       <Description/>
@@ -146,8 +144,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_v1</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 1 in spacecraft spin plane along the positive x-axis(SPG coordinates).</Description>
@@ -204,13 +202,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_v1_time</Name>
       <ParameterKey>thb_fb_v1_time</ParameterKey>
       <Description>thb_fb_v1_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -222,8 +218,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_v2</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 2 in spacecraft spin plane along the negative x-axis (SPG coordinates).</Description>
@@ -280,13 +276,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_v2_time</Name>
       <ParameterKey>thb_fb_v2_time</ParameterKey>
       <Description>thb_fb_v2_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -298,8 +292,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_v3</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 3 in spacecraft spin plane along the positive y-axis (SPG coordinates).</Description>
@@ -356,13 +350,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_v3_time</Name>
       <ParameterKey>thb_fb_v3_time</ParameterKey>
       <Description>thb_fb_v3_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -374,8 +366,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_v4</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 4 in spacecraft spin plane along the negative y-axis (SPG coordinates).</Description>
@@ -432,13 +424,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_v4_time</Name>
       <ParameterKey>thb_fb_v4_time</ParameterKey>
       <Description>thb_fb_v4_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -450,8 +440,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_v5</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 5 located atop spacecraft along the spin axis (positive z-axis) (SPG coordinates).</Description>
@@ -508,13 +498,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_v5_time</Name>
       <ParameterKey>thb_fb_v5_time</ParameterKey>
       <Description>thb_fb_v5_time, UTC, in seconds  since 01-Jan-1970 00:00:00</Description>
@@ -526,8 +514,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_v6</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 6 located below the spacecraft along the spin axis (negative z-axis) (SPG coordinates).</Description>
@@ -584,13 +572,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_v6_time</Name>
       <ParameterKey>thb_fb_v6_time</ParameterKey>
       <Description>thb_fb_v6_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -602,8 +588,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_edc12</ParameterKey>
       <Description>Spectrogram FBK coupled E field DC component, EFI sensors 1 and 2 in the spacecraft spin plane (sensor 1 along positive x-axis, SPG coordinates).</Description>
@@ -661,13 +647,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_edc12_time</Name>
       <ParameterKey>thb_fb_edc12_time</ParameterKey>
       <Description>thb_fb_edc12_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -679,8 +663,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_edc34</ParameterKey>
       <Description>Spectrogram FBK coupled E field DC component, EFI sensors 3 and 4 in the spacecraft spin plane (sensor 3 along positive y-axis, SPG coordinates).</Description>
@@ -738,13 +722,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_edc34_time</Name>
       <ParameterKey>thb_fb_edc34_time</ParameterKey>
       <Description>thb_fb_edc34_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -756,8 +738,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_edc56</ParameterKey>
       <Description>Spectrogram FBK coupled E field DC component, EFI sensors 5 and 6 (axial, sensor 5 along positve z-axis, SPG coordinates).</Description>
@@ -815,13 +797,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_edc56_time</Name>
       <ParameterKey>thb_fb_edc56_time</ParameterKey>
       <Description>thb_fb_edc56_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -833,8 +813,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_scm1</ParameterKey>
       <Description>Spectrogram for FBK Search Coil Magnetometer (SCM) Axis 1.</Description>
@@ -892,13 +872,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_scm1_time</Name>
       <ParameterKey>thb_fb_scm1_time</ParameterKey>
       <Description>thb_fb_scm1_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -910,8 +888,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_scm2</ParameterKey>
       <Description>Spectrogram for FBK Search Coil Magnetometer (SCM) Axis 2.</Description>
@@ -969,13 +947,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_scm2_time</Name>
       <ParameterKey>thb_fb_scm2_time</ParameterKey>
       <Description>thb_fb_scm2_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -987,8 +963,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_scm3</ParameterKey>
       <Description>Spectrogram for FBK Search Coil Magnetometer (SCM) Axis 3.</Description>
@@ -1046,13 +1022,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_scm3_time</Name>
       <ParameterKey>thb_fb_scm3_time</ParameterKey>
       <Description>thb_fb_scm3_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -1064,8 +1038,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_eac12</ParameterKey>
       <Description>FBK spectrogram for coupled E field AC component, EFI sensors 1 and 2 (spin plane, sensor 1 along positve x-axis, SPG coordinates).</Description>
@@ -1123,13 +1097,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_eac12_time</Name>
       <ParameterKey>thb_fb_eac12_t ime</ParameterKey>
       <Description>thb_fb_eac12_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -1141,8 +1113,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_eac34</ParameterKey>
       <Description>FBK spectrogram for coupled E field AC component, EFI sensors 3 and 4 (spin plane, sensor 3 along positive y-axis, SPG coordinates).</Description>
@@ -1200,13 +1172,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_eac34_time</Name>
       <ParameterKey>thb_fb_eac34_time</ParameterKey>
       <Description>thb_fb_eac34_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -1218,8 +1188,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Calibrated Spectra</Name>
       <ParameterKey>thb_fb_eac56</ParameterKey>
       <Description>FBK spectrogram for coupled E field AC component, EFI sensors 5 and 6 (axial, sensor 5 along positive z-axis, SPG coordinates).</Description>
@@ -1277,13 +1247,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_eac56_time</Name>
       <ParameterKey>thb_fb_eac56_time</ParameterKey>
       <Description>thb_fb_eac56_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -1295,8 +1263,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_fb_yaxis</Name>
       <ParameterKey>thb_fb_yaxis</ParameterKey>
       <Description>thb_fb_yaxis</Description>
@@ -1355,8 +1323,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_fbk_fstart</Name>
       <ParameterKey>thb_fbk_fstart</ParameterKey>
       <Description>thb_fbk_fstart</Description>
@@ -1415,8 +1383,8 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_fbk_fband</Name>
       <ParameterKey>thb_fbk_fband</ParameterKey>
       <Description>Graph Y-Axis, Frequency</Description>
@@ -1475,6 +1443,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

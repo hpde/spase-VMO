@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
+  <Version>1.3.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS-B/Combined/FFT/PT0.0556S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B: On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements, for particle and wave burst survey modes.</ResourceName>
-      <ReleaseDate>2008-01-01T00:01:00Z</ReleaseDate>
+      <ReleaseDate>2008-12-06T00:56:09Z</ReleaseDate>
       <Description>On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements for particle and wave burst survey modes.  Spectra are produced only in Particle Burst and Wave Burst modes; only a preselected four of the signals listed in Table 1 are input at any time.  Data fed through the FFT while not in Particle or Wave Burst modes is automatically disgarded.  The FFTs (Cooley-Tukey algorithm) are conducted as an integral part of the power spectrum calculation by the Field Programable Gate Arrays (FPGAs).  A CORDIC algorithm is used for sine/cosine calculations. The data has raw resolution of 1024 pts for 8,192 sample/sec signals and 2048 pts for 16,384 sample/sec signals (EAC measurements only).  Signals at 8,192 samples/sec are handled by 1024-point FFTs, while those at 16,384 samples/sec go through 2048-point FFTs.  Past and current signal configurations for specific spacecraft are listed bellow in Table 2. The spectra are arranged into log spaced frequency bins in steps of 16, 32, or 64.  Cadence is adjusted to keep packet size constant (i.e. increasing the fequency resolution by a factor of 2 decreases the sampling rate by 1/2).  The frequency bins cover a range of 0 Hz to 4 kHz.
 
 Table 1: FFT Input Signals.
@@ -85,7 +85,7 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Cadence>PT0.0556S</Cadence>
     </TemporalDescription>
     <Caveats>Data product cadence varies betweeen 1/16 and 1/18 seconds.</Caveats>
-    <PhysicalParameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM delta-B (parallel to B)</Name>
       <ParameterKey>thb_ffp_16_dbpara</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst mode, 16 frequencies for SCM delta-B (parallel to B)</Description>
@@ -222,11 +222,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM delta-B (perp to B)</Name>
       <ParameterKey>thb_ffp_16_dbperp</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM delta-B (perp to B)</Description>
@@ -363,11 +361,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffp_16_eac12</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -504,11 +500,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_16_eac34</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -645,11 +639,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_16_eac56</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Description>
@@ -786,11 +778,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_16_edc12</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -927,11 +917,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_16_edc34</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -1068,11 +1056,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_16_edc56</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Description>
@@ -1209,11 +1195,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (parallel to B)</Name>
       <ParameterKey>thb_ffp_16_epara</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (parallel to B)</Description>
@@ -1350,11 +1334,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (perp to B)</Name>
       <ParameterKey>thb_ffp_16_eperp</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (perp to B)</Description>
@@ -1491,11 +1473,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 1</Name>
       <ParameterKey>thb_ffp_16_scm1</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequenci es for SCM, Axis 1</Description>
@@ -1632,11 +1612,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 2</Name>
       <ParameterKey>thb_ffp_16_scm2</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 1</Description>
@@ -1773,11 +1751,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 3</Name>
       <ParameterKey>thb_ffp_16_scm3</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 1</Description>
@@ -1914,11 +1890,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 1</Name>
       <ParameterKey>thb_ffp_16_v1</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 1</Description>
@@ -2054,11 +2028,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 2</Name>
       <ParameterKey>thb_ffp_16_v2</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 2</Description>
@@ -2194,11 +2166,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 3</Name>
       <ParameterKey>thb_ffp_16_v3</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 3</Description>
@@ -2334,11 +2304,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 4</Name>
       <ParameterKey>thb_ffp_16_v4</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 4</Description>
@@ -2474,11 +2442,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 5</Name>
       <ParameterKey>thb_ffp_16_v5</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 5</Description>
@@ -2614,11 +2580,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 6</Name>
       <ParameterKey>thb_ffp_16_v6</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 6</Description>
@@ -2754,11 +2718,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_16_yaxis</Name>
       <ParameterKey>thb_ffp_16_yaxis</ParameterKey>
       <Description>thb_ffp_16_yaxis</Description>
@@ -2897,8 +2859,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_16_time</Name>
       <ParameterKey>thb_ffp_16_time</ParameterKey>
       <Description>thb_ffp_16_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -2910,8 +2872,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_16_epoch0</Name>
       <ParameterKey>thb_ffp_16_epoch0</ParameterKey>
       <Description>EPOCH0 of THEMIS time base</Description>
@@ -2924,8 +2886,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_16_epoch</Name>
       <ParameterKey>thb_ffp_16_epoch</ParameterKey>
       <Description>thb_ffp_16_epoch</Description>
@@ -2935,8 +2897,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM delta-B (parallel to B)</Name>
       <ParameterKey>thb_ffp_32_dbpara</ParameterKey>
       <Description>FFT Power Spectr um in Particle Burst, 32 frequencies for SCM delta-B (parallel to B)</Description>
@@ -3201,11 +3163,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM delta-B (perp to B)</Name>
       <ParameterKey>thb_ffp_32_dbperp</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM delta-B (perp to B)</Description>
@@ -3470,11 +3430,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_32_eac12</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -3739,11 +3697,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_32_eac34</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -4008,11 +3964,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_32_eac56</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Description>
@@ -4277,11 +4231,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_32_edc12</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -4546,11 +4498,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_32_edc34</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -4815,11 +4765,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name/>
       <ParameterKey>thb_ffp_32_edc56</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Description>
@@ -5084,11 +5032,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (parallel to B)</Name>
       <ParameterKey>thb_ffp_32_epara</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (parallel to B)</Description>
@@ -5353,11 +5299,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (perp to B)</Name>
       <ParameterKey>thb_ffp_32_eperp</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (perp to B)</Description>
@@ -5622,11 +5566,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1</Name>
       <ParameterKey>thb_ffp_32_scm1</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1</Description>
@@ -5891,11 +5833,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 2</Name>
       <ParameterKey>thb_ffp_32_scm2</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1</Description>
@@ -6160,11 +6100,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 3</Name>
       <ParameterKey>thb_ffp_32_scm3</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1</Description>
@@ -6429,11 +6367,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 1</Name>
       <ParameterKey>thb_ffp_32_v1</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 1</Description>
@@ -6697,11 +6633,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 2</Name>
       <ParameterKey>thb_ffp_32_v2</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 2</Description>
@@ -6965,11 +6899,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 3</Name>
       <ParameterKey>thb_ffp_32_v3</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 3</Description>
@@ -7233,11 +7165,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 4</Name>
       <ParameterKey>thb_ffp_32_v4</ParameterKey>
       <Description>FFT Power S pectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 4</Description>
@@ -7501,11 +7431,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 5</Name>
       <ParameterKey>thb_ffp_32_v5</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 5</Description>
@@ -7769,11 +7697,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 6</Name>
       <ParameterKey>thb_ffp_32_v6</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 6</Description>
@@ -8037,11 +7963,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_32_yaxis</Name>
       <ParameterKey>thb_ffp_32_yaxis</ParameterKey>
       <Description>thb_ffp_32_yaxis</Description>
@@ -8308,8 +8232,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_32_time</Name>
       <ParameterKey>thb_ffp_32_time</ParameterKey>
       <Description>thb_ffp_32_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -8321,8 +8245,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_32_epoch0</Name>
       <ParameterKey>thb_ffp_32_epoch0</ParameterKey>
       <Description>EPOCH0 of THEMIS time base</Description>
@@ -8335,8 +8259,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_32_epoch</Name>
       <ParameterKey>thb_ffp_32_epoch</ParameterKey>
       <Description>thb_ffp_32_epoch</Description>
@@ -8346,8 +8270,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (parallel to B)</Name>
       <ParameterKey>thb_ffp_64_dbpara</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (parallel to B)</Description>
@@ -8868,11 +8792,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (perp to B)</Name>
       <ParameterKey>thb_ffp_64_dbperp</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (perp to B)</Description>
@@ -9393,11 +9315,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane).</Name>
       <ParameterKey>thb_ffp_64_eac12</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane).</Description>
@@ -9918,11 +9838,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffp_64_eac34</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -10443,11 +10361,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffp_64_eac56</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Description>
@@ -10968,11 +10884,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffp_64_edc12</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -11493,11 +11407,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffp_64_edc34</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -12018,11 +11930,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffp_64_edc56</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Description>
@@ -12543,11 +12453,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (parallel to B)</Name>
       <ParameterKey>thb_ffp_64_epara</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (parallel to B)</Description>
@@ -13068,11 +12976,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (perp to B)</Name>
       <ParameterKey>thb_ffp_64_eperp</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (perp to B)</Description>
@@ -13593,11 +13499,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1</Name>
       <ParameterKey>thb_ffp_64_scm1</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1</Description>
@@ -14118,11 +14022,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 2</Name>
       <ParameterKey>thb_ffp_64_scm2</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1</Description>
@@ -14643,11 +14545,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 3</Name>
       <ParameterKey>thb_ffp_64_scm3</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1</Description>
@@ -15168,11 +15068,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 1</Name>
       <ParameterKey>thb_ffp_64_v1</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 1</Description>
@@ -15692,11 +15590,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 2</Name>
       <ParameterKey>thb_ffp_64_v2</ParameterKey>
       <Description>FFT P ower Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 2</Description>
@@ -16216,11 +16112,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 3</Name>
       <ParameterKey>thb_ffp_64_v3</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 3</Description>
@@ -16740,11 +16634,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 4</Name>
       <ParameterKey>thb_ffp_64_v4</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 4</Description>
@@ -17264,11 +17156,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 5</Name>
       <ParameterKey>thb_ffp_64_v5</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 5</Description>
@@ -17788,11 +17678,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 6</Name>
       <ParameterKey>thb_ffp_64_v6</ParameterKey>
       <Description>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 6</Description>
@@ -18312,11 +18200,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_64_yaxis</Name>
       <ParameterKey>thb_ffp_64_yaxis</ParameterKey>
       <Description>thb_ffp_64_yaxis</Description>
@@ -18839,8 +18725,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_64_time</Name>
       <ParameterKey>thb_ffp_64_time</ParameterKey>
       <Description>thb_ffp_64_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -18852,8 +18738,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_64_epoch0</Name>
       <ParameterKey>thb_ffp_64_epoch0</ParameterKey>
       <Description>EPOCH0 of THEMIS time base</Description>
@@ -18866,8 +18752,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffp_64_epoch</Name>
       <ParameterKey>thb_ffp_64_epoch</ParameterKey>
       <Description>thb_ffp_64_epoch</Description>
@@ -18877,8 +18763,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (parallel to B)</Name>
       <ParameterKey>thb_ffw_16_dbpara</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (parallel to B)</Description>
@@ -19015,11 +18901,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (perp to B)</Name>
       <ParameterKey>thb_ffw_16_dbperp</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (perp to B)</Description>
@@ -19156,11 +19040,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burs t, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffw_16_eac12</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burs t, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -19297,11 +19179,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffw_16_eac34</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -19438,11 +19318,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffw_16_eac56</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Description>
@@ -19579,11 +19457,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffw_16_edc12</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -19720,11 +19596,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffw_16_edc34</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -19861,11 +19735,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffw_16_edc56</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Description>
@@ -20002,11 +19874,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (parallel to B)</Name>
       <ParameterKey>thb_ffw_16_epara</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (paral lel to B)</Description>
@@ -20143,11 +20013,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (perp to B)</Name>
       <ParameterKey>thb_ffw_16_eperp</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (perp to B)</Description>
@@ -20284,11 +20152,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1</Name>
       <ParameterKey>thb_ffw_16_scm1</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1</Description>
@@ -20425,11 +20291,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 2</Name>
       <ParameterKey>thb_ffw_16_scm2</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1</Description>
@@ -20566,11 +20430,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 3</Name>
       <ParameterKey>thb_ffw_16_scm3</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1</Description>
@@ -20707,11 +20569,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 1</Name>
       <ParameterKey>thb_ffw_16_v1</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 1</Description>
@@ -20847,11 +20707,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave  Burst, 16 frequencies for EFI Potential, Sensor 2</Name>
       <ParameterKey>thb_ffw_16_v2</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 2</Description>
@@ -20987,11 +20845,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 3</Name>
       <ParameterKey>thb_ffw_16_v3</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 3</Description>
@@ -21127,11 +20983,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 4</Name>
       <ParameterKey>thb_ffw_16_v4</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 4</Description>
@@ -21267,11 +21121,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 5</Name>
       <ParameterKey>thb_ffw_16_v5</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 5</Description>
@@ -21407,11 +21259,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 6</Name>
       <ParameterKey>thb_ffw_16_v6</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 6</Description>
@@ -21547,11 +21397,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_16_yaxis</Name>
       <ParameterKey>thb_ffw_16_yaxis</ParameterKey>
       <Description>thb_ffw_16_yaxis</Description>
@@ -21690,8 +21538,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_16_time</Name>
       <ParameterKey>thb_ffw_16_time</ParameterKey>
       <Description>thb_ffw_16_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -21703,8 +21551,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_16_epoch0</Name>
       <ParameterKey>thb_ffw_16_epoch0</ParameterKey>
       <Description>EPOCH0 of THEMIS time base</Description>
@@ -21717,8 +21565,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_16_epoch</Name>
       <ParameterKey>thb_ffw_16_epoch</ParameterKey>
       <Description>thb_ffw_16_epoch</Description>
@@ -21728,8 +21576,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (parallel to B)</Name>
       <ParameterKey>thb_ffw_32_dbpara</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (parallel to B)</Description>
@@ -21994,11 +21842,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (perp to B)</Name>
       <ParameterKey>thb_ffw_32_dbperp</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (perp to B)</Description>
@@ -22263,11 +22109,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffw_32_eac12</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -22532,11 +22376,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffw_32_eac34</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -22801,11 +22643,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffw_32_eac56</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Description>
@@ -23070,11 +22910,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffw_32_edc12</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -23339,11 +23177,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffw_32_edc34</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -23608,11 +23444,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffw_32_edc56</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Description>
@@ -23877,11 +23711,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 freque ncies for EFI E (parallel to B)</Name>
       <ParameterKey>thb_ffw_32_epara</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (parallel to B)</Description>
@@ -24146,11 +23978,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (perp to B)</Name>
       <ParameterKey>thb_ffw_32_eperp</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (perp to B)</Description>
@@ -24415,11 +24245,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1</Name>
       <ParameterKey>thb_ffw_32_scm1</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1</Description>
@@ -24684,11 +24512,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 2</Name>
       <ParameterKey>thb_ffw_32_scm2</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1</Description>
@@ -24953,11 +24779,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 3</Name>
       <ParameterKey>thb_ffw_32_scm3</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1</Description>
@@ -25222,11 +25046,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 1</Name>
       <ParameterKey>thb_ffw_32_v1</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 1</Description>
@@ -25490,11 +25312,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 2</Name>
       <ParameterKey>thb_ffw_32_v2</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 2</Description>
@@ -25758,11 +25578,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 3</Name>
       <ParameterKey>thb_ffw_32_v3</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 3</Description>
@@ -26026,11 +25844,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 4</Name>
       <ParameterKey>thb_ffw_32_v4</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 4</Description>
@@ -26294,11 +26110,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies  for EFI Potential, Sensor 5</Name>
       <ParameterKey>thb_ffw_32_v5</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 5</Description>
@@ -26562,11 +26376,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 6</Name>
       <ParameterKey>thb_ffw_32_v6</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 6</Description>
@@ -26830,11 +26642,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_32_yaxis</Name>
       <ParameterKey>thb_ffw_32_yaxis</ParameterKey>
       <Description>thb_ffw_32_yaxis</Description>
@@ -27098,11 +26908,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_32_time</Name>
       <ParameterKey>thb_ffw_32_time</ParameterKey>
       <Description>thb_ffw_32_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -27114,8 +26922,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_32_epoch0</Name>
       <ParameterKey>thb_ffw_32_epoch0</ParameterKey>
       <Description>EPOCH0 of THEMIS time base</Description>
@@ -27128,8 +26936,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_32_epoch</Name>
       <ParameterKey>thb_ffw_32_epoch</ParameterKey>
       <Description>thb_ffw_32_epoch</Description>
@@ -27139,8 +26947,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (parallel to B)</Name>
       <ParameterKey>thb_ffw_64_dbpara</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (parallel to B)</Description>
@@ -27661,11 +27469,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (perp to B)</Name>
       <ParameterKey>thb_ffw_64_dbperp</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (perp to B)</Description>
@@ -28186,11 +27992,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffw_64_eac12</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -28711,11 +28515,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffw_64_eac34</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -29236,11 +29038,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffw_64_eac56</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Description>
@@ -29761,11 +29561,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
       <ParameterKey>thb_ffw_64_edc12</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Description>
@@ -30286,11 +30084,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
       <ParameterKey>thb_ffw_64_edc34</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Description>
@@ -30811,11 +30607,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
       <ParameterKey>thb_ffw_64_edc56</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Description>
@@ -31336,11 +31130,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (parallel to B)</Name>
       <ParameterKey>thb_ffw_64_epara</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (parallel to B)</Description>
@@ -31861,11 +31653,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (perp to B)</Name>
       <ParameterKey>thb_ffw_64_eperp</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (perp to B)</Description>
@@ -32386,11 +32176,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1</Name>
       <ParameterKey>thb_ffw_64_scm1</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1</Description>
@@ -32911,11 +32699,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 2</Name>
       <ParameterKey>thb_ffw_64_scm2</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1</Description>
@@ -33436,11 +33222,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 3</Name>
       <ParameterKey>thb_ffw_64_scm3</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1</Description>
@@ -33961,11 +33745,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 1</Name>
       <ParameterKey>thb_ffw_64_v1</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 1</Description>
@@ -34485,11 +34267,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 2</Name>
       <ParameterKey>thb_ffw_64_v2</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 2</Description>
@@ -35009,11 +34789,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 3</Name>
       <ParameterKey>thb_ffw_64_v3</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 3</Description>
@@ -35533,11 +35311,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 4</Name>
       <ParameterKey>thb_ffw_64_v4</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 4</Description>
@@ -36057,11 +35833,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 5</Name>
       <ParameterKey>thb_ffw_64_v5</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 5</Description>
@@ -36581,11 +36355,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 6</Name>
       <ParameterKey>thb_ffw_64_v6</ParameterKey>
       <Description>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 6</Description>
@@ -37105,11 +36877,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_64_yaxis</Name>
       <ParameterKey>thb_ffw_64_yaxis</ParameterKey>
       <Description>thb_ffw_64_yaxis</Description>
@@ -37632,8 +37402,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_64_time</Name>
       <ParameterKey>thb_ffw_64_time</ParameterKey>
       <Description>thb_ffw_64_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -37645,8 +37415,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_64_epoch0</Name>
       <ParameterKey>thb_ffw_64_epoch0</ParameterKey>
       <Description>EPOCH0 of THEMIS time base</Description>
@@ -37659,8 +37429,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_ffw_64_epoch</Name>
       <ParameterKey>thb_ffw_64_epoch</ParameterKey>
       <Description>thb_ffw_64_epoch</Description>
@@ -37670,8 +37440,8 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>range_epoch</Name>
       <ParameterKey>range_epoch</ParameterKey>
       <Description>range_epoch</Description>
@@ -37683,6 +37453,6 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

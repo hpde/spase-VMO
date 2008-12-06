@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
+  <Version>1.3.2</Version>
   <NumericalData>
     <ResourceID>spase:://SMWG/NumericalData/THEMIS-B/SST/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B:  Solid State Telescope (SST): Energy flux spectrogram, electron/ion ground-calculated fluxes (30 keV - 300 keV).</ResourceName>
       <AlternateName>THEMIS-B SST</AlternateName>
-      <ReleaseDate>2008-01-01T00:00:01Z</ReleaseDate>
+      <ReleaseDate>2008-12-06T00:56:10Z</ReleaseDate>
       <Description>THEMIS-B: The Solid State Telescope (SST) measures the incoming intensity (flux per solid angle) of superthermal electrons and ions.  The spacecraft is fitted with two units (heads), each SST unit has two pairs of opposing ion and electron sensors.  Each single sensor covers an angle of 36 degrees.  The units are oriented such that one pair is always centered in the rotation plane, the other oriented at a maximum angle of 54 degrees off the plane.  Each pair of units are oriented opposite each other allowing both ion and electron sensors to sweep out a maximum of 92% of the sky (45x45 degree required Elevation by Azimuth FOV, 108x22 raw) .  The ion and electron sensors primarily measure particles between 30-300 keV and 30-100 keV respectively with a maximum capability of 20-6000 keV and 25-1000 keV.  Full distribution data is measured over 128 angles and 16 energy bins, reduced distribution uses 6 angles and 16 energy bins, and burst mode data has 64 angles in 16 energy bins.  Matched and paired electron broom magnets produce quadrapole fields reducing magnetic contamination.  A mechanical attenuator is used to increase the instruments dynamical range avoiding oversaturation near the plasma sheet edge. 
 	     </Description>
       <Acknowledgement>NASA Contract NAS5-02099</Acknowledgement>
@@ -39,7 +39,7 @@
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>xxxx</ProviderVersion>
     <InstrumentID>&gt;spase:://SMWG/Instrument/THEMIS-B/SST</InstrumentID>
-    <MeasurementType>ChargedParticleFlux</MeasurementType>
+    <MeasurementType>IonComposition</MeasurementType>
     <MeasurementType>EnergeticParticles</MeasurementType>
     <MeasurementType>Spectrum</MeasurementType>
     <TemporalDescription>
@@ -50,7 +50,7 @@
       <Cadence>PT3S</Cadence>
     </TemporalDescription>
     <Caveats>Calibration for the SST is not complete.  Currently there are no corrections for the dead layer.  Other data products will be added later as calibration continues.  Total list of expected data types can be found on the THEMIS website.</Caveats>
-    <PhysicalParameter>
+    <Parameter>
       <Name>SST Ion energy spectrogram</Name>
       <ParameterKey>thb_psif_en_eflux</ParameterKey>
       <Description>SST Ion energy spectrogram in DSL (Despun Spacecraft) coordinates.  Spectrogram data is averaged over solid angle.</Description>
@@ -192,16 +192,14 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQualifier>Anisotropy</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Differential</Qualifier>
+        <Qualifier>Anisotropy</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SST Ion energy spectrogram Y-axis (energy).</Name>
       <ParameterKey>thb_psif_en_eflux_yaxis</ParameterKey>
       <Description>Ion energy spectrogram: Number intensity is graphed against energy on the Y-axis; ranges from 30-300 keV.</Description>
@@ -338,15 +336,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Scalar</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>thb_psif_en_eflux_time</Name>
       <ParameterKey>thb_psif_en_eflux_time</ParameterKey>
       <Description>thb_psif_en_eflux_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample</Description>
@@ -358,8 +354,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_psif_en_eflux_delta_time</Name>
       <ParameterKey>thb_psif_en_eflux_delta_time</ParameterKey>
       <Description>Duration in seconds of sample.</Description>
@@ -370,8 +366,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_psif_en_eflux_mode</Name>
       <ParameterKey>thb_psif_en_eflux_mode</ParameterKey>
       <Description>SST survey mode</Description>
@@ -381,8 +377,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>SST Electron energy spectrogram</Name>
       <ParameterKey>thb_psef_en_eflux</ParameterKey>
       <Description>SST Electron energy spectrogram in DSL (Despun Spacecraft) coordinates.   Spectrogram data is averaged over solid angle.</Description>
@@ -524,16 +520,14 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQualifier>Anisotropy</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Differential</Qualifier>
+        <Qualifier>Anisotropy</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SST Electron energy spectrogram Y-axis (Energy).</Name>
       <ParameterKey>thb_psef_en_eflux_yaxis</ParameterKey>
       <Description>Electron energy spectrogram: Number intensity is graphed against energy on the Y-axis; ranges from 30-300 keV.</Description>
@@ -670,15 +664,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Scalar</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>thb_psef_en_eflux_time</Name>
       <ParameterKey>thb_psef_en_eflux_time</ParameterKey>
       <Description>thb_psef_en_eflux_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample</Description>
@@ -690,8 +682,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_psif_en_flux_delta_time</Name>
       <ParameterKey>thb_psef_en_eflux_delta_time</ParameterKey>
       <Description>Sample duration in seconds.</Description>
@@ -702,8 +694,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>thb_psef_en_eflux_mode</Name>
       <ParameterKey>thb_psef_en_eflux_mode</ParameterKey>
       <Description>SST survey mode</Description>
@@ -713,6 +705,6 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>
