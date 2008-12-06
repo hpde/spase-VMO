@@ -2,11 +2,11 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
   <Version>1.3.2</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/THEMIS-D/MOM/PT3S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/THEMIS/D/MOM/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-D:  On Board moments:  ESA and SST Electron/Ion moments, density, flux, velocity, pressure and temperature.</ResourceName>
       <AlternateName>THEMIS-D MOM</AlternateName>
-      <ReleaseDate>2008-12-06T00:56:10Z</ReleaseDate>
+      <ReleaseDate>2008-12-06T01:08:42Z</ReleaseDate>
       <Description>THEMIS-D On Board moments.  On board data outputs include number density, particle flux, energy flux, and a six component symetric momentum flux tensor.  Other moments are calculated from these partial moments on the ground adding total pressure, velocity, plasma temperature (measured as a three dimensional energy vector), and a six component symetric pressure tensor to the list of data products.  Number density and total pressure are scalar outputs.  Velocity is calculated in DSL, GSE, GSM, and MFA coordinates (coordinate descriptions are listed below in Table 1).  Magnetic Field Aligned pressure tensor and temperature are calculated as well.  All quantities are calculated for both ions and electrons from a combination of ESA and SST data.  Moments data are taken at spin resolution in all ESA survey modes except burst.  The spacecraft potential, as measure by the EFI, is used to correct for spacecraft charging by shifting the particle energies for calculation; this eliminates contamination from photo-electrons.  Also, weighting factors are used to account for instrument specific energy and angle efficiency variations.
 
 Table 1: Coordinate Descriptions.
@@ -16,7 +16,7 @@ Geocentric Solar Ecliptic (GSE):   Z-axis is normal to the solar ecliptic, the X
 Geocentric solar Magnetosphereic (GSM):   X-axis points from Earth to the Sun, the Y-axis is orthogonal to the Earth's magnetic dipole and points towards the dusk side, and the X-Z plane contains the dipole axis.
 Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-axis is the orthonormal cross product of the Z-axis and a vector pointing towards the Sun, and the X-axis completes the right handed system.
 
-	   </Description>
+	</Description>
       <Acknowledgement>NASA Contract NAS5-02099, V. Angelopoulos for use of data from the THEMIS Mission, C.W. Carlson, and J. McFadden.</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
@@ -46,14 +46,14 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>xxxx</ProviderVersion>
-    <InstrumentID>spase://SMWG/Instrument/THEMIS-D/MOM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS/D/MOM</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <MeasurementType>EnergeticParticles</MeasurementType>
     <MeasurementType>IonComposition</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2007-12-11T00:00:00Z</StartDate>
-        <RelativeStopDate>P7D</RelativeStopDate>
+        <RelativeStopDate>-P7D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT3S</Cadence>
     </TemporalDescription>
@@ -107,7 +107,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Fx_ion MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -115,7 +114,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Fy_ion MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -123,7 +121,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Fz_ion MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -139,7 +136,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     <Parameter>
       <Name>Ion Momentum Flux Tensor</Name>
       <ParameterKey>thd_peim_mftens</ParameterKey>
-      <Description>ESA ion momentum flux tensor (in DSL coordinates) calculated on board the spacecraft (six-component, off-diagonal terms are symetric). </Description>
+      <Description>ESA ion momentum flux tensor (in DSL coordinates) calculated on board the spacecraft (six-component, off-diagonal terms are symetric).</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;J/(m^3)</UnitsConversion>
       <CoordinateSystem>
@@ -151,7 +148,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFxx_ion MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -159,7 +155,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFyy_ion MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -167,7 +162,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFzz_ion MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -175,7 +169,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFxy_ion MOM ESA-D</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -183,7 +176,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFxz_ion MOM ESA-D</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -191,7 +183,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFyz_ion MOM ESA-D</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -219,7 +210,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Efx_ion MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -227,7 +217,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Efy_ion MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -235,7 +224,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Efz_ion MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -263,7 +251,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_ion DSL MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -271,7 +258,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_ion DSL MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -279,7 +265,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_ion DSL MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -307,7 +292,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_ion GSE MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -315,7 +299,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_ion GSE MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -323,7 +306,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_io n GSE MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -351,7 +333,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_ion GSM MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -359,7 +340,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_ion GSM MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -367,7 +347,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_ion GSM MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -395,7 +374,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxx_ion MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -403,7 +381,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyy_ion MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -411,7 +388,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pzz_ion MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -419,7 +395,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxy_ion MOM ESA-D</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -427,7 +402,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxz_ion MOM ESA-D</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -435,7 +409,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyz_ion MOM ESA-D</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -463,7 +436,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Bx_ion DSL MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -471,7 +443,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>By_ion DSL MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -479,7 +450,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Bz_ion DSL MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -505,7 +475,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_ion FA MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -513,7 +482,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_ion FA MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -521,7 +489,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_ion FA MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -550,7 +517,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Tx_ion FA MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -558,7 +524,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Ty_ion FA MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -566,7 +531,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Tz_ion FA MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -595,7 +559,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxx_ion FA MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -603,7 +566,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyy_ion FA MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -611,7 +573,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pzz_ion FA MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -619,7 +580,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxy_ion FA MOM ESA-D</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -627,7 +587,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxz_ion FA MOM ESA-D</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -635,7 +594,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyz_ion FA MOM ESA-D</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -708,7 +666,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Fx_elec MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -716,7 +673,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Fy_elec MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -724,7 +680,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Fz_elec MOM  ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -752,7 +707,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFxx_elec MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -760,7 +714,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFyy_elec MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -768,7 +721,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFzz_elec MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -776,7 +728,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFxy_elec MOM ESA-D</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -784,7 +735,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFxz_elec MOM ESA-D</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -792,7 +742,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>MFyz_elec MOM ESA-D</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -820,7 +769,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Efx_elec MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -828,7 +776,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Efy_elec MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -836,7 +783,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Efz_elec MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -864,7 +810,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_elec DSL MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -872,7 +817,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_elec DSL MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -880,7 +824,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_elec DSL MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -908,7 +851,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_elec GSE MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -916,7 +858,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_elec GSE MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -924,7 +865,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_elec GSE MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -952,7 +892,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_elec GSM MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -960,7 +899,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_elec GSM MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -968,7 +906,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_elec GSM MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -996,7 +933,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxx_elec MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1004,7 +940,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyy_elec MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1012,7 +947,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pzz_elec MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1020,7 +954,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxy_elec MOM ESA-D</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1028,7 +961,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxz_elec MOM ESA-D</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1036,7 +968,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyz_elec MOM ESA-D</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1064,7 +995,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Bx_elec DSL MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1072,7 +1002,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>By_elec DSL MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1080,7 +1009,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Bz_elec DSL MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1106,7 +1034,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vx_elec FA MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1114,7 +1041,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vy_elec FA MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1122,7 +1048,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Vz_elec FA MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-10000.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1151,7 +1076,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Tx_elec FA MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1159,7 +1083,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Ty_elec FA MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1167,7 +1090,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Tz_elec FA MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1196,7 +1118,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxx_elec FA MOM ESA-D</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1204,7 +1125,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyy_elec FA MOM ESA-D</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1212,7 +1132,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pzz_elec FA MOM ESA-D</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E 10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1220,7 +1139,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxy_elec FA MOM ESA-D</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1228,7 +1146,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pxz_elec FA MOM ESA-D</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1236,7 +1153,6 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
         <Element>
           <Name>Pyz_elec FA MOM ESA-D</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>-1.0E10</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>

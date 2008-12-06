@@ -2,10 +2,10 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
   <Version>1.3.2</Version>
   <NumericalData>
-    <ResourceID>spase://SMWG/Instrument/THEMIS-B/FBK/PT4S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/THEMIS/B/FBK/PT4S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B: Probe Electric Field Instrument and Search Coil Magnetometer Instrument, Digital Fields Board - digitally computed Filter Bank spectra and E12 peak and average in HF band.</ResourceName>
-      <ReleaseDate>2008-12-06T00:56:08Z</ReleaseDate>
+      <ReleaseDate>2008-12-06T01:08:40Z</ReleaseDate>
       <Description>The Filter Bank is part of the Digital fields board and provides band-pass filtering for EFI and SCM spectra as well as E12HF peak and average value calculations.  The Filter Bank provides band-pass filtering for less computationally and power intensive spectra than the FFT would provide.  The process is as follows:   Signals are fed to the Filter Bank via a low-pass FIR filter with a cut-off frequency half that of the original signal maximum.  The output is passed to the band-pass filters, is differenced from the original signal, then absolute value of the data is taken and averaged.  The output from the low-pass filter is also sent to a second FIR filter with 2:1 decimation.  This output is then fed back through the system.  The process runs through 12 cascades for input at 8,192 samples/s and 13 for input at 16,384 samples/sec (EAC input only), reducing the signal and computing power by a factor 2 at each cascade.  At each cascade a set of data is produced at a sampling frequency of 2^n from 2 Hz to the initial sampling frequency (frequency characteristics for each step are shown below in Table 1).  The average from the Filter Bank is compressed to 8 bits with a pseudo-logarithmic encoder.  The data is stored in sets of six frequency bins at 2.689 kHz, 572 Hz, 144.2 Hz, 36.2 Hz, 9.05 Hz, and 2.26 Hz.  The average of the coupled E12HF signal and it's peak value are recorded over 62.5 ms windows (i.e. a 16 Hz sampling rate).  Accumulation of values from signal 31.25 ms windows is performed externally.  The  analog signals fed into the FBK are E12DC and SCM1.  Sensor and electronics design provided by UCB (J. W. Bonnell, F. S. Mozer), Digital Fields Board provided by LASP (R. Ergun), Search coil data provided by CETP (A. Roux).
 
 Table 1:  Frequency Properties.
@@ -63,15 +63,15 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <Format>CDF</Format>
     </AccessInformation>
     <ProviderVersion>xxxx</ProviderVersion>
-    <InstrumentID>spase://SMWG/Instrument/THEMIS-B/EFI</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/THEMIS-B/SCM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS/B/EFI</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS/B/SCM</InstrumentID>
     <MeasurementType>ElectricField</MeasurementType>
     <MeasurementType>MagneticField</MeasurementType>
     <MeasurementType>Spectrum</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2007-02-24T00:00:01</StartDate>
-        <RelativeStopDate>P7D</RelativeStopDate>
+        <RelativeStopDate>-P7D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT4S</Cadence>
     </TemporalDescription>
@@ -86,7 +86,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>FBK-B HF Filter Peak Voltage</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -94,7 +93,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>FBK-B HF Filter Average Voltage</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -127,7 +125,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>FBK-B HF Filter Peak Voltage</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>1</ValidMin>
           <ValidMax>2</ValidMax>
           <FillValue>-32768</FillValue>
@@ -135,7 +132,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>FBK-B HF Filter Average Voltage</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>1</ValidMin>
           <ValidMax>2</ValidMax>
           <FillValue>-32768</FillValue>
@@ -150,13 +146,12 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_v1</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 1 in spacecraft spin plane along the positive x-axis(SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>V  </Units>
+      <Units>V</Units>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_v1_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -164,7 +159,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v1_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -172,7 +166,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v1_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -180,7 +173,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v1_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -188,7 +180,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v1_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -196,7 +187,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v1_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -224,13 +214,12 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_v2</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 2 in spacecraft spin plane along the negative x-axis (SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>V  </Units>
+      <Units>V</Units>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_v2_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -238,7 +227,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v2_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -246,7 +234,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v2_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -254,7 +241,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v2_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -262,7 +248,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v2_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -270,7 +255,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v2_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -298,13 +282,12 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_v3</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 3 in spacecraft spin plane along the positive y-axis (SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>V  </Units>
+      <Units>V</Units>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_v3_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -312,7 +295,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v3_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -320,7 +302,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v3_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -328,7 +309,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v3_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -336,7 +316,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v3_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -344,7 +323,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v3_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -372,13 +350,12 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_v4</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 4 in spacecraft spin plane along the negative y-axis (SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>V  </Units>
+      <Units>V</Units>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_v4_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -386,7 +363,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v4_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -394,7 +370,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v4_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -402,7 +377,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v4_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -410,7 +384,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v4_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -418,7 +391,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v4_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -446,13 +418,12 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_v5</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 5 located atop spacecraft along the spin axis (positive z-axis) (SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>V  </Units>
+      <Units>V</Units>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_v5_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -460,7 +431,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v5_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -468,7 +438,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v5_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -476,7 +445,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v5_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -484,7 +452,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v5_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -492,7 +459,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v5_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -520,13 +486,12 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_v6</ParameterKey>
       <Description>Spectrogram FBK potential, EFI sensor 6 located below the spacecraft along the spin axis (negative z-axis) (SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>V  </Units>
+      <Units>V</Units>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_v6_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -534,7 +499,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v6_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -542,7 +506,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v6_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -550,7 +513,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v6_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -558,7 +520,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v6_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -566,7 +527,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_v6_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -594,14 +554,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_edc12</ParameterKey>
       <Description>Spectrogram FBK coupled E field DC component, EFI sensors 1 and 2 in the spacecraft spin plane (sensor 1 along positive x-axis, SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>mV/m  </Units>
+      <Units>mV/m</Units>
       <UnitsConversion>1e-3&gt;V/m</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_edc12_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -609,7 +568,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc12_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -617,7 +575,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc12_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -625,7 +582,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc12_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -633,7 +589,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc12_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -641,7 +596,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc12_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -669,14 +623,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_edc34</ParameterKey>
       <Description>Spectrogram FBK coupled E field DC component, EFI sensors 3 and 4 in the spacecraft spin plane (sensor 3 along positive y-axis, SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>mV/m  </Units>
+      <Units>mV/m</Units>
       <UnitsConversion>1e-3&gt;V/m</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_edc34_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -684,7 +637,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc34_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -692,7 +644,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc34_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -700,7 +651,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc34_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -708,7 +658,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc34_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -716,7 +665,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc34_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -744,14 +692,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_edc56</ParameterKey>
       <Description>Spectrogram FBK coupled E field DC component, EFI sensors 5 and 6 (axial, sensor 5 along positve z-axis, SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>mV/m  </Units>
+      <Units>mV/m</Units>
       <UnitsConversion>1e-3&gt;V/m</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_edc56_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -759,7 +706,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc56_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -767,7 +713,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc56_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -775,7 +720,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc56_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -783,7 +727,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc56_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -791,7 +734,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_edc56_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -819,14 +761,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_scm1</ParameterKey>
       <Description>Spectrogram for FBK Search Coil Magnetometer (SCM) Axis 1.</Description>
       <Caveats>Average of absolute values.  SCM axes are specific to the instrument.</Caveats>
-      <Units>nT  </Units>
+      <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_scm1_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -834,7 +775,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm1_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -842,7 +782,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm1_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -850,7 +789,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm1_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -858,7 +796,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm1_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -866,7 +803,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm1_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -894,14 +830,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_scm2</ParameterKey>
       <Description>Spectrogram for FBK Search Coil Magnetometer (SCM) Axis 2.</Description>
       <Caveats>Average of absolute values.  SCM axes are specific to the instrument.</Caveats>
-      <Units>nT  </Units>
+      <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_scm2_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -909,7 +844,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm2_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -917,7 +851,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm2_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -925,7 +858,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm2_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -933,7 +865,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm2_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -941,7 +872,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm2_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -976,7 +906,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm3_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -984,7 +913,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm3_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -992,7 +920,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm3_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1000,7 +927,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm3_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1008,7 +934,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm3_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1016,7 +941,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_scm3_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1044,14 +968,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_eac12</ParameterKey>
       <Description>FBK spectrogram for coupled E field AC component, EFI sensors 1 and 2 (spin plane, sensor 1 along positve x-axis, SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>mV/m  </Units>
+      <Units>mV/m</Units>
       <UnitsConversion>1e-3&gt;V/m</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_eac12_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1059,7 +982,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac12_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1067,7 +989,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac12_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1075,7 +996,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac12_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1083,7 +1003,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac12_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1091,7 +1010,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac12_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1119,14 +1037,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_eac34</ParameterKey>
       <Description>FBK spectrogram for coupled E field AC component, EFI sensors 3 and 4 (spin plane, sensor 3 along positive y-axis, SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>mV/m  </Units>
+      <Units>mV/m</Units>
       <UnitsConversion>1e-3&gt;V/m</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_eac34_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1134,7 +1051,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac34_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1142,7 +1058,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac34_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1150,7 +1065,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac34_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1158,7 +1072,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac34_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1166,7 +1079,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac34_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1194,14 +1106,13 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
       <ParameterKey>thb_fb_eac56</ParameterKey>
       <Description>FBK spectrogram for coupled E field AC component, EFI sensors 5 and 6 (axial, sensor 5 along positive z-axis, SPG coordinates).</Description>
       <Caveats>Average of absolute values.</Caveats>
-      <Units>mV/m  </Units>
+      <Units>mV/m</Units>
       <UnitsConversion>1e-3&gt;V/m</UnitsConversion>
       <Structure>
         <Size>6</Size>
         <Element>
           <Name>thb_fb_eac56_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1209,7 +1120,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac56_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1217,7 +1127,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac56_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1225,7 +1134,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac56_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1233,7 +1141,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac56_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1241,7 +1148,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_eac56_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1.0E10</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1274,7 +1180,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_yaxis_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1282,7 +1187,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_yaxis_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1290,7 +1194,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_yaxis_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1298,7 +1201,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_yaxis_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1306,7 +1208,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_yaxis_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1314,7 +1215,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fb_yaxis_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>10000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1334,7 +1234,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fstart_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1342,7 +1241,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fstart_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1350,7 +1248,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fstart_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1358,7 +1255,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fstart_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1366,7 +1262,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fstart_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1374,7 +1269,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fstart_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1394,7 +1288,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fband_1</Name>
           <Index>1</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1402,7 +1295,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fband_2</Name>
           <Index>2</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1410,7 +1302,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fband_3</Name>
           <Index>3</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1418,7 +1309,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fband_4</Name>
           <Index>4</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1426,7 +1316,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fband_5</Name>
           <Index>5</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
@@ -1434,7 +1323,6 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <Element>
           <Name>thb_fbk_fband_6</Name>
           <Index>6</Index>
-          <Units/>
           <ValidMin>0.0</ValidMin>
           <ValidMax>1000000.0</ValidMax>
           <FillValue>NaN</FillValue>
