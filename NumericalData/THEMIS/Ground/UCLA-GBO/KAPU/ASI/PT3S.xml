@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-     <Version> 1.3.0 </Version>
-       <NumericalData>
-	 <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/UCLA-GBO/KAPU/AST/PT3S</ResourceID>
-           <ResourceHeader>
-             <ResourceName> THEMIS GBO All Sky Imager at Kapuskasing, ON, Canada. ASI Thumbnails Data.</ResourceName>
-	     <AlternateName>THEMIS-Ground AST</AlternateName>
-	     <ReleaseDate>2008-01-01T00:00:01Z</ReleaseDate>
-             <Description>THEMIS Ground All Sky Imager at Kapuskasing: 32 x 32 pixel thumbnails for full ASI images.  The ASI stations monitor a 170 degree field of view imaging the auroral oval at kilometer resolution.  The ASI is comprised of a fisheye lens and CCD in a stainless steel enclosure topped with a transparent acrylic dome.  The CCD has a resolution of 256 x 256 pixels.  Exposure control ranges from 5 s to 1 ms although the typical data rate is one image every 3 seconds.  Silicone heaters keep the instrument within the nominal temperature range.  During daylight hours sun shades deploy to protect the CCD.
-	     </Description>
-             <Acknowledgement> We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically S. Mende and E. Donovan for use of the ASI data, and the CSA for logistical support in fielding and data retrieval from the GBO stations. </Acknowledgement>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
+  <Version>1.3.2</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/UCLA-GBO/KAPU/AST/PT3S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>THEMIS GBO All Sky Imager at Kapuskasing, ON, Canada. ASI Thumbnails Data.</ResourceName>
+      <AlternateName>THEMIS-Ground AST</AlternateName>
+      <ReleaseDate>2008-12-05T23:00:13Z</ReleaseDate>
+      <Description>THEMIS Ground All Sky Imager at Kapuskasing: 32 x 32 pixel thumbnails for full ASI images.  The ASI stations monitor a 170 degree field of view imaging the auroral oval at kilometer resolution.  The ASI is comprised of a fisheye lens and CCD in a stainless steel enclosure topped with a transparent acrylic dome.  The CCD has a resolution of 256 x 256 pixels.  Exposure control ranges from 5 s to 1 ms although the typical data rate is one image every 3 seconds.  Silicone heaters keep the instrument within the nominal temperature range.  During daylight hours sun shades deploy to protect the CCD.
+	  </Description>
+      <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically S. Mende and E. Donovan for use of the ASI data, and the CSA for logistical support in fielding and data retrieval from the GBO stations.</Acknowledgement>
       <!--Vassilis Angelopoulos -->
       <Contact>
         <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
@@ -33,585 +33,518 @@
       <AccessURL>
         <Name>THEMIS Web Data</Name>
         <URL>http://themis.ssl.berkeley.edu/data/themis/thg/l1/asi/kapu/</URL>
-        <Description></Description>
+        <Description/>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
-         <InstrumentID> spase://SMWG/Intrument/THEMIS/Ground/UCLA-GBO/KAPU </InstrumentID>
-	 <MeasurementType>ImageIntensity</MeasurementType>
-           <TemporalDescription>
-	     <TimeSpan>
-	       <StartDate>2005-11-23T00:00:00</StartDate>
-	       <RelativeStopDate>P7D</RelativeStopDate>
-	       </TimeSpan>
-             <Cadence> PT3S </Cadence>
-         </TemporalDescription>
-       <!--Physical Parameters-->
-         <PhysicalParameter>
-             <Name> thg_ast_kapu  </Name>
-             <ParameterKey> thg_ast_kapu </ParameterKey>
-             <Description> Thumbnail images of 32x32 pixels; saturation counts for each pixel. </Description>
-             <Units> counts  </Units>
-               <Structure>
-                 <Size> 32 32 </Size>
-             </Structure>
-	     <Measured>
-	       <Photon>
-		 <PhotonQualifier>Scalar</PhotonQualifier>
-		 <PhotonQuantity>ImageIntensity</PhotonQuantity>
-	       </Photon>
-	     </Measured>
-         </PhysicalParameter>
-           <PhysicalParameter>
-             <Name> thg_ast_kapu_column  </Name>
-             <ParameterKey> thg_ast_kapu_column </ParameterKey>
-             <Description> Image column number; x-dimension, image width. </Description>
-             <Units> wpix#  </Units>
-               <Structure>
-                 <Size> 32 </Size>
-                   <Element>
-                     <Name>thg_ast_kapu_column_1 </Name>
-                     <Index> 1 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_2 </Name>
-                     <Index> 2 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_3 </Name>
-                     <Index> 3 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_4 </Name>
-                     <Index> 4 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_5 </Name>
-                     <Index> 5 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_6 </Name>
-                     <Index> 6 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_7 </Name>
-                     <Index> 7 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_8 </Name>
-                     <Index> 8 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_9 </Name>
-                     <Index> 9 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_10 </Name>
-                     <Index> 10 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_11 </Name>
-                     <Index> 11 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_12 </Name>
-                     <Index> 12 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_13 </Name>
-                     <Index> 13 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_14 </Name>
-                     <Index> 14 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_15 </Name>
-                     <Index> 15 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_16 </Name>
-                     <Index> 16 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_17 </Name>
-                     <Index> 17 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_18 </Name>
-                     <Index> 18 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_19 </Name>
-                     <Index> 19 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_20 </Name>
-                     <Index> 20 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_21 </Name>
-                     <Index> 21 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_22 </Name>
-                     <Index> 22 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_23 </Name>
-                     <Index> 23 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_24 </Name>
-                     <Index> 24 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                      <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_25 </Name>
-                     <Index> 25 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_26 </Name>
-                     <Index> 26 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_27 </Name>
-                     <Index> 27 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_28 </Name>
-                     <Index> 28 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_29 </Name>
-                     <Index> 29 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_30 </Name>
-                     <Index> 30 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_31 </Name>
-                     <Index> 31 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_column_32 </Name>
-                     <Index> 32 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-             </Structure>
-	       <Support>
-		 <SupportQuantity>Positional</SupportQuantity>
-	       </Support>
-         </PhysicalParameter>
-           <PhysicalParameter>
-             <Name> thg_ast_kapu_row  </Name>
-             <ParameterKey> thg_ast_kapu_row </ParameterKey>
-             <Description> Image row number; y-dimension, image height. </Description>
-             <Units> hpix#  </Units>
-               <Structure>
-                 <Size> 32 </Size>
-                   <Element>
-                     <Name>thg_ast_kapu_row_1 </Name>
-                     <Index> 1 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_2 </Name>
-                     <Index> 2 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_3 </Name>
-                     <Index> 3 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_4 </Name>
-                     <Index> 4 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_5 </Name>
-                     <Index> 5 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_6 </Name>
-                     <Index> 6 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_7 </Name>
-                     <Index> 7 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_8 </Name>
-                     <Index> 8 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_9 </Name>
-                     <Index> 9 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_10 </Name>
-                     <Index> 10 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_11 </Name>
-                     <Index> 11 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                      <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_12 </Name>
-                     <Index> 12 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_13 </Name>
-                     <Index> 13 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_14 </Name>
-                     <Index> 14 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_15 </Name>
-                     <Index> 15 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_16 </Name>
-                     <Index> 16 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_17 </Name>
-                     <Index> 17 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_18 </Name>
-                     <Index> 18 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_19 </Name>
-                     <Index> 19 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_20 </Name>
-                     <Index> 20 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_21 </Name>
-                     <Index> 21 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_22 </Name>
-                     <Index> 22 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_23 </Name>
-                     <Index> 23 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_24 </Name>
-                     <Index> 24 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_25 </Name>
-                     <Index> 25 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_26 </Name>
-                     <Index> 26 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_27 </Name>
-                     <Index> 27 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_28 </Name>
-                     <Index> 28 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_29 </Name>
-                     <Index> 29 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_30 </Name>
-                     <Index> 30 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_31 </Name>
-                     <Index> 31 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-                   <Element>
-                     <Name>thg_ast_kapu_row_32 </Name>
-                     <Index> 32 </Index>
-                     <Units> </Units>
-                     <ValidMin> 1 </ValidMin>
-                     <ValidMax> 32 </ValidMax>
-                     <FillValue> 65535 </FillValue>
-                 </Element>
-             </Structure>
-	       <Support>
-		 <SupportQuantity>Positional</SupportQuantity>
-	       </Support>
-         </PhysicalParameter>
-           <PhysicalParameter>
-             <Name> thg_ast_kapu_time  </Name>
-             <ParameterKey> thg_ast_kapu_time </ParameterKey>
-             <Description> thg_ast_kapu_time, UTC, in seconds since 01-Jan-1970 00:00:00  </Description>
-             <Caveats> Not including leap seconds </Caveats>
-             <Units> s </Units>
-             <ValidMin> 0.0  </ValidMin>
-             <ValidMax> 5.0E9  </ValidMax>
-             <FillValue> NaN  </FillValue>
-	     <Support>
-	       <SupportQuantity>Temporal</SupportQuantity>
-	     </Support>
-         </PhysicalParameter>
-     </NumericalData>
+    <InstrumentID>spase://SMWG/Intrument/THEMIS/Ground/UCLA-GBO/KAPU</InstrumentID>
+    <MeasurementType>ImageIntensity</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>2005-11-23T00:00:00</StartDate>
+        <RelativeStopDate>P7D</RelativeStopDate>
+      </TimeSpan>
+      <Cadence>PT3S</Cadence>
+    </TemporalDescription>
+    <!--Physical Parameters-->
+    <Parameter>
+      <Name>thg_ast_kapu</Name>
+      <ParameterKey>thg_ast_kapu</ParameterKey>
+      <Description>Thumbnail images of 32x32 pixels; saturation counts for each pixel.</Description>
+      <Units>counts</Units>
+      <Structure>
+        <Size>32 32</Size>
+      </Structure>
+        <Photon>
+          <Qualifier>Scalar</Qualifier>
+          <PhotonQuantity>ImageIntensity</PhotonQuantity>
+        </Photon>
+    </Parameter>
+    <Parameter>
+      <Name>thg_ast_kapu_column</Name>
+      <ParameterKey>thg_ast_kapu_column</ParameterKey>
+      <Description>Image column number; x-dimension, image width.</Description>
+      <Units>wpix#</Units>
+      <Structure>
+        <Size>32</Size>
+        <Element>
+          <Name>thg_ast_kapu_column_1</Name>
+          <Index>1</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_2</Name>
+          <Index>2</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_3</Name>
+          <Index>3</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_4</Name>
+          <Index>4</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_5</Name>
+          <Index>5</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_6</Name>
+          <Index>6</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_7</Name>
+          <Index>7</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_8</Name>
+          <Index>8</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_9</Name>
+          <Index>9</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_10</Name>
+          <Index>10</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_11</Name>
+          <Index>11</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_12</Name>
+          <Index>12</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_13</Name>
+          <Index>13</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_14</Name>
+          <Index>14</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_15</Name>
+          <Index>15</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_16</Name>
+          <Index>16</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_17</Name>
+          <Index>17</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_18</Name>
+          <Index>18</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_19</Name>
+          <Index>19</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_20</Name>
+          <Index>20</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_21</Name>
+          <Index>21</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_22</Name>
+          <Index>22</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_23</Name>
+          <Index>23</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_24</Name>
+          <Index>24</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_25</Name>
+          <Index>25</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_26</Name>
+          <Index>26</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_27</Name>
+          <Index>27</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_28</Name>
+          <Index>28</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_29</Name>
+          <Index>29</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_30</Name>
+          <Index>30</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_31</Name>
+          <Index>31</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_column_32</Name>
+          <Index>32</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>thg_ast_kapu_row</Name>
+      <ParameterKey>thg_ast_kapu_row</ParameterKey>
+      <Description>Image row number; y-dimension, image height.</Description>
+      <Units>hpix#</Units>
+      <Structure>
+        <Size>32</Size>
+        <Element>
+          <Name>thg_ast_kapu_row_1</Name>
+          <Index>1</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_2</Name>
+          <Index>2</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_3</Name>
+          <Index>3</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_4</Name>
+          <Index>4</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_5</Name>
+          <Index>5</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_6</Name>
+          <Index>6</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_7</Name>
+          <Index>7</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_8</Name>
+          <Index>8</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_9</Name>
+          <Index>9</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_10</Name>
+          <Index>10</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_11</Name>
+          <Index>11</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_12</Name>
+          <Index>12</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_13</Name>
+          <Index>13</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_14</Name>
+          <Index>14</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_15</Name>
+          <Index>15</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_16</Name>
+          <Index>16</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_17</Name>
+          <Index>17</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_18</Name>
+          <Index>18</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_19</Name>
+          <Index>19</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_20</Name>
+          <Index>20</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_21</Name>
+          <Index>21</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_22</Name>
+          <Index>22</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_23</Name>
+          <Index>23</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_24</Name>
+          <Index>24</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_25</Name>
+          <Index>25</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_26</Name>
+          <Index>26</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_27</Name>
+          <Index>27</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_28</Name>
+          <Index>28</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_29</Name>
+          <Index>29</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_30</Name>
+          <Index>30</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_31</Name>
+          <Index>31</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+        <Element>
+          <Name>thg_ast_kapu_row_32</Name>
+          <Index>32</Index>
+          <ValidMin>1</ValidMin>
+          <ValidMax>32</ValidMax>
+          <FillValue>65535</FillValue>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>thg_ast_kapu_time</Name>
+      <ParameterKey>thg_ast_kapu_time</ParameterKey>
+      <Description>thg_ast_kapu_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Caveats>Not including leap seconds</Caveats>
+      <Units>s</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+  </NumericalData>
 </Spase>
-
