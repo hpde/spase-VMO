@@ -57,7 +57,7 @@
     <AccessInformation>
         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
-      <AccessRights>Public</AccessRights>
+      <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>FTP access to IMP8 MIT plasma data</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mitplasma_h0/</URL>
