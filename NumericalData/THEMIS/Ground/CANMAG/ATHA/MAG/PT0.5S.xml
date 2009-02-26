@@ -48,8 +48,7 @@
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/THEMIS/Ground/CANMAG/ATHA/MAG</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
-    <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
-    <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+    <ObservedRegion>Earth.Surface</ObservedRegion>
     <PhysicalParameter>
       <Name>B in HDZ Components</Name>
       <ParameterKey>thg_mag_atha</ParameterKey>
