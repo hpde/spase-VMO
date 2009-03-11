@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
+  <Version>1.3.2</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/OMNI/PT1H</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Hourly OMNI Data Set</ResourceName>
+      <ReleaseDate>2008-12-02T22:33:54Z</ReleaseDate>
+      <Description>Hourly resolution, multi-source, near-Earth solar wind magnetic field, plasma and energetic proton flux data, plus AE (auroral electrojet), Kp (planetary geomagnetic activity) index, Dst (storm or equatorial ring current index and Rz (sunspot number).  Also available at 1-day and 27-day resolution.</Description>
+      <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Joseph.H.King</PersonID>
+        <Role>GeneralContact</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Natalia.E.Papitashvili</PersonID>
+        <Role>TechnicalContact</Role>
+      </Contact>
+      <InformationURL>
+        <Name>OMNIWeb</Name>
+        <URL>http://omniweb.gsfc.nasa.gov/html/omni2_doc.html</URL>
+        <Description>Extensive OMNI documentation pages</Description>
+      </InformationURL>
+      <AssociationID/>
+      <PriorID/>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>OMNIWeb</Name>
+        <URL>http://omniweb.gsfc.nasa.gov</URL>
+        <Description>Pathway to data and to extensive documentation.  Plots, listings and user-specified files.  Scatter plots and linear regressions.  Distributions.  Means, medians, standard deviations in distributions.  Pathway to 1-min, 5-min, 1-day, 27-day averages.</Description>
+      </AccessURL>
+      <AccessURL>
+        <Name>nssdcftp</Name>
+        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
+        <Description>ftp access to annual ASCII files of 1-hour OMNI data and to one full-time-span file for each 1-day and 27-day averages.</Description>
+      </AccessURL>
+      <Format>Text</Format>
+      <DataExtent>
+        <Quantity>2524</Quantity>
+        <Units>KB</Units>
+        <Per>P1Y</Per>
+      </DataExtent>
+      <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/ACE/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/ACE/SWEPAM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/WIND/MFI</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/WIND/SWE</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/PLS</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/IMP8/CPME</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/Geotail/MGF</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/Geotail/CPI</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/GOES11/SEM</InstrumentID>
+    <MeasurementType>ThermalPlasma</MeasurementType>
+    <MeasurementType>MagneticField</MeasurementType>
+    <MeasurementType>EnergeticParticles</MeasurementType>
+    <MeasurementType>ActivityIndex</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>1963-11-27T00:00:00</StartDate>
+        <RelativeStopDate>-P1M</RelativeStopDate>
+        <Note>Various parameters are held current to differing levels.  Typical delay is about 1-2 months.</Note>
+      </TimeSpan>
+      <Cadence>PT1H</Cadence>
+    </TemporalDescription>
+    <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
+    <Parameter>
+      <Name>Average magnetic field magnitude</Name>
+      <ParameterKey>Column09</ParameterKey>
+      <Description>Average of fine scale field magnitudes</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Magnitude of average magnetic field vector</Name>
+      <ParameterKey>Column10</ParameterKey>
+      <Description>Magnitude of vector-averaged magnetic field vector.  SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2 +&lt;Bz&gt;**2)</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Azimuthal angle of average magnetic field vector</Name>
+      <ParameterKey>Column12</ParameterKey>
+      <Description>Azimuthal angle of vector-averaged magnetic field vector.  ARCTAN &lt;By&gt;/&lt;Bx&gt;</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>Deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Field>
+        <Qualifier>DirectionAngle.Azimuth</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Elevation angle of average magnetic field vector</Name>
+      <ParameterKey>Column11</ParameterKey>
+      <Description>Elevation angle of vector-averaged magnetic field vector.  ARCTAN &lt;Bz&gt;/SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2)</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>Deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Field>
+        <Qualifier>DirectionAngle.Elevation</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Magnetic field vector, GSE</Name>
+      <Description>Averaged GSE Cartesian components of magnetic field vector</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Description>Three hourly averaged magnetic field Cartesian components, in GSE</Description>
+        <Element>
+          <Name>Bx, GSE</Name>
+          <Component>X</Component>
+          <Index>1</Index>
+          <ParameterKey>Column13</ParameterKey>
+        </Element>
+        <Element>
+          <Name>By, GSE</Name>
+          <Component>Y</Component>
+          <Index>2</Index>
+          <ParameterKey>Column14</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Bz, GSE</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <ParameterKey>Column15</ParameterKey>
+        </Element>
+      </Structure>
+      <Field>
+        <Qualifier>Component</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Magnetic field vector, GSM</Name>
+      <ParameterKey/>
+      <Description>Averaged GSM Cartesian components of magnetic field vector</Description>
+      <Caveats>Note that Bx(GSM)=Bx(GSE) is given only once in data record.</Caveats>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSM</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Description>Three hourly averaged magnetic field Cartesian components, in GSE</Description>
+        <Element>
+          <Name>Bx, GSM</Name>
+          <Component>X</Component>
+          <Index>1</Index>
+          <ParameterKey>Column13</ParameterKey>
+        </Element>
+        <Element>
+          <Name>By, GSM</Name>
+          <Component>Y</Component>
+          <Index>2</Index>
+          <ParameterKey>Column16</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Bz, GSM</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <ParameterKey>Column17</ParameterKey>
+        </Element>
+      </Structure>
+      <Field>
+        <Qualifier>Component</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Standard deviations in GSE component averages</Name>
+      <Description>Standard deviations in averaged GSE Cartesian components of magnetic field vector</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Description>Three standard deviations in hourly averaged GSE magnetic field Cartesian components</Description>
+        <Element>
+          <Name>sigma Bx, GSE</Name>
+          <Component>X</Component>
+          <Index>1</Index>
+          <ParameterKey>Column20</ParameterKey>
+        </Element>
+        <Element>
+          <Name>sigma By, GSE</Name>
+          <Component>Y</Component>
+          <Index>2</Index>
+          <ParameterKey>Column21</ParameterKey>
+        </Element>
+        <Element>
+          <Name>sigma Bz, GSE</Name>
+          <Component>Z</Component>
+          <Index>3</Index>
+          <ParameterKey>Column22</ParameterKey>
+        </Element>
+      </Structure>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Standard deviation in average magnetic field magnitude</Name>
+      <ParameterKey>Column18</ParameterKey>
+      <Description>Standard derviation in average of fine scale field magnitudes</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Standard deviation of average magnetic field vector</Name>
+      <ParameterKey>Column19</ParameterKey>
+      <Description>Standard deviation of vector-averaged magnetic field vector.  SQRT(sigma&lt;Bx&gt;**2 + sigma&lt;By&gt;**2 + Sigma&lt;Bz&gt;**2)</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma proton temperature</Name>
+      <ParameterKey>Column23</ParameterKey>
+      <Description>Plasma proton temperature, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>DegK</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma proton density</Name>
+      <ParameterKey>Column24</ParameterKey>
+      <Description>Plasma proton density, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>number/cc</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma proton flow speed</Name>
+      <ParameterKey>Column25</ParameterKey>
+      <Description>Plasma proton flow speed, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>km/s</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Flow azimuth angle</Name>
+      <ParameterKey>Column26</ParameterKey>
+      <Description>Angle from negative Xgse axis towards positive Ygse axis</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>Deg</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>DirectionAngle.Azimuth</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Flow elevation angle</Name>
+      <ParameterKey>Column27</ParameterKey>
+      <Description>Angle (lease angle) from GSE X-Y plane to flow vector</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>Deg</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>DirectionAngle.Elevation</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Alpha to proton density ratio</Name>
+      <ParameterKey>Column28</ParameterKey>
+      <Description>Alpha to proton density ratio</Description>
+      <Cadence>PT1H</Cadence>
+      <Particle>
+        <ParticleType>AlphaParticle</ParticleType>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Ratio</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Flow pressure</Name>
+      <ParameterKey>Column29</ParameterKey>
+      <Description>P (nPa) = (1.67/10**6) * Np*V**2 * (1+ 4*Na/Np), created from hourly averaged Np, Na, V
+</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nPa</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>AlphaParticle</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma parameter standard deviations</Name>
+      <Description>An array of 6 standard deviations in the hourly averages of temperature, density, flow speed, two flow direction angles and the Na/Np ratio</Description>
+      <Caveats>The units of the standard deviations match the units of the parent parameters.</Caveats>
+      <Cadence>PT1H</Cadence>
+      <Structure>
+        <Size>6</Size>
+        <Description>An array of 6 standard deviations in the hourly averages of temperature, density, flow speed, two flow direction angles and the Na/Np ratio</Description>
+        <Element>
+          <Name>SigmaT</Name>
+          <Index>1</Index>
+          <ParameterKey>Column30</ParameterKey>
+        </Element>
+        <Element>
+          <Name>SigmaN</Name>
+          <Index>2</Index>
+          <ParameterKey>Column31</ParameterKey>
+        </Element>
+        <Element>
+          <Name>SigmaV</Name>
+          <Index>3</Index>
+          <ParameterKey>Column32</ParameterKey>
+        </Element>
+        <Element>
+          <Name>sigmaPhiV</Name>
+          <Index>4</Index>
+          <ParameterKey>Column33</ParameterKey>
+        </Element>
+        <Element>
+          <Name>SigmaThetaV</Name>
+          <Index>5</Index>
+          <ParameterKey>Column34</ParameterKey>
+        </Element>
+        <Element>
+          <Name>SigmaNa/Np</Name>
+          <Index>6</Index>
+          <ParameterKey>Column35</ParameterKey>
+        </Element>
+      </Structure>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>StandardDeviation</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>VxB Electric Field</Name>
+      <ParameterKey>Column36</ParameterKey>
+      <Description>-V(km/s) * Bz (nT; GSM) * 10**-3; Hourly averaged V and Bz used nearly Ey component</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>mV/m</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSM</CoordinateSystemName>
+      </CoordinateSystem>
+      <Field>
+        <Qualifier>Average</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma beta</Name>
+      <ParameterKey>Column37</ParameterKey>
+      <Description>[(T*4.16/10**5) + 5.34] * Np / B**2</Description>
+      <Cadence>PT1H</Cadence>
+      <Mixed>Beta</Mixed>
+    </Parameter>
+    <Parameter>
+      <Name>Alfven Mach Number</Name>
+      <ParameterKey>Column38</ParameterKey>
+      <Description>(V * Np**0.5) / 20 * B</Description>
+      <Cadence>PT1H</Cadence>
+      <Mixed>AlfvenMachNumber</Mixed>
+    </Parameter>
+    <Parameter>
+      <Name>Kp Index</Name>
+      <ParameterKey>Column39</ParameterKey>
+      <Description>Kp index, but rather than standard 3-,3,3+, we use 27,30,33, etc.</Description>
+      <Cadence>PT3H</Cadence>
+      <Mixed>Kp</Mixed>
+    </Parameter>
+    <Parameter>
+      <Name>Sunspot Number</Name>
+      <ParameterKey>Column40</ParameterKey>
+      <Description>Daily sunspot number</Description>
+      <Cadence>P1D</Cadence>
+      <Mixed>SunspotNumber</Mixed>
+    </Parameter>
+    <Parameter>
+      <Name>Dst Index</Name>
+      <ParameterKey>Column41</ParameterKey>
+      <Description>Dst Index</Description>
+      <Caveats>Note that preliminary values are given for recent times, and are eventually replaced by definitive values</Caveats>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Mixed>Dst</Mixed>
+    </Parameter>
+    <Parameter>
+      <Name>AE Index</Name>
+      <ParameterKey>Column42</ParameterKey>
+      <Description>AE Index</Description>
+      <Caveats>Note that preliminary values are given for recent times, and are eventually replaced by definitive values</Caveats>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Mixed>SE</Mixed>
+    </Parameter>
+    <Parameter>
+      <Name>Energetic Proton Fluxes</Name>
+      <Description>Hourly fluxes of protons above 1, 2, 4, 10, 30, 60 MeV; 1967-near current; 1973-2005 from IMP 8 CPME; 2006 and later from GOES</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>number/cm**2 sec ster</Units>
+      <Structure>
+        <Size>6</Size>
+        <Description>One flux for each of the 6 energy thresholds</Description>
+        <Element>
+          <Name>Proton flux &gt;1 Mev</Name>
+          <Index>1</Index>
+          <ParameterKey>Column43</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Proton flux &gt;2 Mev</Name>
+          <Index>2</Index>
+          <ParameterKey>Column44</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Proton flux &gt;4 Mev</Name>
+          <Index>3</Index>
+          <ParameterKey>Column45</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Proton flux &gt;10 Mev</Name>
+          <Index>4</Index>
+          <ParameterKey>Column46</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Proton flux &gt;30 Mev</Name>
+          <Index>5</Index>
+          <ParameterKey>Column47</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Proton flux &gt;6 Mev</Name>
+          <Index>6</Index>
+          <ParameterKey>Column48</ParameterKey>
+        </Element>
+      </Structure>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>IMF spacecraft ID</Name>
+      <ParameterKey>Column05</ParameterKey>
+      <Description>ID for magnetic field data source spacecraft for this hour. See documentation cited above</Description>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma spacecraft ID</Name>
+      <ParameterKey>Column06</ParameterKey>
+      <Description>ID for plasma data source spacecraft for this hour. See documentation cited above</Description>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>IMF FTS PTS</Name>
+      <ParameterKey>Column07</ParameterKey>
+      <Description>Number of fine scale points in magnetic field parameter averages for this hour</Description>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma FTS PTS</Name>
+      <ParameterKey>Column08</ParameterKey>
+      <Description>Number of fine scale points in plasma parameter averages for this hour</Description>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+  </NumericalData>
+</Spase>
