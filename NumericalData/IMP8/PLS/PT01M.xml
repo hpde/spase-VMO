@@ -8,32 +8,37 @@
       <AlternateName>IMP 8 Solar Wind Plasma Faraday Cup Data</AlternateName>
       <ReleaseDate>2008-11-08T00:46:31Z</ReleaseDate>
       <Description>
-        <p>The MIT Faraday cup experiment on IMP 8 measures currents from solar wind ions, and from these measurements we calculate the velocity, density, and temperature of the solar wind. The IMP 8 data files consist of fine resolution data (approximately 1 minute resolution).</p>
-        <p>IMP 8 spins with a period of approximately 2.7s. The Faraday Cup (FC) 
+        The MIT Faraday cup experiment on IMP 8 measures currents from solar wind ions, and from these measurements we calculate the velocity, density, and temperature of the solar wind. The IMP 8 data files consist of fine resolution data (approximately 1 minute resolution).
+        
+        IMP 8 spins with a period of approximately 2.7s. The Faraday Cup (FC) 
    instrument scans the solar wind distribution stepping through a contiguous set of 
    energy windows, one step per spacecraft spin. The FC instrument divides the spin 
    into thirty-two, 11.25 degree angular sectors and integrates the measured 
    currents over different angular sectors depending upon the Mode in which the 
    instrument is operating.  The border between two of the 11.25 degree angular 
-   sectors lies on the Sun-spacecraft line.</p>
-        <p>The FC sensor collector plate is divided into two, semi-circular halves; the 
+   sectors lies on the Sun-spacecraft line.
+   
+        The FC sensor collector plate is divided into two, semi-circular halves; the 
    division line is parallel to the spacecraft spin plane which is approximately 
    parallel to the ecliptic plane.  The split collector allow determination of 
    the bulk plasma flow relative to the spin plane; North/South angles refer to 
    flows coming from above or below the spin plane respectively (flows from the 
-   South are designated as having a positive N/S angle).</p>
-        <p>The bulk flow angle in the spin plane is determined from the measurements of 
+   South are designated as having a positive N/S angle).
+   
+        The bulk flow angle in the spin plane is determined from the measurements of 
    current vs. rotation angle.  The currents telemetered to the ground are the
    sums of currents for the two half-collectors ("A" and "B") and, for the TMS and 
-   AQM modes, also the current for the half-collector "B".</p>
-        <p>Electrons are measured except for the eight angles near the Sun.</p>
-        <p>The experiment has two memories only one of which is operating perfectly.  As 
+   AQM modes, also the current for the half-collector "B".
+   
+        Electrons are measured except for the eight angles near the Sun.
+        
+        The experiment has two memories only one of which is operating perfectly.  As 
     a result, only every other TMS spectrum is usable, and the time between spectra 
     is usually twice that that would be expected from the spacecraft spin rate.  The 
     bad half-memory also limits the energy windows that can be used in the other 
     modes, since they require both memories to hold the data.  On occasion, the data 
     are read out rapidly enough by the spacecraft to allow repeated use of the good 
-    half-memory, and the time resolution in the TMS is approximately 32 seconds.</p>
+    half-memory, and the time resolution in the TMS is approximately 32 seconds.
       </Description>
       <Acknowledgement>For papers and presentations using these data, please acknowledge that you received them from the MIT Space Plasma Physics Group.</Acknowledgement>
       <Contact>
@@ -55,7 +60,7 @@
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-        <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
@@ -75,29 +80,35 @@
       <TimeSpan>
         <StartDate>1973-10-31T20:10:27Z</StartDate>
         <StopDate>2006-07-26T17:10:35Z</StopDate>
-        <Cadence>PT01M</Cadence>
       </TimeSpan>
+      <Cadence>PT01M</Cadence>
     </TemporalDescription>
     <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <Caveats>
-      <p>The cadence varies slightly (by a few seconds) and is approximately 1 minute.</p>
-      <p>The parameter values are derived from taking moments of the distributions and from fits to the distributions. As can be seen easily by eye, there is some discrepancy between moments and our best (fit) parameters; moments are definitely less accurate.</p>
-      <p>Use moment values with caution, and PLEASE request assistance or clarification. 
+    The cadence varies slightly (by a few seconds) and is approximately 1 minute.
+    
+    The parameter values are derived from taking moments of the distributions and from fits to the distributions. As can be seen easily by eye, there is some discrepancy between moments and our best (fit) parameters; moments are definitely less accurate.
+    
+      Use moment values with caution, and PLEASE request assistance or clarification. 
    For the moment parameters, changes in value are more trustworthy than 
-   absolute values, but nothing is guaranteed to be accurate.</p>
-      <p>A value of 9999.0 means that we couldn't calculate that parameter.  All
-   parameters are based on a convected, isotropic Maxwellian model.</p>
-      <p>The moment values, for angles and for the speed, do NOT
+   absolute values, but nothing is guaranteed to be accurate.
+   
+      A value of 9999.0 means that we couldn't calculate that parameter.  All
+   parameters are based on a convected, isotropic Maxwellian model.
+   
+      The moment values, for angles and for the speed, do NOT
    have aberration corrections included. This means that the total
    speeds are slightly too low, and that the angles are not really
    correct. In particular, the azimuthal (E/W) angle is about 4 degrees
    too positive; this can clearly be seen where both nonlinear and moment
-   angles are available.</p>
-      <p>If good angles cannot be obtained, there won't be any velocity components; speeds are available in some such cases.</p>
-      <p>Dr. Joseph King (NASA/GSFC) has looked at 27-day averages of OMNIWeb data from 1984-1994. He finds (and the MIT team agrees) that there is an offset of about +2 degrees (from the South) in the N/S angle and an annual variation of that angle with an amplitude of about 1 degree. The MIT team believes that the annual variation is due to a tilt of the s/c spin axis. He found the mean flow longitude in that study to be -0.3 degrees with no obvious annual variation.</p>
+   angles are available.
+   
+      If good angles cannot be obtained, there won't be any velocity components; speeds are available in some such cases.
+      
+      Dr. Joseph King (NASA/GSFC) has looked at 27-day averages of OMNIWeb data from 1984-1994. He finds (and the MIT team agrees) that there is an offset of about +2 degrees (from the South) in the N/S angle and an annual variation of that angle with an amplitude of about 1 degree. The MIT team believes that the annual variation is due to a tilt of the s/c spin axis. He found the mean flow longitude in that study to be -0.3 degrees with no obvious annual variation.
     </Caveats>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Time</Name>
       <ParameterKey>Epoch</ParameterKey>
       <Description>Time</Description>
@@ -107,8 +118,8 @@
         <Qualifier>Scalar</Qualifier>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft</Name>
       <ParameterKey>Spacecraft</ParameterKey>
       <Description>Spacecraft flag (6/7/8 = IMP 6/7/8)</Description>
@@ -118,8 +129,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Decimal Year</Name>
       <ParameterKey>decimal_year</ParameterKey>
       <Description>Decimal year</Description>
@@ -130,21 +141,21 @@
         <Qualifier>Scalar</Qualifier>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Region</Name>
       <ParameterKey>Region</ParameterKey>
       <Description>
-        <p>Region flag provides an estimate of the region from which the data came.</p>
-        <p>There are three flag values:</p>
-        <ul>
-          <li>1 - This time is definitely solar wind.</li>
-          <li>2 - This time is either solar wind or magnetosheath, with no differentiation
+        Region flag provides an estimate of the region from which the data came.
+        
+        There are three flag values:
+        
+          * 1 - This time is definitely solar wind.
+          * 2 - This time is either solar wind or magnetosheath, with no differentiation
         being made. This designation is used for multiple crossings between the
-        solar wind and sheath regions.</li>
-          <li>3 - This time is definitely NOT solar wind, being either magnetosheath or
-        magnetospheric data.</li>
-        </ul>
+        solar wind and sheath regions.
+          * 3 - This time is definitely NOT solar wind, being either magnetosheath or
+        magnetospheric data.
       </Description>
       <ValidMin>1</ValidMin>
       <ValidMax>8</ValidMax>
@@ -152,64 +163,30 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Operating mode</Name>
       <ParameterKey>mode</ParameterKey>
-      <Description>
-        <p>Indicates the operating mode of the experiment. The following table describes the measurements for each mode.</p>
-        <table>
-          <thead>
-            <tr>
-              <th colspan="2">Mode</th>
-              <th>Angles number, [deg]</th>
-              <th>Currents</th>
-              <th colspan="2">Energy windows measured</th>
-            </tr>
-            <tr>
-              <th>Number</th>
-              <th>Name</th>
-              <th> </th>
-              <th/>
-              <th>Protons</th>
-              <th>Electrons</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2</td>
-              <td>Tracking (TMS)</td>
-              <td>eight, 11.25 centered on Sun-spacecraft line<br/>six, 45 for remainder of spin</td>
-              <td>A+B and B</td>
-              <td>8*</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Acquisition (AQM)</td>
-              <td>same as TMS</td>
-              <td>same as TMS</td>
-              <td>24</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Non-tracking (NTMS)</td>
-              <td>eight, 45</td>
-              <td>A+B only</td>
-              <td>24</td>
-              <td>21</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>*Selected so that the peak flux energy step of the prior distribution is the 3rd step 
-of this measurement.</p>
-        <p>Note that the mode names are historical and confusing: the NTMS mode has the greatest sensitivity because of the 45 degree angular sectors and hence longer 
+      <Description>Indicates the operating mode of the experiment. The following table describes the measurements for each mode.
+      
+      +---------------------------------------------------------------------------------------------------------+
+      |    Mode         |       Mode     | Angles number    |  Currents | Energy window    | Energy window      |
+      |    Number       |       Name     |        [deg]     |           |     Protons      |    Electrons       |
+      |-----------------|----------------|------------------|-----------|------------------|--------------------|      
+      |       2         | Tracking (TMS) |  eight: 11.25 centered on Sun-spacecraft line; six: 45 for remainder of spin | A+B and A | 8* | 4 |
+      |       3         | Acquisition (AQM | same as TMS    | same as TMS |    24          |    21              |
+      |       1         | Non-tracking (NTMS) | eight, 45   |  A+B only   |    24          |    21              |
+      +---------------------------------------------------------------------------------------------------------+
+        
+      *Selected so that the peak flux energy step of the prior distribution is the 3rd step 
+of this measurement.
+
+        Note that the mode names are historical and confusing: the NTMS mode has the greatest sensitivity because of the 45 degree angular sectors and hence longer 
    integration times, but all the energy windows won't fit into the working side 
    of our on board memory. So all the parameters will be in modes 2 or 3.  In order 
    to reduce the time between spectra, in the TMS mode the eight lowest electron 
    energy windows are covered using four sets of two windows of increasing energy; 
-   those eight electron windows are thus covered in a sequence of four TM spectra.</p>
+   those eight electron windows are thus covered in a sequence of four TM spectra.
       </Description>
       <ValidMin>1</ValidMin>
       <ValidMax>8</ValidMax>
@@ -217,8 +194,8 @@ of this measurement.</p>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Position GSE</Name>
       <ParameterKey>SC_Pos_GSE</ParameterKey>
       <Description>Spacecraft position in GSE coordinates</Description>
@@ -253,8 +230,8 @@ of this measurement.</p>
         <Qualifier>Vector</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Position Y-component GSM</Name>
       <ParameterKey>ygsm</ParameterKey>
       <Description>Spacecraft position Y-component in GSM coordinates</Description>
@@ -272,8 +249,8 @@ of this measurement.</p>
         <Qualifier>Component.Y</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Position Z-component GSM</Name>
       <ParameterKey>zgsm</ParameterKey>
       <Description>Spacecraft position Z-component in GSM coordinates</Description>
@@ -291,8 +268,8 @@ of this measurement.</p>
         <Qualifier>Component.Z</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>V fit</Name>
       <ParameterKey>V_fit</ParameterKey>
       <Description>(Better, from fits) Ion Flow Velocity (aberration corrected)</Description>
@@ -306,18 +283,16 @@ of this measurement.</p>
       <ValidMin>100.0</ValidMin>
       <ValidMax>3000.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Fit</Qualifier>
-          <Qualifier>Magnitude</Qualifier>
-          <Qualifier>Component.R</Qualifier>
-          <ParticleQuantity>FlowVelocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Fit</Qualifier>
+        <Qualifier>Magnitude</Qualifier>
+        <Qualifier>Component.R</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>V moments</Name>
       <ParameterKey>V_mom</ParameterKey>
       <Description>(From moments) Proton Flow Velocity (no aberration correction) </Description>
@@ -331,25 +306,24 @@ of this measurement.</p>
       <ValidMin>100.0</ValidMin>
       <ValidMax>3000.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Moment</Qualifier>
-          <Qualifier>Magnitude</Qualifier>
-          <Qualifier>Component.R</Qualifier>
-          <ParticleQuantity>FlowVelocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Magnitude</Qualifier>
+        <Qualifier>Component.R</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Proton V thermal fit</Name>
       <ParameterKey>protonV_thermal_fit</ParameterKey>
       <Description>
-        <p>(Better, from fits) Proton most-probable thermal speed (aberration corrected)</p>
-        <p>Thermal speed is the most probable thermal speed (i.e., the square root of [2kT/m(proton)]). To convert thermal speed to temperature in
+        (Better, from fits) Proton most-probable thermal speed (aberration corrected)
+
+        Thermal speed is the most probable thermal speed (i.e., the square root of [2kT/m(proton)]). To convert thermal speed to temperature in
    eV, multiply 0.0052 by the square of the thermal speed; to convert to temperature
-   [K], multiply the square of the thermal speed by 60.5.</p>
+   [K], multiply the square of the thermal speed by 60.5.
       </Description>
       <Caveats>Effects due to the orbital motion of Earth are removed from the better (fits) parameters, but not from the moment parameters.</Caveats>
       <Units>km/s</Units>
@@ -357,47 +331,43 @@ of this measurement.</p>
       <ValidMin>1.0</ValidMin>
       <ValidMax>500.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Fit</Qualifier>
-          <Qualifier>Scalar</Qualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Fit</Qualifier>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Proton V thermal moments</Name>
       <ParameterKey>protonV_thermal_mom</ParameterKey>
       <Description>
-        <p>(From moments) Proton most-probable thermal speed (no aberration correction)</p>
-        <p>Thermal speed is the most probable thermal speed (i.e., the square root of [2kT/m(proton)]). To convert thermal speed to temperature in
+        (From moments) Proton most-probable thermal speed (no aberration correction)
+
+        Thermal speed is the most probable thermal speed (i.e., the square root of [2kT/m(proton)]). To convert thermal speed to temperature in
    eV, multiply 0.0052 by the square of the thermal speed; to convert to temperature
-   [K], multiply the square of the thermal speed by 60.5.</p>
+   [K], multiply the square of the thermal speed by 60.5.
       </Description>
-      <Caveats>
-        <p>Effects due to the orbital motion of Earth are removed from the better (fits) parameters, but not from the moment parameters.</p>
-        <p>
+      <Caveats>Effects due to the orbital motion of Earth are removed from the better (fits) parameters, but not from the moment parameters.
+        
    This is probably the most inaccurate moment parameter, since moments tend to
-   underestimate the temperature in cold distributions.</p>
+   underestimate the temperature in cold distributions.
       </Caveats>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <ValidMin>1.0</ValidMin>
       <ValidMax>500.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Moment</Qualifier>
-          <Qualifier>Scalar</Qualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Proton density fit</Name>
       <ParameterKey>proton_density_fit</ParameterKey>
       <Description>(Better, from fits) Proton number density</Description>
@@ -406,17 +376,15 @@ of this measurement.</p>
       <ValidMin>0.0</ValidMin>
       <ValidMax>100.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Fit</Qualifier>
-          <Qualifier>Scalar</Qualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Fit</Qualifier>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Proton density moments</Name>
       <ParameterKey>proton_density_mom</ParameterKey>
       <Description>(From moments) Proton number density</Description>
@@ -425,17 +393,15 @@ of this measurement.</p>
       <ValidMin>0.0</ValidMin>
       <ValidMax>100.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Moment</Qualifier>
-          <Qualifier>Scalar</Qualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>E/W flow angle best</Name>
       <ParameterKey>EW_flowangle_best</ParameterKey>
       <Description>(Best, from fits) Proton East/West flow angle (aberration corrected). Azimuth is E/W, meaning bulk flow from the East or the West side of the Sun respectively. Positive azimuth angle means flow from the West.</Description>
@@ -448,17 +414,15 @@ of this measurement.</p>
       <ValidMin>-45.0</ValidMin>
       <ValidMax>45.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Fit</Qualifier>
-          <Qualifier>Component.Phi</Qualifier>
-          <ParticleQuantity>FlowVelocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Fit</Qualifier>
+        <Qualifier>Component.Phi</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>E/W flow angle moments</Name>
       <ParameterKey>EW_flowangle_mom</ParameterKey>
       <Description>(From moments) Proton East/West flow angle (no aberration correction). Azimuth is E/W, meaning bulk flow from the East or the West side of the Sun respectively. Positive azimuth angle means flow from the West.</Description>
@@ -471,17 +435,15 @@ of this measurement.</p>
       <ValidMin>-45.0</ValidMin>
       <ValidMax>45.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Moment</Qualifier>
-          <Qualifier>Component.Phi</Qualifier>
-          <ParticleQuantity>FlowVelocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Component.Phi</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Flow elevation threshsp</Name>
       <ParameterKey>Flow_elevation_threshsp</ParameterKey>
       <Description>(Better, from fits) Proton flow elevation angle (aberration corrected) 
@@ -496,17 +458,15 @@ of this measurement.</p>
       <ValidMin>-45.0</ValidMin>
       <ValidMax>45.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Fit</Qualifier>
-          <Qualifier>Component.Theta</Qualifier>
-          <ParticleQuantity>FlowVelocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Fit</Qualifier>
+        <Qualifier>Component.Theta</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Flow elevation thresh</Name>
       <ParameterKey>Flow_elevation_thresh</ParameterKey>
       <Description>(From moments) Proton flow elevation angle (no aberration correction) from North or South of the spacecraft spin plane (almost identical to the plane of the ecliptic).Positive elevation angle means flow from the South. Thresh values are determined from all currents.</Description>
@@ -519,15 +479,13 @@ of this measurement.</p>
       <ValidMin>-45.0</ValidMin>
       <ValidMax>45.0</ValidMax>
       <FillValue>9999.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleType>Ion</ParticleType>
-          <Qualifier>Moment</Qualifier>
-          <Qualifier>Component.Theta</Qualifier>
-          <ParticleQuantity>FlowVelocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Component.Theta</Qualifier>
+        <ParticleQuantity>FlowVelocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
   </NumericalData>
 </Spase>
