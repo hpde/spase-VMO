@@ -151,11 +151,8 @@
         There are three flag values:
         
           * 1 - This time is definitely solar wind.
-          * 2 - This time is either solar wind or magnetosheath, with no differentiation
-        being made. This designation is used for multiple crossings between the
-        solar wind and sheath regions.
-          * 3 - This time is definitely NOT solar wind, being either magnetosheath or
-        magnetospheric data.
+          * 2 - This time is either solar wind or magnetosheath, with no differentiation being made. This designation is used for multiple crossings between the solar wind and sheath regions.
+          * 3 - This time is definitely NOT solar wind, being either magnetosheath or magnetospheric data.
       </Description>
       <ValidMin>1</ValidMin>
       <ValidMax>8</ValidMax>
@@ -170,7 +167,7 @@
       <Description>Indicates the operating mode of the experiment. The following table describes the measurements for each mode.
       
       +---------------------------------------------------------------------------------------------------------+
-      |    Mode         |       Mode     | Angles number    |  Currents | Energy window    | Energy window      |
+      |    Mode         |       Mode     | Angles number    |  Currents | Energy windows   | Energy windows     |
       |    Number       |       Name     |        [deg]     |           |     Protons      |    Electrons       |
       |-----------------|----------------|------------------|-----------|------------------|--------------------|      
       |       2         | Tracking (TMS) |  eight: 11.25 centered on Sun-spacecraft line; six: 45 for remainder of spin | A+B and A | 8* | 4 |
