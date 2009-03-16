@@ -75,6 +75,11 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/tha/l2/fft/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to FFT data.</Description>
       </AccessURL>
+      <AccessURL>
+        <Name>ASCII, CDF, and plots from CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov</URL>
+        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+      </AccessURL>
       <Format>CDF</Format>
     </AccessInformation>
     <InstrumentID>spase://SMWG/Instrument/THEMIS/A/EFI</InstrumentID>

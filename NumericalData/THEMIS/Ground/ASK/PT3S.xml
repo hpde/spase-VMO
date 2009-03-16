@@ -34,6 +34,11 @@
         <URL>http://themis.ssl.berkeley.edu/data/themis/thg/l1/asi/ask/</URL>
         <Description>Web access to ASK data.</Description>
       </AccessURL>
+      <AccessURL>
+        <Name>ASCII, CDF, and plots from CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov</URL>
+        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+      </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>

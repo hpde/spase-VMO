@@ -60,6 +60,11 @@ Cascade  |  Frequency content of Input Signal  |  Low-pass Filter Cutoff Frequen
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/fbk/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to FBK data.</Description>
       </AccessURL>
+      <AccessURL>
+        <Name>ASCII, CDF, and plots from CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov</URL>
+        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+      </AccessURL>
       <Format>CDF</Format>
     </AccessInformation>
     <ProviderVersion>xxxx</ProviderVersion>

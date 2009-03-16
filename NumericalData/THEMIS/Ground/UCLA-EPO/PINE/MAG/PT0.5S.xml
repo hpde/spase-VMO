@@ -41,6 +41,11 @@
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/mag/pine/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
+      <AccessURL>
+        <Name>ASCII, CDF, and plots from CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov</URL>
+        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+      </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
