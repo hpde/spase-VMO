@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/MGF/PT64S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail KP Magnetic Field Data (64s)</ResourceName>
-      <ReleaseDate>2008-12-03T20:16:21Z</ReleaseDate>
+      <ReleaseDate>2009-03-16T22:06:13Z</ReleaseDate>
       <Description>This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.
       
       Selected references:
@@ -15,15 +15,24 @@ Kokubun, S., et al., Magnetic field measurement (MGF), In Geotail Prelaunch Repo
 Nishida, A., et al., Geotail mission to explore earth's magnetotail, EOS, 73, No. 40, Oct. 1992.
 
 Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr., 46, No. 1, 7-21, 1994.</Description>
-      <Acknowledgement>Data provider Dr. Susumu K. Kokubun.</Acknowledgement>
+      <Acknowledgement>Data were provided by T. Nagai at Institute of Space and Astronautical Science, JAXA in Japan.</Acknowledgement>
       <Contact>
-        <PersonID>spase://SMWG/Person/Susumu.K.Kokubun</PersonID>
+        <PersonID>spase://SMWG/Person/Tsugunobu.Nagai</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Donald.H.Fairfield</PersonID>
-        <Role>GeneralContact</Role>
+        <Role>ProjectScientist</Role>
       </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+        <Name>The Geotail Magnetic Field Experiment (MGF)</Name>
+        <URL>http://www.darts.isas.ac.jp/stp/geotail/jgg_mgf.pdf</URL>
+        <Description>Reprint of Kokubun, S., T. Yamamoto, M. H. Acuna, K. Hayashi, K. Shiokawa, and H. Kawano, The Geotail Magnetic Field Experiment, J. Geomag. Geoelectr., 46, 7-21, 1994.</Description>
+      </InformationURL>
       <InformationURL>
         <Name>Key Parameters GE_K0_MGF from the Geotail Magnetic Field Instrument (MGF) in CDF</Name>
         <URL>http://nssdc.gsfc.nasa.gov/nmc/datasetDisplay.do?id=SPHE-00568</URL>
@@ -220,14 +229,15 @@ Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr
       <ParameterKey>RANGE_STATUS</ParameterKey>
       <Description>Range status of the fluxgate magnetometer. 
       
-      0 = Not valid 
-      1 = +/-    16 nT 
-      2 = +/-    64 nT 
-      3 = +/-   256 nT 
-      4 = +/-  1024 nT 
-      5 = +/-  4096 nT 
-      6 = +/- 16384 nT 
-      7 = +/- 65536 nT</Description>
+      * 0 = Not valid 
+      * 1 = +/-    16 nT 
+      * 2 = +/-    64 nT 
+      * 3 = +/-   256 nT 
+      * 4 = +/-  1024 nT 
+      * 5 = +/-  4096 nT 
+      * 6 = +/- 16384 nT 
+      * 7 = +/- 65536 nT
+      </Description>
       <ValidMin>1</ValidMin>
       <ValidMax>7</ValidMax>
       <FillValue>-32768</FillValue>
