@@ -18,7 +18,7 @@
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/UCLA.IGPPLANL.Ground.Magnetometer.Data.Center</RepositoryID>
+            <RepositoryID>spase://SMWG/Repository/UCLA/IGPPLANL</RepositoryID>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <URL>http://spc.igpp.ucla.edu/uclamag/ffi/jic</URL>
