@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns="http://www.spase-group.org/data/schema">
+    <Version>1.2.2</Version>
+    <NumericalData>
+        <ResourceID>spase://VMO/NumericalData/Weygand/ISEE3/SWSEA/Propagated-SWSEA/GSM/PT60S</ResourceID>
+        <ResourceHeader>
+            <ResourceName>ISEE-3 Fast Plasma Experiment</ResourceName>
+            <AlternateName>ISEE-3 FPE data</AlternateName>
+            <ReleaseDate>2009-03-11T00:00:00</ReleaseDate>
+            <Description>Fast Plasma Experiment data</Description>
+            <Acknowledgement>NASA, Jack T. Gosling, James M. Weygand</Acknowledgement>
+            <Contact>
+                <PersonID>spase://SMWG/Person/John.T.Gosling</PersonID>
+                <Role>PrincipalInvestigator</Role>
+            </Contact>
+            <Contact>
+                <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
+                <Role>MetadataContact</Role>
+            </Contact>
+            <InformationURL>
+                <Name>ISEE-3 solar wind propagation information</Name>
+                <URL>http://www.igpp.ucla.edu/jweygand/htmls/Propagated_SW.html</URL>
+            </InformationURL>
+            <AssociationID>spase://SMWG/Observatory/ISEE3</AssociationID>
+        </ResourceHeader>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/VMOU</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>IGPP UCLA ISEE-3 Plasma Data JMW Archive</Name>
+                <URL>http://vmo.igpp.ucla.edu/data1/Weygand/PropagatedSolarWindGSM/weimer/ISEE3/plasma</URL>
+            </AccessURL>
+            <Format>Text</Format>
+            <Encoding>ASCII</Encoding>
+            <Acknowledgement>NASA, Jack T. Gosling, James M. Weygand</Acknowledgement>
+        </AccessInformation>
+        <ProcessingLevel>Calibrated</ProcessingLevel>
+        <ProviderResourceName>ISEE-3 Fast Plasma Experiment</ProviderResourceName>
+        <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
+        <InstrumentID>spase://SMWG/Instrument/ISEE3/MAG</InstrumentID>
+        <InstrumentID>spase://SMWG/Instrument/ISEE3/SWP</InstrumentID>
+        <MeasurementType>ChargedParticleFlux</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>1978-08-16T00:00:00</StartDate>
+                <EndDate>1980-02-19T23:59:59</EndDate>
+                <Note>Time format in data files is: Day Month Year Hour Minute Second (DD MM YYYY HH MM SS.SSS)</Note>
+            </TimeSpan>
+            <Cadence>PT60S</Cadence>
+        </TemporalDescription>
+        <Caveats>Flags=1.000e+34</Caveats>
+        <Keyword>1 min</Keyword>
+        <Keyword>solar wind</Keyword>
+        <Keyword>magnetotail</Keyword>
+        <Keyword>bow shock</Keyword>
+        <Keyword>magnetopause</Keyword>
+        <Keyword>ISEE-3</Keyword>
+        <Keyword>plasma data</Keyword>
+        <Keyword>propagated solar wind data</Keyword>
+        <PhysicalParameter>
+            <Name>Universal Time</Name>
+            <ParameterKey>Time</ParameterKey>
+            <Description>Universal Time AFTER Propagation columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.</Description>
+            <Cadence>PT60S</Cadence>
+            <Structure>
+                <StructureType>Vector</StructureType>
+                <Size>6</Size>
+                <Description>Universal Time expressed using a 6-column day, month, year, hour, minute, second representation</Description>
+                <Element>
+                    <Name>Day</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Day</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Month</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Month</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Year</Name>
+                    <Index>3</Index>
+                    <ParameterKey>Year</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Hour</Name>
+                    <Index>4</Index>
+                    <ParameterKey>Hour</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Minute</Name>
+                    <Index>5</Index>
+                    <ParameterKey>Minute</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Second</Name>
+                    <Index>6</Index>
+                    <ParameterKey>Second</ParameterKey>
+                </Element>
+            </Structure>
+            <Support>Temporal</Support>
+        </PhysicalParameter>
+        <PhysicalParameter>
+            <Name>ISEE-3 Density interpolated to 1 min resolution</Name>
+            <ParameterKey>Density</ParameterKey>
+            <Description>Density for ISEE-3 in units of number per cubic centimeter</Description>
+            <Cadence>PT60S</Cadence>
+            <Units>#/cm^-3</Units>
+            <Measured>
+                <Particle>
+                    <ParticleType>Ion</ParticleType>
+                    <ParticleQuantity>NumberDensity</ParticleQuantity>
+                </Particle>
+            </Measured>
+        </PhysicalParameter>
+        <PhysicalParameter>
+            <Name>ISEE-3 Thermal Speed</Name>
+            <ParameterKey>Thermal Speed</ParameterKey>
+            <Description>ISEE-3 thermal speed in units of km/s</Description>
+            <Caveats>Be sure you understand the instrument</Caveats>
+            <Cadence>PT60S</Cadence>
+            <Units>KM/S</Units>
+            <Measured>
+                <Particle>
+                    <ParticleType>Ion</ParticleType>
+                    <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+                </Particle>
+            </Measured>
+        </PhysicalParameter>
+        <PhysicalParameter>
+            <Name>ISEE-3 Velocity Vector</Name>
+            <ParameterKey>Velocity Vectors</ParameterKey>
+            <Description>Flow vector for ISEE-3 in GSM coordinates in units of km/s</Description>
+            <Caveats>Be sure you understand the instrument</Caveats>
+            <Cadence>PT60S</Cadence>
+            <Units>KM/S</Units>
+            <CoordinateSystem>
+                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                <CoordinateSystemName>GSM</CoordinateSystemName>
+            </CoordinateSystem>
+            <Structure>
+                <StructureType>Vector</StructureType>
+                <Size>3</Size>
+                <Element>
+                    <Name>VX-GSM</Name>
+                    <Component>X</Component>
+                    <Index>1</Index>
+                    <ParameterKey>pvxgsm</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>VY-GSM</Name>
+                    <Component>Y</Component>
+                    <Index>2</Index>
+                    <ParameterKey>pvygsm</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>VZ-GSM</Name>
+                    <Component>Z</Component>
+                    <Index>3</Index>
+                    <ParameterKey>pvzgsm</ParameterKey>
+                </Element>
+            </Structure>
+            <Measured>
+                <Particle>
+                    <ParticleType>Ion</ParticleType>
+                    <ParticleQuantity>Velocity</ParticleQuantity>
+                </Particle>
+            </Measured>
+        </PhysicalParameter>
+        <PhysicalParameter>
+            <Name>ISEE-3 spacecraft position vector interpolated to 1 min resolution</Name>
+            <ParameterKey>Position Vectors</ParameterKey>
+            <Description>Location of the spacecraft in GSM coordinates in units of Re</Description>
+            <Cadence>PT60S</Cadence>
+            <Units>Re</Units>
+            <CoordinateSystem>
+                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                <CoordinateSystemName>GSM</CoordinateSystemName>
+            </CoordinateSystem>
+            <Structure>
+                <StructureType>Vector</StructureType>
+                <Size>3</Size>
+                <Element>
+                    <Name>X-GSM</Name>
+                    <Component>X</Component>
+                    <Index>1</Index>
+                    <ParameterKey>nxgsm</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Y-GSM</Name>
+                    <Component>Y</Component>
+                    <Index>2</Index>
+                    <ParameterKey>nygsm</ParameterKey>
+                </Element>
+                <Element>
+                    <Name>Z-GSM</Name>
+                    <Component>Z</Component>
+                    <Index>3</Index>
+                    <ParameterKey>nzgsm</ParameterKey>
+                </Element>
+            </Structure>
+            <Support>Positional</Support>
+        </PhysicalParameter>
+    </NumericalData>
+</Spase>
