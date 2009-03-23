@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/MGF/PT64S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail KP Magnetic Field Data (64s)</ResourceName>
-      <ReleaseDate>2009-03-16T22:06:13Z</ReleaseDate>
+      <ReleaseDate>2009-03-23T18:53:28Z</ReleaseDate>
       <Description>This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.
       
       Selected references:
@@ -22,7 +22,7 @@ Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr
       </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Donald.H.Fairfield</PersonID>
-        <Role>ProjectScientist</Role>
+        <Role>Scientist</Role>
       </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
@@ -62,7 +62,9 @@ Kokubun, S., et al., The GEOTAIL Magnetic Field Experiment, J. Geomag. Geoelectr
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
-    <Caveats>Switched from outer magnetometer to inner in January 2007.</Caveats>
+    <Caveats>Switched from outer magnetometer to inner in January 2007.
+    
+    This data is computed with a preliminary algorithm and is not necessarily complete nor is it certified by the experimenters or considered publishable.</Caveats>
     <Parameter>
       <Name>Time</Name>
       <ParameterKey>Epoch</ParameterKey>

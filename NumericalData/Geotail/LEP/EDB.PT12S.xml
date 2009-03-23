@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/LEP/EDB.PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Editor-B 12 second Low-Energy Particles</ResourceName>
-      <ReleaseDate>2009-03-18T19:23:38Z</ReleaseDate>
+      <ReleaseDate>2009-03-23T18:53:24Z</ReleaseDate>
       <Description>12-second Editor-B low-energy particle data from the Geotail spacecraft.
       
       Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC),Japan, while the Editor-B data are 24-hours continuouslyrecorded in the onboard tape recorders and are dumpedover the NASA/JPL Deep Space Network (DSN) stations.
@@ -20,7 +20,7 @@
       </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Donald.H.Fairfield</PersonID>
-        <Role>ProjectScientist</Role>
+        <Role>Scientist</Role>
       </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Jan.Merka</PersonID>
@@ -94,7 +94,6 @@
       <Units>cm^-3</Units>
       <UnitsConversion>1e-6&gt;m-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
-      <ValidMax>1.0</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
