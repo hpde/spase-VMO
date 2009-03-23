@@ -6,11 +6,11 @@
         <ResourceHeader>
             <ResourceName>ACE Tri-axial fluxgate magnetometer</ResourceName>
             <AlternateName>ACE MAG data</AlternateName>
-            <ReleaseDate>2009-03-11T00:00:00</ReleaseDate>
+            <ReleaseDate>2009-03-23T16:58:18Z</ReleaseDate>
             <Description>Propagated Tri-axial fluxgate magnetometer data</Description>
             <Acknowledgement>NASA, Chuck Smith, James M. Weygand</Acknowledgement>
             <Contact>
-                <PersonID>spase://SMWG/Person/Chuck.Smith</PersonID>
+                <PersonID>spase://SMWG/Person/Charles.W.Smith</PersonID>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
