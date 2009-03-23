@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/MGF/EDB.PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Editor-B 3-second Magnetic Field Data</ResourceName>
-      <ReleaseDate>2009-03-23T18:53:28Z</ReleaseDate>
+      <ReleaseDate>2009-03-23T19:25:52Z</ReleaseDate>
       <Description>3-second Editor-B magnetic field data from the Geotail spacecraft.
       
       As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.
@@ -98,27 +98,19 @@
           <Name>Bx (GSE)</Name>
           <Component>I</Component>
           <Index>1</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
         <Element>
           <Name>By (GSE)</Name>
           <Component>J</Component>
           <Index>2</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
         <Element>
           <Name>Bz (GSE)</Name>
           <Component>K</Component>
           <Index>3</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
       </Structure>
+      <FillValue>-1.0E31</FillValue>
       <Field>
         <Qualifier>Vector</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
@@ -183,27 +175,19 @@
           <Name>Bx (GSM)</Name>
           <Component>I</Component>
           <Index>1</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
         <Element>
           <Name>By (GSM)</Name>
           <Component>J</Component>
           <Index>2</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
         <Element>
           <Name>Bz (GSM)</Name>
           <Component>K</Component>
           <Index>3</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
       </Structure>
+      <FillValue>-1.0E31</FillValue>
       <Field>
         <Qualifier>Vector</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
@@ -268,27 +252,19 @@
           <Name>Bx (SM)</Name>
           <Component>I</Component>
           <Index>1</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
         <Element>
           <Name>By (SM)</Name>
           <Component>J</Component>
           <Index>2</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
         <Element>
           <Name>Bz (SM)</Name>
           <Component>K</Component>
           <Index>3</Index>
-          <ValidMin>-100.0</ValidMin>
-          <ValidMax>100.0</ValidMax>
-          <FillValue>-1.0E31</FillValue>
         </Element>
       </Structure>
+      <FillValue>-1.0E31</FillValue>
       <Field>
         <Qualifier>Vector</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
