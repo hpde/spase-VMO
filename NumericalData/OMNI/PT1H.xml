@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>Hourly OMNI Data Set</ResourceName>
-      <ReleaseDate>2009-03-20T22:19:48Z</ReleaseDate>
+      <ReleaseDate>2009-03-24T19:08:17Z</ReleaseDate>
       <Description>Hourly averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
@@ -445,7 +445,7 @@ for creating the OMNI data set.</Acknowledgement>
       
       -V(km/s) * Bz (nT; GSM) * 10**-3
       
-      Hourly averaged V and Bz used nearly Ey component.</Description>
+      Hourly averaged V and Bz used, the product is nearly the Ey component.</Description>
       <Cadence>PT1H</Cadence>
       <Units>mV/m</Units>
       <CoordinateSystem>
