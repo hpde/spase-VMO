@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_4.xsd">
-  <Version>1.3.4</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_5.xsd">
+  <Version>1.3.5</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>Hourly OMNI Data Set</ResourceName>
-      <ReleaseDate>2009-03-24T19:08:17Z</ReleaseDate>
+      <ReleaseDate>2009-04-07T20:11:24Z</ReleaseDate>
       <Description>Hourly averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
@@ -112,11 +112,108 @@ for creating the OMNI data set.</Acknowledgement>
       </Support>
     </Parameter>
     <Parameter>
+      <Name>IMF spacecraft ID</Name>
+      <ParameterKey>Column 05</ParameterKey>
+      <Description>ID for magnetic field data source spacecraft for this hour. See documentation cited above.
+      
+      +--------------------------------------------------------------------------------------------+
+      | Spacecraft/Instrument Name                                        |   Spacecraft ID        |
+      |---------------------------------------------------------------------------------------------|
+      | IMP 1 (Explorer 18)                                                      |  18                        |
+      | IMP 3 (Explorer 28)                                                      |  28                        |
+      | IMP 4 (Explorer 34)                                                      |  34                        |
+      | IMP 5 (Explorer 41)                                                      |  41                        |
+      | IMP 6 (Explorer 43)                                                      |  43                        |
+      | IMP 7 (Explorer 47) MAG and Plasma/MIT                        |  47                        |
+      | IMP 7 (Explorer 47) Plasma/LANL                                   |  44                        |
+      | IMP 8 (Explorer 50) MAG and Plasma/MIT                        |  50                        |
+      | IMP 8 (Explorer 50) Plasma/LANL                                   |  45                        |
+      | AIMP 1 (Explorer 33)                                                    |  33                        |
+      | AIMP 2 (Explorer 35)                                                    |  35                       |
+      | HEOS 1 and HEOS 2                                                     |   1                        |
+      | VELA 3                                                                       |    3                       |
+      | OGO 5                                                                       |   5                        |
+      | Merged LANL VELA Speed Data (July 1964 - March 1971)   |  97                       |
+      | Merged LANL IMP T,N,V (Including all IMP 8 LANL Plasma)  |  98                        |
+      | ISEE 1                                                                       |  11                        |
+      | ISEE 2                                                                       |  12                        |
+      | ISEE 3                                                                       |  13                        |
+      | PROGNOZ 10                                                              |  10                        |
+      | WIND                                                                        |  51                        |
+      | ACE                                                                           |  71                        |
+      | Geotail                                                                       |  60                        |
+      | No spacecraft                                                              |  99                        |
+      +---------------------------------------------------------------------------------------------+
+</Description>
+      <FillValue>99</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma spacecraft ID</Name>
+      <ParameterKey>Column 06</ParameterKey>
+      <Description>ID for plasma data source spacecraft for this hour. See documentation cited above.
+     
+      +--------------------------------------------------------------------------------------------+
+      | Spacecraft/Instrument Name                                        |   Spacecraft ID        |
+      |---------------------------------------------------------------------------------------------|
+      | IMP 1 (Explorer 18)                                                      |  18                        |
+      | IMP 3 (Explorer 28)                                                      |  28                        |
+      | IMP 4 (Explorer 34)                                                      |  34                        |
+      | IMP 5 (Explorer 41)                                                      |  41                        |
+      | IMP 6 (Explorer 43)                                                      |  43                        |
+      | IMP 7 (Explorer 47) MAG and Plasma/MIT                        |  47                        |
+      | IMP 7 (Explorer 47) Plasma/LANL                                   |  44                        |
+      | IMP 8 (Explorer 50) MAG and Plasma/MIT                        |  50                        |
+      | IMP 8 (Explorer 50) Plasma/LANL                                   |  45                        |
+      | AIMP 1 (Explorer 33)                                                    |  33                        |
+      | AIMP 2 (Explorer 35)                                                    |  35                       |
+      | HEOS 1 and HEOS 2                                                     |   1                        |
+      | VELA 3                                                                       |    3                       |
+      | OGO 5                                                                       |   5                        |
+      | Merged LANL VELA Speed Data (July 1964 - March 1971)   |  97                       |
+      | Merged LANL IMP T,N,V (Including all IMP 8 LANL Plasma)  |  98                        |
+      | ISEE 1                                                                       |  11                        |
+      | ISEE 2                                                                       |  12                        |
+      | ISEE 3                                                                       |  13                        |
+      | PROGNOZ 10                                                              |  10                        |
+      | WIND                                                                        |  51                        |
+      | ACE                                                                           |  71                        |
+      | Geotail                                                                       |  60                        |
+      | No spacecraft                                                              |  99                        |
+      +---------------------------------------------------------------------------------------------+
+      </Description>
+      <FillValue>99</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>IMF FTS PTS</Name>
+      <ParameterKey>Column 07</ParameterKey>
+      <Description>Number of fine scale points in magnetic field parameter averages for this hour</Description>
+      <FillValue>999</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Plasma FTS PTS</Name>
+      <ParameterKey>Column 08</ParameterKey>
+      <Description>Number of fine scale points in plasma parameter averages for this hour</Description>
+      <FillValue>999</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Average magnetic field magnitude</Name>
       <ParameterKey>Column 09</ParameterKey>
       <Description>Average of fine scale field magnitudes</Description>
       <Cadence>PT1H</Cadence>
       <Units>nT</Units>
+      <FillValue>999.9</FillValue>
       <Field>
         <Qualifier>Magnitude</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
@@ -130,25 +227,9 @@ for creating the OMNI data set.</Acknowledgement>
       SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2 +&lt;Bz&gt;**2)</Description>
       <Cadence>PT1H</Cadence>
       <Units>nT</Units>
+      <FillValue>999.9</FillValue>
       <Field>
         <Qualifier>Magnitude</Qualifier>
-        <FieldQuantity>Magnetic</FieldQuantity>
-      </Field>
-    </Parameter>
-    <Parameter>
-      <Name>Azimuthal angle of average magnetic field vector</Name>
-      <ParameterKey>Column 12</ParameterKey>
-      <Description>Azimuthal angle of vector-averaged magnetic field vector.
-      
-      ARCTAN &lt;By&gt;/&lt;Bx&gt;</Description>
-      <Cadence>PT1H</Cadence>
-      <Units>Deg</Units>
-      <CoordinateSystem>
-        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
-        <CoordinateSystemName>GSE</CoordinateSystemName>
-      </CoordinateSystem>
-      <Field>
-        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
       </Field>
     </Parameter>
@@ -164,8 +245,27 @@ for creating the OMNI data set.</Acknowledgement>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
+      <FillValue>999.9</FillValue>
       <Field>
         <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Azimuthal angle of average magnetic field vector</Name>
+      <ParameterKey>Column 12</ParameterKey>
+      <Description>Azimuthal angle of vector-averaged magnetic field vector.
+      
+      ARCTAN &lt;By&gt;/&lt;Bx&gt;</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>Deg</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <FillValue>999.9</FillValue>
+      <Field>
+        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
       </Field>
     </Parameter>
@@ -200,6 +300,7 @@ for creating the OMNI data set.</Acknowledgement>
           <ParameterKey>Column 15</ParameterKey>
         </Element>
       </Structure>
+      <FillValue>999.9</FillValue>
       <Field>
         <Qualifier>Component</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
@@ -238,8 +339,35 @@ for creating the OMNI data set.</Acknowledgement>
           <ParameterKey>Column 17</ParameterKey>
         </Element>
       </Structure>
+      <FillValue>999.9</FillValue>
       <Field>
         <Qualifier>Component</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Standard deviation in average magnetic field magnitude</Name>
+      <ParameterKey>Column 18</ParameterKey>
+      <Description>Standard derviation in average of fine scale field magnitudes</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <FillValue>999.9</FillValue>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Standard deviation of average magnetic field vector</Name>
+      <ParameterKey>Column 19</ParameterKey>
+      <Description>Standard deviation of vector-averaged magnetic field vector.
+      
+      SQRT(sigma&lt;Bx&gt;**2 + sigma&lt;By&gt;**2 + Sigma&lt;Bz&gt;**2)</Description>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <FillValue>999.9</FillValue>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
       </Field>
     </Parameter>
@@ -274,30 +402,7 @@ for creating the OMNI data set.</Acknowledgement>
           <ParameterKey>Column 22</ParameterKey>
         </Element>
       </Structure>
-      <Field>
-        <Qualifier>StandardDeviation</Qualifier>
-        <FieldQuantity>Magnetic</FieldQuantity>
-      </Field>
-    </Parameter>
-    <Parameter>
-      <Name>Standard deviation in average magnetic field magnitude</Name>
-      <ParameterKey>Column 18</ParameterKey>
-      <Description>Standard derviation in average of fine scale field magnitudes</Description>
-      <Cadence>PT1H</Cadence>
-      <Units>nT</Units>
-      <Field>
-        <Qualifier>StandardDeviation</Qualifier>
-        <FieldQuantity>Magnetic</FieldQuantity>
-      </Field>
-    </Parameter>
-    <Parameter>
-      <Name>Standard deviation of average magnetic field vector</Name>
-      <ParameterKey>Column 19</ParameterKey>
-      <Description>Standard deviation of vector-averaged magnetic field vector.
-      
-      SQRT(sigma&lt;Bx&gt;**2 + sigma&lt;By&gt;**2 + Sigma&lt;Bz&gt;**2)</Description>
-      <Cadence>PT1H</Cadence>
-      <Units>nT</Units>
+      <FillValue>999.9</FillValue>
       <Field>
         <Qualifier>StandardDeviation</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
@@ -306,9 +411,10 @@ for creating the OMNI data set.</Acknowledgement>
     <Parameter>
       <Name>Plasma proton temperature</Name>
       <ParameterKey>Column 23</ParameterKey>
-      <Description>Plasma proton temperature, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+      <Description>Plasma proton temperature, variously derived for various OMNI-input data sets. Cross normalized</Description>
       <Cadence>PT1H</Cadence>
       <Units>DegK</Units>
+      <FillValue>9999999</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <Qualifier>Average</Qualifier>
@@ -321,6 +427,7 @@ for creating the OMNI data set.</Acknowledgement>
       <Description>Plasma proton density, variously derived for various OMNI-input data sets.  Cross normalized</Description>
       <Cadence>PT1H</Cadence>
       <Units>number/cc</Units>
+      <FillValue>999.9</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <Qualifier>Average</Qualifier>
@@ -333,6 +440,7 @@ for creating the OMNI data set.</Acknowledgement>
       <Description>Plasma proton flow speed, variously derived for various OMNI-input data sets.  Cross normalized</Description>
       <Cadence>PT1H</Cadence>
       <Units>km/s</Units>
+      <FillValue>9999</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <Qualifier>Average</Qualifier>
@@ -345,6 +453,7 @@ for creating the OMNI data set.</Acknowledgement>
       <Description>Angle from negative Xgse axis towards positive Ygse axis</Description>
       <Cadence>PT1H</Cadence>
       <Units>Deg</Units>
+      <FillValue>999.9</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
@@ -357,6 +466,7 @@ for creating the OMNI data set.</Acknowledgement>
       <Description>Angle (lease angle) from GSE X-Y plane to flow vector</Description>
       <Cadence>PT1H</Cadence>
       <Units>Deg</Units>
+      <FillValue>999.9</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
@@ -368,6 +478,7 @@ for creating the OMNI data set.</Acknowledgement>
       <ParameterKey>Column 28</ParameterKey>
       <Description>Alpha to proton density ratio</Description>
       <Cadence>PT1H</Cadence>
+      <FillValue>9.999</FillValue>
       <Particle>
         <ParticleType>AlphaParticle</ParticleType>
         <ParticleType>Proton</ParticleType>
@@ -386,6 +497,7 @@ for creating the OMNI data set.</Acknowledgement>
 </Description>
       <Cadence>PT1H</Cadence>
       <Units>nPa</Units>
+      <FillValue>99.99</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <ParticleType>AlphaParticle</ParticleType>
@@ -405,31 +517,37 @@ for creating the OMNI data set.</Acknowledgement>
           <Name>SigmaT</Name>
           <Index>1</Index>
           <ParameterKey>Column 30</ParameterKey>
+          <FillValue>9999999</FillValue>
         </Element>
         <Element>
           <Name>SigmaN</Name>
           <Index>2</Index>
           <ParameterKey>Column 31</ParameterKey>
+          <FillValue>999.9</FillValue>
         </Element>
         <Element>
           <Name>SigmaV</Name>
           <Index>3</Index>
           <ParameterKey>Column 32</ParameterKey>
+          <FillValue>9999</FillValue>
         </Element>
         <Element>
           <Name>sigmaPhiV</Name>
           <Index>4</Index>
           <ParameterKey>Column 33</ParameterKey>
+          <FillValue>999.9</FillValue>
         </Element>
         <Element>
           <Name>SigmaThetaV</Name>
           <Index>5</Index>
           <ParameterKey>Column 34</ParameterKey>
+          <FillValue>999.9</FillValue>
         </Element>
         <Element>
           <Name>SigmaNa/Np</Name>
           <Index>6</Index>
           <ParameterKey>Column 35</ParameterKey>
+          <FillValue>9.999</FillValue>
         </Element>
       </Structure>
       <Particle>
@@ -452,6 +570,7 @@ for creating the OMNI data set.</Acknowledgement>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
+      <FillValue>999.99</FillValue>
       <Field>
         <Qualifier>Average</Qualifier>
         <FieldQuantity>Electric</FieldQuantity>
@@ -464,7 +583,10 @@ for creating the OMNI data set.</Acknowledgement>
       
       [(T*4.16/10**5) + 5.34] * Np / B**2</Description>
       <Cadence>PT1H</Cadence>
-      <Mixed>Beta</Mixed>
+      <FillValue>999.99</FillValue>
+      <Mixed>
+        <MixedQuantity>PlasmaBeta</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>Alfven Mach Number</Name>
@@ -473,7 +595,10 @@ for creating the OMNI data set.</Acknowledgement>
       
       (V * Np**0.5) / 20 * B</Description>
       <Cadence>PT1H</Cadence>
-      <Mixed>AlfvenMachNumber</Mixed>
+      <FillValue>999.9</FillValue>
+      <Mixed>
+        <MixedQuantity>AlfvenMachNumber</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>Kp Index</Name>
@@ -485,27 +610,9 @@ for creating the OMNI data set.</Acknowledgement>
       </Support>
     </Parameter>
     <Parameter>
-      <Name>ap Index</Name>
-      <ParameterKey>Column 50</ParameterKey>
-      <Description>ap index</Description>
-      <Cadence>PT3H</Cadence>
-      <Support>
-        <SupportQuantity>Other</SupportQuantity>
-      </Support>
-    </Parameter>
-    <Parameter>
       <Name>Sunspot Number</Name>
       <ParameterKey>Column 40</ParameterKey>
       <Description>Daily sunspot number</Description>
-      <Cadence>P1D</Cadence>
-      <Support>
-        <SupportQuantity>Other</SupportQuantity>
-      </Support>
-    </Parameter>
-    <Parameter>
-      <Name>F10.7 Index</Name>
-      <ParameterKey>Column 51</ParameterKey>
-      <Description>F10.7 solar index</Description>
       <Cadence>P1D</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
@@ -533,41 +640,6 @@ to be replaced by preliminary values as they become available, in turn to
 be replaced by definitive values as they become available</Caveats>
       <Cadence>PT1H</Cadence>
       <Units>nT</Units>
-      <Support>
-        <SupportQuantity>Other</SupportQuantity>
-      </Support>
-    </Parameter>
-    <Parameter>
-      <Name>AL Index</Name>
-      <ParameterKey>Column 53</ParameterKey>
-      <Description>AL Index</Description>
-      <Caveats>Note that quick look values are given for most recent times,
-to be replaced by preliminary values as they become available, in turn to
-be replaced by definitive values as they become available</Caveats>
-      <Cadence>PT1H</Cadence>
-      <Units>nT</Units>
-      <Support>
-        <SupportQuantity>Other</SupportQuantity>
-      </Support>
-    </Parameter>
-    <Parameter>
-      <Name>AU Index</Name>
-      <ParameterKey>Column 54</ParameterKey>
-      <Description>AU Index</Description>
-      <Caveats>Note that quick look values are given for most recent times,
-to be replaced by preliminary values as they become available, in turn to
-be replaced by definitive values as they become available</Caveats>
-      <Cadence>PT1H</Cadence>
-      <Units>nT</Units>
-      <Support>
-        <SupportQuantity>Other</SupportQuantity>
-      </Support>
-    </Parameter>
-    <Parameter>
-      <Name>Polar Cap (N) Index</Name>
-      <ParameterKey>Column 52</ParameterKey>
-      <Description>Polar Cap Index based on Thule</Description>
-      <Cadence>PT1H</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
@@ -612,6 +684,7 @@ be replaced by definitive values as they become available</Caveats>
           <ParameterKey>Column 48</ParameterKey>
         </Element>
       </Structure>
+      <FillValue>999999.99</FillValue>
       <Particle>
         <ParticleType>Proton</ParticleType>
         <Qualifier>Average</Qualifier>
@@ -619,33 +692,54 @@ be replaced by definitive values as they become available</Caveats>
       </Particle>
     </Parameter>
     <Parameter>
-      <Name>IMF spacecraft ID</Name>
-      <ParameterKey>Column 05</ParameterKey>
-      <Description>ID for magnetic field data source spacecraft for this hour. See documentation cited above</Description>
+      <Name>ap Index</Name>
+      <ParameterKey>Column 50</ParameterKey>
+      <Description>ap index</Description>
+      <Cadence>PT3H</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
     <Parameter>
-      <Name>Plasma spacecraft ID</Name>
-      <ParameterKey>Column 06</ParameterKey>
-      <Description>ID for plasma data source spacecraft for this hour. See documentation cited above</Description>
+      <Name>F10.7 Index</Name>
+      <ParameterKey>Column 51</ParameterKey>
+      <Description>F10.7 solar index</Description>
+      <Cadence>P1D</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
     <Parameter>
-      <Name>IMF FTS PTS</Name>
-      <ParameterKey>Column 07</ParameterKey>
-      <Description>Number of fine scale points in magnetic field parameter averages for this hour</Description>
+      <Name>Polar Cap (N) Index</Name>
+      <ParameterKey>Column 52</ParameterKey>
+      <Description>Polar Cap Index based on Thule</Description>
+      <Cadence>PT1H</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
     <Parameter>
-      <Name>Plasma FTS PTS</Name>
-      <ParameterKey>Column 08</ParameterKey>
-      <Description>Number of fine scale points in plasma parameter averages for this hour</Description>
+      <Name>AL Index</Name>
+      <ParameterKey>Column 53</ParameterKey>
+      <Description>AL Index</Description>
+      <Caveats>Note that quick look values are given for most recent times,
+to be replaced by preliminary values as they become available, in turn to
+be replaced by definitive values as they become available</Caveats>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>AU Index</Name>
+      <ParameterKey>Column 54</ParameterKey>
+      <Description>AU Index</Description>
+      <Caveats>Note that quick look values are given for most recent times,
+to be replaced by preliminary values as they become available, in turn to
+be replaced by definitive values as they become available</Caveats>
+      <Cadence>PT1H</Cadence>
+      <Units>nT</Units>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
