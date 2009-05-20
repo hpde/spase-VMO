@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
-  <Version>1.3.2</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Geotail/Ephemeris/PT10M</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Spacecraft Definitive Positions</ResourceName>
-      <ReleaseDate>2008-12-03T22:15:49Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
       <Description>Definitive Geotail spacecraft positions in various coordinate systems</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Gerald.Blackwell</PersonID>
@@ -57,7 +57,7 @@
         <Size>3</Size>
         <Element>
           <Name>Year</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <Units>year</Units>
           <ValidMin>1992</ValidMin>
@@ -66,7 +66,7 @@
         </Element>
         <Element>
           <Name>Day of Year (Jan 1 = day 1)</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>2</Index>
           <Units>day</Units>
           <ValidMin>1</ValidMin>
@@ -75,7 +75,7 @@
         </Element>
         <Element>
           <Name>Elapsed ms of day</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>3</Index>
           <Units>ms</Units>
           <UnitsConversion>1e-3&gt;s</UnitsConversion>
@@ -101,7 +101,7 @@
         <Size>3</Size>
         <Element>
           <Name>X GCI</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -109,7 +109,7 @@
         </Element>
         <Element>
           <Name>Y GCI</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -117,7 +117,7 @@
         </Element>
         <Element>
           <Name>Z GCI</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -141,7 +141,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx GCI</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -149,7 +149,7 @@
         </Element>
         <Element>
           <Name>vy GCI</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -157,7 +157,7 @@
         </Element>
         <Element>
           <Name>vz GCI</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -182,7 +182,7 @@
         <Size>3</Size>
         <Element>
           <Name>X GSE</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -190,7 +190,7 @@
         </Element>
         <Element>
           <Name>Y GSE</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -198,7 +198,7 @@
         </Element>
         <Element>
           <Name>Z GSE</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -223,7 +223,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx GSE</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -231,7 +231,7 @@
         </Element>
         <Element>
           <Name>vy GSE</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -239,7 +239,7 @@
         </Element>
         <Element>
           <Name>vz GSE</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -264,7 +264,7 @@
         <Size>3</Size>
         <Element>
           <Name>X GSM</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -272,7 +272,7 @@
         </Element>
         <Element>
           <Name>Y GSM</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -280,7 +280,7 @@
         </Element>
         <Element>
           <Name>Z GSM</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -305,7 +305,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx GSM</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -313,7 +313,7 @@
         </Element>
         <Element>
           <Name>vy GSM</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -321,7 +321,7 @@
         </Element>
         <Element>
           <Name>vz GSM</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -345,7 +345,7 @@
         <Size>3</Size>
         <Element>
           <Name>Sun X GCI</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1.6E8</ValidMin>
           <ValidMax>1.6E8</ValidMax>
@@ -353,7 +353,7 @@
         </Element>
         <Element>
           <Name>Sun Y GCI</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1.6E8</ValidMin>
           <ValidMax>1.6E8</ValidMax>
@@ -361,7 +361,7 @@
         </Element>
         <Element>
           <Name>Sun Z GCI</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1.6E8</ValidMin>
           <ValidMax>1.6E8</ValidMax>
@@ -385,7 +385,7 @@
         <Size>3</Size>
         <Element>
           <Name>X HEC</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -393,7 +393,7 @@
         </Element>
         <Element>
           <Name>Y HEC</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -401,7 +401,7 @@
         </Element>
         <Element>
           <Name>Z HEC</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -425,7 +425,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx HEC</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -433,7 +433,7 @@
         </Element>
         <Element>
           <Name>vy HEC</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -441,7 +441,7 @@
         </Element>
         <Element>
           <Name>vz HEC</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -476,7 +476,7 @@
       <ValidMax>6.283185307</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
-        <Qualifier>Component.Phi</Qualifier>
+        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
     </Parameter>
@@ -493,7 +493,7 @@
       <ValidMax>1.570796327</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
-        <Qualifier>Component.Theta</Qualifier>
+        <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
     </Parameter>
@@ -510,7 +510,7 @@
       <ValidMax>6.283185307</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
-        <Qualifier>Component.Phi</Qualifier>
+        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
     </Parameter>
@@ -527,7 +527,7 @@
       <ValidMax>1.570796327</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
-        <Qualifier>Component.Theta</Qualifier>
+        <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
     </Parameter>

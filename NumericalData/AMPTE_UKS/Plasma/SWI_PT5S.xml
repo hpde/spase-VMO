@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/AMPTE_UKS/Plasma/SWI_PT5S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/UKS Ion Plasma Data, solar wind mode</ResourceName>
-      <ReleaseDate>2008-08-26T22:09:23Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:05:59Z</ReleaseDate>
       <Description>AMPTE/UKS 5-second (spin) averaged ion plasma moments</Description>
       <Acknowledgement>UKS/IRM Prime Parameters, UKS/IRM High Resolution Data, or products derived from them may NOT be published or shown in any form without the consent of the Principal Investigators concerned. Acknowledgements to the PI and the UK CDHF would
 be appropriate in any published work; full-authorship may be required
@@ -55,7 +55,7 @@ a PI response.</Acknowledgement>
     <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
     <Caveats>The time tags represent the start times of accumulation intervals (spin). UKS times are UT stamped on board while IRM time stamps are UT at time of ground receipt. Thus for time-critical science, the IRM times need to be corrected by subtracting the light travel time from the spacecraft to the ground-station (at Weilheim in Germany apart special events requiring NASA DSN). For the transmission frequencies used, the vacuum light speed is appropriate. At apogee, this correction is more than a third of a second. There are no other known time delays.
 </Caveats>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Epoch</Name>
       <ParameterKey>Column 1</ParameterKey>
       <Description>The start of the accumulation time interval for the data point, in DA/MO/YR HR:MI:SS.MS format.</Description>
@@ -64,8 +64,8 @@ a PI response.</Acknowledgement>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Np</Name>
       <ParameterKey>Column 2</ParameterKey>
       <Description>Proton density</Description>
@@ -74,16 +74,14 @@ a PI response.</Acknowledgement>
       <Structure>
       </Structure>
       <FillValue>-1e31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Scalar</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Tp</Name>
       <ParameterKey>Column 3</ParameterKey>
       <Description>Proton temperature</Description>
@@ -92,16 +90,14 @@ a PI response.</Acknowledgement>
       <Structure>
       </Structure>
       <FillValue>-1e31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Scalar</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Scalar</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Vp</Name>
       <Description>Bulk proton velocity</Description>
       <Units>km/s</Units>
@@ -114,32 +110,30 @@ a PI response.</Acknowledgement>
         <Size>3</Size>
         <Element>
           <Name>Vx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ParameterKey>Column 4</ParameterKey>
         </Element>
         <Element>
           <Name>Vy</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ParameterKey>Column 5</ParameterKey>
         </Element>
         <Element>
           <Name>Vz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ParameterKey>Column 6</ParameterKey>
         </Element>
       </Structure>
       <FillValue>-1e31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
   </NumericalData>
 </Spase>

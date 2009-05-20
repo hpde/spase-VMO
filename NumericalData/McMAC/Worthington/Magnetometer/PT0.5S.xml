@@ -1,53 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>1.2.2</Version>
-    <NumericalData>
-        <ResourceID>spase://VMO/NumericalData/McMAC/Worthington/Magnetometer/PT0.5S</ResourceID>
-        <ResourceHeader>
-            <ResourceName>McMAC Worthington (WRTH) Ground Magnetometer Data</ResourceName>
-            <ReleaseDate>2009-03-09T00:00:00</ReleaseDate>
-            <Description>Data from McMAC Worthington (WRTH) Ground Magnetometer, Orientation: HEZ, Instrument: Fluxgate magnetometer</Description>
-            <Acknowledgement>NSF Mid-continent Magnetoseismic Chain (McMAC)</Acknowledgement>
-            <Contact>
-                <PersonID>spase://SMWG/Person/Peter.J.Chi</PersonID>
-                <Role>PrincipalInvestigator</Role>
-            </Contact>
-            <InformationURL>
-                <URL>http://spc.igpp.ucla.edu/mcmac/</URL>
-                <Description>Mid-continent Magnetoseismic Chain (McMAC) web site</Description>
-            </InformationURL>
-        </ResourceHeader>
-        <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/McMAC</RepositoryID>
-            <AccessRights>Open</AccessRights>
-            <AccessURL>
-                <URL>http://spc.igpp.ucla.edu/mcmac/data/stations/wrth/</URL>
-                <Description>The folder contains the data files in the compressed ASCII format.</Description>
-            </AccessURL>
-            <Format>Text</Format>
-            <Acknowledgement>NSF Mid-continent Magnetoseismic Chain (McMAC)</Acknowledgement>
-        </AccessInformation>
-        <ProcessingLevel>Calibrated</ProcessingLevel>
-        <InstrumentID>spase://SMWG/Instrument/McMAC/Worthington/Magnetometer</InstrumentID>
-        <MeasurementType>MagneticField</MeasurementType>
-        <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
-        <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
-        <PhysicalParameter>
-            <Name>Magnetic field vector</Name>
-            <Units>nT</Units>
-            <CoordinateSystem>
-                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-                <CoordinateSystemName>LGM</CoordinateSystemName>
-            </CoordinateSystem>
-            <Structure>
-                <StructureType>Vector</StructureType>
-            </Structure>
-            <Measured>
-                <Field>
-                    <FieldQualifier>Vector</FieldQualifier>
-                    <FieldQuantity>Magnetic</FieldQuantity>
-                </Field>
-            </Measured>
-        </PhysicalParameter>
-    </NumericalData>
+  <Version>2.0.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/McMAC/Worthington/Magnetometer/PT0.5S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>McMAC Worthington (WRTH) Ground Magnetometer Data</ResourceName>
+      <ReleaseDate>2009-05-20T23:06:14Z</ReleaseDate>
+      <Description>Data from McMAC Worthington (WRTH) Ground Magnetometer, Orientation: HEZ, Instrument: Fluxgate magnetometer</Description>
+      <Acknowledgement>NSF Mid-continent Magnetoseismic Chain (McMAC)</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Peter.J.Chi</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <InformationURL>
+        <URL>http://spc.igpp.ucla.edu/mcmac/</URL>
+        <Description>Mid-continent Magnetoseismic Chain (McMAC) web site</Description>
+      </InformationURL>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/McMAC</RepositoryID>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <URL>http://spc.igpp.ucla.edu/mcmac/data/stations/wrth/</URL>
+        <Description>The folder contains the data files in the compressed ASCII format.</Description>
+      </AccessURL>
+      <Format>Text</Format>
+      <Acknowledgement>NSF Mid-continent Magnetoseismic Chain (McMAC)</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/McMAC/Worthington/Magnetometer</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+    <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+    <Parameter>
+      <Name>Magnetic field vector</Name>
+      <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>LGM</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+      </Structure>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+  </NumericalData>
 </Spase>

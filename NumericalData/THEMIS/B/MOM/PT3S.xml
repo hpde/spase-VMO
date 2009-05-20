@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
-  <Version>1.3.2</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/B/MOM/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B:  On Board moments:  ESA and SST Electron/Ion moments, density, flux, velocity, pressure and temperature.</ResourceName>
       <AlternateName>THEMIS-B MOM</AlternateName>
-      <ReleaseDate>2008-12-06T01:08:42Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:03Z</ReleaseDate>
       <Description>THEMIS-B On Board moments.  On board data outputs include number density, particle flux, energy flux, and a six component symetric momentum flux tensor.  Other moments are calculated from these partial moments on the ground adding total pressure, velocity, plasma temperature (measured as a three dimensional energy vector), and a six component symetric pressure tensor to the list of data products.  Number density and total pressure are scalar outputs.  Velocity is calculated in DSL, GSE, GSM, and MFA coordinates (coordinate descriptions are listed below in Table 1).  Magnetic Field Aligned pressure tensor and temperature are calculated as well.  All quantities are calculated for both ions and electrons from a combination of ESA and SST data.  Moments data are taken at spin resolution in all ESA survey modes except burst.  The spacecraft potential, as measure by the EFI, is used to correct for spacecraft charging by shifting the particle energies for calculation; this eliminates contamination from photo-electrons.  Also, weighting factors are used to account for instrument specific energy and angle efficiency variations.
 
 Table 1: Coordinate Descriptions.

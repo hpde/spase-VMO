@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/POLAR/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>POLAR Predicted Orbit</ResourceName>
-      <ReleaseDate>2008-12-03T19:29:48Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
       <Description>Polar predicted orbit data</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -34,7 +34,7 @@
       </TimeSpan>
       <Cadence>PT01M</Cadence>
     </TemporalDescription>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Orbit Epoch Time</Name>
       <ParameterKey>Epoch</ParameterKey>
       <Description>Number of milliseconds since the CDF epoch</Description>
@@ -46,15 +46,15 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>Orbit PB5 Time </Name>
+    </Parameter>
+    <Parameter>
+      <Name>Orbit PB5 Time</Name>
       <ParameterKey>Time_PB5</ParameterKey>
       <Structure>
         <Size>3</Size>
         <Element>
           <Name>Year</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <Units>year</Units>
           <ValidMin>1992</ValidMin>
@@ -63,7 +63,7 @@
         </Element>
         <Element>
           <Name>Day of Year (Jan 1 = day 1)</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>2</Index>
           <Units>day</Units>
           <ValidMin>1</ValidMin>
@@ -72,7 +72,7 @@
         </Element>
         <Element>
           <Name>elapsed ms of day</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>3</Index>
           <Units>ms</Units>
           <UnitsConversion>1e-3&gt;s</UnitsConversion>
@@ -84,9 +84,9 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>GCI Cartesian Position </Name>
+    </Parameter>
+    <Parameter>
+      <Name>GCI Cartesian Position</Name>
       <ParameterKey>GCI_POS</ParameterKey>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -97,7 +97,7 @@
         <Size>3</Size>
         <Element>
           <Name>X GCI</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -105,7 +105,7 @@
         </Element>
         <Element>
           <Name>Y GCI</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -113,7 +113,7 @@
         </Element>
         <Element>
           <Name>Z GCI</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -123,8 +123,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>GCI Cartesian Velocity</Name>
       <ParameterKey>GCI_VEL</ParameterKey>
       <Units>km/s</Units>
@@ -136,7 +136,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -144,7 +144,7 @@
         </Element>
         <Element>
           <Name>vy</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -152,7 +152,7 @@
         </Element>
         <Element>
           <Name>vz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -162,9 +162,9 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>GSE Cartesian Position </Name>
+    </Parameter>
+    <Parameter>
+      <Name>GSE Cartesian Position</Name>
       <ParameterKey>GSE_POS</ParameterKey>
       <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -176,7 +176,7 @@
         <Size>3</Size>
         <Element>
           <Name>X GSE</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -184,7 +184,7 @@
         </Element>
         <Element>
           <Name>Y GSE</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -192,7 +192,7 @@
         </Element>
         <Element>
           <Name>Z GSE</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -202,9 +202,9 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>GSE Cartesian Velocity </Name>
+    </Parameter>
+    <Parameter>
+      <Name>GSE Cartesian Velocity</Name>
       <ParameterKey>GSE_VEL</ParameterKey>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -216,7 +216,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -224,7 +224,7 @@
         </Element>
         <Element>
           <Name>vy</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -232,7 +232,7 @@
         </Element>
         <Element>
           <Name>vz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -242,9 +242,9 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>GSM Cartesian Position </Name>
+    </Parameter>
+    <Parameter>
+      <Name>GSM Cartesian Position</Name>
       <ParameterKey>GSM_POS</ParameterKey>
       <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -256,7 +256,7 @@
         <Size>3</Size>
         <Element>
           <Name>X GSM</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -264,7 +264,7 @@
         </Element>
         <Element>
           <Name>Y GSM</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -272,7 +272,7 @@
         </Element>
         <Element>
           <Name>Z GSM</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -282,9 +282,9 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>GSM Cartesian Velocity </Name>
+    </Parameter>
+    <Parameter>
+      <Name>GSM Cartesian Velocity</Name>
       <ParameterKey>GSM_VEL</ParameterKey>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -296,7 +296,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -304,7 +304,7 @@
         </Element>
         <Element>
           <Name>vy</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -312,7 +312,7 @@
         </Element>
         <Element>
           <Name>vz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -320,11 +320,11 @@
         </Element>
       </Structure>
       <Support>
-        <SupportQuantity>Other</SupportQuantity>
+        <SupportQuantity>Velocity</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>GCI Sun Postion Vector </Name>
+    </Parameter>
+    <Parameter>
+      <Name>GCI Sun Postion Vector</Name>
       <ParameterKey>SUN_VECTOR</ParameterKey>
       <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -335,7 +335,7 @@
         <Size>3</Size>
         <Element>
           <Name>Xsun</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1.6E8</ValidMin>
           <ValidMax>1.6E8</ValidMax>
@@ -343,7 +343,7 @@
         </Element>
         <Element>
           <Name>Ysun</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1.6E8</ValidMin>
           <ValidMax>1.6E8</ValidMax>
@@ -351,7 +351,7 @@
         </Element>
         <Element>
           <Name>Zsun</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1.6E8</ValidMin>
           <ValidMax>1.6E8</ValidMax>
@@ -361,9 +361,9 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>HEC Cartesian Position </Name>
+    </Parameter>
+    <Parameter>
+      <Name>HEC Cartesian Position</Name>
       <ParameterKey>HEC_POS</ParameterKey>
       <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -374,7 +374,7 @@
         <Size>3</Size>
         <Element>
           <Name>X HEC</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -382,7 +382,7 @@
         </Element>
         <Element>
           <Name>Y HEC</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -390,7 +390,7 @@
         </Element>
         <Element>
           <Name>Z HEC</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1800000.0</ValidMin>
           <ValidMax>1800000.0</ValidMax>
@@ -400,9 +400,9 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>HEC Cartesian Velocity </Name>
+    </Parameter>
+    <Parameter>
+      <Name>HEC Cartesian Velocity</Name>
       <ParameterKey>HEC_VEL</ParameterKey>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -413,7 +413,7 @@
         <Size>3</Size>
         <Element>
           <Name>vx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -421,7 +421,7 @@
         </Element>
         <Element>
           <Name>vy</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -429,7 +429,7 @@
         </Element>
         <Element>
           <Name>vz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-12.0</ValidMin>
           <ValidMax>12.0</ValidMax>
@@ -437,125 +437,97 @@
         </Element>
       </Structure>
       <Support>
-        <SupportQuantity>Other</SupportQuantity>
+        <SupportQuantity>Velocity</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>CRN of the Earth </Name>
+    </Parameter>
+    <Parameter>
+      <Name>CRN of the Earth</Name>
       <ParameterKey>CRN_EARTH</ParameterKey>
       <Description>Carrington rotation number of the Earth</Description>
-      <ValidMin>1857 </ValidMin>
-      <ValidMax>2239 </ValidMax>
-      <FillValue>-2147483648 </FillValue>
+      <ValidMin>1857</ValidMin>
+      <ValidMax>2239</ValidMax>
+      <FillValue>-2147483648</FillValue>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>Heliographic Long of the Earth </Name>
+    </Parameter>
+    <Parameter>
+      <Name>Heliographic Long of the Earth</Name>
       <ParameterKey>LONG_EARTH</ParameterKey>
       <Units>rad</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Element>
-          <Name>Heliographic Long of the Earth</Name>
-          <Component>Phi</Component>
-          <Index>1</Index>
-        </Element>
-      </Structure>
-      <ValidMin>0.0 </ValidMin>
+      <ValidMin>0.0</ValidMin>
       <ValidMax>6.283185306999999</ValidMax>
       <FillValue>-1.0E31</FillValue>
       <Support>
+        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>Heliographic Lat of the Earth </Name>
+    </Parameter>
+    <Parameter>
+      <Name>Heliographic Lat of the Earth</Name>
       <ParameterKey>LAT_EARTH</ParameterKey>
       <Units>rad</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Element>
-          <Name>Heliographic Lat of the Earth</Name>
-          <Component>Theta</Component>
-          <Index>1</Index>
-        </Element>
-      </Structure>
-      <ValidMin>-1.5707963269999998 </ValidMin>
-      <ValidMax>1.5707963269999998 </ValidMax>
-      <FillValue>-1.0E31 </FillValue>
+      <ValidMin>-1.5707963269999998</ValidMin>
+      <ValidMax>1.5707963269999998</ValidMax>
+      <FillValue>-1.0E31</FillValue>
       <Support>
+        <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>CRN of the Spacecraft </Name>
+    </Parameter>
+    <Parameter>
+      <Name>CRN of the Spacecraft</Name>
       <ParameterKey>CRN_SPACE</ParameterKey>
       <Description>Carrington rotation number of the spacecraft</Description>
-      <ValidMin>1857 </ValidMin>
-      <ValidMax>2239 </ValidMax>
-      <FillValue>-2147483648 </FillValue>
+      <ValidMin>1857</ValidMin>
+      <ValidMax>2239</ValidMax>
+      <FillValue>-2147483648</FillValue>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>Heliographic Long of Craft </Name>
+    </Parameter>
+    <Parameter>
+      <Name>Heliographic Long of Craft</Name>
       <ParameterKey>LONG_SPACE</ParameterKey>
       <Units>rad</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Element>
-          <Name>Heliographic Lon of the s/c</Name>
-          <Component>Phi</Component>
-          <Index>1</Index>
-        </Element>
-      </Structure>
-      <ValidMin>0.0 </ValidMin>
-      <ValidMax>6.283185306999999 </ValidMax>
-      <FillValue>-1.0E31 </FillValue>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>6.283185306999999</ValidMax>
+      <FillValue>-1.0E31</FillValue>
       <Support>
+        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>Heliographic Lat of the Craft </Name>
+    </Parameter>
+    <Parameter>
+      <Name>Heliographic Lat of the Craft</Name>
       <ParameterKey>LAT_SPACE</ParameterKey>
-      <Units>rad </Units>
+      <Units>rad</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>HG</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Element>
-          <Name>Heliographic Lat of the s/c</Name>
-          <Component>Theta</Component>
-          <Index>1</Index>
-        </Element>
-      </Structure>
-      <ValidMin>-1.5707963269999998 </ValidMin>
-      <ValidMax>1.5707963269999998 </ValidMax>
-      <FillValue>-1.0E31 </FillValue>
+      <ValidMin>-1.5707963269999998</ValidMin>
+      <ValidMax>1.5707963269999998</ValidMax>
+      <FillValue>-1.0E31</FillValue>
       <Support>
+        <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>Calculated EDMLT Time </Name>
+    </Parameter>
+    <Parameter>
+      <Name>Calculated EDMLT Time</Name>
       <ParameterKey>EDMLT_TIME</ParameterKey>
       <Description>Calculated Magnetic Local Time (EDMLT) in hours</Description>
       <Units>hour</Units>
@@ -564,22 +536,15 @@
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>MAG</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Element>
-          <Name>EDMLT</Name>
-          <Component>Phi</Component>
-          <Index>1</Index>
-        </Element>
-      </Structure>
-      <ValidMin>0.0 </ValidMin>
-      <ValidMax>24.0 </ValidMax>
-      <FillValue>-1.0E31 </FillValue>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>24.0</ValidMax>
+      <FillValue>-1.0E31</FillValue>
       <Support>
+        <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Latitude</Name>
       <ParameterKey>MAG_LATITUDE</ParameterKey>
       <Description>Calculated magnetic latitude.</Description>
@@ -588,23 +553,16 @@
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>MAG</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Element>
-          <Name>Magnetic Latitude</Name>
-          <Component>Theta</Component>
-          <Index>1</Index>
-        </Element>
-      </Structure>
-      <ValidMin>-90.0 </ValidMin>
-      <ValidMax>90.0 </ValidMax>
-      <FillValue>-1.0E31 </FillValue>
+      <ValidMin>-90.0</ValidMin>
+      <ValidMax>90.0</ValidMax>
+      <FillValue>-1.0E31</FillValue>
       <Support>
+        <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
-      <Name>L_SHELL </Name>
+    </Parameter>
+    <Parameter>
+      <Name>L_SHELL</Name>
       <ParameterKey>L_SHELL</ParameterKey>
       <Units>Re</Units>
       <ValidMin>1.0</ValidMin>
@@ -613,6 +571,6 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

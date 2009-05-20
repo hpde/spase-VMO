@@ -1,150 +1,155 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>1.2.2</Version>
-    <NumericalData>
-        <ResourceID>spase://VMO/NumericalData/Weygand/ISEE1/TAP/Propagated-FPE/GSE/PT60S</ResourceID>
-        <ResourceHeader>
-            <ResourceName>ISEE-1 Propagation Details</ResourceName>
-            <ReleaseDate>2009-03-11T00:00:00</ReleaseDate>
-            <Description>Time delay, cosine angle, and goodness information of propagated data</Description>
-            <Acknowledgement>NASA, James M. Weygand</Acknowledgement>
-            <Contact>
-                <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
-                <Role>MetadataContact</Role>
-            </Contact>
-            <InformationURL>
-                <Name>ISEE-1 Solar wind propagation information</Name>
-                <URL>http://www.igpp.ucla.edu/jweygand/htmls/Propagated_SW.html</URL>
-                <Description>Time delay, cosine angle, and goodness information of propagated data</Description>
-            </InformationURL>
-            <AssociationID>spase://SMWG/Observatory/ISEE1</AssociationID>
-        </ResourceHeader>
-        <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/VMOU</RepositoryID>
-            <Availability>Online</Availability>
-            <AccessRights>Open</AccessRights>
-            <AccessURL>
-                <Name>IGPP UCLA ISEE-1 Propagation Details JMW Processed Solar Wind Archive</Name>
-                <URL>http://vmo.igpp.ucla.edu/data1/Weygand/PropagatedSolarWindGSE/weimer/ISEE1/TAP</URL>
-            </AccessURL>
-            <Format>Text</Format>
-            <Encoding>ASCII</Encoding>
-            <Acknowledgement>NASA, James M. Weygand</Acknowledgement>
-        </AccessInformation>
-        <ProcessingLevel>Calibrated</ProcessingLevel>
-        <ProviderResourceName>ISEE-1 Propagation Details</ProviderResourceName>
-        <ProviderProcessingLevel>Level-1</ProviderProcessingLevel>
-        <InstrumentID>spase://SMWG/Instrument/ISEE1/FPE</InstrumentID>
-        <InstrumentID>spase://SMWG/Instrument/ISEE1/MAG</InstrumentID>
-        <MeasurementType>MagneticField</MeasurementType>
-        <TemporalDescription>
-            <TimeSpan>
-                <StartDate>1977-10-22T00:00:00</StartDate>
-                <EndDate>1984-01-31T23:59:59</EndDate>
-                <Note>Time format in data files is: Day Month Year Hour Minute Second (DD MM YYYY HH MM SS.SSS)</Note>
-            </TimeSpan>
-            <Cadence>PT60S</Cadence>
-        </TemporalDescription>
-        <Caveats>Flags=1.000e+34</Caveats>
-        <Keyword>ISEE-1</Keyword>
-        <Keyword>1 min</Keyword>
-        <Keyword>solar wind</Keyword>
-        <Keyword>magnetotail</Keyword>
-        <Keyword>bow shock</Keyword>
-        <Keyword>magnetopause</Keyword>
-        <Keyword>Processed Solar Wind Data</Keyword>
-        <Keyword>propagation support data</Keyword>
-        <Keyword>Propagation information</Keyword>
-        <PhysicalParameter>
-            <Name>Universal Time</Name>
-            <ParameterKey>Time</ParameterKey>
-            <Description>Universal Time AFTER Propagation columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.</Description>
-            <Cadence>PT60S</Cadence>
-            <Structure>
-                <StructureType>Vector</StructureType>
-                <Size>6</Size>
-                <Description>Universal Time expressed using a 6-column day, month, year, hour, minute, second representation</Description>
-                <Element>
-                    <Name>Day</Name>
-                    <Index>1</Index>
-                    <ParameterKey>Day</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Month</Name>
-                    <Index>2</Index>
-                    <ParameterKey>Month</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Year</Name>
-                    <Index>3</Index>
-                    <ParameterKey>Year</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Hour</Name>
-                    <Index>4</Index>
-                    <ParameterKey>Hour</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Minute</Name>
-                    <Index>5</Index>
-                    <ParameterKey>Minute</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Second</Name>
-                    <Index>6</Index>
-                    <ParameterKey>Second</ParameterKey>
-                </Element>
-            </Structure>
-            <Support>Temporal</Support>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>ISEE-1 Propagation Time</Name>
-            <ParameterKey>Propagation time</ParameterKey>
-            <Description>Time of propagation from ISEE-1 spacecraft to the nominal bow shock position. This time is derived from the normal direction, which is determined by the magnetic field, the position of the spacecraft relative to the nominal bow shock, and the velocity vector. See Weimer et al. [2003], JGR, v108, p1026.</Description>
-            <Cadence>PT60S</Cadence>
-            <Units>S</Units>
-            <Support>Temporal</Support>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>ISEE-1 phase front normal propagation cosine angles</Name>
-            <ParameterKey>Cosine angles for propagation</ParameterKey>
-            <Description>Cosine angles of the normal to the phase front for propagation. These angles are derived from the normal direction of the magnetic field phase fronts. See Weimer et al. [2003], JGR, v108, p1026.</Description>
-            <Cadence>PT60S</Cadence>
-            <CoordinateSystem>
-                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-                <CoordinateSystemName>GSE</CoordinateSystemName>
-            </CoordinateSystem>
-            <Structure>
-                <StructureType>Vector</StructureType>
-                <Size>3</Size>
-                <Element>
-                    <Name>Cosine of x angle</Name>
-                    <Component>X</Component>
-                    <Index>1</Index>
-                    <ParameterKey>nxangle</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Cosine of y angle</Name>
-                    <Component>Y</Component>
-                    <Index>2</Index>
-                    <ParameterKey>nyangle</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Cosine of z angle</Name>
-                    <Component>Z</Component>
-                    <Index>3</Index>
-                    <ParameterKey>nzangle</ParameterKey>
-                </Element>
-            </Structure>
-            <FillValue>1.000e+34</FillValue>
-            <Support>Other</Support>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>ISEE-1 Propagation Flag</Name>
-            <ParameterKey>Propagation flag</ParameterKey>
-            <Description>This flag indicates if the pseudo minimum variance direction was well determined. -1 = bad. 0 = good. This flag is determined by the requirements for a good pseudo minimum variance direction, which derived from the magnetic field phase fronts. See Weimer et al. [2003], JGR, v108, p1026.</Description>
-            <Cadence>PT60S</Cadence>
-            <Support>Other</Support>
-        </PhysicalParameter>
-    </NumericalData>
+  <Version>2.0.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/Weygand/ISEE1/TAP/Propagated-FPE/GSE/PT60S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>ISEE-1 Propagation Details</ResourceName>
+      <ReleaseDate>2009-05-20T23:06:14Z</ReleaseDate>
+      <Description>Time delay, cosine angle, and goodness information of propagated data</Description>
+      <Acknowledgement>NASA, James M. Weygand</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+        <Name>ISEE-1 Solar wind propagation information</Name>
+        <URL>http://www.igpp.ucla.edu/jweygand/htmls/Propagated_SW.html</URL>
+        <Description>Time delay, cosine angle, and goodness information of propagated data</Description>
+      </InformationURL>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/VMOU</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>IGPP UCLA ISEE-1 Propagation Details JMW Processed Solar Wind Archive</Name>
+        <URL>http://vmo.igpp.ucla.edu/data1/Weygand/PropagatedSolarWindGSE/weimer/ISEE1/TAP</URL>
+      </AccessURL>
+      <Format>Text</Format>
+      <Encoding>ASCII</Encoding>
+      <Acknowledgement>NASA, James M. Weygand</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <ProviderResourceName>ISEE-1 Propagation Details</ProviderResourceName>
+    <ProviderProcessingLevel>Level-1</ProviderProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/ISEE1/FPE</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/ISEE1/MAG</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>1977-10-22T00:00:00</StartDate>
+        <StopDate>1984-01-31T23:59:59</StopDate>
+        <Note>Time format in data files is: Day Month Year Hour Minute Second (DD MM YYYY HH MM SS.SSS)</Note>
+      </TimeSpan>
+      <Cadence>PT60S</Cadence>
+    </TemporalDescription>
+    <Caveats>Flags=1.000e+34</Caveats>
+    <Keyword>ISEE-1</Keyword>
+    <Keyword>1 min</Keyword>
+    <Keyword>solar wind</Keyword>
+    <Keyword>magnetotail</Keyword>
+    <Keyword>bow shock</Keyword>
+    <Keyword>magnetopause</Keyword>
+    <Keyword>Processed Solar Wind Data</Keyword>
+    <Keyword>propagation support data</Keyword>
+    <Keyword>Propagation information</Keyword>
+    <Parameter>
+      <Name>Universal Time</Name>
+      <ParameterKey>Time</ParameterKey>
+      <Description>Universal Time AFTER Propagation columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.</Description>
+      <Cadence>PT60S</Cadence>
+      <Structure>
+        <Size>6</Size>
+        <Description>Universal Time expressed using a 6-column day, month, year, hour, minute, second representation</Description>
+        <Element>
+          <Name>Day</Name>
+          <Index>1</Index>
+          <ParameterKey>Day</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Month</Name>
+          <Index>2</Index>
+          <ParameterKey>Month</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Year</Name>
+          <Index>3</Index>
+          <ParameterKey>Year</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Hour</Name>
+          <Index>4</Index>
+          <ParameterKey>Hour</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Minute</Name>
+          <Index>5</Index>
+          <ParameterKey>Minute</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Second</Name>
+          <Index>6</Index>
+          <ParameterKey>Second</ParameterKey>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>ISEE-1 Propagation Time</Name>
+      <ParameterKey>Propagation time</ParameterKey>
+      <Description>Time of propagation from ISEE-1 spacecraft to the nominal bow shock position. This time is derived from the normal direction, which is determined by the magnetic field, the position of the spacecraft relative to the nominal bow shock, and the velocity vector. See Weimer et al. [2003], JGR, v108, p1026.</Description>
+      <Cadence>PT60S</Cadence>
+      <Units>S</Units>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>ISEE-1 phase front normal propagation cosine angles</Name>
+      <ParameterKey>Cosine angles for propagation</ParameterKey>
+      <Description>Cosine angles of the normal to the phase front for propagation. These angles are derived from the normal direction of the magnetic field phase fronts. See Weimer et al. [2003], JGR, v108, p1026.</Description>
+      <Cadence>PT60S</Cadence>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>Cosine of x angle</Name>
+          <Component>I</Component>
+          <Index>1</Index>
+          <ParameterKey>nxangle</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Cosine of y angle</Name>
+          <Component>J</Component>
+          <Index>2</Index>
+          <ParameterKey>nyangle</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Cosine of z angle</Name>
+          <Component>K</Component>
+          <Index>3</Index>
+          <ParameterKey>nzangle</ParameterKey>
+        </Element>
+      </Structure>
+      <FillValue>1.000e+34</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>ISEE-1 Propagation Flag</Name>
+      <ParameterKey>Propagation flag</ParameterKey>
+      <Description>This flag indicates if the pseudo minimum variance direction was well determined. -1 = bad. 0 = good. This flag is determined by the requirements for a good pseudo minimum variance direction, which derived from the magnetic field phase fronts. See Weimer et al. [2003], JGR, v108, p1026.</Description>
+      <Cadence>PT60S</Cadence>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+  </NumericalData>
 </Spase>

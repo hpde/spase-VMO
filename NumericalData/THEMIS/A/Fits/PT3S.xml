@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/A/Fits/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-A:  On Board spin fits of Electric (EFI) and Magnetic (FGM) field. On-Board Spin-fit electric and magnetic field data</ResourceName>
-      <ReleaseDate>2008-12-12T21:40:37Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:01Z</ReleaseDate>
       <Description>THEMIS-A:  On Board spin fits of Electric (EFI) and Magnetic (FGM) fields. This file contains data EFI and FGM that has been despun on-board to 3 second resolution. It stores meta information like the number of points that contributed to each spin and the standard deviation of those points. For the EFI data it also stores variables with the Z component of the EFI data zeroed and the Z component of the EFI estimated using the E.B=0 equality. The need to use an estimated Z axis for the EFI is due to error in measurements from the EFI axial booms. These data are provided in DSL (despun spacecraft L-Z vector), GSM, and GSE coordinates.</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: J. W. Bonnell and F. S. Mozer for use of EFI data.</Acknowledgement>
       <Contact>
@@ -64,7 +64,7 @@
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <Caveats>The electric field spin plane booms for THEMIS A were not deployed until January 14, 2008 at 1700 UT, any EFI measurements before this date should not be used.</Caveats>
-    <PhysicalParameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin Fit Deviation</Name>
       <ParameterKey>tha_fgs_sigma</ParameterKey>
       <Description>Fluxgate magnetometer on-board instrument measurements are at higher resolution.  This parameter stores the standard deviation of the fluxgate magentometer spin fit for each spin resolution element of this data quantity in nT.</Description>
@@ -75,14 +75,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>25000.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>StandardDeviation</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin Fit Data DSL</Name>
       <ParameterKey>tha_fgs_dsl</ParameterKey>
       <Description>FGS (spin-fit) magnetic field vector in despun spacecraft coordinates (DSL). To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). These coordinates (DSL) use the Z axis of the spin plane (L Vector), not the probe geometric Z axis.</Description>
@@ -99,7 +97,7 @@
         <Description>This structure represents the Magnetic Field Vector B in DSL</Description>
         <Element>
           <Name>Bx DSL FGS-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
@@ -107,7 +105,7 @@
         </Element>
         <Element>
           <Name>By DSL FGS-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
@@ -115,21 +113,19 @@
         </Element>
         <Element>
           <Name>Bz DSL FGS-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin Fit Data GSE</Name>
       <ParameterKey>tha_fgs_gse</ParameterKey>
       <Description>FGS (spin-fit) magnetic field vector in GSE coordinates.  These data are despun. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Then they are converted to GSE on the ground.</Description>
@@ -146,7 +142,7 @@
         <Description>This structure represents the Magnetic Field Vector B in GSE</Description>
         <Element>
           <Name>Bx GSE FGS-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
@@ -154,7 +150,7 @@
         </Element>
         <Element>
           <Name>By GSE FGS-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
@@ -162,21 +158,19 @@
         </Element>
         <Element>
           <Name>Bz GSE FGS-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin Fit Data GSM</Name>
       <ParameterKey>tha_fgs_gsm</ParameterKey>
       <Description>FGS (spin-fit) magnetic field vector in GSM coordinates.  These data are despun. To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Then they are converted to GSM coordinates on the ground.</Description>
@@ -193,7 +187,7 @@
         <Description>This structure represents the Magnetic Field Vector B in GSM</Description>
         <Element>
           <Name>Bx GSM FGS-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
@@ -201,7 +195,7 @@
         </Element>
         <Element>
           <Name>By GSM FGS-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
@@ -209,21 +203,19 @@
         </Element>
         <Element>
           <Name>Bz GSM FGS-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-25000.0</ValidMin>
           <ValidMax>25000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin-Fit Data Times</Name>
       <ParameterKey>tha_fgs_time</ParameterKey>
       <Description>Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC</Description>
@@ -236,8 +228,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Deviation</Name>
       <ParameterKey>tha_efs_sigma</ParameterKey>
       <Description>Electric Field Instrument on-board measurements are at higher resolution.   This parameter stores the standard deviation of the electric field instrument spin fit for each spin resolution element of this data quantity in mV/m.</Description>
@@ -248,14 +240,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1000.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>StandardDeviation</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>StandardDeviation</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Data DSL</Name>
       <ParameterKey>tha_efs_dsl</ParameterKey>
       <Description>EFS (spin-fit) electric field vector in despun spacecraft coordinates (DSL)  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).  These coordinates use the Z axis of the spin plane(L Vector), not the probe geometric Z axis.</Description>
@@ -272,7 +262,7 @@
         <Description>This structure represents the Electric Field Vector E in DSL</Description>
         <Element>
           <Name>Ex DSL EFS-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -280,7 +270,7 @@
         </Element>
         <Element>
           <Name>Ey DSL EFS-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -288,21 +278,19 @@
         </Element>
         <Element>
           <Name>Ez DSL EFS-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Z=0 Spin-Fit Data DSL</Name>
       <ParameterKey>tha_efs_0_dsl</ParameterKey>
       <Description>EFS (spin-fit) electric field vector with Z=0 in despun spacecraft coordinates. (DSL)  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, it has been set to zero in this data quantity.  These coordinates use the Z axis of the spin plane(L Vector), not the probe geometric Z axis.</Description>
@@ -319,7 +307,7 @@
         <Description>This structure represents the Electric Field Vector E in DSL with Z=0</Description>
         <Element>
           <Name>Ex DSL EFS_0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -327,7 +315,7 @@
         </Element>
         <Element>
           <Name>Ey DSL EFS_0-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -335,21 +323,19 @@
         </Element>
         <Element>
           <Name>Ez DSL EFS_0-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-0.0</ValidMin>
           <ValidMax>0.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument E dot B = 0 Spin-Fit Data DSL</Name>
       <ParameterKey>tha_efs_dot0_dsl</ParameterKey>
       <Description>EFS (spin-fit) electric field vector with E dot B = 0 in despun spacecraft coordinates. (DSL)  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, the value of Ez that makes the dot product of E and B closest to zero is used in this data product, rather than the measured Z value.  These coordinates use the Z axis of the spin plane (L Vector), not the probe geometric Z axis.</Description>
@@ -366,7 +352,7 @@
         <Description>This structure represents the Electric Field Vector E in DSL with E dot B = 0</Description>
         <Element>
           <Name>Ex DSL EFS_dot0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -374,7 +360,7 @@
         </Element>
         <Element>
           <Name>Ey DSL EFS_dot0-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -382,21 +368,19 @@
         </Element>
         <Element>
           <Name>Ez DSL EFS_dot0-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Data GSE</Name>
       <ParameterKey>tha_efs_gse</ParameterKey>
       <Description>EFS (spin-fit) electric field vector in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).</Description>
@@ -413,7 +397,7 @@
         <Description>This structure represents the Electric Field Vector E in GSE</Description>
         <Element>
           <Name>Ex GSE EFS-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -421,7 +405,7 @@
         </Element>
         <Element>
           <Name>Ey GSE EFS-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -429,21 +413,19 @@
         </Element>
         <Element>
           <Name>Ez GSE EFS-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Z=0 Spin-Fit Data GSE</Name>
       <ParameterKey>tha_efs_0_gse</ParameterKey>
       <Description>EFS (spin-fit) electric field vector with Z=0 in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).   Since the Z component of the electric field has large error, it has been set to zero in this data quantity.</Description>
@@ -460,7 +442,7 @@
         <Description>This structure represents the Electric Field Vector E in GSE with Z(dsl)=0</Description>
         <Element>
           <Name>Ex GSE EFS_0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -468,7 +450,7 @@
         </Element>
         <Element>
           <Name>Ey GSE EFS_0-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -476,21 +458,19 @@
         </Element>
         <Element>
           <Name>Ez GSE EFS_0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument E dot B = 0 Spin-Fit Data GSE</Name>
       <ParameterKey>tha_efs_dot0_gse</ParameterKey>
       <Description>EFS (spin-fit) electric field vector with E dot B = 0 in GSE coordinates. Data are first despun on-board, then converted to GSE coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, the value of Ez that makes the dot product of E and B closest to zero is used in this data product, rather than the measured Z value.</Description>
@@ -507,7 +487,7 @@
         <Description>This structure represents the Electric Field Vector E in GSE with E dot B = 0</Description>
         <Element>
           <Name>Ex GSE EFS_dot0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -515,7 +495,7 @@
         </Element>
         <Element>
           <Name>Ey  GSE EFS_dot0-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -523,21 +503,19 @@
         </Element>
         <Element>
           <Name>Ez GSE EFS_dot0-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Data GSM</Name>
       <ParameterKey>tha_efs_gsm</ParameterKey>
       <Description>EFS (spin-fit) electric field vector in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).</Description>
@@ -554,7 +532,7 @@
         <Description>This structure represents the Electric Field Vector E in GSM</Description>
         <Element>
           <Name>Ex GSM EFS-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -562,7 +540,7 @@
         </Element>
         <Element>
           <Name>Ey GSM EFS-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -570,21 +548,19 @@
         </Element>
         <Element>
           <Name>Ez GSM EFS-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Z=0 Spin-Fit Data GSM</Name>
       <ParameterKey>tha_efs_0_gsm</ParameterKey>
       <Description>EFS (spin-fit) electric field vector with Z=0 in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec).   Since the Z component of the electric field has large error, it has been set to zero in this data quantity.</Description>
@@ -601,7 +577,7 @@
         <Description>This structure represents the Electric Field Vector E in GSM with Z(dsl)=0</Description>
         <Element>
           <Name>Ex GSM EFS_0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -609,7 +585,7 @@
         </Element>
         <Element>
           <Name>Ey GSM EFS_0-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -617,21 +593,19 @@
         </Element>
         <Element>
           <Name>Ez GSM EFS_0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument E dot B = 0 Spin-Fit Data GSM</Name>
       <ParameterKey>tha_efs_dot0_gsm</ParameterKey>
       <Description>EFS (spin-fit) electric field vector with E dot B = 0 in GSM coordinates. Data are first despun on-board, then converted to GSM coordinates on the ground.  To despin, these data are direction corrected using the spin-model and binned down from the cadence of the instrument to the cadence of each spin (3-sec). Since the Z component of the electric field has large error, the value of Ez that makes the dot product of E and B closest to zero is used in this data product, rather than the measured Z value.</Description>
@@ -648,7 +622,7 @@
         <Description>This structure represents the Electric Field Vector E in GSM with E dot B = 0</Description>
         <Element>
           <Name>Ex GSM EFS_dot0-A</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -656,7 +630,7 @@
         </Element>
         <Element>
           <Name>Ey  GSM EFS_dot0-A</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -664,21 +638,19 @@
         </Element>
         <Element>
           <Name>Ez GSM EFS_dot0-A</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin-Fit Data Times</Name>
       <ParameterKey>tha_efs_time</ParameterKey>
       <Description>Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC</Description>
@@ -691,8 +663,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin Fit Model DSL</Name>
       <ParameterKey>tha_fit_bfit</ParameterKey>
       <Description>This parameter contains the calibrated fluxgate magnetometer spin model data in despun spacecraft coordinates (DSL). The spin model uses a sine-wave spin model to calculate the spin and despin. These coefficients(A,B,C), the standard deviation(Sigma), and the average value(Avg.) are provided. The equations used for the model are 
@@ -752,13 +724,11 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Fluxgate Magnetometer Spin-Fit Model Times</Name>
       <ParameterKey>tha_fit_bfit_time</ParameterKey>
       <Description>Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC</Description>
@@ -771,8 +741,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin Fit Model DSL</Name>
       <ParameterKey>tha_fit_efit</ParameterKey>
       <Description>This parameter contains the calibrated electric field instrument spin model data in despun spacecraft coordinates (DSL). The spin model uses a sine-wave spin model to calculate the spin and despin.  These coefficients(A,B,C),  the standard deviation(Sigma), and the average value(Avg.) are provided. The equations used for the model are 
@@ -832,13 +802,11 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQuantity>Electric</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Electric</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>THEMIS A Electric Field Instrument Spin-Fit Model Times</Name>
       <ParameterKey>tha_fit_bfit_time</ParameterKey>
       <Description>Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC</Description>
@@ -851,6 +819,6 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

@@ -1,53 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>1.2.2</Version>
-    <NumericalData>
-        <ResourceID>spase://VMO/NumericalData/IGPPLANL/Cambridge/Magnetometer/PT1S</ResourceID>
-        <ResourceHeader>
-            <ResourceName>IGPP-LANL Cambridge (CAM) Station Magnetometer Data</ResourceName>
-            <ReleaseDate>2009-02-22T00:00:00</ReleaseDate>
-            <Description>IGPP-LANL Cambridge (CAM) Station Magnetometer Data, Orientation: HEZ, Instrument: Fluxgate magnetometer</Description>
-            <Acknowledgement>UCLA Ground Magnetometer Data Center</Acknowledgement>
-            <Contact>
-                <PersonID>spase://SMWG/Person/Peter.J.Chi</PersonID>
-                <Role>GeneralContact</Role>
-            </Contact>
-            <InformationURL>
-                <URL>http://spc.igpp.ucla.edu/uclamag</URL>
-                <Description>Data server for station information, data display, and data access.</Description>
-            </InformationURL>
-        </ResourceHeader>
-        <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/UCLA/IGPPLANL</RepositoryID>
-            <AccessRights>Open</AccessRights>
-            <AccessURL>
-                <URL>http://spc.igpp.ucla.edu/uclamag/ffi/cam</URL>
-                <Description>The folder contains the Cambridge magnetometer data files in the IGPP flat file format.</Description>
-            </AccessURL>
-            <Format>Binary</Format>
-            <Acknowledgement>UCLA Ground Magnetometer Data Center</Acknowledgement>
-        </AccessInformation>
-        <ProcessingLevel>Calibrated</ProcessingLevel>
-        <InstrumentID>spase://SMWG/Instrument/IGPPLANL/Cambridge/Magnetometer</InstrumentID>
-        <MeasurementType>MagneticField</MeasurementType>
-        <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
-        <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
-        <PhysicalParameter>
-            <Name>Magnetic field vector</Name>
-            <Units>nT</Units>
-            <CoordinateSystem>
-                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-                <CoordinateSystemName>LGM</CoordinateSystemName>
-            </CoordinateSystem>
-            <Structure>
-                <StructureType>Vector</StructureType>
-            </Structure>
-            <Measured>
-                <Field>
-                    <FieldQualifier>Vector</FieldQualifier>
-                    <FieldQuantity>Magnetic</FieldQuantity>
-                </Field>
-            </Measured>
-        </PhysicalParameter>
-    </NumericalData>
+  <Version>2.0.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/IGPPLANL/Cambridge/Magnetometer/PT1S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>IGPP-LANL Cambridge (CAM) Station Magnetometer Data</ResourceName>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
+      <Description>IGPP-LANL Cambridge (CAM) Station Magnetometer Data, Orientation: HEZ, Instrument: Fluxgate magnetometer</Description>
+      <Acknowledgement>UCLA Ground Magnetometer Data Center</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Peter.J.Chi</PersonID>
+        <Role>GeneralContact</Role>
+      </Contact>
+      <InformationURL>
+        <URL>http://spc.igpp.ucla.edu/uclamag</URL>
+        <Description>Data server for station information, data display, and data access.</Description>
+      </InformationURL>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/UCLA/IGPPLANL</RepositoryID>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <URL>http://spc.igpp.ucla.edu/uclamag/ffi/cam</URL>
+        <Description>The folder contains the Cambridge magnetometer data files in the IGPP flat file format.</Description>
+      </AccessURL>
+      <Format>Binary</Format>
+      <Acknowledgement>UCLA Ground Magnetometer Data Center</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/IGPPLANL/Cambridge/Magnetometer</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+    <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+    <Parameter>
+      <Name>Magnetic field vector</Name>
+      <Units>nT</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>LGM</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+      </Structure>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+  </NumericalData>
 </Spase>

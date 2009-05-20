@@ -1,203 +1,197 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>1.2.2</Version>
-    <NumericalData>
-        <ResourceID>spase://VMO/NumericalData/Weygand/Interball-1/CORALL/Processed/GSE/PT60S</ResourceID>
-        <ResourceHeader>
-            <ResourceName>Wide-range 3D Ion Spectrometer (CORALL) data</ResourceName>
-            <AlternateName>CORALL data</AlternateName>
-            <ReleaseDate>2009-03-11T00:00:00</ReleaseDate>
-            <Description>Wide-range 3D Ion Spectrometer (CORALL): CORALL is a hemispherical electrostatic ion energy spectrometer with a fan-shaped field-of-view of 10 x 150 degrees.</Description>
-            <Acknowledgement>IKI RAN and INTERCOSMOS of the Republic of Cuba, Reynal Jimenez, James M. Weygand</Acknowledgement>
-            <Contact>
-                <PersonID>spase://SMWG/Person/Reynal.Jimenez</PersonID>
-                <Role>PrincipalInvestigator</Role>
-            </Contact>
-            <Contact>
-                <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
-                <Role>MetadataContact</Role>
-            </Contact>
-            <InformationURL>
-                <Name>Interball solar wind propagation information</Name>
-                <URL>http://www.igpp.ucla.edu/jweygand/htmls/Propagated_SW.html</URL>
-            </InformationURL>
-            <AssociationID>spase://SMWG/Observatory/Interball-1</AssociationID>
-        </ResourceHeader>
-        <AccessInformation>
-            <RepositoryID>spase://SMWG/Repository/VMOU</RepositoryID>
-            <Availability>Online</Availability>
-            <AccessRights>Open</AccessRights>
-            <AccessURL>
-                <Name>IGPP UCLA Interball Plasma Data JMW Processed Solar Wind Archive</Name>
-                <URL>http://vmo.igpp.ucla.edu/data1/Weygand/ProcessedSolarWindGSE/Interball/plasma</URL>
-            </AccessURL>
-            <Format>Text</Format>
-            <Encoding>ASCII</Encoding>
-            <Acknowledgement>IKI RAN and INTERCOSMOS of the Republic of Cuba, Reynal Jimenez, James M. Weygand</Acknowledgement>
-        </AccessInformation>
-        <ProcessingLevel>Uncalibrated</ProcessingLevel>
-        <ProviderResourceName>Interball CORALL</ProviderResourceName>
-        <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
-        <InstrumentID>spase://SMWG/Instrument/Interball-1/CORALL</InstrumentID>
-        <MeasurementType>ChargedParticleFlux</MeasurementType>
-        <TemporalDescription>
-            <TimeSpan>
-                <StartDate>1995-09-02T00:00:00</StartDate>
-                <EndDate>1998-12-31T23:59:59</EndDate>
-                <Note>Time format in data files is: Day Month Year Hour Minute Second (DD MM YYYY HH MM SS.SSS)</Note>
-            </TimeSpan>
-            <Cadence>PT60S</Cadence>
-        </TemporalDescription>
-        <Caveats>Flags=1.000e+34</Caveats>
-        <Keyword>1 min</Keyword>
-        <Keyword>solar wind</Keyword>
-        <Keyword>magnetotail</Keyword>
-        <Keyword>bow shock</Keyword>
-        <Keyword>magnetopause</Keyword>
-        <Keyword>Interball</Keyword>
-        <Keyword>plasma data</Keyword>
-        <PhysicalParameter>
-            <Name>Universal Time</Name>
-            <ParameterKey>Time</ParameterKey>
-            <Description>Universal Time AFTER Propagation columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.</Description>
-            <Cadence>PT60S</Cadence>
-            <Structure>
-                <StructureType>Vector</StructureType>
-                <Size>6</Size>
-                <Description>Universal Time expressed using a 6-column day, month, year, hour, minute, second representation</Description>
-                <Element>
-                    <Name>Day</Name>
-                    <Index>1</Index>
-                    <ParameterKey>Day</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Month</Name>
-                    <Index>2</Index>
-                    <ParameterKey>Month</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Year</Name>
-                    <Index>3</Index>
-                    <ParameterKey>Year</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Hour</Name>
-                    <Index>4</Index>
-                    <ParameterKey>Hour</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Minute</Name>
-                    <Index>5</Index>
-                    <ParameterKey>Minute</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Second</Name>
-                    <Index>6</Index>
-                    <ParameterKey>Second</ParameterKey>
-                </Element>
-            </Structure>
-            <Support>Temporal</Support>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>Interball Density interpolated to 1 min resolution</Name>
-            <ParameterKey>Density</ParameterKey>
-            <Description>Density for Interball in units of number per cubic centimeter</Description>
-            <Cadence>PT60S</Cadence>
-            <Units>#/cm^-3</Units>
-            <Measured>
-                <Particle>
-                    <ParticleType>Ion</ParticleType>
-                    <ParticleQuantity>NumberDensity</ParticleQuantity>
-                </Particle>
-            </Measured>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>Interball Thermal Speed</Name>
-            <ParameterKey>Thermal Speed</ParameterKey>
-            <Description>Interball thermal speed in units of km/s</Description>
-            <Caveats>Be sure you understand the instrument</Caveats>
-            <Cadence>PT60S</Cadence>
-            <Units>KM/S</Units>
-            <Measured>
-                <Particle>
-                    <ParticleType>Ion</ParticleType>
-                    <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-                </Particle>
-            </Measured>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>Interball Velocity Vector</Name>
-            <ParameterKey>Velocity Vectors</ParameterKey>
-            <Description>Flow vector for Interball in GSE coordinates in units of km/s</Description>
-            <Caveats>Be sure you understand the instrument</Caveats>
-            <Cadence>PT60S</Cadence>
-            <Units>KM/S</Units>
-            <CoordinateSystem>
-                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-                <CoordinateSystemName>GSE</CoordinateSystemName>
-            </CoordinateSystem>
-            <Structure>
-                <StructureType>Vector</StructureType>
-                <Size>3</Size>
-                <Element>
-                    <Name>VX-GSE</Name>
-                    <Component>X</Component>
-                    <Index>1</Index>
-                    <ParameterKey>nvxgse</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>VY-GSE</Name>
-                    <Component>Y</Component>
-                    <Index>2</Index>
-                    <ParameterKey>nvygse</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>VZ-GSE</Name>
-                    <Component>Z</Component>
-                    <Index>3</Index>
-                    <ParameterKey>nvzgse</ParameterKey>
-                </Element>
-            </Structure>
-            <Measured>
-                <Particle>
-                    <ParticleType>Ion</ParticleType>
-                    <ParticleQuantity>Velocity</ParticleQuantity>
-                </Particle>
-            </Measured>
-        </PhysicalParameter>
-        <PhysicalParameter>
-            <Name>Interball spacecraft position vector interpolated to 1 min resolution</Name>
-            <ParameterKey>Position Vectors</ParameterKey>
-            <Description>Location of the spacecraft in GSE coordinates in units of Re</Description>
-            <Cadence>PT60S</Cadence>
-            <Units>Re</Units>
-            <CoordinateSystem>
-                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-                <CoordinateSystemName>GSE</CoordinateSystemName>
-            </CoordinateSystem>
-            <Structure>
-                <StructureType>Vector</StructureType>
-                <Size>3</Size>
-                <Element>
-                    <Name>X-GSE</Name>
-                    <Component>X</Component>
-                    <Index>1</Index>
-                    <ParameterKey>nxgse</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Y-GSE</Name>
-                    <Component>Y</Component>
-                    <Index>2</Index>
-                    <ParameterKey>nygse</ParameterKey>
-                </Element>
-                <Element>
-                    <Name>Z-GSE</Name>
-                    <Component>Z</Component>
-                    <Index>3</Index>
-                    <ParameterKey>nzgse</ParameterKey>
-                </Element>
-            </Structure>
-            <Support>Positional</Support>
-        </PhysicalParameter>
-    </NumericalData>
+  <Version>2.0.0</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/Weygand/Interball-1/CORALL/Processed/GSE/PT60S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Wide-range 3D Ion Spectrometer (CORALL) data</ResourceName>
+      <AlternateName>CORALL data</AlternateName>
+      <ReleaseDate>2009-05-20T23:06:13Z</ReleaseDate>
+      <Description>Wide-range 3D Ion Spectrometer (CORALL): CORALL is a hemispherical electrostatic ion energy spectrometer with a fan-shaped field-of-view of 10 x 150 degrees.</Description>
+      <Acknowledgement>IKI RAN and INTERCOSMOS of the Republic of Cuba, Reynal Jimenez, James M. Weygand</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Reynal.Jimenez</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+        <Name>Interball solar wind propagation information</Name>
+        <URL>http://www.igpp.ucla.edu/jweygand/htmls/Propagated_SW.html</URL>
+      </InformationURL>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/VMOU</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>IGPP UCLA Interball Plasma Data JMW Processed Solar Wind Archive</Name>
+        <URL>http://vmo.igpp.ucla.edu/data1/Weygand/ProcessedSolarWindGSE/Interball/plasma</URL>
+      </AccessURL>
+      <Format>Text</Format>
+      <Encoding>ASCII</Encoding>
+      <Acknowledgement>IKI RAN and INTERCOSMOS of the Republic of Cuba, Reynal Jimenez, James M. Weygand</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Uncalibrated</ProcessingLevel>
+    <ProviderResourceName>Interball CORALL</ProviderResourceName>
+    <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
+    <InstrumentID>spase://SMWG/Instrument/Interball-1/CORALL</InstrumentID>
+    <MeasurementType>ThermalPlasma</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>1995-09-02T00:00:00</StartDate>
+        <StopDate>1998-12-31T23:59:59</StopDate>
+        <Note>Time format in data files is: Day Month Year Hour Minute Second (DD MM YYYY HH MM SS.SSS)</Note>
+      </TimeSpan>
+      <Cadence>PT60S</Cadence>
+    </TemporalDescription>
+    <Caveats>Flags=1.000e+34</Caveats>
+    <Keyword>1 min</Keyword>
+    <Keyword>solar wind</Keyword>
+    <Keyword>magnetotail</Keyword>
+    <Keyword>bow shock</Keyword>
+    <Keyword>magnetopause</Keyword>
+    <Keyword>Interball</Keyword>
+    <Keyword>plasma data</Keyword>
+    <Parameter>
+      <Name>Universal Time</Name>
+      <ParameterKey>Time</ParameterKey>
+      <Description>Universal Time AFTER Propagation columns from left to right are: day month year hour minute sec in the format of dd mm yyyy hh mm ss.</Description>
+      <Cadence>PT60S</Cadence>
+      <Structure>
+        <Size>6</Size>
+        <Description>Universal Time expressed using a 6-column day, month, year, hour, minute, second representation</Description>
+        <Element>
+          <Name>Day</Name>
+          <Index>1</Index>
+          <ParameterKey>Day</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Month</Name>
+          <Index>2</Index>
+          <ParameterKey>Month</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Year</Name>
+          <Index>3</Index>
+          <ParameterKey>Year</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Hour</Name>
+          <Index>4</Index>
+          <ParameterKey>Hour</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Minute</Name>
+          <Index>5</Index>
+          <ParameterKey>Minute</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Second</Name>
+          <Index>6</Index>
+          <ParameterKey>Second</ParameterKey>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Interball Density interpolated to 1 min resolution</Name>
+      <ParameterKey>Density</ParameterKey>
+      <Description>Density for Interball in units of number per cubic centimeter</Description>
+      <Cadence>PT60S</Cadence>
+      <Units>#/cm^-3</Units>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Interball Thermal Speed</Name>
+      <ParameterKey>Thermal Speed</ParameterKey>
+      <Description>Interball thermal speed in units of km/s</Description>
+      <Caveats>Be sure you understand the instrument</Caveats>
+      <Cadence>PT60S</Cadence>
+      <Units>KM/S</Units>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Interball Velocity Vector</Name>
+      <ParameterKey>Velocity Vectors</ParameterKey>
+      <Description>Flow vector for Interball in GSE coordinates in units of km/s</Description>
+      <Caveats>Be sure you understand the instrument</Caveats>
+      <Cadence>PT60S</Cadence>
+      <Units>KM/S</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>VX-GSE</Name>
+          <Component>I</Component>
+          <Index>1</Index>
+          <ParameterKey>nvxgse</ParameterKey>
+        </Element>
+        <Element>
+          <Name>VY-GSE</Name>
+          <Component>J</Component>
+          <Index>2</Index>
+          <ParameterKey>nvygse</ParameterKey>
+        </Element>
+        <Element>
+          <Name>VZ-GSE</Name>
+          <Component>K</Component>
+          <Index>3</Index>
+          <ParameterKey>nvzgse</ParameterKey>
+        </Element>
+      </Structure>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
+      <Name>Interball spacecraft position vector interpolated to 1 min resolution</Name>
+      <ParameterKey>Position Vectors</ParameterKey>
+      <Description>Location of the spacecraft in GSE coordinates in units of Re</Description>
+      <Cadence>PT60S</Cadence>
+      <Units>Re</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>X-GSE</Name>
+          <Component>I</Component>
+          <Index>1</Index>
+          <ParameterKey>nxgse</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Y-GSE</Name>
+          <Component>J</Component>
+          <Index>2</Index>
+          <ParameterKey>nygse</ParameterKey>
+        </Element>
+        <Element>
+          <Name>Z-GSE</Name>
+          <Component>K</Component>
+          <Index>3</Index>
+          <ParameterKey>nzgse</ParameterKey>
+        </Element>
+      </Structure>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </Parameter>
+  </NumericalData>
 </Spase>

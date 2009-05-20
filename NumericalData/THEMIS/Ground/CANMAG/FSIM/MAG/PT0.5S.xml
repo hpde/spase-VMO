@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/CANMAG/FSIM/MAG/PT0.5S</ResourceID>
     <ResourceHeader>
       <ResourceName>Ground-based Vector Magnetic Field at Fort Simpson, NT, Canada.</ResourceName>
-      <ReleaseDate>2008-11-11T22:43:34Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:01Z</ReleaseDate>
       <Description>FSIM is part of the University of Alberta CARISMA network.  It records 3-axis magnetic field measurements at 2Hz frequency.</Description>
       <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: I. Mann for use of the data, and the CSA for support of the CARISMA network.</Acknowledgement>
       <Contact>
@@ -54,7 +54,7 @@
     <InstrumentID>spase://SMWG/Instrument/THEMIS/Ground/CANMAG/FSIM/MAG</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <ObservedRegion>Earth.Surface</ObservedRegion>
-    <PhysicalParameter>
+    <Parameter>
       <Name>B in HDZ Components</Name>
       <ParameterKey>thg_mag_fsim</ParameterKey>
       <Description>Magnetic field B in HDZ vector components</Description>
@@ -89,14 +89,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>thg_mag_fsim_time</Name>
       <ParameterKey>thg_mag_fsim_time</ParameterKey>
       <Description>thg_mag_fsim_time,.UTC, in seconds since 01-Jan-1970 00:00:00</Description>
@@ -108,6 +106,6 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

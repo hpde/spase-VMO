@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
-  <Version>1.3.2</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Geotail/CPI/HPA_PT64S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail CPI Hot Plasma Moments</ResourceName>
       <AlternateName>Geotail CPI HPA High Time Resolution Plasma Moments</AlternateName>
-      <ReleaseDate>2008-12-05T01:32:18Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
       <Description>The CPI/HPA Hot Plasma Analyzer high time resolution moments of hot plasma:
         Ion number density
         Ion average temperature
@@ -144,7 +144,7 @@ In June of 2007, the HP sensor bias voltage was raised to improve the electron g
         <Size>3</Size>
         <Element>
           <Name>Vx GSE</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-1400.0</ValidMin>
           <ValidMax>1400.0</ValidMax>
@@ -152,7 +152,7 @@ In June of 2007, the HP sensor bias voltage was raised to improve the electron g
         </Element>
         <Element>
           <Name>Vy GSE</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-1400.0</ValidMin>
           <ValidMax>1400.0</ValidMax>
@@ -160,7 +160,7 @@ In June of 2007, the HP sensor bias voltage was raised to improve the electron g
         </Element>
         <Element>
           <Name>Vz GSE</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-1400.0</ValidMin>
           <ValidMax>1400.0</ValidMax>

@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ST5-224/MAG/v1_PT01S</ResourceID>
     <ResourceHeader>
       <ResourceName>ST5-224 MAG Data</ResourceName>
-      <ReleaseDate>2008-08-26T22:09:24Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:00Z</ReleaseDate>
       <Description>Magnetic field and position data from the ST5-224 satellite. Calibrated science quality data.</Description>
       <Acknowledgement>User will acknowledge the ST5 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
@@ -40,7 +40,7 @@
     </TemporalDescription>
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <Keyword>Magnetic field</Keyword>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Year</Name>
       <ParameterKey>Field 1</ParameterKey>
       <Description>Year of the observation</Description>
@@ -50,8 +50,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Month</Name>
       <ParameterKey>Field 2</ParameterKey>
       <Description>Month of year of the observation</Description>
@@ -61,8 +61,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Day</Name>
       <ParameterKey>Field 3</ParameterKey>
       <Description>Day of month of the observation</Description>
@@ -72,8 +72,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Hour</Name>
       <ParameterKey>Field 4</ParameterKey>
       <Description>Hour of the observation</Description>
@@ -83,8 +83,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Minute</Name>
       <ParameterKey>Field 5</ParameterKey>
       <Description>Minute of the observation</Description>
@@ -94,8 +94,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Second</Name>
       <ParameterKey>Field 6</ParameterKey>
       <Description>Second of the observation</Description>
@@ -105,8 +105,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Bx</Name>
       <ParameterKey>Field 7</ParameterKey>
       <Description>Bx magnetic field component in SM coordinates.</Description>
@@ -117,14 +117,12 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.X</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.I</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>By</Name>
       <ParameterKey>Field 8</ParameterKey>
       <Description>By magnetic field component in SM coordinates.</Description>
@@ -135,14 +133,12 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Y</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.J</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Bz</Name>
       <ParameterKey>Field 9</ParameterKey>
       <Description>Bz magnetic field component in SM coordinates.</Description>
@@ -153,14 +149,12 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Z</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.K</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>IGRF Bx</Name>
       <ParameterKey>Field 10</ParameterKey>
       <Description>IGRF model Bx magnetic field component in SM coordinates.</Description>
@@ -172,14 +166,12 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.X</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.I</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>IGRF By</Name>
       <ParameterKey>Field 11</ParameterKey>
       <Description>IGRF model By magnetic field component in SM coordinates.</Description>
@@ -191,14 +183,12 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Y</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.J</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>IGRF Bz</Name>
       <ParameterKey>Field 12</ParameterKey>
       <Description>IGRF model Bz magnetic field component in SM coordinates.</Description>
@@ -210,14 +200,12 @@
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
       </CoordinateSystem>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Z</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.K</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>X</Name>
       <ParameterKey>Field 13</ParameterKey>
       <Description>The X component of satellite's position in SM coordinates</Description>
@@ -231,15 +219,15 @@
       <Structure>
         <Element>
           <Name>X</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
         </Element>
       </Structure>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Y</Name>
       <ParameterKey>Field 14</ParameterKey>
       <Description>The Y component of satellite's position in SM coordinates</Description>
@@ -253,15 +241,15 @@
       <Structure>
         <Element>
           <Name>Y</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
         </Element>
       </Structure>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Z</Name>
       <ParameterKey>Field 15</ParameterKey>
       <Description>The Z component of satellite's position in SM coordinates</Description>
@@ -275,13 +263,13 @@
       <Structure>
         <Element>
           <Name>Z</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>1</Index>
         </Element>
       </Structure>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

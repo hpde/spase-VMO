@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_4.xsd">
-  <Version>1.3.4</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/P1D</ResourceID>
     <ResourceHeader>
       <ResourceName>Daily OMNI Data Set</ResourceName>
-      <ReleaseDate>2009-03-24T19:08:35Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
       <Description>Daily averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
@@ -463,7 +463,9 @@ for creating the OMNI data set.</Acknowledgement>
       
       [(T*4.16/10**5) + 5.34] * Np / B**2</Description>
       <Cadence>P1D</Cadence>
-      <Mixed>Beta</Mixed>
+      <Mixed>
+        <MixedQuantity>PlasmaBeta</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>Alfven Mach Number</Name>
@@ -472,7 +474,9 @@ for creating the OMNI data set.</Acknowledgement>
       
       (V * Np**0.5) / 20 * B</Description>
       <Cadence>P1D</Cadence>
-      <Mixed>AlfvenMachNumber</Mixed>
+      <Mixed>
+        <MixedQuantity>AlfvenMachNumber</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>Kp Index</Name>

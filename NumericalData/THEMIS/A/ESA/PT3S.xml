@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/A/ESA/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-A ESA electron/ion energy fluxes and moments</ResourceName>
-      <ReleaseDate>2008-11-26T20:24:40Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:02Z</ReleaseDate>
       <Description>THEMIS-A: Electrostatic Analyzers (ESA): Electron/Ion Ground-Calculated Energy Fluxes (5eV - 25 keV for Ions and 6eV - 30 KeV for Electrons)  and Moments (density, velocity, pressure, and temperature). The satellite has 2 modes Fast and Slow survey and 3 data types: FULL, REDUCED and BURST. FULL: 88 angles x 32 energies, time resolution of 128 spins(395 seconds) in slow survey and 32 spins(98 seconds) in fast survey. REDUCED:  spin time resolution(3 sec) but angles averaged into 1 angular spectra x 32 energies in slow survey or 6 angular spectra(90 degree x 90 degree window) x 32 energies in fast survey. BURST: 88 angles x 32 energies and spin time resolution(3 sec) but only available sporadically and for short duration. Note that angular resolution affects moments since they are obtained integrating over the mode-specific angular distribution.  These moments are processed on the ground.  They should be regarded as approximations but will improve in quality as our processing routines are improved over the course of the mission to account for additional sources of variance.</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: C. W. Carlson and J. P. McFadden for use of ESA data.</Acknowledgement>
       <Contact>
@@ -60,7 +60,7 @@
     <Caveats>EFI booms for THEMIS A(P5) were deployed on 2008-01-14/17:00:00 UT. Before this time the spacecraft potential was not calculated accurately.  Electron moments will not be distributed prior to this date and ion moments will less accurate. See THEMIS website for caveats(http://themis.ssl.berkeley.edu)</Caveats>
     <!-- All params from the full distribution switch between a cadence of 98 and 395 S, but spend more time at 395-->
     <!-- Begin Full Distribution Ion Quantities -->
-    <PhysicalParameter>
+    <Parameter>
       <Name>ESA Full Mode, Ion Density</Name>
       <ParameterKey>tha_peif_density</ParameterKey>
       <Description>ESA Ion Density from full angle distribution.</Description>
@@ -71,15 +71,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion Average Temperature: Full Distribution</Name>
       <ParameterKey>tha_peif_avgtemp</ParameterKey>
       <Description>ESA Ion Average Temperature from full angle distribution.</Description>
@@ -90,16 +88,14 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion Thermal Velocity: Full Distribution</Name>
       <ParameterKey>tha_peif_vthermal</ParameterKey>
       <Description>ESA Ion Thermal Velocity from full angle distribution.</Description>
@@ -110,15 +106,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential at full distribution cadence</Name>
       <ParameterKey>tha_peif_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the full angle distribution.  This parameter was taken from the EFI data and interpolated to the cadence of the ESA full distribution data.</Description>
@@ -128,14 +122,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Scalar</FieldQualifier>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Scalar</Qualifier>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion energy spectrogram: full distribution</Name>
       <ParameterKey>tha_peif_en_eflux</ParameterKey>
       <Description>ESA Ion energy spectrogram energy flux calculated from full angle distribution.</Description>
@@ -374,19 +366,17 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <EnergyRange>
-            <Low>5</Low>
-            <High>25000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <EnergyRange>
+          <Low>5</Low>
+          <High>25000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_en_eflux_yaxis: full distribution</Name>
       <ParameterKey>tha_peif_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for tha_peif_en_eflux</Description>
@@ -621,20 +611,18 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Component</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-          <EnergyRange>
-            <Low>5</Low>
-            <High>25000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Component</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+        <EnergyRange>
+          <Low>5</Low>
+          <High>25000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_t3</Name>
       <ParameterKey>tha_peif_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
@@ -670,15 +658,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_magt3</Name>
       <ParameterKey>tha_peif_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from full angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
@@ -714,15 +700,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Pressure Tensor: Full Distribution</Name>
       <ParameterKey>tha_peif_ptens</ParameterKey>
       <Description>Ion pressure tensor calculated from full angle distribution.  Elements from symmetric ion pressure covariance matrix.</Description>
@@ -779,15 +763,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Momentum Flux Tensor: Full Distribution</Name>
       <ParameterKey>tha_peif_mftens</ParameterKey>
       <Description>Ion Momentum Flux Tensor calculated from full angle distribution.  Elements from symmetric ion momentum flux matrix.</Description>
@@ -844,15 +826,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Particle Flux Vector: Full Distribution</Name>
       <ParameterKey>tha_peif_flux</ParameterKey>
       <Description>Ion Particle Flux Vector calculated from full angle distribution.</Description>
@@ -888,15 +868,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Symmetry Vector: Full Distribution</Name>
       <ParameterKey>tha_peif_symm</ParameterKey>
       <Description>Ion Symmetry Vector is the direction of pressure tensor(peif_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the full angle distibution quantities.</Description>
@@ -934,8 +912,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ion Symmetry Angle (between symmetry direction and B): Full Distribution</Name>
       <ParameterKey>tha_peif_symm_ang</ParameterKey>
       <Description>Ion Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peif_t3 and the peif_magt3 quantities. Calculated from the full angle distribution quantities.</Description>
@@ -945,11 +923,11 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Mixed>Angle between the magnetic field vector and the diagonalized temperature z axis(B and peif_t3)</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector SC: Full Distribution/Ion</Name>
       <ParameterKey>tha_peif_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the full distribution moments. It was taken from the FGM data and interpolated to match the cadence of the full distribution ESA data.</Description>
@@ -985,14 +963,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector SC: Full Distribution</Name>
       <ParameterKey>tha_peif_velocity_dsl</ParameterKey>
       <Description>Ion Velocity Vector in Despun spacecraft coordinates. Calculated from full distribution.</Description>
@@ -1028,15 +1004,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector in GSE: Full Distribution</Name>
       <ParameterKey>tha_peif_velocity_gse</ParameterKey>
       <Description>Ion Velocity Vector in GSE coordinates. Calculated from full angle distribution.</Description>
@@ -1072,15 +1046,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector in GSM: Full Distribution</Name>
       <ParameterKey>tha_peif_velocity_gsm</ParameterKey>
       <Description>Ion Velocity Vector in GSM coordinates. Calculated from full angle distribution.</Description>
@@ -1116,15 +1088,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_time</Name>
       <ParameterKey>tha_peif_time</ParameterKey>
       <Description>tha_peif_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA full distribution data</Description>
@@ -1137,8 +1107,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_delta_time</Name>
       <ParameterKey>tha_peif_delta_time</ParameterKey>
       <Description>Duration in seconds of sample. In otherwords cadence of the full distribution samples.</Description>
@@ -1149,8 +1119,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_mode</Name>
       <ParameterKey>tha_peif_mode</ParameterKey>
       <Description>Ion survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
@@ -1184,8 +1154,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peif_epoch0</Name>
       <ParameterKey>tha_peif_epoch0</ParameterKey>
       <Description>EPOCH of THEMIS time base</Description>
@@ -1205,9 +1175,9 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
     <!-- Begin full distribution electron quantities -->
-    <PhysicalParameter>
+    <Parameter>
       <Name>ESA Full Mode, Electron Density</Name>
       <ParameterKey>tha_peef_density</ParameterKey>
       <Description>ESA Electron Density from full angle distribution.</Description>
@@ -1218,15 +1188,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron Average Temperature: Full Distribution</Name>
       <ParameterKey>tha_peef_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from full angle distribution.</Description>
@@ -1237,16 +1205,14 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron Thermal Velocity: Full Distribution</Name>
       <ParameterKey>tha_peef_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from full angle distribution.</Description>
@@ -1257,15 +1223,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential at full distribution cadence</Name>
       <ParameterKey>tha_peef_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the full angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa full distribution data.</Description>
@@ -1275,14 +1239,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Scalar</FieldQualifier>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Scalar</Qualifier>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron energy spectrogram: full distribution</Name>
       <ParameterKey>tha_peef_en_eflux</ParameterKey>
       <Description>ESA Electron energy spectrogram energy flux calculated from full angle distribution.</Description>
@@ -1521,19 +1483,17 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <EnergyRange>
-            <Low>6</Low>
-            <High>30000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <EnergyRange>
+          <Low>6</Low>
+          <High>30000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peef_en_eflux_yaxis: full distribution</Name>
       <ParameterKey>tha_peef_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for tha_peef_en_eflux</Description>
@@ -1768,20 +1728,18 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Component</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-          <EnergyRange>
-            <Low>6</Low>
-            <High>30000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Component</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+        <EnergyRange>
+          <Low>6</Low>
+          <High>30000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Diagonalized Temperature</Name>
       <ParameterKey>tha_peef_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the full angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
@@ -1817,15 +1775,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Diagonalized Temperature, Field Aligned</Name>
       <ParameterKey>tha_peef_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from full angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
@@ -1861,15 +1817,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Pressure Tensor: Full Distribution</Name>
       <ParameterKey>tha_peef_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from full angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
@@ -1926,15 +1880,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Momentum Flux Tensor: Full Distribution</Name>
       <ParameterKey>tha_peef_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from full angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
@@ -1991,15 +1943,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Particle Flux Vector: Full Distribution</Name>
       <ParameterKey>tha_peef_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from full angle distribution.</Description>
@@ -2035,15 +1985,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Symmetry Vector: Full Distribution</Name>
       <ParameterKey>tha_peef_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peef_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the full angle distibution quantities.</Description>
@@ -2081,8 +2029,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Electron Symmetry Angle (between symmetry direction and B): Full Distribution</Name>
       <ParameterKey>tha_peef_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peef_t3 and the peef_magt3 quantities. Calculated from the full angle distribution quantities.</Description>
@@ -2092,11 +2040,11 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Mixed>Angle between the magnetic field vector and the diagonalized temperature z axis(B and peef_t3)</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector SC: Full Distribution/Electron</Name>
       <ParameterKey>tha_peef_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the full distribution moments. It was taken from the FGM data and interpolated to match the cadence of the full distribution ESA data.</Description>
@@ -2132,14 +2080,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector SC: Full Distribution</Name>
       <ParameterKey>tha_peef_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from full distribution.</Description>
@@ -2175,15 +2121,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector in GSE: Full Distribution</Name>
       <ParameterKey>tha_peef_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from full angle distribution.</Description>
@@ -2219,15 +2163,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector in GSM: Full Distribution</Name>
       <ParameterKey>tha_peef_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates. Calculated from full angle distribution.</Description>
@@ -2263,15 +2205,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peef_time</Name>
       <ParameterKey>tha_peef_time</ParameterKey>
       <Description>tha_peef_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA full distribution data</Description>
@@ -2284,8 +2224,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peef_delta_time</Name>
       <ParameterKey>tha_peef_delta_time</ParameterKey>
       <Description>Duration in seconds of sample. In otherwords cadence of the full distribution samples.</Description>
@@ -2296,8 +2236,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peef_mode</Name>
       <ParameterKey>tha_peef_mode</ParameterKey>
       <Description>Electron survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
@@ -2331,8 +2271,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peef_epoch0</Name>
       <ParameterKey>tha_peef_epoch0</ParameterKey>
       <Description>EPOCH of THEMIS time base</Description>
@@ -2352,9 +2292,9 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
     <!-- Begin Reduced Distribution Ion Quantities -->
-    <PhysicalParameter>
+    <Parameter>
       <Name>ESA Reduced Mode, Ion Density</Name>
       <ParameterKey>tha_peir_density</ParameterKey>
       <Description>ESA Ion Density from reduced angle distribution.</Description>
@@ -2365,15 +2305,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion Average Temperature: Reduced Distribution</Name>
       <ParameterKey>tha_peir_avgtemp</ParameterKey>
       <Description>ESA Ion Average Temperature from reduced angle distribution.</Description>
@@ -2384,16 +2322,14 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion Thermal Velocity: Reduced Distribution</Name>
       <ParameterKey>tha_peir_vthermal</ParameterKey>
       <Description>ESA Ion Thermal Velocity from reduced angle distribution.</Description>
@@ -2404,15 +2340,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential at reduced distribution cadence</Name>
       <ParameterKey>tha_peir_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the reduced angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa reduced distribution data.</Description>
@@ -2422,14 +2356,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Scalar</FieldQualifier>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Scalar</Qualifier>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion energy spectrogram: reduced distribution</Name>
       <ParameterKey>tha_peir_en_eflux</ParameterKey>
       <Description>ESA Ion energy spectrogram energy flux calculated from reduced angle distribution.</Description>
@@ -2668,19 +2600,17 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <EnergyRange>
-            <Low>5</Low>
-            <High>25000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <EnergyRange>
+          <Low>5</Low>
+          <High>25000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peir_en_eflux_yaxis: reduced distribution</Name>
       <ParameterKey>tha_peir_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for tha_peir_en_eflux</Description>
@@ -2915,20 +2845,18 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Component</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-          <EnergyRange>
-            <Low>5</Low>
-            <High>25000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Component</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+        <EnergyRange>
+          <Low>5</Low>
+          <High>25000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Diagonalized Temperature: reduced angle distribution</Name>
       <ParameterKey>tha_peir_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the reduced angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
@@ -2964,15 +2892,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Diagonalized Temperature, Field Aligned: reduced angle distribution</Name>
       <ParameterKey>tha_peir_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from reduced angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
@@ -3008,15 +2934,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Pressure Tensor: Reduced Distribution</Name>
       <ParameterKey>tha_peir_ptens</ParameterKey>
       <Description>Ion pressure tensor calculated from reduced angle distribution.  Elements from symmetric ion pressure covariance matrix.</Description>
@@ -3073,15 +2997,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Momentum Flux Tensor: Reduced Distribution</Name>
       <ParameterKey>tha_peir_mftens</ParameterKey>
       <Description>Ion Momentum Flux Tensor calculated from reduced angle distribution.  Elements from symmetric ion momentum flux matrix.</Description>
@@ -3138,15 +3060,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Particle Flux Vector: Reduced Distribution</Name>
       <ParameterKey>tha_peir_flux</ParameterKey>
       <Description>Ion Particle Flux Vector calculated from reduced angle distribution.</Description>
@@ -3182,15 +3102,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Symmetry Vector: Reduced Distribution</Name>
       <ParameterKey>tha_peir_symm</ParameterKey>
       <Description>Ion Symmetry Vector is the direction of pressure tensor(peir_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the reduced angle distibution quantities.</Description>
@@ -3228,8 +3146,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ion Symmetry Angle (between symmetry direction and B): Reduced Distribution</Name>
       <ParameterKey>tha_peir_symm_ang</ParameterKey>
       <Description>Ion Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peir_t3 and the peir_magt3 quantities. Calculated from the reduced angle distribution quantities.</Description>
@@ -3239,11 +3157,11 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Mixed>Angle between the magnetic field vector and the diagonalized temperature z axis(B and peir_t3)</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector SC: Reduced Distribution/Ion</Name>
       <ParameterKey>tha_peir_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the reduced distribution moments. It was taken from the FGM data and interpolated to match the cadence of the reduced distribution ESA data.</Description>
@@ -3279,14 +3197,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector SC: Reduced Distribution</Name>
       <ParameterKey>tha_peir_velocity_dsl</ParameterKey>
       <Description>Ion Velocity Vector in Despun spacecraft coordinates. Calculated from reduced distribution.</Description>
@@ -3322,15 +3238,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector in GSE: Reduced Distribution</Name>
       <ParameterKey>tha_peir_velocity_gse</ParameterKey>
       <Description>Ion Velocity Vector in GSE coordinates. Calculated from reduced angle distribution.</Description>
@@ -3366,15 +3280,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector in GSM: Reduced Distribution</Name>
       <ParameterKey>tha_peir_velocity_gsm</ParameterKey>
       <Description>Ion Velocity Vector in GSM coordinates. Calculated from reduced angle distribution.</Description>
@@ -3410,15 +3322,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peir_time</Name>
       <ParameterKey>tha_peir_time</ParameterKey>
       <Description>tha_peir_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA reduced distribution data</Description>
@@ -3431,8 +3341,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peir_delta_time</Name>
       <ParameterKey>tha_peir_delta_time</ParameterKey>
       <Description>Duration in seconds of sample. In otherwords cadence of the reduced distribution samples.</Description>
@@ -3443,8 +3353,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peir_mode</Name>
       <ParameterKey>tha_peir_mode</ParameterKey>
       <Description>Ion survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
@@ -3478,8 +3388,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peir_epoch0</Name>
       <ParameterKey>tha_peir_epoch0</ParameterKey>
       <Description>EPOCH of THEMIS time base</Description>
@@ -3499,9 +3409,9 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
     <!-- Begin reduced distribution electron quantities -->
-    <PhysicalParameter>
+    <Parameter>
       <Name>ESA Reduced Mode, Electron Density</Name>
       <ParameterKey>tha_peer_density</ParameterKey>
       <Description>ESA Electron Density from reduced angle distribution.</Description>
@@ -3512,15 +3422,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron Average Temperature: Reduced Distribution</Name>
       <ParameterKey>tha_peer_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from reduced angle distribution.</Description>
@@ -3531,16 +3439,14 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron Thermal Velocity: Reduced Distribution</Name>
       <ParameterKey>tha_peer_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from reduced angle distribution.</Description>
@@ -3551,15 +3457,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential at reduced distribution cadence</Name>
       <ParameterKey>tha_peer_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the reduced angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa reduced distribution data.</Description>
@@ -3569,14 +3473,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Scalar</FieldQualifier>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Scalar</Qualifier>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron energy spectrogram: reduced distribution</Name>
       <ParameterKey>tha_peer_en_eflux</ParameterKey>
       <Description>ESA Electron energy spectrogram energy flux calculated from reduced angle distribution.</Description>
@@ -3815,19 +3717,17 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <EnergyRange>
-            <Low>6</Low>
-            <High>30000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <EnergyRange>
+          <Low>6</Low>
+          <High>30000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peer_en_eflux_yaxis: reduced distribution</Name>
       <ParameterKey>tha_peer_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for tha_peer_en_eflux</Description>
@@ -4062,20 +3962,18 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Component</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-          <EnergyRange>
-            <Low>6</Low>
-            <High>30000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Component</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+        <EnergyRange>
+          <Low>6</Low>
+          <High>30000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Diagonalized Temperature: reduced angle distribution</Name>
       <ParameterKey>tha_peer_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the reduced angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
@@ -4111,15 +4009,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Diagonalized Temperature, Field Aligned: reduced angle distribution</Name>
       <ParameterKey>tha_peer_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from reduced angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
@@ -4155,15 +4051,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Pressure Tensor: Reduced Distribution</Name>
       <ParameterKey>tha_peer_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from reduced angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
@@ -4220,15 +4114,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Momentum Flux Tensor: Reduced Distribution</Name>
       <ParameterKey>tha_peer_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from reduced angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
@@ -4285,15 +4177,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Particle Flux Vector: Reduced Distribution</Name>
       <ParameterKey>tha_peer_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from reduced angle distribution.</Description>
@@ -4329,15 +4219,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Symmetry Vector: Reduced Distribution</Name>
       <ParameterKey>tha_peer_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peer_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the reduced angle distibution quantities.</Description>
@@ -4375,8 +4263,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Electron Symmetry Angle (between symmetry direction and B): Reduced Distribution</Name>
       <ParameterKey>tha_peer_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peer_t3 and the peer_magt3 quantities. Calculated from the reduced angle distribution quantities.</Description>
@@ -4386,11 +4274,11 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Mixed>Angle between the magnetic field vector and the diagonalized temperature z axis(B and peer_t3)</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector SC: Reduced Distribution/Electron</Name>
       <ParameterKey>tha_peer_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the reduced distribution moments. It was taken from the FGM data and interpolated to match the cadence of the reduced distribution ESA data.</Description>
@@ -4426,14 +4314,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector SC: Reduced Distribution</Name>
       <ParameterKey>tha_peer_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from reduced distribution.</Description>
@@ -4469,15 +4355,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector in GSE: Reduced Distribution</Name>
       <ParameterKey>tha_peer_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from reduced angle distribution.</Description>
@@ -4513,15 +4397,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector in GSM: Reduced Distribution</Name>
       <ParameterKey>tha_peer_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates. Calculated from reduced angle distribution.</Description>
@@ -4557,15 +4439,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peer_time</Name>
       <ParameterKey>tha_peer_time</ParameterKey>
       <Description>tha_peer_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA reduced distribution data</Description>
@@ -4578,8 +4458,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peer_delta_time</Name>
       <ParameterKey>tha_peer_delta_time</ParameterKey>
       <Description>Duration in seconds of sample. In otherwords cadence of the reduced distribution samples.</Description>
@@ -4590,8 +4470,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peer_mode</Name>
       <ParameterKey>tha_peer_mode</ParameterKey>
       <Description>Electron survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
@@ -4625,8 +4505,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peer_epoch0</Name>
       <ParameterKey>tha_peer_epoch0</ParameterKey>
       <Description>EPOCH of THEMIS time base</Description>
@@ -4646,9 +4526,9 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
     <!-- Begin Burst Distribution Ion Quantities -->
-    <PhysicalParameter>
+    <Parameter>
       <Name>ESA Burst Mode, Ion Density</Name>
       <ParameterKey>tha_peib_density</ParameterKey>
       <Description>ESA Ion Density from burst angle distribution.</Description>
@@ -4659,15 +4539,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion Average Temperature: Burst Distribution</Name>
       <ParameterKey>tha_peib_avgtemp</ParameterKey>
       <Description>ESA Ion Average Temperature from burst angle distribution.</Description>
@@ -4678,16 +4556,14 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion Thermal Velocity: Burst Distribution</Name>
       <ParameterKey>tha_peib_vthermal</ParameterKey>
       <Description>ESA Ion Thermal Velocity from burst angle distribution.</Description>
@@ -4698,15 +4574,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential at burst distribution cadence</Name>
       <ParameterKey>tha_peib_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the burst angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa burst distribution data.</Description>
@@ -4716,14 +4590,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Scalar</FieldQualifier>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Scalar</Qualifier>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>ESA Ion energy spectrogram: burst distribution</Name>
       <ParameterKey>tha_peib_en_eflux</ParameterKey>
       <Description>ESA Ion energy spectrogram energy flux calculated from burst angle distribution.</Description>
@@ -4962,19 +4834,17 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <EnergyRange>
-            <Low>5</Low>
-            <High>25000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <EnergyRange>
+          <Low>5</Low>
+          <High>25000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peib_en_eflux_yaxis: burst distribution</Name>
       <ParameterKey>tha_peib_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for tha_peib_en_eflux</Description>
@@ -5209,20 +5079,18 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Component</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-          <EnergyRange>
-            <Low>5</Low>
-            <High>25000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Component</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+        <EnergyRange>
+          <Low>5</Low>
+          <High>25000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Diagonalized Temperature: burst angle distribution</Name>
       <ParameterKey>tha_peib_t3</ParameterKey>
       <Description>Ion temperature eigenvalues of the diagonalized pressure tensor calculated from the burst angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
@@ -5258,15 +5126,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Diagonalized Temperature, Field Aligned: burst angle distribution</Name>
       <ParameterKey>tha_peib_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from burst angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_ion, Tprp2_ion, Tpar_ion)</Description>
@@ -5302,15 +5168,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Pressure Tensor: Burst Distribution</Name>
       <ParameterKey>tha_peib_ptens</ParameterKey>
       <Description>Ion pressure tensor calculated from burst angle distribution.  Elements from symmetric ion pressure covariance matrix.</Description>
@@ -5367,15 +5231,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Momentum Flux Tensor: Burst Distribution</Name>
       <ParameterKey>tha_peib_mftens</ParameterKey>
       <Description>Ion Momentum Flux Tensor calculated from burst angle distribution.  Elements from symmetric ion momentum flux matrix.</Description>
@@ -5432,15 +5294,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Particle Flux Vector: Burst Distribution</Name>
       <ParameterKey>tha_peib_flux</ParameterKey>
       <Description>Ion Particle Flux Vector calculated from burst angle distribution.</Description>
@@ -5476,15 +5336,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Symmetry Vector: Burst Distribution</Name>
       <ParameterKey>tha_peib_symm</ParameterKey>
       <Description>Ion Symmetry Vector is the direction of pressure tensor(peib_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the burst angle distibution quantities.</Description>
@@ -5522,8 +5380,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Ion Symmetry Angle (between symmetry direction and B): Burst Distribution</Name>
       <ParameterKey>tha_peib_symm_ang</ParameterKey>
       <Description>Ion Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peib_t3 and the peib_magt3 quantities. Calculated from the burst angle distribution quantities.</Description>
@@ -5533,11 +5391,11 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Mixed>Angle between the magnetic field vector and the diagonalized temperature z axis(B and peib_t3)</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector SC: Burst Distribution/Ion</Name>
       <ParameterKey>tha_peib_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the burst distribution moments. It was taken from the FGM data and interpolated to match the cadence of the burst distribution ESA data.</Description>
@@ -5573,14 +5431,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector SC: Burst Distribution</Name>
       <ParameterKey>tha_peib_velocity_dsl</ParameterKey>
       <Description>Ion Velocity Vector in Despun spacecraft coordinates. Calculated from burst distribution.</Description>
@@ -5616,15 +5472,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector in GSE: Burst Distribution</Name>
       <ParameterKey>tha_peib_velocity_gse</ParameterKey>
       <Description>Ion Velocity Vector in GSE coordinates. Calculated from burst angle distribution.</Description>
@@ -5660,15 +5514,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ion Velocity Vector in GSM: Burst Distribution</Name>
       <ParameterKey>tha_peib_velocity_gsm</ParameterKey>
       <Description>Ion Velocity Vector in GSM coordinates. Calculated from burst angle distribution.</Description>
@@ -5704,15 +5556,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peib_time</Name>
       <ParameterKey>tha_peib_time</ParameterKey>
       <Description>tha_peib_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA burst distribution data</Description>
@@ -5725,8 +5575,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peib_delta_time</Name>
       <ParameterKey>tha_peib_delta_time</ParameterKey>
       <Description>Duration in seconds of sample. In otherwords cadence of the burst distribution samples.</Description>
@@ -5737,8 +5587,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peib_mode</Name>
       <ParameterKey>tha_peib_mode</ParameterKey>
       <Description>Ion survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
@@ -5772,8 +5622,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peib_epoch0</Name>
       <ParameterKey>tha_peib_epoch0</ParameterKey>
       <Description>EPOCH of THEMIS time base</Description>
@@ -5793,9 +5643,9 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
     <!-- Begin burst distribution electron quantities -->
-    <PhysicalParameter>
+    <Parameter>
       <Name>ESA Burst Mode, Electron Density</Name>
       <ParameterKey>tha_peeb_density</ParameterKey>
       <Description>ESA Electron Density from burst angle distribution.</Description>
@@ -5806,15 +5656,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron Average Temperature: Burst Distribution</Name>
       <ParameterKey>tha_peeb_avgtemp</ParameterKey>
       <Description>ESA Electron Average Temperature from burst angle distribution.</Description>
@@ -5825,16 +5673,14 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron Thermal Velocity: Burst Distribution</Name>
       <ParameterKey>tha_peeb_vthermal</ParameterKey>
       <Description>ESA Electron Thermal Velocity from burst angle distribution.</Description>
@@ -5845,15 +5691,13 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Moment</ParticleQualifier>
-          <ParticleQuantity>ThermalSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Moment</Qualifier>
+        <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential at burst distribution cadence</Name>
       <ParameterKey>tha_peeb_sc_pot</ParameterKey>
       <Description>The Spacecraft Potential that was used for calculating the moments that were generated from the burst angle distribution.  This parameter was taken from the efi data and interpolated to the cadence of the esa burst distribution data.</Description>
@@ -5863,14 +5707,12 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Scalar</FieldQualifier>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Scalar</Qualifier>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>ESA Electron energy spectrogram: burst distribution</Name>
       <ParameterKey>tha_peeb_en_eflux</ParameterKey>
       <Description>ESA Electron energy spectrogram energy flux calculated from burst angle distribution.</Description>
@@ -6109,19 +5951,17 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <EnergyRange>
-            <Low>6</Low>
-            <High>30000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <EnergyRange>
+          <Low>6</Low>
+          <High>30000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peeb_en_eflux_yaxis: burst distribution</Name>
       <ParameterKey>tha_peeb_en_eflux_yaxis</ParameterKey>
       <Description>Energy level of energy bins for tha_peeb_en_eflux</Description>
@@ -6356,20 +6196,18 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Component</ParticleQualifier>
-          <ParticleQuantity>Energy</ParticleQuantity>
-          <EnergyRange>
-            <Low>6</Low>
-            <High>30000</High>
-            <Units>eV</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Component</Qualifier>
+        <ParticleQuantity>Energy</ParticleQuantity>
+        <EnergyRange>
+          <Low>6</Low>
+          <High>30000</High>
+          <Units>eV</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Diagonalized Temperature: burst angle distribution</Name>
       <ParameterKey>tha_peeb_t3</ParameterKey>
       <Description>Electron temperature eigenvalues of the diagonalized pressure tensor calculated from the burst angle distribution.  Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
@@ -6405,15 +6243,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Diagonalized Temperature, Field Aligned: burst angle distribution</Name>
       <ParameterKey>tha_peeb_magt3</ParameterKey>
       <Description>Temperature eigenvalues of the diagonalized pressure tensor corrected to align with magnetic field using FGM data. Calculated from burst angle distribution. Includes two perpendicular elements and one parallel element. (Tprp1_elec, Tprp2_elec, Tpar_elec)</Description>
@@ -6449,15 +6285,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Pressure Tensor: Burst Distribution</Name>
       <ParameterKey>tha_peeb_ptens</ParameterKey>
       <Description>Electron pressure tensor calculated from burst angle distribution.  Elements from symmetric electron pressure covariance matrix.</Description>
@@ -6514,15 +6348,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Momentum Flux Tensor: Burst Distribution</Name>
       <ParameterKey>tha_peeb_mftens</ParameterKey>
       <Description>Electron Momentum Flux Tensor calculated from burst angle distribution.  Elements from symmetric electron momentum flux matrix.</Description>
@@ -6579,15 +6411,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Tensor</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Tensor</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Particle Flux Vector: Burst Distribution</Name>
       <ParameterKey>tha_peeb_flux</ParameterKey>
       <Description>Electron Particle Flux Vector calculated from burst angle distribution.</Description>
@@ -6623,15 +6453,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Symmetry Vector: Burst Distribution</Name>
       <ParameterKey>tha_peeb_symm</ParameterKey>
       <Description>Electron Symmetry Vector is the direction of pressure tensor(peeb_ptens) symmetry in despun spacecraft coordinates.  This parameter is calculated from the burst angle distibution quantities.</Description>
@@ -6669,8 +6497,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Electron Symmetry Angle (between symmetry direction and B): Burst Distribution</Name>
       <ParameterKey>tha_peeb_symm_ang</ParameterKey>
       <Description>Electron Symmetry Angle between symmetry direction and B.  Can also be treated as the angle between the z axes of the peeb_t3 and the peeb_magt3 quantities. Calculated from the burst angle distribution quantities.</Description>
@@ -6680,11 +6508,11 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>NaN</FillValue>
-      <Measured>
-        <Mixed>Angle between the magnetic field vector and the diagonalized temperature z axis(B and peeb_t3)</Mixed>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector SC: Burst Distribution/Electron</Name>
       <ParameterKey>tha_peeb_magf</ParameterKey>
       <Description>Magnetic Field Vector in despun spacecraft coordinates.  This quantity was the quantity used to calculate the burst distribution moments. It was taken from the FGM data and interpolated to match the cadence of the burst distribution ESA data.</Description>
@@ -6720,14 +6548,12 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector SC: Burst Distribution</Name>
       <ParameterKey>tha_peeb_velocity_dsl</ParameterKey>
       <Description>Electron Velocity Vector in Despun spacecraft coordinates. Calculated from burst distribution.</Description>
@@ -6763,15 +6589,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Electron Velocity Vector in GSE: Burst Distribution</Name>
       <ParameterKey>tha_peeb_velocity_gse</ParameterKey>
       <Description>Electron Velocity Vector in GSE coordinates. Calculated from burst angle distribution.</Description>
@@ -6807,15 +6631,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peeb_velocity_gsm</Name>
       <ParameterKey>tha_peeb_velocity_gsm</ParameterKey>
       <Description>Electron Velocity Vector in GSM coordinates: Burst distribution. Calculated from burst angle distribution.</Description>
@@ -6851,15 +6673,13 @@
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Electron</ParticleType>
-          <ParticleQualifier>Vector</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Electron</ParticleType>
+        <Qualifier>Vector</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>tha_peeb_time</Name>
       <ParameterKey>tha_peeb_time</ParameterKey>
       <Description>tha_peeb_time, UTC, in seconds since 01-Jan-1970 00:00:00; marks center time of data sample.  These are used as the sample times for the ESA burst distribution data</Description>
@@ -6872,8 +6692,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peeb_delta_time</Name>
       <ParameterKey>tha_peeb_delta_time</ParameterKey>
       <Description>Duration in seconds of sample. In otherwords cadence of the burst distribution samples.</Description>
@@ -6884,8 +6704,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peeb_mode</Name>
       <ParameterKey>tha_peeb_mode</ParameterKey>
       <Description>Electron survey mode, controls angle and energy binning, and time resolution, values of 0 to 8</Description>
@@ -6919,8 +6739,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>tha_peeb_epoch0</Name>
       <ParameterKey>tha_peeb_epoch0</ParameterKey>
       <Description>EPOCH of THEMIS time base</Description>
@@ -6940,6 +6760,6 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>

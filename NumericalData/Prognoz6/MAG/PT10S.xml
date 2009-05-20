@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_4.xsd">
-  <Version>1.3.4</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Prognoz6/MAG/PT10S</ResourceID>
     <ResourceHeader>
       <ResourceName>Prognoz 6 Magnetic Field Data</ResourceName>
-      <ReleaseDate>2009-03-24T19:40:41Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
       <Description>Magnetic field data obtained in the outer magnetosphere and in the solar wind by Prognoz 6 between 1977/09/26 and 1978/01/22.
       
 The data were obtained by an SG-70 fluxgate magnetometer provided by IZMIRAN's Space Magnetic Research Laboratory.  The magnetometer had a range of +/- 60 nT and an accuracy of about 0.3 nT. It made one vector measurement every 10.24 sec.</Description>

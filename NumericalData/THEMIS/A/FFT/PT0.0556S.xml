@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_2.xsd">
-  <Version>1.3.2</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/A/FFT/PT0.0556S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-A: On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements, for particle and wave burst survey modes.</ResourceName>
-      <ReleaseDate>2008-12-06T01:19:55Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:02Z</ReleaseDate>
       <Description>On Board Fast Fourier Transform (FFT) power spectra of Electric (EFI) and Magnetic (SCM) field measurements for particle and wave burst survey modes.  Spectra are produced only in Particle Burst and Wave Burst modes; only a preselected four of the signals listed in Table 1 are input at any time.  Data fed through the FFT while not in Particle or Wave Burst modes is automatically disgarded.  The FFTs (Cooley-Tukey algorithm) are conducted as an integral part of the power spectrum calculation by the Field Programable Gate Arrays (FPGAs).  A CORDIC algorithm is used for sine/cosine calculations. The data has raw resolution of 1024 pts for 8,192 sample/sec signals and 2048 pts for 16,384 sample/sec signals (EAC measurements only).  Signals at 8,192 samples/sec are handled by 1024-point FFTs, while those at 16,384 samples/sec go through 2048-point FFTs.  Past and current signal configurations for specific spacecraft are listed bellow in Table 2. The spectra are arranged into log spaced frequency bins in steps of 16, 32, or 64.  Cadence is adjusted to keep packet size constant (i.e. increasing the fequency resolution by a factor of 2 decreases the sampling rate by 1/2).  The frequency bins cover a range of 0 Hz to 4 kHz.
 
 Table 1: FFT Input Signals.
@@ -214,7 +214,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM delta-B (perp to B)</Name>
@@ -338,7 +340,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -461,7 +465,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -584,7 +590,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -707,7 +715,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -830,7 +840,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -953,7 +965,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -1076,7 +1090,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (parallel to B)</Name>
@@ -1199,7 +1215,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI E (perp to B)</Name>
@@ -1322,7 +1340,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 1</Name>
@@ -1445,7 +1465,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 2</Name>
@@ -1568,7 +1590,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for SCM, Axis 3</Name>
@@ -1691,7 +1715,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 1</Name>
@@ -1813,7 +1839,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 2</Name>
@@ -1935,7 +1963,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 3</Name>
@@ -2057,7 +2087,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 4</Name>
@@ -2179,7 +2211,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 5</Name>
@@ -2301,7 +2335,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 16 frequencies for EFI Potential, Sensor 6</Name>
@@ -2423,7 +2459,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffp_16_yaxis</Name>
@@ -2820,7 +2858,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM delta-B (perp to B)</Name>
@@ -3055,7 +3095,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -3290,7 +3332,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -3525,7 +3569,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -3760,7 +3806,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -3995,7 +4043,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -4230,7 +4280,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name/>
@@ -4465,7 +4517,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (parallel to B)</Name>
@@ -4700,7 +4754,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI E (perp to B)</Name>
@@ -4935,7 +4991,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 1</Name>
@@ -5170,7 +5228,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 2</Name>
@@ -5405,7 +5465,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for SCM, Axis 3</Name>
@@ -5640,7 +5702,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 1</Name>
@@ -5874,7 +5938,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 2</Name>
@@ -6108,7 +6174,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 3</Name>
@@ -6342,7 +6410,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 4</Name>
@@ -6576,7 +6646,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 5</Name>
@@ -6810,7 +6882,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 32 frequencies for EFI Potential, Sensor 6</Name>
@@ -7044,7 +7118,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffp_32_yaxis</Name>
@@ -7777,7 +7853,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM delta-B (perp to B)</Name>
@@ -8236,7 +8314,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane).</Name>
@@ -8695,7 +8775,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -9154,7 +9236,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
@@ -9613,7 +9697,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -10072,7 +10158,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -10531,7 +10619,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
@@ -10990,7 +11080,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (parallel to B)</Name>
@@ -11449,7 +11541,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI E (perp to B)</Name>
@@ -11908,7 +12002,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 1</Name>
@@ -12367,7 +12463,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 2</Name>
@@ -12826,7 +12924,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for SCM, Axis 3</Name>
@@ -13285,7 +13385,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 1</Name>
@@ -13743,7 +13845,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 2</Name>
@@ -14201,7 +14305,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 3</Name>
@@ -14659,7 +14765,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 4</Name>
@@ -15117,7 +15225,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 5</Name>
@@ -15575,7 +15685,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Particle Burst, 64 frequencies for EFI Potential, Sensor 6</Name>
@@ -16033,7 +16145,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffp_64_yaxis</Name>
@@ -16654,7 +16768,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM delta-B (perp to B)</Name>
@@ -16777,7 +16893,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burs t, 16 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -16900,7 +17018,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -17023,7 +17143,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
@@ -17146,7 +17268,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -17269,7 +17393,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -17392,7 +17518,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
@@ -17515,7 +17643,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (parallel to B)</Name>
@@ -17638,7 +17768,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI E (perp to B)</Name>
@@ -17761,7 +17893,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 1</Name>
@@ -17884,7 +18018,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 2</Name>
@@ -18007,7 +18143,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for SCM, Axis 3</Name>
@@ -18130,7 +18268,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 1</Name>
@@ -18252,7 +18392,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave  Burst, 16 frequencies for EFI Potential, Sensor 2</Name>
@@ -18374,7 +18516,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 3</Name>
@@ -18496,7 +18640,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 4</Name>
@@ -18618,7 +18764,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 5</Name>
@@ -18740,7 +18888,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 16 frequencies for EFI Potential, Sensor 6</Name>
@@ -18862,7 +19012,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffw_16_yaxis</Name>
@@ -19259,7 +19411,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM delta-B (perp to B)</Name>
@@ -19494,7 +19648,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -19729,7 +19885,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -19964,7 +20122,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
@@ -20199,7 +20359,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -20434,7 +20596,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -20669,7 +20833,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
@@ -20904,7 +21070,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 freque ncies for EFI E (parallel to B)</Name>
@@ -21139,7 +21307,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI E (perp to B)</Name>
@@ -21374,7 +21544,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 1</Name>
@@ -21609,7 +21781,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 2</Name>
@@ -21844,7 +22018,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for SCM, Axis 3</Name>
@@ -22079,7 +22255,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 1</Name>
@@ -22313,7 +22491,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 2</Name>
@@ -22547,7 +22727,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 3</Name>
@@ -22781,7 +22963,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 4</Name>
@@ -23015,7 +23199,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies  for EFI Potential, Sensor 5</Name>
@@ -23249,7 +23435,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 32 frequencies for EFI Potential, Sensor 6</Name>
@@ -23483,7 +23671,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffw_32_yaxis</Name>
@@ -23717,7 +23907,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffw_32_time</Name>
@@ -24214,7 +24406,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM delta-B (perp to B)</Name>
@@ -24673,7 +24867,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -25132,7 +25328,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -25591,7 +25789,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field AC Component, Sensors 5 and 6 (axial)</Name>
@@ -26050,7 +26250,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 1 and 2 (spin plane)</Name>
@@ -26509,7 +26711,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 3 and 4 (spin plane)</Name>
@@ -26968,7 +27172,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for E Field DC Component, Sensors 5 and 6 (axial)</Name>
@@ -27427,7 +27633,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (parallel to B)</Name>
@@ -27886,7 +28094,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI E (perp to B)</Name>
@@ -28345,7 +28555,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 1</Name>
@@ -28804,7 +29016,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 2</Name>
@@ -29263,7 +29477,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for SCM, Axis 3</Name>
@@ -29722,7 +29938,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 1</Name>
@@ -30180,7 +30398,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 2</Name>
@@ -30638,7 +30858,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 3</Name>
@@ -31096,7 +31318,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 4</Name>
@@ -31554,7 +31778,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 5</Name>
@@ -32012,7 +32238,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>FFT Power Spectrum in Wave Burst, 64 frequencies for EFI Potential, Sensor 6</Name>
@@ -32470,7 +32698,9 @@ SCM  *The SCM uses an instrument specific set of axes; an orthogonal system cent
           <FillValue>NaN</FillValue>
         </Element>
       </Structure>
-      <Mixed>Fast Fourier Transformation Power Spectra</Mixed>
+      <Mixed>
+        <MixedQuantity>Other</MixedQuantity>
+      </Mixed>
     </Parameter>
     <Parameter>
       <Name>tha_ffw_64_yaxis</Name>

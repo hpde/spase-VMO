@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-      <ReleaseDate>2008-01-07T22:07:51Z</ReleaseDate>
+      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
       <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
       
   Includes also non-TIMAS Data: 
@@ -111,7 +111,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
     <InputResourceID>spase://VHO/NumericalData/WIND/SWE/apbimax</InputResourceID>
     <InputResourceID>spase://VMO/NumericalData/POLAR/MFE/PT06S</InputResourceID>
     <InputResourceID>POLAR EFI</InputResourceID>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Center Epoch for H_Fluence</Name>
       <ParameterKey>H_Epoch</ParameterKey>
       <Description>NSSDC standard-reference time value at the center of the accumulation interval.</Description>
@@ -124,8 +124,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Center Epoch for O_Fluence</Name>
       <ParameterKey>O_Epoch</ParameterKey>
       <Description>NSSDC standard-reference time value at the center of the accumulation interval.</Description>
@@ -138,8 +138,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Center Epoch for He1_Fluence</Name>
       <ParameterKey>He1_Epoch</ParameterKey>
       <Description>NSSDC standard-reference time value at the center of the accumulation interval.</Description>
@@ -152,8 +152,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Center Epoch for He2_Fluence</Name>
       <ParameterKey>He2_Epoch</ParameterKey>
       <Description>NSSDC standard-reference time value at the center of the accumulation interval.</Description>
@@ -166,8 +166,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>H+ Fluence</Name>
       <ParameterKey>H_Fluence</ParameterKey>
       <Description>H+ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
@@ -176,21 +176,19 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>1</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>1</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>O+ Fluence</Name>
       <ParameterKey>O_Fluence</ParameterKey>
       <Description>O+ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
@@ -199,21 +197,19 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>8</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>8</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He+ Fluence</Name>
       <ParameterKey>He1_Fluence</ParameterKey>
       <Description>He+ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
@@ -222,21 +218,19 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He++ Fluence</Name>
       <ParameterKey>He2_Fluence</ParameterKey>
       <Description>He++ Fluence (upward directed flux) at the altitude measured (R) with loss cone correction.</Description>
@@ -245,21 +239,19 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>H+ 1 Sigma Fluence</Name>
       <ParameterKey>H_sigma</ParameterKey>
       <Description>One standard deviation (sigma) of H+ fluence at the altitude measured (R)</Description>
@@ -268,22 +260,20 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>StandardDeviation</ParticleQualifier>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>1</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>StandardDeviation</Qualifier>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>1</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>O+ 1 Sigma Fluence</Name>
       <ParameterKey>O_sigma</ParameterKey>
       <Description>One standard deviation (sigma) of O+ fluence at the altitude measured (R)</Description>
@@ -292,22 +282,20 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>StandardDeviation</ParticleQualifier>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>8</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>StandardDeviation</Qualifier>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>8</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He+ 1 Sigma Fluence</Name>
       <ParameterKey>He1_sigma</ParameterKey>
       <Description>One standard deviation (sigma) of O+ fluence at the altitude measured (R)</Description>
@@ -316,22 +304,20 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>StandardDeviation</ParticleQualifier>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>StandardDeviation</Qualifier>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He++ 1 Sigma Fluence</Name>
       <ParameterKey>He2_sigma</ParameterKey>
       <Description>One standard deviation (sigma) of He++ fluence at the altitude measured (R)</Description>
@@ -340,22 +326,20 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQualifier>StandardDeviation</ParticleQualifier>
-          <ParticleQualifier>Differential</ParticleQualifier>
-          <ParticleQuantity>NumberFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <Qualifier>StandardDeviation</Qualifier>
+        <Qualifier>Differential</Qualifier>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>H+ E_Flux</Name>
       <ParameterKey>H_Eflux</ParameterKey>
       <Description>Net H+ energy flux at the altitude measured (R)</Description>
@@ -364,20 +348,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>1</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>1</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>O+ E_Flux</Name>
       <ParameterKey>O_Eflux</ParameterKey>
       <Description>Net O+ energy flux at the altitude measured (R)</Description>
@@ -386,20 +368,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>8</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>8</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He+ E_Flux</Name>
       <ParameterKey>He1_Eflux</ParameterKey>
       <Description>Net He+ energy flux at the altitude measured (R)</Description>
@@ -408,20 +388,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He++ E_Flux</Name>
       <ParameterKey>He2_Eflux</ParameterKey>
       <Description>Net He++ energy flux at the altitude measured (R)</Description>
@@ -430,20 +408,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-1.0E10</ValidMin>
       <ValidMax>1.0E10</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>H+ 1 Sigma E-Flux</Name>
       <ParameterKey>H_efluxsigma</ParameterKey>
       <Description>One standard deviation (sigma) of H+ energy flux at the altitude measured (R)</Description>
@@ -452,20 +428,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>1</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>1</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>O+ 1 Sigma E-Flux</Name>
       <ParameterKey>O_efluxsigma</ParameterKey>
       <Description>One standard deviation (sigma) of O+ energy flux at the altitude measured (R)</Description>
@@ -474,20 +448,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>8</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>8</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He+ 1 Sigma E-Flux</Name>
       <ParameterKey>He1_efluxsigma</ParameterKey>
       <Description>One standard deviation (sigma) of He+ energy flux at the altitude measured (R)</Description>
@@ -496,20 +468,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>He++ 1 Sigma E-Flux</Name>
       <ParameterKey>He2_efluxsigma</ParameterKey>
       <Description>One standard deviation (sigma) of He++ energy flux at the altitude measured (R)</Description>
@@ -518,20 +488,18 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0.0</ValidMin>
       <ValidMax>128.0</ValidMax>
       <FillValue>128.0</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Ion</ParticleType>
-          <ParticleQuantity>EnergyFlux</ParticleQuantity>
-          <AtomicNumber>2</AtomicNumber>
-          <EnergyRange>
-            <Low>16.0</Low>
-            <High>33298.0</High>
-            <Units>eV/e</Units>
-          </EnergyRange>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Ion</ParticleType>
+        <ParticleQuantity>EnergyFlux</ParticleQuantity>
+        <AtomicNumber>2</AtomicNumber>
+        <EnergyRange>
+          <Low>16.0</Low>
+          <High>33298.0</High>
+          <Units>eV/e</Units>
+        </EnergyRange>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Spins Accumulatated for H+ values</Name>
       <ParameterKey>H_spins</ParameterKey>
       <Description>Number of spins accumulated for H+</Description>
@@ -543,8 +511,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spins Accumulatated for O+ values</Name>
       <ParameterKey>O_spins</ParameterKey>
       <Description>Number of spins accumulated for O+</Description>
@@ -556,8 +524,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spins Accumulatated for He+ values</Name>
       <ParameterKey>He1_spins</ParameterKey>
       <Description>Number of spins accumulated for He+</Description>
@@ -569,8 +537,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spins Accumulatated for He++ values</Name>
       <ParameterKey>He2_spins</ParameterKey>
       <Description>Number of spins accumulated for He++</Description>
@@ -582,8 +550,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>SZA</Name>
       <ParameterKey>SZA</ParameterKey>
       <Description>Solar Zenith angle at the magnetic foot point</Description>
@@ -595,8 +563,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Conjugate SZA</Name>
       <ParameterKey>Conjugate_SZA</ParameterKey>
       <Description>Solar Zenith angle at the Conjugate magnetic foot point</Description>
@@ -608,8 +576,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>SZA Status</Name>
       <ParameterKey>SZA_status</ParameterKey>
       <Description>Quality of the solar zenith angle (SZA) values: 0=good, 99=invalid</Description>
@@ -619,8 +587,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Conjugate SZA Status</Name>
       <ParameterKey>Conjugate_SZA_status</ParameterKey>
       <Description>Quality of the conjugate solar zenith angle (SZA) values: 0=good, 99=invalid</Description>
@@ -630,8 +598,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>H+ Quality Flag</Name>
       <ParameterKey>H_quality</ParameterKey>
       <Description>A quality flag in the range 0-99 with the following values/meanings:
@@ -651,8 +619,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>O+ Quality Flag</Name>
       <ParameterKey>O_quality</ParameterKey>
       <Description>A quality flag in the range 0-99 with the following values/meanings:
@@ -672,8 +640,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>He+ Quality Flag</Name>
       <ParameterKey>He1_quality</ParameterKey>
       <Description>A quality flag in the range 0-99 with the following values/meanings:
@@ -693,8 +661,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>He++ Quality Flag</Name>
       <ParameterKey>He2_quality</ParameterKey>
       <Description>A quality flag in the range 0-99 with the following values/meanings:
@@ -714,8 +682,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Geocentric Distance</Name>
       <ParameterKey>R</ParameterKey>
       <Description>Geocentric Distance</Description>
@@ -731,8 +699,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>L parameter</Name>
       <ParameterKey>L</ParameterKey>
       <Description>MacIlwain L Parameter</Description>
@@ -744,8 +712,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>MLT</Name>
       <ParameterKey>MLT</ParameterKey>
       <Description>Magnetic Local Time</Description>
@@ -761,8 +729,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>LT</Name>
       <ParameterKey>LocT</ParameterKey>
       <Description>Local Time</Description>
@@ -773,8 +741,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Mlat</Name>
       <ParameterKey>Mlat</ParameterKey>
       <Description>Magnetic Latitude</Description>
@@ -789,8 +757,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>INVL</Name>
       <ParameterKey>ILA</ParameterKey>
       <Description>Invariant Latitude</Description>
@@ -805,8 +773,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>B</Name>
       <ParameterKey>MagField</ParameterKey>
       <Description>Average magnetic field vector in GSM coordinates at Polar (Uses 
@@ -822,7 +790,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         <Size>3</Size>
         <Element>
           <Name>-Bx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-100000.0</ValidMin>
           <ValidMax>100000.0</ValidMax>
@@ -830,7 +798,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         </Element>
         <Element>
           <Name>-By</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-100000.0</ValidMin>
           <ValidMax>100000.0</ValidMax>
@@ -838,22 +806,20 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         </Element>
         <Element>
           <Name>-Bz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-100000.0</ValidMin>
           <ValidMax>100000.0</ValidMax>
           <FillValue>-1.0E31</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Average</Qualifier>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>SC Potential</Name>
       <ParameterKey>SC_Potential</ParameterKey>
       <Description>Space craft potential from EFI</Description>
@@ -862,13 +828,11 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>-50.0</ValidMin>
       <ValidMax>100.0</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Field>
-          <FieldQuantity>Potential</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <FieldQuantity>Potential</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>IMF</Name>
       <ParameterKey>Imf_Gsm</ParameterKey>
       <Description>Time delayed Wind IFM Magnetic Field from WIND spacecraft in GSM Coordinates</Description>
@@ -882,7 +846,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         <Size>3</Size>
         <Element>
           <Name>IMF Bx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-100000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -890,7 +854,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         </Element>
         <Element>
           <Name>IMF By</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-100000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
@@ -898,22 +862,20 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         </Element>
         <Element>
           <Name>IMF Bz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-100000.0</ValidMin>
           <ValidMax>1000.0</ValidMax>
           <FillValue>-1.0E31</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Field>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Average</Qualifier>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>SW Pressure</Name>
       <ParameterKey>SW_pressure</ParameterKey>
       <Description>Time lagged solar wind dynamic pressure from WIND observations</Description>
@@ -922,14 +884,12 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0</ValidMin>
       <ValidMax>100</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>SW density</Name>
       <ParameterKey>SW_density</ParameterKey>
       <Description>Time lagged solar wind density from WIND observations</Description>
@@ -937,14 +897,12 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <ValidMin>0</ValidMin>
       <ValidMax>100</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>V</Name>
       <ParameterKey>SW_velocity</ParameterKey>
       <Description>Time lagged Solar wind velocity from WIND in GSM Coordinates</Description>
@@ -958,7 +916,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         <Size>3</Size>
         <Element>
           <Name>Vx</Name>
-          <Component>X</Component>
+          <Component>I</Component>
           <Index>1</Index>
           <ValidMin>-700.0</ValidMin>
           <ValidMax>700.0</ValidMax>
@@ -966,7 +924,7 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         </Element>
         <Element>
           <Name>Vy</Name>
-          <Component>Y</Component>
+          <Component>J</Component>
           <Index>2</Index>
           <ValidMin>-700.0</ValidMin>
           <ValidMax>700.0</ValidMax>
@@ -974,21 +932,19 @@ This is a summary data base.It does not contain detailed energy step and pitch a
         </Element>
         <Element>
           <Name>Vz</Name>
-          <Component>Z</Component>
+          <Component>K</Component>
           <Index>3</Index>
           <ValidMin>-700.0</ValidMin>
           <ValidMax>700.0</ValidMax>
           <FillValue>-1.0E31</FillValue>
         </Element>
       </Structure>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>FEC counts</Name>
       <ParameterKey>Fec</ParameterKey>
       <Description>Average counts per spin in the  fast event counter</Description>
@@ -1000,8 +956,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Background counts</Name>
       <ParameterKey>Bcr</ParameterKey>
       <Description>Average background counts per spin</Description>
@@ -1012,8 +968,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Energy Range</Name>
       <ParameterKey>Energy_range</ParameterKey>
       <Description>TIMAS is operated in one of 3  energy ranges. Energy_Range ID indicates which of the 3 instrumental energy ranges is currently active. Energy Range Identification: 0: Full energy range;  1: Reduced energy range;  2: Low energy range</Description>
@@ -1023,8 +979,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Hzero Intervals</Name>
       <ParameterKey>Intervals</ParameterKey>
       <Description># of intervals in the po_H0_tim data file included in the average reported here. These values should be compared with X_spins where = H, O He1 and He2</Description>
@@ -1034,8 +990,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>SCPot Status</Name>
       <ParameterKey>SCPot_status</ParameterKey>
       <Description>Quality of the SC potential value obtained from EFI: 0=good 99=invalid</Description>
@@ -1045,8 +1001,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>IMF_status</Name>
       <ParameterKey>IMF_status</ParameterKey>
       <Description>Quality of the IMF_status values: 0=good 99=invalid</Description>
@@ -1056,8 +1012,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>SW Status</Name>
       <ParameterKey>SW_status</ParameterKey>
       <Description>Quality of the SW data: 0=good 99=invalid</Description>
@@ -1067,8 +1023,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Mag Status</Name>
       <ParameterKey>Mag_status</ParameterKey>
       <Description>Quality of the Polar magnetometer data: 0=good 99=invalid</Description>
@@ -1078,8 +1034,8 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Orbit Status</Name>
       <ParameterKey>Orbit_status</ParameterKey>
       <Description>Quality of the Polar ephemeris data: 0=good 99=invalid</Description>
@@ -1089,6 +1045,6 @@ This is a summary data base.It does not contain detailed energy step and pitch a
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>
