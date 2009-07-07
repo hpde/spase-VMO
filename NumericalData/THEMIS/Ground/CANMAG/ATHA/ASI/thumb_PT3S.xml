@@ -26,6 +26,11 @@ Martin Connors for building the Athabasca Station, S. Mende and E. Donovan for u
         <PersonID>spase://SMWG/Person/Eric.Donovan</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
+      <InformationURL>
+        <Name>THEMIS Summary Plots</Name>
+        <URL>http://themis.ssl.berkeley.edu/gbo/display.py?view_type=summary</URL>
+        <Description>Summary plots containing ASI thumbnail images; useful for determining when ASI data exists.</Description>
+      </InformationURL>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
@@ -44,7 +49,7 @@ Martin Connors for building the Athabasca Station, S. Mende and E. Donovan for u
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2005-10-01T04:00:00</StartDate>
-        <RelativeStopDate>P7D</RelativeStopDate>
+        <RelativeStopDate>-P7D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT3S</Cadence>
     </TemporalDescription>
