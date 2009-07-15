@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/WDC/Rude-Skov/Magnetometer/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>Rude Skov Fluxgate Magnetometer Data</ResourceName>
       <AlternateName/>
-      <ReleaseDate>2009-05-20T23:06:08Z</ReleaseDate>
+      <ReleaseDate>2009-07-15T21:59:10Z</ReleaseDate>
       <ExpirationDate>2099-12-31T23:59:59.999</ExpirationDate>
       <Description>Rude Skov Magnetometer PT1H data; Station Id: RSV; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
       <Acknowledgement>Solar-Terrestrial Physics Division, Danish Meteorological Institute</Acknowledgement>
@@ -119,19 +119,19 @@
         <Description>Rude Skov Magnetic Field Data in XYZ Coordinates</Description>
         <Element>
           <Name>X</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>X</ParameterKey>
         </Element>
         <Element>
           <Name>Y</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Y</ParameterKey>
         </Element>
         <Element>
           <Name>Z</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Z</ParameterKey>
         </Element>

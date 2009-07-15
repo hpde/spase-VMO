@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
-  <Version>1.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/WDC/Bear-Island/Magnetometer/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>Bear Island Fluxgate Magnetometer Data</ResourceName>
       <AlternateName/>
-      <ReleaseDate>2008-08-27T07:44:29Z</ReleaseDate>
+      <ReleaseDate>2009-07-15T21:59:04Z</ReleaseDate>
       <ExpirationDate>2099-12-31T23:59:59.999</ExpirationDate>
       <Description>Bear Island Magnetometer PT1H data; Station Id: BJN; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
       <Acknowledgement>University of Tromso, The Auroral Observatory, Norway</Acknowledgement>
@@ -23,7 +23,6 @@
         <URL>http://www.wdc.bgs.ac.uk/catalog/intro.html</URL>
         <Description>Download web site for magnetometer data from the WDC</Description>
       </InformationURL>
-      <AssociationID>spase://SMWG/Instrument/WDC/Bear-Island/Magnetometer</AssociationID>
       <PriorID>spase://VMO/NumericalData/WDC/Bear-Island/Magnetometer/PT1H</PriorID>
     </ResourceHeader>
     <AccessInformation>
@@ -38,7 +37,7 @@
       <Format>Text</Format>
       <Encoding>ASCII</Encoding>
       <DataExtent>
-        <Bytes>178120</Bytes>
+        <Quantity>178120</Quantity>
         <Units>bytes</Units>
         <Per>P1Y</Per>
       </DataExtent>
@@ -53,7 +52,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1987-01-01T00:00:00.000</StartDate>
-        <EndDate>2005-12-31T23:00:00.000</EndDate>
+        <StopDate>2005-12-31T23:00:00.000</StopDate>
         <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
       </TimeSpan>
       <Cadence>PT1H</Cadence>
@@ -62,12 +61,11 @@
     <Caveats/>
     <Keyword/>
     <InputResourceID>N/A</InputResourceID>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Universal Time</Name>
       <ParameterKey>Time</ParameterKey>
       <Description>Time is expressed using a five column format with the following order:  year, month, day, hour, and minute, each stored in interger format.  The time columns are the first five columns in the flat file.</Description>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>5</Size>
         <Description>Universal Time expressed using a 5-column year, month, day, hour, minute representation</Description>
         <Element>
@@ -96,9 +94,11 @@
           <ParameterKey>Minute</ParameterKey>
         </Element>
       </Structure>
-      <Support>Temporal</Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Bear Island PT1H Magnetic Field DHZ</Name>
       <ParameterKey>B Field DHZ</ParameterKey>
       <Description>Bear Island PT1H Magnetic Field DHZ</Description>
@@ -111,24 +111,23 @@
         <CoordinateSystemName>CGM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Description>Bear Island Magnetic Field Data in DHZ Coordinates</Description>
         <Element>
           <Name>D</Name>
-          <Component>Phi</Component>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>1</Index>
           <ParameterKey>D</ParameterKey>
         </Element>
         <Element>
           <Name>H</Name>
-          <Component>R</Component>
+          <Qualifier>Projection.IJ</Qualifier>
           <Index>2</Index>
           <ParameterKey>H</ParameterKey>
         </Element>
         <Element>
           <Name>Z</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Z</ParameterKey>
         </Element>
@@ -136,12 +135,10 @@
       <ValidMin>-60000</ValidMin>
       <ValidMax>60000</ValidMax>
       <FillValue>-99999</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
   </NumericalData>
 </Spase>

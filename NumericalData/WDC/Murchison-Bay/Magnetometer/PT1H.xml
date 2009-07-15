@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/WDC/Murchison-Bay/Magnetometer/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>Murchison Bay Fluxgate Magnetometer Data</ResourceName>
       <AlternateName/>
-      <ReleaseDate>2009-05-20T23:06:06Z</ReleaseDate>
+      <ReleaseDate>2009-07-15T21:59:09Z</ReleaseDate>
       <ExpirationDate>2099-12-31T23:59:59.999</ExpirationDate>
       <Description>Murchison Bay Magnetometer PT1H data; Station Id: MUB; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
       <Acknowledgement>N/A</Acknowledgement>
@@ -99,32 +99,22 @@
       </Support>
     </Parameter>
     <Parameter>
-      <Name>Murchison Bay PT1H Magnetic Field XYZ</Name>
+      <Name>Murchison Bay PT1H Magnetic Field Z component</Name>
       <ParameterKey>B Field XYZ</ParameterKey>
-      <Description>Murchison Bay PT1H Magnetic Field XYZ</Description>
+      <Description>Murchison Bay PT1H Magnetic Field XYZ, Z component</Description>
       <Caveats>No X-component data are in the data set.  No Y-component data are in the data set.</Caveats>
       <Cadence>PT1H</Cadence>
       <Units>nT</Units>
-      <UnitsConversion>10^9 nT/T</UnitsConversion>
+      <UnitsConversion>10^9 nT&gt;T</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>CGM</CoordinateSystemName>
       </CoordinateSystem>
-      <Structure>
-        <Size>1</Size>
-        <Description>Murchison Bay Magnetic Field Data in XYZ Coordinates</Description>
-        <Element>
-          <Name>Z</Name>
-          <Component>K</Component>
-          <Index>1</Index>
-          <ParameterKey>Z</ParameterKey>
-        </Element>
-      </Structure>
       <ValidMin>-60000</ValidMin>
       <ValidMax>60000</ValidMax>
       <FillValue>-99999</FillValue>
       <Field>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Component.K</Qualifier>
         <FieldQuantity>Magnetic</FieldQuantity>
       </Field>
     </Parameter>

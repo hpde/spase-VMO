@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_2_0.xsd">
-  <Version>1.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/WDC/San-Fernando/Magnetometer/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>San Fernando Fluxgate Magnetometer Data</ResourceName>
       <AlternateName/>
-      <ReleaseDate>2007-10-17T09:51:16.000</ReleaseDate>
+      <ReleaseDate>2009-07-15T21:59:11Z</ReleaseDate>
       <ExpirationDate>2099-12-31T23:59:59.999</ExpirationDate>
       <Description>San Fernando Magnetometer PT1M data; Station Id: SFS; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
       <Acknowledgement>Real Instituto y Observatorio de la Armada, Seccion de Geofisica</Acknowledgement>
@@ -27,7 +27,6 @@
         <URL>http://www.wdc.bgs.ac.uk/catalog/intro.html</URL>
         <Description>Download web site for magnetometer data from the WDC</Description>
       </InformationURL>
-      <AssociationID>spase://SMWG/Instrument/WDC/San-Fernando/Magnetometer</AssociationID>
       <PriorID>spase://VMO/NumericalData/WDC/San-Fernando/Magnetometer/PT1M</PriorID>
     </ResourceHeader>
     <AccessInformation>
@@ -42,7 +41,7 @@
       <Format>Text</Format>
       <Encoding>ZIP</Encoding>
       <DataExtent>
-        <Bytes>1196352</Bytes>
+        <Quantity>1196352</Quantity>
         <Units>bytes</Units>
         <Per>P1M</Per>
       </DataExtent>
@@ -57,7 +56,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2005-01-01T00:00:00.000</StartDate>
-        <EndDate>2005-12-31T23:59:00.000</EndDate>
+        <StopDate>2005-12-31T23:59:00.000</StopDate>
         <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
       </TimeSpan>
       <Cadence>PT1M</Cadence>
@@ -66,12 +65,11 @@
     <Caveats/>
     <Keyword/>
     <InputResourceID>N/A</InputResourceID>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Universal Time</Name>
       <ParameterKey>Time</ParameterKey>
       <Description>Time is expressed using a five column format with the following order:  year, month, day, hour, and minute, each stored in interger format.  The time columns are the first five columns in the flat file.</Description>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>5</Size>
         <Description>Universal Time expressed using a 5-column year, month, day, hour, minute representation</Description>
         <Element>
@@ -100,9 +98,11 @@
           <ParameterKey>Minute</ParameterKey>
         </Element>
       </Structure>
-      <Support>Temporal</Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>San Fernando PT1M Magnetic Field XYZ</Name>
       <ParameterKey>B Field XYZ</ParameterKey>
       <Description>San Fernando PT1M Magnetic Field XYZ</Description>
@@ -115,24 +115,23 @@
         <CoordinateSystemName>CGM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
-        <StructureType>Vector</StructureType>
         <Size>3</Size>
         <Description>San Fernando Magnetic Field Data in XYZ Coordinates</Description>
         <Element>
           <Name>X</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>X</ParameterKey>
         </Element>
         <Element>
           <Name>Y</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Y</ParameterKey>
         </Element>
         <Element>
           <Name>Z</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Z</ParameterKey>
         </Element>
@@ -140,14 +139,12 @@
       <ValidMin>-60000</ValidMin>
       <ValidMax>60000</ValidMax>
       <FillValue>-99999</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>San Fernando PT1M Magnetic Field Magnitude</Name>
       <ParameterKey>B Total</ParameterKey>
       <Description>San Fernando PT1M Magnetic Field Magnitude</Description>
@@ -155,26 +152,13 @@
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <UnitsConversion>10^9 nT/T</UnitsConversion>
-      <Structure>
-        <StructureType>Scalar</StructureType>
-        <Size>1</Size>
-        <Description>B Total</Description>
-        <Element>
-          <Name>B Total</Name>
-          <Component>R</Component>
-          <Index>1</Index>
-          <ParameterKey>B Total</ParameterKey>
-        </Element>
-      </Structure>
       <ValidMin>0</ValidMin>
       <ValidMax>60000</ValidMax>
       <FillValue>-99999</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Magnitude</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
   </NumericalData>
 </Spase>
