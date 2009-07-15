@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd"
+ xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd"
  xmlns="http://www.spase-group.org/data/schema">
-  <Version>1.3.0</Version>
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/GOES9/MAG/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 9 Magnetometer 1-Minute Data</ResourceName>
-      <ReleaseDate>2009-05-28T21:20:31Z</ReleaseDate>
+      <ReleaseDate>2009-07-15T22:15:10Z</ReleaseDate>
       <Description>The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available 
         from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems: 
         (1) Spacecraft P,E,N (2) GSM x,y,z and (3) GSE x,y,z.  Spacecraft magnetic field is defined as: P - perpendicular to the spacecraft
@@ -54,7 +54,7 @@
     </TemporalDescription>
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <Keyword>Magnetic field</Keyword>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Epoch</Name>
       <ParameterKey>Epoch</ParameterKey>
       <Description>Epoch of the data point</Description>
@@ -68,8 +68,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Time PB5</Name>
       <ParameterKey>Time_PB5</ParameterKey>
       <Description>Time array in the form [year, day of year, millisecond]</Description>
@@ -82,8 +82,8 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field Vector GSE</Name>
       <ParameterKey>B_GSE_c</ParameterKey>
       <Description>Magnetic Field vector in GSE coordinates</Description>
@@ -96,31 +96,29 @@
       <Structure>
         <Element>
           <Name>Xgse</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
         </Element>
         <Element>
           <Name>Ygse</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
         </Element>
         <Element>
           <Name>Zgse</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
         </Element>
       </Structure>
       <ValidMin>-600.00</ValidMin>
       <ValidMax>600.00</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-      <Measured>
         <Field>
-          <FieldQualifier>Vector</FieldQualifier>
+          <Qualifier>Vector</Qualifier>
           <FieldQuantity>Magnetic</FieldQuantity>
         </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field vector GSM</Name>
       <ParameterKey>B_GSM_c</ParameterKey>
       <Description>Magnetic Field vector in GSM coordinates</Description>
@@ -133,31 +131,29 @@
       <Structure>
         <Element>
           <Name>Xgsm</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
         </Element>
         <Element>
           <Name>Ygsm</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
         </Element>
         <Element>
           <Name>Zgsm</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
         </Element>
       </Structure>
       <ValidMin>-600.0</ValidMin>
       <ValidMax>600.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-      <Measured>
         <Field>
-          <FieldQualifier>Vector</FieldQualifier>
+          <Qualifier>Vector</Qualifier>
           <FieldQuantity>Magnetic</FieldQuantity>
         </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Magnetic Field vector spacecraft coordinates</Name>
       <ParameterKey>B_lcl_c</ParameterKey>
       <Description>Magnetic Field vector in spacecraft coordinates. Spacecraft magnetic field (P,E,N) is defined as: P - perpendicular to the spacecraft
@@ -172,31 +168,29 @@
       <Structure>
         <Element>
           <Name>P</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
         </Element>
         <Element>
           <Name>E</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
         </Element>
         <Element>
           <Name>N</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
         </Element>
       </Structure>
       <ValidMin>-600.0</ValidMin>
       <ValidMax>600.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-      <Measured>
         <Field>
-          <FieldQualifier>Vector</FieldQualifier>
+          <Qualifier>Vector</Qualifier>
           <FieldQuantity>Magnetic</FieldQuantity>
         </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Position Geographic</Name>
       <ParameterKey>SC_pos_ll</ParameterKey>
       <Description>Spacecraft position in Geographic coordinates</Description>
@@ -209,7 +203,7 @@
       <Structure>
         <Element>
           <Name>Latitude</Name>
-          <Component>Theta</Component>
+          <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
           <Index>1</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -217,7 +211,7 @@
         </Element>
         <Element>
           <Name>Longitude</Name>
-          <Component>Phi</Component>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>0</ValidMin>
@@ -225,7 +219,7 @@
         </Element>
         <Element>
           <Name>Radius</Name>
-          <Component>R</Component>
+          <Qualifier>Magnitude</Qualifier>
           <Index>3</Index>
           <Units>km</Units>
           <ValidMin>50</ValidMin>
@@ -236,8 +230,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft position GEO</Name>
       <ParameterKey>SC_pos_eo</ParameterKey>
       <Description>Spacecraft position in GEO coordinates</Description>
@@ -250,17 +244,17 @@
       <Structure>
         <Element>
           <Name>X GEO</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
         </Element>
         <Element>
           <Name>Y GEO</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
         </Element>
         <Element>
           <Name>Z GEO</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
         </Element>
       </Structure>
@@ -270,8 +264,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft Position GSE</Name>
       <ParameterKey>SC_pos_se</ParameterKey>
       <Description>Spacecraft position in GSE coordinates</Description>
@@ -301,8 +295,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft position GSM</Name>
       <ParameterKey>SC_pos_sm</ParameterKey>
       <Description>Spacecraft position in GSM coordinates</Description>
@@ -323,7 +317,7 @@
         </Element>
         <Element>
           <Name>Z GSM</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
         </Element>
       </Structure>
@@ -333,8 +327,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>MGF Instrument Status</Name>
       <ParameterKey>MGF_stat</ParameterKey>
       <Description>Status of the magnetic field instrument; 0 = ok, 1 = minor problem, 2 = major problem, 3 = missing data</Description>
@@ -342,8 +336,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Mag post-gap flag</Name>
       <ParameterKey>B_flag</ParameterKey>
       <Description>Magnetic field data flag; 0 = no gap, 1 = data not available</Description>
@@ -351,8 +345,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft post-gap flag</Name>
       <ParameterKey>SC_flag</ParameterKey>
       <Description>Spacecraft location data flag; 0 = no gap, 1 = data not available</Description>
@@ -360,6 +354,6 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
+    </Parameter>
   </NumericalData>
 </Spase>
