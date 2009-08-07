@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://www.spase-group.org/data/schema" 
+		xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
+  <Version>2.0.0</Version>
+  <DisplayData>
+    <ResourceID>spase://VMO/NumericalData/POLAR/UVI/KP-Mosaics</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Polar UVI KP Mosaics</ResourceName>
+      <ReleaseDate>2009-08-01T00:00:00</ReleaseDate>
+      <Description>
+The Ultraviolet Imager (UVI) is a small camera that detected and produced images of the ultraviolet light of the aurora, day and night.  
+Using any of five specially designed filters the UVI camera imaged an eight degree circular field of view.  Key Parameter (KP) images 
+are calculated at nominal 5-10 minute intervals at spacecraft altitudes above 6 Re.  The UVI KP image is background subtracted and 
+calibrated to radiance values (photon cm^-2 cm^-1). The data is a rectangular two-dimensional array (228 rows x 200 columns). Only a 
+circular region of the rectangular array contains valid image data.  The UVI KP Image Archive 
+(http://tideuvira.nsstc.nasa.gov/uvi/kpgs-Data.htm) allows the user to look at all the KP Mosaics for a selected month.  The gif or png 
+plot files contain the up to 35 KP images taken with the LBHL filter.   Reference images are also provided showing the location of the 
+UVI field of view relative to continental outlines.
+	 </Description>
+      <Contact>
+        <PersonID>spase://SMWG/Person/George.K.Parks</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Peggy.Sloan</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+	  <InformationURL>
+	  	<Name>UVI Home Page</Name>
+		<URL>http://tideuvira.nsstc.nasa.gov/uvi/</URL>
+		<Description>
+The Polar Ultraviolet Imager (UVI) Home Page contains links that describe the instrument, its operation, allow the 
+user to view 36 second images and key parameter mosaics from the mission and download software, plus links 
+to the UVI data archive, to lists of UVI publications and presentations, and several miscellaneous mission sites.
+		</Description>
+	  </InformationURL>
+    </ResourceHeader>
+
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/NSSTC/POLAR.UVI</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>UVI KP Image Archive</Name>
+        <URL>http://tideuvira.nsstc.nasa.gov/uvi/kpgs-Data.htm</URL>
+      </AccessURL>
+      <Format>GIF</Format>
+    </AccessInformation>
+
+    <ProviderProcessingLevel>Calibrated</ProviderProcessingLevel>
+	<ProviderVersion>Level 1</ProviderVersion> 
+    <InstrumentID>spase://SMWG/Instrument/POLAR/UVI</InstrumentID>
+    <MeasurementType>ImageIntensity</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>1996-03-23T00:00:00</StartDate>
+        <StopDate>2008-02-10T23:59:59</StopDate>
+      </TimeSpan>
+    </TemporalDescription>
+    <SpectralRange>Ultraviolet</SpectralRange>
+    <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+    <Caveats>
+UVI Key Parameters are summary data only.  In some cases parameters such as pointing and calibration were not adequate to 
+support quantitative scientific analysis.  They should not to be used for presentation, publication, or analysis. The UVI KP CDF files 
+only contain output for normal instrument mode when the spacecraft is in 9.2 second science telemetry mode.  No Key Parameters 
+are produced when the spacecraft is in maneuver telemetry mode, when UVI is in star (fast) mode, and when the despun platform 
+is pointed away from the earth.
+    </Caveats>
+
+    <Parameter>
+      <Name>Kp Mosaic</Name>
+      <Description>
+Key Parameter (KP) images are taken at nominal 5-10 minute intervals at spacecraft altitudes above 6 Re.  The UVI KP image is background subtracted 
+and calibrated to radiance values (photon cm^-2 cm^-1). The data is a rectangular two-dimensional array (228 rows x 200 columns). 
+Only a circular region of the rectangular array contains valid image data.  The UVI KP Image Archive allows the user to look at all the KP 
+Mosaics for a selected month.  The gif or png plot files contain the up to 35 KP images taken with the LBHL filter.   Reference images 
+are also provided showing the location of the UVI field of view relative to continental outlines.
+     </Description>
+     <Units>cm^-2 cm^-1</Units>
+      <Structure>
+        <Size>228 200</Size>
+      </Structure>
+      <Wave>
+        <Qualifier>Integral</Qualifier>
+        <WaveType>Photon</WaveType>
+        <WaveQuantity>Intensity</WaveQuantity>
+        <WavelengthRange>
+			<SpectralRange>Ultraviolet</SpectralRange>
+          <Low>125</Low>
+          <High>190</High>
+      		<Units>nanometers</Units>
+			<Bin>
+				<BandName>1304 filter</BandName>
+				<Low>125</Low>
+				<High>135</High>
+			</Bin>
+			<Bin>
+				<BandName>1356 filter</BandName>
+				<Low>128</Low>
+				<High>142</High>
+			</Bin>
+			<Bin>
+				<BandName>LBHS filter</BandName>
+				<Low>135</Low>
+				<High>160</High>
+			</Bin>
+			<Bin>
+				<BandName>LBHL filter</BandName>
+				<Low>160</Low>
+				<High>190</High>
+			</Bin>
+			<Bin>
+				<BandName>SOLR filter</BandName>
+				<Low>175</Low>
+				<High>190</High>
+			</Bin>
+        </WavelengthRange>
+      </Wave>
+    </Parameter>
+
+  </DisplayData>
+</Spase>
