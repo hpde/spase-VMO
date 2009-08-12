@@ -90,10 +90,9 @@ view the full size gif and get a link to the pdf.
             <AccessURL>
                 <Name>TIDE NSSTC Summary Plot Gifwalk</Name>
                 <URL>http://tideuviRA.nsstc.nasa.gov/tide/summary_plots.html/</URL>
+                <Description>PDF and JPEG formats are also available via this access url</Description>
             </AccessURL>
             <Format>GIF</Format>
-            <Format>PDF</Format>
-            <Format>JPEG</Format>
         </AccessInformation> 
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/POLAR.TIDE</RepositoryID>
@@ -102,10 +101,9 @@ view the full size gif and get a link to the pdf.
             <AccessURL>
                 <Name>TIDE GSFC Summary Plot Gifwalk</Name>
                 <URL>http://tide.gsfc.nasa.gov/summary_plots.shtml/</URL>
+                <Description>PDF and JPEG formats are also available via this access url</Description>
             </AccessURL>
             <Format>GIF</Format>
-            <Format>PDF</Format>
-            <Format>JPEG</Format>
         </AccessInformation> 
 
 		<ProcessingLevel>Calibrated</ProcessingLevel> 
