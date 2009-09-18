@@ -63,7 +63,7 @@ TIDE H0 CDFs.
             <Format>CDF</Format>
         </AccessInformation>
         <AccessInformation>
-		  <RepositoryID>spase://SMWG/Repository/NSSTC/POLAR.TIDE.UVI</RepositoryID>
+		  <RepositoryID>spase://SMWG/Repository/NASA/NSSTC/POLAR.TIDE.UVI</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
         	<AccessURL>

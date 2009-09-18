@@ -46,7 +46,7 @@ and the processing software.
         </ResourceHeader>
 
         <AccessInformation>
-		  <RepositoryID>spase://SMWG/Repository/NSSTC/POLAR.TIDE</RepositoryID>
+		  <RepositoryID>spase://SMWG/Repository/NASA/NSSTC/POLAR.TIDE</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
         	<AccessURL>
