@@ -7,7 +7,7 @@
         <ResourceID>spase://VMO/NumericalData/POLAR/TIDE/Level-zero</ResourceID>
         <ResourceHeader>
             <ResourceName>Polar TIDE Level-zero telemetry files</ResourceName>
-            <ReleaseDate>2009-08-01T00:00:00</ReleaseDate>
+            <ReleaseDate>2009-09-18T00:00:00</ReleaseDate>
             <Description>
 TIDE level-zero processing software provides several analysis and display options with an extensive list of processing options.  The 
 TIDE team has provided websites that allow users to process data from the web and then download the processed datafiles and 
@@ -46,7 +46,7 @@ and the processing software.
         </ResourceHeader>
 
         <AccessInformation>
-		  <RepositoryID>spase://SMWG/Repository/NASA/NSSTC/POLAR.TIDE</RepositoryID>
+		  <RepositoryID>spase://SMWG/Repository/NSSTC/POLAR.TIDE</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
         	<AccessURL>
@@ -101,17 +101,16 @@ TIDE was originally designed to detect mass-resolved ions, H+, O+, He+, and NO+,
 bins, and 7 polar angle channels.  The detection of time-of-flight direct-events deteriorated rapidly early in the mission, reducing the 
 ability to resolve ion masses and resulting in the lost of information in one axis (Z). After 09/30/96, the ion data is of poor quality and 
 as a result, only Total Ions (Stops) are reported starting 12/08/96. Total Ions is the sum over the 7 polar angle channels of the particle 
-counts detected by the Stop microchannel plate (MCP) detectors. The resolution in the 32 energy steps (31 reported) and in the 32 
-spin angle bins is retained. 1996 H+, O+, and He+ data are reported in the TIDE H0 CDFs.  In order to avoid damage to the MCPs, 
-starting 03/27/96 and continuing throughout the rest of the mission, the high voltage on the MCPs is reduced during radiation belt 
-passes.
+counts detected by the Stop microchannel plate (MCP) detectors. The resolution in the 32 energy steps and in the 32 spin angle bins 
+is retained. 1996 H+, O+, and He+ data are reported in the TIDE H0 CDFs.  In order to avoid damage to the MCPs, starting 03/27/96 
+and continuing throughout the rest of the mission, the high voltage on the MCPs is reduced during radiation belt passes.
 		</Caveats>
 
         <Parameter>
             <Name>Major Frame</Name>
             <Description>
 Each record in the TIDE level-zero file contains a major frame header followed by the bytes for the 250 minor frames that make up a 
-major frame.  A major frame is reported every 9.2 seconds for a single day.  The length of a minor frame various depending on the 
+major frame.  A major frame is reported every 9.2 seconds for a single day.  The length of a minor frame varies depending on the 
 mode the Polar Spacecraft is in: for science mode 1, the TIDE minor frames are 22 bytes long.  For science mode 2 (contingency), 
 the minor frames are 43 bytes long.  The first three bytes contain TIDE housekeeping bytes or fill data (000).  The remaining bytes 
 contain TIDE science data products (see Science Data Products Parameter) or fill data.  
@@ -166,15 +165,15 @@ the TIDE data archive at either http://tideuvira.nsstc.nasa.gov/tide/archive/dat
         <Parameter>
 			<Name>ion mask</Name>
             <Description>
-There is a photon leak in the TIDE instrument that causes high counts whenever TIDE encounters the sun. There is one large pulse 
-and one small pulse every spin of the spacecraft, about every 6 seconds. The ion mask is used to subtract the sun pulse and 
-background noise. Once every other day at a point near apogee where few counts are expected the MCPs are shut down for a couple 
-of superspins (32 spins/superspin) so that only background counts and sun pulses are detected. The count rate data collected 
-during this time are then averaged to get the background mask. The mask file is a binary file that contains an averaged background 
-count for each energy (31), spin angle (32), polar angle (7), and mass (6). For 04/01/96 through 12/07/06, the mask files contain a 
-mask for each of the ions (H+, He+, O+, He++, molecular ions, and Singles). For Total Ions (Stops) data from 12/08/96 through 
-04/15/08, the mask file is mostly zeros with masks created for H+ (never used) and for Stops. The Stops mask is a 31 x 32 
-(energy versus spin angle) array stored in channel 3 (polar angle), mass 4. For Stops the rest of the array is zeros.
+The TIDE instrument recorded high counts centered on two different spin angles and resulting from solar photons. There is one large 
+pulse (centered on the sun direction) and one small pulse (at high spin angles) every spin of the spacecraft, about every 6 seconds. 
+The ion mask is used to subtract the sun pulse and background noise. Once every other day at a point near apogee where few counts 
+are expected the MCPs are shut down for a couple of superspins (32 spins/superspin) so that only background counts and sun pulses 
+are detected. The count rate data collected during this time are then averaged to get the background mask. The mask file is a binary file 
+that contains an averaged background count for each energy (31), spin angle (32), polar angle (7), and mass (6). From 04/01/96 to 
+12/07/06, the mask files contain a mask for each of the ions (H+, He+, O+, He++, molecular ions, and Singles). For Total Ions (Stops) data 
+from 12/08/96 to 04/15/08, the mask file is mostly zeros with masks created for H+ (never used) and for Stops. The Stops mask is a 
+31 x 32 (energy versus spin angle) array stored in channel 3 (polar angle), mass 4. For Stops the rest of the array is zeros.
 			</Description>
             <Units>floating point counts</Units>
             <Structure>
@@ -186,7 +185,7 @@ mask for each of the ions (H+, He+, O+, He++, molecular ions, and Singles). For 
         </Parameter>
 
         <Parameter>
-            <Name>Polar Orbit CDFs</Name>
+            <Name>Polar Orbit</Name>
             <Description>
 The Polar Orbit CDF files are used by the TIDE level-zero processing software as plot labeling information and in the calculation of 
 moments and phase space density velocity distributions.  Parameters include spacecraft location and velocity (GSE and GSM), 
@@ -198,7 +197,7 @@ magnetic local time, magnetic latitude, and l-shell.
         </Parameter>
 
         <Parameter>
-            <Name>Polar Attitude CDFs</Name>
+            <Name>Polar Attitude</Name>
             <Description>
 The Polar Attitude CDF files are used by the TIDE level-zero processing software in the calculation of moments and phase space 
 density velocity distributions.  Parameters include spacecraft right ascension and declination (GSE and GSM).
