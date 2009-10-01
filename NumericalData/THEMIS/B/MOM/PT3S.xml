@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>THEMIS-B:  On Board moments:  ESA and SST Electron/Ion moments, density, flux, velocity, pressure and temperature.</ResourceName>
       <AlternateName>THEMIS-B MOM</AlternateName>
-      <ReleaseDate>2009-05-20T23:06:03Z</ReleaseDate>
+      <ReleaseDate>2009-10-01T13:15:00Z</ReleaseDate>
       <Description>THEMIS-B On Board moments.  On board data outputs include number density, particle flux, energy flux, and a six component symetric momentum flux tensor.  Other moments are calculated from these partial moments on the ground adding total pressure, velocity, plasma temperature (measured as a three dimensional energy vector), and a six component symetric pressure tensor to the list of data products.  Number density and total pressure are scalar outputs.  Velocity is calculated in DSL, GSE, GSM, and MFA coordinates (coordinate descriptions are listed below in Table 1).  Magnetic Field Aligned pressure tensor and temperature are calculated as well.  All quantities are calculated for both ions and electrons from a combination of ESA and SST data.  Moments data are taken at spin resolution in all ESA survey modes except burst.  The spacecraft potential, as measure by the EFI, is used to correct for spacecraft charging by shifting the particle energies for calculation; this eliminates contamination from photo-electrons.  Also, weighting factors are used to account for instrument specific energy and angle efficiency variations.
 
 Table 1: Coordinate Descriptions.
@@ -62,9 +62,34 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <Caveats>Due to bit errors and data misdirection, ESA data (including moments) before April 27, 2007 should be considered dubious.  Other data loss and formatting errors in the moments calculations and the ETC were not corrected until Aug. 6, 2007.  Potential data from the EFI was not properly included in calculations between Nov. 18-22, 2007.  EFI booms on THEMIS-B were not deployed until Nov 17 2008, 06:00:00 UT.  Moments data before this date is suspect to error from photoelectrons and spacecraft charging.</Caveats>
+  
+    <!-- Data Quality Flags -->
+    <Parameter>
+      <Name>Ion Moment Data Quality</Name>
+      <ParameterKey>thb_peim_data_quality</ParameterKey>
+      <Description>0 = good data, 1 = missing S/C potential, 2 = electron density greater than 2*ion density, 3 = ion density greater than 2*electron density</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>4</ValidMax>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Electron Moment Data Quality</Name>
+      <ParameterKey>thb_peem_data_quality</ParameterKey>
+      <Description>0 = good data, 1 = missing S/C potential, 2 = electron density greater than 2*ion density, 3 = ion density greater than 2*electron density</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>4</ValidMax>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    
+    <!-- End Data Quality Flags -->
+    
     <Parameter>
       <Name>ESA On Board Moment (MOM) Ion Density, THEMIS-B</Name>
-      <ParameterKey>thb_peim_density</ParameterKey>
+      <ParameterKey>thb_peim_densityQ</ParameterKey>
       <Description>ESA Scalar ion number density calculated on board the spacecraft.</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1e6&gt;m^-3</UnitsConversion>
@@ -79,7 +104,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Total Pressure</Name>
-      <ParameterKey>thb_peim_ptot</ParameterKey>
+      <ParameterKey>thb_peim_ptotQ</ParameterKey>
       <Description>Total ion pressure calculated on the ground from on board moments.</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -94,7 +119,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Particle Flux Vector</Name>
-      <ParameterKey>thb_peim_flux</ParameterKey>
+      <ParameterKey>thb_peim_fluxQ</ParameterKey>
       <Description>ESA ion particle flux vector (in DSL coordinates) calculated on board the spacecraft.</Description>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -135,7 +160,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Momentum Flux Tensor</Name>
-      <ParameterKey>thb_peim_mftens</ParameterKey>
+      <ParameterKey>thb_peim_mftensQ</ParameterKey>
       <Description>ESA ion momentum flux tensor (in DSL coordinates) calculated on board the spacecraft (six-component, off-diagonal terms are symetric).</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;J/(m^3)</UnitsConversion>
@@ -197,7 +222,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Energy Flux Vector</Name>
-      <ParameterKey>thb_peim_eflux</ParameterKey>
+      <ParameterKey>thb_peim_efluxQ</ParameterKey>
       <Description>ESA Ion energy flux vector (in DSL coordinates) calculated on board the spacecraft.</Description>
       <Units>eV/(cm^2*s)</Units>
       <UnitsConversion>1.60217653e-15&gt;J/(m^2*s)</UnitsConversion>
@@ -238,7 +263,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Velocity Vector in DSL</Name>
-      <ParameterKey>thb_peim_velocity_dsl</ParameterKey>
+      <ParameterKey>thb_peim_velocity_dslQ</ParameterKey>
       <Description>ESA Ion velocity vector (in DSL coordinates, see chart in data description) calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -279,7 +304,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Velocity Vector in GSE</Name>
-      <ParameterKey>thb_peim_velocity_gse</ParameterKey>
+      <ParameterKey>thb_peim_velocity_gseQ</ParameterKey>
       <Description>ESA Ion velocity vector (in GSE coordinates, see chart in data description) calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -320,7 +345,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Velocity Vector in GSM</Name>
-      <ParameterKey>thb_peim_velocity_gsm</ParameterKey>
+      <ParameterKey>thb_peim_velocity_gsmQ</ParameterKey>
       <Description>ESA Ion velocity vector (in GSM coordinates, see chart in data description) calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -361,7 +386,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Pressure Tensor</Name>
-      <ParameterKey>thb_peim_ptens</ParameterKey>
+      <ParameterKey>thb_peim_ptensQ</ParameterKey>
       <Description>ESA Ion pressure tensor (in DSL coordinates, see chart in data description) calculated on the ground from spacecraft moments.</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -423,7 +448,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Magnetic Field Vector DSL (Same time array as MOM Ion ESA data)</Name>
-      <ParameterKey>thb_peim_mag</ParameterKey>
+      <ParameterKey>thb_peim_magQ</ParameterKey>
       <Description>Magnetic field vector in DSL coordinates (same time array as MOM Ion ESA data); for calculated of field aligned moments.</Description>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -462,7 +487,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Velocity Vector, Field Aligned</Name>
-      <ParameterKey>thb_peim_velocity_mag</ParameterKey>
+      <ParameterKey>thb_peim_velocity_magQ</ParameterKey>
       <Description>ESA Ion velocity vector in magnetic field aligned coordinates; calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -503,7 +528,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Temperature, Field Aligned (TprpFA1, TprpFA2, TparFA)</Name>
-      <ParameterKey>thb_peim_t3_mag</ParameterKey>
+      <ParameterKey>thb_peim_t3_magQ</ParameterKey>
       <Description>Ion Temperature, Field Aligned (TprpFA1, TprpFA2, TparFA)</Description>
       <Caveats>ESA Three dimentional temperature in magnetic field aligned coordinates (see chart in data description).</Caveats>
       <Units>eV</Units>
@@ -545,7 +570,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Ion Pressure Tensor, Field Aligned</Name>
-      <ParameterKey>thb_peim_ptens_mag</ParameterKey>
+      <ParameterKey>thb_peim_ptens_magQ</ParameterKey>
       <Description>Ion Pressure Tensor, Field Aligned</Description>
       <Caveats>ESA Symmetric pressure tensor about magnetic field aligned coordinates (see chart in data description); calculated on the ground from spacecraft moments.</Caveats>
       <Units>eV/cm^3</Units>
@@ -621,7 +646,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>ESA On Board Moment (MOM) Electron Density, THEMIS-B</Name>
-      <ParameterKey>thb_peem_density</ParameterKey>
+      <ParameterKey>thb_peem_densityQ</ParameterKey>
       <Description>ESA electron density calculated on board the spacecraft.</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1e6&gt;m^-3</UnitsConversion>
@@ -637,7 +662,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Total Pressure</Name>
-      <ParameterKey>thb_peem_ptot</ParameterKey>
+      <ParameterKey>thb_peem_ptotQ</ParameterKey>
       <Description>ESA Electron total pressure calculated on the ground from spacecraft moments.</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -653,7 +678,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Particle Flux Vector</Name>
-      <ParameterKey>thb_peem_flux</ParameterKey>
+      <ParameterKey>thb_peem_fluxQ</ParameterKey>
       <Description>ESA Electron particle flux vector (in DSL coordinates) calculated on board the spacecraft.</Description>
       <Units>#/(cm^2*s)</Units>
       <UnitsConversion>1e4&gt;#/(m^2*s)</UnitsConversion>
@@ -694,7 +719,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Momentum Flux Tensor</Name>
-      <ParameterKey>thb_peem_mftens</ParameterKey>
+      <ParameterKey>thb_peem_mftensQ</ParameterKey>
       <Description>ESA Electron momentum flux tensor (in DSL coordinates) calculated on board the spacecraft.</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;J/(m^3)</UnitsConversion>
@@ -756,7 +781,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Energy Flux Vector</Name>
-      <ParameterKey>thb_peem_eflux</ParameterKey>
+      <ParameterKey>thb_peem_efluxQ</ParameterKey>
       <Description>ESA Electron energy flux vector (in DSL coordinates) calculated on board the spacecraft.</Description>
       <Units>eV/(cm^2*s)</Units>
       <UnitsConversion>1.60217653e-15&gt;J/(m^2*s)</UnitsConversion>
@@ -797,7 +822,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Velocity Vector in DSL</Name>
-      <ParameterKey>thb_peem_velocity_dsl</ParameterKey>
+      <ParameterKey>thb_peem_velocity_dslQ</ParameterKey>
       <Description>ESA Electron velocity vectors (in DSL coordinates) calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -838,7 +863,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Velocity Vector in GSE</Name>
-      <ParameterKey>thb_peem_velocity_gse</ParameterKey>
+      <ParameterKey>thb_peem_velocity_gseQ</ParameterKey>
       <Description>ESA Electron velocity vector (in GSE coordinates) calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -879,7 +904,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Velocity Vector in GSM</Name>
-      <ParameterKey>thb_peem_velocity_gsm</ParameterKey>
+      <ParameterKey>thb_peem_velocity_gsmQ</ParameterKey>
       <Description>ESA Electron velocity vector (in GSM coordinates) calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -920,7 +945,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Pressure Tensor</Name>
-      <ParameterKey>thb_peem_ptens</ParameterKey>
+      <ParameterKey>thb_peem_ptensQ</ParameterKey>
       <Description>ESA Electron pressure tensor (in DSL coordinates) calculated on the ground from spacecraft moments.</Description>
       <Units>eV/cm^3</Units>
       <UnitsConversion>1.60217653e-13&gt;Pa</UnitsConversion>
@@ -982,7 +1007,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Magnetic Field Vector DSL (Same time array as MOM Electron ESA data)</Name>
-      <ParameterKey>thb_peem_mag</ParameterKey>
+      <ParameterKey>thb_peem_magQ</ParameterKey>
       <Description>Magnetic Field Vector in DSL coordinates (same time array as MOM Electron ESA data); for calculation of field-aligned moments.</Description>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -1021,7 +1046,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Velocity Vector, Field Aligned</Name>
-      <ParameterKey>thb_peem_velocity_mag</ParameterKey>
+      <ParameterKey>thb_peem_velocity_magQ</ParameterKey>
       <Description>ESA Electron velocity vector in magnetic field aligned coordinates; calculated on the ground from spacecraft moments.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -1062,7 +1087,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Temperature, Field Aligned (TprpFA1, TprpFA2, TparFA)</Name>
-      <ParameterKey>thb_peem_t3_mag</ParameterKey>
+      <ParameterKey>thb_peem_t3_magQ</ParameterKey>
       <Description>Three dimentional electron temperature in magnetic field aligned coordinates; calculated on the ground from spacecraft moments. (TprpFA1, TprpFA2, TparFA)</Description>
       <Caveats>3d temperatures around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system.</Caveats>
       <Units>eV</Units>
@@ -1104,7 +1129,7 @@ Magnetic Field Aligned (MFA):   Z-axis points along magnetic field lines, the Y-
     </Parameter>
     <Parameter>
       <Name>Electron Pressure Tensor, Field Aligned</Name>
-      <ParameterKey>thb_peem_ptens_mag</ParameterKey>
+      <ParameterKey>thb_peem_ptens_magQ</ParameterKey>
       <Description>ESA Electron pressure tensor in magnetic field aligned coordinates; calculated on the ground from spacecraft moments.</Description>
       <Caveats>Pressure tensor around magnetic axis (Z) and normal axes (X,Y), where Y is Z direction crosed into Sun direction, and X completes orthogonal system.</Caveats>
       <Units>eV/cm^3</Units>

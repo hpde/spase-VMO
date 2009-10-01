@@ -808,7 +808,7 @@
     </Parameter>
     <Parameter>
       <Name>THEMIS B Electric Field Instrument Spin-Fit Model Times</Name>
-      <ParameterKey>thb_fit_bfit_time</ParameterKey>
+      <ParameterKey>thb_fit_efit_time</ParameterKey>
       <Description>Dates/Times for each measurement in seconds since 01-Jan-1970 00:00:00 UTC</Description>
       <Caveats>Unleaped seconds</Caveats>
       <Cadence>PT3S</Cadence>

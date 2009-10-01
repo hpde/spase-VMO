@@ -51,6 +51,7 @@
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <Caveats>Typical cadence is 1 min, occasinally 3s.</Caveats>
+    
     <Parameter>
       <Name>THEMIS-A Position</Name>
       <ParameterKey>tha_pos</ParameterKey>
@@ -279,6 +280,249 @@ Bit 18(131072): 4-Day Conjunctions
       <FillValue>NaN</FillValue>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    
+    <!-- Added after data set was reprocessed 9/2009 -->
+    <Parameter>
+      <Name>Spin Correction Time</Name>
+      <ParameterKey>tha_spin_correction_time</ParameterKey>
+      <Description>spin correction time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Caveats>Unleaped seconds</Caveats>
+      <Units>sec</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Period</Name>
+      <ParameterKey>tha_spin_spinper</ParameterKey>
+      <Description>initial spin period for segment</Description>
+      <Units>sec</Units>
+      <ValidMin>0</ValidMin>
+      <ValidMax>30</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Time</Name>
+      <ParameterKey>tha_spin_time</ParameterKey>
+      <Description>Time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Caveats>Unleaped seconds</Caveats>
+      <Units>sec</Units>
+      <ValidMin>0.0</ValidMin>
+      <ValidMax>5.0E9</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Drift Term for Spin Rate</Name>
+      <ParameterKey>tha_spin_c</ParameterKey>
+      <Description>Drift Term for Spin Rate</Description>
+      <Caveats>Applies to angular velocity (deg/sec), not spin period (sec)</Caveats>
+      <Units>deg/sec^2</Units>
+      <ValidMin>-30</ValidMin>
+      <ValidMax>30</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Phase Correction</Name>
+      <ParameterKey>tha_spin_correction</ParameterKey>
+      <Description>spin phase correction from definitive position and field model</Description>
+      <Caveats>Calculated from possibly irregular intervals</Caveats>
+      <Units>degrees</Units>
+      <ValidMin>-180</ValidMin>
+      <ValidMax>180</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Axis Right Ascension Correction</Name>
+      <ParameterKey>tha_spinras_correction</ParameterKey>
+      <Description>Spin axis right ascension correction from definitive position and field model</Description>
+      <Units>degrees</Units>
+      <ValidMin>-180</ValidMin>
+      <ValidMax>180</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Axis Declination Correction</Name>
+      <ParameterKey>tha_spindec_correction</ParameterKey>
+      <Description>Spin axis declination correction from definitive position and field model</Description>
+      <Units>degrees</Units>
+      <ValidMin>-180</ValidMin>
+      <ValidMax>180</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Phase Error</Name>
+      <ParameterKey>tha_spin_phaserr</ParameterKey>
+      <Description>Maximum absolute phase error between model and non-outlier sun crossing time.</Description>
+      <Caveats>Errors due to recognized BAU timing errors do not contribute to this quantity.</Caveats>
+      <Units>sec</Units>
+      <ValidMin>0</ValidMin>
+      <ValidMax>30</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Number of Spins</Name>
+      <ParameterKey>tha_spin_nspins</ParameterKey>
+      <Description>Number of spins contained in this segment</Description>
+      <Units>spins</Units>
+      <ValidMin>0</ValidMin>
+      <ValidMax>65535</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Spin Max Gap</Name>
+      <ParameterKey>tha_spin_maxgap</ParameterKey>
+      <Description>Duration, in seconds, of longest gap between sun.pulses in this segment.</Description>
+      <Units>seconds</Units>
+      <ValidMin>0</ValidMin>
+      <ValidMax>86400</ValidMax>
+      <FillValue>NaN</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Positions GSE</Name>
+      <ParameterKey>tha_pos_gse</ParameterKey>
+      <Description>x, y, z GSE components of spacecraft position</Description>
+      <Structure>
+        <Element>
+          <Name>X</Name>
+          <Index>1</Index>
+          <ValidMin>-1e6</ValidMin>
+          <ValidMax>1e6</ValidMax>
+        </Element>
+        <Element>
+          <Name>Y</Name>
+          <Index>2</Index>
+          <ValidMin>-1e6</ValidMin>
+          <ValidMax>1e6</ValidMax>
+        </Element>
+        <Element>
+          <Name>Z</Name>
+          <Index>3</Index>
+          <ValidMin>-1e6</ValidMin>
+          <ValidMax>1e6</ValidMax>
+        </Element>
+      </Structure>
+      <Support>
+        <Qualifier>Vector</Qualifier>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Positions GSM</Name>
+      <ParameterKey>tha_pos_gsm</ParameterKey>
+      <Description>x, y, z GSM components of spacecraft position</Description>
+      <Structure>
+        <Element>
+          <Name>X</Name>
+          <Index>1</Index>
+          <ValidMin>-1e6</ValidMin>
+          <ValidMax>1e6</ValidMax>
+        </Element>
+        <Element>
+          <Name>Y</Name>
+          <Index>2</Index>
+          <ValidMin>-1e6</ValidMin>
+          <ValidMax>1e6</ValidMax>
+        </Element>
+        <Element>
+          <Name>Z</Name>
+          <Index>3</Index>
+          <ValidMin>-1e6</ValidMin>
+          <ValidMax>1e6</ValidMax>
+        </Element>
+      </Structure>
+      <Support>
+        <Qualifier>Vector</Qualifier>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Velocity GSE</Name>
+      <ParameterKey>tha_vel_gse</ParameterKey>
+      <Description>x, y, z GSE components of spacecraft velocity</Description>
+      <Structure>
+        <Element>
+          <Name>X</Name>
+          <Index>1</Index>
+          <ValidMin>-1e3</ValidMin>
+          <ValidMax>1e3</ValidMax>
+        </Element>
+        <Element>
+          <Name>Y</Name>
+          <Index>2</Index>
+          <ValidMin>-1e3</ValidMin>
+          <ValidMax>1e3</ValidMax>
+        </Element>
+        <Element>
+          <Name>Z</Name>
+          <Index>3</Index>
+          <ValidMin>-1e3</ValidMin>
+          <ValidMax>1e3</ValidMax>
+        </Element>
+      </Structure>
+      <Support>
+        <Qualifier>Vector</Qualifier>
+        <SupportQuantity>Velocity</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Velocity GSM</Name>
+      <ParameterKey>tha_vel_gsm</ParameterKey>
+      <Description>x, y, z GSM components of spacecraft velocity</Description>
+      <Structure>
+        <Element>
+          <Name>X</Name>
+          <Index>1</Index>
+          <ValidMin>-1e3</ValidMin>
+          <ValidMax>1e3</ValidMax>
+        </Element>
+        <Element>
+          <Name>Y</Name>
+          <Index>2</Index>
+          <ValidMin>-1e3</ValidMin>
+          <ValidMax>1e3</ValidMax>
+        </Element>
+        <Element>
+          <Name>Z</Name>
+          <Index>3</Index>
+          <ValidMin>-1e3</ValidMin>
+          <ValidMax>1e3</ValidMax>
+        </Element>
+      </Structure>
+      <Support>
+        <Qualifier>Vector</Qualifier>
+        <SupportQuantity>Velocity</SupportQuantity>
       </Support>
     </Parameter>
   </NumericalData>

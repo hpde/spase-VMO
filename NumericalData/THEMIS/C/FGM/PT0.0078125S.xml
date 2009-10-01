@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/C/FGM/PT0.0078125S</ResourceID>
     <ResourceHeader>
       <ResourceName>Fluxgate Magnetometer Measurements 1/128s</ResourceName>
-      <ReleaseDate>2009-05-20T23:06:03Z</ReleaseDate>
+      <ReleaseDate>2009-10-01T10:00:00Z</ReleaseDate>
       <Description>Spacecraft-collected fluxgate magnetometer measurements: Decimated TeleMetry High, DSL, GSE and GSM coordinates, cadence 3s-1/128s. The high-resolution data is available only for time intervals when the instrument was switched into a high-resolution mode. Sensor and electronics design provided by TUBS (Glassmeier, Auster) and IWF (Baumjohann, Magnes)</Description>
       <Acknowledgement>NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission, K. H. Glassmeier, U. Auster and W. Baumjohann for the use of FGM data provided under the lead of the Technical University of Braunschweig and with financial support through the German Ministry for Economy and Technology and the German Center for Aviation and Space (DLR) under contract 50 OC 0302</Acknowledgement>
       <Contact>
@@ -62,6 +62,64 @@
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
     <Caveats>The THEMIS mission uses the coordinate name " DSL" for the coordinate system that is called "SR2" is the SPASE data model.  See THEMIS website for caveats.</Caveats>
+    
+    <Parameter>
+      <Name>FGS Magnetic Field Magnitude</Name>
+      <ParameterKey>thc_fgs_btotal</ParameterKey>
+      <Description>FGS magnetic field magnitude</Description>
+      <Units>nT</Units>
+      <UnitsConversion>1e-9>T</UnitsConversion>
+      <CoordinateSystem></CoordinateSystem>
+      <ValidMin>0</ValidMin>
+      <ValidMax>25000</ValidMax>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>       
+      </Field>      
+    </Parameter>    
+    <Parameter>
+      <Name>FGL Magnetic Field Magnitude</Name>
+      <ParameterKey>thc_fgl_btotal</ParameterKey>
+      <Description>FGL magnetic field magnitude</Description>
+      <Units>nT</Units>
+      <UnitsConversion>1e-9>T</UnitsConversion>
+      <CoordinateSystem></CoordinateSystem>
+      <ValidMin>0</ValidMin>
+      <ValidMax>25000</ValidMax>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>       
+      </Field>      
+    </Parameter>    
+    <Parameter>
+      <Name>FGH Magnetic Field Magnitude</Name>
+      <ParameterKey>thc_fgh_btotal</ParameterKey>
+      <Description>FGH magnetic field magnitude</Description>
+      <Units>nT</Units>
+      <UnitsConversion>1e-9>T</UnitsConversion>
+      <CoordinateSystem></CoordinateSystem>
+      <ValidMin>0</ValidMin>
+      <ValidMax>25000</ValidMax>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>       
+      </Field>      
+    </Parameter>    
+    <Parameter>
+      <Name>FGE Magnetic Field Magnitude</Name>
+      <ParameterKey>thc_fge_btotal</ParameterKey>
+      <Description>FGE magnetic field magnitude</Description>
+      <Units>nT</Units>
+      <UnitsConversion>1e-9>T</UnitsConversion>
+      <CoordinateSystem></CoordinateSystem>
+      <ValidMin>0</ValidMin>
+      <ValidMax>25000</ValidMax>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>       
+      </Field>      
+    </Parameter>    
+    
     <Parameter>
       <Name>B FGE SSL</Name>
       <ParameterKey>thc_fge_ssl</ParameterKey>
