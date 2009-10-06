@@ -22,8 +22,7 @@ who created this product.</Acknowledgement>
             </Contact>
             <InformationURL>
                 <Name>Readme at nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/sc_specific/00readme.txt
-</URL>
+                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/sc_specific/00readme.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
