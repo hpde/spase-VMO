@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Neumayer.Station/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Neumayer Station Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-06T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2009-11-10T23:24:15Z</ReleaseDate>
          <Description>Neumayer Station Magnetometer PT1H data packed using the WDC format; Station Id: VNA; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Alfred-Wegener-Institute, for Polar Marine Research, Bremerhaven,Germany</Acknowledgement>
          <Contact>
@@ -99,7 +99,7 @@
          <Description>Neumayer Station PT1H Magnetic Field XYZ</Description>
          <Cadence>PT1H</Cadence>
          <Units>nT</Units>
-         <UnitsConversion>10^9 nT/T</UnitsConversion>
+         <UnitsConversion>10^9 &gt;T</UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>CGM</CoordinateSystemName>
@@ -140,7 +140,7 @@
          <Description>Neumayer Station PT1H Magnetic Field Magnitude</Description>
          <Cadence>PT1H</Cadence>
          <Units>nT</Units>
-         <UnitsConversion>10^9 nT/T</UnitsConversion>
+         <UnitsConversion>10^9 &gt;T</UnitsConversion>
          <Structure>
             <Size>1</Size>
             <Description>B Total</Description>

@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Bereznyaki/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Bereznyaki Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-06T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2009-11-10T23:24:14Z</ReleaseDate>
          <Description>Bereznyaki Magnetometer PT1H data packed using the WDC format; Station Id: KGD; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Arti Geophysical Observatory, Institute of Geophysics, Urals Branch of Russian Academy of Sciences</Acknowledgement>
          <Contact>
@@ -99,7 +99,7 @@
          <Description>Bereznyaki PT1H Magnetic Field DHZ</Description>
          <Cadence>PT1H</Cadence>
          <Units>nT</Units>
-         <UnitsConversion>10^9 nT/T</UnitsConversion>
+         <UnitsConversion>10^9 &gt;T</UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Cylindrical</CoordinateRepresentation>
             <CoordinateSystemName>CGM</CoordinateSystemName>
