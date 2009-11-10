@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+   <Version>2.0.1</Version>
+   <NumericalData>
+      <ResourceID>spase://VMO/NumericalData/WDC/Lanzhou/Magnetometer/PT1M/ASCII</ResourceID>
+      <ResourceHeader>
+         <ResourceName>Lanzhou Fluxgate Magnetometer Data in ASCII Format</ResourceName>
+         <ReleaseDate>2009-11-06T12:34:56.789</ReleaseDate>
+         <Description>Lanzhou Magnetometer PT1M data in ASCII format; Station Id: LZH; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux); Unpacked ASCII flat file format</Description>
+         <Acknowledgement>State Seismological Bureau, Beijing, China.  The file format translation from packed form to ASCII flat file was performed at UCLA by Dr. Lee F. Bargatze (Technical Contact for the file translation).</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/WDC/Director.Lanzhou.Observatory</PersonID>
+            <Role>GeneralContact</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+            <Role>TechnicalContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>WDC for Geomagnetism, Edinburgh; Geomagnetic Data Master Catalog</Name>
+            <URL>http://www.wdc.bgs.ac.uk/catalog/intro.html</URL>
+            <Description>Download web site for magnetometer data from the WDC</Description>
+         </InformationURL>
+         <Association>
+            <AssociationID>spase://SMWG/Instrument/WDC/Lanzhou/Magnetometer</AssociationID>
+            <AssociationType>ObservedBy</AssociationType>
+         </Association>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>The UCLA VMO Data Repository</Name>
+            <URL>http://vmo.igpp.ucla.edu/data1</URL>
+            <Description>The Virtual Magnetospheric Observatory (VMO) Data Repository hosted by the Institute of Geophysics and Planetary Physics (IGPP) at the University of California, Los Angeles (UCLA)</Description>
+         </AccessURL>
+         <Format>Text</Format>
+         <Encoding>GZIP</Encoding>
+         <DataExtent>
+            <Quantity>4240800</Quantity>
+            <Units>bytes</Units>
+            <Per>P1M</Per>
+         </DataExtent>
+         <Acknowledgement>The British Geological Survey, World Data Center, Edinburgh and the Virtual Magnetospheric Observatory, University of California, Los Angeles.</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/WDC/Lanzhou/Magnetometer</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2001-04-01T00:00:00.000</StartDate>
+            <StopDate>2005-12-31T23:59:00.000</StopDate>
+            <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
+         </TimeSpan>
+         <Cadence>PT1M</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Surface</ObservedRegion>
+      <Keyword>ground station</Keyword>
+      <Keyword>magnetometer</Keyword>
+      <Keyword>magnetic field</Keyword>
+      <Keyword>magnetogram</Keyword>
+      <Keyword>Lanzhou</Keyword>
+      <Keyword>LZH</Keyword>
+      <Keyword>1-minute</Keyword>
+      <Keyword>ASCII Flat File</Keyword>
+      <Keyword>ASCII Flat Table</Keyword>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>Time</ParameterKey>
+         <Description>Time is expressed using a five column format with the following order:  year, month, day, hour, and minute, each stored in interger format.  The time columns are the first five columns in the flat file.</Description>
+         <Structure>
+            <Size>5</Size>
+            <Description>Universal Time expressed using a 5-column year, month, day, hour, minute representation</Description>
+            <Element>
+               <Name>Year</Name>
+               <Index>1</Index>
+               <ParameterKey>Year</ParameterKey>
+            </Element>
+            <Element>
+               <Name>Month</Name>
+               <Index>2</Index>
+               <ParameterKey>Month</ParameterKey>
+            </Element>
+            <Element>
+               <Name>Day</Name>
+               <Index>3</Index>
+               <ParameterKey>Day</ParameterKey>
+            </Element>
+            <Element>
+               <Name>Hour</Name>
+               <Index>4</Index>
+               <ParameterKey>Hour</ParameterKey>
+            </Element>
+            <Element>
+               <Name>Minute</Name>
+               <Index>5</Index>
+               <ParameterKey>Minute</ParameterKey>
+            </Element>
+         </Structure>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Lanzhou PT1M Magnetic Field XYZ</Name>
+         <ParameterKey>B Field XYZ</ParameterKey>
+         <Description>Lanzhou PT1M Magnetic Field XYZ</Description>
+         <Cadence>PT1M</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>10^9 nT/T</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>CGM</CoordinateSystemName>
+         </CoordinateSystem>
+         <Structure>
+            <Size>3</Size>
+            <Description>Lanzhou Magnetic Field Data in XYZ Coordinates</Description>
+            <Element>
+               <Name>X</Name>
+               <Qualifier>Component.I</Qualifier>
+               <Index>1</Index>
+               <ParameterKey>X</ParameterKey>
+            </Element>
+            <Element>
+               <Name>Y</Name>
+               <Qualifier>Component.J</Qualifier>
+               <Index>2</Index>
+               <ParameterKey>Y</ParameterKey>
+            </Element>
+            <Element>
+               <Name>Z</Name>
+               <Qualifier>Component.K</Qualifier>
+               <Index>3</Index>
+               <ParameterKey>Z</ParameterKey>
+            </Element>
+         </Structure>
+         <ValidMin>-60000</ValidMin>
+         <ValidMax>60000</ValidMax>
+         <FillValue>-99999</FillValue>
+         <Field>
+            <Qualifier>Vector</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Lanzhou PT1M Magnetic Field Magnitude</Name>
+         <ParameterKey>B Total</ParameterKey>
+         <Description>Lanzhou PT1M Magnetic Field Magnitude</Description>
+         <Cadence>PT1M</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>10^9 nT/T</UnitsConversion>
+         <Structure>
+            <Size>1</Size>
+            <Description>B Total</Description>
+            <Element>
+               <Name>B Total</Name>
+               <Qualifier>Magnitude</Qualifier>
+               <Index>1</Index>
+               <ParameterKey>B Total</ParameterKey>
+            </Element>
+         </Structure>
+         <ValidMin>0</ValidMin>
+         <ValidMax>60000</ValidMax>
+         <FillValue>-99999</FillValue>
+         <Field>
+            <Qualifier>Magnitude</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+   </NumericalData>
+</Spase>
