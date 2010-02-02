@@ -5,16 +5,14 @@
     <ResourceID>spase://VMO/NumericalData/AMPTE_IRM/MAG/PT4.4S</ResourceID>
     <ResourceHeader>
       <ResourceName>AMPTE/IRM Magnetic Field</ResourceName>
-      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
+      <ReleaseDate>2010-02-02T21:01:01Z</ReleaseDate>
       <Description>AMPTE/IRM spin-averaged magnetic field at ~4.4 second resolution.</Description>
       <Acknowledgement>User will acknowledge the AMPTE/IRM magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
       <Contact>
-        <!-- Hermann Luhr -->
-        <PersonID>spase://SMWG/Person/Hermann.Luhr</PersonID>
+        <PersonID>spase://SMWG/Person/Hermann.Luehr</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <Contact>
-        <!-- Lynn Kistler -->
         <PersonID>spase://SMWG/Person/Lynn.M.Kistler</PersonID>
         <Role>DataProducer</Role>
       </Contact>
