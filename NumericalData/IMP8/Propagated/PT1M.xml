@@ -7,11 +7,8 @@
             <ResourceName>IMP 8 MAG PLS 1-min field and plasma data at bow shock nose</ResourceName>
             <AlternateName>IMP 8 at BSN</AlternateName>
             <ReleaseDate>2009-08-01T00:00:00</ReleaseDate>
-            <Description>Solar wind magnetic field and plasma data at 1-min resolution 
-created from IMP 8 data shifted to the Earth's bow shock nose (BSN).</Description>
-            <Acknowledgement>We acknowledge A.Szabo and R. Lepping of the MAG team, A. Lazarus 
-of the PLS team and J. King and N. Papitashvili of NASA/SPDF and ADNET 
-who created this product.</Acknowledgement>
+            <Description>Solar wind magnetic field and plasma data at 1-min resolution created from IMP 8 data shifted to the Earth's bow shock nose (BSN).</Description>
+            <Acknowledgement>We acknowledge A.Szabo and R. Lepping of the MAG team, A. Lazarus of the PLS team and J. King and N. Papitashvili of NASA/SPDF and ADNET who created this product.</Acknowledgement>
             <Contact>
                 <PersonID>spase://SMWG/Person/Joseph.H.King</PersonID>
                 <Role>DataProducer</Role>
@@ -168,8 +165,7 @@ who created this product.</Acknowledgement>
         <Parameter>
             <Name>Magnetic field magnitude standard deviation</Name>
             <ParameterKey>Column20</ParameterKey>
-            <Description>Standard deviation in the average of magnetic field 
-magnitudes</Description>
+            <Description>Standard deviation in the average of magnetic field magnitudes</Description>
             <Cadence>PT1M</Cadence>
             <Units>nT</Units>
             <Field>
@@ -251,8 +247,7 @@ magnitudes</Description>
         </Parameter>
         <Parameter>
             <Name>Spacecraft position</Name>
-            <Description>Position of IMP 8 spacecraft, GSE cartesian 
-components</Description>
+            <Description>Position of IMP 8 spacecraft, GSE cartesian components</Description>
             <Cadence>PT1M</Cadence>
             <Units>Re</Units>
             <CoordinateSystem>
@@ -287,8 +282,7 @@ components</Description>
         </Parameter>
         <Parameter>
             <Name>Bow shock nose position</Name>
-            <Description>Bow shock nose position, as computed from observed data 
-and models, 3 cartesian components</Description>
+            <Description>Bow shock nose position, as computed from observed data and models, 3 cartesian components</Description>
             <Cadence>PT1M</Cadence>
             <Units>Re</Units>
             <CoordinateSystem>
@@ -324,9 +318,7 @@ and models, 3 cartesian components</Description>
         <Parameter>
             <Name>Mean time shift</Name>
             <ParameterKey>Column08</ParameterKey>
-            <Description>Time shift from observation time to bow shock nose (BSN)
-arrival time, as averaged over all 15-16 sec B values with BSN arrival times in 
-minute of interest</Description>
+            <Description>Time shift from observation time to bow shock nose (BSN) arrival time, as averaged over all 15-16 sec B values with BSN arrival times in minute of interest</Description>
             <Cadence>PT1M</Cadence>
             <Units>sec</Units>
             <Support>
@@ -335,13 +327,11 @@ minute of interest</Description>
         </Parameter>
         <Parameter>
             <Name>Numbers of points in field and plasma averages</Name>
-            <Description>Numbers of fine scale points in field and plasma 
-averages</Description>
+            <Description>Numbers of fine scale points in field and plasma averages</Description>
             <Cadence>PT1M</Cadence>
             <Structure>
                 <Size>2</Size>
-                <Description>Numbers of fine scale points in field and plasma 
-averages</Description>
+                <Description>Numbers of fine scale points in field and plasma averages</Description>
                 <Element>
                      <Name>Numbers of fine scale points in field averages</Name>
                      <Index>1</Index>
