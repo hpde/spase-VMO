@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+   <Version>2.0.1</Version>
+   <NumericalData>
+      <ResourceID>spase://VMO/NumericalData/ISEE1/MAG/PT4S</ResourceID>
+      <ResourceHeader>
+         <ResourceName>ISEE-1 magnetometer 4-sec data</ResourceName>
+         <ReleaseDate>2010-02-22T12:34:56.789</ReleaseDate>
+         <Description>4-sec vector magnetic field values recorded by the NASA ISEE-1 satellite</Description>
+         <Acknowledgement>UCLA-IGPP ISEE Magnetometer Interactive Data Server</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Robert.J.Strangeway</PersonID>
+            <Role>DataProducer</Role>
+         </Contact>
+         <InformationURL>
+            <Name>UCLA-IGPP ISEE Magnetometer Interactive Data Server</Name>
+            <URL>http://www-ssc.igpp.ucla.edu/forms/isee</URL>
+            <Description>Data at 60-s and 4-s resolution are available for the entire ISEE mission (October 22, 1977 through  September 25, 1987) and can be displayed either as a plot or an ASCII listing. The ISEE-1 and -2 magnetometer data server is provided by the Institute of Geophysics and Planetary Physics (IGPP) at UCLA, through a grant to Robert J. Strangeway from the NASA Space Physics Data System (SPDS).</Description>
+         </InformationURL>
+         <Association>
+            <AssociationID>spase://SMWG/Instrument/ISEE1/MAG</AssociationID>
+            <AssociationType>ObservedBy</AssociationType>
+         </Association>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/UCLA/IGPP.ISEE.Magnetometer.Interactive.Data.Server</RepositoryID>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <URL>ftp://igpp.ucla.edu/pub/data/isee/isee1.4s</URL>
+            <Description>The folder contains 4-sec ISEE-1 magnetometter data in the IGPP flat file format.</Description>
+         </AccessURL>
+         <Format>Binary</Format>
+         <Acknowledgement>UCLA-IGPP ISEE Magnetometer Interactive Data Server</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>1977-10-22T21:04:19</StartDate>
+            <StopDate>1987-09-25T16:10:30</StopDate>
+         </TimeSpan>
+         <Cadence>PT4S</Cadence>
+      </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+      <Parameter>
+         <Name>Universal Time</Name>
+         <ParameterKey>UT</ParameterKey>
+         <Description>Time, a real*8 value that is the number of seconds since Jan 1, 1966 at 00:00:00.000.  This time is also referred to as Cline Time or CTIME.</Description>
+         <Structure>
+            <Size>1</Size>
+         </Structure>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>Magnetic Field Vector</Name>
+         <ParameterKey>BXYZ</ParameterKey>
+         <Description>Triaxial magnetic field vector in spacecraft (SC) coordinates</Description>
+         <Cadence>PT4S</Cadence>
+         <Units>nT</Units>
+         <UnitsConversion>10^9 nT/T</UnitsConversion>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>SC</CoordinateSystemName>
+         </CoordinateSystem>
+         <Structure>
+            <Size>3</Size>
+            <Description>The three elements are BX, BY, BZ in spacecraft (SC) coordinates</Description>
+         </Structure>
+         <Field>
+            <Qualifier>Vector</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+   </NumericalData>
+</Spase>
