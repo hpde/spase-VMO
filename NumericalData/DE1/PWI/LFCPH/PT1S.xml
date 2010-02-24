@@ -2,12 +2,12 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
    <Version>2.0.1</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/DE1/PWI/SFRA/PT1S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/DE1/PWI/LFCPH/PT1S</ResourceID>
       <ResourceHeader>
-         <ResourceName>Dynamics Explorer 1 Plasma Waves Instrument Step Frequency Receiver A data</ResourceName>
-         <AlternateName>DE1 PWI SFR A data</AlternateName>
+         <ResourceName>Dynamics Explorer 1 Plasma Waves Instrument Low Frequency Receiver Phase data</ResourceName>
+         <AlternateName>DE1 PWI LFC Phase data</AlternateName>
          <ReleaseDate>2010-02-23T12:34:56.789</ReleaseDate>
-         <Description>Plasma Waves Instrument Step Frequency Receiver A data</Description>
+         <Description>Plasma Waves Instrument Low Frequency Receiver Phase data</Description>
          <Acknowledgement>NASA; Donald A. Gurnett</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Donald.A.Gurnett</PersonID>
@@ -28,16 +28,16 @@
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
-            <Name>Plasma Waves Instrument Step Frequency Receiver A Electric and Magnetic field data</Name>
-            <URL>http://vmo.igpp.ucla.edu/data1/DE1/PWI/SFRA</URL>
-            <Description>This URL contains the DE1 PWI Step Frequency Receiver A Electric and Magnetic Field Data</Description>
+            <Name>Plasma Waves Instrument Low Frequency Receiver  Phase data</Name>
+            <URL>http://vmo.igpp.ucla.edu/data1/DE1/PWI/LFCPH</URL>
+            <Description>This URL contains the DE1 PWI Low Frequency Receiver Phase Data</Description>
          </AccessURL>
          <Format>Text</Format>
          <Encoding>ASCII</Encoding>
          <Acknowledgement>NASA;Donald.A.Gurnett</Acknowledgement>
       </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
-      <ProviderResourceName>Plasma Waves Instrument Step Frequency Receiver A</ProviderResourceName>
+      <ProviderResourceName>Plasma Waves Instrument Low Frequency Receiver Phase</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/DynamicsExplorer1/PWI</InstrumentID>
       <MeasurementType>Waves.Passive</MeasurementType>
@@ -51,9 +51,9 @@
       </TemporalDescription>
       <Caveats>Flags=NaN</Caveats>
       <Keyword>PWI</Keyword>
-      <Keyword>SFR A</Keyword>
+      <Keyword>LFC Phase</Keyword>
       <Keyword>Plasma Waves Instrument</Keyword>
-      <Keyword>Step Frequency Receiver</Keyword>
+      <Keyword>Low Frequency Receiver Phases</Keyword>
       <Keyword>magnetosphere</Keyword>
       <Keyword>radiation belt</Keyword>
       <Parameter>
@@ -84,9 +84,9 @@
          </Support>
       </Parameter>
       <Parameter>
-         <Name>DE1 Plasma Wave Instrument  Step Frequency Receiver A</Name>
-         <ParameterKey>PWI SFR A frequencies</ParameterKey>
-         <Description>PWI SFR A  frequencies in Hz</Description>
+         <Name>DE1 Plasma Wave Instrument  Low Frequency Receiver Phase</Name>
+         <ParameterKey>PWI LFC Phase frequencies</ParameterKey>
+         <Description>PWI LFC Phase  frequencies in Hz</Description>
          <Cadence>PT1S</Cadence>
          <Units>Hz</Units>
          <CoordinateSystem>
@@ -98,11 +98,11 @@
          </Mixed>
       </Parameter>
       <Parameter>
-         <Name>DE1 Plasma Wave Instrument  Step Frequency Receiver A</Name>
-         <ParameterKey>PWI SFR A electric field amplitude values</ParameterKey>
-         <Description>PWI SFR A  electric field amplitude values</Description>
+         <Name>DE1 Plasma Wave Instrument  Low Frequency Receiver Phase</Name>
+         <ParameterKey>PWI LFC Phase Angles</ParameterKey>
+         <Description>PWI LFC Phase  Angles</Description>
          <Cadence>PT1S</Cadence>
-         <Units>((V/m)^2)/Hz</Units>
+         <Units>degrees</Units>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -112,11 +112,12 @@
          </Mixed>
       </Parameter>
       <Parameter>
-         <Name>DE1 Plasma Wave Instrument  Step Frequency Receiver A</Name>
-         <ParameterKey>PWI SFR A magnetic field amplitude values</ParameterKey>
-         <Description>PWI SFR A  magnetic field amplitude values</Description>
+         <Name>DE1 Plasma Wave Instrument  Low Frequency Receiver Phase</Name>
+         <ParameterKey>PWI LFC Phase correlation values</ParameterKey>
+         <Description>PWI LFC Phase  correlation values</Description>
+         <Caveats>Flag=-1</Caveats>
          <Cadence>PT1S</Cadence>
-         <Units>((nT)^2)/Hz</Units>
+         <Units>None</Units>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -126,10 +127,11 @@
          </Mixed>
       </Parameter>
       <Parameter>
-         <Name>DE1 Plasma Wave Instrument Step Frequency Receiver A</Name>
-         <ParameterKey>PWI SFR A Antenna(s) used for measurement</ParameterKey>
-         <Description>PWI SFR A Antenna(s) used for measurement: EX or EZ</Description>
+         <Name>DE1 Plasma Wave Instrument Low Frequency Receiver Phase</Name>
+         <ParameterKey>PWI LFC Phase First Antenna used for measurement</ParameterKey>
+         <Description>PWI LFC Phase First Antenna used for measurement: EX or EZ or ES or B</Description>
          <Cadence>PT1S</Cadence>
+         <Units>None</Units>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -139,10 +141,11 @@
          </Mixed>
       </Parameter>
       <Parameter>
-         <Name>DE1 Plasma Wave Instrument Step Frequency Receiver A</Name>
-         <ParameterKey>PWI SFR A Antenna(s) used for measurement</ParameterKey>
-         <Description>PWI SFR A Antenna(s) used for measurement: B</Description>
+         <Name>DE1 Plasma Wave Instrument Low Frequency Receiver Phase</Name>
+         <ParameterKey>PWI LFC Phase Second Antenna used for measurement</ParameterKey>
+         <Description>PWI LFC Phase Second Antenna used for measurement: EX or EZ or ES or B</Description>
          <Cadence>PT1S</Cadence>
+         <Units>None</Units>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>

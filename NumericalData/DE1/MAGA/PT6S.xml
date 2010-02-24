@@ -1,12 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
    <Version>2.0.1</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/DE1/MAGA/PT0.062S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/DE1/MAGA/PT6S</ResourceID>
       <ResourceHeader>
          <ResourceName>Dynamics Explorer 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer (MAG-A)</ResourceName>
          <AlternateName>DE1 MAG-A data</AlternateName>
          <ReleaseDate>2010-02-23T12:34:56.789</ReleaseDate>
-         <Description>Dynamics Explorer 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer</Description>
+         <Description>Dynamics Explorer 1 Magnetic Field Observations Triaxial Fluxgate Magnetometer at 6 second resolution.</Description>
          <Acknowledgement>NASA; Masahisa Sugiura</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Masahisa.Sugiura</PersonID>
@@ -38,6 +39,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Dynamics Explorer 1 Tri-axial fluxgate magnetometer</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
+      <ProviderVersion></ProviderVersion>
       <InstrumentID>spase://SMWG/Instrument/DynamicsExplorer1/MAGA</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
@@ -46,9 +48,9 @@
             <StopDate>1991-02-18T00:00:00</StopDate>
             <Note>Time format in data files is: Year, Day of Year, Milliseconds of the Day</Note>
          </TimeSpan>
-         <Cadence>PT0.062S</Cadence>
+         <Cadence>PT6S</Cadence>
       </TemporalDescription>
-      <Keyword>62 ms</Keyword>
+      <Keyword>6 s</Keyword>
       <Keyword>Magnetosphere</Keyword>
       <Keyword>Auroral region</Keyword>
       <Keyword>Polar Cap</Keyword>
@@ -64,7 +66,9 @@
          <Name>Universal Time</Name>
          <ParameterKey>Time</ParameterKey>
          <Description>Universal Time columns from left to right are:  year, day of year, milliseconds of the day.</Description>
-         <Cadence>PT0.062S</Cadence>
+         <Cadence>PT6S</Cadence>
+         <Units></Units>
+         <UnitsConversion></UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -96,8 +100,9 @@
          <Name>Instrument Mode</Name>
          <ParameterKey>Support Data</ParameterKey>
          <Description>Instrument mode at time measurement taken.</Description>
-         <Cadence>PT0.062S</Cadence>
+         <Cadence>PT6S</Cadence>
          <Units>s</Units>
+         <UnitsConversion></UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -116,8 +121,9 @@
             increasing radial distance from the center of the Earth (i.e., outward),
             increasing magnetic colatitude (i.e., southward) and increasing azimuth angle
             (i.e., magnetic east).</Description>
-         <Cadence>PT0.062S</Cadence>
+         <Cadence>PT6S</Cadence>
          <Units>nT</Units>
+         <UnitsConversion></UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Spherical</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -158,8 +164,9 @@
             increasing radial distance from the center of the Earth (i.e., outward),
             increasing magnetic colatitude (i.e., southward) and increasing azimuth angle
             (i.e., magnetic east).</Description>
-         <Cadence>PT0.062S</Cadence>
+         <Cadence>PT6S</Cadence>
          <Units>nT</Units>
+         <UnitsConversion></UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Spherical</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -195,8 +202,9 @@
          <ParameterKey>Dynamics Explorer 1 position vector</ParameterKey>
          <Description>Location of the Dynamics Explorer 1 spacecraft in magnetic coordinates in units of km, Degrees, and Hours</Description>
          <Caveats>Flags=999.0</Caveats>
-         <Cadence>PT0.062S</Cadence>
+         <Cadence>PT6S</Cadence>
          <Units>km, degrees, and Hours</Units>
+         <UnitsConversion></UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Spherical</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
