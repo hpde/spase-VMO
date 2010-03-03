@@ -33,7 +33,7 @@
       </AccessURL>
       <AccessURL>
         <Name>nssdcftp</Name>
-        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/</URL>
+        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/monthly_1min/</URL>
         <Description>ftp access to monthly ASCII files of 1-min (10 MB/file) data and to annual ASCII files of 1-min (126 MB/file) and 5-min (25 MB/file) data.</Description>
       </AccessURL>
       <Format>Text</Format>
