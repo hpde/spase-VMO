@@ -18,7 +18,7 @@
             <Role>CoInvestigator</Role>
          </Contact>
          <Contact>
-            <PersonID>spase://SMWG/Person/Thanasis.Boudouridis</PersonID>
+            <PersonID>spase://SMWG/Person/Athanasios.Boudouridis</PersonID>
             <Role>CoInvestigator</Role>
          </Contact>
          <Contact>
@@ -46,7 +46,7 @@
             <Role>TeamMember</Role>
          </Contact>
          <Contact>
-            <PersonID>spase://SMWG/Person/O.Higgins.Observatory.Magnetometer.Contact</PersonID>
+            <PersonID>spase://SMWG/Person/O.Higgins.Observatory.Contact</PersonID>
             <Role>TechnicalContact</Role>
          </Contact>
          <Contact>
