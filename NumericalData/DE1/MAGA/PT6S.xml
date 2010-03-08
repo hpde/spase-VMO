@@ -39,7 +39,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Dynamics Explorer 1 Tri-axial fluxgate magnetometer</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/DynamicsExplorer1/MAGA</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
@@ -67,8 +67,8 @@
          <ParameterKey>Time</ParameterKey>
          <Description>Universal Time columns from left to right are:  year, day of year, milliseconds of the day.</Description>
          <Cadence>PT6S</Cadence>
-         <Units></Units>
-         <UnitsConversion></UnitsConversion>
+
+
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -102,7 +102,7 @@
          <Description>Instrument mode at time measurement taken.</Description>
          <Cadence>PT6S</Cadence>
          <Units>s</Units>
-         <UnitsConversion></UnitsConversion>
+
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -123,7 +123,7 @@
             (i.e., magnetic east).</Description>
          <Cadence>PT6S</Cadence>
          <Units>nT</Units>
-         <UnitsConversion></UnitsConversion>
+         <UnitsConversion>10^9 &gt;T</UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Spherical</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -166,7 +166,7 @@
             (i.e., magnetic east).</Description>
          <Cadence>PT6S</Cadence>
          <Units>nT</Units>
-         <UnitsConversion></UnitsConversion>
+         <UnitsConversion>10^9 &gt;T</UnitsConversion>
          <CoordinateSystem>
             <CoordinateRepresentation>Spherical</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -204,7 +204,7 @@
          <Caveats>Flags=999.0</Caveats>
          <Cadence>PT6S</Cadence>
          <Units>km, degrees, and Hours</Units>
-         <UnitsConversion></UnitsConversion>
+
          <CoordinateSystem>
             <CoordinateRepresentation>Spherical</CoordinateRepresentation>
             <CoordinateSystemName>MAG</CoordinateSystemName>

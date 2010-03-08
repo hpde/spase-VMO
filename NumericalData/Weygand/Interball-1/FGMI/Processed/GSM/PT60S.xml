@@ -43,7 +43,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Fluxgate DC Magnetometer FM-3I</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/Interball-1/FGMI</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
@@ -62,8 +62,8 @@
       <Keyword>Interball</Keyword>
       <Keyword>magnetometer</Keyword>
       <Keyword>magnetic field</Keyword>
-      <Keyword></Keyword>
-      <InputResourceID></InputResourceID>
+
+
       <Parameter>
          <Name>Universal Time</Name>
          <ParameterKey>Time</ParameterKey>

@@ -43,7 +43,7 @@
       <ProcessingLevel>Uncalibrated</ProcessingLevel>
       <ProviderResourceName>Interball CORALL</ProviderResourceName>
       <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/Interball-1/CORALL</InstrumentID>
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
@@ -61,8 +61,8 @@
       <Keyword>magnetopause</Keyword>
       <Keyword>Interball</Keyword>
       <Keyword>plasma data</Keyword>
-      <Keyword></Keyword>
-      <InputResourceID></InputResourceID>
+
+
       <Parameter>
          <Name>Universal Time</Name>
          <ParameterKey>Time</ParameterKey>

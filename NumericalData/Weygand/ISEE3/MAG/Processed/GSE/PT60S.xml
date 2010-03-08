@@ -43,7 +43,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>ISEE-3 Tri-axial fluxgate magnetometer</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/ISEE3/MAG</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>

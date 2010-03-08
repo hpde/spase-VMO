@@ -43,7 +43,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Wind 3-D Plasma and Energetic Particle Investigation</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/WIND/3DP</InstrumentID>
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>

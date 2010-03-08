@@ -47,7 +47,7 @@
       <ProcessingLevel>Uncalibrated</ProcessingLevel>
       <ProviderResourceName>Geotail Tri-axial fluxgate magnetometer</ProviderResourceName>
       <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/Geotail/MGF</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>

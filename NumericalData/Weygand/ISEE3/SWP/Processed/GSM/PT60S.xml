@@ -43,7 +43,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>ISEE-3 Solar Wind Plasma</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/ISEE3/SWP</InstrumentID>
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>

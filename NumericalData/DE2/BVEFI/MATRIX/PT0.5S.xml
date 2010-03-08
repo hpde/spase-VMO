@@ -48,7 +48,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Dynamics Explorer 2 Magnetic field (MAGB)  and Vector Electric Field  (VEFI) DC Matrices</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/DynamicsExplorer2/VEFI</InstrumentID>
       <InstrumentID>spase://SMWG/Instrument/DynamicsExplorer2/MAGB</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>

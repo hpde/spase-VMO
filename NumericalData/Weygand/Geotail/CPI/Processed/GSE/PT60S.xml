@@ -47,7 +47,7 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Geotail Comprehensive Plasma Instrumentation data</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
-      <ProviderVersion></ProviderVersion>
+
       <InstrumentID>spase://SMWG/Instrument/Geotail/CPI</InstrumentID>
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
