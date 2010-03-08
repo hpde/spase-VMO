@@ -43,7 +43,7 @@ Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
       </AccessURL>      
       <AccessURL>
          <Name>nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/omni_27_av.dat</URL>
+         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
          <Description>ftp access to file of 27-day OMNI data 
 </Description>
       </AccessURL>
