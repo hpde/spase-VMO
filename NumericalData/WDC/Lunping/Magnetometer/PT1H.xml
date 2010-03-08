@@ -9,7 +9,7 @@
          <Description>Lunping Magnetometer PT1H data packed using the WDC format; Station Id: LNP; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Directorate General of Telecommunications (DGT)</Acknowledgement>
          <Contact>
-            <PersonID>spase://SMWG/Person/Yung.Po.Lee</PersonID>
+            <PersonID>spase://SMWG/Person/Yung-Po.Lee</PersonID>
             <Role>GeneralContact</Role>
          </Contact>
          <Contact>

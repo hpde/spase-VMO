@@ -9,7 +9,7 @@
          <Description>Lunping Magnetometer PT1M data in ASCII format; Station Id: LNP; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux); Unpacked ASCII flat file format</Description>
          <Acknowledgement>Directorate General of Telecommunications (DGT).  The file format translation from packed form to ASCII flat file was performed at UCLA by Dr. Lee F. Bargatze (Technical Contact for the file translation).</Acknowledgement>
          <Contact>
-            <PersonID>spase://SMWG/Person/Yung.Po.Lee</PersonID>
+            <PersonID>spase://SMWG/Person/Yung-Po.Lee</PersonID>
             <Role>GeneralContact</Role>
          </Contact>
          <Contact>
