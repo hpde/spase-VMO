@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_3.xsd">
+  <Version>2.0.3</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/SCATHA/summary</ResourceID>
     <ResourceHeader>
       <ResourceName>SCATHA Science Summary Data</ResourceName>
-      <ReleaseDate>2010-03-08T22:37:00Z</ReleaseDate>
-      <Description>SATELLITE DESCRIPTION: The P78-2 (SCATHA - Spacecraft Charging AT High Altitude) was placed into a near synchronous orbit in early February 1979.  The objectives of the satellite were twofold; one was to obtain environmental and engineering information so as to provide design criteria, materials, techniques, tests and analytical methods to ensure control of the charging of satellite surfaces.  The second objective was to collect scientific data of interest to each experiment sponsor and the scientific community.  Key ares of scientific investigation include understanding plasma-wave interactions, substorm studies and further studies of the energetic ring current.The satellite has its spin axis approximately parallel to the orbit plane and perpendicular to he sun line for 1979-1987 period and perpendicular to ecliptic from 1988 to end of life.  This allows good pitch angle coverage by the particle experiments.  The experiment complement consists of a complete set of plasma, energetic particle, composition, field and wave experiments. INSTRUMENT REFERENCES: Refer to: Stevens, J. R. and A. L. Vampola, Description of the space test program P78-2 spacecraft and payloads, Air Force Space and Missile Systems organization report SAMSO TR-78-24, 1978.  - Referred to as the 'Blue Book'. Fennell, J. F., Description of P78-2 (SCATHA) Satellite and Experiments, IMS SOURCE BOOK, 1982.</Description>
+      <ReleaseDate>2010-03-10T16:57:15Z</ReleaseDate>
+      <Description>Summary science data from SCATHA instruments (SC1 to SC11).</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Jonathan.Thomas.Niehof</PersonID>
         <Role>TechnicalContact</Role>
@@ -17,9 +17,10 @@
         <Role>GeneralContact</Role>
       </Contact>
       <InformationURL>
-      <URL>http://spacedata.bu.edu/scatha.html</URL>
-      <Description>Web page providing access to the SCATHA science summary data, spacecraft description paper, and summary plots.</Description>
-      <Language>EN</Language>
+        <Name>SCATHA web page at the Boston University</Name>
+        <URL>http://spacedata.bu.edu/scatha.html</URL>
+        <Description>Web page providing access to the SCATHA science summary data, spacecraft description paper, and summary plots.</Description>
+        <Language>EN</Language>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
@@ -34,9 +35,9 @@
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>
-      <Quantity>1.1</Quantity>
-      <Units>MiB</Units>
-      <Per>P1D</Per>
+        <Quantity>1.1</Quantity>
+        <Units>MiB</Units>
+        <Per>P1D</Per>
       </DataExtent>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
@@ -56,8 +57,8 @@
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>1979-02-06T15:00:00</StartDate>
-        <StopDate>1986-06-16T24:00:00</StopDate>
+        <StartDate>1979-02-06T15:00:00Z</StartDate>
+        <StopDate>1986-06-17T00:00:00Z</StopDate>
         <Note>Coverage is not continuous</Note>
       </TimeSpan>
     </TemporalDescription>
@@ -69,7 +70,9 @@
       <ValidMin>01-Jan-1979 00:00:00.000</ValidMin>
       <ValidMax>21-May-1990 23:59:59.000</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Support><SupportQuantity>Temporal</SupportQuantity></Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </Parameter>
     <Parameter>
       <Name>Averaging time interval</Name>
@@ -79,7 +82,9 @@
       <ValidMin>1.0</ValidMin>
       <ValidMax>1.0E8</ValidMax>
       <FillValue>-1.0E31</FillValue>
-      <Support><SupportQuantity>Temporal</SupportQuantity></Support>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
     </Parameter>
     <Parameter>
       <Name>Mag. field in GSM coordinates</Name>
@@ -95,7 +100,7 @@
         <Size>3</Size>
         <Element>
           <Name>Bx (GSM)</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>nT</Units>
           <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
@@ -105,7 +110,7 @@
         </Element>
         <Element>
           <Name>By (GSM)</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>nT</Units>
           <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
@@ -115,7 +120,7 @@
         </Element>
         <Element>
           <Name>Bz (GSM)</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>nT</Units>
           <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
@@ -142,7 +147,7 @@
         <Size>3</Size>
         <Element>
           <Name>Bx sigma (GSM)</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>unitless</Units>
           <ValidMin>-300.0</ValidMin>
@@ -151,7 +156,7 @@
         </Element>
         <Element>
           <Name>By sigma (GSM)</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>unitless</Units>
           <ValidMin>-300.0</ValidMin>
@@ -160,7 +165,7 @@
         </Element>
         <Element>
           <Name>Bz sigma (GSM)</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>unitless</Units>
           <ValidMin>-300.0</ValidMin>
@@ -253,14 +258,38 @@
           <Low>0.37</Low>
           <High>323</High>
           <Units>kHz</Units>
-          <Bin><Low>0.37</Low><High>0.43</High></Bin>
-          <Bin><Low>1.2</Low><High>1.4</High></Bin>
-          <Bin><Low>2.1</Low><High>2.5</High></Bin>
-          <Bin><Low>2.8</Low><High>3.2</High></Bin>
-          <Bin><Low>9.71</Low><High>11.3</High></Bin>
-          <Bin><Low>28</Low><High>32.25</High></Bin>
-          <Bin><Low>93</Low><High>108</High></Bin>
-          <Bin><Low>278</Low><High>323</High></Bin>
+          <Bin>
+            <Low>0.37</Low>
+            <High>0.43</High>
+          </Bin>
+          <Bin>
+            <Low>1.2</Low>
+            <High>1.4</High>
+          </Bin>
+          <Bin>
+            <Low>2.1</Low>
+            <High>2.5</High>
+          </Bin>
+          <Bin>
+            <Low>2.8</Low>
+            <High>3.2</High>
+          </Bin>
+          <Bin>
+            <Low>9.71</Low>
+            <High>11.3</High>
+          </Bin>
+          <Bin>
+            <Low>28</Low>
+            <High>32.25</High>
+          </Bin>
+          <Bin>
+            <Low>93</Low>
+            <High>108</High>
+          </Bin>
+          <Bin>
+            <Low>278</Low>
+            <High>323</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -344,14 +373,38 @@
           <Low>0.37</Low>
           <High>323</High>
           <Units>kHz</Units>
-          <Bin><Low>0.37</Low><High>0.43</High></Bin>
-          <Bin><Low>1.2</Low><High>1.4</High></Bin>
-          <Bin><Low>2.1</Low><High>2.5</High></Bin>
-          <Bin><Low>2.8</Low><High>3.2</High></Bin>
-          <Bin><Low>9.71</Low><High>11.3</High></Bin>
-          <Bin><Low>28</Low><High>32.25</High></Bin>
-          <Bin><Low>93</Low><High>108</High></Bin>
-          <Bin><Low>278</Low><High>323</High></Bin>
+          <Bin>
+            <Low>0.37</Low>
+            <High>0.43</High>
+          </Bin>
+          <Bin>
+            <Low>1.2</Low>
+            <High>1.4</High>
+          </Bin>
+          <Bin>
+            <Low>2.1</Low>
+            <High>2.5</High>
+          </Bin>
+          <Bin>
+            <Low>2.8</Low>
+            <High>3.2</High>
+          </Bin>
+          <Bin>
+            <Low>9.71</Low>
+            <High>11.3</High>
+          </Bin>
+          <Bin>
+            <Low>28</Low>
+            <High>32.25</High>
+          </Bin>
+          <Bin>
+            <Low>93</Low>
+            <High>108</High>
+          </Bin>
+          <Bin>
+            <Low>278</Low>
+            <High>323</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -660,10 +713,22 @@
           <Low>0.37</Low>
           <High>3.2</High>
           <Units>kHz</Units>
-          <Bin><Low>0.37</Low><High>0.43</High></Bin>
-          <Bin><Low>1.2</Low><High>1.4</High></Bin>
-          <Bin><Low>2.1</Low><High>2.5</High></Bin>
-          <Bin><Low>2.8</Low><High>3.2</High></Bin>
+          <Bin>
+            <Low>0.37</Low>
+            <High>0.43</High>
+          </Bin>
+          <Bin>
+            <Low>1.2</Low>
+            <High>1.4</High>
+          </Bin>
+          <Bin>
+            <Low>2.1</Low>
+            <High>2.5</High>
+          </Bin>
+          <Bin>
+            <Low>2.8</Low>
+            <High>3.2</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -672,7 +737,7 @@
       <ParameterKey>BVLFPAmp</ParameterKey>
       <Description>Magnetic field VLF peak wave amplitudes at each of 4 frequencies during AveInt time interval around the time in Epoch - Converted to science units using calibration values.</Description>
       <Units>dBnT</Units>
-       <Structure>
+      <Structure>
         <Size>4</Size>
         <Element>
           <Name>B-field VLF peak amplitude 0.4kHz</Name>
@@ -715,10 +780,22 @@
           <Low>0.37</Low>
           <High>3.2</High>
           <Units>kHz</Units>
-          <Bin><Low>0.37</Low><High>0.43</High></Bin>
-          <Bin><Low>1.2</Low><High>1.4</High></Bin>
-          <Bin><Low>2.1</Low><High>2.5</High></Bin>
-          <Bin><Low>2.8</Low><High>3.2</High></Bin>
+          <Bin>
+            <Low>0.37</Low>
+            <High>0.43</High>
+          </Bin>
+          <Bin>
+            <Low>1.2</Low>
+            <High>1.4</High>
+          </Bin>
+          <Bin>
+            <Low>2.1</Low>
+            <High>2.5</High>
+          </Bin>
+          <Bin>
+            <Low>2.8</Low>
+            <High>3.2</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -727,7 +804,7 @@
       <ParameterKey>BVLFFrq</ParameterKey>
       <Description>Magnetic field VLF frequency range center values for values stored in BVLFAmp and BVLFPAmp.</Description>
       <Units>kHz</Units>
-     <Structure>
+      <Structure>
         <Size>4</Size>
         <Element>
           <Name>B-field VLF 0.4 kHz bin center</Name>
@@ -880,7 +957,7 @@
       <ValidMax>15.0</ValidMax>
       <FillValue>-99.999</FillValue>
       <Field>
-              <FieldQuantity>Potential</FieldQuantity>
+        <FieldQuantity>Potential</FieldQuantity>
       </Field>
     </Parameter>
     <Parameter>
@@ -892,7 +969,7 @@
       <ValidMax>300.0</ValidMax>
       <FillValue>-999.99</FillValue>
       <Field>
-              <FieldQuantity>Potential</FieldQuantity>
+        <FieldQuantity>Potential</FieldQuantity>
       </Field>
     </Parameter>
     <Parameter>
@@ -904,7 +981,7 @@
       <ValidMax>5000.0</ValidMax>
       <FillValue>-9999.9</FillValue>
       <Field>
-              <FieldQuantity>Potential</FieldQuantity>
+        <FieldQuantity>Potential</FieldQuantity>
       </Field>
     </Parameter>
     <Parameter>
@@ -925,7 +1002,7 @@
       <Name>RMS E-field amplitude</Name>
       <ParameterKey>EAC</ParameterKey>
       <Description>DC Electric field RMS magnitude of AC E-field (gain = 2.5) - from SC10.</Description>
-      <Units>RMS volts</Units>
+      <Units>V</Units>
       <ValidMin>0.0</ValidMin>
       <ValidMax>15.0</ValidMax>
       <FillValue>-99.999</FillValue>
@@ -996,10 +1073,22 @@
           <Low>0.1</Low>
           <High>200.0</High>
           <Units>Hz</Units>
-          <Bin><Low>0.1</Low><High>1.0</High></Bin>
-          <Bin><Low>1.0</Low><High>2.0</High></Bin>
-          <Bin><Low>2.0</Low><High>20.0</High></Bin>
-          <Bin><Low>20.0</Low><High>200.0</High></Bin>
+          <Bin>
+            <Low>0.1</Low>
+            <High>1.0</High>
+          </Bin>
+          <Bin>
+            <Low>1.0</Low>
+            <High>2.0</High>
+          </Bin>
+          <Bin>
+            <Low>2.0</Low>
+            <High>20.0</High>
+          </Bin>
+          <Bin>
+            <Low>20.0</Low>
+            <High>200.0</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -1051,10 +1140,22 @@
           <Low>0.1</Low>
           <High>200.0</High>
           <Units>Hz</Units>
-          <Bin><Low>0.1</Low><High>1.0</High></Bin>
-          <Bin><Low>1.0</Low><High>2.0</High></Bin>
-          <Bin><Low>2.0</Low><High>20.0</High></Bin>
-          <Bin><Low>20.0</Low><High>200.0</High></Bin>
+          <Bin>
+            <Low>0.1</Low>
+            <High>1.0</High>
+          </Bin>
+          <Bin>
+            <Low>1.0</Low>
+            <High>2.0</High>
+          </Bin>
+          <Bin>
+            <Low>2.0</Low>
+            <High>20.0</High>
+          </Bin>
+          <Bin>
+            <Low>20.0</Low>
+            <High>200.0</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -1098,7 +1199,7 @@
           <FillValue>-999.9</FillValue>
         </Element>
       </Structure>
-     <Wave>
+      <Wave>
         <WaveType>PlasmaWaves</WaveType>
         <WaveQuantity>Frequency</WaveQuantity>
       </Wave>
@@ -1196,10 +1297,22 @@
           <Low>0.1</Low>
           <High>200.0</High>
           <Units>Hz</Units>
-          <Bin><Low>0.1</Low><High>1.0</High></Bin>
-          <Bin><Low>1.0</Low><High>2.0</High></Bin>
-          <Bin><Low>2.0</Low><High>20.0</High></Bin>
-          <Bin><Low>20.0</Low><High>200.0</High></Bin>
+          <Bin>
+            <Low>0.1</Low>
+            <High>1.0</High>
+          </Bin>
+          <Bin>
+            <Low>1.0</Low>
+            <High>2.0</High>
+          </Bin>
+          <Bin>
+            <Low>2.0</Low>
+            <High>20.0</High>
+          </Bin>
+          <Bin>
+            <Low>20.0</Low>
+            <High>200.0</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -1251,10 +1364,22 @@
           <Low>0.1</Low>
           <High>200.0</High>
           <Units>Hz</Units>
-          <Bin><Low>0.1</Low><High>1.0</High></Bin>
-          <Bin><Low>1.0</Low><High>2.0</High></Bin>
-          <Bin><Low>2.0</Low><High>20.0</High></Bin>
-          <Bin><Low>20.0</Low><High>200.0</High></Bin>
+          <Bin>
+            <Low>0.1</Low>
+            <High>1.0</High>
+          </Bin>
+          <Bin>
+            <Low>1.0</Low>
+            <High>2.0</High>
+          </Bin>
+          <Bin>
+            <Low>2.0</Low>
+            <High>20.0</High>
+          </Bin>
+          <Bin>
+            <Low>20.0</Low>
+            <High>200.0</High>
+          </Bin>
         </FrequencyRange>
       </Wave>
     </Parameter>
@@ -1456,16 +1581,46 @@
           <Low>180.5</Low>
           <High>147000</High>
           <Units>eV</Units>
-          <Bin><Low>180.5</Low><High>193.5</High></Bin>
-          <Bin><Low>430.4</Low><High>461.6</High></Bin>
-          <Bin><Low>1052</Low><High>1128</High></Bin>
-          <Bin><Low>2490</Low><High>2670</High></Bin>
-          <Bin><Low>4362</Low><High>4678</High></Bin>
-          <Bin><Low>10570</Low><High>11330</High></Bin>
-          <Bin><Low>18720</Low><High>20080</High></Bin>
-          <Bin><Low>54150</Low><High>59850</High></Bin>
-          <Bin><Low>93100</Low><High>102900</High></Bin>
-          <Bin><Low>133000</Low><High>147000</High></Bin>
+          <Bin>
+            <Low>180.5</Low>
+            <High>193.5</High>
+          </Bin>
+          <Bin>
+            <Low>430.4</Low>
+            <High>461.6</High>
+          </Bin>
+          <Bin>
+            <Low>1052</Low>
+            <High>1128</High>
+          </Bin>
+          <Bin>
+            <Low>2490</Low>
+            <High>2670</High>
+          </Bin>
+          <Bin>
+            <Low>4362</Low>
+            <High>4678</High>
+          </Bin>
+          <Bin>
+            <Low>10570</Low>
+            <High>11330</High>
+          </Bin>
+          <Bin>
+            <Low>18720</Low>
+            <High>20080</High>
+          </Bin>
+          <Bin>
+            <Low>54150</Low>
+            <High>59850</High>
+          </Bin>
+          <Bin>
+            <Low>93100</Low>
+            <High>102900</High>
+          </Bin>
+          <Bin>
+            <Low>133000</Low>
+            <High>147000</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>70</Low>
@@ -1572,16 +1727,46 @@
           <Low>180.5</Low>
           <High>147000</High>
           <Units>eV</Units>
-          <Bin><Low>180.5</Low><High>193.5</High></Bin>
-          <Bin><Low>430.4</Low><High>461.6</High></Bin>
-          <Bin><Low>1052</Low><High>1128</High></Bin>
-          <Bin><Low>2490</Low><High>2670</High></Bin>
-          <Bin><Low>4362</Low><High>4678</High></Bin>
-          <Bin><Low>10570</Low><High>11330</High></Bin>
-          <Bin><Low>18720</Low><High>20080</High></Bin>
-          <Bin><Low>54150</Low><High>59850</High></Bin>
-          <Bin><Low>93100</Low><High>102900</High></Bin>
-          <Bin><Low>133000</Low><High>147000</High></Bin>
+          <Bin>
+            <Low>180.5</Low>
+            <High>193.5</High>
+          </Bin>
+          <Bin>
+            <Low>430.4</Low>
+            <High>461.6</High>
+          </Bin>
+          <Bin>
+            <Low>1052</Low>
+            <High>1128</High>
+          </Bin>
+          <Bin>
+            <Low>2490</Low>
+            <High>2670</High>
+          </Bin>
+          <Bin>
+            <Low>4362</Low>
+            <High>4678</High>
+          </Bin>
+          <Bin>
+            <Low>10570</Low>
+            <High>11330</High>
+          </Bin>
+          <Bin>
+            <Low>18720</Low>
+            <High>20080</High>
+          </Bin>
+          <Bin>
+            <Low>54150</Low>
+            <High>59850</High>
+          </Bin>
+          <Bin>
+            <Low>93100</Low>
+            <High>102900</High>
+          </Bin>
+          <Bin>
+            <Low>133000</Low>
+            <High>147000</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>70</Low>
@@ -1697,23 +1882,61 @@
           <Low>180.5</Low>
           <High>147000</High>
           <Units>eV</Units>
-          <Bin><Low>180.5</Low><High>193.5</High></Bin>
-          <Bin><Low>430.4</Low><High>461.6</High></Bin>
-          <Bin><Low>1052</Low><High>1128</High></Bin>
-          <Bin><Low>2490</Low><High>2670</High></Bin>
-          <Bin><Low>4362</Low><High>4678</High></Bin>
-          <Bin><Low>10570</Low><High>11330</High></Bin>
-          <Bin><Low>18720</Low><High>20080</High></Bin>
-          <Bin><Low>54150</Low><High>59850</High></Bin>
-          <Bin><Low>93100</Low><High>102900</High></Bin>
-          <Bin><Low>133000</Low><High>147000</High></Bin>
+          <Bin>
+            <Low>180.5</Low>
+            <High>193.5</High>
+          </Bin>
+          <Bin>
+            <Low>430.4</Low>
+            <High>461.6</High>
+          </Bin>
+          <Bin>
+            <Low>1052</Low>
+            <High>1128</High>
+          </Bin>
+          <Bin>
+            <Low>2490</Low>
+            <High>2670</High>
+          </Bin>
+          <Bin>
+            <Low>4362</Low>
+            <High>4678</High>
+          </Bin>
+          <Bin>
+            <Low>10570</Low>
+            <High>11330</High>
+          </Bin>
+          <Bin>
+            <Low>18720</Low>
+            <High>20080</High>
+          </Bin>
+          <Bin>
+            <Low>54150</Low>
+            <High>59850</High>
+          </Bin>
+          <Bin>
+            <Low>93100</Low>
+            <High>102900</High>
+          </Bin>
+          <Bin>
+            <Low>133000</Low>
+            <High>147000</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -1808,30 +2031,68 @@
       <Particle>
         <ParticleType>Electron</ParticleType>
         <Qualifier>Uncertainty</Qualifier>
-              <Qualifier>Differential</Qualifier>
-              <Qualifier>FieldAligned</Qualifier>
+        <Qualifier>Differential</Qualifier>
+        <Qualifier>FieldAligned</Qualifier>
         <ParticleQuantity>NumberFlux</ParticleQuantity>
         <EnergyRange>
           <Low>180.5</Low>
           <High>147000</High>
           <Units>eV</Units>
-          <Bin><Low>180.5</Low><High>193.5</High></Bin>
-          <Bin><Low>430.4</Low><High>461.6</High></Bin>
-          <Bin><Low>1052</Low><High>1128</High></Bin>
-          <Bin><Low>2490</Low><High>2670</High></Bin>
-          <Bin><Low>4362</Low><High>4678</High></Bin>
-          <Bin><Low>10570</Low><High>11330</High></Bin>
-          <Bin><Low>18720</Low><High>20080</High></Bin>
-          <Bin><Low>54150</Low><High>59850</High></Bin>
-          <Bin><Low>93100</Low><High>102900</High></Bin>
-          <Bin><Low>133000</Low><High>147000</High></Bin>
+          <Bin>
+            <Low>180.5</Low>
+            <High>193.5</High>
+          </Bin>
+          <Bin>
+            <Low>430.4</Low>
+            <High>461.6</High>
+          </Bin>
+          <Bin>
+            <Low>1052</Low>
+            <High>1128</High>
+          </Bin>
+          <Bin>
+            <Low>2490</Low>
+            <High>2670</High>
+          </Bin>
+          <Bin>
+            <Low>4362</Low>
+            <High>4678</High>
+          </Bin>
+          <Bin>
+            <Low>10570</Low>
+            <High>11330</High>
+          </Bin>
+          <Bin>
+            <Low>18720</Low>
+            <High>20080</High>
+          </Bin>
+          <Bin>
+            <Low>54150</Low>
+            <High>59850</High>
+          </Bin>
+          <Bin>
+            <Low>93100</Low>
+            <High>102900</High>
+          </Bin>
+          <Bin>
+            <Low>133000</Low>
+            <High>147000</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -1999,12 +2260,20 @@
           <High>20000</High>
           <Units>eV</Units>
         </EnergyRange>
-              <PolarAngleRange>
+        <PolarAngleRange>
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -2020,19 +2289,27 @@
       <Particle>
         <ParticleType>Electron</ParticleType>
         <Qualifier>Integral</Qualifier>
-              <Qualifier>FieldAligned</Qualifier>
+        <Qualifier>FieldAligned</Qualifier>
         <ParticleQuantity>NumberFlux</ParticleQuantity>
         <EnergyRange>
           <Low>200</Low>
           <High>20000</High>
           <Units>eV</Units>
-              </EnergyRange>
-              <PolarAngleRange>
+        </EnergyRange>
+        <PolarAngleRange>
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -2144,16 +2421,46 @@
           <Low>146.3</Low>
           <High>139600</High>
           <Units>eV</Units>
-          <Bin><Low>146.3</Low><High>161.7</High></Bin>
-          <Bin><Low>342</Low><High>378</High></Bin>
-          <Bin><Low>836</Low><High>924</High></Bin>
-          <Bin><Low>1957</Low><High>2163</High></Bin>
-          <Bin><Low>3420</Low><High>3780</High></Bin>
-          <Bin><Low>8360</Low><High>9240</High></Bin>
-          <Bin><Low>14820</Low><High>16380</High></Bin>
-          <Bin><Low>34200</Low><High>37800</High></Bin>
-          <Bin><Low>67450</Low><High>74550</High></Bin>
-          <Bin><Low>126350</Low><High>139650</High></Bin>
+          <Bin>
+            <Low>146.3</Low>
+            <High>161.7</High>
+          </Bin>
+          <Bin>
+            <Low>342</Low>
+            <High>378</High>
+          </Bin>
+          <Bin>
+            <Low>836</Low>
+            <High>924</High>
+          </Bin>
+          <Bin>
+            <Low>1957</Low>
+            <High>2163</High>
+          </Bin>
+          <Bin>
+            <Low>3420</Low>
+            <High>3780</High>
+          </Bin>
+          <Bin>
+            <Low>8360</Low>
+            <High>9240</High>
+          </Bin>
+          <Bin>
+            <Low>14820</Low>
+            <High>16380</High>
+          </Bin>
+          <Bin>
+            <Low>34200</Low>
+            <High>37800</High>
+          </Bin>
+          <Bin>
+            <Low>67450</Low>
+            <High>74550</High>
+          </Bin>
+          <Bin>
+            <Low>126350</Low>
+            <High>139650</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>70</Low>
@@ -2260,16 +2567,46 @@
           <Low>146.3</Low>
           <High>139600</High>
           <Units>eV</Units>
-          <Bin><Low>146.3</Low><High>161.7</High></Bin>
-          <Bin><Low>342</Low><High>378</High></Bin>
-          <Bin><Low>836</Low><High>924</High></Bin>
-          <Bin><Low>1957</Low><High>2163</High></Bin>
-          <Bin><Low>3420</Low><High>3780</High></Bin>
-          <Bin><Low>8360</Low><High>9240</High></Bin>
-          <Bin><Low>14820</Low><High>16380</High></Bin>
-          <Bin><Low>34200</Low><High>37800</High></Bin>
-          <Bin><Low>67450</Low><High>74550</High></Bin>
-          <Bin><Low>126350</Low><High>139650</High></Bin>
+          <Bin>
+            <Low>146.3</Low>
+            <High>161.7</High>
+          </Bin>
+          <Bin>
+            <Low>342</Low>
+            <High>378</High>
+          </Bin>
+          <Bin>
+            <Low>836</Low>
+            <High>924</High>
+          </Bin>
+          <Bin>
+            <Low>1957</Low>
+            <High>2163</High>
+          </Bin>
+          <Bin>
+            <Low>3420</Low>
+            <High>3780</High>
+          </Bin>
+          <Bin>
+            <Low>8360</Low>
+            <High>9240</High>
+          </Bin>
+          <Bin>
+            <Low>14820</Low>
+            <High>16380</High>
+          </Bin>
+          <Bin>
+            <Low>34200</Low>
+            <High>37800</High>
+          </Bin>
+          <Bin>
+            <Low>67450</Low>
+            <High>74550</High>
+          </Bin>
+          <Bin>
+            <Low>126350</Low>
+            <High>139650</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>70</Low>
@@ -2386,23 +2723,61 @@
           <Low>146.3</Low>
           <High>139600</High>
           <Units>eV</Units>
-          <Bin><Low>146.3</Low><High>161.7</High></Bin>
-          <Bin><Low>342</Low><High>378</High></Bin>
-          <Bin><Low>836</Low><High>924</High></Bin>
-          <Bin><Low>1957</Low><High>2163</High></Bin>
-          <Bin><Low>3420</Low><High>3780</High></Bin>
-          <Bin><Low>8360</Low><High>9240</High></Bin>
-          <Bin><Low>14820</Low><High>16380</High></Bin>
-          <Bin><Low>34200</Low><High>37800</High></Bin>
-          <Bin><Low>67450</Low><High>74550</High></Bin>
-          <Bin><Low>126350</Low><High>139650</High></Bin>
+          <Bin>
+            <Low>146.3</Low>
+            <High>161.7</High>
+          </Bin>
+          <Bin>
+            <Low>342</Low>
+            <High>378</High>
+          </Bin>
+          <Bin>
+            <Low>836</Low>
+            <High>924</High>
+          </Bin>
+          <Bin>
+            <Low>1957</Low>
+            <High>2163</High>
+          </Bin>
+          <Bin>
+            <Low>3420</Low>
+            <High>3780</High>
+          </Bin>
+          <Bin>
+            <Low>8360</Low>
+            <High>9240</High>
+          </Bin>
+          <Bin>
+            <Low>14820</Low>
+            <High>16380</High>
+          </Bin>
+          <Bin>
+            <Low>34200</Low>
+            <High>37800</High>
+          </Bin>
+          <Bin>
+            <Low>67450</Low>
+            <High>74550</High>
+          </Bin>
+          <Bin>
+            <Low>126350</Low>
+            <High>139650</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -2504,23 +2879,61 @@
           <Low>146.3</Low>
           <High>139600</High>
           <Units>eV</Units>
-          <Bin><Low>146.3</Low><High>161.7</High></Bin>
-          <Bin><Low>342</Low><High>378</High></Bin>
-          <Bin><Low>836</Low><High>924</High></Bin>
-          <Bin><Low>1957</Low><High>2163</High></Bin>
-          <Bin><Low>3420</Low><High>3780</High></Bin>
-          <Bin><Low>8360</Low><High>9240</High></Bin>
-          <Bin><Low>14820</Low><High>16380</High></Bin>
-          <Bin><Low>34200</Low><High>37800</High></Bin>
-          <Bin><Low>67450</Low><High>74550</High></Bin>
-          <Bin><Low>126350</Low><High>139650</High></Bin>
+          <Bin>
+            <Low>146.3</Low>
+            <High>161.7</High>
+          </Bin>
+          <Bin>
+            <Low>342</Low>
+            <High>378</High>
+          </Bin>
+          <Bin>
+            <Low>836</Low>
+            <High>924</High>
+          </Bin>
+          <Bin>
+            <Low>1957</Low>
+            <High>2163</High>
+          </Bin>
+          <Bin>
+            <Low>3420</Low>
+            <High>3780</High>
+          </Bin>
+          <Bin>
+            <Low>8360</Low>
+            <High>9240</High>
+          </Bin>
+          <Bin>
+            <Low>14820</Low>
+            <High>16380</High>
+          </Bin>
+          <Bin>
+            <Low>34200</Low>
+            <High>37800</High>
+          </Bin>
+          <Bin>
+            <Low>67450</Low>
+            <High>74550</High>
+          </Bin>
+          <Bin>
+            <Low>126350</Low>
+            <High>139650</High>
+          </Bin>
         </EnergyRange>
         <PolarAngleRange>
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -2691,8 +3104,16 @@
           <Low>0</Low>
           <High>180</High>
           <Units>degrees</Units>
-          <Bin><BandName>Parallel</BandName><Low>0</Low><High>30</High></Bin>
-          <Bin><BandName>Antiparallel</BandName><Low>150</Low><High>180</High></Bin>
+          <Bin>
+            <BandName>Parallel</BandName>
+            <Low>0</Low>
+            <High>30</High>
+          </Bin>
+          <Bin>
+            <BandName>Antiparallel</BandName>
+            <Low>150</Low>
+            <High>180</High>
+          </Bin>
         </PolarAngleRange>
       </Particle>
     </Parameter>
@@ -2759,7 +3180,7 @@
           <High>20</High>
           <Units>keV</Units>
         </EnergyRange>
-       <PolarAngleRange>
+        <PolarAngleRange>
           <Low>70</Low>
           <High>110</High>
           <Units>degrees</Units>
@@ -2784,7 +3205,7 @@
           <High>20</High>
           <Units>keV</Units>
         </EnergyRange>
-       <PolarAngleRange>
+        <PolarAngleRange>
           <Low>70</Low>
           <High>110</High>
           <Units>degrees</Units>
@@ -2848,7 +3269,7 @@
           <High>15.6</High>
           <Units>keV</Units>
         </EnergyRange>
-       <PolarAngleRange>
+        <PolarAngleRange>
           <Low>70</Low>
           <High>110</High>
           <Units>degrees</Units>
@@ -2873,7 +3294,7 @@
           <High>133</High>
           <Units>keV</Units>
         </EnergyRange>
-       <PolarAngleRange>
+        <PolarAngleRange>
           <Low>70</Low>
           <High>110</High>
           <Units>degrees</Units>
@@ -2905,6 +3326,10 @@
       <ParameterKey>SCGeoLon</ParameterKey>
       <Description>Spacecraft Geographic Longitude (0-360 deg E.) - Interpolated at interval midpoint time EPOCH using Ephemeris data.</Description>
       <Units>degrees</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GEO</CoordinateSystemName>
+      </CoordinateSystem>
       <ValidMin>0.0</ValidMin>
       <ValidMax>360.0</ValidMax>
       <FillValue>-999.99</FillValue>
@@ -2918,6 +3343,10 @@
       <ParameterKey>SCGeoLat</ParameterKey>
       <Description>Spacecraft Geographic Latitude (+/- 90 deg - Interpolated at interval midpoint time EPOCH using Ephemeris data.</Description>
       <Units>degrees</Units>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GEO</CoordinateSystemName>
+      </CoordinateSystem>
       <ValidMin>-90.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>-99.99</FillValue>
@@ -2932,10 +3361,15 @@
       <Description>Spacecraft Geocentric Radius (km) - Interpolated at interval midpoint time EPOCH using Ephemeris data.</Description>
       <Units>km</Units>
       <UnitsConversion>1e3&gt;m</UnitsConversion>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Spherical</CoordinateRepresentation>
+        <CoordinateSystemName>GEO</CoordinateSystemName>
+      </CoordinateSystem>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1000000.0</ValidMax>
       <FillValue>-99999.9</FillValue>
       <Support>
+        <Qualifier>Magnitude</Qualifier>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
     </Parameter>
@@ -2947,12 +3381,13 @@
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
         <Element>
           <Name>x (ECI)</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>km</Units>
           <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -2962,7 +3397,7 @@
         </Element>
         <Element>
           <Name>y (ECI)</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>km</Units>
           <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -2972,7 +3407,7 @@
         </Element>
         <Element>
           <Name>z (ECI)</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>km</Units>
           <UnitsConversion>1e3&gt;m</UnitsConversion>
@@ -2994,12 +3429,13 @@
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
         <Element>
           <Name>vx (ECI)</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>km/s</Units>
           <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -3009,7 +3445,7 @@
         </Element>
         <Element>
           <Name>vy (ECI)</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>km/s</Units>
           <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -3019,7 +3455,7 @@
         </Element>
         <Element>
           <Name>vz (ECI)</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>km/s</Units>
           <UnitsConversion>1e3&gt;m/s</UnitsConversion>
@@ -3068,7 +3504,9 @@
       <ValidMin>0.0</ValidMin>
       <ValidMax>1000.0</ValidMax>
       <FillValue>-999.99</FillValue>
-      <Support><SupportQuantity>Positional</SupportQuantity></Support>
+      <Support>
+        <SupportQuantity>Positional</SupportQuantity>
+      </Support>
     </Parameter>
     <Parameter>
       <Name>B equator model</Name>
@@ -3079,7 +3517,9 @@
       <ValidMin>-500.0</ValidMin>
       <ValidMax>500.0</ValidMax>
       <FillValue>-999.99</FillValue>
-      <Support><SupportQuantity>Other</SupportQuantity></Support>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
     </Parameter>
     <Parameter>
       <Name>Angle between B-field and S/C spin axis</Name>
@@ -3089,7 +3529,9 @@
       <ValidMin>-90.0</ValidMin>
       <ValidMax>90.0</ValidMax>
       <FillValue>-999.99</FillValue>
-      <Support><SupportQuantity>Other</SupportQuantity></Support>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
     </Parameter>
     <Parameter>
       <Name>Model mag. field coordinates</Name>
@@ -3105,7 +3547,7 @@
         <Size>3</Size>
         <Element>
           <Name>Bx (model)</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>nT</Units>
           <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -3115,7 +3557,7 @@
         </Element>
         <Element>
           <Name>By (model)</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>nT</Units>
           <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -3125,7 +3567,7 @@
         </Element>
         <Element>
           <Name>Bz (model)</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>nT</Units>
           <UnitsConversion>1e-9&gt;T</UnitsConversion>
@@ -3142,7 +3584,10 @@
     <Parameter>
       <Name>Ion/Electron gun operation flag</Name>
       <ParameterKey>GunStat</ParameterKey>
-      <Description>Ion/Electron gun operation flag - bit 0 (electron gun) 0/1 =&gt; OFF/ON, bit 1 (ion gun) 0/1 =&gt; OFF/ON.</Description>
+      <Description>Ion/Electron gun operation flag:
+      
+      * bit 0 (electron gun) 0/1 =&gt; OFF/ON,
+      * bit 1 (ion gun) 0/1 =&gt; OFF/ON.</Description>
       <Units>unitless</Units>
       <ValidMin>-128.0</ValidMin>
       <ValidMax>127.0</ValidMax>
@@ -3155,17 +3600,78 @@
       <Name>Variable quality indicator</Name>
       <ParameterKey>Status%SC_SP</ParameterKey>
       <Description>Variable quality indicator - see global attribute Status_key:
-      Status[0]='0'=Bad data '1'=Use with caution '2'=OK 'F'=Not Supplied '4'=Attitude partly non-fitted '5'=Attitude all non-fitted '6'=No Attitude data available
-      Status[1]='O'=B-field - OK 'C'=B-field - Use with caution 'M'=B-field - Not Supplied 'B'=B-field - Bad data '4'=Attitude partly non-fitted '5'=Attitude all non-fitted '6'=No Attitude data available
-      Status[2]='O'=VLF - OK - Normal ant. switching 'C'=VLF - Caution - missing E or M 'M'=VLF - Not Supplied 'B'=VLF - Bad data '1'=VLF - E-  normal; M-abnormal '2'=VLF - E-abnormal; M-  normal '3'=VLF - E-abnormal; M-abnormal
-      Status[3]='O'=SC Common - OK 'C'=SC Common - Use with caution 'M'=SC Common - Not Supplied 'B'=SC Common - Bad data
-      Status[4]='O'=ELF - OK 'C'=ELF - Use with caution 'M'=ELF - Not Supplied 'B'=ELF - Bad Data
-      Status[5]='O'=E-Flux - OK 'C'=E-Flux - Use with caution 'M'=E-Flux - Not Supplied 'B'=E-Flux - Bad data
-      Status[6]='O'=E-Moment - OK 'C'=E-Moment - Use with caution 'M'=E-Moment - Not Supplied 'B'=E-Moment - Bad data
-      Status[7]='O'=P-Flux - OK 'C'=P-Flux - Use with caution 'M'=P-Flux - Not Supplied 'B'=P-Flux - Bad data '4'=Attitude partly non-fitted '5'=Attitude all non-fitted '6'=No Attitude data available
-      Status[8]='O'=P-Moment - OK 'C'=P-Moment - Use with caution 'M'=P-Moment - Not Supplied 'B'=P-Moment - Bad data '1'=P-Moment - Uses flux LE 71.0 keV '4'=Attitude partly non-fitted '5'=Attitude all non-fitted '6'=No Attitude data available
-      Status[9]='O'=Ephemeris - OK 'C'=Ephemeris - Use with caution 'M'=Ephemeris - Not Supplied 'B'=Ephemeris - Bad data
-      Status[10]='O'=Gun - OK 'C'=Gun - Use with caution 'M'=Gun - Not Supplied 'B'=Gun - Bad data</Description>
+      
+    * Status[0]
+    - '0'=Bad data
+    - '1'=Use with caution
+    - '2'=OK
+    - 'F'=Not Supplied
+    - '4'=Attitude partly non-fitted
+    - '5'=Attitude all non-fitted
+    - '6'=No Attitude data available
+    * Status[1]
+    - 'O'=B-field - OK
+    - 'C'=B-field - Use with caution
+    - 'M'=B-field - Not Supplied
+    - 'B'=B-field - Bad data
+    - '4'=Attitude partly non-fitted
+    - '5'=Attitude all non-fitted
+    - '6'=No Attitude data available
+    * Status[2]
+    - 'O'=VLF - OK - Normal ant. switching
+    - 'C'=VLF - Caution - missing E or M
+    - 'M'=VLF - Not Supplied 
+    - 'B'=VLF - Bad data
+    - '1'=VLF - E-normal; M-abnormal
+    - '2'=VLF - E-abnormal; M-normal
+    - '3'=VLF - E-abnormal; M-abnormal
+    * Status[3]
+    - 'O'=SC Common - OK
+    - 'C'=SC Common - Use with caution
+    - 'M'=SC Common - Not Supplied
+    - 'B'=SC Common - Bad data
+    * Status[4]
+    - 'O'=ELF - OK
+    - 'C'=ELF - Use with caution
+    - 'M'=ELF - Not Supplied
+    - 'B'=ELF - Bad Data
+    * Status[5]
+    - 'O'=E-Flux - OK
+    - 'C'=E-Flux - Use with caution
+    - 'M'=E-Flux - Not Supplied
+    - 'B'=E-Flux - Bad data
+    * Status[6]
+    - 'O'=E-Moment - OK
+    - 'C'=E-Moment - Use with caution
+    - 'M'=E-Moment - Not Supplied
+    - 'B'=E-Moment - Bad data
+    * Status[7]
+    - 'O'=P-Flux - OK
+    - 'C'=P-Flux - Use with caution
+    - 'M'=P-Flux - Not Supplied
+    - 'B'=P-Flux - Bad data
+    - '4'=Attitude partly non-fitted
+    - '5'=Attitude all non-fitted
+    - '6'=No Attitude data available
+    * Status[8]
+    - 'O'=P-Moment - OK
+    - 'C'=P-Moment - Use with caution
+    - 'M'=P-Moment - Not Supplied
+    - 'B'=P-Moment - Bad data
+    - '1'=P-Moment - Uses flux LE 71.0 keV
+    - '4'=Attitude partly non-fitted
+    - '5'=Attitude all non-fitted
+    - '6'=No Attitude data available
+    * Status[9]
+    - 'O'=Ephemeris - OK
+    - 'C'=Ephemeris - Use with caution
+    - 'M'=Ephemeris - Not Supplied
+    - 'B'=Ephemeris - Bad data
+    * Status[10]
+    - 'O'=Gun - OK
+    - 'C'=Gun - Use with caution
+    - 'M'=Gun - Not Supplied
+    - 'B'=Gun - Bad data</Description>
       <FillValue>FFFFFFFFFFF</FillValue>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
