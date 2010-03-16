@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Geotail CPI Hot Plasma Moments</ResourceName>
          <AlternateName>Geotail CPI HPA High Time Resolution Plasma Moments</AlternateName>
-         <ReleaseDate>2010-02-18T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>The CPI/HPA Hot Plasma Analyzer high time resolution moments of hot plasma:
             Ion number density
             Ion average temperature
@@ -61,7 +61,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1992-10-06T00:00:28</StartDate>
-            <RelativeStopDate>-P2Y</RelativeStopDate>
+            <RelativeStopDate>P2Y</RelativeStopDate>
          </TimeSpan>
          <Cadence>PT64S</Cadence>
       </TemporalDescription>

@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Geotail MGF CPI 1-min field and plasma data at bow shock nose</ResourceName>
          <AlternateName>Geotail at BSN</AlternateName>
-         <ReleaseDate>2010-02-18T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>Solar wind magnetic field and plasma data at 1-min resolution created from Geotail data shifted to the Earth's bow shock nose (BSN).</Description>
          <Acknowledgement>We acknowledge T. Nagai of the MGF team, L. Frank and W. Paterson of the CPI team and J. King and N. Papitashvili of NASA/SPDF and ADNET
             who created this product.</Acknowledgement>
@@ -60,8 +60,8 @@
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1995-03-15T00:00:00</StartDate>
-            <StopDate>2006-11-17T00:00:00</StopDate>
+            <StartDate>1995-01-01T00:00:00</StartDate>
+            <StopDate>2006-12-31T23:59:59</StopDate>
          </TimeSpan>
          <Cadence>PT1M</Cadence>
       </TemporalDescription>

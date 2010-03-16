@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/Geotail/CPI/SWA_PT48S</ResourceID>
       <ResourceHeader>
          <ResourceName>Geotail CPI Definitive Solar Wind Moments</ResourceName>
-         <ReleaseDate>2010-02-18T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>The CPI Solar Wind analyzer definitive plasma moments. The CPI/SW data are good in the solar wind and may be usefull in the magnetosheath.
          </Description>
          <Contact>
@@ -53,8 +53,8 @@
       <MeasurementType>IonComposition</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1992-09-28T00:00:34Z</StartDate>
-            <RelativeStopDate>-P2M</RelativeStopDate>
+            <StartDate>1992-09-28T00:00:33</StartDate>
+            <RelativeStopDate>P2M</RelativeStopDate>
          </TimeSpan>
          <Cadence>PT48S</Cadence>
       </TemporalDescription>

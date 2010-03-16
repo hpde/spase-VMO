@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/Geotail/MGF/EDB.PT3S</ResourceID>
       <ResourceHeader>
          <ResourceName>Geotail Editor-B 3-second Magnetic Field Data</ResourceName>
-         <ReleaseDate>2010-02-18T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>3-second Editor-B magnetic field data from the Geotail spacecraft.
 
             As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.
@@ -59,8 +59,8 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1993-09-01T09:52:08</StartDate>
-            <RelativeStopDate>-P2Y</RelativeStopDate>
+            <StartDate>1993-09-01T00:00:02</StartDate>
+            <RelativeStopDate>P2Y</RelativeStopDate>
          </TimeSpan>
          <Cadence>PT3S</Cadence>
       </TemporalDescription>

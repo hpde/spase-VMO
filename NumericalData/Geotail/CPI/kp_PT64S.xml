@@ -56,7 +56,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1992-09-08T07:30:40</StartDate>
-            <RelativeStopDate>-P2D</RelativeStopDate>
+            <RelativeStopDate>P2D</RelativeStopDate>
          </TimeSpan>
          <Cadence>PT64S</Cadence>
       </TemporalDescription>
