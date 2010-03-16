@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/Prognoz9/MAG/PT10S</ResourceID>
       <ResourceHeader>
          <ResourceName>Prognoz 9 Magnetic Field Data</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Magnetic field data obtained in the outer magnetosphere and in the solar wind by Prognoz 9 between 1983/07/02 and 1984/02/10.
             The data were obtained by an SG-70 fluxgate magnetometer provided by IZMIRAN's Space Magnetic Research Laboratory.  The magnetometer had a range of +/- 60 nT and an accuracy of about 0.3 nT. It made one vector measurement every 10.24 sec.</Description>
          <Acknowledgement>Use of these data in publications should be accompanied by acknowledgements of the National Space Science Data Center(NSSDC), Space Physics Data Facility(SPDF) and IZMIRAN at Moscow.</Acknowledgement>
@@ -47,8 +47,8 @@
       <MeasurementType>Ephemeris</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1983-07-02T22:26:34Z</StartDate>
-            <StopDate>1984-02-10T12:05:52Z</StopDate>
+            <StartDate>1983-07-02T22:26:33</StartDate>
+            <StopDate>1984-02-10T12:05:51</StopDate>
          </TimeSpan>
          <Cadence>PT10.24S</Cadence>
       </TemporalDescription>
