@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</ResourceID>
       <ResourceHeader>
          <ResourceName>Polar TIMAS H0 High-resolution Level 1 Data</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Mass resolved ion energy angle spectra covering nearly the full 4pi solid angle and the energy range 15 eV/q to 33 eV/q.
             H+, O+, He+ and He++ number fluxes and statistical uncertainties processed by the TIMAS science team. Data acquired with various angular and energy resolutions are combined here. Data Quality and other indicators are provided to allow selection of high resolution data (PA_status(ion)=0 and Energy_status(ion)=0 ) and High Quality data (Quality=0). See caveats for the following variables for more detailed information: Quality, PA_status, Energy_status Bcr, Fec, Even_odd,  Energy_Range_ID and Spins.
             Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
@@ -63,8 +63,8 @@
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1996-03-17T00:03:13Z</StartDate>
-            <StopDate>1998-12-09T00:00:00Z</StopDate>
+            <StartDate>1996-03-17T00:03:19</StartDate>
+            <StopDate>2004-04-03T09:04:47</StopDate>
          </TimeSpan>
          <Cadence>PT12S</Cadence>
       </TemporalDescription>

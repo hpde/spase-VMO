@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
       <ResourceHeader>
          <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
             Includes also non-TIMAS Data:
             UT,
@@ -91,8 +91,8 @@
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1996-03-17T00:00:00Z</StartDate>
-            <StopDate>1998-12-09T00:00:00Z</StopDate>
+            <StartDate>1996-03-17T00:03:25</StartDate>
+            <StopDate>1998-12-08T22:55:45</StopDate>
          </TimeSpan>
          <Cadence>PT12S</Cadence>
       </TemporalDescription>

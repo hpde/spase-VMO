@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>POLAR Magnetic Field KP</ResourceName>
          <AlternateName>POLAR Magnetic Field High Resolution Data</AlternateName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>POLAR Magnetic Field Experiment (MFE) data; 0.92 minute and 6 second averages.</Description>
          <Contact>
             <!-- C. T. Russell -->
@@ -34,8 +34,8 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1996-03-16T00:00:00Z</StartDate>
-            <StopDate>2006-06-01T00:00:00Z</StopDate>
+            <StartDate>1996-03-16T00:00:55</StartDate>
+            <StopDate>2006-05-31T23:59:48</StopDate>
          </TimeSpan>
          <Cadence>PT06S</Cadence>
       </TemporalDescription>

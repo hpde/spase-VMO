@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIDE/H1_CDF</ResourceID>
       <ResourceHeader>
          <ResourceName>TIDE H1 CDF</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>The TIDE H1 CDF files contain non-mass Total Ion contribution below 411 eV. Data are available for 1996-12-07 through 2008-04-16. Data is accumulated over the 6-second Polar spacecraft spin. The files contain moments density, velocity (Vx and Vy only), temperature (T_perp and T_para) and the spectrograms for both the differential energy flux versus energy (flux averaged over spin angle) and versus spin angle (flux averaged over energy). Support data includes EFI spacecraft potential (adjusted by +2 volts), magnetic field location, spacecraft ram direction, plotting information, and several parameters that describe the instrument status and details about the data processing.</Description>
          <Contact>
             <PersonID>spase://SMWG/Person/Thomas.E.Moore</PersonID>
@@ -75,7 +75,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1996-12-08T00:00:00</StartDate>
-            <StopDate>2008-04-16T23:59:59</StopDate>
+            <StopDate>2008-04-16T23:59:45</StopDate>
          </TimeSpan>
          <Cadence>PT6.00S</Cadence>
       </TemporalDescription>

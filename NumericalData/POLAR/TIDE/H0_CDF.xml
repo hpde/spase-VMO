@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIDE/H0_CDF</ResourceID>
       <ResourceHeader>
          <ResourceName>TIDE H0 CDF</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>The TIDE H0 CDF files contain H+, O+, and He+ data below 411 eV. Data are available for 1996-03-27 through 1996-09-30. Data is accumulated over the 6-second Polar spacecraft spin. For each ion, the files contain moments density, velocity (Vx, Vy, Vz), temperature (T_perp and T_para) and spectogram for differential energy flux versus energy (flux averaged over spin and polar angle), differential energy flux versus spin angle (flux averaged over energy and polar angle), and differential energy flux versus polar angle (flux averaged over energy and spin angle). Support data includes EFI spacecraft potential (adjusted by +2 volts), magnetic field location, spacecraft ram direction, plotting information, and several parameters that describe the instrument status and details about the data processing.</Description>
          <Contact>
             <PersonID>spase://SMWG/Person/Thomas.E.Moore</PersonID>
@@ -61,7 +61,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1996-03-27T00:00:00</StartDate>
-            <StopDate>1996-12-07T23:59:59</StopDate>
+            <StopDate>1996-09-30T23:59:50</StopDate>
          </TimeSpan>
          <Cadence>PT6.00S</Cadence>
       </TemporalDescription>

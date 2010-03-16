@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT96S</ResourceID>
       <ResourceHeader>
          <ResourceName>Polar TIMAS K1 Key Parameter data</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>H+, O+, He+ and He++ number fluxes for survey purposes only
             Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
             Version 0: June, 2001</Description>
@@ -48,8 +48,8 @@
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1999-06-01T00:00:00Z</StartDate>
-            <StopDate>2008-04-17T00:00:00Z</StopDate>
+            <StartDate>1999-06-07T00:09:31</StartDate>
+            <StopDate>2008-04-16T13:22:28</StopDate>
          </TimeSpan>
          <Cadence>PT96S</Cadence>
       </TemporalDescription>
