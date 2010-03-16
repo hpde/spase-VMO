@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/IGPPLANL/Teoloyucan/Magnetometer/PT1S</ResourceID>
       <ResourceHeader>
          <ResourceName>IGPP-LANL Teoloyucan (TEO) Station Magnetometer Data</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>IGPP-LANL Teoloyucan (TEO) Station Magnetometer Data, Orientation: HEZ, Instrument: Fluxgate magnetometer</Description>
          <Acknowledgement>UCLA Ground Magnetometer Data Center</Acknowledgement>
          <Contact>
@@ -30,6 +30,13 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/IGPPLANL/Teoloyucan/Magnetometer</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>1998-02-10T00:00:00.000</StartDate>
+            <StopDate>2001-10-18T23:59:59.000</StopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
       <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
       <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
       <Parameter>

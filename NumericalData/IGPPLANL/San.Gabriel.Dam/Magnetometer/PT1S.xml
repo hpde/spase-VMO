@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/IGPPLANL/San.Gabriel.Dam/Magnetometer/PT1S</ResourceID>
       <ResourceHeader>
          <ResourceName>IGPP-LANL San Gabriel Dam (SGD) Station Magnetometer Data</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>IGPP-LANL San Gabriel Dam (SGD) Station Magnetometer Data, Orientation: HEZ, Instrument: Fluxgate magnetometer</Description>
          <Acknowledgement>UCLA Ground Magnetometer Data Center</Acknowledgement>
          <Contact>
@@ -30,6 +30,13 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/IGPPLANL/San.Gabriel.Dam/Magnetometer</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>1998-08-23T00:00:00.000</StartDate>
+            <StopDate>1999-08-13T23:59:59.000</StopDate>
+         </TimeSpan>
+         <Cadence>PT1S</Cadence>
+      </TemporalDescription>
       <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
       <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
       <Parameter>
