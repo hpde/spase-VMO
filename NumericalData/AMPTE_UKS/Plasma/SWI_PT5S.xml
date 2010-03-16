@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/AMPTE_UKS/Plasma/SWI_PT5S</ResourceID>
       <ResourceHeader>
          <ResourceName>AMPTE/UKS Ion Plasma Data, solar wind mode</ResourceName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>AMPTE/UKS 5-second (spin) averaged ion plasma moments</Description>
          <Acknowledgement>UKS/IRM Prime Parameters, UKS/IRM High Resolution Data, or products derived
             from them may NOT be published or shown in any form without the consent of
@@ -47,8 +47,8 @@
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1984-08-27T14:50:39Z</StartDate>
-            <StopDate>1984-12-29T07:10:56Z</StopDate>
+            <StartDate>1984-08-27T14:50:38</StartDate>
+            <StopDate>1984-12-29T07:10:56</StopDate>
          </TimeSpan>
          <Cadence>PT5S</Cadence>
       </TemporalDescription>
