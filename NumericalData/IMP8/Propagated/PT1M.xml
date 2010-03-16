@@ -6,7 +6,7 @@
         <ResourceHeader>
             <ResourceName>IMP 8 MAG PLS 1-min field and plasma data at bow shock nose</ResourceName>
             <AlternateName>IMP 8 at BSN</AlternateName>
-            <ReleaseDate>2009-08-01T00:00:00</ReleaseDate>
+            <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
             <Description>Solar wind magnetic field and plasma data at 1-min resolution created from IMP 8 data shifted to the Earth's bow shock nose (BSN).</Description>
             <Acknowledgement>We acknowledge A.Szabo and R. Lepping of the MAG team, A. Lazarus of the PLS team and J. King and N. Papitashvili of NASA/SPDF and ADNET who created this product.</Acknowledgement>
             <Contact>
@@ -58,8 +58,8 @@
         <MeasurementType>ThermalPlasma</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
-                <StartDate>1994-01-01T00:00:00</StartDate>
-                <StopDate>2000-06-10T00:00:00</StopDate>
+                <StartDate>1973-01-01T00:00:00</StartDate>
+                <StopDate>2000-12-12T23:59:00</StopDate>
             </TimeSpan>
             <Cadence>PT1M</Cadence>
         </TemporalDescription>
