@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>AGO P2 ICESTAR.Dayplot.Magnetometers Dayplots</ResourceName>
          <AlternateName>AGO P2 ICESTAR.Dayplot.Magnetometers Dayplots</AlternateName>
-         <ReleaseDate>2010-01-28T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>AGO P2 ICESTAR.Dayplot.Magnetometers Dayplots</Description>
          <Acknowledgement>Please acknowledge Louis J. Lanzerotti and Hiroshi Fukunishi whenever ICESTAR generated dayplots of this format are used in publication.</Acknowledgement>
          <Contact>
@@ -49,7 +49,7 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>2002-12-25T00:00:00.000</StartDate>
+            <StartDate>2003-12-18T00:00:00.000</StartDate>
             <StopDate>2004-02-01T23:59:50.000</StopDate>
             <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
          </TimeSpan>

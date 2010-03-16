@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>South Pole ICESTAR.Dayplot.Fluxgate Dayplots</ResourceName>
          <AlternateName>South Pole ICESTAR.Dayplot.Fluxgate Dayplots</AlternateName>
-         <ReleaseDate>2010-01-28T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
          <Description>South Pole ICESTAR.Dayplot.Fluxgate Dayplots</Description>
          <Acknowledgement>Please acknowledge Louis J. Lanzerotti whenever ICESTAR generated dayplots of this format are used in publication.</Acknowledgement>
          <Contact>
@@ -43,8 +43,8 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>2006-03-18T00:00:00.000</StartDate>
-            <StopDate>2006-08-13T23:59:50.000</StopDate>
+            <StartDate>2006-04-13T00:00:00.000</StartDate>
+            <StopDate>2006-04-13T23:59:50.000</StopDate>
             <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
          </TimeSpan>
          <Cadence>PT10S</Cadence>
