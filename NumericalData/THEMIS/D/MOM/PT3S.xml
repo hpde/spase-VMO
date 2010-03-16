@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>THEMIS-D:  On Board moments:  ESA and SST Electron/Ion moments, density, flux, velocity, pressure and temperature.</ResourceName>
          <AlternateName>THEMIS-D MOM</AlternateName>
-         <ReleaseDate>2010-02-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>THEMIS-D On Board moments.  On board data outputs include number density, particle flux, energy flux, and a six component symetric momentum flux tensor.  Other moments are calculated from these partial moments on the ground adding total pressure, velocity, plasma temperature (measured as a three dimensional energy vector), and a six component symetric pressure tensor to the list of data products.  Number density and total pressure are scalar outputs.  Velocity is calculated in DSL, GSE, GSM, and MFA coordinates (coordinate descriptions are listed below in Table 1).  Magnetic Field Aligned pressure tensor and temperature are calculated as well.  All quantities are calculated for both ions and electrons from a combination of ESA and SST data.  Moments data are taken at spin resolution in all ESA survey modes except burst.  The spacecraft potential, as measure by the EFI, is used to correct for spacecraft charging by shifting the particle energies for calculation; this eliminates contamination from photo-electrons.  Also, weighting factors are used to account for instrument specific energy and angle efficiency variations.
 
             Table 1: Coordinate Descriptions.
@@ -52,8 +52,8 @@
       <MeasurementType>IonComposition</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>2007-12-11T00:00:00Z</StartDate>
-            <RelativeStopDate>-P7D</RelativeStopDate>
+            <StartDate>2007-08-09T23:59:56</StartDate>
+            <RelativeStopDate>P7D</RelativeStopDate>
          </TimeSpan>
          <Cadence>PT3S</Cadence>
       </TemporalDescription>
