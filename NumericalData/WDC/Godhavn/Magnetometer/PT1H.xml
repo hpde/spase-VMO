@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Godhavn Fluxgate Magnetometer Data in WDC Format</ResourceName>
          <AlternateName>Qeqertarsua Fluxgate Magnetometer Data</AlternateName>
-         <ReleaseDate>2009-11-10T23:24:13Z</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Godhavn Magnetometer PT1H data packed using the WDC format; Station Id: GDH; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Solar-Terrestrial Physics Division, Danish Meteorological Institute</Acknowledgement>
          <Contact>
@@ -54,7 +54,7 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1926-02-01T00:00:00.000</StartDate>
+            <StartDate>1926-01-01T00:00:00.000</StartDate>
             <StopDate>2005-12-31T23:00:00.000</StopDate>
             <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
          </TimeSpan>

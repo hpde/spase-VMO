@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Anchorage/Magnetometer/PT1H/ASCII</ResourceID>
       <ResourceHeader>
          <ResourceName>Anchorage Fluxgate Magnetometer Data in ASCII Format</ResourceName>
-         <ReleaseDate>2009-11-10T23:24:12Z</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Anchorage Magnetometer PT1H data in ASCII format; Station Id: AMU; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux); Unpacked ASCII flat file format</Description>
          <Contact>
             <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
@@ -45,7 +45,7 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1957-07-01T00:00:00.000</StartDate>
+            <StartDate>1957-01-01T00:00:00.000</StartDate>
             <StopDate>1958-12-31T23:00:00.000</StopDate>
             <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
          </TimeSpan>

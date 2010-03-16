@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Sapa Fluxgate Magnetometer Data in ASCII Format</ResourceName>
          <AlternateName>Cha Pa Fluxgate Magnetometer Data</AlternateName>
-         <ReleaseDate>2009-11-10T23:24:18Z</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Sapa Magnetometer PT1H data in ASCII format; Station Id: CPA; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux); Unpacked ASCII flat file format</Description>
          <Acknowledgement>Vietnam National Centre for Science and, Technology (V.N.C.S.T., Institute of Geophysics).  The file format translation from packed form to ASCII flat file was performed at UCLA by Dr. Lee F. Bargatze (Technical Contact for the file translation).</Acknowledgement>
          <Contact>
@@ -51,7 +51,7 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1957-09-01T00:00:00.000</StartDate>
+            <StartDate>1957-01-01T00:00:00.000</StartDate>
             <StopDate>1965-12-31T23:00:00.000</StopDate>
             <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
          </TimeSpan>

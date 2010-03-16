@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Tucson/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Tucson Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-10T23:24:12Z</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Tucson Magnetometer PT1H data packed using the WDC format; Station Id: TUC; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>U.S. Geological Survey</Acknowledgement>
          <Contact>
@@ -49,7 +49,7 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1909-11-01T00:00:00.000</StartDate>
+            <StartDate>1909-01-01T00:00:00.000</StartDate>
             <StopDate>2004-12-31T23:00:00.000</StopDate>
             <Note>Some data gaps may be present.  If a gap is present at the beginning or end of the file, the time span start and end dates could be inaccurate as they are assigned assuming an absence of such gaps.</Note>
          </TimeSpan>
