@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Applied Physics Lab Ground Magnetic Field Data PT0.5S Data.</ResourceName>
          <AlternateName>Applied Physics Lab Ground Magnetic Field Data PT0.5S Data.</AlternateName>
-         <ReleaseDate>2010-01-31T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Ground Magnetic Field Data data from Applied Physics Lab at PT0.5S time resolution.</Description>
          <Acknowledgement>Please acknowledge Mark Moldwin, Institute of Geophysics and Planetary Physics and the Department of Earth and Space Sciences (University of California, Los Angeles, Los Angeles, CA 90095-1567) for use of data from the Applied Physics Lab Magnetometer instrument.</Acknowledgement>
          <Contact>
@@ -50,7 +50,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1998-11-02T00:00:00.000</StartDate>
-            <StopDate>2001-01-31T23:59:59.500</StopDate>
+            <StopDate>2002-10-29T23:59:59.500</StopDate>
             <Note>Some data gaps are present in the MEASURE magnetic field time series.</Note>
          </TimeSpan>
          <Cadence>PT0.5S</Cadence>
