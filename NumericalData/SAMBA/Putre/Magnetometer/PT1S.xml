@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Putre Ground Magnetic Field Data PT1S Data.</ResourceName>
          <AlternateName>Putre Ground Magnetic Field Data PT1S Data.</AlternateName>
-         <ReleaseDate>2010-01-31T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
          <Description>Ground Magnetic Field Data data from Putre at PT1S time resolution.</Description>
          <Acknowledgement>Please acknowledge Eftyhia Zesta, Department of Atmospheric Sciences (7127 Math Sciences Building, University of California, Los Angeles, Box 951565, CA, 90095-1565 USA) for use of data from the Putre Magnetometer instrument.</Acknowledgement>
          <Contact>
@@ -81,8 +81,8 @@
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>2003-08-22T00:00:00.000</StartDate>
-            <StopDate>2004-09-30T23:59:59.000</StopDate>
+            <StartDate>2003-05-19T00:00:00.000</StartDate>
+            <StopDate>2004-12-30T23:59:59.000</StopDate>
             <Note>Some data gaps are present in the SAMBA magnetic field time series.</Note>
          </TimeSpan>
          <Cadence>PT1S</Cadence>
