@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
       <ResourceHeader>
          <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-19T19:23:17Z</ReleaseDate>
          <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
             Includes also non-TIMAS Data:
             UT,
@@ -77,7 +77,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <URL>http://lasp.colorado.edu/timas/h12-data/h2-data</URL>
-            <Description>FTP repository of Polar TIMAS key parameter data in CDF format at CDAWeb</Description>
+            <Description>Repository of Polar TIMAS key parameter data in CDF format at LASP</Description>
          </AccessURL>
          <Format>CDF</Format>
       </AccessInformation>
