@@ -4,10 +4,10 @@
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/SAMBA/Los.Cerrillos/Magnetometer/PT1S</ResourceID>
       <ResourceHeader>
-         <ResourceName>Los Cerrillos Ground Magnetic Field Data PT1S Data.</ResourceName>
-         <AlternateName>Los Cerrillos Ground Magnetic Field Data PT1S Data.</AlternateName>
-         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
-         <Description>Ground Magnetic Field Data data from Los Cerrillos at PT1S time resolution.</Description>
+         <ResourceName>Los Cerrillos Ground Magnetic Field Data 1s Data.</ResourceName>
+         <AlternateName>Los Cerrillos Ground Magnetic Field Data 1s Data.</AlternateName>
+         <ReleaseDate>2010-03-23T19:03:48Z</ReleaseDate>
+         <Description>Ground Magnetic Field Data data from Los Cerrillos at 1s time resolution.</Description>
          <Acknowledgement>Please acknowledge Eftyhia Zesta, Department of Atmospheric Sciences (7127 Math Sciences Building, University of California, Los Angeles, Box 951565, CA, 90095-1565 USA) for use of data from the Los Cerrillos Magnetometer instrument.</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Eftyhia.Zesta</PersonID>
@@ -59,7 +59,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/VMO</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
