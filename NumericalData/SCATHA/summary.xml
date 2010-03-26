@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_3.xsd">
   <Version>2.0.3</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/SCATHA/summary</ResourceID>
     <ResourceHeader>
       <ResourceName>SCATHA Science Summary Data</ResourceName>
-      <ReleaseDate>2010-03-10T16:57:15Z</ReleaseDate>
-      <Description>Summary science data from SCATHA instruments (SC1 to SC11).</Description>
+      <ReleaseDate>2010-03-26T00:33:50Z</ReleaseDate>
+      <Description>Summary science data from SCATHA instruments (SC1, SC2, SC3, SC10, and SC11). One minute resolution processed at Aerospace from full-resolution data files.</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Jonathan.Thomas.Niehof</PersonID>
         <Role>TechnicalContact</Role>
@@ -16,10 +16,20 @@
         <PersonID>spase://SMWG/Person/Theodore.Allan.Fritz</PersonID>
         <Role>GeneralContact</Role>
       </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Joseph.F.Fennell</PersonID>
+        <Role>DataProducer</Role>
+      </Contact>
       <InformationURL>
         <Name>SCATHA web page at the Boston University</Name>
         <URL>http://spacedata.bu.edu/scatha.html</URL>
         <Description>Web page providing access to the SCATHA science summary data, spacecraft description paper, and summary plots.</Description>
+        <Language>EN</Language>
+      </InformationURL>
+      <InformationURL>
+        <Name>Data Recovery from SCATHA Satellite</Name>
+        <URL>http://spacedata.bu.edu/docs/NASA_CR-97-207336.pdf</URL>
+        <Description>NASA/ESA report describing preparation of the science summary CDF files.</Description>
         <Language>EN</Language>
       </InformationURL>
     </ResourceHeader>
@@ -46,7 +56,6 @@
     <InstrumentID>spase://SMWG/Instrument/SCATHA/SC1</InstrumentID>
     <InstrumentID>spase://SMWG/Instrument/SCATHA/SC2</InstrumentID>
     <InstrumentID>spase://SMWG/Instrument/SCATHA/SC3</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/SCATHA/SC4</InstrumentID>
     <InstrumentID>spase://SMWG/Instrument/SCATHA/SC10</InstrumentID>
     <InstrumentID>spase://SMWG/Instrument/SCATHA/SC11</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
@@ -66,6 +75,7 @@
     <Parameter>
       <Name>NSSDC Standard Time </Name>
       <ParameterKey>Epoch</ParameterKey>
+      <Description>Midpoint of the high resolution data averaged into each parameter.</Description>
       <Units>ms</Units>
       <ValidMin>01-Jan-1979 00:00:00.000</ValidMin>
       <ValidMax>21-May-1990 23:59:59.000</ValidMax>
@@ -89,7 +99,7 @@
     <Parameter>
       <Name>Mag. field in GSM coordinates</Name>
       <ParameterKey>B_GSM</ParameterKey>
-      <Description>From 4 sps SC11 values averaged over AveInt time interval centered at Epoch time.</Description>
+      <Description>From 4 s/s SC11 values averaged over AveInt time interval centered at Epoch time.</Description>
       <Units>nT</Units>
       <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
       <CoordinateSystem>
@@ -181,7 +191,7 @@
     <Parameter>
       <Name>E-field VLF wave amplitude</Name>
       <ParameterKey>EVLFAmp</ParameterKey>
-      <Description>Electric field VLF wave amplitudes at 8 frequencies - From  SC1-8A data acquired over 16 second period - Converted to science units using calibration data - Average of values within 30 seconds of time in Epoch.</Description>
+      <Description>Electric field VLF wave amplitudes at 8 frequencies - From  SC1-8A data averaged over 16 second period at 1sample/sec. Converted to science units using calibration data  Values within 30 seconds of time in Epoch interpolated to Epoch using IDL function NR_SPLINE.</Description>
       <Units>dBV/m</Units>
       <Structure>
         <Size>8</Size>
@@ -296,7 +306,7 @@
     <Parameter>
       <Name>E-field VLF peak wave amplitude</Name>
       <ParameterKey>EVLFPAmp</ParameterKey>
-      <Description>Electric field VLF peak wave amplitudes at each of 8 frequencies during AveInt time interval around the time in Epoch - Converted to science units using calibration values.</Description>
+      <Description>Electric field VLF peak wave amplitudes at each of 8 frequencies from 16 second average of 1sample/sec values. Peak of these averages chosen from 1 minute around the time in Epoch. Converted to science units using calibration values.</Description>
       <Units>dBV/m</Units>
       <Structure>
         <Size>8</Size>
@@ -668,7 +678,7 @@
     <Parameter>
       <Name>B-field VLF wave amplitude</Name>
       <ParameterKey>BVLFAmp</ParameterKey>
-      <Description>Magnetic field VLF wave amplitudes at 4 frequencies - From  SC1-8A data acquired over 16 second period - Converted to science units using calibration data - Average of values within 20 seconds of time in Epoch.</Description>
+      <Description>Magnetic field VLF wave amplitudes at 4 frequencies - From  SC1-8A data averaged over 16 second period at 1sample/sec. Converted to science units using calibration data  Values within 30 seconds of time in Epoch interpolated to Epoch using IDL function NR_SPLINE.</Description>
       <Units>dBnT</Units>
       <Structure>
         <Size>4</Size>
@@ -735,7 +745,7 @@
     <Parameter>
       <Name>Peak B-field VLF peak wave amplitude </Name>
       <ParameterKey>BVLFPAmp</ParameterKey>
-      <Description>Magnetic field VLF peak wave amplitudes at each of 4 frequencies during AveInt time interval around the time in Epoch - Converted to science units using calibration values.</Description>
+      <Description>Magnetic field VLF peak wave amplitudes at each of 4 frequencies from 16 second average of 1sample/sec values. Peak of these averages chosen from 1 minute around the time in Epoch. Converted to science units using calibration values.</Description>
       <Units>dBnT</Units>
       <Structure>
         <Size>4</Size>
@@ -951,7 +961,7 @@
     <Parameter>
       <Name>Common mode S/C potential, +/-15 volts</Name>
       <ParameterKey>CM1SCPot</ParameterKey>
-      <Description>Common mode S/C potential, +/-15 volts - From SC10</Description>
+      <Description>Common mode S/C potential, +/-15 volts - From SC10. Averaged over 1min from 2sample/sec data.</Description>
       <Units>V</Units>
       <ValidMin>-15.0</ValidMin>
       <ValidMax>15.0</ValidMax>
@@ -963,7 +973,7 @@
     <Parameter>
       <Name>Common mode S/C potential, +/-300 volts</Name>
       <ParameterKey>CM2SCPot</ParameterKey>
-      <Description>Common mode S/C potential, +/-300 volts - From SC10.</Description>
+      <Description>Common mode S/C potential, +/-300 volts - From SC10. Averaged over 1min from 2sample/sec data.</Description>
       <Units>V</Units>
       <ValidMin>-300.0</ValidMin>
       <ValidMax>300.0</ValidMax>
@@ -975,7 +985,7 @@
     <Parameter>
       <Name>Common mode S/C potential, +/-5000 volts</Name>
       <ParameterKey>CM3SCPot</ParameterKey>
-      <Description>Common mode S/C potential, +/-5000 volts - From SC10.</Description>
+      <Description>Common mode S/C potential, +/-5000 volts - From SC10. Averaged over 1min from 2sample/sec data.</Description>
       <Units>V</Units>
       <ValidMin>-5000.0</ValidMin>
       <ValidMax>5000.0</ValidMax>
@@ -987,7 +997,7 @@
     <Parameter>
       <Name>DC E-field magnitude low gain</Name>
       <ParameterKey>EDCLo</ParameterKey>
-      <Description>DC Electric field magnitude low gain range (gain = 0.025) - From SC10.</Description>
+      <Description>DC Electric field magnitude low gain range (gain = 0.025) - From SC10. Averaged from 2 samples/sec.</Description>
       <Units>mV/m</Units>
       <UnitsConversion>1.0e-3&gt;V/m</UnitsConversion>
       <ValidMin>-3000.0</ValidMin>
@@ -1001,7 +1011,7 @@
     <Parameter>
       <Name>RMS E-field amplitude</Name>
       <ParameterKey>EAC</ParameterKey>
-      <Description>DC Electric field RMS magnitude of AC E-field (gain = 2.5) - from SC10.</Description>
+      <Description>DC Electric field RMS magnitude of AC E-field (gain = 2.5) - from SC10. 1 minute RMS of 2 samples/sec data, less average over that minute.</Description>
       <Units>V</Units>
       <ValidMin>0.0</ValidMin>
       <ValidMax>15.0</ValidMax>
@@ -1014,7 +1024,7 @@
     <Parameter>
       <Name>DC E-field magnitude high gain</Name>
       <ParameterKey>EDCHi</ParameterKey>
-      <Description>DC Electric field magnitude high gain range (gain = 0.25) - From SC10.</Description>
+      <Description>DC Electric field magnitude high gain range (gain = 0.25) - From SC10. Averaged from 2 samples/sec.</Description>
       <Units>mV/m</Units>
       <UnitsConversion>1.0e-3&gt;V/m</UnitsConversion>
       <ValidMin>-150.0</ValidMin>
@@ -1028,14 +1038,15 @@
     <Parameter>
       <Name>E-field ELF wave amplitude</Name>
       <ParameterKey>EELFAmp</ParameterKey>
-      <Description>Average Electric field ELF wave amplitudes in 4 frequency ranges - From SC10.</Description>
-      <Units>TM V</Units>
+      <Description>Average Electric field ELF wave amplitudes in 4 frequency ranges - From SC10. 1min average of 1sample/sec.</Description>
+      <Caveats>Stored as voltage from telemetry, not calibrated to physical units.</Caveats>
+      <Units>V</Units>
       <Structure>
         <Size>4</Size>
         <Element>
           <Name>E-field ELF wave amplitude 0.1-1.kHz</Name>
           <Index>1</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1043,7 +1054,7 @@
         <Element>
           <Name>E-field ELF wave amplitude 1.0-2.0Hz</Name>
           <Index>2</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1051,7 +1062,7 @@
         <Element>
           <Name>E-field ELF wave amplitude 2.0-20.0Hz</Name>
           <Index>3</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1059,7 +1070,7 @@
         <Element>
           <Name>E-field ELF wave amplitude 20.0-200.0Hz</Name>
           <Index>4</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1095,14 +1106,15 @@
     <Parameter>
       <Name>Peak E-field ELF wave amplitude</Name>
       <ParameterKey>EELFPAmp</ParameterKey>
-      <Description>Peak Electric field wave amplitudes in 4 ELF frequency ranges - From SC10.</Description>
-      <Units>TM V</Units>
+      <Description>Peak Electric field wave amplitudes in 4 ELF frequency ranges - From SC10. 1min maximum of 1sample/sec.</Description>
+      <Caveats>Stored as voltage from telemetry, not calibrated to physical units.</Caveats>
+      <Units>V</Units>
       <Structure>
         <Size>4</Size>
         <Element>
           <Name>Peak E-field ELF wave amplitude 0.1-1.0Hz</Name>
           <Index>1</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1110,7 +1122,7 @@
         <Element>
           <Name>Peak E-field ELF wave amplitude 1.0-2.0Hz</Name>
           <Index>2</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1118,7 +1130,7 @@
         <Element>
           <Name>Peak E-field ELF wave amplitude 2.0-20.0Hz</Name>
           <Index>3</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1126,7 +1138,7 @@
         <Element>
           <Name>Peak E-field ELF wave amplitude 20.0-200.0Hz</Name>
           <Index>4</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1252,14 +1264,15 @@
     <Parameter>
       <Name>B-field ELF wave amplitude</Name>
       <ParameterKey>BELFAmp</ParameterKey>
-      <Description>Average Magnetic field wave amplitudes in 4 ELF frequency ranges - From SC10.</Description>
-      <Units>TM V</Units>
+      <Description>Average Magnetic field wave amplitudes in 4 ELF frequency ranges - From SC10. 1min average of 1sample/sec.</Description>
+      <Caveats>Stored as voltage from telemetry, not calibrated to physical units.</Caveats>
+      <Units>V</Units>
       <Structure>
         <Size>4</Size>
         <Element>
           <Name>B-field ELF wave amplitude 0.1-1.kHz</Name>
           <Index>1</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1267,7 +1280,7 @@
         <Element>
           <Name>B-field ELF wave amplitude 1.0-2.0Hz</Name>
           <Index>2</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1275,7 +1288,7 @@
         <Element>
           <Name>B-field ELF wave amplitude 2.0-20.0Hz</Name>
           <Index>3</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1283,7 +1296,7 @@
         <Element>
           <Name>B-field ELF wave amplitude 20.0-200.0Hz</Name>
           <Index>4</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1319,14 +1332,15 @@
     <Parameter>
       <Name>Peak B-field ELF wave amplitude</Name>
       <ParameterKey>BELFPAmp</ParameterKey>
-      <Description>Peak Magnetic field wave amplitudes in 4 ELF frequency ranges - From SC10.</Description>
-      <Units>TM V</Units>
+      <Description>Peak Magnetic field wave amplitudes in 4 ELF frequency ranges - From SC10. 1min maximum of 1sample/sec.</Description>
+      <Caveats>Stored as voltage from telemetry, not calibrated to physical units.</Caveats>
+      <Units>V</Units>
       <Structure>
         <Size>4</Size>
         <Element>
           <Name>Peak B-field ELF wave amplitude 0.1-1.kHz</Name>
           <Index>1</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1334,7 +1348,7 @@
         <Element>
           <Name>Peak B-field ELF wave amplitude 1.0-2.0Hz</Name>
           <Index>2</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1342,7 +1356,7 @@
         <Element>
           <Name>Peak B-field ELF wave amplitude 2.0-20.0Hz</Name>
           <Index>3</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1350,7 +1364,7 @@
         <Element>
           <Name>Peak B-field ELF wave amplitude 20.0-200.0Hz</Name>
           <Index>4</Index>
-          <Units>TM V</Units>
+          <Units>V</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5.0</ValidMax>
           <FillValue>-9.9999</FillValue>
@@ -1476,7 +1490,7 @@
     <Parameter>
       <Name>Differential electron flux perpendicular to B</Name>
       <ParameterKey>EPpDfFlx</ParameterKey>
-      <Description>Differential electron number flux perpendicular to B in 10 energy ranges - Calculated pitch angles are 90 +/- 20 deg to the magnetic field - Data acquired by SC2-3 using program #1 energy steps (7 steps from .20 - 20keV) and SC3 at energies 57, 98 and 140keV. Energy bins assume deltaE/E=0.07 for SC2 and 0.1 for SC3 (programmable).</Description>
+      <Description>Differential electron number flux perpendicular to B in 10 energy ranges - Calculated pitch angles are 90 +/- 20 deg to the magnetic field - Data acquired by SC2-3  (mounted on the satellite body) using program #1 energy steps (7 steps from .20 - 20keV) and SC3 at energies 57, 98 and 140keV. Energy bins assume deltaE/E=0.07 for SC2 and 0.1 for SC3 (programmable).</Description>
       <Units>1/(cm^2 s sr keV)</Units>
       <UnitsConversion>6.24150974e19&gt;1/(m^2 s sr J)</UnitsConversion>
       <Structure>
@@ -2192,7 +2206,7 @@
     <Parameter>
       <Name>Electron energy flux perpendicular to B</Name>
       <ParameterKey>EPpEnFlx</ParameterKey>
-      <Description>Electron energy flux perpendicular to B over .20-20keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Electron energy flux perpendicular to B over .20-20keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>keV/(cm^2 s sr)</Units>
       <UnitsConversion>1.60217646e-12&gt;J/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -2218,7 +2232,7 @@
     <Parameter>
       <Name>Electron number flux perpendicular to B</Name>
       <ParameterKey>EPpNmFlx</ParameterKey>
-      <Description>Electron number flux perpendicular to B over .20-20keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Electron number flux perpendicular to B over .20-20keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>1/(cm^2 s sr)</Units>
       <UnitsConversion>1.0e4&gt;1/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -2244,7 +2258,7 @@
     <Parameter>
       <Name>Electron energy flux parallel to B</Name>
       <ParameterKey>EPlEnFlx</ParameterKey>
-      <Description>Electron energy flux parallel to B over .20-20keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Electron energy flux parallel to B over .20-20keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>keV/(cm^2 s sr)</Units>
       <UnitsConversion>1.60217646e-12&gt;J/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -2280,7 +2294,7 @@
     <Parameter>
       <Name>Electron number flux parallel to B</Name>
       <ParameterKey>EPlNmFlx</ParameterKey>
-      <Description>Electron number flux parallel to B over .20-20keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Electron number flux parallel to B over .20-20keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable EDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLI      .</Description>
       <Units>1/(cm^2 s sr)</Units>
       <UnitsConversion>1.0e4&gt;1/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3033,7 +3047,7 @@
     <Parameter>
       <Name>Proton energy flux perpendicular to B</Name>
       <ParameterKey>PPpEnFlx</ParameterKey>
-      <Description>Proton energy flux perpendicular to B over .15-15keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Proton energy flux perpendicular to B over .15-15keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>keV/(cm^2 s sr)</Units>
       <UnitsConversion>1.60217646e-12&gt;J/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3059,7 +3073,7 @@
     <Parameter>
       <Name>Proton number flux perpendicular to B</Name>
       <ParameterKey>PPpNmFlx</ParameterKey>
-      <Description>Proton number flux perpendicular to B over .15-15keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Proton number flux perpendicular to B over .15-15keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>1/(cm^2 s sr)</Units>
       <UnitsConversion>1.0e4&gt;1/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3085,7 +3099,7 @@
     <Parameter>
       <Name>Proton energy flux parallel to B </Name>
       <ParameterKey>PPlEnFlx</ParameterKey>
-      <Description>Proton energy flux parallel to B over .15-15keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Proton energy flux parallel to B over .15-15keV energy range - uses 60 second average differential energy fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>keV/(cm^2 s sr)</Units>
       <ValidMin>0.0</ValidMin>
       <ValidMax>1.0E10</ValidMax>
@@ -3120,7 +3134,7 @@
     <Parameter>
       <Name>Proton number flux perpendicular to B</Name>
       <ParameterKey>PPlNmFlx</ParameterKey>
-      <Description>Proton number flux paralel to B over .15-15keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done.</Description>
+      <Description>Proton number flux paralel to B over .15-15keV energy range - uses 60 second average differential fluxes from SC2-3 step program #1 (energies defined by variable PDfFlxEn) and programs #2 and #3 if available - otherwise interpolations to those energies are done using IDL function NR_SPLINE.</Description>
       <Units>1/(cm^2 s sr)</Units>
       <UnitsConversion>1.0e4&gt;1/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3146,7 +3160,7 @@
     <Parameter>
       <Name>Electron density (.1-20keV)</Name>
       <ParameterKey>EDensity</ParameterKey>
-      <Description>Electron density in energy range .1-20keV - From SC2-3 using average differential number fluxes in the time interval from step program #1 (see EDfFlxEn) and step programs #2 and/or #3 to create the integration energy range 87eV to 19.4keV.</Description>
+      <Description>Electron density in energy range .1-20keV - From SC2-3 using average differential number fluxes in the time interval from step program #1 (see EDfFlxEn) and step programs #2 and/or #3 to create the integration energy range 87eV to 19.4keV. Trapezoid integration, pitch angles 90°±20°.</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3165,7 +3179,7 @@
     <Parameter>
       <Name>Electron (.1-20keV) drift velocity perpendicular to B</Name>
       <ParameterKey>EPpDrfVel</ParameterKey>
-      <Description>Electron drift velocity perpendicular to B of electrons in the energy range .1-20keV and having a pitch angle of 90 +/- 20 deg to the magnetic field - (see EDensity for description of source.</Description>
+      <Description>Electron drift velocity perpendicular to B of electrons in the energy range .1-20keV and having a pitch angle of 90 +/- 20 deg to the magnetic field - (see EDensity for description of source. Trapezoid integration.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <ValidMin>-1.0E10</ValidMin>
@@ -3190,7 +3204,7 @@
     <Parameter>
       <Name>Electron pressure (.1-20keV)</Name>
       <ParameterKey>EPress</ParameterKey>
-      <Description>Electron pressure in range .1-20keV of electrons in the energy range .04-20keV and having a pitch angle of 90 +/- 20 deg to the magnetic field - (see EDensity for description of source.)</Description>
+      <Description>Electron pressure in range .1-20keV of electrons in the energy range .04-20keV and having a pitch angle of 90 +/- 20 deg to the magnetic field - (see EDensity for description of source.) Trapezoid integration.</Description>
       <Units>ndyne/cm^2</Units>
       <UnitsConversion>1e-10&gt;Pa</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3215,7 +3229,7 @@
     <Parameter>
       <Name>Electron average energy (.1-20keV)</Name>
       <ParameterKey>EAveEn</ParameterKey>
-      <Description>Electron average energy Calculated from differential number flux values derived from SC2-3 energy step programs #1 and from programs #2 and/or #3 - same source as for EDensity.</Description>
+      <Description>Electron average energy Calculated from differential number flux values derived from SC2-3 energy step programs #1 and from programs #2 and/or #3 - same source as for EDensity. Trapezoid integration, pitch angles 90°±20°.</Description>
       <Units>keV</Units>
       <UnitsConversion>1.60217646e-12&gt;J/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3235,7 +3249,7 @@
     <Parameter>
       <Name>Proton density (.1-133keV)</Name>
       <ParameterKey>PDensity</ParameterKey>
-      <Description>Proton density in energy range .1-133keV - From SC2-3 step program #1 (see PDfFlxEn) and#2 and/or #3 (integration range SC2-3 is .1 - 15.6keV) and from SC2-6 36, 71 and 133keV channel data if available.  Integration is done over just the SC2-3 range (.1-15.6keV) if SC2-6 133keV data is not available - see character 8 in variable Status%SC_SP.</Description>
+      <Description>Proton density in energy range .1-133keV - From SC2-3 step program #1 (see PDfFlxEn) and#2 and/or #3 (integration range SC2-3 is .1 - 15.6keV) and from SC2-6 36, 71 and 133keV channel data if available.  Integration is done over just the SC2-3 range (.1-15.6keV) if SC2-6 133keV data is not available - see character 8 in variable Status%SC_SP. Trapezoid integration, pitch angles 90°±20°.</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1e6&gt;m^-3</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3254,7 +3268,7 @@
     <Parameter>
       <Name>Proton (.1-15keV) drift velocity perpendicular to B</Name>
       <ParameterKey>PPpDrfVel</ParameterKey>
-      <Description>Proton drift velocity perpendicular to B of electrons in the energy range .1-15.6keV and having a pitch angle of 90 +/- 20 deg to the magnetic field - (see PDensity for description of source.)</Description>
+      <Description>Proton drift velocity perpendicular to B of electrons in the energy range .1-15.6keV and having a pitch angle of 90 +/- 20 deg to the magnetic field - (see PDensity for description of source.) Trapezoid integration.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <ValidMin>-1.0E10</ValidMin>
@@ -3279,7 +3293,7 @@
     <Parameter>
       <Name>Proton pressure (.1-133keV)</Name>
       <ParameterKey>PPress</ParameterKey>
-      <Description>Proton pressure in energy range .1-133keV (or .1-15.6keV if SC2-6 133keV data is not available - check character 8 of variable Status%SC_SP) of protons in the time interval and having a pitch angle of 90 +/- 20 deg ( 90 +/- 10 deg for SC2-6 data) to the magnetic field - (see PDensity for description of source.</Description>
+      <Description>Proton pressure in energy range .1-133keV (or .1-15.6keV if SC2-6 133keV data is not available - check character 8 of variable Status%SC_SP) of protons in the time interval and having a pitch angle of 90 +/- 20 deg ( 90 +/- 10 deg for SC2-6 data) to the magnetic field - (see PDensity for description of source. Trapezoid integration.</Description>
       <Units>ndyne/cm^2</Units>
       <UnitsConversion>1e-10&gt;Pa</UnitsConversion>
       <ValidMin>0.0</ValidMin>
@@ -3304,7 +3318,7 @@
     <Parameter>
       <Name>Proton average energy (.1-133keV)</Name>
       <ParameterKey>PAveEn</ParameterKey>
-      <Description>Proton average energy in energy range .1-133keV (or .1-15.6keV if SC2-6 133keV data is not available check character 8 of variable Status%SC_SP) - same source as for PDensity.</Description>
+      <Description>Proton average energy in energy range .1-133keV (or .1-15.6keV if SC2-6 133keV data is not available check character 8 of variable Status%SC_SP) - same source as for PDensity. Trapezoid integration, pitch angles 90°±20°.</Description>
       <Units>keV</Units>
       <UnitsConversion>1.60217646e-12&gt;J/(m^2 s sr)</UnitsConversion>
       <ValidMin>0.0</ValidMin>
