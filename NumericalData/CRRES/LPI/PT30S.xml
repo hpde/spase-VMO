@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>CRRES Langmuir Probe Instrument</ResourceName>
          <AlternateName>CRRES Langmuir Probe data</AlternateName>
-         <ReleaseDate>2010-02-24T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-30T22:38:20Z</ReleaseDate>
          <Description>This data set includes the electric field and convection drift information from the CRRES spacecraft. The langmuir probe instrument data is at 30 s resolution. The files include the electric field vectors, elcetric field magnitude, and the convection drift vectors from both the spherical sensors and the cylindrical antennas.</Description>
          <Acknowledgement>NASA; Department of Defense-Department of the Air Force (United States); AFRL; Prof. Forrest S. Mozer; Dr. E. Gary Mullen</Acknowledgement>
          <Contact>
@@ -31,7 +31,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/VMO</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

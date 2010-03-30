@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>CRRES Ephemeris Information</ResourceName>
          <AlternateName>CRRES Ephemeris data</AlternateName>
-         <ReleaseDate>2010-02-24T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-30T22:38:20Z</ReleaseDate>
          <Description>This data set contains orbital information from the CRRES spacecraft. The ephemeris data is at 5 min resolution. The files include the magnetic coordinates, spacecraft radial locaton, the L shell information, the spacecraft position in ECI coordinates, and the northern and southern hemisphere foot print location in geographic latitutde and longitude coordinates at 100 km in altitude.</Description>
          <Acknowledgement>NASA; Department of Defense-Department of the Air Force (United States); AFRL; Dr. Susan Gussenhoven-Shea; Dr. David L. Reasoner</Acknowledgement>
          <Contact>
@@ -31,7 +31,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/VMO</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
