@@ -7,7 +7,7 @@
          <ResourceName>IMP-8 Linearly Interpolated 60 s Resolution PLS data in GSE Coordinates</ResourceName>
          <AlternateName>1973-078A-02 data</AlternateName>
          <AlternateName>IMP-8 Plasma Faraday Cup data</AlternateName>
-         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-03-30T22:39:46Z</ReleaseDate>
          <Description>IMP-8 linearly interpolated to have the measurements on the minute at 60 s resolution PLS data in GSE coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB.  This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind.</Description>
          <Acknowledgement>NASA, Alan J. Lazarus, James M. Weygand</Acknowledgement>
          <Contact>
@@ -25,7 +25,7 @@
          </InformationURL>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/VMOU</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
