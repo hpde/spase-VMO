@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/B/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B Level 1 Probe State Data</ResourceName>
-      <ReleaseDate>2010-03-30T20:11:56Z</ReleaseDate>
+      <ReleaseDate>2010-03-31T14:02:41Z</ReleaseDate>
       <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:
 
                * probe position and velocity in GEI, GSE, and GSM coordinates;
@@ -25,7 +25,7 @@
            </Description>
       <Acknowledgement>NASA Contract NAS5-02099</Acknowledgement>
       <Contact>
-        <PersonID>V. Angelopoulos</PersonID>
+        <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
       <InformationURL>
