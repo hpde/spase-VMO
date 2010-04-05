@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>High Resolution OMNI Data Set</ResourceName>
-      <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+      <ReleaseDate>2010-04-05T20:33:44Z</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose.</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
@@ -58,7 +58,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1995-01-01T00:00:00</StartDate>
-        <RelativeStopDate>P1M</RelativeStopDate>
+        <RelativeStopDate>-P1M</RelativeStopDate>
         <Note>Various parameters are held current to differing levels.  Typical delay is about 1-2 months.</Note>
       </TimeSpan>
       <Cadence>PT1M</Cadence>
