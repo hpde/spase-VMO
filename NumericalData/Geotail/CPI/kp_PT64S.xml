@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/Geotail/CPI/kp_PT64S</ResourceID>
       <ResourceHeader>
          <ResourceName>Geotail CPI Plasma Key Parameters (64s)</ResourceName>
-         <ReleaseDate>2010-04-05T21:00:50Z</ReleaseDate>
+         <ReleaseDate>2010-04-05T22:16:33Z</ReleaseDate>
          <Description>A combination of plasma key parameters from the Geotail CPI analyzers.
 
             The CPI-SW Solar Wind Analyzer provides
@@ -59,7 +59,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1992-09-08T07:30:40</StartDate>
-            <RelativeStopDate>P2D</RelativeStopDate>
+            <RelativeStopDate>-P2D</RelativeStopDate>
          </TimeSpan>
          <Cadence>PT64S</Cadence>
       </TemporalDescription>
