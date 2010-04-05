@@ -5,16 +5,23 @@
     <ResourceID>spase://VMO/NumericalData/GOES10/MAG/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 10 Magnetometer 1-Minute Data</ResourceName>
-      <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
+      <ReleaseDate>2010-04-05T20:46:58Z</ReleaseDate>
       <Description>The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available 
-        from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems: 
-        (1) Spacecraft P,E,N (2) GSM x,y,z and (3) GSE x,y,z.  Spacecraft magnetic field is defined as: P - perpendicular to the spacecraft
-        orbital plane or parallel to the Earth's spin axis in the case of a zero degree inclination orbit; E - perpendicular to P and directed earhtwards;
-        and N - perpendicular to both P and E and directed eastwards.</Description>
+          from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems:
+
+          * (1) Spacecraft P,E,N
+          * (2) GSM x,y,z and
+          * (3) GSE x,y,z.
+
+          Spacecraft magnetic field is defined as:
+
+          * P - perpendicular to the spacecraft orbital plane or parallel to the Earth's spin axis in the case of a zero degree inclination orbit;
+          * E - perpendicular to P and directed earhtwards; and
+          * N - perpendicular to both P and E and directed eastwards.
+      </Description>
       <Acknowledgement>Users should acknowledge the CDAWeb for providing access to the data as well as the PI H. Singer and originating institution
       NOAA Space Environment Center</Acknowledgement>
       <Contact>
-        <!-- Howard Singer -->
         <PersonID>spase://SMWG/Person/Howard.J.Singer</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
@@ -154,9 +161,12 @@
     <Parameter>
       <Name>Magnetic Field vector spacecraft coordinates</Name>
       <ParameterKey>B_lcl_c</ParameterKey>
-      <Description>Magnetic Field vector in spacecraft coordinates. Spacecraft magnetic field (P,E,N) is defined as: P - perpendicular to the spacecraft
-        orbital plane or parallel to the Earth's spin axis in the case of a zero degree inclination orbit; E - perpendicular to P and directed earhtwards;
-        and N - perpendicular to both P and E and directed eastwards.</Description>
+      <Description>Magnetic Field vector in spacecraft coordinates. Spacecraft magnetic field (P,E,N) is defined as:
+
+          * P - perpendicular to the spacecraft orbital plane or parallel to the Earth's spin axis in the case of a zero degree inclination orbit;
+          * E - perpendicular to P and directed earhtwards; and
+          * N - perpendicular to both P and E and directed eastwards.
+      </Description>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
@@ -329,7 +339,13 @@
     <Parameter>
       <Name>MGF Instrument Status</Name>
       <ParameterKey>MGF_stat</ParameterKey>
-      <Description>Status of the magnetic field instrument; 0 = ok, 1 = minor problem, 2 = major problem, 3 = missing data</Description>
+      <Description>Status of the magnetic field instrument:
+
+         * 0 = ok,
+         * 1 = minor problem,
+         * 2 = major problem,
+         * 3 = missing data.
+      </Description>
       <Cadence>PT1M</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
@@ -338,7 +354,11 @@
     <Parameter>
       <Name>Mag post-gap flag</Name>
       <ParameterKey>B_flag</ParameterKey>
-      <Description>Magnetic field data flag; 0 = no gap, 1 = data not available</Description>
+      <Description>Magnetic field data flag:
+
+          * 0 = no gap,
+          * 1 = data not available
+      </Description>
       <Cadence>PT1M</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
@@ -347,7 +367,10 @@
     <Parameter>
       <Name>Spacecraft post-gap flag</Name>
       <ParameterKey>SC_flag</ParameterKey>
-      <Description>Spacecraft location data flag; 0 = no gap, 1 = data not available</Description>
+      <Description>Spacecraft location data flag:
+          * 0 = no gap,
+          * 1 = data not available
+      </Description>
       <Cadence>PT1M</Cadence>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
