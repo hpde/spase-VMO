@@ -5,8 +5,8 @@
       <ResourceID>spase://VMO/NumericalData/OMNI/P27D</ResourceID>
       <ResourceHeader>
          <ResourceName>27-Day OMNI Data Set</ResourceName>
-         <ReleaseDate>2008-10-22T00:00:00</ReleaseDate>
-         <Description>27-day averaged, multi-source, near-Earth solar wind magnetic field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  Also available at 1-hour and 1-day resolution.</Description>
+         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+         <Description>27-day averaged, multi-source, near-Earth solar wind magnetic field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number). Also available at 1-hour and 1-day resolution.</Description>
          <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Joseph.H.King</PersonID>
@@ -29,12 +29,13 @@
          <AccessURL>
             <Name>OMNIWeb</Name>
             <URL>http://omniweb.gsfc.nasa.gov</URL>
-            <Description>Pathway to data and to extensive documentation.  Plots, listings and user-specified files.  Scatter plots and linear regressions.  Distributions.  Means, medians, standard deviations in distributions.  Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
+            <Description>Pathway to data and to extensive documentation. Plots, listings and user-specified files. Scatter plots and linear regressions. Distributions. Means, medians, standard deviations in distributions. Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
          </AccessURL>
          <AccessURL>
             <Name>nssdcftp</Name>
             <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
-            <Description>ftp access to file of 27-day OMNI data</Description>
+            <Description>ftp access to file of 27-day OMNI data
+            </Description>
          </AccessURL>
          <Format>Text</Format>
          <DataExtent>
@@ -60,9 +61,9 @@
       <MeasurementType>ActivityIndex</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>1963-11-27T00:00:00</StartDate>
-            <RelativeStopDate>-P1M</RelativeStopDate>
-            <Note>Various parameters are held current to differing levels.  Typical delay is about 1-2 months.</Note>
+            <StartDate>1963-11-02T00:00:00</StartDate>
+            <RelativeStopDate>P1M</RelativeStopDate>
+            <Note>Various parameters are held current to differing levels. Typical delay is about 1-2 months.</Note>
          </TimeSpan>
          <Cadence>P27D</Cadence>
       </TemporalDescription>
@@ -81,7 +82,7 @@
       <Parameter>
          <Name>Magnitude of average magnetic field vector</Name>
          <ParameterKey>Column10</ParameterKey>
-         <Description>Magnitude of vector-averaged magnetic field vector.  SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2 +&lt;Bz&gt;**2)</Description>
+         <Description>Magnitude of vector-averaged magnetic field vector. SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2 +&lt;Bz&gt;**2)</Description>
          <Cadence>P27D</Cadence>
          <Units>nT</Units>
          <Field>
@@ -92,7 +93,7 @@
       <Parameter>
          <Name>Azimuthal angle of average magnetic field vector</Name>
          <ParameterKey>Column12</ParameterKey>
-         <Description>Azimuthal angle of vector-averaged magnetic field vector.  ARCTAN &lt;By&gt;/&lt;Bx&gt;</Description>
+         <Description>Azimuthal angle of vector-averaged magnetic field vector. ARCTAN &lt;By&gt;/&lt;Bx&gt;</Description>
          <Cadence>P27D</Cadence>
          <Units>Deg</Units>
          <CoordinateSystem>
@@ -107,7 +108,7 @@
       <Parameter>
          <Name>Elevation angle of average magnetic field vector</Name>
          <ParameterKey>Column11</ParameterKey>
-         <Description>Elevation angle of vector-averaged magnetic field vector.  ARCTAN &lt;Bz&gt;/SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2)</Description>
+         <Description>Elevation angle of vector-averaged magnetic field vector. ARCTAN &lt;Bz&gt;/SQRT(&lt;Bx&gt;**2 + &lt;By&gt;**2)</Description>
          <Cadence>P27D</Cadence>
          <Units>Deg</Units>
          <CoordinateSystem>
@@ -157,7 +158,6 @@
       </Parameter>
       <Parameter>
          <Name>Magnetic field vector, GSM</Name>
-         <ParameterKey></ParameterKey>
          <Description>Averaged GSM Cartesian components of magnetic field vector</Description>
          <Caveats>Note that Bx(GSM)=Bx(GSE) is given only once in data record.</Caveats>
          <Cadence>P27D</Cadence>
@@ -243,7 +243,7 @@
       <Parameter>
          <Name>Standard deviation of average magnetic field vector</Name>
          <ParameterKey>Column19</ParameterKey>
-         <Description>Standard deviation of vector-averaged magnetic field vector.  SQRT(sigma&lt;Bx&gt;**2 + sigma&lt;By&gt;**2 + Sigma&lt;Bz&gt;**2)</Description>
+         <Description>Standard deviation of vector-averaged magnetic field vector. SQRT(sigma&lt;Bx&gt;**2 + sigma&lt;By&gt;**2 + Sigma&lt;Bz&gt;**2)</Description>
          <Cadence>P27D</Cadence>
          <Units>nT</Units>
          <Field>
@@ -254,7 +254,7 @@
       <Parameter>
          <Name>Plasma proton temperature</Name>
          <ParameterKey>Column23</ParameterKey>
-         <Description>Plasma proton temperature, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+         <Description>Plasma proton temperature, variously derived for various OMNI-input data sets. Cross normalized</Description>
          <Cadence>P27D</Cadence>
          <Units>DegK</Units>
          <Particle>
@@ -266,7 +266,7 @@
       <Parameter>
          <Name>Plasma proton density</Name>
          <ParameterKey>Column24</ParameterKey>
-         <Description>Plasma proton density, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+         <Description>Plasma proton density, variously derived for various OMNI-input data sets. Cross normalized</Description>
          <Cadence>P27D</Cadence>
          <Units>number/cc</Units>
          <Particle>
@@ -278,7 +278,7 @@
       <Parameter>
          <Name>Plasma proton flow speed</Name>
          <ParameterKey>Column25</ParameterKey>
-         <Description>Plasma proton flow speed, variously derived for various OMNI-input data sets.  Cross normalized</Description>
+         <Description>Plasma proton flow speed, variously derived for various OMNI-input data sets. Cross normalized</Description>
          <Cadence>P27D</Cadence>
          <Units>km/s</Units>
          <Particle>
@@ -514,7 +514,8 @@
       </Parameter>
       <Parameter>
          <Name>Energetic Proton Fluxes</Name>
-         <Description>Hourly fluxes of protons above 1, 2, 4, 10, 30, 60 MeV; 1967-near current; 1973-2005 from IMP 8 CPME; 2006 and later from GOES</Description>
+         <Description>Hourly fluxes of protons above 1, 2, 4, 10, 30, 60 MeV;
+            1967-near current; 1973-2005 from IMP 8 CPME; 2006 and later from GOES</Description>
          <Cadence>P27D</Cadence>
          <Units>number/cm**2 sec ster</Units>
          <Structure>

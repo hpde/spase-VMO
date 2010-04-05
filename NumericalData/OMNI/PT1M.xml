@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>High Resolution OMNI Data Set</ResourceName>
-      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
+      <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose.</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
@@ -58,7 +58,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1995-01-01T00:00:00</StartDate>
-        <RelativeStopDate>-P1M</RelativeStopDate>
+        <RelativeStopDate>P1M</RelativeStopDate>
         <Note>Various parameters are held current to differing levels.  Typical delay is about 1-2 months.</Note>
       </TimeSpan>
       <Cadence>PT1M</Cadence>
@@ -234,19 +234,19 @@ the records but not their individual standard deviations.</Caveats>
         <Description>Three 1-minute averaged magnetic field Cartesian components, in GSE</Description>
         <Element>
           <Name>Bx, GSE</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 15</ParameterKey>
         </Element>
         <Element>
           <Name>By, GSE</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 16</ParameterKey>
         </Element>
         <Element>
           <Name>Bz, GSE</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 17</ParameterKey>
         </Element>
@@ -276,19 +276,19 @@ the records but not their individual standard deviations.</Caveats>
         <Description>Three 1-minute averaged magnetic field Cartesian components, in GSM</Description>
         <Element>
           <Name>Bx, GSM</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 15</ParameterKey>
         </Element>
         <Element>
           <Name>By, GSM</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 18</ParameterKey>
         </Element>
         <Element>
           <Name>Bz, GSM</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 19</ParameterKey>
         </Element>
@@ -354,19 +354,19 @@ the records but not their individual standard deviations.</Caveats>
         <Description>Three 1-minute averaged plasma flow velocity Cartesian components, in GSE</Description>
         <Element>
           <Name>Vx, GSE</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 23</ParameterKey>
         </Element>
         <Element>
           <Name>Vy, GSE</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 24</ParameterKey>
         </Element>
         <Element>
           <Name>Vz, GSE</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 25</ParameterKey>
         </Element>
@@ -469,19 +469,19 @@ the records but not their individual standard deviations.</Caveats>
         <Description>Three spacecraft location Cartesian components, in GSE</Description>
         <Element>
           <Name>Rx, GSE</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 32</ParameterKey>
         </Element>
         <Element>
           <Name>Ry, GSE</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 33</ParameterKey>
         </Element>
         <Element>
           <Name>Rz, GSE</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 34</ParameterKey>
         </Element>
@@ -505,19 +505,19 @@ the records but not their individual standard deviations.</Caveats>
         <Description>Three bow shock nose location Cartesian components, in GSE</Description>
         <Element>
           <Name>BSNx, GSE</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 35</ParameterKey>
         </Element>
         <Element>
           <Name>BSNy, GSE</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 36</ParameterKey>
         </Element>
         <Element>
           <Name>BSNz, GSE</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 37</ParameterKey>
         </Element>

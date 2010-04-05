@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+  <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/P1D</ResourceID>
     <ResourceHeader>
       <ResourceName>Daily OMNI Data Set</ResourceName>
-      <ReleaseDate>2009-05-20T23:06:12Z</ReleaseDate>
+      <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
       <Description>Daily averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
@@ -71,8 +71,8 @@ for creating the OMNI data set.</Acknowledgement>
     <MeasurementType>ActivityIndex</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>1963-11-27T00:00:00Z</StartDate>
-        <RelativeStopDate>-P1M</RelativeStopDate>
+        <StartDate>1963-01-01T00:00:00</StartDate>
+        <RelativeStopDate>P1M</RelativeStopDate>
         <Note>Various parameters are held current to differing levels. Typical delay is about 1-2 months.</Note>
       </TimeSpan>
       <Cadence>P1D</Cadence>
@@ -182,19 +182,19 @@ for creating the OMNI data set.</Acknowledgement>
         <Description>Three hourly averaged magnetic field Cartesian components, in GSE</Description>
         <Element>
           <Name>Bx, GSE</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 13</ParameterKey>
         </Element>
         <Element>
           <Name>By, GSE</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 14</ParameterKey>
         </Element>
         <Element>
           <Name>Bz, GSE</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 15</ParameterKey>
         </Element>
@@ -220,19 +220,19 @@ for creating the OMNI data set.</Acknowledgement>
         <Description>Three hourly averaged magnetic field Cartesian components, in GSE</Description>
         <Element>
           <Name>Bx, GSM</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 13</ParameterKey>
         </Element>
         <Element>
           <Name>By, GSM</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 16</ParameterKey>
         </Element>
         <Element>
           <Name>Bz, GSM</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 17</ParameterKey>
         </Element>
@@ -256,19 +256,19 @@ for creating the OMNI data set.</Acknowledgement>
         <Description>Three standard deviations in hourly averaged GSE magnetic field Cartesian components</Description>
         <Element>
           <Name>sigma Bx, GSE</Name>
-          <Component>I</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Column 20</ParameterKey>
         </Element>
         <Element>
           <Name>sigma By, GSE</Name>
-          <Component>J</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Column 21</ParameterKey>
         </Element>
         <Element>
           <Name>sigma Bz, GSE</Name>
-          <Component>K</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Column 22</ParameterKey>
         </Element>
