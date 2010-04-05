@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/Geotail/LEP/EDA.PT12S</ResourceID>
       <ResourceHeader>
          <ResourceName>Geotail Editor-A 12 second Low-Energy Particles</ResourceName>
-         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-04-05T21:02:08Z</ReleaseDate>
          <Description>12-second Editor-A low-energy particle data from the Geotail spacecraft.
 
             Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC),Japan, while the Editor-B data are 24-hours continuouslyrecorded in the onboard tape recorders and are dumpedover the NASA/JPL Deep Space Network (DSN) stations.
@@ -163,6 +163,7 @@
          <Name>Mode</Name>
          <ParameterKey>scan_code</ParameterKey>
          <Description>Energy scan code/mode:
+
             *  1 = sensor EA = energy scan mode RAM-A
             *  2 = sensor SW = energy scan mode RAM-B
          </Description>

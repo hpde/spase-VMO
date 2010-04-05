@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/Geotail/MGF/PT64S</ResourceID>
       <ResourceHeader>
          <ResourceName>Geotail KP Magnetic Field Data (64s)</ResourceName>
-         <ReleaseDate>2010-02-18T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-04-05T21:04:27Z</ReleaseDate>
          <Description>This data set contains the investigator-selected Key Parameters from the Magnetic Field instrument (MGF) on Geotail, as made available via NSSDC's interactive WWW interface CDAWeb.
 
             Selected references:
@@ -228,6 +228,7 @@
          <Name>MGF Range</Name>
          <ParameterKey>RANGE_STATUS</ParameterKey>
          <Description>Range status of the fluxgate magnetometer.
+
             * 0 = Not valid
             * 1 = +/-    16 nT
             * 2 = +/-    64 nT
@@ -295,7 +296,12 @@
       <Parameter>
          <Name>Post Gap Flag</Name>
          <ParameterKey>Gap_Flag</ParameterKey>
-         <Description>Post gap flag. 0: no gap occurred; 1: gap occurred because SIRIUS data were illegal or because the instrument was not in a mode that allowed KP's 2: gap occurred because of the jump of MGF RANGE or MGF SENSE during 64 s</Description>
+         <Description>Post gap flag.
+
+             * 0: no gap occurred;
+             * 1: gap occurred because SIRIUS data were illegal or because the instrument was not in a mode that allowed KP's
+             * 2: gap occurred because of the jump of MGF RANGE or MGF SENSE during 64 s
+         </Description>
          <ValidMin>0</ValidMin>
          <ValidMax>2</ValidMax>
          <FillValue>-2147483648</FillValue>
