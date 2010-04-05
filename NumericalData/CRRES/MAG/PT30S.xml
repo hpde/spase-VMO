@@ -4,9 +4,9 @@
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/CRRES/MAG/PT30S</ResourceID>
       <ResourceHeader>
-         <ResourceName>CRRES Tri-axial fluxgate magnetometer</ResourceName>
+         <ResourceName>CRRES 30s magnetic field data</ResourceName>
          <AlternateName>CRRES MAG data</AlternateName>
-         <ReleaseDate>2010-03-30T22:38:20Z</ReleaseDate>
+         <ReleaseDate>2010-04-05T21:49:01Z</ReleaseDate>
          <Description>This data set contains spin fitted magnetic field vectors and magnitudes from the CRRES tri-axial fluxgate magnetometer data. The magnetic field vectors are at 30 s resolution and in the GSE coordinate system.</Description>
          <Acknowledgement>NASA; Department of Defense-Department of the Air Force (United States); AFRL; Dr. Howard J. Singer; Dr. E. Gary Mullen</Acknowledgement>
          <Contact>
