@@ -6,21 +6,18 @@
     <ResourceHeader>
       <ResourceName>THEMIS GBO All Sky Imager at Snap Lake, NT, Canada. ASI Thumbnails Data.</ResourceName>
       <AlternateName>THEMIS-Ground AST</AlternateName>
-      <ReleaseDate>2010-03-29T19:26:35Z</ReleaseDate>
+      <ReleaseDate>2010-04-06T22:12:17Z</ReleaseDate>
       <Description>THEMIS Ground All Sky Imager at Snap Lake: 32 x 32 pixel thumbnails for full ASI images.  The ASI stations monitor a 170 degree field of view imaging the auroral oval at kilometer resolution.  The ASI is comprised of a fisheye lens and CCD in a stainless steel enclosure topped with a transparent acrylic dome.  The CCD has a resolution of 256 x 256 pixels.  Exposure control ranges from 5 s to 1 ms although the typical data rate is one image every 3 seconds.  Silicone heaters keep the instrument within the nominal temperature range.  During daylight hours sun shades deploy to protect the CCD.
 	</Description>
       <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically S. Mende and E. Donovan for use of the ASI data, and the CSA for logistical support in fielding and data retrieval from the GBO stations.</Acknowledgement>
-      <!--Vassilis Angelopoulos -->
       <Contact>
         <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
       </Contact>
-      <!--Stephen Mende-->
       <Contact>
         <PersonID>spase://SMWG/Person/Stephen.B.Mende</PersonID>
         <Role>CoInvestigator</Role>
       </Contact>
-      <!--Eric Donovan-->
       <Contact>
         <PersonID>spase://SMWG/Person/Eric.Donovan</PersonID>
         <Role>CoInvestigator</Role>
@@ -48,7 +45,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2008-11-01T00:00:00</StartDate>
-        <RelativeStopDate>P7D</RelativeStopDate>
+        <RelativeStopDate>-P7D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT3S</Cadence>
     </TemporalDescription>
