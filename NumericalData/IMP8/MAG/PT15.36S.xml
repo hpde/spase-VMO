@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-   <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
+   <Version>2.1.0</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
       <ResourceHeader>
          <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
-         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-04-06T17:08:20Z</ReleaseDate>
          <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second.</Description>
          <Acknowledgement>User will acknowledge the IMP-8 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
          <Contact>
-            <!-- Adam Szabo -->
             <PersonID>spase://SMWG/Person/Adam.Szabo</PersonID>
             <Role>PrincipalInvestigator</Role>
          </Contact>

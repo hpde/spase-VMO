@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns="http://www.spase-group.org/data/schema">
-    <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
+    <Version>2.1.0</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/IMP8/Propagated/PT1M</ResourceID>
         <ResourceHeader>
             <ResourceName>IMP 8 MAG PLS 1-min field and plasma data at bow shock nose</ResourceName>
             <AlternateName>IMP 8 at BSN</AlternateName>
-            <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+            <ReleaseDate>2010-04-06T17:27:28Z</ReleaseDate>
             <Description>Solar wind magnetic field and plasma data at 1-min resolution created from IMP 8 data shifted to the Earth's bow shock nose (BSN).</Description>
             <Acknowledgement>We acknowledge A.Szabo and R. Lepping of the MAG team, A. Lazarus of the PLS team and J. King and N. Papitashvili of NASA/SPDF and ADNET who created this product.</Acknowledgement>
             <Contact>
