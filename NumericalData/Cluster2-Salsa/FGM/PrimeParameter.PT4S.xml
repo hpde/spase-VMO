@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
   <Version>2.0.1</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/Cluster2-Salsa/FGM/PrimeParameter.PT4S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/Cluster2-Salsa/FGM/PrimeParameter/4S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster II Salsa Prime Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
       <AlternateName>Cluster 2 Prime Parameter FGM Data</AlternateName>
-      <ReleaseDate>2010-04-06T15:57:08Z</ReleaseDate>
+      <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
       <Description>This dataset contains spin resolution prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 Salsa spacecraft. The prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain.</Description>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
       <Contact>
@@ -30,7 +30,6 @@
         <AssociationID>spase://SMWG/Observatory/Cluster2-Salsa</AssociationID>
         <AssociationType>ObservedBy</AssociationType>
       </Association>
-      <PriorID>spase://VMO/NumericalData/Cluster2-Salsa/FGM/PrimeParameter/4S</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
