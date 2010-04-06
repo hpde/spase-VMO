@@ -5,9 +5,11 @@
     <ResourceID>spase://VMO/NumericalData/Cluster2/Ephemeris/SummaryParameter.PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster Auxiliary Data</ResourceName>
-      <ReleaseDate>2010-04-06T15:57:09Z</ReleaseDate>
+      <ReleaseDate>2010-04-06T16:00:49Z</ReleaseDate>
       <Description>Cluster Auxiliary Parameters are produced by the Cluster Hungarian Data Center in Budapest.  These data are the primary orbit product supplied to users by the Cluster Active Archive.  The data contain Position, Velocity and Attitude of four Cluster spacecraft.
+
             For additional details on the methodology behind these data see:
+
             Robert P., et al., "Tetrahedron Geometric Factors", p. 328, Analysis Methods of Multi-Spacecraft Data, ed. G. Paschmann and P. Daly, 1998, ESA and the International Space Institute, Bern.</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/M.Tatrallyay</PersonID>
