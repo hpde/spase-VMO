@@ -1,221 +1,222 @@
 <?xml version="1.0"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-   <Version>2.0.1</Version>
-   <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/Cluster2/FGM/UnvalidatedSummaryParameter/60S</ResourceID>
-      <ResourceHeader>
-         <ResourceName>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
-         <AlternateName>Cluster Unvalidated Summary Parameter FGM Data</AlternateName>
-         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
-         <Description>This dataset contains 1 minute resolution unvalidated summary prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 spacecraft. Unvalidated FGM data might sometimes contain artefacts such as spikes (duration ~ 1 spin), or short rotations (few spins). Very occasionally the data contain many spikes over several hours. Please contact Elizabeth Lucek (e.lucek@imperial.ac.uk) for more information regarding possible artefacts in specific intervals of data. The unvalidated summary prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain. This instrument consists of two tri-axial fluxgate magnetometers mounted on one of the two 5 m radial booms, plus a data processing unit (DPU) on the main equipment platform. The magnetometer boom lies in the spacecraft spin plane, with the outboard sensor at the boom tip and the inboard sensor mounted 1.5 m inboard from the tip, to minimize the importance of the spacecraft background magnetic field and its variations. The sensors are mounted such that the X axes are aligned with the spacecraft spin axis, and the other axes are in the spin plane. There are five sensitivity ranges, from +/- 256 nT to +/- 65,500 nT (used only to facilitate ground testing). Range switching can be automatic or by command. Calibration is done by introducing a known current step into the feedback loop of the sensors. Telemetry allocation limits the normal output to about 20 vectors/s. For short periods at higher time resolution, data are stored at rates of up to 124.3 vectors/s in a memory block, the micro-structure analyzer (MSA). The MSA capacity is 32,000 vectors, more than 4 minutes of data at the highest sampling rate. This memory is continually over-written until a special event is detected, when its contents are frozen and held for readout interleaved with the normal lower-resolution data. The DPU has dual redundancy, including two CPUs. The CPU convolves the full bandwidth data with a Gaussian digital filter to match the rate and bandwidth of the transmitted vectors to the available telemetry rate. Unfiltered vector data are sent at 64.35 ms intervals to all but one of the other experiments. The DPU has a number of stored algorithms for recognition of events of particular interest, to trigger the MSA. The objective is to identify such events as boundary crossings or shocks when the high-rate capability of the MSA for short periods could capture the detailed signature of the event. The algorithms were defined at an early stage, but resettable thresholds for the event triggers will enable optimization in flight. There are eight different telemetry operating modes of the instrument, corresponding to both normal and burst modes, with MSA readout rates of 0, 9, 12, or 120 vectors/s. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article The Cluster Magnetic Field Investigation: scientific objective and instrumentation, by A. Balogh et al., from which this information was obtained.</Description>
-         <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
-         <Contact>
-            <PersonID>spase://SMWG/Person/Andre.Balogh</PersonID>
-            <Role>PrincipalInvestigator</Role>
-         </Contact>
-         <Contact>
-            <PersonID>spase://SMWG/Person/Elizabeth.A.Lucek</PersonID>
-            <Role>PrincipalInvestigator</Role>
-         </Contact>
-         <Contact>
-            <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
-            <Role>MetadataContact</Role>
-         </Contact>
-         <InformationURL>
-            <Name>NSSDC Master Catalog listing for Cluster II Rumba Fluxgate Magnetometer (FGM)</Name>
-            <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-045A-04</URL>
-            <Description>This site provides information concerning the Cluster II Rumba Fluxgate Magnetometer Instrument.</Description>
-         </InformationURL>
-         <InformationURL>
-            <Name>NSSDC Master Catalog listing for Cluster II Salsa Fluxgate Magnetometer (FGM)</Name>
-            <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-041B-04</URL>
-            <Description>This site provides information concerning the Cluster II Salsa Fluxgate Magnetometer Instrument.</Description>
-         </InformationURL>
-         <InformationURL>
-            <Name>NSSDC Master Catalog listing for Cluster II Samba Fluxgate Magnetometer (FGM)</Name>
-            <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-041A-04</URL>
-            <Description>This site provides information concerning the Cluster II Samba Fluxgate Magnetometer Instrument.</Description>
-         </InformationURL>
-         <InformationURL>
-            <Name>NSSDC Master Catalog listing for Cluster II Tango Fluxgate Magnetometer (FGM)</Name>
-            <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-045B-04</URL>
-            <Description>This site provides information concerning the Cluster II Tango Fluxgate Magnetometer Instrument.</Description>
-         </InformationURL>
-         <Association>
-            <AssociationID>spase://SMWG/Observatory/Cluster2-Rumba</AssociationID>
-            <AssociationType>ObservedBy</AssociationType>
-         </Association>
-         <Association>
-            <AssociationID>spase://SMWG/Observatory/Cluster2-Salsa</AssociationID>
-            <AssociationType>ObservedBy</AssociationType>
-         </Association>
-         <Association>
-            <AssociationID>spase://SMWG/Observatory/Cluster2-Samba</AssociationID>
-            <AssociationType>ObservedBy</AssociationType>
-         </Association>
-         <Association>
-            <AssociationID>spase://SMWG/Observatory/Cluster2-Tango</AssociationID>
-            <AssociationType>ObservedBy</AssociationType>
-         </Association>
-      </ResourceHeader>
-      <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
-         <Availability>Online</Availability>
-         <AccessRights>Open</AccessRights>
-         <AccessURL>
-            <Name>CDAWeb link to Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer data</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/us/fgm</URL>
-            <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) data</Description>
-         </AccessURL>
-         <Format>CDF</Format>
-         <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
-      </AccessInformation>
-      <ProcessingLevel>Calibrated</ProcessingLevel>
-      <ProviderResourceName>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) Data</ProviderResourceName>
-      <ProviderProcessingLevel>Calibrated</ProviderProcessingLevel>
-      <ProviderVersion>1</ProviderVersion>
-      <InstrumentID>spase://SMWG/Instrument/Cluster2-Rumba/FGM</InstrumentID>
-      <InstrumentID>spase://SMWG/Instrument/Cluster2-Salsa/FGM</InstrumentID>
-      <InstrumentID>spase://SMWG/Instrument/Cluster2-Samba/FGM</InstrumentID>
-      <InstrumentID>spase://SMWG/Instrument/Cluster2-Tango/FGM</InstrumentID>
-      <MeasurementType>MagneticField</MeasurementType>
-      <TemporalDescription>
-         <TimeSpan>
-            <StartDate>2006-01-01T00:00:00.000</StartDate>
-            <RelativeStopDate>P3M</RelativeStopDate>
-            <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000</Note>
-         </TimeSpan>
-         <Cadence>PT60S</Cadence>
-      </TemporalDescription>
-      <Keyword>60 second</Keyword>
-      <Keyword>magnetosphere</Keyword>
-      <Keyword>auroral region</Keyword>
-      <Keyword>polar cap</Keyword>
-      <Keyword>cusp</Keyword>
-      <Keyword>bow shock</Keyword>
-      <Keyword>solar wind</Keyword>
-      <Keyword>magnetosheath</Keyword>
-      <Keyword>Cluster</Keyword>
-      <Keyword>magnetotail</Keyword>
-      <Keyword>lobe</Keyword>
-      <Parameter>
-         <Name>Half Sample Time Interval</Name>
-         <ParameterKey>Half_interval__CL_US_FGM</ParameterKey>
-         <Description>Half the mean separation between time tags, averaged over the file</Description>
-         <Cadence>PT60S</Cadence>
-         <Units>ms</Units>
-         <UnitsConversion>1.0e-3>s</UnitsConversion>
-         <FillValue>-1.0000e+31</FillValue>
-         <Support>
-            <SupportQuantity>Other</SupportQuantity>
-         </Support>
-      </Parameter>
-      <Parameter>
-         <Name>Universal Time</Name>
-         <ParameterKey>Epoch__CL_US_FGM</ParameterKey>
-         <Description>Universal Time in data cell: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000.</Description>
-         <Caveats>Interval centered time tag</Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units>ms</Units>
-         <UnitsConversion>1.0e-3>s</UnitsConversion>
-         <RenderingHints>
-            <AxisLabel>Epoch</AxisLabel>
-         </RenderingHints>
-         <FillValue>-1.0000e+31</FillValue>
-         <Support>
-            <SupportQuantity>Temporal</SupportQuantity>
-         </Support>
-      </Parameter>
-      <Parameter>
-         <Name>Status</Name>
-         <ParameterKey>Status__CL_US_FGM</ParameterKey>
-         <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer status</Description>
-         <Cadence>PT60S</Cadence>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-            <SupportQuantity>Other</SupportQuantity>
-         </Support>
-      </Parameter>
-      <Parameter>
-         <Name>DC Magnetic Field Vector</Name>
-         <ParameterKey>B_xyz_gse__CL_US_FGM</ParameterKey>
-         <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer dc magnetic field vector</Description>
-         <Cadence>PT60S</Cadence>
-         <Units>nT</Units>
-         <UnitsConversion>1.0e-9>T</UnitsConversion>
-         <CoordinateSystem>
-            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-            <CoordinateSystemName>GSE</CoordinateSystemName>
-         </CoordinateSystem>
-         <RenderingHints>
-            <ScaleMin>-600</ScaleMin>
-            <ScaleMax>600</ScaleMax>
-         </RenderingHints>
-         <Structure>
-            <Size>3</Size>
-            <Element>
-               <Name>Bx GSE</Name>
-               <Qualifier>Component.I</Qualifier>
-               <Index>1</Index>
-            </Element>
-            <Element>
-               <Name>By GSE</Name>
-               <Qualifier>Component.J</Qualifier>
-               <Index>2</Index>
-            </Element>
-            <Element>
-               <Name>Bz GSE</Name>
-               <Qualifier>Component.K</Qualifier>
-               <Index>3</Index>
-            </Element>
-         </Structure>
-         <ValidMin>-4096</ValidMin>
-         <ValidMax>+4096</ValidMax>
-         <FillValue>-1.0000e+31</FillValue>
-         <Field>
-            <Qualifier>Vector</Qualifier>
-            <FieldQuantity>Magnetic</FieldQuantity>
-         </Field>
-      </Parameter>
-      <Parameter>
-         <Name>Normalized Magnetic Field Variance Summed</Name>
-         <ParameterKey>B_nsigma_t__CL_US_FGM</ParameterKey>
-         <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer normalized magnetic field variance summed, which is equivalent to the sum over the component variances</Description>
-         <Cadence>PT60S</Cadence>
-         <UnitsConversion>1.0>(variance)</UnitsConversion>
-         <RenderingHints>
-            <AxisLabel>dB_t^2/B^2</AxisLabel>
-            <ScaleMin>0</ScaleMin>
-            <ScaleMax>1</ScaleMax>
-         </RenderingHints>
-         <ValidMin>0</ValidMin>
-         <ValidMax>1</ValidMax>
-         <FillValue>-1.0000e+31</FillValue>
-         <Field>
-            <Qualifier>Variance</Qualifier>
-            <FieldQuantity>Magnetic</FieldQuantity>
-         </Field>
-      </Parameter>
-      <Parameter>
-         <Name>Normalized Variance of the Magnetic Field Magnitude</Name>
-         <ParameterKey>B_nsigma_b__CL_US_FGM</ParameterKey>
-         <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer normalized variance of the magnetic field magnitude</Description>
-         <Cadence>PT60S</Cadence>
-         <UnitsConversion>1.0>(variance)</UnitsConversion>
-         <RenderingHints>
-            <AxisLabel>dB_t^2/B^2</AxisLabel>
-            <ScaleMin>0</ScaleMin>
-            <ScaleMax>1</ScaleMax>
-         </RenderingHints>
-         <ValidMin>0</ValidMin>
-         <ValidMax>1</ValidMax>
-         <FillValue>-1.0000e+31</FillValue>
-         <Field>
-            <Qualifier>Variance</Qualifier>
-            <FieldQuantity>Magnetic</FieldQuantity>
-         </Field>
-      </Parameter>
-   </NumericalData>
+  <Version>2.0.1</Version>
+  <NumericalData>
+    <ResourceID>spase://VMO/NumericalData/Cluster2/FGM/UnvalidatedSummaryParameter.PT60S</ResourceID>
+    <ResourceHeader>
+      <ResourceName>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
+      <AlternateName>Cluster Unvalidated Summary Parameter FGM Data</AlternateName>
+      <ReleaseDate>2010-04-06T15:57:09Z</ReleaseDate>
+      <Description>This dataset contains 1 minute resolution unvalidated summary prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 spacecraft. Unvalidated FGM data might sometimes contain artefacts such as spikes (duration ~ 1 spin), or short rotations (few spins). Very occasionally the data contain many spikes over several hours. Please contact Elizabeth Lucek (e.lucek@imperial.ac.uk) for more information regarding possible artefacts in specific intervals of data. The unvalidated summary prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain. This instrument consists of two tri-axial fluxgate magnetometers mounted on one of the two 5 m radial booms, plus a data processing unit (DPU) on the main equipment platform. The magnetometer boom lies in the spacecraft spin plane, with the outboard sensor at the boom tip and the inboard sensor mounted 1.5 m inboard from the tip, to minimize the importance of the spacecraft background magnetic field and its variations. The sensors are mounted such that the X axes are aligned with the spacecraft spin axis, and the other axes are in the spin plane. There are five sensitivity ranges, from +/- 256 nT to +/- 65,500 nT (used only to facilitate ground testing). Range switching can be automatic or by command. Calibration is done by introducing a known current step into the feedback loop of the sensors. Telemetry allocation limits the normal output to about 20 vectors/s. For short periods at higher time resolution, data are stored at rates of up to 124.3 vectors/s in a memory block, the micro-structure analyzer (MSA). The MSA capacity is 32,000 vectors, more than 4 minutes of data at the highest sampling rate. This memory is continually over-written until a special event is detected, when its contents are frozen and held for readout interleaved with the normal lower-resolution data. The DPU has dual redundancy, including two CPUs. The CPU convolves the full bandwidth data with a Gaussian digital filter to match the rate and bandwidth of the transmitted vectors to the available telemetry rate. Unfiltered vector data are sent at 64.35 ms intervals to all but one of the other experiments. The DPU has a number of stored algorithms for recognition of events of particular interest, to trigger the MSA. The objective is to identify such events as boundary crossings or shocks when the high-rate capability of the MSA for short periods could capture the detailed signature of the event. The algorithms were defined at an early stage, but resettable thresholds for the event triggers will enable optimization in flight. There are eight different telemetry operating modes of the instrument, corresponding to both normal and burst modes, with MSA readout rates of 0, 9, 12, or 120 vectors/s. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article The Cluster Magnetic Field Investigation: scientific objective and instrumentation, by A. Balogh et al., from which this information was obtained.</Description>
+      <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Andre.Balogh</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/Elizabeth.A.Lucek</PersonID>
+        <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+        <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
+        <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+        <Name>NSSDC Master Catalog listing for Cluster II Rumba Fluxgate Magnetometer (FGM)</Name>
+        <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-045A-04</URL>
+        <Description>This site provides information concerning the Cluster II Rumba Fluxgate Magnetometer Instrument.</Description>
+      </InformationURL>
+      <InformationURL>
+        <Name>NSSDC Master Catalog listing for Cluster II Salsa Fluxgate Magnetometer (FGM)</Name>
+        <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-041B-04</URL>
+        <Description>This site provides information concerning the Cluster II Salsa Fluxgate Magnetometer Instrument.</Description>
+      </InformationURL>
+      <InformationURL>
+        <Name>NSSDC Master Catalog listing for Cluster II Samba Fluxgate Magnetometer (FGM)</Name>
+        <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-041A-04</URL>
+        <Description>This site provides information concerning the Cluster II Samba Fluxgate Magnetometer Instrument.</Description>
+      </InformationURL>
+      <InformationURL>
+        <Name>NSSDC Master Catalog listing for Cluster II Tango Fluxgate Magnetometer (FGM)</Name>
+        <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-045B-04</URL>
+        <Description>This site provides information concerning the Cluster II Tango Fluxgate Magnetometer Instrument.</Description>
+      </InformationURL>
+      <Association>
+        <AssociationID>spase://SMWG/Observatory/Cluster2-Rumba</AssociationID>
+        <AssociationType>ObservedBy</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Observatory/Cluster2-Salsa</AssociationID>
+        <AssociationType>ObservedBy</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Observatory/Cluster2-Samba</AssociationID>
+        <AssociationType>ObservedBy</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Observatory/Cluster2-Tango</AssociationID>
+        <AssociationType>ObservedBy</AssociationType>
+      </Association>
+      <PriorID>spase://VMO/NumericalData/Cluster2/FGM/UnvalidatedSummaryParameter/60S</PriorID>
+    </ResourceHeader>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb link to Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer data</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/us/fgm</URL>
+        <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) data</Description>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
+    </AccessInformation>
+    <ProcessingLevel>Calibrated</ProcessingLevel>
+    <ProviderResourceName>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) Data</ProviderResourceName>
+    <ProviderProcessingLevel>Calibrated</ProviderProcessingLevel>
+    <ProviderVersion>1</ProviderVersion>
+    <InstrumentID>spase://SMWG/Instrument/Cluster2-Rumba/FGM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/Cluster2-Salsa/FGM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/Cluster2-Samba/FGM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/Cluster2-Tango/FGM</InstrumentID>
+    <MeasurementType>MagneticField</MeasurementType>
+    <TemporalDescription>
+      <TimeSpan>
+        <StartDate>2006-01-01T00:00:00.000</StartDate>
+        <RelativeStopDate>P3M</RelativeStopDate>
+        <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000</Note>
+      </TimeSpan>
+      <Cadence>PT60S</Cadence>
+    </TemporalDescription>
+    <Keyword>60 second</Keyword>
+    <Keyword>magnetosphere</Keyword>
+    <Keyword>auroral region</Keyword>
+    <Keyword>polar cap</Keyword>
+    <Keyword>cusp</Keyword>
+    <Keyword>bow shock</Keyword>
+    <Keyword>solar wind</Keyword>
+    <Keyword>magnetosheath</Keyword>
+    <Keyword>Cluster</Keyword>
+    <Keyword>magnetotail</Keyword>
+    <Keyword>lobe</Keyword>
+    <Parameter>
+      <Name>Half Sample Time Interval</Name>
+      <ParameterKey>Half_interval__CL_US_FGM</ParameterKey>
+      <Description>Half the mean separation between time tags, averaged over the file</Description>
+      <Cadence>PT60S</Cadence>
+      <Units>ms</Units>
+      <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+      <FillValue>-1.0000e+31</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Universal Time</Name>
+      <ParameterKey>Epoch__CL_US_FGM</ParameterKey>
+      <Description>Universal Time in data cell: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000.</Description>
+      <Caveats>Interval centered time tag</Caveats>
+      <Cadence>PT60S</Cadence>
+      <Units>ms</Units>
+      <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
+      <RenderingHints>
+        <AxisLabel>Epoch</AxisLabel>
+      </RenderingHints>
+      <FillValue>-1.0000e+31</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Status</Name>
+      <ParameterKey>Status__CL_US_FGM</ParameterKey>
+      <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer status</Description>
+      <Cadence>PT60S</Cadence>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>DC Magnetic Field Vector</Name>
+      <ParameterKey>B_xyz_gse__CL_US_FGM</ParameterKey>
+      <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer dc magnetic field vector</Description>
+      <Cadence>PT60S</Cadence>
+      <Units>nT</Units>
+      <UnitsConversion>1.0e-9&gt;T</UnitsConversion>
+      <CoordinateSystem>
+        <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GSE</CoordinateSystemName>
+      </CoordinateSystem>
+      <RenderingHints>
+        <ScaleMin>-600</ScaleMin>
+        <ScaleMax>600</ScaleMax>
+      </RenderingHints>
+      <Structure>
+        <Size>3</Size>
+        <Element>
+          <Name>Bx GSE</Name>
+          <Qualifier>Component.I</Qualifier>
+          <Index>1</Index>
+        </Element>
+        <Element>
+          <Name>By GSE</Name>
+          <Qualifier>Component.J</Qualifier>
+          <Index>2</Index>
+        </Element>
+        <Element>
+          <Name>Bz GSE</Name>
+          <Qualifier>Component.K</Qualifier>
+          <Index>3</Index>
+        </Element>
+      </Structure>
+      <ValidMin>-4096</ValidMin>
+      <ValidMax>+4096</ValidMax>
+      <FillValue>-1.0000e+31</FillValue>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Normalized Magnetic Field Variance Summed</Name>
+      <ParameterKey>B_nsigma_t__CL_US_FGM</ParameterKey>
+      <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer normalized magnetic field variance summed, which is equivalent to the sum over the component variances</Description>
+      <Cadence>PT60S</Cadence>
+      <UnitsConversion>1.0&gt;(variance)</UnitsConversion>
+      <RenderingHints>
+        <AxisLabel>dB_t^2/B^2</AxisLabel>
+        <ScaleMin>0</ScaleMin>
+        <ScaleMax>1</ScaleMax>
+      </RenderingHints>
+      <ValidMin>0</ValidMin>
+      <ValidMax>1</ValidMax>
+      <FillValue>-1.0000e+31</FillValue>
+      <Field>
+        <Qualifier>Variance</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
+      <Name>Normalized Variance of the Magnetic Field Magnitude</Name>
+      <ParameterKey>B_nsigma_b__CL_US_FGM</ParameterKey>
+      <Description>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer normalized variance of the magnetic field magnitude</Description>
+      <Cadence>PT60S</Cadence>
+      <UnitsConversion>1.0&gt;(variance)</UnitsConversion>
+      <RenderingHints>
+        <AxisLabel>dB_t^2/B^2</AxisLabel>
+        <ScaleMin>0</ScaleMin>
+        <ScaleMax>1</ScaleMax>
+      </RenderingHints>
+      <ValidMin>0</ValidMin>
+      <ValidMax>1</ValidMax>
+      <FillValue>-1.0000e+31</FillValue>
+      <Field>
+        <Qualifier>Variance</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+  </NumericalData>
 </Spase>
