@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Cluster II Summary Parameter Waves of HF and Sounder for Probing Electron Density by Relaxation (WHISPER) Data</ResourceName>
          <AlternateName>Cluster Summary Parameter WHISPER Data</AlternateName>
-         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
          <Description>The Waves of HF and Sounder for Probing Electron Density by Relaxation (WHISPER) experiment provides measurements of the electron density via active sounding of plasma resonances and records via passive wave analysis the natural wave emissions in the high-frequency range, from 4-80 KHz. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article WHISPER, a Sounder and High-Frequency Wave Analyser Experiment, by P. M. E. Decreau et al., from which this information was obtained.</Description>
          <Acknowledgement>NASA, Pierrette Decreau</Acknowledgement>
          <Contact>
@@ -116,7 +116,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>2001-01-09T00:00:00.000</StartDate>
-            <RelativeStopDate>P3M</RelativeStopDate>
+            <RelativeStopDate>-P3M</RelativeStopDate>
             <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000</Note>
          </TimeSpan>
          <Cadence>PT60S</Cadence>

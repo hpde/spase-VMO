@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Cluster II Samba Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) Data</ResourceName>
          <AlternateName>Cluster 3 Prime Parameter STAFF Data</AlternateName>
-         <ReleaseDate>2009-09-15T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
          <Description>The Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) experiment provides magnetic field power spectral density values parallel and perpendicular to the magnetic field and the electric field power spectral density values for several frequency ranges. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article The STAFF (Spatio-Temporal Analysis of Field Fluctuations) Experiment for the Cluster Mission, by N. Cornilleau-Wehrlin et al., from which this information was obtained.</Description>
          <Acknowledgement>NASA, Nicole Cornilleau-Wehrlin</Acknowledgement>
          <Contact>
@@ -86,7 +86,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>2000-12-09T00:00:00</StartDate>
-            <RelativeStopDate>P3M</RelativeStopDate>
+            <RelativeStopDate>-P3M</RelativeStopDate>
             <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000</Note>
          </TimeSpan>
          <Cadence>PT4S</Cadence>

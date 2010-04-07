@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster II Rumba Prime Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
       <AlternateName>Cluster 1 Prime Parameter FGM Data</AlternateName>
-      <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
+      <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
       <Description>This dataset contains spin resolution prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 Rumba spacecraft. The prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain.</Description>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
       <Contact>
@@ -52,7 +52,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2000-11-01T00:00:00.000</StartDate>
-        <RelativeStopDate>P3M</RelativeStopDate>
+        <RelativeStopDate>-P3M</RelativeStopDate>
         <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: 01-Jan-1981 00:00:00.000</Note>
       </TimeSpan>
       <Cadence>PT4S</Cadence>

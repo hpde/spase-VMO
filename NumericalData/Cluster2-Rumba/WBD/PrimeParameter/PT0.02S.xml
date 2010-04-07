@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Cluster II Rumba Wide Band Data (WBD) Prime Parameters</ResourceName>
          <AlternateName>Cluster II WBD data</AlternateName>
-         <ReleaseDate>2010-02-24T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
          <Description>The WBD (Wide Band Data) investigation is designed to provide high-resolution frequency/time spectra of plasma waves in the Earth's magnetosphere. These data files contain information on the band width, resolution, antenna angles, offsets, magnetic and electric field information.    For more details of the Cluster mission, the spacecraft, and its instruments, see the report ``Cluster: mission, payload and supporting activities,'' March 1993, ESA SP-1159, and the included article ``The Wideband Plasma Wave Investigation,'' by D. A. Gurnett et al., from which this information was obtained.</Description>
          <Acknowledgement>NASA; Prof. Donald A. Gurnett</Acknowledgement>
          <Contact>
@@ -109,7 +109,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>2001-02-04T00:00:00</StartDate>
-            <RelativeStopDate>P3M</RelativeStopDate>
+            <RelativeStopDate>-P3M</RelativeStopDate>
             <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'</Note>
          </TimeSpan>
          <Cadence>PT0.02S</Cadence>
