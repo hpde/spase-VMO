@@ -52,7 +52,7 @@
         <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>       <!-- MAG on IMP8 -->
         <InstrumentID>spase://SMWG/Instrument/WIND/MFI</InstrumentID>       <!-- MFI on WIND -->
         <InstrumentID>spase://SMWG/Instrument/ACE/SWEPAM</InstrumentID>       <!-- SWEPAM on ACE -->
-        <InstrumentID>spase://SMWG/instrument/IMP8/PLS</InstrumentID>       <!-- PLS on IMP8 -->
+        <InstrumentID>spase://SMWG/Instrument/IMP8/PLS</InstrumentID>       <!-- PLS on IMP8 -->
         <InstrumentID>spase://SMWG/Instrument/WIND/SWE</InstrumentID>       <!-- SWE on WIND -->
         <MeasurementType>MagneticField</MeasurementType>
         <MeasurementType>ThermalPlasma</MeasurementType>
