@@ -4,8 +4,8 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
-      <ResourceName>High Resolution OMNI Data Set</ResourceName>
-      <ReleaseDate>2010-04-05T20:33:44Z</ReleaseDate>
+      <ResourceName>1-min OMNI Data Set</ResourceName>
+      <ReleaseDate>2010-04-20T21:20:07Z</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose.</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
