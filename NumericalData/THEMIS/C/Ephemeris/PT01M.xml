@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/C/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-C Level 1 Probe State Data</ResourceName>
-      <ReleaseDate>2010-03-31T14:02:41Z</ReleaseDate>
+      <ReleaseDate>2010-04-22T22:16:19Z</ReleaseDate>
       <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:
 
                * probe position and velocity in GEI, GSE, and GSM coordinates;
@@ -167,22 +167,20 @@
       <ParameterKey>thc_man</ParameterKey>
       <Description>THEMIS-C maneuver status code (XYYZZZ). Values indicate if/what maneuver is being performed.  Spacecraft data will be unreliable during maneuvers.
 
-      +---------------------------------------+
-      | Unpowered flight (Coast):             |
-      |    * X=0, Y=00, Z=000                 |
-      | Sequence Code X:                      |
-      |    * 0=No Segmentation                |
-      |    * 1=Segmented Maneuver             |
-      | Type Code YY:                         |
-      |    * 0=No Maneuver                    |
-      |    * 1=Axial-thrust Maneuver          |
-      |    * 2=Side-thrust Maneuver           |
-      |    * 3=Beta-thrust Maneuver           |
-      |    * 4=Attitude Precession            |
-      |    * 5= Spin-Rate Change              |
-      | Sequence Number ZZZ:                  |
-      |    * 001-999=Maneuver Sequence Number |
-      +---------------------------------------+
+      * Unpowered flight (Coast):
+          - X=0, Y=00, Z=000             
+      * Sequence Code X:
+          - 0= No Segmentation
+          - 1= Segmented Maneuver
+      * Type Code YY:
+          - 0= No Maneuver
+          - 1= Axial-thrust Maneuver
+          - 2= Side-thrust Maneuver
+          - 3= Beta-thrust Maneuver
+          - 4= Attitude Precession
+          - 5= Spin-Rate Change
+      * Sequence Number ZZZ:
+          - 001-999= Maneuver Sequence Number
       </Description>
       <ValidMin>0</ValidMin>
       <ValidMax>4294967295</ValidMax>
