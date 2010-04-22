@@ -19,7 +19,7 @@
                * V00: predicted ephemeris and attitude, no spin period or spin phase;
                * V01: predicted ephemeris and attitude, spin period and spin phase derived from probe telemetry;
                * V02: predicted attitude, definitive ephemeris from magnetometer and Doppler tracking data;
-               * V03: corrected attitude and spin phase derived from fully calibrated magnetometer data. 
+               * V03: corrected attitude and spin phase derived from fully calibrated magnetometer data. (added science attitude determination using perigee data post-processing). 
 
                Produced by Mission Ops, Science Ops and Science Team.
            </Description>
@@ -38,11 +38,21 @@
         <URL>http://themis.ssl.berkeley.edu/roadrules.shtml</URL>
         <Description>Details on THEMIS data policy and giving proper credits in publications.</Description>
       </InformationURL>
+      <InformationURL>
+      	<Name>THEMIS Ephemeris Format Definition</Name>
+      	<URL>ftp://apollo.ssl.berkeley.edu/pub/THEMIS/3%20Ground%20Systems/3.2%20Science%20Operations/Science%20Operations%20Documents/thm_ogs_431m_ephemeris_format_definition.pdf</URL>
+      	<Description>Ephemeris file format and quantity details including RoI descriptions.</Description>
+      </InformationURL>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>THEMIS STATE data at University of California, Berkeley</Name>
+        <URL>http://themis.ssl.berkeley.edu/data/themis/the/l1/state/</URL>
+        <Description>CDF data files for download, organized by date.</Description>
+      </AccessURL>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/the/or</URL>
@@ -65,6 +75,7 @@
     </AccessInformation>
     <ProcessingLevel>Uncalibrated</ProcessingLevel>
     <ProviderProcessingLevel>Level 1</ProviderProcessingLevel>
+    <ProviderVersion>v3</ProviderVersion>
     <InstrumentID>spase://SMWG/Instrument/THEMIS/E/Ephemeris</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
@@ -154,14 +165,25 @@
     <Parameter>
       <Name>THEMIS-E Maneuver Flag</Name>
       <ParameterKey>the_man</ParameterKey>
-      <Description>THEMIS-E maneuver status code. Values indicate if/what maneuver is being performed.Spacecraft data will be unreliable during maneuvers.
+      <Description>THEMIS-E maneuver status code (XYYZZZ). Values indicate if/what maneuver is being performed.  Spacecraft data will be unreliable during maneuvers.
 
-          * 0=No Maneuver
-          * 1=Axial-thrust Maneuver
-          * 2=Side-thrust Maneuver
-          * 3=Beta-thrust Maneuver
-          * 4=Attitude Precession
-          * 5= Spin-Rate Change</Description>
+      +---------------------------------------+
+      | Unpowered flight (Coast):             |
+      |    * X=0, Y=00, Z=000                 |
+      | Sequence Code X:                      |
+      |    * 0=No Segmentation                |
+      |    * 1=Segmented Maneuver             |
+      | Type Code YY:                         |
+      |    * 0=No Maneuver                    |
+      |    * 1=Axial-thrust Maneuver          |
+      |    * 2=Side-thrust Maneuver           |
+      |    * 3=Beta-thrust Maneuver           |
+      |    * 4=Attitude Precession            |
+      |    * 5= Spin-Rate Change              |
+      | Sequence Number ZZZ:                  |
+      |    * 001-999=Maneuver Sequence Number |
+      +---------------------------------------+
+      </Description>
       <ValidMin>0</ValidMin>
       <ValidMax>4294967295</ValidMax>
       <FillValue>4294967295</FillValue>
