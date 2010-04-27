@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/DE1/PWI/LFCA/PT1S</ResourceID>
       <ResourceHeader>
          <ResourceName>Dynamics Explorer 1 Plasma Waves Instrument Low Frequency Receiver A data</ResourceName>
-         <AlternateName>DE1 PWI SFR B data</AlternateName>
+         <AlternateName>DE1 PWI LFC A data</AlternateName>
          <ReleaseDate>2010-02-23T12:34:56.789</ReleaseDate>
          <Description>Plasma Waves Instrument Low Frequency Receiver A data</Description>
          <Acknowledgement>NASA; Donald A. Gurnett</Acknowledgement>
