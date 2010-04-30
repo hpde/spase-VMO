@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>1-min OMNI Data Set</ResourceName>
-      <ReleaseDate>2010-04-20T21:20:07Z</ReleaseDate>
+      <ReleaseDate>2010-04-30T00:00:00Z</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose.</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
@@ -21,6 +21,38 @@
         <URL>http://omniweb.gsfc.nasa.gov/html/HROdocum.html</URL>
         <Description>Extensive OMNI documentation pages</Description>
       </InformationURL>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/ACE/MAG</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/ACE/SWEPAM</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/WIND/MFI</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/WIND/SWE</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/IMP8/MAG</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/IMP8/PLS</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/Geotail/MGF</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/Geotail/CPI</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
@@ -45,14 +77,7 @@
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
-    <InstrumentID>spase://SMWG/Instrument/ACE/MAG</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/ACE/SWEPAM</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/WIND/MFI</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/WIND/SWE</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/IMP8/PLS</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/Geotail/MGF</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/Geotail/CPI</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/OMNI</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>

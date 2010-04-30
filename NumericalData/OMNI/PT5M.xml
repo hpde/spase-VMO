@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>5-min OMNI Data Set</ResourceName>
       <AlternateName>HRO-5</AlternateName>
-      <ReleaseDate>2010-04-20T21:20:36Z</ReleaseDate>
+      <ReleaseDate>2010-04-30T00:00:00Z</ReleaseDate>
       <Description>Solar wind magnetic field and plasma data at 5-min resolution created from HRO-1 which was in turn created from ACE, Wind and IMP 8 data shifted to the Earth's bow shock nose.</Description>
       <Acknowledgement>We acknowledgement J.H. King and N.E. Papitashvili of NASA/SPDF and QSS and the original providers of the input ACE, Wind and IMP 8 data</Acknowledgement>
       <Contact>
@@ -21,6 +21,38 @@
         <Name>High Resolution OMNI Documentation</Name>
         <URL>http://omniweb.gsfc.nasa.gov/html/HROdocum.html</URL>
       </InformationURL>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/ACE/MAG</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/ACE/SWEPAM</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/WIND/MFI</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/WIND/SWE</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/IMP8/MAG</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/IMP8/PLS</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/Geotail/MGF</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
+      <Association>
+        <AssociationID>spase://SMWG/Instrument/Geotail/CPI</AssociationID>
+        <AssociationType>DerivedFrom</AssociationType>
+      </Association>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/NSSDC</RepositoryID>
@@ -47,15 +79,7 @@
       <Encoding>None</Encoding>
     </AccessInformation>
     <ProviderResourceName>High Resolution OMNI (5 min)</ProviderResourceName>
-    <InstrumentID>spase://SMWG/Instrument/ACE/MAG</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/ACE/SWEPAM</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/WIND/MFI</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/WIND/SWE</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/IMP8/PLS</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/Geotail/MGF</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/Geotail/CPI</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/GOES11/SEM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/OMNI</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
