@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/E/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-E Level 1 Probe State Data</ResourceName>
-      <ReleaseDate>2010-04-22T22:16:41Z</ReleaseDate>
+      <ReleaseDate>2010-05-14T21:45:29Z</ReleaseDate>
       <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:
 
                * probe position and velocity in GEI, GSE, and GSM coordinates;
@@ -55,7 +55,7 @@
       </AccessURL>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/the/or</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/the/l1/state</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <Format>CDF</Format>
