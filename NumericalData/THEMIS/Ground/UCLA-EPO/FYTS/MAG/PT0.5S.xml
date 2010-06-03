@@ -52,6 +52,12 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/THEMIS/Ground/UCLA-EPO/FYTS/MAG</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>2005-09-02T00:00:00</StartDate>
+                <StopDate>2010-01-10T00:00:00</StopDate>
+            </TimeSpan>
+        </TemporalDescription>
       <ObservedRegion>Earth.Surface</ObservedRegion>
       <Parameter>
          <Name>B in HDZ Components</Name>

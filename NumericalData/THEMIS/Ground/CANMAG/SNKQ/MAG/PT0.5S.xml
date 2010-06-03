@@ -53,6 +53,12 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/THEMIS/Ground/CANMAG/SNKQ/MAG</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>2007-07-10T00:00:00</StartDate>
+                <StopDate>2010-04-16T00:00:00</StopDate>
+            </TimeSpan>
+        </TemporalDescription>
       <ObservedRegion>Earth.Surface</ObservedRegion>
       <Parameter>
          <Name>B in HDZ Components</Name>

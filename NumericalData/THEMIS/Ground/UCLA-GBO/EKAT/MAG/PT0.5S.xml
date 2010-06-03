@@ -52,6 +52,12 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/THEMIS/Ground/UCLA-GBO/EKAT/MAG</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>2006-01-01T00:00:00</StartDate>
+                <StopDate>2007-09-12T:00:00:00</StopDate>
+            </TimeSpan>
+        </TemporalDescription>
       <ObservedRegion>Earth.Surface</ObservedRegion>
       <Parameter>
          <Name>B in HDZ Components</Name>
