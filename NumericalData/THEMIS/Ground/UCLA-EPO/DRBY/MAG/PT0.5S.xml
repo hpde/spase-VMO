@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/UCLA-EPO/DRBY/MAG/PT0.5S</ResourceID>
       <ResourceHeader>
          <ResourceName>Ground-based Vector Magnetic Field at Derby, Vermont</ResourceName>
-         <ReleaseDate>2009-06-15T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-06-03T18:59:23Z</ReleaseDate>
          <Description>Geomagnetic Event Observation Network by Students (GEONS),  part of the THEMIS EPO Effort.  This is an Educational Public Outreach magnetometer operated by the NASA THEMIS mission.  EPO magnetometers should be used carefully, as they may be subject to environmental noise. This magnetometer was produced at UCLA.  It records 3-axis magnetic field measurements at 2Hz frequency.  Calibration files used are at: http://www-ssc.igpp.ucla.edu/themis_data/calib_files/</Description>
          <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically:S. Mende and C. T. Russell for use of the data</Acknowledgement>
          <Contact>

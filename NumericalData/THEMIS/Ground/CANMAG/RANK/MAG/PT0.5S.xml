@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/CANMAG/RANK/MAG/PT0.5S</ResourceID>
       <ResourceHeader>
          <ResourceName>Ground-based Vector Magnetic Field at Rankin Inlet, Canada.</ResourceName>
-         <ReleaseDate>2009-06-15T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-06-03T18:59:23Z</ReleaseDate>
          <Description>RANK is part of the University of Alberta CARISMA network.  It records 3-axis magnetic field measurements at 2Hz frequency.</Description>
          <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: I. Mann for use of the data, and the CSA for support of the CARISMA network.</Acknowledgement>
          <Contact>
