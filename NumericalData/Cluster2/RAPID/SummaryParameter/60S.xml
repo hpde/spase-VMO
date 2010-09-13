@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Cluster II Summary Parameter Research with Adaptive Particle Imaging Detectors (RAPID) Data</ResourceName>
          <AlternateName>Cluster Summary Parameter RAPID Data</AlternateName>
-         <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
+         <ReleaseDate>2010-09-13T12:34:56.789</ReleaseDate>
          <Description>The dual-sensor spectrometer RAPID (Research with Adaptive Particle Imaging Detectors) analyzes suprathermal plasma distributions in the energy range from 20-400 KeV for electrons and from 2 KeV/nucleon to 1.50 MeV/nucleon for ions. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article RAPID: The Imaging Energetic Particle Spectrometer on Cluster, by B. Wilken et al., from which this information was obtained.</Description>
          <Acknowledgement>NASA, Dr. Berend Wilken, European Space Agency</Acknowledgement>
          <Contact>
@@ -159,6 +159,18 @@
          </TimeSpan>
          <Cadence>PT60S</Cadence>
       </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
       <Keyword>60 second</Keyword>
       <Keyword>magnetosphere</Keyword>
       <Keyword>auroral region</Keyword>

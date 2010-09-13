@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Cluster II Unvalidated Summary Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
          <AlternateName>Cluster Unvalidated Summary Parameter FGM Data</AlternateName>
-         <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
+         <ReleaseDate>2010-09-13T12:34:56.789</ReleaseDate>
          <Description>This dataset contains 1 minute resolution unvalidated summary prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 spacecraft. Unvalidated FGM data might sometimes contain artefacts such as spikes (duration ~ 1 spin), or short rotations (few spins). Very occasionally the data contain many spikes over several hours. Please contact Elizabeth Lucek (e.lucek@imperial.ac.uk) for more information regarding possible artefacts in specific intervals of data. The unvalidated summary prime parameter data set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain.
          </Description>
          <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
@@ -88,6 +88,18 @@
          </TimeSpan>
          <Cadence>PT60S</Cadence>
       </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
       <Keyword>60 second</Keyword>
       <Keyword>magnetosphere</Keyword>
       <Keyword>auroral region</Keyword>

@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster II Salsa Prime Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
       <AlternateName>Cluster 2 Prime Parameter FGM Data</AlternateName>
-      <ReleaseDate>2010-04-07T00:12:07Z</ReleaseDate>
+      <ReleaseDate>2010-09-13T12:34:56.789</ReleaseDate>
       <Description>This dataset contains spin resolution prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 Salsa spacecraft. The prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain.</Description>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
       <Contact>
@@ -57,6 +57,18 @@
       </TimeSpan>
       <Cadence>PT4S</Cadence>
     </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
+      <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
     <Keyword>4 second</Keyword>
     <Keyword>magnetosphere</Keyword>
     <Keyword>auroral region</Keyword>
