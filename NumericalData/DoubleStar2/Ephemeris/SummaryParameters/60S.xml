@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Double Star 2 Spacecraft Auxiliary Summary Parameters Data</ResourceName>
          <AlternateName>Double Star 2 Auxiliary Summary Parameters Data</AlternateName>
-         <ReleaseDate>2010-09-09T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2010-09-13T12:34:56.789</ReleaseDate>
          <Description>The Double Star 2 auxiliary summary parameter data set contains various parameters in GSE coordinates at 60 s resolution. These parameters include universal time, orbit number, GSE position, GSE spacecraft velocity vector, longitude, and dipole tilt. These parameters are available through Double Star Science Data Centre The Data Ring with restricted access.</Description>
          <Acknowledgement>European Space Agency/International</Acknowledgement>
          <Contact>
@@ -63,6 +63,14 @@
          </TimeSpan>
          <Cadence>PT60S</Cadence>
       </TemporalDescription>
+      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
+      <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.Plasmasphere</ObservedRegion>
+      <ObservedRegion>Earth.NearSurface.PolarCap</ObservedRegion>
       <Keyword>Double Star</Keyword>
       <Keyword>Tan Ce 2</Keyword>
       <Keyword>TC 2</Keyword>
