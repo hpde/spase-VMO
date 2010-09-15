@@ -234,7 +234,6 @@
       <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
       <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
       <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
-      <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
       <ObservedRegion>Earth.NearSurface.AuroralRegion</ObservedRegion>
       <ObservedRegion>Earth.NearSurface.Ionosphere</ObservedRegion>
       <ObservedRegion>Earth.NearSurface.Plasmasphere</ObservedRegion>
