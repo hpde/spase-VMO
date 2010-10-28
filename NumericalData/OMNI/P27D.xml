@@ -68,7 +68,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>OMNIWeb</Name>
-            <URL>http://omniweb.gsfc.nasa.gov</URL>
+            <URL>http://omniweb.gsfc.nasa.gov/ow.html</URL>
             <Description>Pathway to data and to extensive documentation. Plots, listings and user-specified files. Scatter plots and linear regressions. Distributions. Means, medians, standard deviations in distributions. Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
          </AccessURL>
          <AccessURL>
