@@ -2,11 +2,11 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
   xmlns="http://www.spase-group.org/data/schema" 
   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+  <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/P1D</ResourceID>
     <ResourceHeader>
-      <ResourceName>Daily OMNI Data Set</ResourceName>
+      <ResourceName>OMNI Daily Data Set</ResourceName>
       <ReleaseDate>2010-04-30T00:00:00Z</ReleaseDate>
       <Description>Daily averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
@@ -82,7 +82,7 @@ Distributions.  Means, medians, standard deviations in distributions.
 Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
       </AccessURL>
       <AccessURL>
-        <Name>nssdcftp</Name>
+        <Name>in ASCII via ftp from nssdcftp</Name>
         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
         <Description>ftp access to annual ASCII files of 1-hour OMNI data 
 and to one full-time-span file for each 1-day and 27-day averages.</Description>

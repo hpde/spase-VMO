@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+  <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1H</ResourceID>
     <ResourceHeader>
-      <ResourceName>Hourly OMNI Data Set</ResourceName>
-      <ReleaseDate>2010-04-30T00:00:00Z</ReleaseDate>
-      <Description>Hourly averaged, multi-source, near-Earth solar wind magnetic 
-field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
-geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
+      <ResourceName>OMNI Hourly Data Set</ResourceName>
+      <ReleaseDate>2010-09-16T12:34:56.789</ReleaseDate>
+      <Description>Hourly averaged, multi-source, near-Earth solar wind magnetic
+field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst
+geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).
+
 Also available at 1-day and 27-day resolution.</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed 
 and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC 
@@ -80,10 +81,22 @@ Distributions.  Means, medians, standard deviations in distributions.
 Pathway to 1-min, 5-min, 1-day, 27-day averages.</Description>
       </AccessURL>
       <AccessURL>
-        <Name>nssdcftp</Name>
+        <Name>in ASCII via ftp from nssdcftp</Name>
         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
         <Description>ftp access to annual ASCII files of 1-hour OMNI data 
 and to one full-time-span file for each 1-day and 27-day averages.</Description>
+      </AccessURL>
+      <AccessURL>
+      <Name>CDAWeb</Name>
+      <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+      </AccessURL>
+ <AccessURL>
+ <Name>COHOWeb</Name>
+<URL>http://cohoweb.gsfc.nasa.gov/</URL> 
+      </AccessURL>
+      <AccessURL>
+        <Name>in CDF via ftp from CDAWeb</Name>
+       <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/coho1hr_magplasma/</URL>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
