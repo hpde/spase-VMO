@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/GOES10/MAG/PT0.512S</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 10 high-resolution magnetometer data</ResourceName>
-      <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
+      <ReleaseDate>2011-02-20T12:34:56.789</ReleaseDate>
       <Description>GOES 10 magnetic field data at 0.512 second time resolution. The vector magnetic field is given in the spacecraft (s/c) earth-referenced coordinate system:  Hp, He, Hn, and Ht, where  Hp is perpendicular to the satellite orbital plane, or parallel to Earth's spin axis in the case of a zero degree inclination orbit; He is perpendicular to Hp and directed earthwards; Hn is perpendicular to both Hp and He and directed eastwards; and Ht is the total field.
       
       This data product also provides GOES 10 satellite positions and velocities derived from SSCWEB GEI ephemeris, interpolated to one minute time resolution.
@@ -63,8 +63,8 @@ Approximate coefficients are:
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>2007-09-16T00:00:00</StartDate>
-        <StopDate>2008-06-30T23:59:58</StopDate>
+        <StartDate>2006-12-31T23:59:58</StartDate>
+        <StopDate>2008-12-31T23:59:58</StopDate>
       </TimeSpan>
       <Cadence>PT0.512S</Cadence>
     </TemporalDescription>

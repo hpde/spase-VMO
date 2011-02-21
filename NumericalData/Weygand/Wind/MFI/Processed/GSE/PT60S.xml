@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Wind Linearly Interpolated 60 s Resolution Tri-axial Fluxgate Magnetometer in GSE Coordinates</ResourceName>
          <AlternateName>Wind MFI data</AlternateName>
-         <ReleaseDate>2010-03-30T22:39:47Z</ReleaseDate>
+         <ReleaseDate>2011-02-20T12:34:56.789</ReleaseDate>
          <Description>Wind linearly interpolated to have the measurements on the minute at 60 s resolution tri-axial fluxgate magnetometer data in GSE coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB.  This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind.</Description>
          <Acknowledgement>NASA;Ronald.P.Lepping</Acknowledgement>
          <Contact>
@@ -49,7 +49,7 @@
       <TemporalDescription>
          <TimeSpan>
             <StartDate>1995-01-01T00:00:00.000</StartDate>
-            <StopDate>2008-12-31T23:59:00.000</StopDate>
+            <StopDate>2010-06-30T23:59:00.000</StopDate>
             <Note>Time format in data files is: Day Month Year Hour Minute Second (DD MM YYYY HH MM SS.SSS)</Note>
          </TimeSpan>
          <Cadence>PT60S</Cadence>

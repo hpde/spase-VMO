@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K2_PT192S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS K2 Mass Spectral Data</ResourceName>
-      <ReleaseDate>2010-03-23T14:34:45Z</ReleaseDate>
+      <ReleaseDate>2011-02-20T12:34:56.789</ReleaseDate>
       <Description>Mass spectra count rates for survey  purposes only from the POLAR TIMAS instrument. The mass spectral data product consists of 64 mass steps covering the full detector range, for each of 6 large solid angles, for 8 selected energy steps. The data product is accumulated for 2, 4, 8, 16, or 32 spin (6 s) periods. Because of telemetry restrictions only selected data products were telemetered to the ground.
 
 The 6 angular bins cover the full instrumental range and nearly 4pi steradians. Two of the look directions are centered on the spacecraft spin axis. For the first part of the mission, the spin axis was orbit normal and the pitch angles sampled in these look directions are near 90 degrees. The other 4 look directions are in the spin plane. Data are de-spun on board based on the spin rate and time of the "sun pulse". The digital data product provides the center pitch angle of each of the 6 look directions and an estimate of the variation of the pitch angle during the accumulation time.
@@ -52,7 +52,7 @@ The 6 angular bins cover the full instrumental range and nearly 4pi steradians. 
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>1996-03-16T12:49:11Z</StartDate>
+        <StartDate>1996-03-16T12:47:36Z</StartDate>
         <StopDate>2006-05-28T23:57:58Z</StopDate>
       </TimeSpan>
       <Cadence>PT192S</Cadence>
