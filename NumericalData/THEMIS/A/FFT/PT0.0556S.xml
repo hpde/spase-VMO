@@ -238,7 +238,6 @@
             <Element>
                <Name>tha_ffp_16_dbperp_3</Name>
                <Index>3</Index>
-               <Units>tha_ffp_16_dbperp</Units>
                <ValidMin>0.0</ValidMin>
                <ValidMax>1.0E10</ValidMax>
                <FillValue>NaN</FillValue>
