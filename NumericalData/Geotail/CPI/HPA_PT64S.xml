@@ -112,7 +112,7 @@
          <ParameterKey>Temp_i</ParameterKey>
          <Description>Kinetic temperature of HPA ions, scalar</Description>
          <Caveats>Calculated by integrating the distribution function</Caveats>
-         <Units>Component.K</Units>
+         <Units>Kelvin</Units>
          <RenderingHints>
             <ValueFormat>F11.0</ValueFormat>
          </RenderingHints>
