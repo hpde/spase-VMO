@@ -7,7 +7,7 @@
     <ResourceID>spase://VMO/NumericalData/SCATHA/Ephemeris/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>SCATHA Positions</ResourceName>
-      <ReleaseDate>2011-02-20T12:34:56.789</ReleaseDate>
+      <ReleaseDate>2011-03-08T20:35:01Z</ReleaseDate>
       <Description>SCATHA satellite positions.</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -31,8 +31,8 @@
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>1979-02-06T00:03:00Z</StartDate>
-        <StopDate>1986-12-31T00:03:00Z</StopDate>
+        <StartDate>1979-02-06T00:00:00Z</StartDate>
+        <StopDate>1986-12-31T23:59:00Z</StopDate>
       </TimeSpan>
       <Cadence>PT1M</Cadence>
     </TemporalDescription>
