@@ -2,20 +2,20 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/THEMIS/B/ESA_FGM/PT96S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/THEMIS/C/ESA.FGM/PT96S</ResourceID>
     <ResourceHeader>
-      <ResourceName>ARTEMIS P1 field-plasma merged data, near moon</ResourceName>
-      <AlternateName>THEMIS-B field-plasma merged data, near moon</AlternateName>
-      <ReleaseDate>2011-03-08T21:21:26Z</ReleaseDate>
+      <ResourceName>ARTEMIS P2 field-plasma merged data, near moon</ResourceName>
+      <AlternateName>THEMIS-C field-plasma merged data, near moon</AlternateName>
+      <ReleaseDate>2011-03-08T21:24:15Z</ReleaseDate>
       <Description>This data set contains 96s and 384s resolution
-magnetic field and plasma ion data from the THEMIS-B ESA and FGM 
+magnetic field and plasma ion data from the THEMIS-C ESA and FGM 
 instruments during the near moon (ARTEMIS) phase of the spacecraft
 life (&gt;~September 1, 2010).  The data are at each resolution for 
 several mutually exclusive, contiguous hours during most days.  
 The field-plasma-merged data set was created at GSFC/Space Physics 
 Data Facility (SPDF) as part of the LunaSOX effort, from CDAWeb data 
-sets THB_L2_ESA (good quality, high angular resolution mode only) 
-and THB_L2_FGM.  Geocentric spacecraft and moon orbit data from 
+sets THC_L2_ESA (good quality, high angular resolution mode only) 
+and THC_L2_FGM.  Geocentric spacecraft and moon orbit data from 
 SSCWeb were used to add geocentric and selenocentric spacecraft
 position data to the merged data set records.</Description>
       <Acknowledgement>Please acknowledge Vassilis Angelopoulos,
@@ -40,7 +40,7 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
       </Contact>
       <InformationURL>
         <Name>SPDF readme</Name>
-        <URL>ftp://omniweb.gsfc.nasa.gov/luna/themisb/merged/00readme_themisb.txt</URL>
+        <URL>ftp://omniweb.gsfc.nasa.gov/luna/themisc/merged/00readme_themisc.txt</URL>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
@@ -49,22 +49,22 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>SPDF ASCII ftp area</Name>
-        <URL>ftp://omniweb.gsfc.nasa.gov/luna/themisb/merged/</URL>
+        <URL>ftp://omniweb.gsfc.nasa.gov/luna/themisc/merged/</URL>
         <Description>For ftp retrieval of annual ASCII files</Description>
       </AccessURL>
       <AccessURL>
         <Name>SPDF CDF ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thb/l2/merged/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/merged/</URL>
         <Description>For ftp retrieval of monthly CDF files</Description>
       </AccessURL>
       <AccessURL>
         <Name>LunaSOX plots, lists</Name>
-        <URL>http://ftpbrowser.gsfc.nasa.gov/themisb_mrg.html</URL>
+        <URL>http://ftpbrowser.gsfc.nasa.gov/themisc_mrg.html</URL>
         <Description>Interface for plotting or listing subsets of parameters</Description>
       </AccessURL>
       <AccessURL>
         <Name>LunaSOX parameter distributions, statistics</Name>
-        <URL>http://ftpbrowser.gsfc.nasa.gov/themisb_mrg_d.html</URL>
+        <URL>http://ftpbrowser.gsfc.nasa.gov/themisc_mrg_d.html</URL>
         <Description>Interface for parameter value occurrence frequency
 distributions and statistics (means, medians, standard deviations,
 with filtering</Description>
@@ -81,13 +81,13 @@ Karl-Heinz.Glassmeier, Co-Investigators for ESA and FGM respectively,
 and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
-    <InstrumentID>spase://SMWG/Instrument/THEMIS/B/ESA</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/THEMIS/B/FGM</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS/C/ESA</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/THEMIS/C/FGM</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>2010-09-01T00:00:00</StartDate>
+        <StartDate>2010-09-03T00:00:00</StartDate>
         <RelativeStopDate>-P30D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT96S</Cadence>
