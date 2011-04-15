@@ -71,6 +71,14 @@ and J. King and N. Papitashvili, NASA/GSFC/SPDF, data set producers.</Acknowledg
          </Support>
    </Parameter>
    <Parameter>
+      <Name>Number of Points</Name>
+      <ParameterKey>Column_6</ParameterKey>
+      <Description>Number of 3-second resolution data points available to create 15-second average</Description>
+      <Support>
+         <SupportQuantity>Other</SupportQuantity>
+      </Support>
+   </Parameter>   
+   <Parameter>
       <Name>Magnetic Field Magnitude</Name>
       <ParameterKey>Column_7</ParameterKey>
       <Description>Average magnitude magnitude</Description>
