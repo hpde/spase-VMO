@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Equivalent Ionospheric Currents (EICs) derived using the Spherical Elementary Currents Systems (SECS) technique at 10 sec Resolution in Geogrpahic Coordinates</ResourceName>
       <AlternateName>EIC data</AlternateName>
-      <ReleaseDate>2011-01-06T00:00:00Z</ReleaseDate>
+      <ReleaseDate>2011-05-27T00:00:00Z</ReleaseDate>
       <Description>The Equivalent Ionospheric Currents (EICs) data set contains spherical elementary current amplitude data (J) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. These data are in a Geographic coordinates at 10s resolution. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
       <Acknowledgement>Dr. O. Amm; Dr. J.M. Weygand; Prof. V. Angelopoulos, CANMOS, CARISMA, DMI, GIMA, MACCS, STEP, THEMIS</Acknowledgement>
       <Contact>
@@ -42,7 +42,7 @@
       </InformationURL>
     </ResourceHeader>   
     <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/SECS/EICS/10S</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/SECS</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
@@ -56,7 +56,7 @@
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <ProviderResourceName>THEMIS</ProviderResourceName>
     <ProviderProcessingLevel>Numerical Data</ProviderProcessingLevel>
-    <InstrumentID>spase://SMWG/Instrument/SECS</InstrumentID>   
+    <InstrumentID>spase://SMWG/Instrument/SECS/Magnetometer</InstrumentID>   
     <MeasurementType>MagneticField</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
