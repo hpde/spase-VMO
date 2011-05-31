@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-   <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+   <Version>2.2.0</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/Prognoz9/MAG/PT10S</ResourceID>
       <ResourceHeader>
@@ -35,9 +36,14 @@
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
-            <Name>Magnetic field measurements from Prognoz 9</Name>
+            <Name>Nssdcftp</Name>
             <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/prognoz/prognoz9</URL>
-            <Description>FTP access to the Prognoz data at NSSDC.</Description>
+            <Description>FTP access to the Prognoz 9 data files at NSSDC.</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>FTPBrowser</Name>
+            <URL>http://ftpbrowser.gsfc.nasa.gov/prognoz9.html</URL>
+            <Description>Subset, plot and list Prognoz 9 data</Description>
          </AccessURL>
          <Format>Text.ASCII</Format>
          <Encoding>ASCII</Encoding>
