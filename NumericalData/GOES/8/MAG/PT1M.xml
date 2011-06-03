@@ -2,10 +2,10 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd" xmlns="http://www.spase-group.org/data/schema">
   <Version>2.0.1</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/GOES10/MAG/PT1M</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/GOES/8/MAG/PT1M</ResourceID>
     <ResourceHeader>
-      <ResourceName>GOES 10 Magnetometer 1-Minute Data</ResourceName>
-      <ReleaseDate>2010-04-05T20:46:58Z</ReleaseDate>
+      <ResourceName>GOES 8 Magnetometer 1-Minute Data</ResourceName>
+      <ReleaseDate>2011-06-03T21:04:41Z</ReleaseDate>
       <Description>The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available 
           from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems:
 
@@ -30,30 +30,31 @@
         <URL>http://www.goes.noaa.gov/</URL>
         <Description>A web site hosted by NOAA with information and links to the GOES spacecraft and data</Description>
       </InformationURL>
+    <PriorID>spase://VMO/NumericalData/GOES8/MAG/PT1M</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <Name>1-minute GOES 10 MAG data at CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/goes/0_mag/</URL>
-        <Description>An ftp repository hosting 1-minute GOES 10 MAG data</Description>
+        <Name>1-minute GOES 8 MAG data at CDAWeb</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/goes/8_mag/</URL>
+        <Description>An ftp repository hosting 1-minute GOES 8 MAG data</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
-    <ProviderResourceName>GOES_10</ProviderResourceName>
+    <ProviderResourceName>GOES_8</ProviderResourceName>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
-    <ProviderVersion>3</ProviderVersion>
-    <InstrumentID>spase://SMWG/Instrument/GOES10/MAG</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/GOES10/Ephemeris</InstrumentID>
+    <ProviderVersion>4</ProviderVersion>
+    <InstrumentID>spase://SMWG/Instrument/GOES8/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/GOES8/Ephemeris</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>1999-03-21T00:00:30</StartDate>
-        <StopDate>2006-06-22T23:59:30</StopDate>
+        <StartDate>1995-12-01T00:00:30</StartDate>
+        <StopDate>2003-04-08T23:59:30</StopDate>
       </TimeSpan>
       <Cadence>PT1M</Cadence>
     </TemporalDescription>
@@ -92,6 +93,7 @@
       <Name>Magnetic Field Vector GSE</Name>
       <ParameterKey>B_GSE_c</ParameterKey>
       <Description>Magnetic Field vector in GSE coordinates</Description>
+      <Caveats>The Bz component is on average roughly 7 nT too high</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
@@ -127,6 +129,7 @@
       <Name>Magnetic Field vector GSM</Name>
       <ParameterKey>B_GSM_c</ParameterKey>
       <Description>Magnetic Field vector in GSM coordinates</Description>
+      <Caveats>The Bz component is on average roughly 7 nT too high</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
@@ -167,6 +170,7 @@
           * E - perpendicular to P and directed earhtwards; and
           * N - perpendicular to both P and E and directed eastwards.
       </Description>
+      <Caveats>The Bz component is on average roughly 7 nT too high</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>

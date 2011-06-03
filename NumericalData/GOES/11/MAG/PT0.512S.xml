@@ -2,13 +2,13 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
   <Version>2.0.1</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/GOES12/MAG/PT0.512S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/GOES/11/MAG/PT0.512S</ResourceID>
     <ResourceHeader>
-      <ResourceName>GOES 12 high-resolution magnetometer data</ResourceName>
-      <ReleaseDate>2011-02-20T12:34:56.789</ReleaseDate>
-      <Description>GOES 12 magnetic field data at 0.512 second time resolution. The vector magnetic field is given in the spacecraft (s/c) earth-referenced coordinate system:  Hp, He, Hn, and Ht, where  Hp is perpendicular to the satellite orbital plane, or parallel to Earth's spin axis in the case of a zero degree inclination orbit; He is perpendicular to Hp and directed earthwards; Hn is perpendicular to both Hp and He and directed eastwards; and Ht is the total field.
+      <ResourceName>GOES 11 high-resolution magnetometer data</ResourceName>
+      <ReleaseDate>2011-06-03T21:04:41Z</ReleaseDate>
+      <Description>GOES 11 magnetic field data at 0.512 second time resolution. The vector magnetic field is given in the spacecraft (s/c) earth-referenced coordinate system:  Hp, He, Hn, and Ht, where  Hp is perpendicular to the satellite orbital plane, or parallel to Earth's spin axis in the case of a zero degree inclination orbit; He is perpendicular to Hp and directed earthwards; Hn is perpendicular to both Hp and He and directed eastwards; and Ht is the total field.
       
-      This data product also provides GOES 12 satellite positions and velocities derived from SSCWEB GEI ephemeris, interpolated to one minute time resolution.
+      This data product also provides GOES 11 satellite positions and velocities derived from SSCWEB GEI ephemeris, interpolated to one minute time resolution.
       
 The magnetometer data are downlinked from the spacecraft in real-time to the NOAA Space Weather Prediction Center (SWPC) in Boulder, CO. The data from the raw Command and Data Acquisition (CDA) telemetry stream are processed by pre-processors at SWPC and from there 1-minute averages are distributed to SWPC Space Weather Operations, as well a archived at NOAA’s National Geophysical Data Center (NGDC) and NASA’s Coordinated Data Analysis Web (http://cdaweb.gsfc.nasa.gov/). The raw high-resolution data are corrected and processed at NOAA’s SWPC, and later archived at NGDC. 
 
@@ -48,17 +48,18 @@ Approximate coefficients are:
         <URL>http://themis.ssl.berkeley.edu/data/goes/GOES8-12_readme_draft090108.doc</URL>
         <Description>Notes on GOES 8-12 magnetometer data by Howard J. Singer.</Description>
       </InformationURL>
+    <PriorID>spase://VMO/NumericalData/GOES11/MAG/PT0.512S</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/UCB/THEMIS</RepositoryID>
       <AccessURL>
-        <Name>GOES 12 Level2 0.512S Magnetic Field Data</Name>
-        <URL>http://themis.ssl.berkeley.edu/data/goes/mag/g12/l2/</URL>
+        <Name>GOES 11 Level2 0.512S Magnetic Field Data</Name>
+        <URL>http://themis.ssl.berkeley.edu/data/goes/mag/g11/l2/</URL>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://SMWG/Instrument/GOES12/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/GOES11/MAG</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
@@ -74,9 +75,9 @@ Approximate coefficients are:
 GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for a spin maneuver at the beginning of the mission to determine on-orbit offsets. There are additional complications that result from needing to know the changing offsets introduced by torquer coils on the satellites. Though comparisons of data to model fields during quiet times, we are doing rather well with the offsets, but it is not possible to give an exact number for the accuracy. We continue to look at comparisons of data and models, and data to other nearby spacecraft encounters. We are interested in anything learned by the user, or working with the user to help interpret the data, or to answer questions. While we have put in a significant effort to remove the effects of torquer coil interference, in the 0.512 s data there can be small, typically less than 1 nT spikes in the data at the time of torquer current changes. More information on this topic is included the more extensive “readme file.” This file is a living document that will be updated periodically.
    </Caveats>
     <Parameter>
-      <Name>g12_longitude_time</Name>
-      <ParameterKey>g12_longitude_time</ParameterKey>
-      <Description>GEOS 12 longitude time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Name>g11_longitude_time</Name>
+      <ParameterKey>g11_longitude_time</ParameterKey>
+      <Description>GEOS 11 longitude time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Caveats>Unleaped seconds</Caveats>
       <Cadence>P1D</Cadence>
       <Units>s</Units>
@@ -88,9 +89,9 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_longitude_epoch</Name>
-      <ParameterKey>g12_longitude_epoch</ParameterKey>
-      <Description>GEOS 12 longitude epoch</Description>
+      <Name>g11_longitude_epoch</Name>
+      <ParameterKey>g11_longitude_epoch</ParameterKey>
+      <Description>GEOS 11 longitude epoch</Description>
       <Cadence>P1D</Cadence>
       <ValidMin>01-Jan-2001 00:00:00.000</ValidMin>
       <ValidMax>31-Dec-2100 23:59:59.999</ValidMax>
@@ -100,8 +101,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_longitude</Name>
-      <ParameterKey>g12_longitude</ParameterKey>
+      <Name>g11_longitude</Name>
+      <ParameterKey>g11_longitude</ParameterKey>
       <Description>Satellite geographic west longitude at noon UTC</Description>
       <Cadence>P1D</Cadence>
       <Units>deg</Units>
@@ -118,12 +119,12 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_mlt</Name>
-      <ParameterKey>g12_mlt</ParameterKey>
+      <Name>g11_mlt</Name>
+      <ParameterKey>g11_mlt</ParameterKey>
       <Description>Magnetic local time at satellite position</Description>
       <Cadence>PT1M</Cadence>
       <Units>hours</Units>
-      <UnitsConversion>(g12_mlt - 12)*15&gt;deg</UnitsConversion>
+      <UnitsConversion>(g11_mlt - 12)*15&gt;deg</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>SM</CoordinateSystemName>
@@ -137,8 +138,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_pos_gei</Name>
-      <ParameterKey>g12_pos_gei</ParameterKey>
+      <Name>g11_pos_gei</Name>
+      <ParameterKey>g11_pos_gei</ParameterKey>
       <Description>Satellite position vector in GEI coordinates</Description>
       <Cadence>PT1M</Cadence>
       <Units>km</Units>
@@ -173,8 +174,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_pos_gsm</Name>
-      <ParameterKey>g12_pos_gsm</ParameterKey>
+      <Name>g11_pos_gsm</Name>
+      <ParameterKey>g11_pos_gsm</ParameterKey>
       <Description>Satellite position vector in GSM coordinates</Description>
       <Cadence>PT1M</Cadence>
       <Units>km</Units>
@@ -209,8 +210,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_vel_gei</Name>
-      <ParameterKey>g12_vel_gei</ParameterKey>
+      <Name>g11_vel_gei</Name>
+      <ParameterKey>g11_vel_gei</ParameterKey>
       <Description>Satellite velocity vector in GEI coordinates</Description>
       <Cadence>PT1M</Cadence>
       <Units>km/s</Units>
@@ -245,8 +246,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_vel_gsm</Name>
-      <ParameterKey>g12_vel_gsm</ParameterKey>
+      <Name>g11_vel_gsm</Name>
+      <ParameterKey>g11_vel_gsm</ParameterKey>
       <Description>Satellite velocity vector in GSM coordinates</Description>
       <Cadence>PT1M</Cadence>
       <Units>km/s</Units>
@@ -281,9 +282,9 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_perp</Name>
-      <ParameterKey>g12_perp</ParameterKey>
-      <Description>g12_perpendicular</Description>
+      <Name>g11_perp</Name>
+      <ParameterKey>g11_perp</ParameterKey>
+      <Description>g11_perpendicular</Description>
       <Cadence>PT1M</Cadence>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
@@ -329,9 +330,9 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_ephem_time</Name>
-      <ParameterKey>g12_ephem_time</ParameterKey>
-      <Description>GEOS 12 ephemeris time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Name>g11_ephem_time</Name>
+      <ParameterKey>g11_ephem_time</ParameterKey>
+      <Description>GEOS 11 ephemeris time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Caveats>Unleaped seconds</Caveats>
       <Cadence>PT1M</Cadence>
       <Units>s</Units>
@@ -343,9 +344,9 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_ephem_epoch</Name>
-      <ParameterKey>g12_ephem_epoch</ParameterKey>
-      <Description>GEOS 12 ephemeris epoch, UTC</Description>
+      <Name>g11_ephem_epoch</Name>
+      <ParameterKey>g11_ephem_epoch</ParameterKey>
+      <Description>GEOS 11 ephemeris epoch, UTC</Description>
       <Cadence>PT1M</Cadence>
       <ValidMin>01-Jan-2001 00:00:00.000</ValidMin>
       <ValidMax>31-Dec-2100 23:59:59.999</ValidMax>
@@ -355,9 +356,9 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_sample_time</Name>
-      <ParameterKey>g12_sample_time</ParameterKey>
-      <Description>GEOS 12 sample time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+      <Name>g11_sample_time</Name>
+      <ParameterKey>g11_sample_time</ParameterKey>
+      <Description>GEOS 11 sample time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
       <Caveats>Unleaped seconds</Caveats>
       <Cadence>PT0.512S</Cadence>
       <Units>s</Units>
@@ -369,9 +370,9 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_sample_epoch</Name>
-      <ParameterKey>GEOS 12 sample epoch, UTC</ParameterKey>
-      <Description>g12_sample_epoch</Description>
+      <Name>g11_sample_epoch</Name>
+      <ParameterKey>GEOS 11 sample epoch, UTC</ParameterKey>
+      <Description>g11_sample_epoch</Description>
       <Cadence>PT0.512S</Cadence>
       <ValidMin>01-Jan-2001 00:00:00.000</ValidMin>
       <ValidMax>31-Dec-2100 23:59:59.999</ValidMax>
@@ -381,8 +382,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_b_enp</Name>
-      <ParameterKey>g12_b_enp</ParameterKey>
+      <Name>g11_b_enp</Name>
+      <ParameterKey>g11_b_enp</ParameterKey>
       <Description>Magnetic field vector samples in ENP coordinates.
     
     Coordinate description for historically used PEN system: 
@@ -424,8 +425,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Field>
     </Parameter>
     <Parameter>
-      <Name>g12_b_gei</Name>
-      <ParameterKey>g12_b_gei</ParameterKey>
+      <Name>g11_b_gei</Name>
+      <ParameterKey>g11_b_gei</ParameterKey>
       <Description>Magnetic field vector samples in GEI coordinates</Description>
       <Cadence>PT0.512S</Cadence>
       <Units>nT</Units>
@@ -461,8 +462,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Field>
     </Parameter>
     <Parameter>
-      <Name>g12_b_gsm</Name>
-      <ParameterKey>g12_b_gsm</ParameterKey>
+      <Name>g11_b_gsm</Name>
+      <ParameterKey>g11_b_gsm</ParameterKey>
       <Description>Magnetic field vector samples in GSM coordinates</Description>
       <Cadence>PT0.512S</Cadence>
       <Units>nT</Units>
@@ -498,8 +499,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Field>
     </Parameter>
     <Parameter>
-      <Name>g12_b_tot</Name>
-      <ParameterKey>g12_b_tot</ParameterKey>
+      <Name>g11_b_tot</Name>
+      <ParameterKey>g11_b_tot</ParameterKey>
       <Description>Total magnetic field strength</Description>
       <Cadence>PT0.512S</Cadence>
       <Units>nT</Units>
@@ -513,8 +514,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Field>
     </Parameter>
     <Parameter>
-      <Name>g12_t1_counts</Name>
-      <ParameterKey>g12_t1_counts</ParameterKey>
+      <Name>g11_t1_counts</Name>
+      <ParameterKey>g11_t1_counts</ParameterKey>
       <Description>Magnetotorquer T1 filtered counts. Signed counts smoothed by 3-point average, delayed, or smoothed by Farthing coefficients.</Description>
       <Cadence>PT0.512S</Cadence>
       <Units>counts</Units>
@@ -526,8 +527,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_t2_counts</Name>
-      <ParameterKey>g12_t2_counts</ParameterKey>
+      <Name>g11_t2_counts</Name>
+      <ParameterKey>g11_t2_counts</ParameterKey>
       <Description>Magnetotorquer T2 filtered counts. Signed counts smoothed by 3-point average, delayed, or smoothed by Farthing coefficients.</Description>
       <Cadence>PT0.512S</Cadence>
       <Units>counts</Units>
@@ -539,8 +540,8 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
       </Support>
     </Parameter>
     <Parameter>
-      <Name>g12_dataqual</Name>
-      <ParameterKey>g12_dataqual</ParameterKey>
+      <Name>g11_dataqual</Name>
+      <ParameterKey>g11_dataqual</ParameterKey>
       <Description>Data Quality Flag: An integer with a value from 1 through 7 indicating data quality, with 1 and 2 being no data, and 7 being the best data.
                              
 Possible data quality values:

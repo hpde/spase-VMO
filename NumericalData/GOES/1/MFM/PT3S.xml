@@ -2,11 +2,11 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
    <Version>2.0.1</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/GOES1/MFM/PT3S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/GOES/1/MFM/PT3S</ResourceID>
       <ResourceHeader>
          <ResourceName>GOES 1 Magnetic Field Monitor at 3 sec Resolution in Spacecraft Coordinates</ResourceName>
          <AlternateName>GOES 1 MFM data</AlternateName>
-         <ReleaseDate>2010-02-25T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2011-06-03T21:04:41Z</ReleaseDate>
          <Description>A biaxial, closed-loop, fluxgate magnetometer was deployed on a boom about 0.61 m long. The magnetometer, which had one sensor aligned parallel to the spacecraft spin axis and the other perpendicular to this axis, measured the magnetic field at synchronous altitude. Each sensor had a selectable range (+50, 100, 200, or 400 nT), an offset field capability (plus or minus 1200 nT in 40-nT steps), and an inflight calibration capability.</Description>
          <Acknowledgement>NASA, Dr. Joseph N. Barfield</Acknowledgement>
          <Contact>
@@ -32,6 +32,7 @@
             <URL>http://goes.ngdc.noaa.gov/software/mag.txt</URL>
             <Description>Additional GOES MFM header information.</Description>
          </InformationURL>
+      <PriorID>spase://VMO/NumericalData/GOES1/MFM/PT3S</PriorID>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/NOAA/SEC</RepositoryID>

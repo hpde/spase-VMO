@@ -2,10 +2,10 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd" xmlns="http://www.spase-group.org/data/schema">
   <Version>2.0.1</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/GOES9/MAG/PT1M</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/GOES/9/MAG/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 9 Magnetometer 1-Minute Data</ResourceName>
-      <ReleaseDate>2010-04-05T20:55:19Z</ReleaseDate>
+      <ReleaseDate>2011-06-03T21:04:41Z</ReleaseDate>
       <Description>The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available 
           from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems:
 
@@ -30,6 +30,7 @@
         <URL>http://www.goes.noaa.gov/</URL>
         <Description>A web site hosted by NOAA with information and links to the GOES spacecraft and data</Description>
       </InformationURL>
+    <PriorID>spase://VMO/NumericalData/GOES9/MAG/PT1M</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
