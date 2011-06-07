@@ -27,8 +27,8 @@
             <Role>MetadataContact</Role>
          </Contact>
          <InformationURL>
-            <Name>FTPbrowser at NASA/GSFC</Name>
-            <URL>http://ftpbrowser.gsfc.nasa.gov/prognoz7.html</URL>
+            <Name>Readme file at nssdcftp/GSFC</Name>
+            <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/prognoz/prognoz7/aareadme.txt</URL>
          </InformationURL>
       </ResourceHeader>
       <AccessInformation>
