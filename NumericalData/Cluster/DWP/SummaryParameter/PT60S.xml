@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster Rumba Digital Wave Processor (DWP) summary parameter data at about 60 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Rumba DWP data</AlternateName>
-      <ReleaseDate>2011-04-30T00:00:00Z</ReleaseDate>
+      <ReleaseDate>2011-06-10T18:51:21Z</ReleaseDate>
       <Description>Cluster Rumba Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
@@ -80,17 +80,17 @@
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
-         <Availability>Online</Availability>
-         <AccessRights>Open</AccessRights>
-         <AccessURL>
-            <Name>CDAWeb</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/dwp</URL>
-            <Description>Cluster Rumba Digital Wave Processor (DWP) data at CDAWeb.</Description>
-         </AccessURL>
-         <Format>CDF</Format>
-         <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
-      </AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/dwp</URL>
+        <Description>Cluster Rumba Digital Wave Processor (DWP) data at CDAWeb.</Description>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
+    </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <ProviderResourceName>Cluster Rumba Digital Wave Processor (DWP)</ProviderResourceName>
     <ProviderProcessingLevel>NumericalData</ProviderProcessingLevel>
@@ -109,147 +109,120 @@
     <Keyword>Cluster</Keyword>
     <Keyword>Rumba</Keyword>
     <Keyword>Digital Wave Processor</Keyword>
-    <Keyword>DWP</Keyword>      
-    
-    
+    <Keyword>DWP</Keyword>
     <Parameter>
       <Name>Half averaging interval length</Name>
       <ParameterKey>Half_interval__CL_SP_DWP</ParameterKey>
       <Description>Half width of measurement interval</Description>
       <Caveats>Flags=-1.000e+31</Caveats>
-      <Cadence>PT60S</Cadence>
       <Units>ms</Units>
-      <UnitsConversion>1.0e-3>s</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
       <Support>
-            <SupportQuantity>Other</SupportQuantity>
+        <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </Parameter>  
-	  <Parameter>
-         <Name>Universal Time</Name>
-         <ParameterKey>Epoch__CL_SP_DWP</ParameterKey>
-         <Description>Universal Time in data cell: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units>ms</Units>
-         <UnitsConversion>'1.0e-3>s'</UnitsConversion>
-         <RenderingHints>
-            <AxisLabel>Epoch</AxisLabel>
-         </RenderingHints>
-         <FillValue>-1.0000e+031</FillValue>
-         <Support>
-            <SupportQuantity>Temporal</SupportQuantity>
-         </Support>
-     </Parameter>      
-     <Parameter>
-         <Name>DWP Status</Name>
-         <ParameterKey>Status__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP status of the DWP instrument at 60 s resolution. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>
-     <Parameter>
-         <Name>DWP Status Acf</Name>
-         <ParameterKey>Status_Acf__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP status of the calculation of the autocorrelation function of electrons counts at 60 s resolution. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>
-     <Parameter>
-         <Name>DWP Status Heea</Name>
-         <ParameterKey>Status_Heea__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP status of the PEACE instrument High Energy Electron Analyser (HEEA) at 60 s resolution. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>
-	   <Parameter>
-         <Name>DWP Status B</Name>
-         <ParameterKey>Status_B__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP status of the FGM instrument at 60 s resolution. Status[0]= 0 = Bad data at spin resolution. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>
-     <Parameter>
-         <Name>Wave Experiment Consortium (WEC) status</Name>
-         <ParameterKey>State_wec__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP Wave Experiment Consortium (WEC) on Cluster consists of 5 instruments at 60 s resolution. This flag gives the status of the entire concortium. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>
-	   <Parameter>
-         <Name>Wide Band Data (WBD) status</Name>
-         <ParameterKey>Status_wbd__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP status of the Wide Band Data instrument. Status[0]= 0 = Bad data at 60 s resolution. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <ValidMin>0</ValidMin>
-         <ValidMax>255</ValidMax>
-         <FillValue>255</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>      
-     <Parameter>
-         <Name>Particle Correlator Significance</Name>
-         <ParameterKey>Correl_signif__CL_SP_DWP</ParameterKey>
-         <Description>Cluster DWP significance of the particle correlator determined from the autocorrelation functions of the time series of particle detector counts at 60 s resolution.</Description>
-         <Caveats></Caveats>
-         <Cadence>PT60S</Cadence>
-         <Units></Units>
-         <RenderingHints>
-            <AxisLabel>Signif.</AxisLabel>
-            <ScaleMin>0</ScaleMin>
-            <ScaleMax>100</ScaleMax>
-         </RenderingHints>
-         <ValidMin>0</ValidMin>
-         <ValidMax>100</ValidMax>
-         <FillValue>-1.0e+31</FillValue>
-         <Support>
-	          <Qualifier>Scalar</Qualifier>
-            <SupportQuantity>Other</SupportQuantity>
-	       </Support>
-     </Parameter>      
-        
+    </Parameter>
+    <Parameter>
+      <Name>Universal Time</Name>
+      <ParameterKey>Epoch__CL_SP_DWP</ParameterKey>
+      <Description>Universal Time in data cell: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'.</Description>
+      <Units>ms</Units>
+      <UnitsConversion>'1.0e-3&gt;s'</UnitsConversion>
+      <RenderingHints>
+        <AxisLabel>Epoch</AxisLabel>
+      </RenderingHints>
+      <FillValue>-1.0000e+031</FillValue>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>DWP Status</Name>
+      <ParameterKey>Status__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP status of the DWP instrument at 60 s resolution. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>DWP Status Acf</Name>
+      <ParameterKey>Status_Acf__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP status of the calculation of the autocorrelation function of electrons counts at 60 s resolution. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>DWP Status Heea</Name>
+      <ParameterKey>Status_Heea__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP status of the PEACE instrument High Energy Electron Analyser (HEEA) at 60 s resolution. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>DWP Status B</Name>
+      <ParameterKey>Status_B__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP status of the FGM instrument at 60 s resolution. Status[0]= 0 = Bad data at spin resolution. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Wave Experiment Consortium (WEC) status</Name>
+      <ParameterKey>State_wec__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP Wave Experiment Consortium (WEC) on Cluster consists of 5 instruments at 60 s resolution. This flag gives the status of the entire concortium. Status[0]= 0 = Bad data. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Wide Band Data (WBD) status</Name>
+      <ParameterKey>Status_wbd__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP status of the Wide Band Data instrument. Status[0]= 0 = Bad data at 60 s resolution. Status[0]= 1 = Use with caution. Status[0]= 2 = OK. Status[0]= 255 = Not Supplied.</Description>
+      <ValidMin>0</ValidMin>
+      <ValidMax>255</ValidMax>
+      <FillValue>255</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Particle Correlator Significance</Name>
+      <ParameterKey>Correl_signif__CL_SP_DWP</ParameterKey>
+      <Description>Cluster DWP significance of the particle correlator determined from the autocorrelation functions of the time series of particle detector counts at 60 s resolution.</Description>
+      <RenderingHints>
+        <AxisLabel>Signif.</AxisLabel>
+        <ScaleMin>0</ScaleMin>
+        <ScaleMax>100</ScaleMax>
+      </RenderingHints>
+      <ValidMin>0</ValidMin>
+      <ValidMax>100</ValidMax>
+      <FillValue>-1.0e+31</FillValue>
+      <Support>
+        <Qualifier>Scalar</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
   </NumericalData>
 </Spase>
