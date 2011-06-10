@@ -4,9 +4,9 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/LANL/1989/MPA/PT87S</ResourceID>
     <ResourceHeader>
-      <ResourceName>Los Alamos National Laboratory 1989-046 spacecraft Magnetospheric Plasma Analyzer (MPA) at 87 sec Resolution in Spacecraft Coordinates</ResourceName>
+      <ResourceName>LANL 1989 87-sec Plasma Data</ResourceName>
       <AlternateName>LANL 046 MPA data</AlternateName>
-      <ReleaseDate>2011-06-03T22:33:20Z</ReleaseDate>
+      <ReleaseDate>2011-06-10T20:10:38Z</ReleaseDate>
       <Description>The LANL 1989-046 MPA data set contains various parameters in a variety of coordinates systems including GEI, spacecraft, polar geographic, and polar magnetic coordinates at about 87 s resolution. These parameters include universal time, denisty, velocity, and temperature for both low and high energy ions and electrons as well as position information and instrument status flags. </Description>
       <Acknowledgement>Los Alamos National Laboratory; Dr. Michelle Thomsen; Dr. Michael G. Henderson</Acknowledgement>
       <Contact>
@@ -197,7 +197,7 @@
       <Caveats>Interval centered time tag</Caveats>
       <Cadence>PT87S</Cadence>
       <Units>ms</Units>
-      <UnitsConversion>'1.0e-3&gt;s'</UnitsConversion>
+      <UnitsConversion>1.0e-3&gt;s</UnitsConversion>
       <RenderingHints>
         <AxisLabel>Epoch</AxisLabel>
       </RenderingHints>
@@ -250,6 +250,7 @@
       <ParameterKey>xyzgeo</ParameterKey>
       <Description>LANL 046 spacecraft position, geographic coordinates (x,y,z) at 87 s resolution.</Description>
       <Cadence>PT87S</Cadence>
+      <Units>km</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GEO</CoordinateSystemName>
@@ -261,27 +262,20 @@
           <Name>Radius</Name>
           <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
-          <Units>km</Units>
-          <ValidMin>-1.0e+10</ValidMin>
-          <ValidMax>1.0e+10</ValidMax>
         </Element>
         <Element>
           <Name>Latitude</Name>
           <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
-          <Units>km</Units>
-          <ValidMin>-1.0e+10</ValidMin>
-          <ValidMax>1.0e+10</ValidMax>
         </Element>
         <Element>
           <Name>Longitude</Name>
           <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
-          <Units>km</Units>
-          <ValidMin>-1.0e+10</ValidMin>
-          <ValidMax>1.0e+10</ValidMax>
         </Element>
       </Structure>
+      <ValidMin>-1.0e+10</ValidMin>
+      <ValidMax>1.0e+10</ValidMax>
       <FillValue>-1.0000e+031</FillValue>
       <Support>
         <Qualifier>Vector</Qualifier>

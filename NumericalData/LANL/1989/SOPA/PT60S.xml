@@ -4,9 +4,9 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/LANL/1989/SOPA/PT60S</ResourceID>
     <ResourceHeader>
-      <ResourceName>Los Alamos National Laboratory 1989-046 spacecraft Synchronous Orbit Particle Analyzer (SOPA) at 60 sec Resolution in Spacecraft Coordinates</ResourceName>
+      <ResourceName>LANL 1989 60-sec SOPA Particle Data</ResourceName>
       <AlternateName>LANL 046 SOPA data</AlternateName>
-      <ReleaseDate>2011-06-03T22:33:20Z</ReleaseDate>
+      <ReleaseDate>2011-06-10T20:30:05Z</ReleaseDate>
       <Description>The LANL 1989-046 SOPA data set contains various parameters in a variety of coordinates systems including GEI, spacecraft, polar geographic, and polar magnetic coordinates at about 60 s resolution. These parameters include universal time, spacecraft location, electron and on density, electron and on temperature, electron and ion particle flux, electron and ion energies, electron and ion rangies, and data quality flags. </Description>
       <Acknowledgement>Los Alamos National Laboratory;  Dr. Reiner Friedel</Acknowledgement>
       <Contact>
@@ -92,7 +92,6 @@
         <Description>Date and Time Vector.</Description>
         <Element>
           <Name>Year</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>Years</Units>
           <ValidMin>1992</ValidMin>
@@ -100,7 +99,6 @@
         </Element>
         <Element>
           <Name>Day of Year</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>Days</Units>
           <ValidMin>0</ValidMin>
@@ -108,7 +106,6 @@
         </Element>
         <Element>
           <Name>milliseconds of the day</Name>
-          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>ms</Units>
           <ValidMin>0</ValidMin>
@@ -134,7 +131,7 @@
         <Description>Polar Geographic Coordinates.</Description>
         <Element>
           <Name>Latitude</Name>
-          <Qualifier>Component.J</Qualifier>
+          <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
           <Index>1</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -142,7 +139,7 @@
         </Element>
         <Element>
           <Name>Longitude</Name>
-          <Qualifier>Component.K</Qualifier>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>-180</ValidMin>
@@ -150,7 +147,7 @@
         </Element>
         <Element>
           <Name>Radius</Name>
-          <Qualifier>Component.I</Qualifier>
+          <Qualifier>Magnitude</Qualifier>
           <Index>3</Index>
           <Units>EarthRadii</Units>
           <ValidMin>0</ValidMin>
@@ -176,7 +173,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band (50 keV to 225 keV)</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>0.0</ValidMin>
@@ -184,7 +180,6 @@
         </Element>
         <Element>
           <Name>High Energy Band (315 keV to 1.5 MeV)</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>0.0</ValidMin>
@@ -216,7 +211,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band (50 keV to 400 keV)</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>0.0</ValidMin>
@@ -224,7 +218,6 @@
         </Element>
         <Element>
           <Name>High Energy Band (1.2 MeV to 5 MeV)</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>0.0</ValidMin>
@@ -248,6 +241,7 @@
       <ParameterKey>spa_e_dens</ParameterKey>
       <Description>LANL 046 spacecraft SOPA density of electrons in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
       <Cadence>PT60S</Cadence>
+      <Units>cm^-3</Units>
       <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <RenderingHints>
         <ScaleMin>0.01</ScaleMin>
@@ -257,17 +251,13 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
-          <Units>cm^-3</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5000.0</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
-          <Units>cm^-3</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5000.0</ValidMax>
         </Element>
@@ -289,6 +279,7 @@
       <ParameterKey>spa_p_dens</ParameterKey>
       <Description>LANL 046 spacecraft SOPA density of protons in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
       <Cadence>PT60S</Cadence>
+      <Units>cm^-3</Units>
       <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <RenderingHints>
         <ScaleMin>0.0</ScaleMin>
@@ -298,17 +289,13 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
-          <Units>cm^-3</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5000.0</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
-          <Units>cm^-3</Units>
           <ValidMin>0.0</ValidMin>
           <ValidMax>5000.0</ValidMax>
         </Element>
@@ -430,7 +417,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band in units of keV</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>50</ValidMin>
@@ -438,7 +424,6 @@
         </Element>
         <Element>
           <Name>High Energy Band in units of keV</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>315</ValidMin>
@@ -466,7 +451,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band in units of keV</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>50</ValidMin>
@@ -474,7 +458,6 @@
         </Element>
         <Element>
           <Name>High Energy Band in units of keV</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>1200</ValidMin>
@@ -502,7 +485,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band in units of keV</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>50</ValidMin>
@@ -510,7 +492,6 @@
         </Element>
         <Element>
           <Name>High Energy Band in units of keV</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>315</ValidMin>
@@ -538,7 +519,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band in units of keV</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>50</ValidMin>
@@ -546,7 +526,6 @@
         </Element>
         <Element>
           <Name>High Energy Band in units of keV</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>315</ValidMin>
@@ -574,7 +553,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band in units of keV</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>50</ValidMin>
@@ -582,7 +560,6 @@
         </Element>
         <Element>
           <Name>High Energy Band in units of keV</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>1200</ValidMin>
@@ -610,7 +587,6 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band in units of keV</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>keV</Units>
           <ValidMin>50</ValidMin>
@@ -618,7 +594,6 @@
         </Element>
         <Element>
           <Name>High Energy Band in units of keV</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>keV</Units>
           <ValidMin>1200</ValidMin>
@@ -646,14 +621,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -661,7 +634,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -674,14 +647,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -689,7 +660,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -702,14 +673,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -717,7 +686,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -730,14 +699,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -745,7 +712,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -758,14 +725,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -773,7 +738,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -786,14 +751,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -801,7 +764,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -814,14 +777,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -829,7 +790,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
@@ -842,14 +803,12 @@
         <Size>2</Size>
         <Element>
           <Name>Low Energy Band</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
         </Element>
         <Element>
           <Name>High Energy Band</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ValidMin>-1</ValidMin>
           <ValidMax>1</ValidMax>
@@ -857,7 +816,7 @@
       </Structure>
       <FillValue>-2147483648</FillValue>
       <Support>
-        <Qualifier>Scalar</Qualifier>
+        <Qualifier>Array</Qualifier>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
