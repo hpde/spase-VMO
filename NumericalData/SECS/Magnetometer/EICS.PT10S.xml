@@ -7,7 +7,7 @@
       <ResourceName>Equivalent Ionospheric Currents (EICs) derived using the Spherical Elementary Currents Systems (SECS) technique at 10 sec Resolution in Geographic Coordinates</ResourceName>
       <AlternateName>EIC data</AlternateName>
       <ReleaseDate>2011-06-10T19:15:01Z</ReleaseDate>
-      <Description>The Equivalent Ionospheric Currents (EICs) data set contains spherical elementary current amplitude data (J) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. These data are in Geographic coordinates at 10s resolution. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
+      <Description>The Equivalent Ionospheric Currents (EICs) data set contains horizontal ionospheric current data (Jx and Jy) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. Positive Jx points to the geographic north pole. Positive Jy points to geographic east. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the spherical elementary current amplitudes. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
       <Acknowledgement>Dr. O. Amm; Dr. J.M. Weygand; Prof. V. Angelopoulos, CANMOS, CARISMA, DMI, GIMA, MACCS, STEP, THEMIS</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
@@ -83,7 +83,7 @@
       </CoordinateSystem>
       <Structure>
       		<Size>2</Size>
-      		<Description>Geographic Laitutde and Longitude of the derived equivalent ionospheric current value.</Description>
+      		<Description>Geographic Latitude and Longitude of the derived equivalent ionospheric current value.</Description>
       		<Element>
       		    <Name>Geographic Latitude</Name>
       		    <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
@@ -114,7 +114,7 @@
       <Units>mA/m</Units>
       <Structure>
       		<Size>2</Size>
-      		<Description>Jx of the derived equivalent ionospheric current value.</Description>
+      		<Description>Jx of the derived equivalent ionospheric current value. Positive Jx points to the geographic north pole. Positive Jy points to geographic east.</Description>
       		<Element>
       		    <Name>Jx</Name>
       		    <Qualifier>Component.I</Qualifier>
