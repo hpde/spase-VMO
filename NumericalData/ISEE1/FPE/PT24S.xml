@@ -78,6 +78,22 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </TemporalDescription>
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <Parameter>
+      <Name>Epoch</Name>
+      <ParameterKey>Epoch</ParameterKey>
+      <Units>ms</Units>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>   
+    <Parameter>
+      <Name>Time_PB5</Name>
+      <ParameterKey>Time_PB5</ParameterKey>
+      <Units>ms</Units>
+      <Support>
+        <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>   
+    <Parameter>
       <Name>Plasma Ion Density</Name>
       <ParameterKey>DEN</ParameterKey>
       <Units>1/cc</Units>
