@@ -58,7 +58,7 @@
       </TimeSpan>
       <Cadence>PT87S</Cadence>
     </TemporalDescription>
-    <Caveats>Flags=-1.0e+31</Caveats>
+    <Caveats>Flags=-1.0e+31. The content of the LANL SOPA cdfs at CDAWeb has not been fully documented.</Caveats>
     <Keyword>87 sec</Keyword>
     <Keyword>geosynchronus</Keyword>
     <Keyword>LANL</Keyword>
@@ -69,7 +69,6 @@
       <ParameterKey>Epoch</ParameterKey>
       <Description>This is the time of the proton data collection (electrons 21.5 seconds later). Universal Time in data cell: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'.</Description>
       <Caveats>Interval centered time tag</Caveats>
-      <Cadence>PT87S</Cadence>
       <Units>ms</Units>
       <UnitsConversion>'1.0e-3&gt;s'</UnitsConversion>
       <RenderingHints>
@@ -87,7 +86,6 @@
       <ParameterKey>Time_PB5</ParameterKey>
       <Description>This is the time of the proton collection (electrons 21.5 seconds later). Time in the format: year, day of year, and second of the same day.</Description>
       <Caveats>Interval centered time tag</Caveats>
-      <Cadence>PT87S</Cadence>
       <RenderingHints>
         <AxisLabel>Epoch</AxisLabel>
       </RenderingHints>
@@ -96,7 +94,6 @@
         <Description>Date and Time Vector.</Description>
         <Element>
           <Name>Year</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>Years</Units>
           <ValidMin>1992</ValidMin>
@@ -104,7 +101,6 @@
         </Element>
         <Element>
           <Name>Day of Year</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>Days</Units>
           <ValidMin>0</ValidMin>
@@ -112,7 +108,6 @@
         </Element>
         <Element>
           <Name>milliseconds of the day</Name>
-          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>ms</Units>
           <ValidMin>0</ValidMin>
@@ -127,8 +122,7 @@
     <Parameter>
       <Name>LANL 01A MPA Partial Density of Low Energy Ions</Name>
       <ParameterKey>dens_lop</ParameterKey>
-      <Description>LANL 01A spacecraft MPA partial density of low energy ions (1-130 eV/e) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Partial density of low energy ions (1-130 eV/e).</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <RenderingHints>
@@ -154,7 +148,6 @@
       <Name>LANL 01A MPA Velocity Vector Low-Enery Ions</Name>
       <ParameterKey>vel_lop</ParameterKey>
       <Description>LANL 01A MPA velocity vector low-enery Ions (1-130 eV/e) in spacecraft Coordinates in units of km/s.</Description>
-      <Cadence>PT87S</Cadence>
       <Units>km/s</Units>
       <UnitsConversion>1.0e3&gt;m s^-1</UnitsConversion>
       <CoordinateSystem>
@@ -195,8 +188,7 @@
     <Parameter>
       <Name>LANL 01A MPA Temperature Low Energy Ions</Name>
       <ParameterKey>temp_lop</ParameterKey>
-      <Description>LANL 01A spacecraft MPA temperature of low energy ions (1-130 eV/e) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Temperature of low energy ions (1-130 eV/e).</Description>
       <Units>eV</Units>
       <RenderingHints>
         <AxisLabel>low p temp</AxisLabel>
@@ -220,8 +212,7 @@
     <Parameter>
       <Name>LANL 01A MPA Ratio of Temperature Eigenvalues for Low-E Ions</Name>
       <ParameterKey>tratio_lop</ParameterKey>
-      <Description>LANL 01A spacecraft MPA ratio of temperature (Tperp/Tmid) of low energy ions (1-130 eV/e) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Ratio of temperature (Tperp/Tmid) of low energy ions (1-130 eV/e).</Description>
       <RenderingHints>
         <AxisLabel>Tper/Tmid</AxisLabel>
         <ScaleMin>0.1</ScaleMin>
@@ -244,8 +235,7 @@
     <Parameter>
       <Name>LANL 01A MPA Partial Density High-E Ions</Name>
       <ParameterKey>dens_hip</ParameterKey>
-      <Description>LANL 01A spacecraft MPA partial density of high energy ions (.13-45 keV/e) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Spacecraft MPA partial density of high energy ions (.13-45 keV/e).</Description>
       <Units>cm^-3</Units>
       <RenderingHints>
         <AxisLabel>hi p dens</AxisLabel>
@@ -269,8 +259,7 @@
     <Parameter>
       <Name>LANL 01A MPA Velocity Vector High-E Ions</Name>
       <ParameterKey>vel_hip</ParameterKey>
-      <Description>LANL 01A MPA velocity vector high-enery protons (.13-45 keV/e) in spacecraft Coordinates in units of km/s.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Velocity vector high-enery protons (.13-45 keV/e) in spacecraft Coordinates in units of km/s.</Description>
       <Units>km/s</Units>
       <UnitsConversion>1.0e3&gt;m s^-1</UnitsConversion>
       <CoordinateSystem>
@@ -311,8 +300,7 @@
     <Parameter>
       <Name>LANL 01A MPA Temperature High-E Ions</Name>
       <ParameterKey>temp_hip</ParameterKey>
-      <Description>LANL 01A spacecraft MPA temperature of high energy ions (.13-45 keV/e) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Spacecraft MPA temperature of high energy ions (.13-45 keV/e).</Description>
       <Units>eV</Units>
       <RenderingHints>
         <AxisLabel>high p temp</AxisLabel>
@@ -349,8 +337,7 @@
     <Parameter>
       <Name>LANL 01A MPA Polar, Azimuthal Angle High-E Proton Symmetry Axis</Name>
       <ParameterKey>theta_phi_hip</ParameterKey>
-      <Description>LANL 01A spacecraft MPA proton symmetry axis: polar angle relative to Earth direction, azimuthal angle from the north at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Proton symmetry axis: polar angle relative to Earth direction, azimuthal angle from the north.</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -360,7 +347,7 @@
         <Size>2</Size>
         <Element>
           <Name>Polar Angle</Name>
-          <Qualifier>Component.I</Qualifier>
+          <Qualifier>DirectionAngle.PolarAngle</Qualifier>
           <Index>1</Index>
           <Units>degrees</Units>
           <ValidMin>0</ValidMin>
@@ -368,7 +355,7 @@
         </Element>
         <Element>
           <Name>Azimuthal Angle</Name>
-          <Qualifier>Component.J</Qualifier>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -390,8 +377,7 @@
     <Parameter>
       <Name>LANL 01A MPA Ratio of Temperature Eigenvalues for High-E Ions</Name>
       <ParameterKey>tratio_hip</ParameterKey>
-      <Description>LANL 01A spacecraft MPA ratio of temperature (Tperp/Tmid) of low energy ions (.13-45 keV/e) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Ratio of temperature (Tperp/Tmid) of low energy ions (.13-45 keV/e).</Description>
       <RenderingHints>
         <AxisLabel>Tper/Tmid</AxisLabel>
         <ScaleMin>0.1</ScaleMin>
@@ -414,8 +400,8 @@
     <Parameter>
       <Name>LANL 01A MPA Partial Density Electrons</Name>
       <ParameterKey>dens_e</ParameterKey>
-      <Description>LANL 01A spacecraft MPA partial density of electrons (.03-45 keV/q) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Partial density of electrons (.03-45 keV/q).</Description>
+      <Units># cm^-3</Units>
       <RenderingHints>
         <AxisLabel>elec dens</AxisLabel>
         <ScaleMin>0.01</ScaleMin>
@@ -438,8 +424,7 @@
     <Parameter>
       <Name>LANL 01A MPA Temperature Electrons</Name>
       <ParameterKey>temp_e</ParameterKey>
-      <Description>LANL 01A spacecraft MPA temperature of electrons (.03-45 keV/q) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Temperature of electrons (.03-45 keV/q).</Description>
       <Units>eV</Units>
       <RenderingHints>
         <AxisLabel>Temperatures, parallel and perp. for electrons</AxisLabel>
@@ -476,8 +461,7 @@
     <Parameter>
       <Name>LANL 01A MPA Polar, Azimuthal Angle Electron Symmetry Axis</Name>
       <ParameterKey>theta_phi_e</ParameterKey>
-      <Description>LANL 01A spacecraft MPA electron symmetry axis: polar angle relative to Earth direction, azimuthal angle from the north at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Electron symmetry axis: polar angle relative to Earth direction, azimuthal angle from the north.</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>SC</CoordinateSystemName>
@@ -486,7 +470,7 @@
         <Size>2</Size>
         <Element>
           <Name>Polar Angle</Name>
-          <Qualifier>Component.I</Qualifier>
+          <Qualifier>DirectionAngle.PolarAngle</Qualifier>
           <Index>1</Index>
           <Units>degrees</Units>
           <ValidMin>0</ValidMin>
@@ -494,7 +478,7 @@
         </Element>
         <Element>
           <Name>Azimuthal Angle</Name>
-          <Qualifier>Component.J</Qualifier>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -516,8 +500,7 @@
     <Parameter>
       <Name>LANL 01A MPA Ratio of Temperature Eigenvalues for Electrons</Name>
       <ParameterKey>tratio_e</ParameterKey>
-      <Description>LANL 01A spacecraft MPA ratio of temperature (Tperp/Tmid) of electrons (.03-45 keV/q) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Ratio of temperature (Tperp/Tmid) of electrons (.03-45 keV/q).</Description>
       <RenderingHints>
         <AxisLabel>Tper/Tmid</AxisLabel>
         <ScaleMin>0.1</ScaleMin>
@@ -540,8 +523,7 @@
     <Parameter>
       <Name>LANL 01A MPA Spacecraft Potential</Name>
       <ParameterKey>sc_pot</ParameterKey>
-      <Description>LANL 01A spacecraft potential in units of volts at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Spacecraft potential in units of volts.</Description>
       <Units>volts</Units>
       <RenderingHints>
         <AxisLabel>S/C poten.</AxisLabel>
@@ -559,8 +541,7 @@
     <Parameter>
       <Name>LANL 01A MPA Background Count Rate (Not Clear what this is the background for)</Name>
       <ParameterKey>bkgd</ParameterKey>
-      <Description>LANL 01A Background Count Rate at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Background Count Rate.</Description>
       <Units>cts/9ms</Units>
       <RenderingHints>
         <AxisLabel>Backgrd</AxisLabel>
@@ -578,8 +559,7 @@
     <Parameter>
       <Name>LANL 01A MPA Spacecraft Position, Polar Geographic Coordinates</Name>
       <ParameterKey>sc_pos_geo</ParameterKey>
-      <Description>LANL 01A spacecraft position, polar geographic coordinates (radius,lat,long) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Spacecraft position, polar geographic coordinates (radius,lat,long).</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>GEO</CoordinateSystemName>
@@ -589,7 +569,7 @@
         <Description>Polar Geographic Coordinates.</Description>
         <Element>
           <Name>Radius</Name>
-          <Qualifier>Component.I</Qualifier>
+          <Qualifier>Magnitude</Qualifier>
           <Index>1</Index>
           <Units>EarthRadii</Units>
           <ValidMin>0</ValidMin>
@@ -597,7 +577,7 @@
         </Element>
         <Element>
           <Name>Latitude</Name>
-          <Qualifier>Component.J</Qualifier>
+          <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -605,7 +585,7 @@
         </Element>
         <Element>
           <Name>Longitude</Name>
-          <Qualifier>Component.K</Qualifier>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>3</Index>
           <Units>degrees</Units>
           <ValidMin>-180</ValidMin>
@@ -621,8 +601,7 @@
     <Parameter>
       <Name>LANL 01A MPA Spacecraft Position, Cartesian Geocentric Celestial Inertial coordinates</Name>
       <ParameterKey>sc_pos_syngci</ParameterKey>
-      <Description>LANL 01A spacecraft position, cartesian coordinates (radius,lat,long) at 87 s resolution. Geocentric Celestial Inertial, is earth centered, with the X-axis pointing from the Earth towards the first point of Aries (the position of the Sun at vernal equinox). This direction is the intersection of the Earth's equatorial plane and the ecliptic plane--thus the X-axis lies in both planes. The Z-axis is parallel to the rotation axis of the Earth, and the Y-axis completes a right-handed orthogonal coordinate system. The X-axis is the direction of the mean vernal equinox of J2000. This is a virtual variable generated by read_myCDF w/ useof the data in the sc_pos_geo variable and a conversion routinespecified in the function attribute, namely conv_pos.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Spacecraft position, cartesian coordinates (radius,lat,long). Geocentric Celestial Inertial, is earth centered, with the X-axis pointing from the Earth towards the first point of Aries (the position of the Sun at vernal equinox). This direction is the intersection of the Earth's equatorial plane and the ecliptic plane--thus the X-axis lies in both planes. The Z-axis is parallel to the rotation axis of the Earth, and the Y-axis completes a right-handed orthogonal coordinate system. The X-axis is the direction of the mean vernal equinox of J2000. This is a virtual variable generated by read_myCDF w/ useof the data in the sc_pos_geo variable and a conversion routinespecified in the function attribute, namely conv_pos.</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
         <CoordinateSystemName>GEI</CoordinateSystemName>
@@ -661,8 +640,7 @@
     <Parameter>
       <Name>LANL 01A MPA Spacecraft Position, Polar Magnetic Coordinates</Name>
       <ParameterKey>sc_pos_mag</ParameterKey>
-      <Description>LANL 01A spacecraft position, polar magnetic coordinates (radius,lat,long) at 87 s resolution.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Spacecraft position, polar magnetic coordinates (radius,lat,long).</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>MAG</CoordinateSystemName>
@@ -672,7 +650,7 @@
         <Description>Polar Magnetic Coordinates.</Description>
         <Element>
           <Name>Radius</Name>
-          <Qualifier>Component.I</Qualifier>
+          <Qualifier>Magnitude</Qualifier>
           <Index>1</Index>
           <Units>EarthRadii</Units>
           <ValidMin>0</ValidMin>
@@ -680,7 +658,7 @@
         </Element>
         <Element>
           <Name>Latitude</Name>
-          <Qualifier>Component.J</Qualifier>
+          <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -688,7 +666,7 @@
         </Element>
         <Element>
           <Name>Magnetic Local Time</Name>
-          <Qualifier>Component.K</Qualifier>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>3</Index>
           <Units>hours</Units>
           <ValidMin>0</ValidMin>
@@ -704,8 +682,7 @@
     <Parameter>
       <Name>LANL 01A MPA Data Quality Flag</Name>
       <ParameterKey>qual_flag</ParameterKey>
-      <Description>LANL 01A data quality flag at 87 s resolution. Data quality flag, 0 = ok, 1 = Results unreliable.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Data quality flag. Data quality flag, 0 = ok, 1 = Results unreliable.</Description>
       <RenderingHints>
         <AxisLabel>Qual Flag</AxisLabel>
         <ScaleMin>0.0</ScaleMin>
@@ -722,8 +699,7 @@
     <Parameter>
       <Name>LANL 01A MPA Data Gap Flag</Name>
       <ParameterKey>gap_flag</ParameterKey>
-      <Description>LANL 01A data gap flag at 87 s resolution. Data gap flag, 0 = No Gap, 10 = No data available.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Data gap flag. Data gap flag, 0 = No Gap, 10 = No data available.</Description>
       <RenderingHints>
         <AxisLabel>Gap Flag</AxisLabel>
         <ScaleMin>0.0</ScaleMin>
@@ -740,8 +716,7 @@
     <Parameter>
       <Name>LANL 01A MPA Time Offset for Electron Measurements</Name>
       <ParameterKey>offset_time</ParameterKey>
-      <Description>LANL 01A MPA time offset for electron measurements at 87 s resolution. Electron sample time is 21.5 seconds after that of ions.</Description>
-      <Cadence>PT87S</Cadence>
+      <Description>Time offset for electron measurements. Electron sample time is 21.5 seconds after that of ions.</Description>
       <Units>ms</Units>
       <RenderingHints>
         <AxisLabel>T offset</AxisLabel>

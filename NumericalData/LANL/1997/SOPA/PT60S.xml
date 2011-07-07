@@ -65,7 +65,6 @@
       <ParameterKey>Epoch</ParameterKey>
       <Description>This is the time of the data collection time and date. Universal Time in data cell: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'.</Description>
       <Caveats>Interval centered time tag</Caveats>
-      <Cadence>PT60S</Cadence>
       <Units>ms</Units>
       <UnitsConversion>'1.0e-3&gt;s'</UnitsConversion>
       <RenderingHints>
@@ -83,7 +82,6 @@
       <ParameterKey>Time_PB5</ParameterKey>
       <Description>This is the time of the measurement. Time in the format: year, day of year, and second of the same day.</Description>
       <Caveats>Interval centered time tag</Caveats>
-      <Cadence>PT60S</Cadence>
       <RenderingHints>
         <AxisLabel>Epoch</AxisLabel>
       </RenderingHints>
@@ -92,7 +90,6 @@
         <Description>Date and Time Vector.</Description>
         <Element>
           <Name>Year</Name>
-          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <Units>Years</Units>
           <ValidMin>1992</ValidMin>
@@ -100,7 +97,6 @@
         </Element>
         <Element>
           <Name>Day of Year</Name>
-          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <Units>Days</Units>
           <ValidMin>0</ValidMin>
@@ -108,7 +104,6 @@
         </Element>
         <Element>
           <Name>milliseconds of the day</Name>
-          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <Units>ms</Units>
           <ValidMin>0</ValidMin>
@@ -123,8 +118,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Spacecraft Position, Polar Geographic Coordinates</Name>
       <ParameterKey>sc_pos</ParameterKey>
-      <Description>LANL 97A spacecraft position, polar geographic coordinates (radius,lat,long) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Spacecraft position, polar geographic coordinates (radius,lat,long) at 60 s resolution.</Description>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
         <CoordinateSystemName>GEO</CoordinateSystemName>
@@ -134,7 +128,7 @@
         <Description>Polar Geographic Coordinates.</Description>
         <Element>
           <Name>Latitude</Name>
-          <Qualifier>Component.J</Qualifier>
+          <Qualifier>DirectionAngle.ElevationAngle</Qualifier>
           <Index>1</Index>
           <Units>degrees</Units>
           <ValidMin>-90</ValidMin>
@@ -142,7 +136,7 @@
         </Element>
         <Element>
           <Name>Longitude</Name>
-          <Qualifier>Component.K</Qualifier>
+          <Qualifier>DirectionAngle.AzimuthAngle</Qualifier>
           <Index>2</Index>
           <Units>degrees</Units>
           <ValidMin>-180</ValidMin>
@@ -150,7 +144,7 @@
         </Element>
         <Element>
           <Name>Radius</Name>
-          <Qualifier>Component.I</Qualifier>
+          <Qualifier>Magnitude</Qualifier>
           <Index>3</Index>
           <Units>EarthRadii</Units>
           <ValidMin>0</ValidMin>
@@ -166,8 +160,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Temperature Electrons</Name>
       <ParameterKey>spa_e_temp</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA temperature of electrons in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Temperature of electrons in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
       <RenderingHints>
         <ScaleMin>0.0</ScaleMin>
         <ScaleMax>50.0</ScaleMax>
@@ -206,8 +199,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Temperature Protons</Name>
       <ParameterKey>spa_p_temp</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA temperature of protons  in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Temperature of protons  in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
       <RenderingHints>
         <ScaleMin>0.0</ScaleMin>
         <ScaleMax>50.0</ScaleMax>
@@ -246,8 +238,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Density of Electrons</Name>
       <ParameterKey>spa_e_dens</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA density of electrons in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Density of electrons in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
       <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <RenderingHints>
         <ScaleMin>0.01</ScaleMin>
@@ -287,8 +278,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Density of Protons</Name>
       <ParameterKey>spa_p_dens</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA density of protons in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Density of protons in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
       <UnitsConversion>1.0e6&gt;m^-3</UnitsConversion>
       <RenderingHints>
         <ScaleMin>0.0</ScaleMin>
@@ -328,8 +318,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Alpha Flux</Name>
       <ParameterKey>spa_a_flux</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA alpha particle flux (~0.9 MeV to ~1.3 Mev) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Alpha particle flux (~0.9 MeV to ~1.3 Mev) at 60 s resolution.</Description>
       <Units>alpha/(keV-cm2-ster-sec)</Units>
       <RenderingHints>
         <ScaleMin>0.01</ScaleMin>
@@ -352,8 +341,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Heavy Particle Flux</Name>
       <ParameterKey>spa_hvy_flx</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA heavy particle flux (~5 MeV to ~15 MeV includes carbon, nitrogen, and oxygen) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Heavy particle flux (~5 MeV to ~15 MeV includes carbon, nitrogen, and oxygen) at 60 s resolution. It is not clear if this flux is limited to carbon, nitrogen, and oxygen or if it includes more.</Description>
       <Units>#/(keV-cm2-ster-sec)</Units>
       <RenderingHints>
         <ScaleMin>0.001</ScaleMin>
@@ -376,8 +364,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Flux</Name>
       <ParameterKey>spa_e_flx</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA electron flux (~50 keV to ~1.5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron flux (~50 keV to ~1.5 MeV) at 60 s resolution.</Description>
       <Units>#/(keV-cm2-ster-sec)</Units>
       <RenderingHints>
         <ScaleMin>0.1</ScaleMin>
@@ -400,8 +387,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Flux</Name>
       <ParameterKey>spa_p_flx</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA proton flux (~50 keV to ~5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton flux (~50 keV to ~5 MeV) at 60 s resolution.</Description>
       <Units>#/(keV-cm2-ster-sec)</Units>
       <RenderingHints>
         <ScaleMin>0.01</ScaleMin>
@@ -424,8 +410,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Energy</Name>
       <ParameterKey>ENERGY_E</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA electron energy in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron energy in two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -460,8 +445,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Energy</Name>
       <ParameterKey>ENERGY_P</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA proton energy in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton energy in two energy bands (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -496,8 +480,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Energy Range Low</Name>
       <ParameterKey>E_MINUS</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA electron energy range lower uncertainty for the electron energy in the two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron energy range lower uncertainty for the electron energy in the two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -532,8 +515,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Energy Range High</Name>
       <ParameterKey>E_MINUS</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA electron energy range higher uncertainty for the electron energy in the two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron energy range higher uncertainty for the electron energy in the two energy bands (50 keV to 225 keV and 315 keV to 1.5 MeV) at 60 s resolution.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -568,8 +550,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Energy Range Low</Name>
       <ParameterKey>ENERGY_P</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA proton energy range lower uncertainty for the proton energy in the two energy bands  (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton energy range lower uncertainty for the proton energy in the two energy bands  (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -604,8 +585,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Energy Range High</Name>
       <ParameterKey>ENERGY_P</ParameterKey>
-      <Description>LANL 97A spacecraft SOPA proton energy range higher uncertainty for the proton energy in the two energy bands  (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton energy range higher uncertainty for the proton energy in the two energy bands  (50 keV to 400 keV and 1.2 MeV to 5 MeV) at 60 s resolution.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -640,8 +620,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Data Quality Flag</Name>
       <ParameterKey>E_DQF</ParameterKey>
-      <Description>LANL 97A SOPA electron data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -668,8 +647,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Data Quality Flag</Name>
       <ParameterKey>P_DQF</ParameterKey>
-      <Description>LANL 97A SOPA proton data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -696,8 +674,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Temperature Data Quality Flag</Name>
       <ParameterKey>ET_DQF</ParameterKey>
-      <Description>LANL 97A SOPA electron temperature data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron temperature data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -724,8 +701,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Electron Density Data Quality Flag</Name>
       <ParameterKey>ED_DQF</ParameterKey>
-      <Description>LANL 97A SOPA electron density data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Electron density data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -752,8 +728,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Temperature Data Quality Flag</Name>
       <ParameterKey>PT_DQF</ParameterKey>
-      <Description>LANL 97A SOPA proton temperature data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton temperature data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -780,8 +755,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Proton Density Data Quality Flag</Name>
       <ParameterKey>PD_DQF</ParameterKey>
-      <Description>LANL 97A SOPA proton density data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Proton density data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -808,8 +782,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Alpha Data Quality Flag</Name>
       <ParameterKey>A_DQF</ParameterKey>
-      <Description>LANL 97A SOPA alpha data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Alpha data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -836,8 +809,7 @@
     <Parameter>
       <Name>LANL 97A SOPA CNO Flux Data Quality Flag</Name>
       <ParameterKey>CNO_DQF</ParameterKey>
-      <Description>LANL 97A SOPA heavy ion (CNO) data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Heavy ion (CNO) data quality flag at 60 s resolution. Data quality flag: Unusable = -1, Suspect = 0, Good = 1.</Description>
       <Structure>
         <Size>2</Size>
         <Element>
@@ -864,8 +836,7 @@
     <Parameter>
       <Name>LANL 97A SOPA Post Gap Flag</Name>
       <ParameterKey>gap_flag</ParameterKey>
-      <Description>LANL 97A data gap flag at 60 s resolution. Data gap flag: 0 = no gap in data; 1 = data for previous gap not available.</Description>
-      <Cadence>PT60S</Cadence>
+      <Description>Data gap flag at 60 s resolution. Data gap flag: 0 = no gap in data; 1 = data for previous gap not available.</Description>
       <RenderingHints>
         <AxisLabel>Gap Flag</AxisLabel>
         <ScaleMin>0.0</ScaleMin>
