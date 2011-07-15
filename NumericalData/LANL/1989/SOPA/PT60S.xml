@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>LANL 1989 60-sec SOPA Particle Data</ResourceName>
       <AlternateName>LANL 046 SOPA data</AlternateName>
-      <ReleaseDate>2011-06-10T20:30:05Z</ReleaseDate>
+      <ReleaseDate>2011-07-15T14:31:50Z</ReleaseDate>
       <Description>The LANL 1989-046 SOPA data set contains various parameters in a variety of coordinates systems including GEI, spacecraft, polar geographic, and polar magnetic coordinates at about 60 s resolution. These parameters include universal time, spacecraft location, electron and on density, electron and on temperature, electron and ion particle flux, electron and ion energies, electron and ion rangies, and data quality flags. </Description>
       <Acknowledgement>Los Alamos National Laboratory;  Dr. Reiner Friedel</Acknowledgement>
       <Contact>

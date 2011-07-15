@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Los Alamos National Laboratory 01A spacecraft Magnetospheric Plasma Analyzer (MPA) at 87 sec Resolution in Spacecraft Coordinates</ResourceName>
       <AlternateName>LANL 01A MPA data</AlternateName>
-      <ReleaseDate>2011-06-03T22:33:20Z</ReleaseDate>
+      <ReleaseDate>2011-07-15T14:31:50Z</ReleaseDate>
       <Description>The LANL 01A MPA data set contains various parameters in a variety of coordinates systems including GEI, spacecraft, polar geographic, and polar magnetic coordinates at about 87 s resolution. These parameters include universal time, denisty, velocity, and temperature for both low and high energy ions and electrons as well as position information and instrument status flags. </Description>
       <Acknowledgement>Los Alamos National Laboratory; Dr. Michelle Thomsen; Dr. Michael G. Henderson</Acknowledgement>
       <Contact>
