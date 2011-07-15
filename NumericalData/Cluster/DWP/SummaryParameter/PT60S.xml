@@ -2,11 +2,11 @@
 <Spase xmlns="http://www.spase-group.org/data/schema">
   <Version>2.2.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/Cluster/DWP/SummaryParameter/PT4S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/Cluster/DWP/SummaryParameter/PT60S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster Rumba Digital Wave Processor (DWP) summary parameter data at about 60 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Rumba DWP data</AlternateName>
-      <ReleaseDate>2011-06-10T18:51:21Z</ReleaseDate>
+      <ReleaseDate>2011-07-15T15:35:07Z</ReleaseDate>
       <Description>Cluster Rumba Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
