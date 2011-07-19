@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd" xmlns="http://www.spase-group.org/data/schema">
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
   <Version>2.0.1</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/GOES/10/MAG/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 10 Magnetometer 1-Minute Data</ResourceName>
-      <ReleaseDate>2011-06-03T21:04:41Z</ReleaseDate>
+      <ReleaseDate>2011-07-19T21:40:59Z</ReleaseDate>
       <Description>The NOAA Geostationary Operational Environment Satellite (GOES) key parameters.  This data is a subset of the data available 
           from the GOES Space Environment Monitor (SEM) instruments.  It contains vector magnetic field in three coordinate systems:
 
@@ -30,7 +30,7 @@
         <URL>http://www.goes.noaa.gov/</URL>
         <Description>A web site hosted by NOAA with information and links to the GOES spacecraft and data</Description>
       </InformationURL>
-    <PriorID>spase://VMO/NumericalData/GOES10/MAG/PT1M</PriorID>
+      <PriorID>spase://VMO/NumericalData/GOES10/MAG/PT1M</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
@@ -47,8 +47,8 @@
     <ProviderResourceName>GOES_10</ProviderResourceName>
     <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
     <ProviderVersion>3</ProviderVersion>
-    <InstrumentID>spase://SMWG/Instrument/GOES10/MAG</InstrumentID>
-    <InstrumentID>spase://SMWG/Instrument/GOES10/Ephemeris</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/GOES/10/MAG</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/GOES/10/Ephemeris</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
     <MeasurementType>Ephemeris</MeasurementType>
     <TemporalDescription>
@@ -119,10 +119,10 @@
       <ValidMin>-600.00</ValidMin>
       <ValidMax>600.00</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-        <Field>
-          <Qualifier>Vector</Qualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
     </Parameter>
     <Parameter>
       <Name>Magnetic Field vector GSM</Name>
@@ -154,10 +154,10 @@
       <ValidMin>-600.0</ValidMin>
       <ValidMax>600.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-        <Field>
-          <Qualifier>Vector</Qualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
     </Parameter>
     <Parameter>
       <Name>Magnetic Field vector spacecraft coordinates</Name>
@@ -194,10 +194,10 @@
       <ValidMin>-600.0</ValidMin>
       <ValidMax>600.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
-        <Field>
-          <Qualifier>Vector</Qualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
     </Parameter>
     <Parameter>
       <Name>Spacecraft Position Geographic</Name>
