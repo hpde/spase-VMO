@@ -104,17 +104,6 @@
          </Support>
       </Parameter>
       <Parameter>
-         <Name>ACE SWEPAM Density Interpolated to 1 min Resolution in GSM Coordinates</Name>
-         <ParameterKey>Density</ParameterKey>
-         <Description>Density for ACE SWEPAM in units of number per cubic centimeter in GSM coordinates.</Description>
-         <Cadence>PT60S</Cadence>
-         <Units>#/cm^-3</Units>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberDensity</ParticleQuantity>
-         </Particle>
-      </Parameter>
-      <Parameter>
          <Name>ACE SWEPAM Thermal Speed Interpolated to 1 min Resolution in GSM Coordinates</Name>
          <ParameterKey>Thermal Speed</ParameterKey>
          <Description>ACE SWEPAM thermal speed in units of km/s in GSM coordinates.</Description>
@@ -124,6 +113,17 @@
          <Particle>
             <ParticleType>Ion</ParticleType>
             <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+         </Particle>
+      </Parameter>
+      <Parameter>
+         <Name>ACE SWEPAM Density Interpolated to 1 min Resolution in GSM Coordinates</Name>
+         <ParameterKey>Density</ParameterKey>
+         <Description>Density for ACE SWEPAM in units of number per cubic centimeter in GSM coordinates.</Description>
+         <Cadence>PT60S</Cadence>
+         <Units>#/cm^-3</Units>
+         <Particle>
+            <ParticleType>Ion</ParticleType>
+            <ParticleQuantity>NumberDensity</ParticleQuantity>
          </Particle>
       </Parameter>
       <Parameter>
