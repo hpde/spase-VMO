@@ -110,17 +110,6 @@
          </Support>
       </Parameter>
       <Parameter>
-         <Name>Geotail CPI Density Weimer Propagated 1 min Resolution Data in GSE Coordiates</Name>
-         <ParameterKey>Density</ParameterKey>
-         <Description>Weimer propagated density data for Geotail CPI in GSE coordinates in units of number per cubic centimeter.</Description>
-         <Cadence>PT60S</Cadence>
-         <Units>#/cm^-3</Units>
-         <Particle>
-            <ParticleType>Ion</ParticleType>
-            <ParticleQuantity>NumberDensity</ParticleQuantity>
-         </Particle>
-      </Parameter>
-      <Parameter>
          <Name>Geotail CPI Thermal Speed Weimer Propagated 1 min Resolution Data in GSE Coordiates</Name>
          <ParameterKey>Thermal Speed</ParameterKey>
          <Description>Weimer propagated Geotail CPI thermal speed in GSE coordinates in units of km/s.</Description>
@@ -130,6 +119,17 @@
          <Particle>
             <ParticleType>Ion</ParticleType>
             <ParticleQuantity>ThermalSpeed</ParticleQuantity>
+         </Particle>
+      </Parameter>
+      <Parameter>
+         <Name>Geotail CPI Density Weimer Propagated 1 min Resolution Data in GSE Coordiates</Name>
+         <ParameterKey>Density</ParameterKey>
+         <Description>Weimer propagated density data for Geotail CPI in GSE coordinates in units of number per cubic centimeter.</Description>
+         <Cadence>PT60S</Cadence>
+         <Units>#/cm^-3</Units>
+         <Particle>
+            <ParticleType>Ion</ParticleType>
+            <ParticleQuantity>NumberDensity</ParticleQuantity>
          </Particle>
       </Parameter>
       <Parameter>
