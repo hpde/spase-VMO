@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster Digital Wave Processor (DWP) summary parameter data at about 60 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Summary Parameter DWP data</AlternateName>
-      <ReleaseDate>2011-07-15T15:35:07Z</ReleaseDate>
+      <ReleaseDate>2011-07-28T20:26:14Z</ReleaseDate>
       <Description>Cluster Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
