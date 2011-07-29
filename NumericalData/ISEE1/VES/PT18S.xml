@@ -2,7 +2,7 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S/</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 VES Electron Data at 9s or 18s</ResourceName>
       <ReleaseDate>2011-07-29T17:29:56Z</ReleaseDate>
