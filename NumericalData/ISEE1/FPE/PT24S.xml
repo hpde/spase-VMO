@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/ISEE1/FPE/PT24S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 Solar Wind Analyzer 24S Plasma Parameters</ResourceName>
-      <ReleaseDate>2011-06-10T20:43:40Z</ReleaseDate>
+      <ReleaseDate>2011-07-29T17:22:17Z</ReleaseDate>
       <Description>This data set contains 24s (fast data rate) or 48s (slow
 rate) solar wind ion plasma parameters obtained during 1977-1983 solar wind 
 seasons (~July - ~January) when the spacecraft's local time of apogee was on 
@@ -84,7 +84,7 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </Parameter>   
+    </Parameter>
     <Parameter>
       <Name>Time_PB5</Name>
       <ParameterKey>Time_PB5</ParameterKey>
@@ -92,13 +92,14 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </Parameter>   
+    </Parameter>
     <Parameter>
-      <Name>Plasma Ion Density</Name>
+      <Name>Proton Density</Name>
       <ParameterKey>DEN</ParameterKey>
       <Units>1/cc</Units>
+      <FillValue>-1e31</FillValue>
       <Particle>
-        <ParticleType>Ion</ParticleType>
+        <ParticleType>Proton</ParticleType>
         <ParticleQuantity>NumberDensity</ParticleQuantity>
       </Particle>
     </Parameter>
@@ -106,6 +107,7 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
       <Name>Plasma Flow Speed</Name>
       <ParameterKey>Speed</ParameterKey>
       <Units>km/s</Units>
+      <FillValue>-1e31</FillValue>
       <Particle>
         <ParticleType>Ion</ParticleType>
         <ParticleQuantity>FlowSpeed</ParticleQuantity>
@@ -114,8 +116,7 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     <Parameter>
       <Name>Plasma Flow Azimuth</Name>
       <ParameterKey>Azimuth</ParameterKey>
-      <Description>Zero degrees is flow from the sun, aberration-
-corrected.  Positive for flow towards dawn</Description>
+      <Description>Zero degrees is flow from the sun, aberration corrected.  Positive for flow towards dawn</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -130,8 +131,7 @@ corrected.  Positive for flow towards dawn</Description>
     <Parameter>
       <Name>Plasma Flow Elevation</Name>
       <ParameterKey>Latitude</ParameterKey>
-      <Description>Zero degrees for flow in ecliptic plane.
-Positive for flow towards south</Description>
+      <Description>Zero degrees for flow in ecliptic plane. Positive for flow towards south</Description>
       <Units>deg</Units>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
@@ -168,8 +168,7 @@ Positive for flow towards south</Description>
     <Parameter>
       <Name>Alpha to proton density ratio</Name>
       <ParameterKey>Alpha_p</ParameterKey>
-      <Description>Alpha particle to proton density ratio, often
-not determinable</Description>
+      <Description>Alpha particle to proton density ratio, often not determinable</Description>
       <Particle>
         <ParticleType>AlphaParticle</ParticleType>
         <Qualifier>Ratio</Qualifier>
