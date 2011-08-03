@@ -56,6 +56,11 @@ Approximate coefficients are:
         <Name>GOES 11 Level2 0.512S Magnetic Field Data</Name>
         <URL>http://themis.ssl.berkeley.edu/data/goes/mag/g11/l2/</URL>
       </AccessURL>
+      <AccessURL>
+         <Name>CDAWeb</Name>
+         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+         <Description>For CDAWeb subset, plot and list capabilities</Description>
+      </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
