@@ -44,7 +44,7 @@
       <ProviderResourceName>Wind Tri-axial fluxgate magnetometer</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
 
-      <InstrumentID>spase://SMWG/Instrument/WIND/MFI</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/Wind/MFI</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>

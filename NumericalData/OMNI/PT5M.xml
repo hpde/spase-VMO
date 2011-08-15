@@ -31,11 +31,11 @@
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>
-        <AssociationID>spase://SMWG/Instrument/WIND/MFI</AssociationID>
+        <AssociationID>spase://SMWG/Instrument/Wind/MFI</AssociationID>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>
-        <AssociationID>spase://SMWG/Instrument/WIND/SWE</AssociationID>
+        <AssociationID>spase://SMWG/Instrument/Wind/SWE</AssociationID>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>

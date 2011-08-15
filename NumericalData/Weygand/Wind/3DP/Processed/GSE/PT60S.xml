@@ -44,7 +44,7 @@
       <ProviderResourceName>Wind 3-D Plasma and Energetic Particle Investigation</ProviderResourceName>
       <ProviderProcessingLevel>Level-2</ProviderProcessingLevel>
 
-      <InstrumentID>spase://SMWG/Instrument/WIND/3DP</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/Wind/3DP</InstrumentID>
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
          <TimeSpan>

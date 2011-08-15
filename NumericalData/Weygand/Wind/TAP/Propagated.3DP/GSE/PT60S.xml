@@ -33,8 +33,8 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>ACE Propagation Details</ProviderResourceName>
       <ProviderProcessingLevel>Level-1</ProviderProcessingLevel>
-      <InstrumentID>spase://SMWG/Instrument/WIND/MFI</InstrumentID>
-      <InstrumentID>spase://SMWG/Instrument/WIND/3DP</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/Wind/MFI</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/Wind/3DP</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>

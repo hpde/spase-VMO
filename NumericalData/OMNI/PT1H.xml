@@ -36,11 +36,11 @@ for creating the OMNI data set.</Acknowledgement>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>
-        <AssociationID>spase://SMWG/Instrument/WIND/MFI</AssociationID>
+        <AssociationID>spase://SMWG/Instrument/Wind/MFI</AssociationID>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>
-        <AssociationID>spase://SMWG/Instrument/WIND/SWE</AssociationID>
+        <AssociationID>spase://SMWG/Instrument/Wind/SWE</AssociationID>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>
@@ -183,7 +183,7 @@ for creating the OMNI data set.</Acknowledgement>
       | ISEE 2                                                                       |  12                        |
       | ISEE 3                                                                       |  13                        |
       | PROGNOZ 10                                                              |  10                        |
-      | WIND                                                                        |  51                        |
+      | Wind                                                                        |  51                        |
       | ACE                                                                           |  71                        |
       | Geotail                                                                       |  60                        |
       | No spacecraft                                                              |  99                        |
@@ -222,7 +222,7 @@ for creating the OMNI data set.</Acknowledgement>
       | ISEE 2                                                                       |  12                        |
       | ISEE 3                                                                       |  13                        |
       | PROGNOZ 10                                                              |  10                        |
-      | WIND                                                                        |  51                        |
+      | Wind                                                                        |  51                        |
       | ACE                                                                           |  71                        |
       | Geotail                                                                       |  60                        |
       | No spacecraft                                                              |  99                        |

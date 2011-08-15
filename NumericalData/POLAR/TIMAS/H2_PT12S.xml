@@ -17,7 +17,7 @@
             average magnetic field vector in GSM coordinates at Polar (uses KH's co-ord conversion code),
             spacecraft potential from EFI data base,
             solar zenith angles at each end of the field line,
-            time delayed solar wind parameters from WIND (Using KH's database) interpolated across data gaps of less than 10 minutes,
+            time delayed solar wind parameters from Wind (Using KH's database) interpolated across data gaps of less than 10 minutes,
             IMF in GSM,
             solar wind dynamic pressure (nPa),
             solar wind density (/cc),
@@ -103,8 +103,8 @@
       <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
       <Keyword>Net outflowing number flux</Keyword>
       <InputResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</InputResourceID>
-      <InputResourceID>spase://VHO/NumericalData/WIND/MFI/PT03S</InputResourceID>
-      <InputResourceID>spase://VHO/NumericalData/WIND/SWE/apbimax</InputResourceID>
+      <InputResourceID>spase://VHO/NumericalData/Wind/MFI/PT03S</InputResourceID>
+      <InputResourceID>spase://VHO/NumericalData/Wind/SWE/apbimax</InputResourceID>
       <InputResourceID>spase://VMO/NumericalData/POLAR/MFE/PT06S</InputResourceID>
       <Parameter>
          <Name>Center Epoch for H_Fluence</Name>
@@ -826,7 +826,7 @@
       <Parameter>
          <Name>IMF</Name>
          <ParameterKey>Imf_Gsm</ParameterKey>
-         <Description>Time delayed Wind IMF Magnetic Field from WIND spacecraft in GSM Coordinates</Description>
+         <Description>Time delayed Wind IMF Magnetic Field from Wind spacecraft in GSM Coordinates</Description>
          <Units>nT</Units>
          <UnitsConversion>1e-9&gt;T</UnitsConversion>
          <CoordinateSystem>
@@ -869,7 +869,7 @@
       <Parameter>
          <Name>SW Pressure</Name>
          <ParameterKey>SW_pressure</ParameterKey>
-         <Description>Time lagged solar wind dynamic pressure from WIND observations</Description>
+         <Description>Time lagged solar wind dynamic pressure from Wind observations</Description>
          <Units>nPa</Units>
          <UnitsConversion>1e-9&gt;Pa</UnitsConversion>
          <ValidMin>0</ValidMin>
@@ -883,7 +883,7 @@
       <Parameter>
          <Name>SW density</Name>
          <ParameterKey>SW_density</ParameterKey>
-         <Description>Time lagged solar wind density from WIND observations</Description>
+         <Description>Time lagged solar wind density from Wind observations</Description>
          <Units>#/cc</Units>
          <ValidMin>0</ValidMin>
          <ValidMax>100</ValidMax>
@@ -896,7 +896,7 @@
       <Parameter>
          <Name>V</Name>
          <ParameterKey>SW_velocity</ParameterKey>
-         <Description>Time lagged Solar wind velocity from WIND in GSM Coordinates</Description>
+         <Description>Time lagged Solar wind velocity from Wind in GSM Coordinates</Description>
          <Units>km/s</Units>
          <UnitsConversion>1e3&gt;m/s</UnitsConversion>
          <CoordinateSystem>
