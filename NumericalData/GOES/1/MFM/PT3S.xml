@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+  <Version>2.1.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/GOES/1/MFM/PT3S</ResourceID>
     <ResourceHeader>
@@ -32,7 +32,7 @@
         <URL>http://goes.ngdc.noaa.gov/software/mag.txt</URL>
         <Description>Additional GOES MFM header information.</Description>
       </InformationURL>
-      <PriorID>spase://VMO/NumericalData/GOES1/MFM/PT3S</PriorID>
+      <PriorID>spase://VMO/NumericalData/GOES/1/MFM/PT3S</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NOAA/SEC</RepositoryID>
@@ -41,7 +41,7 @@
       <AccessURL>
         <Name>Direct access to the GOES 1 MFM data</Name>
         <URL>http://goes.ngdc.noaa.gov/data/full/magnetometer/</URL>
-        <Description>Direct link to the GOES 1 MFM data in FITS format as well as the magnetometer data from other GOES spacecraft. The data are sorted by year. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, M0137607.FIT indicates  magnetometer data (M) for spacecraft 1 (01) at 3 second resolution (3) from July 1976 (7607).</Description>
+        <Description>Direct link to the GOES 1 MFM data in FITS format as well as the magnetometer data from other GOES spacecraft. The data are sorted by year. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, M0137607.FIT indicates  magnetometer data (M) for spacecraft 1 (01) at 3 second resolution (3) from July 1976 (7607). Note that spacecraft IDs 91 and 92 refer to SMS satellites, not GOES.</Description>
       </AccessURL>
       <Format>FITS</Format>
       <Encoding>None</Encoding>
@@ -55,7 +55,7 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1976-01-01T00:00:00</StartDate>
-        <StopDate>1976-05-31T00:00:00</StopDate>
+        <StopDate>1978-05-31T00:00:00</StopDate>
         <Note>Time format in data files is seconds of the month. the year and month are derived from the file name.</Note>
       </TimeSpan>
       <Cadence>PT3S</Cadence>
