@@ -7,7 +7,7 @@
     <ResourceID>spase://VMO/NumericalData/OMNI/P1D</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI Daily Data Set</ResourceName>
-      <ReleaseDate>2010-11-01T18:23:51Z</ReleaseDate>
+      <ReleaseDate>2011-08-18T18:23:51Z</ReleaseDate>
       <Description>Daily averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
