@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/GOES/1/EPM/HighRes/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 1 Energetic Particle Monitor at 3 sec Resolution</ResourceName>
       <AlternateName>GOES 1 EPM data</AlternateName>
-      <ReleaseDate>2011-07-19T21:40:59Z</ReleaseDate>
+      <ReleaseDate>2011-08-20T00:50:58Z</ReleaseDate>
       <Description>The GOES 1 EPM data set contains various parameters at 3 s resolution. Within the data files is the time given as seconds of the month where the date is given in the filename, a flag word that provides information on the data and satellite command state in a flagword, and the measured counts for a subset of available channels, which are indicated by the flagword.</Description>
       <Acknowledgement>NOAA Environmental Research Laboratories; Dr. Harold Leinbach; Dr. Herbert H. Sauer; Dr. Terry Onsager</Acknowledgement>
       <Contact>
