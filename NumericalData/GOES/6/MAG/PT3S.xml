@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>GOES 6 Biaxial Fluxgate Magnetometer at 3 sec Resolution in Spacecraft Coordinates</ResourceName>
       <AlternateName>GOES 6 MFM data</AlternateName>
-      <ReleaseDate>2011-08-18T16:22:02Z</ReleaseDate>
+      <ReleaseDate>2011-08-20T00:37:47Z</ReleaseDate>
       <Description>The spinning twin-fluxgate magnetometer, located at a few meters away from the spacecraft was designed to provide the orthogonal components of the magnetic field: Hp was parallel to the spin axis that was held nearly in the direction of Earth's axis, He was directed toward Earth center, and Hn pointed eastward. The magnetometer had a range of +/- 400 nT (without saturation) and a resolution of 0.1 nT over a range of +/- 50 nT. The sensitivity of the magnetometer was about 0.2 nT. The instrument and its electronics were carried on board GOES-4,-5,-6,and -7, without significant changes. Data during the first 3 months of 1986 has poor quality Hp component. The experiment became inoperational in February, 1987. </Description>
       <Acknowledgement>NASa; N0AA; Dr. Ronald D. Zwickl; Dr. Howard J. Singer</Acknowledgement>
       <Contact>
