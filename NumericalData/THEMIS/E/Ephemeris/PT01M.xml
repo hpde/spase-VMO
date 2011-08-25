@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
-  <Version>2.1.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+  <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/E/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
@@ -49,14 +49,14 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <Name>THEMIS STATE data at University of California, Berkeley</Name>
-        <URL>http://themis.ssl.berkeley.edu/data/themis/the/l1/state/</URL>
-        <Description>CDF data files for download, organized by date.</Description>
-      </AccessURL>
-      <AccessURL>
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/the/l1/state</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+      </AccessURL>
+      <AccessURL>
+         <Name>CDAWeb</Name>
+         <URL>http://cdaweb.gsfc.nasa.gov</URL>
+         <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

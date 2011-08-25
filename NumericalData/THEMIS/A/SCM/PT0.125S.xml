@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
-  <Version>2.1.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+  <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/A/SCM/PT0.125S</ResourceID>
     <ResourceHeader>
@@ -50,6 +50,11 @@ SCM Telemetry Modes (Only first 3 apply to level 2 SCM products):
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/tha/l2/scm/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+      </AccessURL>
+      <AccessURL>
+          <Name>CDAWeb</Name>
+          <URL>http://cdaweb.gsfc.nasa.gov</URL>
+          <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

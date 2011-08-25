@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-   <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+   <Version>2.2.0</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/THEMIS/D/MOM/PT3S</ResourceID>
       <ResourceHeader>
@@ -41,7 +41,12 @@
             <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thd/l2/mom/</URL>
             <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
          </AccessURL>
-         <Format>CDF</Format>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>http://cdaweb.gsfc.nasa.gov</URL>
+            <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+        <Format>CDF</Format>
          <Encoding>None</Encoding>
       </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
