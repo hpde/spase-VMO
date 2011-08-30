@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.spase-group.org/data/schema" 
+	xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+<Version>2.2.1</Version>
+<NumericalData>
+   <ResourceID>spase://VMO/NumericalData/IHV/KGD</ResourceID>
+   <ResourceHeader>
+      <ResourceName>IHV index for KGD Station</ResourceName>
+      <AlternateName></AlternateName>
+      <ReleaseDate>2011-08-30T08:57:32</ReleaseDate>
+      <ExpirationDate></ExpirationDate>
+      <Description>InterHourly Variability (IHV) index calculated for magnetometer data from the KGD station.</Description>
+      <Acknowledgement></Acknowledgement>
+      <Contact>
+         <PersonID>spase://SMWG/Person/Leif.Svalgaard</PersonID>
+         <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+         <PersonID>spase://SMWG/Person/Edward.W.Cliver</PersonID>
+         <Role>PrincipalInvestigator</Role>
+      </Contact>
+      <Contact>
+         <PersonID>spase://SMWG/Person/Todd.A.King</PersonID>
+         <Role>MetadataContact</Role>
+      </Contact>
+      <InformationURL>
+      	<URL>http://www.leif.org/research/2007JA012437.pdf</URL>
+      	<Name>doi:10.1029/2007JA012437</Name>
+      	<Description>A description of the detailed derivation of the interhourly variability (IHV) index of
+geomagnetic activity which was published in the JOURNAL OF GEOPHYSICAL RESEARCH, VOL. 112, A10111, doi:10.1029/2007JA012437, 2007
+        </Description>
+      </InformationURL>
+   </ResourceHeader>
+   <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/VMO</RepositoryID>
+      <Availability></Availability>
+      <AccessRights></AccessRights>
+      <AccessURL>
+         <Name>VMO Data Repository</Name>
+         <URL>http://vmo.igpp.ucla.edu/data1/KGD.TXT</URL>
+         <Description></Description>
+         <Language></Language>
+      </AccessURL>
+      <Format>Text</Format>
+      <Encoding>ASCII</Encoding>
+      <DataExtent>
+         <Quantity>{SIZE}</Quantity>
+      </DataExtent>
+      <Acknowledgement>Leif Svalgaard and Edward W. Cliver for the generation of the interhourly variability (IHV) index of
+geomagnetic activity.</Acknowledgement>
+   </AccessInformation>
+   <InstrumentID>spase://SMWG/Instrument/IAGA/KGD/Magnetometer</InstrumentID>
+   <MeasurementType>ActivityIndex</MeasurementType>
+   <TemporalDescription>
+      <TimeSpan>
+         <StartDate>1964-01-01T00:00:00</StartDate>
+         <StopDate>1964-01-01T00:00:00</StopDate>
+      </TimeSpan>
+      <Cadence>PT1H</Cadence>
+   </TemporalDescription>
+   <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+   <Parameter>
+      <Name>Time</Name>
+      <Description>Start of Hour</Description>
+      <Structure>
+         <Size>3</Size>
+         <Description></Description>
+         <Element>
+            <Name>Year</Name>
+            <Index>1</Index>
+            <ParameterKey>Column_1</ParameterKey>
+         </Element>
+         <Element>
+            <Name>Month</Name>
+            <Index>2</Index>
+            <ParameterKey>Column_2</ParameterKey>
+         </Element>
+         <Element>
+            <Name>Day</Name>
+            <Index>3</Index>
+            <ParameterKey>Column_3</ParameterKey>
+         </Element>
+         <Element>
+            <Name>Hour</Name>
+            <Index>4</Index>
+            <ParameterKey>Column_4</ParameterKey>
+         </Element>
+      </Structure>
+      <Support>
+         <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+   </Parameter>
+   <Parameter>
+      <Name>D</Name>
+      <ParameterKey>Column_5</ParameterKey>
+      <Description>Declination</Description>
+      <Units>0.1 minutes</Units>
+      <FillValue>999999</FillValue>
+      <Support>
+         <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+   </Parameter>
+   <Parameter>
+      <Name>B</Name>
+      <Description>X, North Positive; Y, East Positive; Z, Down Positive</Description>
+      <Element>
+         <Name>X</Name>
+         <Qualifier>Component.I</Qualifier>
+         <Index>1</Index>
+         <ParameterKey>Column_6</ParameterKey>
+         <Units>nT</Units>
+         <FillValue>999999</FillValue>
+      </Element>
+      <Element>
+         <Name>Y</Name>
+         <Qualifier>Component.J</Qualifier>
+         <Index>2</Index>
+         <ParameterKey>Column_7</ParameterKey>
+         <Units>nT</Units>
+         <FillValue>999999</FillValue>
+      </Element>
+      <Element>
+         <Name>Z</Name>
+         <Qualifier>Component.K</Qualifier>
+         <Index>3</Index>
+         <ParameterKey>Column_8</ParameterKey>
+         <Units>nT</Units>
+         <FillValue>999999</FillValue>
+      </Element>
+      <Field>
+      	 <Qualifier>Vector</Qualifier>
+         <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+   </Parameter>
+</NumericalData>
+</Spase>
