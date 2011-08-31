@@ -6,9 +6,9 @@
 <NumericalData>
    <ResourceID>spase://VMO/NumericalData/IHV/TTB</ResourceID>
    <ResourceHeader>
-      <ResourceName>IHV index for TTB Station</ResourceName>
-      <AlternateName></AlternateName>
-      <ReleaseDate>2011-08-30T11:16:38</ReleaseDate>
+      <ResourceName>IHV index for IAGA Tatuoca Station</ResourceName>
+      <AlternateName>IHV index for TTB Station</AlternateName>
+      <ReleaseDate>2011-08-31T08:52:46</ReleaseDate>
       <Description>InterHourly Variability (IHV) index calculated for magnetometer data from the TTB station.</Description>
       <Acknowledgement>Please acknowledge Leif Svalgaard and Edward W. Cliver when using this data.</Acknowledgement>
       <Contact>
@@ -49,7 +49,7 @@ geomagnetic activity which was published in the JOURNAL OF GEOPHYSICAL RESEARCH,
       <Acknowledgement>Leif Svalgaard and Edward W. Cliver for the generation of the interhourly variability (IHV) index of
 geomagnetic activity.</Acknowledgement>
    </AccessInformation>
-   <InstrumentID>spase://SMWG/Instrument/IAGA/TTB/Magnetometer</InstrumentID>
+   <InstrumentID>spase://SMWG/Instrument/IAGA/Tatuoca/Magnetometer</InstrumentID>
    <MeasurementType>ActivityIndex</MeasurementType>
    <TemporalDescription>
       <TimeSpan>
