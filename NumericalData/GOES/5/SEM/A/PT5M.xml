@@ -110,7 +110,7 @@
       <Description>Time is given in 3 columns. Time format in data files is YYMMDD HHMM DOY (2 digit year, 2 digit month, 2 digit day, 2 digit hour, 2 digit minute, and 3 digit day of year.</Description>
       <Structure>
         <Size>3</Size>
-        <Description>GOES 12 time array.</Description>
+        <Description>Time array.</Description>
         <Element>
           <Name>Year Month Day (2 digit year, 2 digit month, 2 digit day)</Name>
           <Index>1</Index>
@@ -139,25 +139,24 @@
       <Units>W/m^2</Units>
       <Structure>
         <Size>2</Size>
-        <Description>GOES 5 Solar X-ray monitor fluxes from two wavelength ranges: 1-8 Ang and .5-4 Ang.</Description>
+        <Description>Solar X-ray monitor fluxes from two wavelength ranges: 1-8 Ang and .5-4 Ang.</Description>
         <Element>
           <Name>1-8 Ang X-ray Fluxes</Name>
           <Index>1</Index>
           <ParameterKey>XL</ParameterKey>
-          <Units>W/m^2</Units>
         </Element>
         <Element>
-          <Name>.5-4 Ang X-ray Flux</Name>
+          <Name>.5-4 Ang X-ray Fluxes</Name>
           <Index>2</Index>
           <ParameterKey>XS</ParameterKey>
-          <Units>W/m^2</Units>
         </Element>
       </Structure>
       <FillValue>3.27E+04</FillValue>
-      <Field>
-        <Qualifier>Vector</Qualifier>
-        <FieldQuantity>Magnetic</FieldQuantity>
-      </Field>
+      <Wave>
+        <WaveType>Photon</WaveType>
+        <Qualifier>Scalar</Qualifier>
+        <WaveQuantity>Wavelength</WaveQuantity>
+      </Wave>
     </Parameter>
     <Parameter>
       <Name>Magnetic Field Monitor Magnetic Field Vectors at 5 min Resolution Data in Spacecraft Coordinates</Name>
@@ -191,7 +190,7 @@
           <ParameterKey>Hn</ParameterKey>
         </Element>
         <Element>
-          <Name>Total Magnetic Flux</Name>
+          <Name>Total Magnetic Field</Name>
           <Qualifier>Magnitude</Qualifier>
           <Index>3</Index>
           <ParameterKey>Ht</ParameterKey>
