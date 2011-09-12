@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
   <Version>2.1.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/GOES/7/MFM/PT3S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/GOES/7/MAG/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 7 Biaxial Fluxgate Magnetometer at 3 sec Resolution in Spacecraft Coordinates</ResourceName>
       <AlternateName>GOES 7 MFM data</AlternateName>
