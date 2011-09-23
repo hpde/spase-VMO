@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns="http://www.spase-group.org/data/schema">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/SECS/Magnetometer/SECS/PT10S</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/SECS/Magnetometer/SECS/PT10S</ResourceID>
     <ResourceHeader>
       <ResourceName>Spherical Elementary Current (SEC)Amplitudes derived using the Spherical Elementary Currents Systems (SECS) technique at 10 sec Resolution in Geographic Coordinates</ResourceName>
       <AlternateName>SEC Amplitude data</AlternateName>
-      <ReleaseDate>2011-07-15T14:31:50Z</ReleaseDate>
+      <ReleaseDate>2011-09-23T20:51:08Z</ReleaseDate>
       <Description>The Spherical Elementary Current (SEC)Amplitudes data set contains spherical elementary current amplitude data (J) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the equivalent ionospheric currents. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
       <Acknowledgement>Dr. O. Amm; Dr. J.M. Weygand; Prof. V. Angelopoulos, CANMOS, CARISMA, DMI, GIMA, MACCS, STEP, THEMIS</Acknowledgement>
       <Contact>
