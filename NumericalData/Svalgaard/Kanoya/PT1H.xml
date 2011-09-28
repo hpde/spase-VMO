@@ -7,7 +7,7 @@
          <ResourceName>Magnetic Field Hourly Mean Kanoya Station</ResourceName>
          <AlternateName>IAGA:Kanoya Hourly Mean Magnetic Field</AlternateName>
          <AlternateName>IAGA:KNY Hourly Mean Magnetic Field</AlternateName>
-         <ReleaseDate>2011-09-20T12:31:48</ReleaseDate>
+         <ReleaseDate>2011-09-28T11:35:50</ReleaseDate>
          <Description>Hourly mean magnetic field data determined for magnetometer data from the Kanoya station (IAGA Station Code: KNY).  The field observations that have been corrected for possible errors in timing, calibration, sign, transcription, omission, and misunderstanding. The hourly mean is calculated using data from the beginning of the hour to the end.</Description>
          <Acknowledgement>Please acknowledge Leif Svalgaard and Edward W. Cliver when using this data.</Acknowledgement>
          <Contact>
@@ -108,7 +108,7 @@
                <Index>1</Index>
                <ParameterKey>Column_6</ParameterKey>
                <Units>Tenth of an Angular Minute</Units>
-               <UnitsConversion>&pi;/(600*180)&gt;rad</UnitsConversion>
+               <UnitsConversion>pi/(600*180)&gt;rad</UnitsConversion>
                <FillValue>999999</FillValue>
             </Element>
             <Element>
