@@ -158,7 +158,7 @@
          <Wave>
 		        <WaveType>Photon</WaveType>
 		        <Qualifier>Scalar</Qualifier>
-		        <WaveQuantity>Wavelength</WaveQuantity>
+		        <WaveQuantity>Intensity</WaveQuantity>
          </Wave>
       </Parameter>             
       <Parameter>
