@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Wind 3DP Linearly Interpolated 60 s Resolution data in GSM Coordinates</ResourceName>
          <AlternateName>Wind 3DP data</AlternateName>
-         <ReleaseDate>2011-08-18T20:26:14Z</ReleaseDate>
+         <ReleaseDate>2011-08-20T00:37:47Z</ReleaseDate>
          <Description>Wind linearly interpolated to have the measurements on the minute at 60 s resolution 3DP data in GSM coordinates. This data set consists of processed solar wind data that has been linearly interpolated to 1 min resolution at the position of the spacecraft using the interp1.m function in MATLAB.  This data set was originally constructed by Dr. J.M. Weygand for Prof. R.L. McPherron, who was the principle investigator of two National Science Foundation studies: GEM Grant ATM 02-1798 and a Space Weather Grant ATM 02-08501. These data were primarily used in superposed epoch studies and cross correlation studies on solar wind.</Description>
          <Acknowledgement>NASA;Robert.P.Lin</Acknowledgement>
          <Contact>
