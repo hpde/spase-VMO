@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/B/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B Level 1 Probe State Data</ResourceName>
-      <ReleaseDate>2010-05-14T21:45:29Z</ReleaseDate>
+      <ReleaseDate>2011-11-08T21:00:51Z</ReleaseDate>
       <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:
 
                * probe position and velocity in GEI, GSE, and GSM coordinates;

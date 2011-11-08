@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/C/SCM/PT0.125S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-C: Search Coil Magnetometer 1/8s, 1/128s and 1/8192s Data</ResourceName>
-      <ReleaseDate>2010-03-30T17:41:42Z</ReleaseDate>
+      <ReleaseDate>2011-11-08T21:00:51Z</ReleaseDate>
       <Description>THEMIS-C: Search Coil Magnetometer (SCM) magnetic field measurements. Includes FAST SURVEY, PARTICLE BURST and WAVE BURST data. FAST SURVEY (SCF): 1/8 second time resolution. PARTICLE BURST (SCP): 1/128 second time resolution; only short bursts of data. WAVE BURST (SCW): 1/8192 second time resolution; only short bursts of data. Sensor and electronics design provided by LPP, Roux and Le Contel.
 
 SCM Telemetry Modes (Only first 3 apply to level 2 SCM products):
