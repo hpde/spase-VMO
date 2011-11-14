@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>GOES 10 Space Evironment Monitor Data at 5 min Resolution</ResourceName>
       <AlternateName>GOES 10 SEM data</AlternateName>
-      <ReleaseDate>2011-09-02T17:30:21Z</ReleaseDate>
+      <ReleaseDate>2011-11-14T19:38:02Z</ReleaseDate>
       <Description>This GOES 10 SEM  data set contains various parameters at 5 min resolution. Within the data files is the Xray flux for two wavelength ranges, the magnetic field vectors, the &gt;2 MeV uncorrected elecron fluxes, and the uncorrected alpha-particle fluxes for several energy ranges.</Description>
       <Acknowledgement>NOAA Environmental Research Laboratories;  Dr. Terry Onsager;  Dr. Howard Singer; </Acknowledgement>
       <Contact>
