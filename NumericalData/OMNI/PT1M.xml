@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI 1-min Data Set</ResourceName>
       <ReleaseDate>2011-08-18T18:25:32Z</ReleaseDate>
-      <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose.</Description>
+      <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose, plus several 1-min geomagnetic activity indices</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Joseph.H.King</PersonID>
@@ -558,6 +559,77 @@ the records but not their individual standard deviations.</Caveats>
       <FillValue>9999.99</FillValue>
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>AE Index</Name>
+      <ParameterKey>Column_38</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>AL Index</Name>
+      <ParameterKey>Column_39</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>AU Index</Name>
+      <ParameterKey>Column_40</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>SYM/D Index</Name>
+      <ParameterKey>Column_41</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>SYM/H Index</Name>
+      <ParameterKey>Column_42</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>ASY/D Index</Name>
+      <ParameterKey>Column_43</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>ASY/H Index</Name>
+      <ParameterKey>Column_44</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Units>nT</Units>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>PCN Index</Name>
+      <ParameterKey>Column_45</ParameterKey>
+      <Cadence>PT1M</Cadence>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
   </NumericalData>
