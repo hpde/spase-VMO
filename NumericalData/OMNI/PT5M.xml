@@ -1,14 +1,17 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
-  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT5M</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI 5-min Data Set</ResourceName>
       <AlternateName>HRO-5</AlternateName>
-      <ReleaseDate>2011-11-14T18:20:34Z</ReleaseDate>
-      <Description> from 1-min OMNI which was in turn created from ACE, Wind, IMP 8 and Geotail data shifted to the Earth's bow shock nose.  Also contains 5-min proton fluxes above 10, 30 and 60 MeV from GOES spacecraft.</Description>
+      <ReleaseDate>2011-11-14T19:58:46Z</ReleaseDate>
+      <Description>Solar wind magnetic field and plasma data, and geomagnetic activity 
+          indices, at 5-min resolution, averaged up from 1-min OMNI which was in turn
+          created from ACE, Wind, IMP 8 and Geotail data shifted to the Earth's bow shock nose.
+          Also contains 5-min proton fluxes above 10, 30 and 60 MeV from GOES spacecraft.
+      </Description>
       <Acknowledgement>We acknowledgement J.H. King and N.E. Papitashvili of NASA/SPDF and QSS and the original providers of the input ACE, Wind and IMP 8 data</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Joseph.H.King</PersonID>
@@ -21,7 +24,7 @@
       <InformationURL>
         <Name>High Resolution OMNI Documentation</Name>
         <URL>http://omniweb.gsfc.nasa.gov/html/HROdocum.html</URL>
-       <Description>Extensive OMNI documentation pages</Description>
+        <Description>Extensive OMNI documentation pages</Description>
       </InformationURL>
       <Association>
         <AssociationID>spase://SMWG/Instrument/ACE/MAG</AssociationID>
@@ -60,7 +63,7 @@
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
-     <AccessURL>
+      <AccessURL>
         <Name>OMNIWeb, High Resolution OMNI</Name>
         <URL>http://omniweb.gsfc.nasa.gov/ow_min.html</URL>
         <Description>Pathway to data and to extensive documentation.  
@@ -73,13 +76,13 @@ distributions.</Description>
         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/</URL>
         <Description>FTP path at SPDF/NSSDC</Description>
       </AccessURL>
-   <AccessURL>
+      <AccessURL>
         <Name>CDAWeb</Name>
-       <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+        <URL>http://cdaweb.gsfc.nasa.gov/</URL>
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
-       <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_5min/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_5min/</URL>
       </AccessURL>
       <Format>Text</Format>
       <Encoding>None</Encoding>
@@ -386,37 +389,37 @@ distributions.</Description>
       </Support>
     </Parameter>
     <Parameter>
-        <Name>Proton Flux, E>10 MeV</Name>
-        <ParameterKey>PR-FLX_10</ParameterKey>
-        <Description>Flux of protons>10 MeV, from GOES spacecraft</Description>
-        <Cadence>PT5M</Cadence>
-        <Units>1/(sec * cm**2 *ster)</Units>
-          <Particle>
-            <ParticleType>Proton</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-          </Particle>
+      <Name>Proton Flux, E&gt;10 MeV</Name>
+      <ParameterKey>PR-FLX_10</ParameterKey>
+      <Description>Flux of protons&gt;10 MeV, from GOES spacecraft</Description>
+      <Cadence>PT5M</Cadence>
+      <Units>1/(sec * cm**2 *ster)</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+      </Particle>
     </Parameter>
     <Parameter>
-        <Name>Proton Flux, E>30 MeV</Name>
-        <ParameterKey>PR-FLX_30</ParameterKey>
-        <Description>Flux of protons>30 MeV, from GOES spacecraft</Description>
-        <Cadence>PT5M</Cadence>
-        <Units>1/(sec * cm**2 *ster)</Units>
-          <Particle>
-            <ParticleType>Proton</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-          </Particle>
+      <Name>Proton Flux, E&gt;30 MeV</Name>
+      <ParameterKey>PR-FLX_30</ParameterKey>
+      <Description>Flux of protons&gt;30 MeV, from GOES spacecraft</Description>
+      <Cadence>PT5M</Cadence>
+      <Units>1/(sec * cm**2 *ster)</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+      </Particle>
     </Parameter>
     <Parameter>
-        <Name>Proton Flux, E>60 MeV</Name>
-        <ParameterKey>PR-FLX_60</ParameterKey>
-        <Description>Flux of protons>60 MeV, from GOES spacecraft</Description>
-        <Cadence>PT5M</Cadence>
-        <Units>1/(sec * cm**2 *ster)</Units>
-          <Particle>
-            <ParticleType>Proton</ParticleType>
-            <ParticleQuantity>NumberFlux</ParticleQuantity>
-          </Particle>
+      <Name>Proton Flux, E&gt;60 MeV</Name>
+      <ParameterKey>PR-FLX_60</ParameterKey>
+      <Description>Flux of protons&gt;60 MeV, from GOES spacecraft</Description>
+      <Cadence>PT5M</Cadence>
+      <Units>1/(sec * cm**2 *ster)</Units>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <ParticleQuantity>NumberFlux</ParticleQuantity>
+      </Particle>
     </Parameter>
   </NumericalData>
 </Spase>
