@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>All GOES Longitudinal Locations at 1 Day Resolution as West Geographic longitude.</ResourceName>
       <AlternateName>GOES longitudinal data</AlternateName>
-      <ReleaseDate>2011-09-21T00:00:00Z</ReleaseDate>
+      <ReleaseDate>2011-11-14T19:30:51Z</ReleaseDate>
       <Description>The GOES longitudinal location information consists of the west geographic longitude in degrees. The data are separated into spacecraft (GOES 2-12), year, and month. The location is given for each day of the month  is in units of degrees and the geographic latitude is assumed to be zero degrees.</Description>
       <Acknowledgement>NOAA, Dr. Howard J. Singer</Acknowledgement>
       <Contact>
@@ -29,7 +29,8 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>Direct access to the GOES spacecraft longitude location data</Name>
-        <URL>http://goes.ngdc.noaa.gov/docs/GoesLongitudes.txt</URL>
+        <URL>http://satdat.ngdc.noaa.gov/sem/goes/goes_docs/GoesLongitudes.txt
+        </URL>
         <Description>Direct link to the GOES longitudinal data in ASCII format at 1 day resolution. The data are sorted by spacecraft.  </Description>
       </AccessURL>
       <Format>Text.ASCII</Format>
@@ -64,7 +65,7 @@
     <Keyword>geosynchronus</Keyword>
     <Keyword>GOES</Keyword>
     <Keyword>Longitude</Keyword>
-    <Keyword></Keyword>     
+    <Keyword/>
     <Parameter>
       <Name>Spacecraft Name</Name>
       <ParameterKey>SAT</ParameterKey>
@@ -72,7 +73,7 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </Parameter>    
+    </Parameter>
     <Parameter>
       <Name>Year and Month of Longitude Information</Name>
       <ParameterKey>YYMM</ParameterKey>
@@ -82,7 +83,7 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </Parameter>   
+    </Parameter>
     <Parameter>
       <Name>GOES West Geographic Longitude Location at 1 day Resolution</Name>
       <ParameterKey>GOES West Geographic Longitude </ParameterKey>
@@ -99,6 +100,6 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </Parameter> 
+    </Parameter>
   </NumericalData>
 </Spase>
