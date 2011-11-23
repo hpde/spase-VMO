@@ -4,8 +4,8 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ISEE1/FPE/PT24S</ResourceID>
     <ResourceHeader>
-      <ResourceName>ISEE 1 Solar Wind Analyzer 24S Plasma Parameters</ResourceName>
-      <ReleaseDate>2011-07-29T17:22:17Z</ReleaseDate>
+      <ResourceName>ISEE 1 Solar Wind Analyzer 24-sec Plasma Parameters</ResourceName>
+      <ReleaseDate>2011-11-23T17:22:17Z</ReleaseDate>
       <Description>This data set contains 24s (fast data rate) or 48s (slow
 rate) solar wind ion plasma parameters obtained during 1977-1983 solar wind 
 seasons (~July - ~January) when the spacecraft's local time of apogee was on 
@@ -77,6 +77,7 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
       <Cadence>PT24S</Cadence>
     </TemporalDescription>
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
+    <ObservedRegion>Earth.NearEarth</ObservedRegion>
     <Parameter>
       <Name>Epoch</Name>
       <ParameterKey>Epoch</ParameterKey>
