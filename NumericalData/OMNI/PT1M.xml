@@ -6,7 +6,7 @@
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI 1-min Data Set</ResourceName>
-      <ReleaseDate>2011-11-14T18:25:32Z</ReleaseDate>
+      <ReleaseDate>2011-12-12T18:25:32Z</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose, plus several 1-min geomagnetic activity indices</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
@@ -89,6 +89,7 @@
     <InstrumentID>spase://SMWG/Instrument/OMNI</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <MeasurementType>MagneticField</MeasurementType>
+    <MeasurementType>ActivityIndex</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
         <StartDate>1995-01-01T00:00:00</StartDate>
