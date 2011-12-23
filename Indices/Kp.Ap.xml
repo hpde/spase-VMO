@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.spase-group.org/data/schema" 
+xsi:schemaLocation="http://www.spase-group.org/data/schema 
+http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+  <Version>2.2.1</Version>
+    <NumericalData>
+        <ResourceID>spase://VSPO/NumericalData/Kp_Indices</ResourceID>
+        <ResourceHeader>
+            <ResourceName>Kp, Sum_Kp, ap and Ap Indices</ResourceName>
+            <ReleaseDate>2011-12-07T00:00:00Z</ReleaseDate>
+            <Description>Kp, Sum_Kp, ap, and Ap geomagnetic indices.  
+Kp and ap are 3-hourly planetary indices and Sum_Kp and Ap are 
+daily summed and averaged (respectively) indices created from Kp and ap.
+These indices were created at the Geophysical Institute of Gottingen
+University through 1996, and at GeoForschungsZentrum (GFZ, Potsdam)
+subsequently.  GFZ, url given below, is the primary distribution site.
+The web site of WDC for Geomagnetism at Kyoto U., url given below, 
+offers plots and numeric downloads for Kp and related indices.    
+The data are currently (as of 12/07/2011) "final" from January, 1957, 
+through December, 2008, and are "real time" thereafter, through the 
+current day.  Alternative sources of many of the Kp and related 
+indices include the hourly OMNI data set at NASA/GSFC/SPDF.</Description>
+       <Acknowledgement>GeoForschungsZentrum (GFZ-Potsdam) for creating 
+Kp and related indices since 1996.</Acknowledgement>
+            <Contact>
+                <PersonID>spase://SMWG/Person/H.J.Linthe</PersonID>
+                <Role>GeneralContact</Role>
+            </Contact>
+        </ResourceHeader>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/GFZ</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>GFZ-Potsdam</Name>
+                <URL>ftp://ftp.gfz-potsdam.de/pub/home/obs/kp-ap/</URL>
+                <Description>Multi-option path to Kp and related indices at 
+GFZ-Potsdam, including index documentation and history files.</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>To GFZ for providing data</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/WDCG-Kyoto</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>WDC for Geomagnetism at Kyoto U.</Name>
+                <URL>http://wdc.kugi.kyoto-u.ac.jp/kp/index.html</URL>
+                <Description>Multi-option path to Kp and related indices at 
+Kyoto.</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>To WDC for Geomagnetism, Kyoto, for providing 
+data</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>OMNIWeb</Name>
+                <URL>http://omniweb.gsfc.nasa.gov/ow.html</URL>
+                <Description>Path to hourly OMNI data set, with
+subset/plot/list functionalities, and to ftp accessibility.</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Acknowledgement>To GSFC/Space Physics Data Facility for providing 
+data via OMNIWeb</Acknowledgement>
+        </AccessInformation>
+        <ProviderProcessingLevel>Calibrated</ProviderProcessingLevel>
+        <MeasurementType>MagneticField</MeasurementType>
+        <MeasurementType>ActivityIndex</MeasurementType>
+        <TemporalDescription>
+            <TimeSpan>
+                <StartDate>1932-01-01T00:00:00</StartDate>
+                <RelativeStopDate>-P1D</RelativeStopDate>
+            </TimeSpan>
+            <Cadence>PT3H</Cadence>
+        </TemporalDescription>
+        <ObservedRegion>Earth.Surface</ObservedRegion>
+    </NumericalData>
+</Spase>
+
+ 
