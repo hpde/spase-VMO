@@ -33,22 +33,41 @@
          </Contact>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
-            <Name>CDAWeb FTP Access</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/the/l2/mom/</URL>
-            <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+            <Name>CDAWeb ftp area</Name>
+            <URL> ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/the/l2/mom/</URL>
+            <Description> NASA/GSFC CDAWeb ftp access to the data.</Description>
          </AccessURL>
+         <Format>CDF</Format>
+         <Acknowledgement>Please acknowledge the THEMIS science team and the CDAWeb team at GSFC/SPDF.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>CDAWeb</Name>
-            <URL>http://cdaweb.gsfc.nasa.gov</URL>
-            <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+            <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/</URL>
+            <Description> Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb </Description>
+         </AccessURL>
+         <Format>Text</Format>
+         <Acknowledgement> Please acknowledge the THEMIS science team and the CDAWeb team at GSFC/SPDF.</Acknowledgement>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/UCB/THEMIS</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>THEMIS L2 MOM data at University of California, Berkeley</Name>
+            <URL>http://themis.ssl.berkeley.edu/data/themis/the/l2/mom/</URL>
+            <Description>CDF data files for download, organized by date.</Description>
          </AccessURL>
          <Format>CDF</Format>
          <Encoding>None</Encoding>
-      </AccessInformation>
+      </AccessInformation> 
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/THEMIS/E/MOM</InstrumentID>
