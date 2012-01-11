@@ -1,38 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-   <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://www.spase-group.org/data/schema" 
+xsi:schemaLocation="http://www.spase-group.org/data/schema 
+http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
+   <Version>2.2.1</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
       <ResourceHeader>
          <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
          <ReleaseDate>2011-03-08T20:30:15Z</ReleaseDate>
-         <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. Time resolution is 15.36 second.</Description>
-         <Acknowledgement>User will acknowledge the IMP-8 magnetometer team in any publication resulting from the use of these data.</Acknowledgement>
+         <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. 
+Time resolution is 15.36 second.  Data are based on a 2010 data reprocessing
+by the PI team.  Parameter details below are based on the version of the data 
+in CDAWeb.</Description>
+         <Acknowledgement>User will acknowledge the IMP-8 magnetometer team,
+and the data access path used, in any publication resulting from the use of 
+these data.</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Adam.Szabo</PersonID>
             <Role>PrincipalInvestigator</Role>
          </Contact>
          <InformationURL>
             <Name>IMP-8 Magnetometer Experiment Home Page</Name>
-            <URL>http://spdf.gsfc.nasa.gov/imp8/project.html</URL>
-            <Description>A web site hosting instrument information and providing access to the data</Description>
+            <URL>http://wind.nasa.gov/imp8/</URL>
+            <Description>A web site hosting instrument information and providing 
+access to the data</Description>
          </InformationURL>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
-            <Name>15-second Magnetic Field Data from IMP-8</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mag_15sec</URL>
+            <Name>In CDF via ftp from SPDF</Name>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mag_15sec/</URL>
             <Description>An ftp repository hosting 15s magnetic field data from IMP-8.</Description>
          </AccessURL>
          <Format>CDF</Format>
-         <Encoding>None</Encoding>
+      </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>CDAWeb</Name>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp</URL>
+            <Description>Subset, plot and list data via CDAWeb</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>FTPBrowser</Name>
+            <URL>http://ftpbrowser.gsfc.nasa.gov/imp_mag15s.html</URL>
+            <Description>Subset, plot and list data via FTPBrowser</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>nssdcftp</Name>
+            <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/imp/imp8/mag/15s_ascii_v3/</URL>
+            <Description>In ASCII via ftp from nssdcftp</Description>
+         </AccessURL>
+         <Format>CDF</Format>
       </AccessInformation>
       <ProviderResourceName>IMP8 MAG15</ProviderResourceName>
       <ProviderProcessingLevel>Level 2</ProviderProcessingLevel>
-      <ProviderVersion>2</ProviderVersion>
+      <ProviderVersion>3</ProviderVersion>
       <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
@@ -46,7 +75,10 @@
       <ObservedRegion>Heliosphere.NearEarth</ObservedRegion>
       <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
       <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
-      <Caveats>The time resolution (cadence) is not constant. The time tag corresponds to the last complete record received in a major frame. Since the data is on average 70% complete, this is quite often different from 15.36 seconds from the previous time tag. On average, however, it should be about 15.36 seconds.</Caveats>
+      <Caveats>The time resolution (cadence) is not constant. The time tag corresponds 
+to the last 1.28s measurement in the 15.36s average.  Since the data is on average 
+70% complete, this is quite often different from 15.36 seconds from the previous time 
+tag. On average, however, it should be about 15.36 seconds.</Caveats>
       <Keyword>Magnetic field</Keyword>
       <Parameter>
          <Name>Epoch</Name>
