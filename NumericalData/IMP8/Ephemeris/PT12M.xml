@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+   xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
    <Version>2.1.0</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/IMP8/Ephemeris/PT12M</ResourceID>
@@ -26,6 +27,18 @@
          <Format>CDF</Format>
          <Encoding>None</Encoding>
       </AccessInformation>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+             <Name>CDAWeb</Name>
+             <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/</URL>
+             <Description>I8_OR_SSC with subset, plot and list via CDAWeb</Description>
+         </AccessURL>
+         <Format>Text</Format>
+         <Acknowledgement> Please acknowledge the CDAWeb team at GSFC/SPDF.</Acknowledgement>
+      </AccessInformation>   
       <InstrumentID>spase://SMWG/Instrument/IMP8/Ephemeris</InstrumentID>
       <MeasurementType>Ephemeris</MeasurementType>
       <TemporalDescription>
