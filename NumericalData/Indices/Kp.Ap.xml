@@ -4,9 +4,9 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Indices/Kp.Ap</ResourceID>
     <ResourceHeader>
-      <ResourceName>Kp and Ap Geomagnetic Indices</ResourceName>
-      <ReleaseDate>2011-12-23T22:20:44Z</ReleaseDate>
-      <Description>Kp, Kp_sum, Ap, and Daily Ap geomagnetic indices.
+      <ResourceName>Kp, Sum_Kp, ap and Ap Geomagnetic Indices</ResourceName>
+      <ReleaseDate>2012-01-20T21:28:50Z</ReleaseDate>
+      <Description>Kp, Sum_Kp, (3-hour) ap, and (Daily) Ap geomagnetic indices.
 
 Kp and ap are 3-hour planetary indices and Sum_Kp and Ap are 
 daily summed and averaged (respectively) indices created from Kp.
@@ -38,13 +38,13 @@ Canberra (Australia), Lovo (Sweden), Brorfelde (Denmark), Wingst and Niemegk
 
 Three-hour-range Index Kp
 
-Ks indices isolate solar particle effects on the earth's magnetic field;
-over a 3-hour period, they classify into disturbance levels the range of
-variation of the more unsettled horizontal field component. Each activity
-level relates almost logarithmically to its corresponding disturbance
-amplitude. Three-hour indices discriminate conservatively between true
-magnetic field perturbations and the quiet-day variations produced by
-ionospheric currents.
+Kp index derives from Ks indices that isolate solar particle effects on
+the earth's magnetic field; over a 3-hour period, they classify into
+disturbance levels the range of variation of the more unsettled horizontal
+field component. Each activity level relates almost logarithmically to its
+corresponding disturbance amplitude. Three-hour indices discriminate
+conservatively between true magnetic field perturbations and the quiet-day
+variations produced by ionospheric currents.
 
 Ks indices range in 28 steps from 0 (quiet) to 9 (greatly disturbed) with
 fractional parts expressed in thirds of a unit. A Ks-value equal to 27, for
@@ -76,45 +76,31 @@ Kp and related indices since 1996.</Acknowledgement>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/GFZ</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/GFZ.Potsdam</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>GFZ-Potsdam</Name>
         <URL>ftp://ftp.gfz-potsdam.de/pub/home/obs/kp-ap/</URL>
-        <Description>Multi-option path to Kp and related indices at 
-GFZ-Potsdam, including index documentation and history files.</Description>
+        <Description>FTP download path of Kp and related indices at 
+GFZ-Potsdam, including index documentation and history files. </Description>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>To GFZ for providing data</Acknowledgement>
     </AccessInformation>
     <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/WDC/KyotoU</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/KyotoU</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>WDC for Geomagnetism at Kyoto U.</Name>
         <URL>http://wdc.kugi.kyoto-u.ac.jp/kp/index.html</URL>
-        <Description>Multi-option path to Kp and related indices at 
+        <Description>Multi-option (html forms) access to Kp and related indices at 
 Kyoto.</Description>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>To WDC for Geomagnetism, Kyoto, for providing 
 data</Acknowledgement>
-    </AccessInformation>
-    <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
-      <Availability>Online</Availability>
-      <AccessRights>Open</AccessRights>
-      <AccessURL>
-        <Name>OMNIWeb</Name>
-        <URL>http://omniweb.gsfc.nasa.gov/ow.html</URL>
-        <Description>Path to hourly OMNI data set, with
-subset/plot/list functionalities, and to ftp accessibility.</Description>
-      </AccessURL>
-      <Format>Text</Format>
-      <Acknowledgement>To GSFC/Space Physics Data Facility for providing 
-data via OMNIWeb</Acknowledgement>
     </AccessInformation>
     <ProviderProcessingLevel>Calibrated</ProviderProcessingLevel>
     <MeasurementType>MagneticField</MeasurementType>
