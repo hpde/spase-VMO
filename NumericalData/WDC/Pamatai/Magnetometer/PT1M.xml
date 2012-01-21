@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Pamatai/Magnetometer/PT1M</ResourceID>
       <ResourceHeader>
          <ResourceName>Pamatai Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-10T23:24:16Z</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:42Z</ReleaseDate>
          <Description>Pamatai Magnetometer PT1M data packed using the WDC format; Station Id: PPT; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Institut de physique du globe de Paris (IPGP)</Acknowledgement>
          <Contact>
@@ -27,7 +27,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

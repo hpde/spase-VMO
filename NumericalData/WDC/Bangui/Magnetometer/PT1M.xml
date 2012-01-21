@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Bangui/Magnetometer/PT1M</ResourceID>
       <ResourceHeader>
          <ResourceName>Bangui Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-10T23:24:19Z</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:41Z</ReleaseDate>
          <Description>Bangui Magnetometer PT1M data packed using the WDC format; Station Id: BNG; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Bureau Central de Magnetisme, Bangui, Central African Republic</Acknowledgement>
          <Contact>
@@ -27,7 +27,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

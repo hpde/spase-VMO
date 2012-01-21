@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Beijing.Ming.Tombs/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Beijing Ming Tombs Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-10T23:24:14Z</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:41Z</ReleaseDate>
          <Description>Beijing Ming Tombs Magnetometer PT1H data packed using the WDC format; Station Id: BMT; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Chinese Academy of Sciences, Institute of Geophysics, Beijing, China</Acknowledgement>
          <Contact>
@@ -27,7 +27,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

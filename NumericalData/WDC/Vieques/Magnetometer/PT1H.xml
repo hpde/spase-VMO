@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Vieques/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Vieques Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2010-03-12T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:42Z</ReleaseDate>
          <Description>Vieques Magnetometer PT1H data packed using the WDC format; Station Id: VQS; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Contact>
             <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
@@ -22,7 +22,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

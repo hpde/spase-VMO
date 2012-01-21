@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Karachi/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Karachi Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2009-11-10T23:24:18Z</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:42Z</ReleaseDate>
          <Description>Karachi Magnetometer PT1H data packed using the WDC format; Station Id: KRC; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Ionospheric Research Division, Pakistan Space Upper Atmosphere Research Commission, (SUPARCO), Karachi</Acknowledgement>
          <Contact>
@@ -31,7 +31,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

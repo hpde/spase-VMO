@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Patrony Fluxgate Magnetometer Data in WDC Format</ResourceName>
          <AlternateName>Irkuts Fluxgate Magnetometer Data</AlternateName>
-         <ReleaseDate>2009-11-10T23:24:14Z</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:42Z</ReleaseDate>
          <Description>Patrony Magnetometer PT1M data packed using the WDC format; Station Id: IRT; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Institute of Solar-Terrestrial Physics, Irkutsk,Russia</Acknowledgement>
          <Contact>
@@ -28,7 +28,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>

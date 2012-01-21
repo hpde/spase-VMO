@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Thule Fluxgate Magnetometer Data in WDC Format</ResourceName>
          <AlternateName>Qaanaaq Fluxgate Magnetometer Data</AlternateName>
-         <ReleaseDate>2009-11-10T23:24:12Z</ReleaseDate>
+         <ReleaseDate>2012-01-21T02:56:42Z</ReleaseDate>
          <Description>Thule Magnetometer PT1M data packed using the WDC format; Station Id: THL; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Solar-Terrestrial Physics Division, Danish Meteorological Institute</Acknowledgement>
          <Contact>
@@ -32,7 +32,7 @@
          </Association>
       </ResourceHeader>
       <AccessInformation>
-         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetic.Data.Master.Catalog</RepositoryID>
+         <RepositoryID>spase://SMWG/Repository/WDC/Geomagnetism/Edinburgh</RepositoryID>
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
