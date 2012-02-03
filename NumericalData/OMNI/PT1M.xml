@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
-  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI 1-min Data Set</ResourceName>
-      <ReleaseDate>2011-12-12T18:25:32Z</ReleaseDate>
+      <ReleaseDate>2012-02-03T20:59:06Z</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose, plus several 1-min geomagnetic activity indices</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
@@ -69,13 +68,13 @@
         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/monthly_1min/</URL>
         <Description>ftp access to monthly ASCII files of 1-min (10 MB/file) data and to annual ASCII files of 1-min (126 MB/file) and 5-min (25 MB/file) data.</Description>
       </AccessURL>
-       <AccessURL>
+      <AccessURL>
         <Name>CDAWeb</Name>
-       <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+        <URL>http://cdaweb.gsfc.nasa.gov/</URL>
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
-       <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_1min/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_1min/</URL>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
