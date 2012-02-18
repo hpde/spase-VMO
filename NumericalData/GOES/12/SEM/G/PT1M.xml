@@ -2,11 +2,11 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/GOES/12/SEM/PT1M</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/GOES/12/SEM/G/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 12 Space Evironment Monitor Data at 1 min Resolution</ResourceName>
       <AlternateName>GOES 12 SEM data</AlternateName>
-      <ReleaseDate>2011-11-14T19:38:03Z</ReleaseDate>
+      <ReleaseDate>2012-02-18T00:41:09Z</ReleaseDate>
       <Description>This GOES 12 SEM  data set contains various parameters at 1 min resolution. Within the data files is the Xray flux for two wavelength ranges, the magnetic field vectors, the &gt;2 MeV uncorrected elecron fluxes, and the uncorrected proton fluxes for several energy ranges.</Description>
       <Acknowledgement>NOAA Environmental Research Laboratories;  Dr. Terry Onsager;  Dr. Howard Singer; </Acknowledgement>
       <Contact>
