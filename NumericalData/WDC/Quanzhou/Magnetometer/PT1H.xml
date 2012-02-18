@@ -5,11 +5,11 @@
       <ResourceID>spase://VMO/NumericalData/WDC/Quanzhou/Magnetometer/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Quanzhou Fluxgate Magnetometer Data in WDC Format</ResourceName>
-         <ReleaseDate>2012-01-21T02:56:42Z</ReleaseDate>
+         <ReleaseDate>2012-02-18T00:37:50Z</ReleaseDate>
          <Description>Quanzhou Magnetometer PT1H data packed using the WDC format; Station Id: QZH; Orientation: DHXYZF; Instruments: Absolute - DI-fluxgate magnetometer (DI-flux)</Description>
          <Acknowledgement>Institute of Geophysics, China Seismological Bureau</Acknowledgement>
          <Contact>
-            <PersonID>spase://SMWG/Person/Dong.mei.Yang</PersonID>
+            <PersonID>spase://SMWG/Person/Dong.Mei.Yang</PersonID>
             <Role>GeneralContact</Role>
          </Contact>
          <Contact>
