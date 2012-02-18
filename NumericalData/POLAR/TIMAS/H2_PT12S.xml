@@ -5,7 +5,7 @@
       <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
       <ResourceHeader>
          <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-         <ReleaseDate>2011-08-18T19:23:17Z</ReleaseDate>
+         <ReleaseDate>2012-02-18T00:21:25Z</ReleaseDate>
          <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
             Includes also non-TIMAS Data:
             UT,
@@ -104,7 +104,7 @@
       <Keyword>Net outflowing number flux</Keyword>
       <InputResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</InputResourceID>
       <InputResourceID>spase://VHO/NumericalData/Wind/MFI/PT03S</InputResourceID>
-      <InputResourceID>spase://VHO/NumericalData/Wind/SWE/apbimax</InputResourceID>
+      <InputResourceID>spase://VHO/NumericalData/Wind/SWE/Definitive_PT92S</InputResourceID>
       <InputResourceID>spase://VMO/NumericalData/POLAR/MFE/PT06S</InputResourceID>
       <Parameter>
          <Name>Center Epoch for H_Fluence</Name>
