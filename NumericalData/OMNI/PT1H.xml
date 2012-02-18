@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI Hourly Data Set</ResourceName>
-      <ReleaseDate>2011-08-18T18:25:03Z</ReleaseDate>
+      <ReleaseDate>2012-02-18T00:14:47Z</ReleaseDate>
       <Description>Hourly averaged, multi-source, near-Earth solar wind magnetic
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).
@@ -64,7 +64,7 @@ for creating the OMNI data set.</Acknowledgement>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
       <Association>
-        <AssociationID>spase://SMWG/Instrument/GOES11/SEM</AssociationID>
+        <AssociationID>spase://SMWG/Instrument/GOES/11/SEM</AssociationID>
         <AssociationType>DerivedFrom</AssociationType>
       </Association>
     </ResourceHeader>
@@ -87,16 +87,16 @@ Pathway to 1-min, 5-min, 1-day, 27-day averages.</Description>
 and to one full-time-span file for each 1-day and 27-day averages.</Description>
       </AccessURL>
       <AccessURL>
-      <Name>CDAWeb</Name>
-      <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+        <Name>CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov/</URL>
       </AccessURL>
- <AccessURL>
- <Name>COHOWeb</Name>
-<URL>http://cohoweb.gsfc.nasa.gov/</URL> 
+      <AccessURL>
+        <Name>COHOWeb</Name>
+        <URL>http://cohoweb.gsfc.nasa.gov/</URL>
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
-       <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/coho1hr_magplasma/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/coho1hr_magplasma/</URL>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
