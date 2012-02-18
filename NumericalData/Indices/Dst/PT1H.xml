@@ -2,11 +2,11 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
    <Version>2.0.1</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/Dst.Index/PT1H/ASCII</ResourceID>
+       <ResourceID>spase://VMO/NumericalData/Indices/Dst/PT1H</ResourceID>
       <ResourceHeader>
          <ResourceName>Geomagnetic Equatorial Dst Index 1-hr Data.</ResourceName>
          <AlternateName>Geomagnetic Equatorial Dst Index Flat ASCII Data.</AlternateName>
-         <ReleaseDate>2010-03-30T22:37:51Z</ReleaseDate>
+         <ReleaseDate>2012-02-18T00:35:12Z</ReleaseDate>
          <Description>The Geomagnetic Equatorial Dst Index data at 1-hr time resolution from the World Data Center C2 for Geomagnetism, Kyoto University.</Description>
          <Acknowledgement>If Dst Index data are used in publication kindly acknowledge the World Data Center C2 for Geomagnetism, Kyoto University for the index production and distribution.</Acknowledgement>
          <Contact>
@@ -25,6 +25,7 @@
          <Association>
             <AssociationID>spase://SMWG/Observatory/Dst.Index.Logical</AssociationID>
          </Association>
+      <PriorID>spase://VMO/NumericalData/Dst.Index/PT1H/ASCII</PriorID>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
