@@ -8,7 +8,7 @@
    <ResourceHeader>
       <ResourceName>IHV index for IAGA Kanozan Station</ResourceName>
       <AlternateName>IHV index for KNZ Station</AlternateName>
-      <ReleaseDate>2011-09-06T08:07:35</ReleaseDate>
+      <ReleaseDate>2012-02-18T00:30:49Z</ReleaseDate>
       <Description>InterHourly Variability (IHV) index calculated for magnetometer data from the KNZ station.</Description>
       <Acknowledgement>Please acknowledge Leif Svalgaard and Edward W. Cliver when using this data.</Acknowledgement>
       <Contact>
@@ -41,7 +41,7 @@ Journal of Geophysical Research, Vol. 112, A10111, doi:10.1029/2007JA012437,
       </InformationURL>
    </ResourceHeader>
    <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/VMO</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
