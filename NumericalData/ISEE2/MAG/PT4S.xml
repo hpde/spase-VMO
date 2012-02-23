@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ISEE2/MAG/PT4S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE-2 magnetometer 4-sec data</ResourceName>
-      <ReleaseDate>2011-07-29T17:37:04Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T05:48:23Z</ReleaseDate>
       <Description>4-sec vector magnetic field values recorded by the ESA ISEE-2 
 satellite, in spacecraft coordinates (close to GSE), available from UCLA and CDAWeb 
 value-added interfaces and, via ftp, in binary from UCLA and in CDF from 
@@ -28,6 +28,30 @@ used for accessing data (see below).</Acknowledgement>
       </Association>
     </ResourceHeader>
     <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb's ftp area</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee2/4sec_mfi/</URL>
+        <Description>ftp access to CDF files</Description>
+        <ProductKey>ISEE2_4SEC_MFI</ProductKey>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
+    </AccessInformation>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys</URL>
+        <Description>Plots, lists and files from CDAWeb</Description>
+        <ProductKey>ISEE2_4SEC_MFI</ProductKey>
+      </AccessURL>
+      <Format>Text</Format>
+      <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
+    </AccessInformation>
+    <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/UCLA/IGPP.ISEE.Magnetometer.Interactive.Data.Server</RepositoryID>
       <AccessRights>Open</AccessRights>
       <AccessURL>
@@ -48,28 +72,6 @@ used for accessing data (see below).</Acknowledgement>
       </AccessURL>
       <Format>Binary</Format>
       <Acknowledgement>UCLA-IGPP ISEE Magnetometer Interactive Data Server</Acknowledgement>
-    </AccessInformation>
-    <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
-      <AccessRights>Open</AccessRights>
-      <AccessURL>
-        <Name>CDAWeb</Name>
-        <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys</URL>
-        <Description>Plots, lists and files from CDAWeb</Description>
-      </AccessURL>
-      <Format>Text</Format>
-      <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
-    </AccessInformation>
-    <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
-      <AccessRights>Open</AccessRights>
-      <AccessURL>
-        <Name>CDAWeb's ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee2/4sec_mfi/</URL>
-        <Description>ftp access to CDF files</Description>
-      </AccessURL>
-      <Format>CDF</Format>
-      <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/ISEE2/MAG</InstrumentID>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/GOES/10/MAG/PT0.512S</ResourceID>
     <ResourceHeader>
       <ResourceName>GOES 10 high-resolution magnetometer data</ResourceName>
-      <ReleaseDate>2011-08-03T17:15:21Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:38:20Z</ReleaseDate>
       <Description>GOES 10 magnetic field data at 0.512 second time resolution. The vector magnetic field is given in the spacecraft (s/c) earth-referenced coordinate system:  Hp, He, Hn, and Ht, where  Hp is perpendicular to the satellite orbital plane, or parallel to Earth's spin axis in the case of a zero degree inclination orbit; He is perpendicular to Hp and directed earthwards; Hn is perpendicular to both Hp and He and directed eastwards; and Ht is the total field.
       
       This data product also provides GOES 10 satellite positions and velocities derived from SSCWEB GEI ephemeris, interpolated to one minute time resolution.
@@ -57,9 +57,10 @@ Approximate coefficients are:
         <URL>http://themis.ssl.berkeley.edu/data/goes/mag/g10/l2/</URL>
       </AccessURL>
       <AccessURL>
-         <Name>CDAWeb</Name>
-         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-         <Description>For CDAWeb subset, plot and list capabilities</Description>
+        <Name>CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+        <Description>For CDAWeb subset, plot and list capabilities</Description>
+        <ProductKey>G10_L2_MAG</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

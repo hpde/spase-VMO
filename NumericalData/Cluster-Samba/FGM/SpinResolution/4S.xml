@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns="http://www.spase-group.org/data/schema" 
-  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Cluster-Samba/FGM/SpinResolution/4S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster Samba Spin Resolution Fluxgate Magnetometer (FGM) Data</ResourceName>
       <AlternateName>Cluster 1 Spin Resolution FGM Data</AlternateName>
-      <ReleaseDate>2011-03-01T00:00:00Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:15Z</ReleaseDate>
       <Description>This dataset contains spin resolution measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument 
         on the Cluster Samba spacecraft.</Description>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
@@ -24,7 +22,7 @@
         <Name>NSSDC Master Catalog listing for Cluster Samba Fluxgate Magnetometer (FGM)</Name>
         <URL>http://nssdc.gsfc.nasa.gov/nmc/experimentDisplay.do?id=2000-045A-04</URL>
         <Description>This site provides information concerning the Cluster Samba Fluxgate Magnetometer Instrument.</Description>
-      </InformationURL>   
+      </InformationURL>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
@@ -34,6 +32,7 @@
         <Name>CDAWeb link to Cluster Samba Spin Resolution Fluxgate Magnetometer data</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c3/cp</URL>
         <Description>Cluster Samba Spin Resolution Fluxgate Magnetometer (FGM) data</Description>
+        <ProductKey>C3_CP_FGM_SPIN</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
@@ -165,6 +164,5 @@
         <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
-    
   </NumericalData>
 </Spase>

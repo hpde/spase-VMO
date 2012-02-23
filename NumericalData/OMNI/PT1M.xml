@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI 1-min Data Set</ResourceName>
-      <ReleaseDate>2012-02-03T20:59:06Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T05:50:15Z</ReleaseDate>
       <Description>High resolution (1m, 5m), multi-source, near-Earth solar wind magnetic field and plasma data as shifted to Earth's bow shock nose, plus several 1-min geomagnetic activity indices</Description>
       <Acknowledgement>We acknowledge the experiment teams that acquired, processed and provided the OMNI-included data, and J.H. King and N.E. Papitashvili of NASA/GSFC for creating the OMNI data set.</Acknowledgement>
       <Contact>
@@ -71,10 +71,12 @@
       <AccessURL>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+        <ProductKey>OMNI_HRO_1MIN</ProductKey>
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_1min/</URL>
+        <ProductKey>OMNI_HRO_1MIN</ProductKey>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-  <Version>2.2.0</Version>
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Cluster-Rumba/DWP/PrimeParameter/PT4S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster Rumba Digital Wave Processor (DWP) prime parameter data at about 4 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Rumba DWP data</AlternateName>
-      <ReleaseDate>2011-07-15T15:49:48Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:08Z</ReleaseDate>
       <Description>Cluster Rumba Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
@@ -87,6 +87,7 @@
         <Name>CDAWeb's ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/dwp/</URL>
         <Description>ftp access to Cluster Rumba Digital Wave Processor (DWP) CDF files.</Description>
+        <ProductKey>C1_PP_DWP</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>

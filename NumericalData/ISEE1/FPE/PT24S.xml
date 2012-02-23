@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ISEE1/FPE/PT24S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 Solar Wind Analyzer 24-sec Plasma Parameters</ResourceName>
-      <ReleaseDate>2012-02-06T17:22:17Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:19Z</ReleaseDate>
       <Description>This data set contains 24s (fast data rate) or 48s (slow
 rate) solar wind ion plasma parameters obtained during 1977-1983 solar wind 
 seasons (~July - ~January) when the spacecraft's local time of apogee was on 
@@ -33,6 +33,7 @@ Ion Experiment, a companion to LANL's Fast Plasma Analyzer (FPE).</Description>
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/24or48s_fpe/</URL>
         <Description>For ftp retrieval of daily CDF files</Description>
+        <ProductKey>ISEE1_H2_FPE</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/OMNI/PT1H</ResourceID>
     <ResourceHeader>
       <ResourceName>OMNI Hourly Data Set</ResourceName>
-      <ReleaseDate>2012-02-18T00:14:47Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T05:49:44Z</ReleaseDate>
       <Description>Hourly averaged, multi-source, near-Earth solar wind magnetic
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).
@@ -89,6 +89,7 @@ and to one full-time-span file for each 1-day and 27-day averages.</Description>
       <AccessURL>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+        <ProductKey>OMNI2_H0_MRG1HR</ProductKey>
       </AccessURL>
       <AccessURL>
         <Name>COHOWeb</Name>
@@ -97,6 +98,7 @@ and to one full-time-span file for each 1-day and 27-day averages.</Description>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/coho1hr_magplasma/</URL>
+        <ProductKey>OMNI2_H0_MRG1HR</ProductKey>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 VES Electron Data at 9s or 18s</ResourceName>
-      <ReleaseDate>2011-07-29T17:29:56Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:47:53Z</ReleaseDate>
       <Description>This data set, held in CDAWeb as ISEE1_H0_FE,
 contains electron moments from the Vector Electron Spectrometer
 (VES), and spacecraft position vectors, at 9s or 18s resolution, 
@@ -43,6 +43,7 @@ Harvey and Mozer experiments.</Description>
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/h0/fe/</URL>
         <Description>For ftp retrieval of daily CDF files</Description>
+        <ProductKey>ISEE1_H0_FE</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>
@@ -61,6 +62,7 @@ and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
         <Description>For CDAWeb subset, plot and list capabilities</Description>
+        <ProductKey>ISEE1_H0_FE</ProductKey>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>Please acknowledge the FPE PI, Dr. Keith Ogilvie, 

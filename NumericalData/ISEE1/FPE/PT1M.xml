@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ISEE1/FPE/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 FPE plasma parameters, 6 Re to bow shock</ResourceName>
-      <ReleaseDate>2011-07-29T17:22:17Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:19Z</ReleaseDate>
       <Description/>
       <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling</Acknowledgement>
       <Contact>
@@ -25,6 +25,7 @@
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/1min_fpe/</URL>
         <Description>For ftp retrieval of daily CDF files</Description>
+        <ProductKey>ISEE1_H1_FPE</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>

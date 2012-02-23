@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/B/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-B Level 1 Probe State Data</ResourceName>
-      <ReleaseDate>2011-11-08T21:00:51Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:03Z</ReleaseDate>
       <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:
 
                * probe position and velocity in GEI, GSE, and GSM coordinates;
@@ -39,9 +39,9 @@
         <Description>Details on THEMIS data policy and giving proper credits in publications.</Description>
       </InformationURL>
       <InformationURL>
-      	<Name>THEMIS Ephemeris Format Definition</Name>
-      	<URL>ftp://apollo.ssl.berkeley.edu/pub/THEMIS/3%20Ground%20Systems/3.2%20Science%20Operations/Science%20Operations%20Documents/thm_ogs_431m_ephemeris_format_definition.pdf</URL>
-      	<Description>Ephemeris file format and quantity details including RoI descriptions.</Description>
+        <Name>THEMIS Ephemeris Format Definition</Name>
+        <URL>ftp://apollo.ssl.berkeley.edu/pub/THEMIS/3%20Ground%20Systems/3.2%20Science%20Operations/Science%20Operations%20Documents/thm_ogs_431m_ephemeris_format_definition.pdf</URL>
+        <Description>Ephemeris file format and quantity details including RoI descriptions.</Description>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
@@ -52,11 +52,12 @@
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thb/l1/state</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+        <ProductKey>THB_L1_STATE</ProductKey>
       </AccessURL>
       <AccessURL>
-         <Name>CDAWeb</Name>
-         <URL>http://cdaweb.gsfc.nasa.gov</URL>
-         <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+        <Name>CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov</URL>
+        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Spase xmlns="http://www.spase-group.org/data/schema">
-  <Version>2.2.0</Version>
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Cluster/DWP/SummaryParameter/PT60S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster Digital Wave Processor (DWP) summary parameter data at about 60 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Summary Parameter DWP data</AlternateName>
-      <ReleaseDate>2011-07-28T20:26:14Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:16Z</ReleaseDate>
       <Description>Cluster Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
@@ -87,6 +87,7 @@
         <Name>CDAWeb</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/dwp</URL>
         <Description>Cluster Digital Wave Processor (DWP) summary parameter data at CDAWeb.</Description>
+        <ProductKey>CL_SP_DWP</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>

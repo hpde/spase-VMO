@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Cluster-Samba/RAPID/PrimeParameter/4S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster II Samba Prime Parameter Research with Adaptive Particle Imaging Detectors (RAPID) Data</ResourceName>
       <AlternateName>Cluster 3 Prime Parameter RAPID Data</AlternateName>
-      <ReleaseDate>2011-02-04T15:51:50Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:16Z</ReleaseDate>
       <Description>The dual-sensor spectrometer RAPID (Research with Adaptive Particle Imaging Detectors) analyzes suprathermal plasma distributions in the energy range from 20-400 KeV for electrons and from 2 KeV/nucleon to 1.50 MeV/nucleon for ions. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article RAPID: The Imaging Energetic Particle Spectrometer on Cluster, by B. Wilken et al., from which this information was obtained.</Description>
       <Acknowledgement>NASA, Dr. Berend Wilken, European Space Agency</Acknowledgement>
       <Contact>
@@ -112,6 +112,7 @@
         <Name>CDAWeb link to Cluster II Samba Prime Parameter Research with Adaptive Particle Imaging Detectors data</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c3/pp/rap</URL>
         <Description>Cluster II Samba Prime Parameter Research with Adaptive Particle Imaging Detectors (RAPID) data</Description>
+        <ProductKey>C3_PP_RAP</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA, Dr. Berend Wilken</Acknowledgement>

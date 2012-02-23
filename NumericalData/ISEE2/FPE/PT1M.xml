@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/ISEE2/FPE/PT1M</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 2 FPE plasma parameters, 6 Re to bow shock</ResourceName>
-      <ReleaseDate>2011-07-29T17:37:04Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:48:16Z</ReleaseDate>
       <Description/>
       <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling</Acknowledgement>
       <Contact>
@@ -25,6 +25,7 @@
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee2/1min_fpe/</URL>
         <Description>For ftp retrieval of daily CDF files</Description>
+        <ProductKey>ISEE2_H1_FPE</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>
@@ -43,6 +44,7 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
         <Description>For CDAWeb subset, plot and list capabilities</Description>
+        <ProductKey>ISEE2_H1_FPE</ProductKey>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling and

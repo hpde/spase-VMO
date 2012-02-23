@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Geotail/Ephemeris/PT10M</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Spacecraft Definitive Positions</ResourceName>
-      <ReleaseDate>2011-03-21T20:21:53Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:18Z</ReleaseDate>
       <Description>Definitive Geotail spacecraft positions in various coordinate systems</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Gerald.Blackwell</PersonID>
@@ -24,6 +24,7 @@
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/def_or</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+        <ProductKey>GE_OR_DEF</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

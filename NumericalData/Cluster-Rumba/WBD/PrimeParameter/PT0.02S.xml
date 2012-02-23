@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Cluster-Rumba/WBD/PrimeParameter/PT0.02S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster II Rumba Wide Band Data (WBD) Prime Parameters</ResourceName>
       <AlternateName>Cluster II WBD data</AlternateName>
-      <ReleaseDate>2011-02-04T15:51:45Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:09Z</ReleaseDate>
       <Description>The WBD (Wide Band Data) investigation is designed to provide high-resolution frequency/time spectra of plasma waves in the Earth's magnetosphere. These data files contain information on the band width, resolution, antenna angles, offsets, magnetic and electric field information.    For more details of the Cluster mission, the spacecraft, and its instruments, see the report ``Cluster: mission, payload and supporting activities,'' March 1993, ESA SP-1159, and the included article ``The Wideband Plasma Wave Investigation,'' by D. A. Gurnett et al., from which this information was obtained.</Description>
       <Acknowledgement>NASA; Prof. Donald A. Gurnett</Acknowledgement>
       <Contact>
@@ -95,6 +95,7 @@
         <Name>CDAWeb</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/wbd</URL>
         <Description>Prime Parameter Wide Band Data from Cluster II Rumba</Description>
+        <ProductKey>C1_WAVEFORM_WBD</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA; Prof. Donald A. Gurnett</Acknowledgement>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/THEMIS/C/ESA.FGM/PT96S</ResourceID>
     <ResourceHeader>
       <ResourceName>ARTEMIS P2 field-plasma merged data, near moon</ResourceName>
       <AlternateName>THEMIS-C field-plasma merged data, near moon</AlternateName>
-      <ReleaseDate>2011-03-08T21:24:15Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T05:56:28Z</ReleaseDate>
       <Description>This data set contains 96s and 384s resolution
 magnetic field and plasma ion data from the THEMIS-C ESA and FGM 
 instruments during the near moon (ARTEMIS) phase of the spacecraft
@@ -56,6 +56,7 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/merged/</URL>
         <Description>For ftp retrieval of monthly CDF files</Description>
+        <ProductKey>THC_L2_MERGED</ProductKey>
       </AccessURL>
       <AccessURL>
         <Name>LunaSOX plots, lists</Name>
@@ -73,6 +74,7 @@ with filtering</Description>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
         <Description>For CDAWeb subset plot and list capabilities</Description>
+        <ProductKey>THC_L2_MERGED</ProductKey>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>Please acknowledge Vassilis Angelopoulos,

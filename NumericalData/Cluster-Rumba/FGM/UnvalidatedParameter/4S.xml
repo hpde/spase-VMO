@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Cluster-Rumba/FGM/UnvalidatedParameter/4S</ResourceID>
     <ResourceHeader>
       <ResourceName>Cluster II Rumba Unvalidated Prime Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
       <AlternateName>Cluster 1 Unvalidated Prime Parameter FGM data</AlternateName>
-      <ReleaseDate>2011-02-04T15:51:45Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T04:07:09Z</ReleaseDate>
       <Description>This dataset contains spin resolution unvalidated prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 Rumba spacecraft. Unvalidated FGM data might sometimes contain artefacts such as spikes (duration ~ 1 spin), or short rotations (few spins). Very occasionally the data contain many spikes over several hours. Please contact Elizabeth Lucek (e.lucek@imperial.ac.uk) for more information regarding possible artefacts in specific intervals of data. The unvalidated prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain.</Description>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
       <Contact>
@@ -40,6 +40,7 @@
         <Name>CDAWeb link to Cluster II Rumba Unvalidated Prime Parameter Fluxgate Magnetometer data</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/up/fgm</URL>
         <Description>Cluster II Rumba Unvalidated Prime Parameter Fluxgate Magnetometer (FGM) data</Description>
+        <ProductKey>C1_UP_FGM</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
