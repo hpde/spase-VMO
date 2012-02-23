@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/UVI/L1_CDF</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar UVI L1 CDF</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:13Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T17:14:45Z</ReleaseDate>
       <Description>The Ultraviolet Imager (UVI) is a small camera that detected and produced images of the ultraviolet light of the aurora, day and night. Using any of five specially designed filters the UVI camera imaged an eight degree circular field of view. Images are generated once every 37 seconds with a nominal pixel angular resolution of 0.036 degrees.</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/George.K.Parks</PersonID>
@@ -64,8 +64,8 @@
         <Size>228 200</Size>
       </Structure>
       <Wave>
-        <Qualifier>Integral</Qualifier>
         <WaveType>Photon</WaveType>
+        <Qualifier>Integral</Qualifier>
         <WaveQuantity>Intensity</WaveQuantity>
         <WavelengthRange>
           <SpectralRange>Ultraviolet</SpectralRange>

@@ -5,25 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-      <ReleaseDate>2012-02-23T05:53:17Z</ReleaseDate>
-      <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
-            Includes also non-TIMAS Data:
-            UT,
-            altitude,
-            invariant latitude,
-            L shell,
-            magnetic local time,
-            geomagnetic latitude (signed - n/s hemisphere),
-            average magnetic field vector in GSM coordinates at Polar (uses KH's co-ord conversion code),
-            spacecraft potential from EFI data base,
-            solar zenith angles at each end of the field line,
-            time delayed solar wind parameters from Wind (Using KH's database) interpolated across data gaps of less than 10 minutes,
-            IMF in GSM,
-            solar wind dynamic pressure (nPa),
-            solar wind density (/cc),
-            solar wind velocity (km/sec).
-            This is a summary data base.It does not contain detailed energy step and pitch angle information for each data point. Extends over all altitudes, invariant latitudes and MLT. Below altitude of 4.0 Re 2 spin resolution (12s), above altitude of 4.0 Re 4 spin resolution (24s).
-            Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.</Description>
+      <ReleaseDate>2012-02-23T17:07:23Z</ReleaseDate>
+      <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.            Includes also non-TIMAS Data:            UT,            altitude,            invariant latitude,            L shell,            magnetic local time,            geomagnetic latitude (signed - n/s hemisphere),            average magnetic field vector in GSM coordinates at Polar (uses KH's co-ord conversion code),            spacecraft potential from EFI data base,            solar zenith angles at each end of the field line,            time delayed solar wind parameters from Wind (Using KH's database) interpolated across data gaps of less than 10 minutes,            IMF in GSM,            solar wind dynamic pressure (nPa),            solar wind density (/cc),            solar wind velocity (km/sec).            This is a summary data base.It does not contain detailed energy step and pitch angle information for each data point. Extends over all altitudes, invariant latitudes and MLT. Below altitude of 4.0 Re 2 spin resolution (12s), above altitude of 4.0 Re 4 spin resolution (24s).            Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/W.K.Peterson</PersonID>
         <Role>PrincipalInvestigator</Role>
@@ -77,8 +60,8 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <URL>http://lasp.colorado.edu/timas/h12-data/h2-data</URL>
-        <Description>Repository of Polar TIMAS key parameter data in CDF format at LASP</Description>
         <ProductKey>PO_H2_TIM</ProductKey>
+        <Description>Repository of Polar TIMAS key parameter data in CDF format at LASP</Description>
       </AccessURL>
       <Format>CDF</Format>
     </AccessInformation>
@@ -598,16 +581,7 @@
     <Parameter>
       <Name>H+ Quality Flag</Name>
       <ParameterKey>H_quality</ParameterKey>
-      <Description>A quality flag in the range 0-99 with the following values/meanings:
-            0    OK.
-            1    Some data missing.
-            2    more than 5% data missing
-            3    not  used.
-            4    not used.
-            5    Warning flags set.
-            6    not used.
-            9    Invalid pitch angles
-            99   No valid data.</Description>
+      <Description>A quality flag in the range 0-99 with the following values/meanings:            0    OK.            1    Some data missing.            2    more than 5% data missing            3    not  used.            4    not used.            5    Warning flags set.            6    not used.            9    Invalid pitch angles            99   No valid data.</Description>
       <ValidMin>0</ValidMin>
       <ValidMax>99</ValidMax>
       <FillValue>255</FillValue>
@@ -618,16 +592,7 @@
     <Parameter>
       <Name>O+ Quality Flag</Name>
       <ParameterKey>O_quality</ParameterKey>
-      <Description>A quality flag in the range 0-99 with the following values/meanings:
-            0    OK.
-            1    Some data missing.
-            2    more than 5% data missing
-            3    not  used.
-            4    not used.
-            5    Warning flags set.
-            6    not used.
-            9    Invalid pitch angles
-            99   No valid data.</Description>
+      <Description>A quality flag in the range 0-99 with the following values/meanings:            0    OK.            1    Some data missing.            2    more than 5% data missing            3    not  used.            4    not used.            5    Warning flags set.            6    not used.            9    Invalid pitch angles            99   No valid data.</Description>
       <ValidMin>0</ValidMin>
       <ValidMax>99</ValidMax>
       <FillValue>255</FillValue>
@@ -638,16 +603,7 @@
     <Parameter>
       <Name>He+ Quality Flag</Name>
       <ParameterKey>He1_quality</ParameterKey>
-      <Description>A quality flag in the range 0-99 with the following values/meanings:
-            0    OK.
-            1    Some data missing.
-            2    more than 5% data missing
-            3    not  used.
-            4    not used.
-            5    Warning flags set.
-            6    not used.
-            9    Invalid pitch angles
-            99   No valid data.</Description>
+      <Description>A quality flag in the range 0-99 with the following values/meanings:            0    OK.            1    Some data missing.            2    more than 5% data missing            3    not  used.            4    not used.            5    Warning flags set.            6    not used.            9    Invalid pitch angles            99   No valid data.</Description>
       <ValidMin>0</ValidMin>
       <ValidMax>99</ValidMax>
       <FillValue>255</FillValue>
@@ -658,16 +614,7 @@
     <Parameter>
       <Name>He++ Quality Flag</Name>
       <ParameterKey>He2_quality</ParameterKey>
-      <Description>A quality flag in the range 0-99 with the following values/meanings:
-            0    OK.
-            1    Some data missing.
-            2    more than 5% data missing
-            3    not  used.
-            4    not used.
-            5    Warning flags set.
-            6    not used.
-            9    Invalid pitch angles
-            99   No valid data.</Description>
+      <Description>A quality flag in the range 0-99 with the following values/meanings:            0    OK.            1    Some data missing.            2    more than 5% data missing            3    not  used.            4    not used.            5    Warning flags set.            6    not used.            9    Invalid pitch angles            99   No valid data.</Description>
       <ValidMin>0</ValidMin>
       <ValidMax>99</ValidMax>
       <FillValue>255</FillValue>
@@ -769,8 +716,7 @@
     <Parameter>
       <Name>B</Name>
       <ParameterKey>MagField</ParameterKey>
-      <Description>Average magnetic field vector in GSM coordinates at Polar (Uses
-            KH's co-ord conversion code).</Description>
+      <Description>Average magnetic field vector in GSM coordinates at Polar (Uses            KH's co-ord conversion code).</Description>
       <Caveats>3 components are GSM -X, -Y, and -Z</Caveats>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>

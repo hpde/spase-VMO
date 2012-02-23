@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/Ephemeris/PT10M</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Spacecraft Definitive Positions</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:18Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T17:07:24Z</ReleaseDate>
       <Description>Definitive Geotail spacecraft positions in various coordinate systems</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Gerald.Blackwell</PersonID>
@@ -23,8 +23,8 @@
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/def_or</URL>
-        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
         <ProductKey>GE_OR_DEF</ProductKey>
+        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

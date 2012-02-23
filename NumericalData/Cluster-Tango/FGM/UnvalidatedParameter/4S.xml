@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster II Tango Unvalidated Prime Parameter Fluxgate Magnetometer (FGM) Data</ResourceName>
       <AlternateName>Cluster 4 Unvalidated Prime Parameter FGM data</AlternateName>
-      <ReleaseDate>2012-02-23T04:07:11Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T17:07:23Z</ReleaseDate>
       <Description>This dataset contains spin resolution unvalidated prime parameter measurements of the magnetic field vector from the fluxgate magnetometer (FGM) instrument on the Cluster 2 Tango spacecraft. Unvalidated FGM data might sometimes contain artefacts such as spikes (duration ~ 1 spin), or short rotations (few spins). Very occasionally the data contain many spikes over several hours. Please contact Elizabeth Lucek (e.lucek@imperial.ac.uk) for more information regarding possible artefacts in specific intervals of data. The unvalidated prime parameter Data Set does not contain the spacecraft position data or additional range and telemetry mode information that the CAA parameter data set does contain.</Description>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>
       <Contact>
@@ -39,8 +39,8 @@
       <AccessURL>
         <Name>CDAWeb link to Cluster II Tango Unvalidated Prime Parameter Fluxgate Magnetometer data</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c4/up/fgm</URL>
-        <Description>Cluster II Tango Unvalidated Prime Parameter Fluxgate Magnetometer (FGM) data</Description>
         <ProductKey>C4_UP_FGM</ProductKey>
+        <Description>Cluster II Tango Unvalidated Prime Parameter Fluxgate Magnetometer (FGM) data</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA, Andre Balogh, Elizabeth E. Lucek</Acknowledgement>

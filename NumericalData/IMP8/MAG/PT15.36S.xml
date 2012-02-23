@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
-      <ReleaseDate>2012-02-23T04:43:21Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T16:23:06Z</ReleaseDate>
       <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. 
 Time resolution is 15.36 second.  Data are based on a 2010 data reprocessing
 by the PI team.  Parameter details below are based on the version of the data 
@@ -31,8 +31,8 @@ access to the data</Description>
       <AccessURL>
         <Name>In CDF via ftp from SPDF</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mag_15sec/</URL>
-        <Description>An ftp repository hosting 15s magnetic field data from IMP-8.</Description>
         <ProductKey>I8_15SEC_MAG</ProductKey>
+        <Description>An ftp repository hosting 15s magnetic field data from IMP-8.</Description>
       </AccessURL>
       <Format>CDF</Format>
     </AccessInformation>
@@ -43,8 +43,8 @@ access to the data</Description>
       <AccessURL>
         <Name>CDAWeb Web Service</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp</URL>
-        <Description>Subset, plot and list data via CDAWeb</Description>
         <ProductKey>I8_15SEC_MAG</ProductKey>
+        <Description>Subset, plot and list data via CDAWeb</Description>
       </AccessURL>
       <AccessURL>
         <Name>FTPBrowser</Name>
@@ -117,6 +117,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+          <Size>3</Size>
         <Element>
           <Name>Xgse</Name>
           <Qualifier>Component.I</Qualifier>
@@ -152,6 +153,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+          <Size>3</Size>
         <Element>
           <Name>Xgsm</Name>
           <Qualifier>Component.I</Qualifier>
@@ -182,8 +184,6 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
       <Cadence>PT15.36S</Cadence>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
-      <Structure>
-         </Structure>
       <ValidMin>0.0</ValidMin>
       <ValidMax>100.0</ValidMax>
       <FillValue>-1.0e+31</FillValue>
@@ -205,6 +205,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+          <Size>3</Size>
         <Element>
           <Name>Bx GSE</Name>
           <Qualifier>Component.I</Qualifier>
@@ -242,6 +243,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+          <Size>3</Size>
         <Element>
           <Name>Bx GSM</Name>
           <Qualifier>Component.I</Qualifier>
@@ -279,6 +281,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+          <Size>3</Size>
         <Element>
           <Name>Bxx GSE</Name>
           <Index>1</Index>
@@ -312,6 +315,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+          <Size>3</Size>
         <Element>
           <Name>Byx GSE</Name>
           <Index>1</Index>

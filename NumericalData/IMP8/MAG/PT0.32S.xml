@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT0.32S</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 320 msec GSE magnetic field data</ResourceName>
-      <ReleaseDate>2012-02-23T04:41:43Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T17:07:19Z</ReleaseDate>
       <Description>Data consist of 320 ms magnetic field magnitude and Cartesian components.</Description>
       <Acknowledgement>Dr. Adam Szabo</Acknowledgement>
       <Contact>
@@ -38,8 +38,8 @@
       <AccessURL>
         <Name>ASCII, CDF, and plots from CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov</URL>
-        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
         <ProductKey>I8_320MSEC_MAG</ProductKey>
+        <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>Dr. Adam.Szabo</Acknowledgement>

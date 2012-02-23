@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/UCLA-GBO/INUV/MAG/PT0.5S</ResourceID>
     <ResourceHeader>
       <ResourceName>Ground-based Vector Magnetic Field at Inuvik, NT, Canada.</ResourceName>
-      <ReleaseDate>2012-02-23T04:06:49Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T17:07:19Z</ReleaseDate>
       <Description>INUV is part of the UCLA GBO Network. This magnetometer was produced at UCLA.  It records 3-axis magnetic field measurements at 2Hz frequency.  Calibration files used are at: http://www-ssc.igpp.ucla.edu/themis_data/calib_files/</Description>
       <Acknowledgement>We acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically:S. Mende and C. T. Russell for use of the data</Acknowledgement>
       <Contact>
@@ -39,8 +39,8 @@
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/mag/inuv/</URL>
-        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
         <ProductKey>THG_L2_MAG_INUV</ProductKey>
+        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <AccessURL>
         <Name>ASCII, CDF, and plots from CDAWeb</Name>

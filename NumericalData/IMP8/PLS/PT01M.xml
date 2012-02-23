@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>IMP 8 Full Resolution Definitive MIT Interplanetary Plasma Data</ResourceName>
       <AlternateName>IMP 8 Solar Wind Plasma Faraday Cup Data</AlternateName>
-      <ReleaseDate>2012-02-23T04:06:46Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T16:16:42Z</ReleaseDate>
       <Description>The MIT Faraday cup experiment on IMP 8 measures 
 currents from solar wind ions, and from these measurements we calculate 
 the velocity, density, and temperature of the solar wind. The IMP 8 data 
@@ -238,6 +238,7 @@ of increasing energy; those eight electron windows are thus covered in a sequenc
         <CoordinateSystemName>GSE</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
+        <Size>3</Size>
         <Element>
           <Name>Xgse</Name>
           <Qualifier>Component.I</Qualifier>

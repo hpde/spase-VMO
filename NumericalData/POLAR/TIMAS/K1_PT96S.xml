@@ -5,10 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT96S</ResourceID>
     <ResourceHeader>
       <ResourceName>Polar TIMAS K1 Key Parameter data</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:13Z</ReleaseDate>
-      <Description>H+, O+, He+ and He++ number fluxes for survey purposes only
-            Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.
-            Version 0: June, 2001</Description>
+      <ReleaseDate>2012-02-23T17:07:23Z</ReleaseDate>
+      <Description>H+, O+, He+ and He++ number fluxes for survey purposes only            Reference:E.G. Shelley et al., The Toroidal Imaging Mass-Angle Spectrograph (TIMAS) for the Polar Mission, Sp. Sci. Rev, Vol 71, pp 497-530, 1995.            Version 0: June, 2001</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/W.K.Peterson</PersonID>
         <Role>PrincipalInvestigator</Role>
@@ -34,8 +32,8 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/timas_k1</URL>
-        <Description>FTP repository of Polar TIMAS key parameter data in CDF format at CDAWeb</Description>
         <ProductKey>PO_K1_TIM</ProductKey>
+        <Description>FTP repository of Polar TIMAS key parameter data in CDF format at CDAWeb</Description>
       </AccessURL>
       <Format>CDF</Format>
     </AccessInformation>
@@ -57,8 +55,7 @@
     <ObservedRegion>Earth.Magnetosphere</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Polar</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.RadiationBelt</ObservedRegion>
-    <Caveats>On December 8, 1998 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q. The data from the two lowest energy channels in this data set (430 and 585 eV respectively) should be used with caution. Prior to the breakdown, the TIMAS H0 data product provides higher time resolution data in the full energy and angular range.
-         The K1 data are averaged over time (96 seconds) and angle (nearly the full 4 pi), so narrow angular and/or temporal features are not shown. Higher temporal and angular resolution data can be interactively generated at http://lasp.colorado.edu/timas/mrdf</Caveats>
+    <Caveats>On December 8, 1998 the TIMAS instrument had a high voltage breakdown that resulted in a loss of sensitivity at energies above 700 eV/q and non linear response to ion fluxes at energies below 700 eV/q. The data from the two lowest energy channels in this data set (430 and 585 eV respectively) should be used with caution. Prior to the breakdown, the TIMAS H0 data product provides higher time resolution data in the full energy and angular range.         The K1 data are averaged over time (96 seconds) and angle (nearly the full 4 pi), so narrow angular and/or temporal features are not shown. Higher temporal and angular resolution data can be interactively generated at http://lasp.colorado.edu/timas/mrdf</Caveats>
     <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
     <Keyword>Omni-directional Number Flux</Keyword>
     <Keyword>Three dimensional Angular Response</Keyword>

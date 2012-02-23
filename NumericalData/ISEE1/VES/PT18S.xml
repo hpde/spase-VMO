@@ -5,22 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 VES Electron Data at 9s or 18s</ResourceName>
-      <ReleaseDate>2012-02-23T04:47:53Z</ReleaseDate>
-      <Description>This data set, held in CDAWeb as ISEE1_H0_FE,
-contains electron moments from the Vector Electron Spectrometer
-(VES), and spacecraft position vectors, at 9s or 18s resolution, 
-depending on spacecraft telemetry rate.  The data set
-also holds 1-min averages of the measured magnetic field
-vector.  Electron moments include density, flow velocity,
-temperature and its anisotropy, and heat flux vector.  Also given
-are the pressure tensor, its diagonalizing eigenvector, and the 
-angle between its principal axis and the ambient magnetic field 
-vector.  These parameters are based on distributions accumulated
-in 3 sec but telemetered over 9s or 18s.  Ancillary information 
-given includes the spacecraft spin period, the spacecraft 
-potential, the energy channels above this potential on which the 
-moments for this record were based, and on/off flags for the 
-Harvey and Mozer experiments.</Description>
+      <ReleaseDate>2012-02-23T17:07:24Z</ReleaseDate>
+      <Description>This data set, held in CDAWeb as ISEE1_H0_FE,contains electron moments from the Vector Electron Spectrometer(VES), and spacecraft position vectors, at 9s or 18s resolution, depending on spacecraft telemetry rate.  The data setalso holds 1-min averages of the measured magnetic fieldvector.  Electron moments include density, flow velocity,temperature and its anisotropy, and heat flux vector.  Also givenare the pressure tensor, its diagonalizing eigenvector, and the angle between its principal axis and the ambient magnetic field vector.  These parameters are based on distributions accumulatedin 3 sec but telemetered over 9s or 18s.  Ancillary information given includes the spacecraft spin period, the spacecraft potential, the energy channels above this potential on which the moments for this record were based, and on/off flags for the Harvey and Mozer experiments.</Description>
       <Acknowledgement>Please acknowledge the VES PI, Dr. Keith Ogilvie</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Keith.W.Ogilvie</PersonID>
@@ -42,8 +28,8 @@ Harvey and Mozer experiments.</Description>
       <AccessURL>
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/h0/fe/</URL>
-        <Description>For ftp retrieval of daily CDF files</Description>
         <ProductKey>ISEE1_H0_FE</ProductKey>
+        <Description>For ftp retrieval of daily CDF files</Description>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>
@@ -51,8 +37,7 @@ Harvey and Mozer experiments.</Description>
         <Units>KB</Units>
         <Per>P1D</Per>
       </DataExtent>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. Keith Ogilvie, 
-and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+      <Acknowledgement>Please acknowledge the FPE PI, Dr. Keith Ogilvie, and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </AccessInformation>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
@@ -61,12 +46,11 @@ and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
       <AccessURL>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-        <Description>For CDAWeb subset, plot and list capabilities</Description>
         <ProductKey>ISEE1_H0_FE</ProductKey>
+        <Description>For CDAWeb subset, plot and list capabilities</Description>
       </AccessURL>
       <Format>Text</Format>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. Keith Ogilvie, 
-and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+      <Acknowledgement>Please acknowledge the FPE PI, Dr. Keith Ogilvie, and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/ISEE1/VES</InstrumentID>
@@ -89,9 +73,7 @@ and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     <Parameter>
       <Name>Electron Density, 0.5s</Name>
       <ParameterKey>FN</ParameterKey>
-      <Description>This density is determined from a distribution
-obtained during 0.5s, for one 60 deg sector of one spacecraft 
-spin.</Description>
+      <Description>This density is determined from a distributionobtained during 0.5s, for one 60 deg sector of one spacecraft spin.</Description>
       <Cadence>PT18S</Cadence>
       <Units>1/cc</Units>
       <Particle>
@@ -102,8 +84,7 @@ spin.</Description>
     <Parameter>
       <Name>Electron Density, 3s</Name>
       <ParameterKey>FNOUT</ParameterKey>
-      <Description>This density is determined from a full-spin
-(3 sec) electron distribution.</Description>
+      <Description>This density is determined from a full-spin(3 sec) electron distribution.</Description>
       <Cadence>PT18S</Cadence>
       <Units>1/cc</Units>
       <Particle>
@@ -122,8 +103,7 @@ spin.</Description>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
-        <Description>The GSE X, Y, Z components of the bulk velocity 
-vector</Description>
+        <Description>The GSE X, Y, Z components of the bulk velocity vector</Description>
       </Structure>
       <Particle>
         <ParticleType>Electron</ParticleType>
@@ -142,8 +122,7 @@ vector</Description>
       </CoordinateSystem>
       <Structure>
         <Size>3 3</Size>
-        <Description>The GSE XX, XY, XZ, YX, YY, YZ, ZX, ZY, ZZ 
-elements of the pressure tensor P.  Pij = Pji.</Description>
+        <Description>The GSE XX, XY, XZ, YX, YY, YZ, ZX, ZY, ZZ elements of the pressure tensor P.  Pij = Pji.</Description>
       </Structure>
       <Particle>
         <ParticleType>Electron</ParticleType>
@@ -162,8 +141,7 @@ elements of the pressure tensor P.  Pij = Pji.</Description>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
-        <Description>The GSE X, Y, Z components of the heat flux 
-vector</Description>
+        <Description>The GSE X, Y, Z components of the heat flux vector</Description>
       </Structure>
       <Particle>
         <ParticleType>Electron</ParticleType>
@@ -174,8 +152,7 @@ vector</Description>
     <Parameter>
       <Name>Electron Temperature</Name>
       <ParameterKey>TROUT</ParameterKey>
-      <Description>Electron temperature is 1/3rd of the trace of the
-diagonalized pressure tensor</Description>
+      <Description>Electron temperature is 1/3rd of the trace of thediagonalized pressure tensor</Description>
       <Cadence>PT18S</Cadence>
       <Units>deg K</Units>
       <Particle>
@@ -186,8 +163,7 @@ diagonalized pressure tensor</Description>
     <Parameter>
       <Name>Electron Temperature Anisotropy</Name>
       <ParameterKey>ETTRT</ParameterKey>
-      <Description>Electron temperature anisotropy is 
-T-parallel/T-perpendicular.</Description>
+      <Description>Electron temperature anisotropy is T-parallel/T-perpendicular.</Description>
       <Cadence>PT9S</Cadence>
       <Particle>
         <ParticleType>Electron</ParticleType>
@@ -198,9 +174,7 @@ T-parallel/T-perpendicular.</Description>
     <Parameter>
       <Name>Normalized Gyrotropy</Name>
       <ParameterKey>DEIG</ParameterKey>
-      <Description>Normalized gyrotropy is the difference between
-perpendicular eigenvalues of the pressure tensor, divided by the
-electron temperature</Description>
+      <Description>Normalized gyrotropy is the difference betweenperpendicular eigenvalues of the pressure tensor, divided by theelectron temperature</Description>
       <Cadence>PT18S</Cadence>
       <Particle>
         <ParticleType>Electron</ParticleType>

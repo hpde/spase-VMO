@@ -6,22 +6,9 @@
     <ResourceHeader>
       <ResourceName>ARTEMIS P2 field-plasma merged data, near moon</ResourceName>
       <AlternateName>THEMIS-C field-plasma merged data, near moon</AlternateName>
-      <ReleaseDate>2012-02-23T05:56:28Z</ReleaseDate>
-      <Description>This data set contains 96s and 384s resolution
-magnetic field and plasma ion data from the THEMIS-C ESA and FGM 
-instruments during the near moon (ARTEMIS) phase of the spacecraft
-life (&gt;~September 1, 2010).  The data are at each resolution for 
-several mutually exclusive, contiguous hours during most days.  
-The field-plasma-merged data set was created at GSFC/Space Physics 
-Data Facility (SPDF) as part of the LunaSOX effort, from CDAWeb data 
-sets THC_L2_ESA (good quality, high angular resolution mode only) 
-and THC_L2_FGM.  Geocentric spacecraft and moon orbit data from 
-SSCWeb were used to add geocentric and selenocentric spacecraft
-position data to the merged data set records.</Description>
-      <Acknowledgement>Please acknowledge Vassilis Angelopoulos,
-THEMIS mission Principal Investigator, Charles.W.Carlson and 
-Karl-Heinz.Glassmeier, Co-Investigators for ESA and FGM respectively,
-and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
+      <ReleaseDate>2012-02-23T17:07:22Z</ReleaseDate>
+      <Description>This data set contains 96s and 384s resolutionmagnetic field and plasma ion data from the THEMIS-C ESA and FGM instruments during the near moon (ARTEMIS) phase of the spacecraftlife (&gt;~September 1, 2010).  The data are at each resolution for several mutually exclusive, contiguous hours during most days.  The field-plasma-merged data set was created at GSFC/Space Physics Data Facility (SPDF) as part of the LunaSOX effort, from CDAWeb data sets THC_L2_ESA (good quality, high angular resolution mode only) and THC_L2_FGM.  Geocentric spacecraft and moon orbit data from SSCWeb were used to add geocentric and selenocentric spacecraftposition data to the merged data set records.</Description>
+      <Acknowledgement>Please acknowledge Vassilis Angelopoulos,THEMIS mission Principal Investigator, Charles.W.Carlson and Karl-Heinz.Glassmeier, Co-Investigators for ESA and FGM respectively,and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
         <Role>PrincipalInvestigator</Role>
@@ -55,8 +42,8 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
       <AccessURL>
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/merged/</URL>
-        <Description>For ftp retrieval of monthly CDF files</Description>
         <ProductKey>THC_L2_MERGED</ProductKey>
+        <Description>For ftp retrieval of monthly CDF files</Description>
       </AccessURL>
       <AccessURL>
         <Name>LunaSOX plots, lists</Name>
@@ -66,21 +53,16 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
       <AccessURL>
         <Name>LunaSOX parameter distributions, statistics</Name>
         <URL>http://ftpbrowser.gsfc.nasa.gov/themisc_mrg_d.html</URL>
-        <Description>Interface for parameter value occurrence frequency
-distributions and statistics (means, medians, standard deviations,
-with filtering</Description>
+        <Description>Interface for parameter value occurrence frequencydistributions and statistics (means, medians, standard deviations,with filtering</Description>
       </AccessURL>
       <AccessURL>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-        <Description>For CDAWeb subset plot and list capabilities</Description>
         <ProductKey>THC_L2_MERGED</ProductKey>
+        <Description>For CDAWeb subset plot and list capabilities</Description>
       </AccessURL>
       <Format>Text</Format>
-      <Acknowledgement>Please acknowledge Vassilis Angelopoulos,
-THEMIS mission Principal Investigator, Charles.W.Carlson and 
-Karl-Heinz.Glassmeier, Co-Investigators for ESA and FGM respectively,
-and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
+      <Acknowledgement>Please acknowledge Vassilis Angelopoulos,THEMIS mission Principal Investigator, Charles.W.Carlson and Karl-Heinz.Glassmeier, Co-Investigators for ESA and FGM respectively,and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/THEMIS/C/ESA</InstrumentID>
@@ -149,8 +131,7 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
     <Parameter>
       <Name>Magnetic Field Cartesian Components</Name>
       <ParameterKey>Column_7-9</ParameterKey>
-      <Description>Magnetic field GSE Cartesian components, 
-as averaged over 3 seconds every 96 or 384 seconds</Description>
+      <Description>Magnetic field GSE Cartesian components, as averaged over 3 seconds every 96 or 384 seconds</Description>
       <Cadence>PT96S</Cadence>
       <Units>nT</Units>
       <CoordinateSystem>
@@ -227,8 +208,7 @@ as averaged over 3 seconds every 96 or 384 seconds</Description>
     <Parameter>
       <Name>Plasma Flow Velocity</Name>
       <ParameterKey>Column_13-15</ParameterKey>
-      <Description>Plasma flow velocity, GSE Cartesian components, 
-as determined over 3 seconds</Description>
+      <Description>Plasma flow velocity, GSE Cartesian components, as determined over 3 seconds</Description>
       <Cadence>PT96S</Cadence>
       <Units>km/s</Units>
       <CoordinateSystem>
@@ -267,8 +247,7 @@ as determined over 3 seconds</Description>
     <Parameter>
       <Name>Geocentric Spacecraft Position</Name>
       <ParameterKey>Column_16-18</ParameterKey>
-      <Description>Geocentric spacecraft position, GSE Cartesian
-components</Description>
+      <Description>Geocentric spacecraft position, GSE Cartesiancomponents</Description>
       <Cadence>PT96S</Cadence>
       <Units>Re</Units>
       <CoordinateSystem>
@@ -277,8 +256,7 @@ components</Description>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
-        <Description>Cartesian components of geocentric position
-vector</Description>
+        <Description>Cartesian components of geocentric positionvector</Description>
         <Element>
           <Name>Rx</Name>
           <Qualifier>Component.I</Qualifier>
@@ -306,8 +284,7 @@ vector</Description>
     <Parameter>
       <Name>Selenocentric Spacecraft Position</Name>
       <ParameterKey>Column_19-21</ParameterKey>
-      <Description>Selenocentric spacecraft position, GSE Cartesian
-components, units of lunar radii</Description>
+      <Description>Selenocentric spacecraft position, GSE Cartesiancomponents, units of lunar radii</Description>
       <Cadence>PT96S</Cadence>
       <Units>Rm</Units>
       <CoordinateSystem>
@@ -316,8 +293,7 @@ components, units of lunar radii</Description>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
-        <Description>Cartesian components of selenocentric position
-vector</Description>
+        <Description>Cartesian components of selenocentric positionvector</Description>
         <Element>
           <Name>Rx</Name>
           <Qualifier>Component.I</Qualifier>

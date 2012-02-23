@@ -5,16 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/ISEE1/FPE/PT24S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE 1 Solar Wind Analyzer 24-sec Plasma Parameters</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:19Z</ReleaseDate>
-      <Description>This data set contains 24s (fast data rate) or 48s (slow
-rate) solar wind ion plasma parameters obtained during 1977-1983 solar wind 
-seasons (~July - ~January) when the spacecraft's local time of apogee was on 
-the Earth's dayside.  Plasma parameters include ion density, flow speed, flow
-longitude and latitude angles, perpendicular (minimum) and parallel (maximum)
-temperatures, and alpha-to-proton density ratio.  Data are available through
-the CDAWeb interface and, as daily files via ftp, in ASCII from nssdcftp and 
-in CDF from CDAWeb's ftp area.  The data are from LANL's Cross-Fan Solar Wind 
-Ion Experiment, a companion to LANL's Fast Plasma Analyzer (FPE).</Description>
+      <ReleaseDate>2012-02-23T17:07:24Z</ReleaseDate>
+      <Description>This data set contains 24s (fast data rate) or 48s (slowrate) solar wind ion plasma parameters obtained during 1977-1983 solar wind seasons (~July - ~January) when the spacecraft's local time of apogee was on the Earth's dayside.  Plasma parameters include ion density, flow speed, flowlongitude and latitude angles, perpendicular (minimum) and parallel (maximum)temperatures, and alpha-to-proton density ratio.  Data are available throughthe CDAWeb interface and, as daily files via ftp, in ASCII from nssdcftp and in CDF from CDAWeb's ftp area.  The data are from LANL's Cross-Fan Solar Wind Ion Experiment, a companion to LANL's Fast Plasma Analyzer (FPE).</Description>
       <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/John.T.Gosling</PersonID>
@@ -32,8 +24,8 @@ Ion Experiment, a companion to LANL's Fast Plasma Analyzer (FPE).</Description>
       <AccessURL>
         <Name>SPDF CDF ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/24or48s_fpe/</URL>
-        <Description>For ftp retrieval of daily CDF files</Description>
         <ProductKey>ISEE1_H2_FPE</ProductKey>
+        <Description>For ftp retrieval of daily CDF files</Description>
       </AccessURL>
       <Format>CDF</Format>
       <DataExtent>
@@ -41,8 +33,7 @@ Ion Experiment, a companion to LANL's Fast Plasma Analyzer (FPE).</Description>
         <Units>KB</Units>
         <Per>P1D</Per>
       </DataExtent>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling and
-the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling andthe Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </AccessInformation>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
@@ -64,8 +55,7 @@ the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
         <Units>KB</Units>
         <Per>P1D</Per>
       </DataExtent>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling and
-the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling andthe Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/ISEE1/FPE</InstrumentID>

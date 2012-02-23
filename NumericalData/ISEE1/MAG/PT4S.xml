@@ -5,14 +5,9 @@
     <ResourceID>spase://VMO/NumericalData/ISEE1/MAG/PT4S</ResourceID>
     <ResourceHeader>
       <ResourceName>ISEE-1 magnetometer 4-sec data</ResourceName>
-      <ReleaseDate>2012-02-23T04:47:22Z</ReleaseDate>
-      <Description>4-sec vector magnetic field values recorded by the NASA ISEE-1 
-satellite, in spacecraft coordinates (close to GSE), available from UCLA and CDAWeb 
-value-added interfaces and, via ftp, in binary from UCLA and in CDF from 
-CDAWeb. (This descriptor updated, 6/20110, by J.King, to reflect CDAWeb accessibility
-and to insert CDAWeb parameter keys.)</Description>
-      <Acknowledgement>UCLA-IGPP ISEE Magnetometer Team, and the source
-used for accessing data.</Acknowledgement>
+      <ReleaseDate>2012-02-23T17:07:24Z</ReleaseDate>
+      <Description>4-sec vector magnetic field values recorded by the NASA ISEE-1 satellite, in spacecraft coordinates (close to GSE), available from UCLA and CDAWeb value-added interfaces and, via ftp, in binary from UCLA and in CDF from CDAWeb. (This descriptor updated, 6/20110, by J.King, to reflect CDAWeb accessibilityand to insert CDAWeb parameter keys.)</Description>
+      <Acknowledgement>UCLA-IGPP ISEE Magnetometer Team, and the sourceused for accessing data.</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Robert.J.Strangeway</PersonID>
         <Role>DataProducer</Role>
@@ -33,8 +28,8 @@ used for accessing data.</Acknowledgement>
       <AccessURL>
         <Name>CDAWeb's ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/4sec_mfi/</URL>
-        <Description>ftp access to CDF files</Description>
         <ProductKey>ISEE1_4SEC_MFI</ProductKey>
+        <Description>ftp access to CDF files</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
@@ -67,8 +62,8 @@ used for accessing data.</Acknowledgement>
       <AccessURL>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys</URL>
-        <Description>Plots, lists and files from CDAWeb</Description>
         <ProductKey>ISEE1_4SEC_MFI</ProductKey>
+        <Description>Plots, lists and files from CDAWeb</Description>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>

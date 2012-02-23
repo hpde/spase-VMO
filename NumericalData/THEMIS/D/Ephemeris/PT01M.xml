@@ -5,24 +5,8 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/D/Ephemeris/PT01M</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-D Level 1 Probe State Data</ResourceName>
-      <ReleaseDate>2012-02-23T04:06:48Z</ReleaseDate>
-      <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:
-
-               * probe position and velocity in GEI, GSE, and GSM coordinates;
-               * flags to indicate regions of interest and maneuver status;
-               * RA and declination of spin axis;
-               * spin period and spin phase;
-               * spin model parameters for high-precision interpolation of spin phase between one-minute data points.
-
-               Version number indicates data source as follows:
-
-               * V00: predicted ephemeris and attitude, no spin period or spin phase;
-               * V01: predicted ephemeris and attitude, spin period and spin phase derived from probe telemetry;
-               * V02: predicted attitude, definitive ephemeris from magnetometer and Doppler tracking data;
-               * V03: corrected attitude and spin phase derived from fully calibrated magnetometer data. (added science attitude determination using perigee data post-processing). 
-
-               Produced by Mission Ops, Science Ops and Science Team.
-           </Description>
+      <ReleaseDate>2012-02-23T17:07:19Z</ReleaseDate>
+      <Description>The L1 STATE files contain the following data, sampled at one-minute intervals:               * probe position and velocity in GEI, GSE, and GSM coordinates;               * flags to indicate regions of interest and maneuver status;               * RA and declination of spin axis;               * spin period and spin phase;               * spin model parameters for high-precision interpolation of spin phase between one-minute data points.               Version number indicates data source as follows:               * V00: predicted ephemeris and attitude, no spin period or spin phase;               * V01: predicted ephemeris and attitude, spin period and spin phase derived from probe telemetry;               * V02: predicted attitude, definitive ephemeris from magnetometer and Doppler tracking data;               * V03: corrected attitude and spin phase derived from fully calibrated magnetometer data. (added science attitude determination using perigee data post-processing).                Produced by Mission Ops, Science Ops and Science Team.           </Description>
       <Acknowledgement>NASA Contract NAS5-02099</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
@@ -51,8 +35,8 @@
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thd/l1/state</URL>
-        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
         <ProductKey>THD_L1_STATE</ProductKey>
+        <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <AccessURL>
         <Name>CDAWeb</Name>
@@ -166,23 +150,7 @@
     <Parameter>
       <Name>THEMIS-D Maneuver Flag</Name>
       <ParameterKey>thd_man</ParameterKey>
-      <Description>THEMIS-D maneuver status code (XYYZZZ). Values indicate if/what maneuver is being performed.  Spacecraft data will be unreliable during maneuvers.
-
-      * Unpowered flight (Coast):
-          - X=0, Y=00, Z=000             
-      * Sequence Code X:
-          - 0= No Segmentation
-          - 1= Segmented Maneuver
-      * Type Code YY:
-          - 0= No Maneuver
-          - 1= Axial-thrust Maneuver
-          - 2= Side-thrust Maneuver
-          - 3= Beta-thrust Maneuver
-          - 4= Attitude Precession
-          - 5= Spin-Rate Change
-      * Sequence Number ZZZ:
-          - 001-999= Maneuver Sequence Number
-      </Description>
+      <Description>THEMIS-D maneuver status code (XYYZZZ). Values indicate if/what maneuver is being performed.  Spacecraft data will be unreliable during maneuvers.      * Unpowered flight (Coast):          - X=0, Y=00, Z=000                   * Sequence Code X:          - 0= No Segmentation          - 1= Segmented Maneuver      * Type Code YY:          - 0= No Maneuver          - 1= Axial-thrust Maneuver          - 2= Side-thrust Maneuver          - 3= Beta-thrust Maneuver          - 4= Attitude Precession          - 5= Spin-Rate Change      * Sequence Number ZZZ:          - 001-999= Maneuver Sequence Number      </Description>
       <ValidMin>0</ValidMin>
       <ValidMax>4294967295</ValidMax>
       <FillValue>4294967295</FillValue>
@@ -193,29 +161,7 @@
     <Parameter>
       <Name>THEMIS-D RoI</Name>
       <ParameterKey>thd_roi</ParameterKey>
-      <Description>Region of interest. Different bits of this parameter give a general indication of the region thdt the spacecraft is in.  The first 18 bits are significant.  An active bit indicates the spacecraft is in a given region.  Multiple bits may be set simultaneously. The value of the bit is in parentheses in the following table.
-
-          +---------------------------------------------------+
-          | Bit 1(1)      | Earth Shadow                      |
-          | Bit 2(2)      | Lunar Shadow                      |
-          | Bit 3(4)      | Atmospheric absorbtion zone       |
-          | Bit 4(8)      | South Atlantic Anomaly            |
-          | Bit 5(16)     | Northern Auroral Zone             |
-          | Bit 6(32)     | Southern Auroral Zone             |
-          | Bit 7(64)     | Perigee Passage                   |
-          | Bit 8(128)    | Inner &amp; Outer Radiation Belts |
-          | Bit 9(256)    | Deep Plasma Sphere                |
-          | Bit 10(512)   | Foreshock Solar Wind              |
-          | Bit 11(1024)  | Solar Wind Beam                   |
-          | Bit 12(2048)  | High Magnetic Field               |
-          | Bit 13(4096)  | Average Plasma Sheet              |
-          | Bit 14(8192)  | Bowshock Crossing                 |
-          | Bit 15(16384) | Magnetopause Crossing             |
-          | Bit 16(32768) | Ground Based Observatories        |
-          | Bit 17(65536) | 2-Day Conjunctions                |
-          | Bit 18(131072)| 4-Day Conjunctions                |
-          +---------------------------------------------------+
-      </Description>
+      <Description>Region of interest. Different bits of this parameter give a general indication of the region thdt the spacecraft is in.  The first 18 bits are significant.  An active bit indicates the spacecraft is in a given region.  Multiple bits may be set simultaneously. The value of the bit is in parentheses in the following table.          +---------------------------------------------------+          | Bit 1(1)      | Earth Shadow                      |          | Bit 2(2)      | Lunar Shadow                      |          | Bit 3(4)      | Atmospheric absorbtion zone       |          | Bit 4(8)      | South Atlantic Anomaly            |          | Bit 5(16)     | Northern Auroral Zone             |          | Bit 6(32)     | Southern Auroral Zone             |          | Bit 7(64)     | Perigee Passage                   |          | Bit 8(128)    | Inner &amp; Outer Radiation Belts |          | Bit 9(256)    | Deep Plasma Sphere                |          | Bit 10(512)   | Foreshock Solar Wind              |          | Bit 11(1024)  | Solar Wind Beam                   |          | Bit 12(2048)  | High Magnetic Field               |          | Bit 13(4096)  | Average Plasma Sheet              |          | Bit 14(8192)  | Bowshock Crossing                 |          | Bit 15(16384) | Magnetopause Crossing             |          | Bit 16(32768) | Ground Based Observatories        |          | Bit 17(65536) | 2-Day Conjunctions                |          | Bit 18(131072)| 4-Day Conjunctions                |          +---------------------------------------------------+      </Description>
       <ValidMin>0</ValidMin>
       <ValidMax>4294967295</ValidMax>
       <FillValue>4294967295</FillValue>

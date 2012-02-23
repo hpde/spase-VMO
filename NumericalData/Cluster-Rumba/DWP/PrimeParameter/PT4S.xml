@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster Rumba Digital Wave Processor (DWP) prime parameter data at about 4 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Rumba DWP data</AlternateName>
-      <ReleaseDate>2012-02-23T04:07:08Z</ReleaseDate>
+      <ReleaseDate>2012-02-23T17:07:23Z</ReleaseDate>
       <Description>Cluster Rumba Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
@@ -86,8 +86,8 @@
       <AccessURL>
         <Name>CDAWeb's ftp area</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/dwp/</URL>
-        <Description>ftp access to Cluster Rumba Digital Wave Processor (DWP) CDF files.</Description>
         <ProductKey>C1_PP_DWP</ProductKey>
+        <Description>ftp access to Cluster Rumba Digital Wave Processor (DWP) CDF files.</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
