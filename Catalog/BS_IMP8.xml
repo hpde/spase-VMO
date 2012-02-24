@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd">
-  <Version>1.3.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <Catalog>
     <ResourceID>spase://VMO/Catalog/BS_IMP8</ResourceID>
     <ResourceHeader>
@@ -38,7 +38,7 @@
       <StopDate>2000-06-08T16:45:00Z</StopDate>
     </TimeSpan>
     <Caveats>The times are estimated to a minute (truncated).</Caveats>
-    <PhysicalParameter>
+    <Parameter>
       <Name>Time</Name>
       <ParameterKey>Fields 1-4</ParameterKey>
       <Description>Time of the bow shock crossing. In general, the minute given is that in/during which the crossing is observed. For "extended" crossings, the minute given is that in which the peak of the shock overshoot occurs. For records recording multiple shock crossings, the minute is the minute of the first shock crossing.
@@ -70,40 +70,40 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Orbit number</Name>
       <ParameterKey>Field 5</ParameterKey>
       <Description>Orbit number per IMP project</Description>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Orbit leg</Name>
       <ParameterKey>Field 6</ParameterKey>
       <Description>0 for solarwindward orbit leg, 1 for magnetotailward orbit letg</Description>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Sequence number</Name>
       <ParameterKey>Field 7</ParameterKey>
       <Description>Sequence number of the crossing for this orbit leg (1, 2, ...N; N will be an odd number except for Transdr=2 cases). For multiple-shock records (Flag2 = 6 or 7), this number increments by one for unresolvable shock periods (Flag2=6) or by the number of resolvable shocks plus the number of unresolvable-shock subintervals.</Description>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Transdr</Name>
       <ParameterKey>Field 8</ParameterKey>
       <Description>Direction of crossing transition: 0 - spacecraft passing into solar wind, 1 - spacecraft passing into magnetosheath, 2 - non-resolvable shock(s), same domain (solar wind or magnetosheath) on both sides. See Timespan for duration of the crossing.</Description>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Flag1</Name>
       <ParameterKey>Field 9</ParameterKey>
       <Description>Observation flag. Flag1 has the following values: 
@@ -117,8 +117,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Flag2</Name>
       <ParameterKey>Field 10</ParameterKey>
       <Description>Shock cleanliness flag. Flag 2 has the following values.  
@@ -134,8 +134,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Flag3</Name>
       <ParameterKey>Field 11</ParameterKey>
       <Description>Upstream cleanliness flag. Flag 3 has the following values:
@@ -145,8 +145,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft position in GSE</Name>
       <ParameterKey>Field 12-14</ParameterKey>
       <Description>Spacecraft positition in GSE.</Description>
@@ -160,19 +160,19 @@
         <Size>3</Size>
         <Element>
           <Name>Xgse</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Field 12</ParameterKey>
         </Element>
         <Element>
           <Name>Ygse</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Field 13</ParameterKey>
         </Element>
         <Element>
           <Name>Zgse</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Field 14</ParameterKey>
         </Element>
@@ -181,8 +181,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Spacecraft position in GSM</Name>
       <ParameterKey>Field 15-16</ParameterKey>
       <Description>Spacecraft positition in GSM (components Y and Z only).</Description>
@@ -196,13 +196,13 @@
         <Size>2</Size>
         <Element>
           <Name>Ygsm</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>1</Index>
           <ParameterKey>Field 15</ParameterKey>
         </Element>
         <Element>
           <Name>Zgsm</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>2</Index>
           <ParameterKey>Field 16</ParameterKey>
         </Element>
@@ -211,8 +211,8 @@
       <Support>
         <SupportQuantity>Positional</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>B GSE</Name>
       <ParameterKey>Field 17-19</ParameterKey>
       <Description>Upstream magnetic field components in GSE</Description>
@@ -226,33 +226,31 @@
         <Size>3</Size>
         <Element>
           <Name>Bx GSE</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Field 17</ParameterKey>
         </Element>
         <Element>
           <Name>By GSE</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Field 18</ParameterKey>
         </Element>
         <Element>
           <Name>Bz GSE</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Field 19</ParameterKey>
         </Element>
       </Structure>
       <FillValue>999.9</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Vector</FieldQualifier>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Vector</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>B GSM</Name>
       <ParameterKey>Field 20-21</ParameterKey>
       <Description>Upstream magnetic field components Y and Z in GSM</Description>
@@ -266,28 +264,26 @@
         <Size>2</Size>
         <Element>
           <Name>By GSE</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>1</Index>
           <ParameterKey>Field 20</ParameterKey>
         </Element>
         <Element>
           <Name>Bz GSE</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>2</Index>
           <ParameterKey>Field 21</ParameterKey>
         </Element>
       </Structure>
       <FillValue>999.9</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Y</FieldQualifier>
-          <FieldQualifier>Component.Z</FieldQualifier>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Component.J</Qualifier>
+        <Qualifier>Component.K</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>V GSE</Name>
       <ParameterKey>Field 22-24</ParameterKey>
       <Description>Solar wind velocity upstream of the shock.</Description>
@@ -302,77 +298,69 @@
         <Size>3</Size>
         <Element>
           <Name>-Vx GSE</Name>
-          <Component>X</Component>
+          <Qualifier>Component.I</Qualifier>
           <Index>1</Index>
           <ParameterKey>Field 22</ParameterKey>
         </Element>
         <Element>
           <Name>-Vy GSE</Name>
-          <Component>Y</Component>
+          <Qualifier>Component.J</Qualifier>
           <Index>2</Index>
           <ParameterKey>Field 23</ParameterKey>
         </Element>
         <Element>
           <Name>-Vz GSE</Name>
-          <Component>Z</Component>
+          <Qualifier>Component.K</Qualifier>
           <Index>3</Index>
           <ParameterKey>Field 24</ParameterKey>
         </Element>
       </Structure>
       <FillValue>9999.9</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Velocity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Velocity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Nu</Name>
       <ParameterKey>Field 25</ParameterKey>
       <Description>Upstream solar wind proton density</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1e3&gt;m^-3</UnitsConversion>
       <FillValue>999.9</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Nd</Name>
       <ParameterKey>Field 26</ParameterKey>
       <Description>Downstream (magnetosheath) proton density</Description>
       <Units>cm^-3</Units>
       <UnitsConversion>1e3&gt;m^-3</UnitsConversion>
       <FillValue>999.9</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>NumberDensity</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>NumberDensity</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>T</Name>
       <ParameterKey>Field 27</ParameterKey>
       <Description>Upstream proton temperature</Description>
       <Units>K</Units>
       <FillValue>9999999</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Temperature</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Temperature</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Time span</Name>
       <ParameterKey>Field 28</ParameterKey>
       <Description>The time span gives duration, in minutes, of gaps for inferred crossings (flag 1 = 4 cases) or duration of periods of multiple unresolved or resolved shocks (flag 2 = 6 or 7 cases).  For other cases, the time span gives the shock duration. In the majority of cases wherein the shock occurs in a fraction of minute, this field has value 0.</Description>
@@ -382,155 +370,125 @@
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>Btot</Name>
       <ParameterKey>Field 29</ParameterKey>
       <Description>Upstream magnetic field intensity calculated from magnetic field components.</Description>
       <Units>nT</Units>
       <UnitsConversion>1e-9&gt;T</UnitsConversion>
       <FillValue>999.9</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Magnitude</FieldQualifier>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>Magnitude</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>Vtot</Name>
       <ParameterKey>Field 30</ParameterKey>
       <Description>Upstream solar wind proton flow speed</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <FillValue>9999.9</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>FlowSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>FlowSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Vs</Name>
       <ParameterKey>Field 31</ParameterKey>
       <Description>Upstream sound speed</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <FillValue>9999.9</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>SoundSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>SoundSpeed</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Va</Name>
       <ParameterKey>Field 32</ParameterKey>
       <Description>Upstream Alfven speed</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <FillValue>9999.9</FillValue>
-      <Measured>
-        <!-- Alfven speed is a mixed parameter so this does not quite fit -->
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>AlfvenSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <Qualifier>Average</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Vms</Name>
       <ParameterKey>Field 33</ParameterKey>
       <Description>Upstream magnetosonic speed</Description>
       <Units>km/s</Units>
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <FillValue>9999.9</FillValue>
-      <Measured>
-        <!-- Magnetosonic speed is a mixed parameter so this does not quite fit -->
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>MagnetosonicSpeed</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <Qualifier>Average</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Ms</Name>
       <ParameterKey>Field 34</ParameterKey>
       <Description>Upstream sonic Mach number</Description>
       <FillValue>99.9</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>SonicMachNumber</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>SonicMachNumber</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Ma</Name>
       <ParameterKey>Field 34</ParameterKey>
       <Description>Upstream Alfven Mach number</Description>
       <FillValue>999.9</FillValue>
-      <Measured>
-        <!-- Again it is a mixed parameter and calculated -->
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>AlfvenMachNumber</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <Qualifier>Average</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Mms</Name>
       <ParameterKey>Field 35</ParameterKey>
       <Description>Upstream magnetosonic Mach number</Description>
       <FillValue>99.9</FillValue>
-      <Measured>
-        <!-- Again it is a mixed parameter and calculated -->
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>MagnetosonicMachNumber</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <Qualifier>Average</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Beta</Name>
       <ParameterKey>Field 36</ParameterKey>
       <Description>Upstream plasma beta</Description>
       <FillValue>-999.99</FillValue>
-      <Measured>
-        <!-- Again it is a mixed parameter and calculated -->
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>PlasmaBeta</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Support>
+        <Qualifier>Average</Qualifier>
+        <SupportQuantity>Other</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
       <Name>Psw</Name>
       <ParameterKey>Field 37</ParameterKey>
       <Description>Upstream solar wind flow pressure</Description>
       <Units>nPa</Units>
       <UnitsConversion>1e-9&gt;Pa</UnitsConversion>
       <FillValue>99.99</FillValue>
-      <Measured>
-        <Particle>
-          <ParticleType>Proton</ParticleType>
-          <ParticleQualifier>Average</ParticleQualifier>
-          <ParticleQuantity>Pressure</ParticleQuantity>
-        </Particle>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Particle>
+        <ParticleType>Proton</ParticleType>
+        <Qualifier>Average</Qualifier>
+        <ParticleQuantity>Pressure</ParticleQuantity>
+      </Particle>
+    </Parameter>
+    <Parameter>
       <Name>Str</Name>
       <ParameterKey>Field 38</ParameterKey>
       <Description>Shock strength: downstream to upstream density ratio (Nd/Nu).</Description>
@@ -538,8 +496,8 @@
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>
-    </PhysicalParameter>
-    <PhysicalParameter>
+    </Parameter>
+    <Parameter>
       <Name>IMF cone</Name>
       <ParameterKey>Field 39</ParameterKey>
       <Description>IMF cone angle = acos(|Bx|/Bt)</Description>
@@ -549,15 +507,13 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <FillValue>999</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Theta</FieldQualifier>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
-    <PhysicalParameter>
+      <Field>
+        <Qualifier>DirectionAngle</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
+    <Parameter>
       <Name>IMF clock</Name>
       <ParameterKey>Field 40</ParameterKey>
       <Description>IMF clock angle = atan(|By GSM|/Bz GSM)</Description>
@@ -567,13 +523,11 @@
         <CoordinateSystemName>GSM</CoordinateSystemName>
       </CoordinateSystem>
       <FillValue>999</FillValue>
-      <Measured>
-        <Field>
-          <FieldQualifier>Component.Phi</FieldQualifier>
-          <FieldQualifier>Average</FieldQualifier>
-          <FieldQuantity>Magnetic</FieldQuantity>
-        </Field>
-      </Measured>
-    </PhysicalParameter>
+      <Field>
+        <Qualifier>DirectionAngle</Qualifier>
+        <Qualifier>Average</Qualifier>
+        <FieldQuantity>Magnetic</FieldQuantity>
+      </Field>
+    </Parameter>
   </Catalog>
 </Spase>
