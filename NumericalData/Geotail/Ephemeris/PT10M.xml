@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/Ephemeris/PT10M</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Spacecraft Definitive Positions</ResourceName>
-      <ReleaseDate>2012-02-23T17:07:24Z</ReleaseDate>
+      <ReleaseDate>2012-02-24T19:27:29Z</ReleaseDate>
       <Description>Definitive Geotail spacecraft positions in various coordinate systems</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Gerald.Blackwell</PersonID>
@@ -98,6 +98,7 @@
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -138,6 +139,7 @@
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -343,6 +345,7 @@
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>GEI</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -383,6 +386,7 @@
       <UnitsConversion>1e3&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>HEC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
@@ -423,6 +427,7 @@
       <UnitsConversion>1e3&gt;m/s</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+        <CoordinateSystemName>HEC</CoordinateSystemName>
       </CoordinateSystem>
       <Structure>
         <Size>3</Size>
