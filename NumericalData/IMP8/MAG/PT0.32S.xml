@@ -44,6 +44,17 @@
       <Format>Text</Format>
       <Acknowledgement>Dr. Adam.Szabo</Acknowledgement>
     </AccessInformation>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>in CDF via ftp from SPDF</Name>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mag_320msec</URL>
+      </AccessURL>
+      <Format>CDF</Format>
+      <Acknowledgement>Dr. Adam.Szabo and the CDAWeb Team</Acknowledgement>
+    </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/IMP8/MAG</InstrumentID>
     <MeasurementType>MagneticField</MeasurementType>
