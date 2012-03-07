@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Escudero Ground Magnetic Field Data 1s Data.</ResourceName>
          <AlternateName>Escudero Ground Magnetic Field Data 1s Data.</AlternateName>
-         <ReleaseDate>2010-03-23T19:03:48Z</ReleaseDate>
+         <ReleaseDate>2012-03-07T05:32:33Z</ReleaseDate>
          <Description>Ground Magnetic Field Data data from Escudero at 1s time resolution.</Description>
          <Acknowledgement>Please acknowledge Eftyhia Zesta, Department of Atmospheric Sciences (7127 Math Sciences Building, University of California, Los Angeles, Box 951565, CA, 90095-1565 USA) for use of data from the Escudero Magnetometer instrument.</Acknowledgement>
          <Contact>
@@ -54,9 +54,6 @@
             <URL>http://samba.atmos.ucla.edu/escudero.html</URL>
             <Description>The Escudero information web site.</Description>
          </InformationURL>
-         <Association>
-            <AssociationID>spase://SMWG/Observatory/SAMBA/SAMBA.Logical</AssociationID>
-         </Association>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>

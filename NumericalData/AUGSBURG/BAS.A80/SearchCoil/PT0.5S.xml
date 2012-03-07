@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>BAS A80 Ground Magnetic Field Data 0.5s Data.</ResourceName>
       <AlternateName>BAS A80 Ground Magnetic Field Data 0.5s Data.</AlternateName>
-      <ReleaseDate>2010-03-23T16:00:49Z</ReleaseDate>
+      <ReleaseDate>2012-03-07T05:31:39Z</ReleaseDate>
       <Description>Ground Magnetic Field Data data from BAS A80 at 0.5s time resolution.</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Mark.J.Engebretson</PersonID>
@@ -21,9 +21,6 @@
         <URL>http://space.augsburg.edu/ago/index.html</URL>
         <Description>The web site lists links to AGO data products.</Description>
       </InformationURL>
-      <Association>
-        <AssociationID>spase://SMWG/Observatory/AUGSBURG/AUGSBURG.Logical</AssociationID>
-      </Association>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>

@@ -6,7 +6,7 @@
       <ResourceHeader>
          <ResourceName>Millstone Hill Ground Magnetic Field Data 0.5s Data.</ResourceName>
          <AlternateName>Millstone Hill Ground Magnetic Field Data 0.5s Data.</AlternateName>
-         <ReleaseDate>2010-03-23T20:07:26Z</ReleaseDate>
+         <ReleaseDate>2012-03-07T05:36:22Z</ReleaseDate>
          <Description>Ground Magnetic Field Data data from Millstone Hill at 0.5s time resolution.</Description>
          <Acknowledgement>Please acknowledge Mark Moldwin, Institute of Geophysics and Planetary Physics and the Department of Earth and Space Sciences (University of California, Los Angeles, Los Angeles, CA 90095-1567) for use of data from the Millstone Hill Magnetometer instrument.</Acknowledgement>
          <Contact>
@@ -22,9 +22,6 @@
             <URL>http://measure.igpp.ucla.edu/moldwin</URL>
             <Description>The Temporary web site for information concerning data from the MEASURE array Millstone Hill magnetometer.</Description>
          </InformationURL>
-         <Association>
-            <AssociationID>spase://SMWG/Observatory/MEASURE/MEASURE.Logical</AssociationID>
-         </Association>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/UCLA/VMO</RepositoryID>
