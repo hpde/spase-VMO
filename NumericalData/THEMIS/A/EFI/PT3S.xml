@@ -263,7 +263,7 @@
       </Field>
     </Parameter>
     <Parameter>
-      <Name>Fast-Survey Electric Field Vector (GSE)</Name>
+      <Name>Fast-Survey Electric Field Vector (GSM)</Name>
       <ParameterKey>tha_eff_dot0_gsm</ParameterKey>
       <Description>Fast-Survey electric field vector (1/8 sec time resolution) in GSM coordinates, using E dot B=0.</Description>
       <Caveats/>
