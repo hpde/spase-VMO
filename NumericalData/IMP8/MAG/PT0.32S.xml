@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT0.32S</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 320 msec GSE magnetic field data</ResourceName>
-      <ReleaseDate>2012-02-23T17:07:19Z</ReleaseDate>
+      <ReleaseDate>2012-03-07T05:24:52Z</ReleaseDate>
       <Description>Data consist of 320 ms magnetic field magnitude and Cartesian components.</Description>
       <Acknowledgement>Dr. Adam Szabo</Acknowledgement>
       <Contact>

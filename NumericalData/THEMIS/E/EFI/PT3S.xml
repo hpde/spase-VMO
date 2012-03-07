@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/THEMIS/E/EFI/PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>THEMIS-E: Electric Field 3s and 1/8s Data</ResourceName>
-      <ReleaseDate>2010-03-30T15:26:47Z</ReleaseDate>
+      <ReleaseDate>2012-03-07T05:24:52Z</ReleaseDate>
       <Description>THEMIS-E Electric Field Instrument (EFI) electric field measurements. This Level 2 product is a 3D estimate of E_perp derived from the spin plane E-field measurements assuming E dot B = 0, using relevant FGM (Flux-Gate Magnetometer) data.
 
           Includes spin-averaged, and Fast-survey field data. Spin-averaged (EFS_DOT0) data has approximately 3-second time resolution. Fast-survey (EFF_DOT0) data has 1/8-second time resolution.</Description>
