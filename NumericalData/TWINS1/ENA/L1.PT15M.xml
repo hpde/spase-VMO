@@ -2,10 +2,10 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/TWINS2/Imager/L1.PT15M</ResourceID>
+    <ResourceID>spase://VMO/NumericalData/TWINS1/ENA/L1.PT15M</ResourceID>
     <ResourceHeader>
-      <ResourceName>TWINS 2 Neutral-atom L1 Images and Movies</ResourceName>
-      <ReleaseDate>2011-06-03T22:08:15Z</ReleaseDate>
+      <ResourceName>TWINS 1 Neutral-atom L1 Images and Movies</ResourceName>
+      <ReleaseDate>2012-03-10T02:21:11Z</ReleaseDate>
       <Description>TWINS 1 neutral-atom spectrometer level-1 magnetospheric images and image movies at full (9 energy steps and 15 minute) resolution. Images have been smoothed using a technique that provides approximately uniform statistics across the image. Each image has 4x4 degree angular resolution and includes 15 minutes of data.
       
       These images are derived on the ground from direct events measurements of the time of flight and detection location on the anode for individual ENAs.  Each image has 4x4 degree angular resolution and includes 15 minutes of data. The first dimension of the image represents the scan angle in instrument coordinates.  In this system the azimuthal attitude vector points to +90 degree scan angle.  The second is the imaged angle, where 90 degrees is the central viewing angle of the instrument and the direction of the polar attitude vector. </Description>
@@ -22,6 +22,7 @@
         <URL>http://twins.swri.edu</URL>
         <Description>?</Description>
       </InformationURL>
+      <PriorID>spase://VMO/NumericalData/TWINS1/Imager/L1.PT15M</PriorID>
     </ResourceHeader>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
@@ -29,17 +30,17 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/twins/twins2/imager/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/twins/twins1/imager/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://SMWG/Instrument/TWINS2/Imager</InstrumentID>
+    <InstrumentID>spase://SMWG/Instrument/TWINS1/ENA</InstrumentID>
     <MeasurementType>NeutralAtomImages</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>2008-05-02T04:45:27Z</StartDate>
+        <StartDate>2007-04-18T00:01:38Z</StartDate>
         <RelativeStopDate>-P14D</RelativeStopDate>
       </TimeSpan>
       <Cadence>PT15M</Cadence>
@@ -866,7 +867,7 @@
       <Name>sat location </Name>
       <ParameterKey>radial_distance_re</ParameterKey>
       <Description>Spacecraft radial distance (in Earth radii) from the center of the Earth. </Description>
-      <Units>Earth Radii</Units>
+      <Units>Earth Radii </Units>
       <UnitsConversion>6.380e6&gt;m</UnitsConversion>
       <CoordinateSystem>
         <CoordinateRepresentation>Spherical</CoordinateRepresentation>
