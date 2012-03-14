@@ -58,8 +58,7 @@
     <ObservedRegion>Earth.Magnetosphere.Magnetotail</ObservedRegion>
     <ObservedRegion>Earth.Magnetosphere.Main</ObservedRegion>
     <ObservedRegion>Earth.Magnetosheath</ObservedRegion>
-    <Caveats>EFI booms for THEMIS D(P3) were deployed on 2007-06-07/17:00:00 UT. Before this time the spacecraft potential was not calculated accurately.  Electron moments will not be distributed prior to this date and ion moments will less accurate.  See THEMIS website for caveats(http://themis.ssl.berkeley.edu).</Caveats>
-    <!-- All params from the full distribution switch between a cadence of 98 and 395 S, but spend more time at 395-->
+    <Caveats>EFI booms for THEMIS D(P3) were deployed on 2007-06-07/17:00:00 UT. Before this time the spacecraft potential was not calculated accurately.  Electron moments will not be distributed prior to this date and ion moments will less accurate.  See THEMIS website for caveats(http://themis.ssl.berkeley.edu). All params from the full distribution switch between a cadence of 98 and 395 S, but spend more time at 395</Caveats>
     <!-- Data Quality Flags -->
     <Parameter>
       <Name>ESA Full Mode, Ion Moment Data Quality</Name>
