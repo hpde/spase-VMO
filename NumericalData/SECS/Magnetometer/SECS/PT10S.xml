@@ -4,10 +4,10 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/SECS/Magnetometer/SECS/PT10S</ResourceID>
     <ResourceHeader>
-      <ResourceName>Spherical Elementary Current (SEC)Amplitudes derived using the Spherical Elementary Currents Systems (SECS) technique at 10 sec Resolution in Geographic Coordinates</ResourceName>
+      <ResourceName>Spherical Elementary Current (SEC) Amplitudes derived using the Spherical Elementary Currents Systems (SECS) technique at 10 sec Resolution in Geographic Coordinates</ResourceName>
       <AlternateName>SEC Amplitude data</AlternateName>
       <ReleaseDate>2011-09-23T20:51:08Z</ReleaseDate>
-      <Description>The Spherical Elementary Current (SEC)Amplitudes data set contains spherical elementary current amplitude data (J) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the equivalent ionospheric currents. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
+      <Description>The Spherical Elementary Current (SEC) Amplitudes data set contains spherical elementary current amplitude data (J) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the equivalent ionospheric currents. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
       <Acknowledgement>Dr. O. Amm; Dr. J.M. Weygand; Prof. V. Angelopoulos, CANMOS, CARISMA, DMI, GIMA, MACCS, STEP, THEMIS</Acknowledgement>
       <Contact>
         <PersonID>spase://SMWG/Person/James.M.Weygand</PersonID>
@@ -38,7 +38,7 @@
       <InformationURL>
         <Name>SECS technique as Applied to North America</Name>
         <URL>http://www.igpp.ucla.edu/jweygand/htmls/EICS_NA_Greenland.html</URL>
-        <Description>Homepage with contact and acknowledgement information on the SECS technique applied to North America and Greenland.</Description>
+        <Description>Homepage with contact, "Rules of the Road," and acknowledgement information on the SECS technique applied to North America and Greenland.</Description>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
