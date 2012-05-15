@@ -1,0 +1,1000 @@
+  270  ls -1 PUSH
+  271  ls PUSH/*.xml
+  272  ls PUSH/*.xml | awk '{ print "spase_xml_parser.com "$NF }'
+  273  ls PUSH/*.xml | awk '{ print "spase_xml_parser.com "$NF }' | wc
+  274  ls PUSH/*.xml | sort | grep xml | awk '{ print "spase_xml_parser.com "$NF }' | wc
+  275  ls PUSH/*.xml | sort | grep xml | awk '{ print "spase_xml_parser.com "$NF }'
+  276  ls PUSH/*.xml | sort | grep xml | awk '{ print "spase_xml_parser.com "$NF }' > spase_xml_collate_push_vmo_smwg.com
+  277  chmod +x spase_xml_collate_push_vmo_smwg.com
+  278  vi spase_xml_collate_push_vmo_smwg.com
+  279  vi spase_xml_collate_push_vmo_smwg.com
+  280  find PUSH -depth | grep xml | sort | awk '{ print "spase_xml_parser.com "$NF }' > spase_xml_collate_push_vmo_smwg.com
+  281  chmod +x spase_xml_collate_push_vmo_smwg.com
+  282  vi spase_xml_collate_push_vmo_smwg.com
+  283  which spase_xml_parser.com
+  284  vi ~/BASH/spase_xml_parser.com
+  285  pwd
+  286  fg
+  287  find PUSH -depth | grep xml | sort | awk '{ print "spase_xml_parser.com "$NF }' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG/' > spase_xml_collate_push_vmo_smwg.com
+  288  vi spase_xml_collate_push_vmo_smwg.com
+  289  chmod +x spase_xml_collate_push_vmo_smwg.com
+  290  spase_xml_collate_push_vmo_smwg.com
+  291  bg
+  292  ls
+  293  date
+  294  head file_*
+  295  head file_*
+  296  head file_*
+  297  find VMO -depth | grep ASCII_FORMAT | sort
+  298  find VMO -depth | grep ASCII_FORMAT | sort | wc
+  299  ls SMWG/Observatory/WDC/Addis.Ababa.xml
+  300  cd VMO
+  301  git add .
+  302  ls
+  303  cd WDC_GDMC
+  304  ls
+  305  cd PT1H
+  306  ls
+  307  rm git_clone_vmo_granule_120501.txt
+  308  ls
+  309  cd VMO_SMWG
+  310  ls
+  311  rm *_26*
+  312  rm *_3232*
+  313  ls
+  314  ls PUSH
+  315  ls
+  316  mkdir 120510
+  317  mv wdc_mag_120506.tar.gz 120510
+  318  mv 120510 PUSH_120510
+  319  cd PUSH_120510
+  320  gzip -d wdc_mag_120506.tar.gz
+  321  gzip -d wdc_mag_120506.tar
+  322  tar -xvf wdc_mag_120506.tar | sort > wdc_mag_120506_tar_file_list.txt
+  323  vi wdc_mag_120506_tar_file_list.txt
+  324  ls
+  325  mv VMO VMO_120510
+  326  mv SMWG SMWG_120510
+  327  ls
+  328  ls ..
+  329  cp -p ../git_clone.com
+  330  cp -p ../git_clone.com .
+  331  vi git_clone.com
+  332  git_clone.com
+  333  bg
+  334  ls
+  335  ls
+  336  ls
+  337  ls
+  338  ls
+  339  jobs
+  340  ls
+  341  ls
+  342  jobs
+  343  ls
+  344  vi *.txt
+  345  ls
+  346  ls
+  347  vi git_clone_final_vmo_granule_120510.txt_000
+  348  jobs
+  349  fg
+  350  bg
+  351  ls
+  352  vi git_clone_final_vmo_granule_wdc_120510.txt
+  353  ls
+  354  vi git_clone.com
+  355  cd WDC
+  356  git pull
+  357  fg
+  358  jobs
+  359  ls
+  360  ls */Magnetometer/PT1H/*.xml
+  361  ls
+  362  pwd
+  363  cd ..
+  364  ls
+  365  ls VMO/NumericalData/WDC/Addis.Ababa/Magnetometer/PT1H/ASCII_FORMAT.xml
+  366  ls VMO/NumericalData/WDC/Tahiti/Magnetometer/PT1H/ASCII.xml
+  367  ls VMO/NumericalData/WDC/*/Magnetometer/PT1H/ASCII.xml
+  368  ls VMO/NumericalData/WDC/*/Magnetometer/PT1H/ASCII.xml | wc
+  369  ls
+  370  find VMO_120510 -depth | grep xml
+  371  find VMO_120510 -depth | grep -c xml
+  372  find VMO_120510 -depth | grep xml | sed 's/^/xxx.com /'
+  373  ls
+  374  ls ..
+  375  vi spase_xml_collate_push.com
+  376  vi ../spase_xml_collate_push.com
+  377  vi ../spase_xml_collate_push_vmo_smwg.com
+  378  find VMO_120510 -depth | grep xml | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\//'
+  379  pwd
+  380  find VMO_120510 -depth | grep xml | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120510/' > wdc_mag_vmo_pt1h_collate.com
+  381  vi wdc_mag_vmo_pt1h_collate.com
+  382  find VMO_120510 -depth | grep xml | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120510/' | sort > wdc_mag_vmo_pt1h_collate.com
+  383  chmod +x wdc_mag_vmo_pt1h_collate.com
+  384  ls
+  385  date
+  386  vi wdc_mag_vmo_pt1h_collate.com
+  387  find VMO_120510 -depth | grep xml | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120510/' | grep pt1h | grep ASCII | sort > wdc_mag_vmo_pt1h_collate.com
+  388  vi wdc_mag_vmo_pt1h_collate.com
+  389  find VMO_120510 -depth | grep xml | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120510/' | grep pt1h | grep ascii | sort > wdc_mag_vmo_pt1h_collate.com
+  390  vi wdc_mag_vmo_pt1h_collate.com
+  391  grep -r palm VMO_120510
+  392  grep -ir palm VMO_120510
+  393  vi wdc_mag_vmo_pt1h_collate.com
+  394  vi ../spase_xml_collate_push*.com
+  395  fg %1
+  396  jobs
+  397  ls
+  398  head wdc_mag_vmo_pt1h_collate.com
+  399  mkdir DUMMY
+  400  spase_xml_parser.com VMO_120510/aaa_numerical_data_pt1h_ascii_format.xml /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120510/DUMMY
+  401  ls -lF DUMMY/VMO/NumericalData/WDC/Alma.Ata/Magnetometer/PT1H/ASCII_FORMAT.xml
+  402  wdc_mag_vmo_pt1h_collate.com
+  403  bg
+  404  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORAMT
+  405  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  406  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  407  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  408  vi VMO/NumericalData/WDC/Addis.Ababa/Magnetometer/PT1H/ASCII_FORMAT.xml
+  409  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  410  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII.xml
+  411  find VMO/NumericalData/WDC -depth | sort | grep ASCII.xml | grep -c PT1H
+  412  find VMO/NumericalData/WDC -depth | sort | grep ASCII.xml | grep PT1H
+  413  find VMO/NumericalData/WDC -depth | sort | grep ASCII.xml | grep PT1H | sed 's/^/rm /' > wdc_mag_vmo_pt1h_ascii_rm.com
+  414  chmod +x wdc_mag_vmo_pt1h_ascii_rm.com
+  415  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  416  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  417  find VMO/NumericalData/WDC -depth | sort | grep -c xml
+  418  find VMO/NumericalData -depth | sort | grep -c xml
+  419  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  420  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  421  find VMO/NumericalData/WDC -depth | sort | grep -c ASCII_FORMAT
+  422  find VMO/NumericalData/WDC -depth | sort | grep -c xml
+  423  find VMO/NumericalData -depth | sort | grep -c xml
+  424  wdc_mag_vmo_pt1h_ascii_rm.com
+  425  find VMO/NumericalData -depth | sort | grep -c xml
+  426  cd VMO
+  427  git add .
+  428  H | grep git
+  429  git-commit -a -m "Add complete set of WDC Mag PT1H ASCII Format Data Descriptions" >> ../wdc_mag_vmo_pt1h_ascii.log
+  430  git-whatchanged --since="1 days" >> ../wdc_mag_vmo_pt1h_ascii.log
+  431  vi ../wdc_mag_vmo_pt1h_ascii.log
+  432  git push
+  433  ls
+  434  cd ..
+  435  ls
+  436  rm -fR DUMMY
+  437  ls
+  438  ls SMWG
+  439  ls SMWG_120510
+  440  ls SMWG_120510 | wc
+  441  ls SMWG_120510/*.xml | wc
+  442  ls SMWG_120510/*.xml
+  443  find SMWG_120510 -depth | grep xml | sort | sed 's/^/spase_xml_parser.com /'
+  444  Ht
+  445  find SMWG_120510 -depth | grep xml | sort | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120510/'
+  446  find SMWG_120510 -depth | grep xml | sort | sed 's/^/spase_xml_parser.com /' | sed 's/$/ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120510/' > wdc_mag_smwg_collate.com
+  447  ls
+  448  mv wdc_mag_vmo_pt1h_collate.com wdc_mag_vmo_pt1h_ascii_collate.com
+  449  ls
+  450  wc wdc_mag_smwg_collate.com
+  451  cd SMWG
+  452  git pull
+  453  cd ..
+  454  chmod +x wdc_mag_smwg_collate.com
+  455  wdc_mag_smwg_collate.com
+  456  cd SMWG
+  457  git add .
+  458  Ht
+  459  git-commit -a -m "Add complete set of WDC Mag Person Observatory and Instrument Data Descriptions" >> ../wdc_mag_smwg_pt1h_ascii.log
+  460  git-whatchanged --since="1 days" >> ../wdc_mag_smwg_pt1h_ascii.log
+  461  mv ../wdc_mag_smwg_pt1h_ascii.log ../wdc_mag_smwg_pt1h_ascii.log
+  462  mv ../wdc_mag_smwg_pt1h_ascii.log ../wdc_mag_smwg.log
+  463  vi ../wdc_mag_smwg.log
+  464  git push
+  465  cd ..
+  466  ls
+  467  ls ../*.com
+  468  vi ../spase_xml_collate_push.com
+  469  vi ../spase_xml_collate_push_vmo_smwg.com
+  470  vi ../spase_xml_collate_push_001_050.com
+  471  vi ../spase_xml_collate_push.com
+  472  cp -p ../spase_xml_collate_push.com .
+  473  cat spase_xml_collate_push.com
+  474  vi ../spase_xml_collate_push_001_050.com
+  475  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT
+  476  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | wc
+  477  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/'
+  478  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | uniq -c
+  479  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | wc
+  480  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H | wc
+  481  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | wc
+  482  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | wc
+  483  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq
+  484  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | sed 's/^.*GRANULE\///'
+  485  vi ../spase_xml_collate_push_001_050.com
+  486  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | sed 's/^.*GRANULE\///' > wdc_mag_vmo_granule_collate.com
+  487  ls WDC
+  488  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | sed 's/^.*GRANULE\///' > wdc_mag_vmo_granule_collate.com
+  489  chmod +x wdc_mag_vmo_granule_collate.com
+  490  head wdc_mag_vmo_granule_collate.com
+  491  mkdir DUMMY
+  492  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | sed 's/^.*GRANULE\//XXX/' > wdc_mag_vmo_granule_collate.com
+  493  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | sed 's/^.*GRANULE\//XXX.com /' > wdc_mag_vmo_granule_collate.com
+  494  ls
+  495  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep ASCII_FORMAT | sed 's/FORMAT\/.*$/FORMAT/' | grep PT1H\/ASCII_FORMAT | sort | uniq | sed 's/^.*GRANULE\//spase_xml_collate_push.com /' > wdc_mag_vmo_granule_collate.com
+  496  vi wdc_mag_vmo_granule_collate.com
+  497  cat spase_xml_collate_push.com
+  498  vi spase_xml_collate_push.com
+  499  head wdc_mag_vmo_granule_collate.com
+  500  spase_xml_collate_push.com VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT
+  501  ls DUMMY
+  502  mv Granule Granule_Clone
+  503  mkdir Granule
+  504  mv WDC Granule
+  505  wdc_mag_vmo_granule_collate.com >& wdc_mag_vmo_granule_collate.txt &
+  506  grep "\.xml" wdc_mag_vmo_granule_collate.txt
+  507  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  508  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  509  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/*/Magnetometer/PT1H/ASCII_FORMAT -depth
+  510  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/*/Magnetometer/PT1H/ASCII_FORMAT -depth | sort | grep xml
+  511  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/*/Magnetometer/PT1H/ASCII_FORMAT -depth | sort | grep xml | wc
+  512  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  513  find Granule/WDC -depth | grep PT1H | grep ASCII
+  514  find Granule/WDC -depth | grep PT1H | grep ASCII | grep xml
+  515  find Granule/WDC -depth | grep PT1H | grep ASCII | grep xml | wc
+  516  find Granule/WDC -depth | grep PT1H | grep ASCII | grep xml | sed 's/^/rm /' > wdc_mag_vmo_granule_rm.com
+  517  chmod +x wdc_mag_vmo_granule_rm.com
+  518  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  519  find Granule/WDC -depth | grep PT1M | grep ASCII | grep xml | wc
+  520  find Granule/WDC -depth | grep PT1M | grep -v ASCII | grep xml | wc
+  521  find Granule/WDC -depth | grep PT1H | grep -v ASCII | grep xml | wc
+  522  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  523  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  524  wc wdc_mag_vmo_granule_collate.*
+  525  cat spase_xml_collate_push.com
+  526  ls find /home/lfb/WDC_GDMC/PT1H/GRANULE
+  527  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep -c xml
+  528  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1H | grep ASCII | grep -c xml
+  529  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1H\/ASCII | grep ASCII | grep -c xml
+  530  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1H\/ASCII | grep ASCII
+  531  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1H\/ASCII | grep ASCII | grep -c xml
+  532  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1M\/ASCII | grep ASCII | grep -c xml
+  533  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1M\/ASCII | grep -v ASCII | grep -c xml
+  534  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep PT1M | grep -v ASCII | grep -c xml
+  535  find /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC -depth | grep Magnetometer\/PT1H | grep -v ASCII | grep -c xml
+  536  jobs
+  537  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  538  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  539  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  540  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  541  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  542  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  543  vi ../H_120501
+  544  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  545  grep -A12 -B12 924 ../H_120501
+  546  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  547  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  548  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  549  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  550  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  551  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  552  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  553  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  554  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  555  grep -c "\.xml" wdc_mag_vmo_granule_collate.txt
+  556  cd Granule/WDC
+  557  grep -A12 -B12 924 ../H_120501
+  558  grep -A12 -B12 924 ../../H_120501
+  559  grep -A12 -B12 924 ../../../H_120501
+  560  grep -A22 -B22 924 ../../../H_120501
+  561  git pull origin master
+  562  git add .
+  563  git-commit -a -m "Add New WDC Magnetic Field Granules" >> ../../wdc_mag_vmo_granule.log
+  564  git-whatchanged --since="1 days" >> ../../wdc_mag_vmo_granule.log
+  565  v ../../wdc_mag_vmo_granule.log
+  566  vi ../../wdc_mag_vmo_granule.log
+  567  grep -A22 -B22 924 ../../../H_120501
+  568  Ht
+  569  find . -depth | grep 2010
+  570  vi Barrow/Magnetometer/PT1H/ASCII_FORMAT/2010.xml
+  571  git-whatchanged --since="1 days"
+  572  vi ../../../H_120501
+  573  git submodule init
+  574  git-whatchanged --since="1 days"
+  575  git-commit -a -m "Add New WDC Magnetic Field Granules" >> ../../wdc_mag_vmo_granule.log
+  576  git-whatchanged --since="1 days"
+  577  git-commit -a -m "Add New WDC Magnetic Field Granules" >> ../../wdc_mag_vmo_granule.log
+  578  vi ../../wdc_mag_vmo_granule.log
+  579  vi ../../../H_120501
+  580  ls ../../../PUSH
+  581  ls ../../..
+  582  ls ../../../VMO
+  583  ls ../../../GRANULE_WDC
+  584  ls ../../../GRANULE_WDC/VMO/WDC
+  585  ls ../../../GRANULE_WDC/VMO/WDC/Tokyo/Magnetometer/PT1H/ASCII_FORMAT
+  586  fg
+  587  ls ../../..
+  588  ls
+  589  pwd
+  590  cd ..
+  591  rm -fR WDC
+  592  vi ../git_clone.com
+  593  git clone ssh://vho.nasa.gov/storage/scm/git/metadata/VMO/Granule/WDC
+  594  cd WDC
+  595  ls
+  596  find . -depth | grep 2010
+  597  find . -depth | grep 2010 | wc
+  598  find ../../../../GRANULE/VMO/Granule/WDC -depth | grep -c 2010
+  599  find ../../../../GRANULE/VMO/Granule/WDC -depth | grep 2010
+  600  find ../../../../GRANULE/VMO/Granule/WDC -depth | grep 2010 | grep PT1H
+  601  find ../../../../GRANULE/VMO/Granule/WDC -depth | grep 2010 | grep PT1H | grep ASCII
+  602  find ../../../../GRANULE/VMO/Granule/WDC -depth | grep 2010 | grep PT1H | grep -c ASCII
+  603  pwd
+  604  git pull
+  605  vi ../../../H_120501
+  606  cd ../..
+  607  ls
+  608  vi wdc_mag_vmo_granule_collate.com
+  609  wdc_mag_vmo_granule_collate.com >& wdc_mag_vmo_granule_collate.txt &
+  610  cd Granule/WDC
+  611  ls
+  612  fg
+  613  cd ../..
+  614  ls
+  615  vi wdc_mag_vmo_granule_rm.com
+  616  grep -c xml wdc_mag_vmo_granule_collate.txt
+  617  ls
+  618  grep push ../*
+  619  grep push ../*/*
+  620  vi ../NEW_STATIONS/H_120421
+  621  grep -c xml wdc_mag_vmo_granule_collate.txt
+  622  vi ../H_120501
+  623  grep -c xml wdc_mag_vmo_granule_collate.txt
+  624  grep -c xml wdc_mag_vmo_granule_collate.txt
+  625  grep -c xml wdc_mag_vmo_granule_collate.txt
+  626  vi ../spase_xml_collate_push_vmo_smwg.com
+  627  vi ../git_clone.com
+  628  jobs
+  629  grep -c xml wdc_mag_vmo_granule_collate.txt
+  630  cd Granule/WDC
+  631  ls
+  632  git-whatchanged
+  633  git-whatchanged
+  634  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  635  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  636  git-whatchanged
+  637  grep "Add WDC Magnetic Field Granules for New Data Products" ../../*
+  638  grep "New Data Products" ../../*
+  639  grep "New Data Products" ../../../*
+  640  vi ../../../H_120501
+  641  jobs
+  642  fg
+  643  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  644  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  645  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  646  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  647  date
+  648  jobs
+  649  fg %2
+  650  date
+  651  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  652  ls
+  653  git add .
+  654  fg
+  655  git-commit -a -m "Add WDC Magnetic Field Granules for New Data Products" > ../../wdc_mag_vmo_granule.log
+  656  vi ../../wdc_mag_vmo_granule.log
+  657  fg
+  658  git-whatchanged --since="1 days"
+  659  fg
+  660  cd ../..
+  661  ls
+  662  cd Granule_Clone
+  663  git submodule init
+  664  git submodule update WDC
+  665  find WDC -depth | grep -c 2010
+  666  find WDC -depth | grep ASCII_FORMAT
+  667  find WDC -depth | grep ASCII_FORMAT | grep xml
+  668  find WDC -depth | grep ASCII_FORMAT | grep xml | wc
+  669  cd ..
+  670  ls
+  671  cd DUMMY
+  672  cat ../git_clone.com
+  673  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  674  ls
+  675  rm -fR Granule
+  676  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  677  cd ..
+  678  ls
+  679  H
+  680  jobs
+  681  vi ../H_120501
+  682  ls
+  683  cd Granule/WDC
+  684  git pull origin master
+  685  find WDC -depth | grep ASCII_FORMAT | grep xml | wc
+  686  ls
+  687  git status
+  688  find . -depth | grep -c xml
+  689  find Zo.Se
+  690  ls
+  691  ls
+  692  cd ../..
+  693  ls
+  694  vi spase_xml_collate_push.com
+  695  cd Granule
+  696  ls
+  697  rm -fR WDC
+  698  H | grep clone
+  699  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule/WDC.git
+  700  cd WDC
+  701  git pull
+  702  cd ../..
+  703  spase_xml_collate_push.com VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT
+  704  cd Granule
+  705  rm -fR WDC
+  706  git pull
+  707  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule/WDC.git
+  708  cd WDC
+  709  git pull
+  710  cd ../..
+  711  ls
+  712  vi wdc_mag_smwg_collate.com
+  713  vi wdc_mag_vmo_granule_collate.com
+  714  wdc_mag_vmo_granule_collate.com >& wdc_mag_vmo_granule_collate.txt &
+  715  gzip wdc_mag_120506*
+  716  ls
+  717  gzip -d wdc_mag_120506_tar_file_list.txt
+  718  vi wdc_mag_120506_tar_file_list.txt
+  719  grep -c xml wdc_mag_vmo_granule_collate.txt
+  720  gzip wdc_mag_120506_tar_file_list.txt
+  721  ls
+  722  grep -c xml wdc_mag_vmo_granule_collate.txt
+  723  grep -c xml wdc_mag_vmo_granule_collate.txt
+  724  grep -c xml wdc_mag_vmo_granule_collate.txt
+  725  grep -c xml wdc_mag_vmo_granule_collate.txt
+  726  grep -c xml wdc_mag_vmo_granule_collate.txt
+  727  grep -c xml wdc_mag_vmo_granule_collate.txt
+  728  grep -c xml wdc_mag_vmo_granule_collate.txt
+  729  cd Granule/WDC
+  730  ls
+  731  git add .
+  732  H | grep commit
+  733  git-commit -a -m "Update and Add WDC Magnetic Field PT1H ASCII Format Granules" > ../../wdc_mag_vmo_granule.log
+  734  vi ../../wdc_mag_vmo_granule.log
+  735  find . -depth | grep xml | grep ASCII_FORMAT
+  736  find . -depth | grep xml | grep ASCII_FORMAT | wc
+  737  cd ../..
+  738  ls
+  739  vi wdc_mag_smwg_collate.com
+  740  vi wdc_mag_vmo_granule_collate.com
+  741  vi spase_xml_collate_push.com
+  742  vi wdc_mag_vmo_granule_collate.txt
+  743  which spase_xml_parser.com
+  744  vi ~/BASH/spase_xml_parser.com
+  745  ls VMO
+  746  vi wdc_mag_vmo_granule_collate.txt
+  747  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml
+  748  vi spase_xml_collate_push.com
+  749  vi ~/BASH/spase_xml_parser.com
+  750  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml
+  751  vi ~/BASH/spase_xml_parser.com
+  752  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml
+  753  ls */Granule
+  754  ls
+  755  vi ~/BASH/spase_xml_parser.com
+  756  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml
+  757  vi ~/BASH/spase_xml_parser.com
+  758  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml $PWD
+  759  ls -lF VMO
+  760  vi ~/BASH/spase_xml_parser.com
+  761  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml $PWD
+  762  spase_xml_file_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120510 22 19
+  763  vi spase_xml_file_parser.com
+  764  vi ~/BASH/spase_xml_file_parser.com
+  765  vi spase_xml_file_parser.com
+  766  spase_xml_file_parser.com /home/lfb/WDC_GDMC/PT1H/GRANULE/VMO/Granule/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120510 22 19
+  767  ls -lF /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120510/Granule/VMO/WDC/Abinger/Magnetometer/PT1H/ASCII_FORMAT/1926.xml
+  768  pwd
+  769  ls
+  770  ls Granule
+  771  ls Granule/VMO
+  772  ls Granule
+  773  rm -fR Granule
+  774  mkdir -p Granule/VMO
+  775  cd Granule/VMO
+  776  H | grep clone
+  777  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule/WDC.git
+  778  cd WDC
+  779  ls
+  780  git pull
+  781  cd ../../..
+  782  H | grep wdc_mag
+  783  wdc_mag_vmo_granule_collate.com >& wdc_mag_vmo_granule_collate.txt &
+  784  grep -c xml ../../wdc_mag_vmo_granule_collate.txt
+  785  grep -c wdc_mag_vmo_granule_collate.txt
+  786  grep -c xml wdc_mag_vmo_granule_collate.txt
+  787  grep -c xml wdc_mag_vmo_granule_collate.txt
+  788  vi wdc_mag_vmo_granule_collate.txt
+  789  fg
+  790  H | grep BASH
+  791  vi ~/BASH/spase_xml_parser.com
+  792  vi ~/BASH/spase_xml_file_parser.com
+  793  ls
+  794  rm *14806*
+  795  ls
+  796  ls 22
+  797  cat 22/.xml
+  798  rm 22/.xml
+  799  rmdir 22
+  800  ls
+  801  H
+  802  wdc_mag_vmo_granule_collate.com >& wdc_mag_vmo_granule_collate.txt &
+  803  grep -c xml wdc_mag_vmo_granule_collate.txt
+  804  grep -c xml wdc_mag_vmo_granule_collate.txt
+  805  grep -c xml wdc_mag_vmo_granule_collate.txt
+  806  grep -c xml wdc_mag_vmo_granule_collate.txt
+  807  grep -c xml wdc_mag_vmo_granule_collate.txt
+  808  grep -c xml wdc_mag_vmo_granule_collate.txt
+  809  grep -c xml wdc_mag_vmo_granule_collate.txt
+  810  find Granule/VMO/WDC -depth | grep ASCII_FORMAT | grep -c xml
+  811  cd Granule/VMO/WDC
+  812  ls
+  813  git add .
+  814  H | grep git
+  815  git-commit -a -m "Update and Add WDC Magnetic Field PT1H ASCII Format Granules" > ../../../wdc_mag_vmo_granule.log
+  816  vi ../../../wdc_mag_vmo_granule.log
+  817  git push
+  818  cd ../../..
+  819  ls
+  820  mv GRANULE GRANULE_PT1H_ASCII_FORMAT
+  821  mv Granule GRANULE_PT1H_ASCII_FORMAT
+  822  ls Granule_Clone
+  823  rm -fR Granule_Clone
+  824  ls
+  825  H | grep clone
+  826  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  827  cd VMO
+  828  ls
+  829  cd ..
+  830  ls
+  831  vi *_rm.com
+  832  H | grep _rm
+  833  find GRANULE_PT1H_ASCII_FORMAT -depth | grep PT1H | grep ASCII | grep xml | sed 's/^/rm /' > wdc_mag_vmo_granule_rm.com
+  834  vi wdc_mag_vmo_granule_rm.com
+  835  find GRANULE_PT1H_ASCII_FORMAT -depth | grep PT1H | grep ASCII\/ | grep xml | sed 's/^/rm /' > wdc_mag_vmo_granule_rm.com
+  836  vi wdc_mag_vmo_granule_rm.com
+  837  find GRANULE_PT1H_ASCII_FORMAT -depth | grep PT1H\/ASCII\/ | grep xml | sed 's/^/rm /' > wdc_mag_vmo_granule_rm.com
+  838  vi wdc_mag_vmo_granule_rm.com
+  839  find GRANULE_PT1H_ASCII_FORMAT -depth | grep PT1H\/ASCII\/ | grep xml | sort | sed 's/^/rm /' > wdc_mag_vmo_granule_rm.com
+  840  vi wdc_mag_vmo_granule_rm.com
+  841  wdc_mag_vmo_granule_rm.com
+  842  cd GRANULE_PT1H_ASCII_FORMAT/VMO/WDC
+  843  git add .
+  844  git-commit -a -m "Delete Old WDC Magnetic Field PT1H ASCII Format Granules" >> ../../../wdc_mag_vmo_granule.log
+  845  vi ../../../wdc_mag_vmo_granule.log
+  846  git push
+  847  cd ..
+  848  ls
+  849  cd ..
+  850  ls
+  851  cd ..
+  852  ls
+  853  ls Granule
+  854  Ht
+  855  cd Granule
+  856  git submodule init
+  857  cd WDC
+  858  vi ../../../H_120501
+  859  Ht
+  860  git submodule update WDC
+  861  cd ..
+  862  git submodule update WDC
+  863  fg
+  864  git status
+  865  cd WDC
+  866  git pull
+  867  git pull origin master
+  868  find . -depth | grep ASCII | grep xml | grep PT1H
+  869  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  870  cd ..
+  871  ls
+  872  fg
+  873  pwd
+  874  git push origin master
+  875  git add WDC
+  876  git push origin master
+  877  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  878  git push
+  879  pwd
+  880  cd ..
+  881  rm -fR Granule
+  882  H | grep clone
+  883  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  884  cd Granule
+  885  git submodule init
+  886  git submodule update WDC
+  887  H | grep what
+  888  git-whatchanged --since="1 days"
+  889  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  890  cd WDC
+  891  H | grep master
+  892  jobs
+  893  fg
+  894  Ht
+  895  jobs
+  896  fg
+  897  git checkout master
+  898  cd ../..
+  899  rm -fR Granule
+  900  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  901  git submodule init
+  902  cd Granule
+  903  git submodule init
+  904  git submodule update WDC
+  905  fg
+  906  git add WDC
+  907  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  908  cd ..
+  909  rm -fR Granule
+  910  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  911  git submodule init
+  912  git add WDC
+  913  cd Granule
+  914  git submodule init
+  915  find ../../../* -depth | grep zzz
+  916  vi ../../../VMO_SMWG/NEW_STATIONS/TEMP/zzz
+  917  vi ../../../VMO_SMWG/NEW_STATIONS/TEMP/H_ZZZZZ
+  918  vi ../../../VMO_SMWG/NEW_STATIONS/TEMP/H_120421
+  919  vi ../../../VMO_SMWG/NEW_STATIONS/TEMP/ttt
+  920  vi ../../../VMO_SMWG/NEW_STATIONS/TEMP/H_120421
+  921  vi ../../../VMO_SMWG/NEW_STATIONS/TEMP/H_ZZZZZ
+  922  fg
+  923  git pull
+  924  fg
+  925  git branch
+  926  git checkout master
+  927  git add WDC
+  928  H
+  929  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  930  ls
+  931  cd WDC
+  932  ls
+  933  cd ../..
+  934  rm -fR Granule
+  935  Ht
+  936  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  937  cd Granule
+  938  git submodule init
+  939  git branch
+  940  fg
+  941  git submodule update WDC
+  942  git checkout master
+  943  git add WDC
+  944  H | grep what
+  945  git-whatchanged --since="1 days"
+  946  H | grep grep
+  947  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  948  cd WDC
+  949  git pull
+  950  git checkout master
+  951  git pull
+  952  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  953  cd ..
+  954  git add WDC
+  955  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  956  git-whatchanged --since="1 days"
+  957  fg
+  958  H | grep PT1H
+  959  git-commit -a -m "Commit WDC Submodule Magnetic Field PT1H ASCII Format Granules" > ../wdc_mag_vmo_granule.log
+  960  vi ../wdc_mag_vmo_granule.log
+  961  git push
+  962  H > H_120510
+  963  ls
+  964  cd ..
+  965  ls
+  966  cd DUMMY
+  967  ls
+  968  rm -fR Granule
+  969  H | grep clone
+  970  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+  971  cd Granule
+  972  git submodule init
+  973  git submodule update WDC
+  974  H | grep clone
+  975  H | grep grep
+  976  find . -depth | grep ASCII | grep xml | grep PT1H | sort | wc
+  977  find . -depth | grep xml | sort | wc
+  978  find WDC -depth | grep xml | sort | wc
+  979  cd ../..
+  980  H > H_120510
+  981  ls
+  982  find . -depth | grep H_
+  983  find . -depth | grep "H_"
+  984  find . -depth | grep "H_1"
+  985  ls Granule
+  986  cd DUMMY
+  987  ls
+  988  ls Granule
+  989  H
+  990  find . -depth | grep "H_1"
+  991  cd ..
+  992  find . -depth | grep "H_1"
+  993  rm Granule/H_120510
+  994  vi H_120510
+  995  jobs
+  996  fg
+  997  ls
+  998  pwd
+  999  exit
+ 1000  ls
+ 1001  cd WDC_GDMC
+ 1002  ls
+ 1003  cd PT1H
+ 1004  ls
+ 1005  cd VMO_SMWG
+ 1006  ls
+ 1007  mkdir PUSH_120514
+ 1008  cd PUSH_120514
+ 1009  which git.clone
+ 1010  which git_clone.com
+ 1011  find ../../.. -depth | grep git_clone
+ 1012  pwd
+ 1013  diff /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120510/git_clone.com /home/lfb/WDC_GDMC/PT1H/GRANULE/git_clone.com 
+ 1014  mv ../PUSH_120510/git_clone.com .
+ 1015  git_clone.com >& git_clone_draft_smwg_vmo_granule_120514.txt &
+ 1016  ls
+ 1017  ls
+ 1018  ls
+ 1019  ls
+ 1020  ls
+ 1021  ls
+ 1022  ls
+ 1023  cp -p Granule Granule_000
+ 1024  cp -pR Granule Granule_000
+ 1025  ls
+ 1026  cd VMO
+ 1027  git pull
+ 1028  cd ../SMWG
+ 1029  git pull
+ 1030  cd Granule
+ 1031  cd ../Granule
+ 1032  git submodule init
+ 1033  ls
+ 1034  cd WDC
+ 1035  cd ..
+ 1036  git submodule update WDC
+ 1037  cd WDC
+ 1038  git pull
+ 1039  cd ../..
+ 1040  vi git_clone.com
+ 1041  cd ..
+ 1042  ls
+ 1043  vi spase_xml_collate_push_vmo_smwg.com
+ 1044  ls VMO
+ 1045  ls PUSH
+ 1046  ls PUSH | wc
+ 1047  ls
+ 1048  cd 120510
+ 1049  cd PUSH_120510
+ 1050  ls
+ 1051  vi wdc_mag_vmo_pt1h_ascii_collate.com
+ 1052  ls VMO_120510
+ 1053  ls VMO_120510 | grep -c xml
+ 1054  mv VMO_120510 ../PUSH_120514
+ 1055  ls
+ 1056  pwd
+ 1057  vi /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120510/wdc_mag_vmo_pt1h_ascii_collate.com
+ 1058  cd ../PUSH_120514
+ 1059  ls
+ 1060  find VMO_120510 -depth | grep "\.xml" | grep pt1m | grep ascii
+ 1061  find VMO_120510 -depth | grep "\.xml" | grep pt1m | grep ascii | wc
+ 1062  ls /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514
+ 1063  find /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510 -depth | grep "\.xml" | grep pt1m | grep ascii | awk 'BEGIN { print $1 }' | head -1
+ 1064  find /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510 -depth | grep "\.xml" | grep pt1m | grep ascii | head -1
+ 1065  find /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510 -depth | grep "\.xml" | grep pt1m | grep ascii | head -1 | sed 's/^/spase_xml_parser.com /' | sed 's/$/\/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120514/'
+ 1066  cp -pR VMO VMO_000
+ 1067  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510/nck_numerical_data_pt1m_ascii_format.xml/home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514
+ 1068  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510/nck_numerical_data_pt1m_ascii_format.xml /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514
+ 1069  find /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510 -depth | grep "\.xml" | grep pt1m | grep ascii | head -1 | sed 's/^/spase_xml_parser.com /' | sed 's/$/\ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120514/'
+ 1070  spase_xml_parser.com /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510/nck_numerical_data_pt1m_ascii_format.xml /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514
+ 1071  ls -lF VMO/NumericalData/WDC/Nagycenk/Magnetometer/PT1M/ASCII_FORMAT.xml
+ 1072  rm -fR VMO
+ 1073  cp -pR VMO_000 VMO
+ 1074  find /home/lfb/WDC_GDMC/PT1H/VMO_SMWG/PUSH_120514/VMO_120510 -depth | sort | grep "\.xml" | grep pt1m | grep ascii | sed 's/^/spase_xml_parser.com /' | sed 's/$/\ \/home\/lfb\/WDC_GDMC\/PT1H\/VMO_SMWG\/PUSH_120514/' > wdc_mag_vmo_pt1m_ascii_collate.com
+ 1075  chmod +x wdc_mag_vmo_pt1m_ascii_collate.com
+ 1076  vi wdc_mag_vmo_pt1m_ascii_collate.com
+ 1077  wdc_mag_vmo_pt1m_ascii_collate.com >& wdc_mag_vmo_pt1m_ascii_collate.txt &
+ 1078  Ht
+ 1079  ls ../PUSH_120510
+ 1080  vi ../PUSH_120510/wdc_mag_vmo_granule_collate.com
+ 1081  cp -p ../PUSH_120510/spase_xml_collate_push.com .
+ 1082  vi .
+ 1083  vi spase_xml_collate_push.com
+ 1084  vi find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep -c xml
+ 1085  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep -c xml
+ 1086  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep xml | sort | head
+ 1087  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | grep -c xml
+ 1088  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | grep -cv xml
+ 1089  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sed 's/\/[0-9]*.xml$//' | wc
+ 1090  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/\/[0-9]*.xml$//' | uniq -c
+ 1091  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/\/[0-9]*.*$//' | uniq -c | wc
+ 1092  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/\/[0-9]*.*$//' | uniq -c
+ 1093  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/ASCII_FORMAT\/[0-9]*.*$//' | uniq -c | wc
+ 1094  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/ASCII_FORMAT\/[0-9]*.*$//' | uniq -c
+ 1095  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/ASCII_FORMAT\/[0-9]*.*$//' | uniq | sed 's/\/Magnetometer\/PT1M\///'
+ 1096  fg
+ 1097  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/ASCII_FORMAT\/[0-9]*.*$/ASCII_FORMAT/' | uniq | sed 's/^/spase_xml_collate_push.com /'
+ 1098  fg
+ 1099  fg
+ 1100  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/ASCII_FORMAT\/[0-9]*.*$/ASCII_FORMAT/' | uniq | sed 's/^/spase_xml_collate_fgpush.com /'
+ 1101  fg
+ 1102  spase_xml_collate_push.com VMO/Granule/WDC/Zaymishche/Magnetometer/PT1H/ASCII_FORMAT
+ 1103  vi spase_xml_collate_push.com
+ 1104  ls -lF Granule/WDC/Zaymishche/Magnetometer/PT1H/ASCII_FORMAT
+ 1105  date
+ 1106  fg
+ 1107  ls
+ 1108  ls WDC
+ 1109  ls
+ 1110  rm wdc_mag_vmo_pt1m_ascii_collate.txt
+ 1111  rm git_clone_draft_smwg_vmo_granule_120514.txt
+ 1112  ls
+ 1113  rm file_copy_*
+ 1114  ls
+ 1115  find . -depth | grep Zaymishche | sort
+ 1116  find . -depth | grep Zaymishche | sort | grep ASCII_FORMAT
+ 1117  find . -depth | grep Zaymishche | sort | grep ASCII_FORMAT | grep 1958
+ 1118  ls -lF ./Granule/VMO/WDC/Zaymishche/Magnetometer/PT1H/ASCII_FORMAT/1958.xml
+ 1119  ls -lF ./Granule/WDC/Zaymishche/Magnetometer/PT1H/ASCII_FORMAT/1958.xml
+ 1120  fing Granule/VMO/WDC/Zaymishche/Magnetometer/PT1H/ASCII_FORMAT
+ 1121  find Granule/VMO/WDC/Zaymishche/Magnetometer/PT1H/ASCII_FORMAT | sort
+ 1122  ls -lF Granule/VMO
+ 1123  ls -lF Granule
+ 1124  cd WDC
+ 1125  git pull
+ 1126* ls Zo.Se/Magnetometer/PT1H/
+ 1127  find . -depth | grep -c xml
+ 1128  find . -depth | grep xml | sort | grep -c xml
+ 1129  find . -depth | grep xml | sort | grep xml | wc
+ 1130  cd ..
+ 1131  find WDC -depth | grep xml | sort | grep xml > aaa
+ 1132  vi aaa
+ 1133  ls
+ 1134  H | grep Granule
+ 1135  ls
+ 1136  rm Granule
+ 1137  rm -fR Granule
+ 1138  cd Granule_000
+ 1139  ls
+ 1140  cd ..
+ 1141  ls
+ 1142  rm -fR Granule_000
+ 1143  vi git_clone.com
+ 1144  git clone ssh://vho.nasa.gov/scm/git/metadata/VMO/Granule.git
+ 1145  fg
+ 1146  git submodule init
+ 1147  cd Granule
+ 1148  git submodule init
+ 1149  fg
+ 1150  git submodule update WDC
+ 1151  ls
+ 1152  cd ..
+ 1153  cp -p Granule Granule_000
+ 1154  mv Granule Granule_000
+ 1155  mkdir Granule/VMO
+ 1156  mkdir -p Granule/VMO
+ 1157  mv WDC Granule/VMO
+ 1158  ls
+ 1159  fg
+ 1160  Ht
+ 1161  H
+ 1162  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/ASCII_FORMAT\/[0-9]*.*$/ASCII_FORMAT/' | uniq | sed 's/^/spase_xml_collate_fgpush.com /'
+ 1163  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/\/home\/lfb\/WDC_GDMC\/PT1H\/GRANULE\///' | sed 's/ASCII_FORMAT\/[0-9]*.*$/ASCII_FORMAT/' | uniq | sed 's/^/spase_xml_collate_push.com /'
+ 1164  fg
+ 1165  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/\/home\/lfb\/WDC_GDMC\/PT1H\/GRANULE\///' | sed 's/ASCII_FORMAT\/[0-9]*.*$/ASCII_FORMAT/' | uniq | sed 's/^/spase_xml_collate_push.com /' > wdc_mag_draft_vmo_granule_collate.com
+ 1166  chmod +x wdc_mag_draft_vmo_granule_collate.com
+ 1167  vi wdc_mag_draft_vmo_granule_collate.com
+ 1168  ls
+ 1169  rm wdc_mag_draft_vmo_granule_collate.com
+ 1170  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | sort | sed 's/\/home\/lfb\/WDC_GDMC\/PT1H\/GRANULE\///' | sed 's/ASCII_FORMAT\/[0-9]*.*$/ASCII_FORMAT/' | uniq | sed 's/^/spase_xml_collate_push.com /' > wdc_mag_vmo_pt1m_ascii_granule_collate.com
+ 1171  chmod +x wdc_mag_vmo_pt1m_ascii_granule_collate.com
+ 1172  wdc_mag_vmo_pt1m_ascii_granule_collate.com &
+ 1173  fg
+ 1174  rm -fR Granule/VMO/WDC
+ 1175  mv WDC Granule/VMO
+ 1176  jobs
+ 1177  vi git_clone.com
+ 1178  git clone ssh://vho.nasa.gov/storage/scm/git/metadata/VMO/Granule/WDC
+ 1179  cd WDC
+ 1180  git pull
+ 1181  cd ..
+ 1182  mv WDC Granule/VMO
+ 1183  cp -pR WDC WDC_000
+ 1184  cp -pR Granule/VMO/WDC WDC_000
+ 1185  ls
+ 1186  rm file_copy_*
+ 1187  ls
+ 1188  rm spase_xml_parser_22505.com
+ 1189  ls
+ 1190  wdc_mag_vmo_pt1m_ascii_granule_collate.com >& wdc_mag_vmo_pt1m_ascii_granule_collate.txt &
+ 1191  vi wdc_mag_vmo_pt1m_ascii_granule_collate.txt
+ 1192  grep -c wdc_mag_vmo_pt1m_ascii_granule_collate.txt
+ 1193  grep -c xml wdc_mag_vmo_pt1m_ascii_granule_collate.txt
+ 1194  H | grep grep
+ 1195  find /home/lfb/WDC_GDMC/PT1H/GRANULE -depth | grep "\/PT1M\/ASCII_FORMAT\/" | grep -c xml
+ 1196  grep -c xml wdc_mag_vmo_pt1m_ascii_granule_collate.txt
+ 1197  grep -c xml wdc_mag_vmo_pt1m_ascii_granule_collate.txt
+ 1198  vi aaa
+ 1199  vi eee
+ 1200  fg
+ 1201  chmod +x eee
+ 1202  eee
+ 1203  ls
+ 1204  jobs
+ 1205  find Granule/VMO/WDC -depth | sort > ccc
+ 1206  vi ccc
+ 1207  grep PT1M\/ASCII$ ccc | wc
+ 1208  grep PT1M\/ASCII$ ccc
+ 1209  ls Granule/VMO/WDC/Teoloyucan/Magnetometer/PT1M/ASCII
+ 1210  find Granule/VMO/WDC -depth | sort | grep PT1M\/ASCII$ | wc
+ 1211  find Granule/VMO/WDC -depth | sort | grep PT1M\/ASCII$ | sed 's/^/rm -fR /' > wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1212  vi ../PUSH_120510/wdc_mag_vmo_granule_rm.com
+ 1213  find Granule/VMO/WDC -depth | grep "\/PT1H\/ASCII" | sort | head
+ 1214  find Granule/VMO/WDC -depth | grep "\/PT1H\/ASCII" | sort | grep -x xml | wc
+ 1215  find Granule/VMO/WDC -depth | grep "\/PT1H\/ASCII" | sort | grep -c xml | wc
+ 1216  find Granule/VMO/WDC -depth | grep "\/PT1H\/ASCII" | sort | grep -c xml
+ 1217  find Granule/VMO/WDC -depth | grep "\/PT1H\/ASCII" | sort | grep -v xml
+ 1218  find Granule/VMO/WDC -depth | grep "\/PT1H\/ASCII" | sort | grep -v xml | wc
+ 1219  eee &
+ 1220  ls
+ 1221  vi wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1222  wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1223  chmod +x wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1224  chmod +x wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1225  vi wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1226  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1227  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep xml > ggg
+ 1228  vi ggg
+ 1229  vi wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1230  ls Granule/VMO/WDC/Abisko/Magnetometer/PT1M/ASCII
+ 1231  date
+ 1232  fg
+ 1233  rm -fR Granule/VMO/WDC/Abisko/Magnetometer/PT1M/ASCII
+ 1234  ls Granule/VMO/WDC/Abisko/Magnetometer/PT1M/ASCII
+ 1235  fg
+ 1236  wdc_mag_vmo_pt1m_ascii_granule_rm.com
+ 1237  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep xml > ggg
+ 1238  vi ggg
+ 1239  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1240  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1241  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1242  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1243  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1244  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1245  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1246  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1247  find Granule/VMO/WDC -depth | sort | grep "PT1M\/ASCII" | grep -c xml
+ 1248  find VMO/NumericalData/WDC -depth | sort | grep xml
+ 1249  find VMO/NumericalData/WDC -depth | sort | grep ASCII.xml
+ 1250  find VMO/NumericalData/WDC -depth | sort | grep ASCII.xml | wc
+ 1251  ls
+ 1252  find VMO/NumericalData/WDC -depth | sort | grep ASCII.xml | sed 's/^/rm /' > wdc_mag_vmo_pt1m_ascii_rm.com
+ 1253  chmod +x wdc_mag_vmo_pt1m_ascii_rm.com
+ 1254  wdc_mag_vmo_pt1m_ascii_rm.com
+ 1255  find VMO/NumericalData/WDC -depth | grep -c xml
+ 1256  find VMO/NumericalData/WDC -depth | sort | grep -c xml
+ 1257  find VMO/NumericalData/WDC -depth | sort | grep xml | grep -c ASCII.xml
+ 1258  find VMO/NumericalData/WDC -depth | sort | grep xml | grep -c ASCII_FORMAT.xml
+ 1259  find VMO/NumericalData/WDC -depth | sort | grep xml | grep -v ASCII_FORMAT.xml
+ 1260  find VMO/NumericalData/WDC -depth | sort | grep xml | grep -cv ASCII_FORMAT.xml
+ 1261  cd VMO
+ 1262  git add .
+ 1263  H | grep commit
+ 1264   git-commit -a -m "Add complete set of WDC Mag PT1M ASCII Format Data Descriptions" >> ../wdc_mag_vmo_pt1m_ascii.log
+ 1265  vi ../wdc_mag_vmo_pt1m_ascii.log
+ 1266  H | grep what
+ 1267  git-whatchanged --since="1 days" >> ../wdc_mag_vmo_pt1m_ascii.log
+ 1268  vi ../wdc_mag_vmo_pt1m_ascii.log
+ 1269  H > HHH
