@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Equivalent Ionospheric Currents (EICs) derived using the Spherical Elementary Currents Systems (SECS) technique at 10 sec Resolution in Geographic Coordinates</ResourceName>
       <AlternateName>EIC data</AlternateName>
-      <ReleaseDate>2011-09-23T20:51:43Z</ReleaseDate>
+      <ReleaseDate>2012-05-23T18:32:03Z</ReleaseDate>
       <Description>The Equivalent Ionospheric Currents (EICs) data set contains horizontal ionospheric current data (Jx and Jy) derived using the SECS technique [Amm and Viljanen, Earth Planets Space, v. 51 pp. 431-440, 1999]. Positive Jx points to the geographic north pole. Positive Jy points to geographic east. The location of these currents is in geographic coordinates at 10s resolution. The distribution of these currents is not the same as the spherical elementary current amplitudes. The UT and date are obtained from the file name. For more information see Weygand et al. J. Geophys. Res. 116, A03305, doi:10.1029/2010JA016177, 2011. </Description>
       <Acknowledgement>Dr. O. Amm; Dr. J.M. Weygand; Prof. V. Angelopoulos, CANMOS, CARISMA, DMI, GIMA, MACCS, STEP, THEMIS</Acknowledgement>
       <Contact>
