@@ -5,9 +5,9 @@
       <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/Daneborg/Magnetometer/PT20S</ResourceID>
       <ResourceHeader>
          <ResourceName>Daneborg Vector Magnetic Field Data</ResourceName>
-         <ReleaseDate>2012-01-28T12:34:56.789</ReleaseDate>
-         <Description>Ground-based Vector Magnetic Field at Daneborg, Greenland, 20 second time resolution.  Station Code:  DNB.</Description>
-         <Acknowledgement>Hans Gleisner, Danish Meteorological Institute, Lyngbyvej 100, DK-2100 Copenhagen</Acknowledgement>
+         <ReleaseDate>2012-06-04T12:34:56.789</ReleaseDate>
+         <Description>Ground-based vector magnetic field at Daneborg, Greenland, 20 s, DMI Network, Higher latitude chain (Lat 74.3, Long 339.8). Station Code: DNB.</Description>
+         <Acknowledgement>Hans Gleisner, Danish Meteorological Institute, Lyngbyvej 100, DK-2100 Copenhagen.</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Hans.Gleisner</PersonID>
             <Role>PrincipalInvestigator</Role>
@@ -17,7 +17,9 @@
             <Role>MetadataContact</Role>
          </Contact>
          <InformationURL>
-            <URL>http://geomag.dmi.dk</URL>
+            <Name>Danish Meteorological Institute Magnetic Field Data Portal</Name>
+            <URL>http://web.dmi.dk/projects/chain</URL>
+            <Description>Main menu for access to magnetic field data</Description>
          </InformationURL>
       </ResourceHeader>
       <AccessInformation>
@@ -27,18 +29,24 @@
          <AccessURL>
             <Name>CDAWeb FTP Access</Name>
             <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/greenland_mag/dnb</URL>
+            <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>ASCII, CDF, and plots from CDAWeb</Name>
+            <URL>http://cdaweb.gsfc.nasa.gov</URL>
             <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
          </AccessURL>
          <Format>CDF</Format>
          <Encoding>None</Encoding>
-         <Acknowledgement>Hans Gleisner, Danish Meteorological Institute, Lyngbyvej 100, DK-2100 Copenhagen</Acknowledgement>
+         <Acknowledgement>Hans Gleisner, Danish Meteorological Institute, Lyngbyvej 100, DK-2100 Copenhagen.</Acknowledgement>
       </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
       <InstrumentID>spase://SMWG/Instrument/Ground/Daneborg/Magnetometer</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
             <StartDate>2007-01-01T00:00:00.000</StartDate>
-            <StopDate>2007-01-04T23:59:59.999</StopDate>
+            <StopDate>2007-01-04T23:59:40.000</StopDate>
          </TimeSpan>
          <Cadence>PT20S</Cadence>
       </TemporalDescription>
@@ -49,11 +57,11 @@
       <Keyword>CDF Global Attribute DISCIPLINE:                 Space Physics&gt;Ionospheric Science</Keyword>
       <Keyword>CDF Global Attribute DATA_TYPE:                  MAG&gt;Magnetic Field</Keyword>
       <Keyword>CDF Global Attribute ADID_REF:                   NSSD0110</Keyword>
-      <Keyword>CDF Global Attribute GENERATION_DATE:            Tue Apr 28 12:48:36 2009</Keyword>
+      <Keyword>CDF Global Attribute GENERATION_DATE:            Tue Apr 28 12:48:35 2009</Keyword>
       <Keyword>CDF Global Attribute MODS:                       Revision Dec 01 2008</Keyword>
       <Keyword>CDF Global Attribute SOFTWARE_VERSION:           5765</Keyword>
       <Keyword>CDF Global Attribute GENERATED_BY:               THEMIS SOC</Keyword>
-      <Keyword>CDF Global Attribute RULES_OF_USE:               Acknowledgement: Magnetometer data provided by: Hans Gleisner, Danish Meteorological Institute</Keyword>
+      <Keyword>CDF Global Attribute RULES_OF_USE:               Acknowledgement: Magnetometer data provided by: Hans Gleisner, Danish Meteorological Institute.</Keyword>
       <Parameter>
          <Name>B in HDZ Components</Name>
          <Set>Time series defined by using:  thg_mag_dnb_epoch</Set>
@@ -62,18 +70,18 @@
          <Cadence>PT20S</Cadence>
          <CoordinateSystem>
             <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-            <CoordinateSystemName>CGM</CoordinateSystemName>
+            <CoordinateSystemName>LGM</CoordinateSystemName>
          </CoordinateSystem>
          <RenderingHints>
             <DisplayType>TimeSeries</DisplayType>
             <AxisLabel>B in HDZ Components</AxisLabel>
-            <ValueFormat>f9.2</ValueFormat>
+            <ValueFormat>F9.2</ValueFormat>
             <ScaleType>LinearScale</ScaleType>
          </RenderingHints>
          <Structure>
             <Size>3</Size>
             <Element>
-               <Name>Magnetic North local</Name>
+               <Name>Magnetic North - H</Name>
                <Qualifier>Component.I</Qualifier>
                <Index>1</Index>
                <Units>nT</Units>
@@ -82,7 +90,7 @@
                <ValidMax>60000.0</ValidMax>
             </Element>
             <Element>
-               <Name>Magnetic East local</Name>
+               <Name>Magnetic East - D</Name>
                <Qualifier>Component.J</Qualifier>
                <Index>2</Index>
                <Units>nT</Units>
@@ -91,7 +99,7 @@
                <ValidMax>60000.0</ValidMax>
             </Element>
             <Element>
-               <Name>Vertical Down local</Name>
+               <Name>Vertical Down - Z</Name>
                <Qualifier>Component.K</Qualifier>
                <Index>3</Index>
                <Units>nT</Units>
@@ -107,18 +115,84 @@
          </Field>
       </Parameter>
       <Parameter>
+         <Name>H component of B</Name>
+         <Set>Time series defined by using:  thg_mag_dnb_epoch</Set>
+         <ParameterKey>thg_magh_dnb</ParameterKey>
+         <Description>H component of the Magnetic Field Vector</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_dnb.</Caveats>
+         <Cadence>PT20S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic North - H</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Component.I</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>D component of B</Name>
+         <Set>Time series defined by using:  thg_mag_dnb_epoch</Set>
+         <ParameterKey>thg_magd_dnb</ParameterKey>
+         <Description>D component of the Magnetic Field Vector</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_dnb.</Caveats>
+         <Cadence>PT20S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic East - D</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Component.J</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Z component of B</Name>
+         <Set>Time series defined by using:  thg_mag_dnb_epoch</Set>
+         <ParameterKey>thg_magz_dnb</ParameterKey>
+         <Description>Z component of the Magnetic Field Vector</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_dnb.</Caveats>
+         <Cadence>PT20S</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Vertical Down - Z</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Component.K</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
          <Name>thg_mag_dnb_time</Name>
          <ParameterKey>thg_mag_dnb_time</ParameterKey>
          <Description>thg_mag_dnb_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
          <Caveats>Unleaped seconds</Caveats>
          <Cadence>PT20S</Cadence>
-         <Units>sec</Units>
+         <Units>s</Units>
          <RenderingHints>
             <AxisLabel>UT</AxisLabel>
             <ValueFormat>E13.6</ValueFormat>
          </RenderingHints>
          <ValidMin>0.0</ValidMin>
-         <ValidMax>5.0e+09</ValidMax>
+         <ValidMax>5.0e+9</ValidMax>
          <FillValue>NaN</FillValue>
          <Support>
             <SupportQuantity>Temporal</SupportQuantity>
@@ -145,7 +219,7 @@
          <ParameterKey>range_epoch</ParameterKey>
          <Description>range_epoch</Description>
          <Cadence>PT20S</Cadence>
-         <Units>msec</Units>
+         <Units>ms</Units>
          <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
          <RenderingHints>
             <AxisLabel>UT</AxisLabel>
@@ -168,20 +242,22 @@
             Descriptor                           1   00   CDF_CHAR             23    DNB>Daneborg, Greenland
             Data_version                         1   00   CDF_CHAR              1    1
             PI_name                              1   00   CDF_CHAR             13    Hans Gleisner
-            PI_affiliation                       1   00   CDF_CHAR            116    Geomagnetism and Remote Sensing, Danish Meteorological Institute, Lyngbyvej 100, DK-2100 Copenhagen. email: hgl@dmi.dk
+            PI_affiliation                       1   00   CDF_CHAR             12    DMI, Denmark
             Instrument_type                      1   00   CDF_CHAR             47    Ground-Based Magnetometers, Riometers, Sounders
             Mission_group                        1   00   CDF_CHAR              6    THEMIS
             Logical_source                       1   00   CDF_CHAR             14    thg_l2_mag_dnb
             Logical_file_id                      1   00   CDF_CHAR             27    thg_l2_mag_dnb_00000000_v01
-            Logical_source_description           1   00   CDF_CHAR             82    Ground-based Vector Magnetic Field at Daneborg, Greenland, 20 sec time Resolution.
+            Logical_source_description           1   00   CDF_CHAR            124    Higher latitude chain (Lat 74.3, Long 339.8), Ground-based Vector Magnetic Field at Daneborg, Greenland, 20 sec, DMI network
             Time_resolution                      1   00   CDF_CHAR              6    20.0 s
             Rules_of_use                         1   00   CDF_CHAR             94    Acknowledgement: Magnetometer data provided by: Hans Gleisner, Danish Meteorological Institute
             Generated_by                         1   00   CDF_CHAR             10    THEMIS SOC
-            Generation_date                      1   00   CDF_CHAR             24    Tue Apr 28 12:48:36 2009
+            Generation_date                      1   00   CDF_CHAR             24    Tue Apr 28 12:48:35 2009
             Acknowledgement                      1   00   CDF_CHAR             66    Danish Meteorological Institute, Lyngbyvej 100, DK-2100 Copenhagen
             MODS                                 1   00   CDF_CHAR             15    Rev- 2008-12-01
             ADID_ref                             1   00   CDF_CHAR              8    NSSD0110
-            HTTP_LINK                            1   00   CDF_CHAR             20    http://geomag.dmi.dk
+            LINK_TEXT                            1   00   CDF_CHAR             22    Main menu: data access
+            LINK_TITLE                           1   00   CDF_CHAR             31    Danish Meteorological Institute
+            HTTP_LINK                            1   00   CDF_CHAR             33    http://web.dmi.dk/projects/chain/
             File_naming_convention               1   00   CDF_CHAR             26    source_datatype_descriptor
             Software_version                     1   00   CDF_CHAR              4    5765
          </Note>

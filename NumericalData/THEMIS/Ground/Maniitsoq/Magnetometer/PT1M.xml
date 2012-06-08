@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+   <Version>2.2.2</Version>
+   <NumericalData>
+      <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/Maniitsoq/Magnetometer/PT1M</ResourceID>
+      <ResourceHeader>
+         <ResourceName>Maniitsoq Vector Magnetic Field Data</ResourceName>
+         <ReleaseDate>2012-06-04T12:34:56.789</ReleaseDate>
+         <Description>Ground-based vector magnetic field at Maniitsoq, Greenland, 1 min, Level-2 data, DTU Network, Higher latitude chain (Lat 65.4, Long 307.1). Station Code: SKT.</Description>
+         <Acknowledgement>C. Stolle, J. Matzka, Tromso Geophysical Observatory, University of Tromso, Norway</Acknowledgement>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Claudia.Stolle</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Juergen.Matzka</PersonID>
+            <Role>PrincipalInvestigator</Role>
+         </Contact>
+         <Contact>
+            <PersonID>spase://SMWG/Person/Lee.Frost.Bargatze</PersonID>
+            <Role>MetadataContact</Role>
+         </Contact>
+         <InformationURL>
+            <Name>Technical University of Denmark Web Site</Name>
+            <URL>http://www.space.dtu.dk/English/Research/Scientific_data_and_models/Magnetic_Ground_Stations.aspx</URL>
+            <Description>Main menu for access to magnetic field data</Description>
+         </InformationURL>
+      </ResourceHeader>
+      <AccessInformation>
+         <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+         <Availability>Online</Availability>
+         <AccessRights>Open</AccessRights>
+         <AccessURL>
+            <Name>CDAWeb FTP Access</Name>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/greenland_mag/skt</URL>
+            <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+         </AccessURL>
+         <AccessURL>
+            <Name>ASCII, CDF, and plots from CDAWeb</Name>
+            <URL>http://cdaweb.gsfc.nasa.gov</URL>
+            <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+         </AccessURL>
+         <Format>CDF</Format>
+         <Encoding>None</Encoding>
+         <Acknowledgement>C. Stolle, J. Matzka, Tromso Geophysical Observatory, University of Tromso, Norway</Acknowledgement>
+      </AccessInformation>
+      <ProcessingLevel>Calibrated</ProcessingLevel>
+      <InstrumentID>spase://SMWG/Instrument/Ground/Maniitsoq/Magnetometer</InstrumentID>
+      <MeasurementType>MagneticField</MeasurementType>
+      <TemporalDescription>
+         <TimeSpan>
+            <StartDate>2007-02-05T00:00:00.000</StartDate>
+            <StopDate>2012-04-26T23:59:59.999</StopDate>
+         </TimeSpan>
+         <Cadence>PT1M</Cadence>
+      </TemporalDescription>
+      <Keyword>Station Code:  SKT</Keyword>
+      <Keyword>CDF Global Attribute PROJECT:                    THEMIS</Keyword>
+      <Keyword>CDF Global Attribute DATA_VERSION:               1</Keyword>
+      <Keyword>CDF Global Attribute DISCIPLINE:                 Space Physics&gt;Magnetospheric Science</Keyword>
+      <Keyword>CDF Global Attribute DISCIPLINE:                 Space Physics&gt;Ionospheric Science</Keyword>
+      <Keyword>CDF Global Attribute DATA_TYPE:                  MAG&gt;Magnetic Field</Keyword>
+      <Keyword>CDF Global Attribute ADID_REF:                   NSSD0110</Keyword>
+      <Keyword>CDF Global Attribute GENERATION_DATE:            Wed Nov 9 16:26:23 2011</Keyword>
+      <Keyword>CDF Global Attribute MODS:                       Revision Dec 01 2008. Revision May 13 2010 (New Data Provider)</Keyword>
+      <Keyword>CDF Global Attribute GENERATED_BY:               THEMIS SOC</Keyword>
+      <Keyword>CDF Global Attribute RULES_OF_USE:               The geomagnetic information available at our web-pages is primarily intended for the non-commercial scientific community, educational purposes, and the general Public. Commercial users of our services are urged to contact us to establish an agreement of use. As part of an agreement we normally offer to construct exclusive web-pages specifically for the application in question. We accept no liability for loss or damages of any kind resulting from this or from errors or inaccuracies in the data.</Keyword>
+      <Parameter>
+         <Name>B in HDZ Components</Name>
+         <Set>Time series defined by using:  thg_mag_skt_epoch</Set>
+         <ParameterKey>thg_mag_skt</ParameterKey>
+         <Description>Variation in Magnetic field B in HDZ vector components</Description>
+         <Cadence>PT1M</Cadence>
+         <CoordinateSystem>
+            <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+            <CoordinateSystemName>LGM</CoordinateSystemName>
+         </CoordinateSystem>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>B in HDZ Components</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <Structure>
+            <Size>3</Size>
+            <Element>
+               <Name>Magnetic North - H</Name>
+               <Qualifier>Component.I</Qualifier>
+               <Index>1</Index>
+               <Units>nT</Units>
+               <UnitsConversion>1e-9&gt;T</UnitsConversion>
+               <ValidMin>-60000.0</ValidMin>
+               <ValidMax>60000.0</ValidMax>
+            </Element>
+            <Element>
+               <Name>Magnetic East - D</Name>
+               <Qualifier>Component.J</Qualifier>
+               <Index>2</Index>
+               <Units>nT</Units>
+               <UnitsConversion>1e-9&gt;T</UnitsConversion>
+               <ValidMin>-60000.0</ValidMin>
+               <ValidMax>60000.0</ValidMax>
+            </Element>
+            <Element>
+               <Name>Vertical Down - Z</Name>
+               <Qualifier>Component.K</Qualifier>
+               <Index>3</Index>
+               <Units>nT</Units>
+               <UnitsConversion>1e-9&gt;T</UnitsConversion>
+               <ValidMin>-60000.0</ValidMin>
+               <ValidMax>60000.0</ValidMax>
+            </Element>
+         </Structure>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Vector</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>H component of B</Name>
+         <Set>Time series defined by using:  thg_mag_skt_epoch</Set>
+         <ParameterKey>thg_magh_skt</ParameterKey>
+         <Description>H component of the Magnetic Field Vector</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_skt.</Caveats>
+         <Cadence>PT1M</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic North - H</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Component.I</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>D component of B</Name>
+         <Set>Time series defined by using:  thg_mag_skt_epoch</Set>
+         <ParameterKey>thg_magd_skt</ParameterKey>
+         <Description>D component of the Magnetic Field Vector</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_skt.</Caveats>
+         <Cadence>PT1M</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Magnetic East - D</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Component.J</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>Z component of B</Name>
+         <Set>Time series defined by using:  thg_mag_skt_epoch</Set>
+         <ParameterKey>thg_magz_skt</ParameterKey>
+         <Description>Z component of the Magnetic Field Vector</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_skt.</Caveats>
+         <Cadence>PT1M</Cadence>
+         <Units>nT</Units>
+         <RenderingHints>
+            <DisplayType>TimeSeries</DisplayType>
+            <AxisLabel>Vertical Down - Z</AxisLabel>
+            <ValueFormat>F9.2</ValueFormat>
+            <ScaleType>LinearScale</ScaleType>
+         </RenderingHints>
+         <ValidMin>-60000.0</ValidMin>
+         <ValidMax>60000.0</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Field>
+            <Qualifier>Component.K</Qualifier>
+            <FieldQuantity>Magnetic</FieldQuantity>
+         </Field>
+      </Parameter>
+      <Parameter>
+         <Name>thg_mag_skt_time</Name>
+         <Set>Time series defined by using:  thg_mag_skt_epoch</Set>
+         <ParameterKey>thg_mag_skt_time</ParameterKey>
+         <Description>thg_mag_skt_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+         <Caveats>Unleaped seconds</Caveats>
+         <Cadence>PT1M</Cadence>
+         <Units>s</Units>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+            <ValueFormat>E13.6</ValueFormat>
+         </RenderingHints>
+         <ValidMin>0.0</ValidMin>
+         <ValidMax>5.0e+9</ValidMax>
+         <FillValue>NaN</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>thg_mag_skt_epoch</Name>
+         <ParameterKey>thg_mag_skt_epoch</ParameterKey>
+         <Description>thg_mag_skt_epoch</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters:  thg_mag_skt_epoch0, thg_mag_skt_time.</Caveats>
+         <Cadence>PT1M</Cadence>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <ValidMin>6.31455e+13</ValidMin>
+         <ValidMax>6.63012e+13</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Parameter>
+         <Name>range_epoch</Name>
+         <ParameterKey>range_epoch</ParameterKey>
+         <Description>range_epoch</Description>
+         <Cadence>PT1M</Cadence>
+         <Units>ms</Units>
+         <UnitsConversion>1.0e-3&gt;sec</UnitsConversion>
+         <RenderingHints>
+            <AxisLabel>UT</AxisLabel>
+         </RenderingHints>
+         <ValidMin>6.31455e+13</ValidMin>
+         <ValidMax>6.63012e+13</ValidMax>
+         <FillValue>-1.0e+31</FillValue>
+         <Support>
+            <SupportQuantity>Temporal</SupportQuantity>
+         </Support>
+      </Parameter>
+      <Extension>
+         <Note>
+            CDAWEB ISTP CDF Global Attribute Metadata
+            Project                              1   00   CDF_CHAR              6    THEMIS
+            Source_name                          1   00   CDF_CHAR             38    THG_L2>THEMIS Ground Based Observatory
+            Discipline                           2   00   CDF_CHAR             36    Space Physics>Magnetospheric Science
+            Discipline                           2   01   CDF_CHAR             33    Space Physics>Ionospheric Science
+            Data_type                            1   00   CDF_CHAR              3    MAG
+            Descriptor                           1   00   CDF_CHAR             24    SKT>Maniitsoq, Greenland
+            Data_version                         1   00   CDF_CHAR              1    1
+            PI_name                              1   00   CDF_CHAR             22    C. Stolle and  J. Matzka
+            PI_affiliation                       1   00   CDF_CHAR             18    DTU Space, Denmark
+            Instrument_type                      1   00   CDF_CHAR             47    Ground-Based Magnetometers, Riometers, Sounders
+            Mission_group                        1   00   CDF_CHAR              6    THEMIS
+            Logical_source                       1   00   CDF_CHAR             14    thg_l2_mag_skt
+            Logical_file_id                      1   00   CDF_CHAR             27    thg_l2_mag_skt_00000000_v01
+            Logical_source_description           1   00   CDF_CHAR            120    Higher latitude chain (Lat 65.4, Long 307.1), Ground-based Vector Magnetic Field at Maniitsoq, Greenland, 1, DTU network
+            Time_resolution                      1   00   CDF_CHAR              6    60.0 s
+            Rules_of_use                         1   00   CDF_CHAR            498    The geomagnetic information available at our web-pages is primarily intended for the non-commercial scientific community, educational purposes, and the general public. Commercial users of our services are urged to contact us to establish an agreement of use. As part of an agreement we normally offer to construct exclusive web-pages specifically for the application in question. We accept no liability for loss or damages of any kind resulting from this or from errors or inaccuracies in the data.
+            Generated_by                         1   00   CDF_CHAR             10    THEMIS SOC
+            Generation_date                      1   00   CDF_CHAR             24    Wed Nov  9 16:26:23 2011
+            Acknowledgement                      1   00   CDF_CHAR             60    Tromso Geophysical Observatory, University of Tromso, Norway
+            MODS                                 1   00   CDF_CHAR             51    Rev- 2008-12-01.Rev- 2010-05-13 (New Data Provider)
+            ADID_ref                             1   00   CDF_CHAR              8    NSSD0110
+            LINK_TEXT                            1   00   CDF_CHAR             22    Main menu: data access
+            LINK_TITLE                           1   00   CDF_CHAR             31    Technical University of Denmark
+            HTTP_LINK                            1   00   CDF_CHAR             97    http://www.space.dtu.dk/English/Research/Scientific_data_and_models/Magnetic_Ground_Stations.aspx
+            File_naming_convention               1   00   CDF_CHAR             26    source_datatype_descriptor
+            Software_version                     1   00   CDF_CHAR              4    xxxx
+            TEXT                                 1   00   CDF_CHAR             74    Part of the Technical University of Denmark ground magnetometer network.
+         </Note>
+      </Extension>
+   </NumericalData>
+</Spase>
