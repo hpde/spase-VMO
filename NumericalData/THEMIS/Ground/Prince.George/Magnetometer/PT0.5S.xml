@@ -2,10 +2,10 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
    <Version>2.2.2</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/Prince.George.Canada/Magnetometer/PT0.5S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/Prince.George/Magnetometer/PT0.5S</ResourceID>
       <ResourceHeader>
-         <ResourceName>Prince George Canada Vector Magnetic Field Data</ResourceName>
-         <ReleaseDate>2012-06-04T12:34:56.789</ReleaseDate>
+         <ResourceName>Prince George Vector Magnetic Field Data</ResourceName>
+         <ReleaseDate>2012-06-13T12:34:56.789</ReleaseDate>
          <Description>Ground-based vector magnetic field at Prince George, Canada, 0.5 s, THEMIS GBO Network, Higher latitude chain (Lat 53.8, Long 237.2). Station Code: PGEO.</Description>
          <Acknowledgement>Please acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: S. Mende and C. T. Russell for use of the data</Acknowledgement>
          <Contact>
@@ -56,7 +56,7 @@
          <Acknowledgement>Please acknowledge NASA contract NAS5-02099 and V. Angelopoulos for use of data from the THEMIS Mission. Specifically: S. Mende and C. T. Russell for use of the data</Acknowledgement>
       </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
-      <InstrumentID>spase://SMWG/Instrument/Ground/Prince.George.Canada/Magnetometer</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/Ground/Prince.George/Magnetometer</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
@@ -67,7 +67,7 @@
       </TemporalDescription>
       <Keyword>Station Code:  PGEO</Keyword>
       <Keyword>CDF Global Attribute MISSION_GROUP:              THEMIS
-         CDF Global Attribute MISSION_GROUP:              Ground-Based Investigations</Keyword>
+               CDF Global Attribute MISSION_GROUP:              Ground-Based Investigations</Keyword>
       <Keyword>CDF Global Attribute PROJECT:                    THEMIS</Keyword>
       <Keyword>CDF Global Attribute DISCIPLINE:                 Space Physics&gt;Magnetospheric Science</Keyword>
       <Keyword>CDF Global Attribute DISCIPLINE:                 Space Physics&gt;Ionospheric Science</Keyword>
@@ -254,7 +254,7 @@
             Discipline                           2   01   CDF_CHAR             33    Space Physics>Ionospheric Science
             Data_type                            1   00   CDF_CHAR              3    MAG
             Descriptor                           1   00   CDF_CHAR             25    PGEO>Prince George Canada
-            Data_version                         1   00   CDF_CHAR              1
+            Data_version                         1   00   CDF_CHAR              1     
             PI_name                              1   00   CDF_CHAR             31    V. Angelopoulos and C. T. Russell
             PI_affiliation                       1   00   CDF_CHAR             40    UCB and UCLA respectively, NASA NAS5-02099
             TEXT                                 1   00   CDF_CHAR             61    THEMIS Ground Based Observatory part of the THEMIS GBO effort
@@ -262,12 +262,12 @@
             Mission_group                        2   00   CDF_CHAR              6    THEMIS
             Mission_group                        2   01   CDF_CHAR             27    Ground-Based Investigations
             Logical_source                       1   00   CDF_CHAR             15    thg_l2_mag_pgeo
-            Logical_file_id                      1   00   CDF_UCHAR             1
+            Logical_file_id                      1   00   CDF_UCHAR             1     
             Logical_source_description           1   00   CDF_CHAR            133    Higher latitude chain (Lat 53.8, Long 237.2), Ground-based Vector Magnetic Field at Prince George Canada, 0.5 sec, THEMIS GBO network
             Time_resolution                      1   00   CDF_CHAR              4    0.5s
             Rules_of_use                         1   00   CDF_CHAR             28    Open Data for Scientific Use
             Generated_by                         1   00   CDF_CHAR             10    THEMIS SOC
-            Generation_date                      1   00   CDF_CHAR              1
+            Generation_date                      1   00   CDF_CHAR              1     
             Acknowledgement                      1   00   CDF_CHAR             24    NASA Contract NAS5-02099
             MODS                                 1   00   CDF_CHAR             15    Rev- 2006-08-16
             ADID_ref                             1   00   CDF_CHAR              8    NSSD0110

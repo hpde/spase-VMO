@@ -2,11 +2,11 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
    <Version>2.2.2</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/HLMS/Magnetometer/PT1S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/THEMIS/Ground/College/Magnetometer/PT1S</ResourceID>
       <ResourceHeader>
-         <ResourceName>HLMS Vector Magnetic Field Data</ResourceName>
-         <ReleaseDate>2012-06-04T12:34:56.789</ReleaseDate>
-         <Description>Ground-based vector magnetic field at Anchorage, Alaska, 0.5 s, THEMIS GBO Network, Higher latitude chain (Lat 61.2, Long 210.1). Station Code: HLMS.</Description>
+         <ResourceName>College Vector Magnetic Field Data</ResourceName>
+         <ReleaseDate>2012-06-13T12:34:56.789</ReleaseDate>
+         <Description>Ground-based vector magnetic field at College, Alaska, 0.5 s, THEMIS GBO Network, Higher latitude chain (Lat 64.9, Long 212.1). Station Code: CIGO.</Description>
          <Acknowledgement>V. Angelopoulos, H. Nielson, University of Alaska, NASA Contract NAS5-02099.</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Vassilis.Angelopoulos</PersonID>
@@ -32,7 +32,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>CDAWeb FTP Access</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/mag/hlms</URL>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/mag/cigo</URL>
             <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
          </AccessURL>
          <AccessURL>
@@ -45,16 +45,16 @@
          <Acknowledgement>V. Angelopoulos, H. Nielson, University of Alaska, NASA Contract NAS5-02099.</Acknowledgement>
       </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
-      <InstrumentID>spase://SMWG/Instrument/Ground/HLMS/Magnetometer</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/Ground/College/Magnetometer</InstrumentID>
       <MeasurementType>MagneticField</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
-            <StartDate>2008-01-23T00:00:00.000</StartDate>
-            <StopDate>2009-05-29T23:59:59.000</StopDate>
+            <StartDate>2007-12-12T00:00:00.000</StartDate>
+            <StopDate>2012-04-29T23:59:59.000</StopDate>
          </TimeSpan>
          <Cadence>PT1S</Cadence>
       </TemporalDescription>
-      <Keyword>Station Code:  HLMS</Keyword>
+      <Keyword>Station Code:  CIGO</Keyword>
       <Keyword>CDF Global Attribute PROJECT:                    THEMIS</Keyword>
       <Keyword>CDF Global Attribute DATA_VERSION:               1</Keyword>
       <Keyword>CDF Global Attribute DISCIPLINE:                 Space Physics&gt;Magnetospheric Science</Keyword>
@@ -67,8 +67,8 @@
       <Keyword>CDF Global Attribute RULES_OF_USE:               Open Data for Scientific Use.</Keyword>
       <Parameter>
          <Name>B in HDZ Components</Name>
-         <Set>Time series defined by using:  thg_mag_hlms_epoch</Set>
-         <ParameterKey>thg_mag_hlms</ParameterKey>
+         <Set>Time series defined by using:  thg_mag_cigo_epoch</Set>
+         <ParameterKey>thg_mag_cigo</ParameterKey>
          <Description>Magnetic field B in HDZ vector components</Description>
          <Cadence>PT1S</Cadence>
          <CoordinateSystem>
@@ -119,10 +119,10 @@
       </Parameter>
       <Parameter>
          <Name>H component of B</Name>
-         <Set>Time series defined by using:  thg_mag_hlms_epoch</Set>
-         <ParameterKey>thg_magh_hlms</ParameterKey>
+         <Set>Time series defined by using:  thg_mag_cigo_epoch</Set>
+         <ParameterKey>thg_magh_cigo</ParameterKey>
          <Description>H component of the Magnetic Field Vector</Description>
-         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_hlms.</Caveats>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_cigo.</Caveats>
          <Cadence>PT1S</Cadence>
          <Units>nT</Units>
          <RenderingHints>
@@ -141,10 +141,10 @@
       </Parameter>
       <Parameter>
          <Name>D component of B</Name>
-         <Set>Time series defined by using:  thg_mag_hlms_epoch</Set>
-         <ParameterKey>thg_magd_hlms</ParameterKey>
+         <Set>Time series defined by using:  thg_mag_cigo_epoch</Set>
+         <ParameterKey>thg_magd_cigo</ParameterKey>
          <Description>D component of the Magnetic Field Vector</Description>
-         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_hlms.</Caveats>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_cigo.</Caveats>
          <Cadence>PT1S</Cadence>
          <Units>nT</Units>
          <RenderingHints>
@@ -163,10 +163,10 @@
       </Parameter>
       <Parameter>
          <Name>Z component of B</Name>
-         <Set>Time series defined by using:  thg_mag_hlms_epoch</Set>
-         <ParameterKey>thg_magz_hlms</ParameterKey>
+         <Set>Time series defined by using:  thg_mag_cigo_epoch</Set>
+         <ParameterKey>thg_magz_cigo</ParameterKey>
          <Description>Z component of the Magnetic Field Vector</Description>
-         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_hlms.</Caveats>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function ALTERNATE_VIEW with the following input parameters:  thg_mag_cigo.</Caveats>
          <Cadence>PT1S</Cadence>
          <Units>nT</Units>
          <RenderingHints>
@@ -184,9 +184,9 @@
          </Field>
       </Parameter>
       <Parameter>
-         <Name>thg_mag_hlms_time</Name>
-         <ParameterKey>thg_mag_hlms_time</ParameterKey>
-         <Description>thg_mag_hlms_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
+         <Name>thg_mag_cigo_time</Name>
+         <ParameterKey>thg_mag_cigo_time</ParameterKey>
+         <Description>thg_mag_cigo_time, UTC, in seconds since 01-Jan-1970 00:00:00</Description>
          <Caveats>Unleaped seconds</Caveats>
          <Cadence>PT1S</Cadence>
          <Units>s</Units>
@@ -202,10 +202,10 @@
          </Support>
       </Parameter>
       <Parameter>
-         <Name>thg_mag_hlms_epoch</Name>
-         <ParameterKey>thg_mag_hlms_epoch</ParameterKey>
-         <Description>thg_mag_hlms_epoch</Description>
-         <Caveats>This parameter is virtual.  It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters:  thg_mag_hlms_epoch0, thg_mag_hlms_time.</Caveats>
+         <Name>thg_mag_cigo_epoch</Name>
+         <ParameterKey>thg_mag_cigo_epoch</ParameterKey>
+         <Description>thg_mag_cigo_epoch</Description>
+         <Caveats>This parameter is virtual.  It is calculated by calling the function COMP_THEMIS_EPOCH with the following input parameters:  thg_mag_cigo_epoch0, thg_mag_cigo_time.</Caveats>
          <Cadence>PT1S</Cadence>
          <RenderingHints>
             <AxisLabel>UT</AxisLabel>
@@ -242,16 +242,16 @@
             Discipline                           2   00   CDF_CHAR             36    Space Physics>Magnetospheric Science
             Discipline                           2   01   CDF_CHAR             33    Space Physics>Ionospheric Science
             Data_type                            1   00   CDF_CHAR              3    MAG
-            Descriptor                           1   00   CDF_CHAR             13    HLMS>HLMS, AK
+            Descriptor                           1   00   CDF_CHAR             13    CIGO>CIGO, AK
             Data_version                         1   00   CDF_CHAR              1    1
             PI_name                              1   00   CDF_CHAR             28    V. Angelopoulos and H. Nielson
             PI_affiliation                       1   00   CDF_CHAR             30    UCB and UAlaska, NASA NAS5-02099
             TEXT                                 1   00   CDF_CHAR             61    THEMIS Ground Based Observatory part of the THEMIS GBO effort
             Instrument_type                      1   00   CDF_CHAR             47    Ground-Based Magnetometers, Riometers, Sounders
             Mission_group                        1   00   CDF_CHAR              6    THEMIS
-            Logical_source                       1   00   CDF_CHAR             15    thg_l2_mag_hlms
+            Logical_source                       1   00   CDF_CHAR             15    thg_l2_mag_cigo
             Logical_file_id                      1   00   CDF_CHAR              4    temp
-            Logical_source_description           1   00   CDF_CHAR            126    Higher latitude chain (Lat 61.2, Long 210.1), Ground-based Vector Magnetic Field at Anchorage, AK, 0.5 sec, THEMIS GBO network
+            Logical_source_description           1   00   CDF_CHAR            124    Higher latitude chain (Lat 64.9, Long 212.1), Ground-based Vector Magnetic Field at College, AK, 0.5 sec, THEMIS GBO network
             Time_resolution                      1   00   CDF_CHAR              4    1.0s
             Rules_of_use                         1   00   CDF_CHAR             28    Open Data for Scientific Use
             Generated_by                         1   00   CDF_CHAR             10    THEMIS SOC
