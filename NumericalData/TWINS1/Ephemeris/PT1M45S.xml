@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
   <Version>2.2.0</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/TWINS1/Ephemeris/PT1M45S</ResourceID>
     <ResourceHeader>
       <ResourceName>TWINS 1 - Spacecraft Ephemeris</ResourceName>
-      <ReleaseDate>2011-06-03T21:54:59Z</ReleaseDate>
+     <ReleaseDate>2012-06-18T00:00:00Z</ReleaseDate>
       <Description>Definitive orbit data</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/David.J.McComas</PersonID>
@@ -22,7 +23,7 @@
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
@@ -30,8 +31,26 @@
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/twins/twins1/ephemeris/or/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
+           <AccessURL>
+                <Name>CDAWeb HTTP area</Name>
+                <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/data/twins/twins1/ephemeris/or/</URL>
+                <Description>In CDF via HTTP from CDAWeb</Description>
+            </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
+    </AccessInformation>
+    <AccessInformation>
+      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+      <Availability>Online</Availability>
+      <AccessRights>Open</AccessRights>
+      <AccessURL>
+        <Name>CDAWeb</Name>
+        <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/</URL>
+        <Description>TWINS 1 spacecraft ephemeris data with subset, plot, list functionalities 
+from CDAWeb</Description>
+      </AccessURL>
+      <Format>Text</Format>
+      <Acknowledgement>Please acknowledge the CDAWeb team at GSFC/SPDF.</Acknowledgement>
     </AccessInformation>
     <InstrumentID>spase://SMWG/Instrument/TWINS1/Ephemeris</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
