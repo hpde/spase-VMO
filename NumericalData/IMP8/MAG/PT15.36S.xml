@@ -4,7 +4,7 @@
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
     <ResourceHeader>
-      <ResourceName>IMP 8 Magnetic Field Measurements</ResourceName>
+      <ResourceName>IMP 8 MAG 15.36s Magnetic Field Measurements</ResourceName>
       <ReleaseDate>2012-02-23T16:23:06Z</ReleaseDate>
       <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. 
 Time resolution is 15.36 second.  Data are based on a 2010 data reprocessing
