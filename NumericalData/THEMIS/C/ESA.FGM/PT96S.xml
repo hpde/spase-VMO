@@ -27,7 +27,7 @@
       </Contact>
       <InformationURL>
         <Name>SPDF readme</Name>
-        <URL>ftp://omniweb.gsfc.nasa.gov/luna/themisc/merged/00readme_themisc.txt</URL>
+        <URL>ftp://omniweb.gsfc.nasa.gov/pub/omniweb/luna/themisc/merged/00readme_themisc.txt</URL>
       </InformationURL>
     </ResourceHeader>
     <AccessInformation>
@@ -36,7 +36,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>SPDF ASCII ftp area</Name>
-        <URL>ftp://omniweb.gsfc.nasa.gov/luna/themisc/merged/</URL>
+        <URL>ftp://omniweb.gsfc.nasa.gov/pub/omniweb/luna/themisc/merged/</URL>
         <Description>For ftp retrieval of annual ASCII files</Description>
       </AccessURL>
       <AccessURL>
