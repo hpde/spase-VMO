@@ -41,7 +41,7 @@
       </AccessURL>
       <AccessURL>
         <Name>SPDF CDF ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/merged/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/thc/l2/merged/</URL>
         <ProductKey>THC_L2_MERGED</ProductKey>
         <Description>For ftp retrieval of monthly CDF files</Description>
       </AccessURL>

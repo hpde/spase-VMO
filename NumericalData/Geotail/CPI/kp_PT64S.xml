@@ -49,7 +49,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP download</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/cpi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/cpi</URL>
         <ProductKey>GE_K0_CPI</ProductKey>
       </AccessURL>
       <Format>CDF</Format>

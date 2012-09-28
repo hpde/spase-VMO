@@ -32,7 +32,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP download</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/interball/tail/mfi_h0/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/interball/tail/mfi_h0/</URL>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>

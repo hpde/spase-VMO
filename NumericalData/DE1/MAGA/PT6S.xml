@@ -60,7 +60,7 @@
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>In CDF via ftp from CDAWeb</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/de/de1/6sec_magagms/</URL>
+                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/de/de1/6sec_magagms/</URL>
             </AccessURL>
             <Format>CDF</Format>
         </AccessInformation>

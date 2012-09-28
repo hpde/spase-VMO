@@ -59,7 +59,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>CDAWeb FTP Access</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/fbk</URL>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/thc/l2/fbk</URL>
             <Description>NASA/GSFC CDAWeb ftp access to FBK data.</Description>
          </AccessURL>
          <AccessURL>

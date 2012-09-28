@@ -38,7 +38,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP download</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/eda12sec_lep</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/eda12sec_lep</URL>
         <ProductKey>GE_EDA12SEC_LEP</ProductKey>
       </AccessURL>
       <Format>CDF</Format>

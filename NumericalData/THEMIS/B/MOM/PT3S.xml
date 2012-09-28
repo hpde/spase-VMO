@@ -28,7 +28,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb ftp area</Name>
-        <URL> ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thb/l2/mom/</URL>
+        <URL> ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/thb/l2/mom/</URL>
         <ProductKey>THB_L2_MOM</ProductKey>
         <Description> NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>

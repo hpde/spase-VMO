@@ -70,7 +70,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Tango Prime Parameter Waves of HF and Sounder for Probing Electron Density by Relaxation data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c4/pp/whi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c4/pp/whi</URL>
         <ProductKey>C4_PP_WHI</ProductKey>
         <Description>Cluster II Tango Prime Parameter Waves of HF and Sounder for Probing Electron Density by Relaxation (WHISPER) data</Description>
       </AccessURL>

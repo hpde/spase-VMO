@@ -24,7 +24,7 @@
          <Availability>Online</Availability>
          <AccessRights>Open</AccessRights>
          <AccessURL>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/mfe</URL>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/mfe</URL>
             <Description>FTP repository of Polar MFE data in CDF format at CDAWeb</Description>
          </AccessURL>
          <Format>CDF</Format>

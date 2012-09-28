@@ -185,7 +185,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Plasma Electron and Current Experiment data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/pea</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/pea</URL>
         <ProductKey>CL_SP_PEA</ProductKey>
         <Description>Cluster II Summary Parameter Plasma Electron and Current Experiment (PEACE) data</Description>
       </AccessURL>

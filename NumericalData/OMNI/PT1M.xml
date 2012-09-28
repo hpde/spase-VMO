@@ -75,7 +75,7 @@
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_1min/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/omni/hro_1min/</URL>
         <ProductKey>OMNI_HRO_1MIN</ProductKey>
       </AccessURL>
       <Format>Text</Format>

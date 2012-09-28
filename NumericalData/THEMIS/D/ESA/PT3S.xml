@@ -31,7 +31,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thd/l2/esa</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/thd/l2/esa</URL>
         <ProductKey>THD_L2_ESA</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>

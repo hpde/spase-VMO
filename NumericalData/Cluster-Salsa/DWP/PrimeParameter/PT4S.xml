@@ -85,7 +85,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb's ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/pp/dwp/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/pp/dwp/</URL>
         <ProductKey>C2_PP_DWP</ProductKey>
         <Description>ftp access to Cluster Salsa Digital Wave Processor (DWP) CDF files.</Description>
       </AccessURL>

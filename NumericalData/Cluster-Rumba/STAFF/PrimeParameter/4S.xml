@@ -70,7 +70,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Rumba Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/sta</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/pp/sta</URL>
         <ProductKey>C1_PP_STA</ProductKey>
         <Description>Cluster II Rumba Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) data</Description>
       </AccessURL>

@@ -121,7 +121,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Electron Drift Instrument data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/edi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/edi</URL>
         <ProductKey>CL_SP_EDI</ProductKey>
         <Description>Cluster II Summary Parameter Electron Drift Instrument (EDI) data</Description>
       </AccessURL>

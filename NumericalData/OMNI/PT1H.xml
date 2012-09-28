@@ -97,7 +97,7 @@ and to one full-time-span file for each 1-day and 27-day averages.</Description>
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/coho1hr_magplasma/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/omni/coho1hr_magplasma/</URL>
         <ProductKey>OMNI2_H0_MRG1HR</ProductKey>
       </AccessURL>
       <Format>Text</Format>

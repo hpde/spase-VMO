@@ -90,7 +90,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/wbd</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/wbd</URL>
         <ProductKey>C1_WAVEFORM_WBD</ProductKey>
         <Description>Prime Parameter Wide Band Data from Cluster II Rumba</Description>
       </AccessURL>

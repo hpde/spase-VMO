@@ -62,7 +62,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb web site for access to Cluster II Salsa Prime Parameter ASPOC Data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/pp/asp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/pp/asp</URL>
         <ProductKey>C2_PP_ASP</ProductKey>
         <Description>Prime Parameter Active Spacecraft Potential Control (ASPOC) data on Cluster II Salsa</Description>
       </AccessURL>

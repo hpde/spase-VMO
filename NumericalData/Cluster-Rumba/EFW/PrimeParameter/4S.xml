@@ -178,7 +178,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Rumba Prime Parameter Electric Field and Waves data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/efw</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/pp/efw</URL>
         <ProductKey>C1_PP_EFW</ProductKey>
         <Description>Cluster II Rumba Prime Parameter Electric Field and Waves (EFW) data</Description>
       </AccessURL>

@@ -178,7 +178,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Samba Prime Parameter Electric Field and Waves data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c3/pp/efw</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c3/pp/efw</URL>
         <ProductKey>C3_PP_EFW</ProductKey>
         <Description>Cluster II Samba Prime Parameter Electric Field and Waves (EFW) data</Description>
       </AccessURL>

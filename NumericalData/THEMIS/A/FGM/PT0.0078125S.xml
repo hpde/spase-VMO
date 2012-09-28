@@ -36,7 +36,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/tha/l2/fgm/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/tha/l2/fgm/</URL>
         <ProductKey>THA_L2_FGM</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>

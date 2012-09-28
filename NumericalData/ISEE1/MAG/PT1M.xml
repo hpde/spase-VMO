@@ -33,7 +33,7 @@ CDAWeb team at NASA/GSFC</Acknowledgement>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb's ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/60sec_mfi/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/isee/isee1/60sec_mfi/</URL>
         <ProductKey>ISEE1_60SEC_MFI</ProductKey>
         <Description>ftp access to CDF files</Description>
       </AccessURL>

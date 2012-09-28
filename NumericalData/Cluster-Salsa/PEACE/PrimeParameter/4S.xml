@@ -158,7 +158,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Salsa Prime Parameter Plasma Electron and Current Experiment data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/pp/pea</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/pp/pea</URL>
         <ProductKey>C2_PP_PEA</ProductKey>
         <Description>Cluster II Salsa Prime Parameter Plasma Electron and Current Experiment (PEACE) data</Description>
       </AccessURL>

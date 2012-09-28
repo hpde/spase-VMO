@@ -83,7 +83,7 @@ distributions.</Description>
       </AccessURL>
       <AccessURL>
         <Name>in CDF via ftp from CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/omni/hro_5min/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/omni/hro_5min/</URL>
         <ProductKey>OMNI_HRO_5MIN</ProductKey>
       </AccessURL>
       <Format>Text</Format>

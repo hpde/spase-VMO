@@ -161,7 +161,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Cluster Ion Spectrometry data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/cis</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/cis</URL>
         <ProductKey>CL_SP_CIS</ProductKey>
         <Description>Cluster II Summary Parameter Cluster Ion Spectrometry (CIS) data</Description>
       </AccessURL>

@@ -50,7 +50,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>in CDF via ftp from SPDF</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mag_320msec</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/imp8/mag_320msec</URL>
       </AccessURL>
       <Format>CDF</Format>
       <Acknowledgement>Dr. Adam.Szabo and the CDAWeb Team</Acknowledgement>

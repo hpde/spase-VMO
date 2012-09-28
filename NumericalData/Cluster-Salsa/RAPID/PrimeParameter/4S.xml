@@ -110,7 +110,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Salsa Prime Parameter Research with Adaptive Particle Imaging Detectors data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/pp/rap</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/pp/rap</URL>
         <ProductKey>C2_PP_RAP</ProductKey>
         <Description>Cluster II Salsa Prime Parameter Research with Adaptive Particle Imaging Detectors (RAPID) data</Description>
       </AccessURL>

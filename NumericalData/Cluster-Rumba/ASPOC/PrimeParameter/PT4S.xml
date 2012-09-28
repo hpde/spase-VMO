@@ -62,7 +62,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb web site for access to Cluster II Rumba Prime Parameter ASPOC Data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/asp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/pp/asp</URL>
         <ProductKey>C1_PP_ASP</ProductKey>
         <Description>Prime Parameter Active Spacecraft Potential Control (ASPOC) data on Cluster II Rumba</Description>
       </AccessURL>

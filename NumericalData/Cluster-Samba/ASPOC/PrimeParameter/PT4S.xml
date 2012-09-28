@@ -62,7 +62,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb web site for access to Cluster II Samba Prime Parameter ASPOC Data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c3/pp/asp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c3/pp/asp</URL>
         <ProductKey>C3_PP_ASP</ProductKey>
         <Description>Prime Parameter Active Spacecraft Potential Control (ASPOC) data on Cluster II Samba</Description>
       </AccessURL>

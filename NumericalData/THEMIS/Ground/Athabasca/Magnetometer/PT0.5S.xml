@@ -38,7 +38,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>CDAWeb FTP Access</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thg/l2/mag/atha</URL>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/thg/l2/mag/atha</URL>
             <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
          </AccessURL>
          <AccessURL>

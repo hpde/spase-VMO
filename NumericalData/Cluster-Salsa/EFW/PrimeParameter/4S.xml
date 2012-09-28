@@ -178,7 +178,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Salsa Prime Parameter Electric Field and Waves data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/pp/efw</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/pp/efw</URL>
         <ProductKey>C2_PP_EFW</ProductKey>
         <Description>Cluster II Salsa Prime Parameter Electric Field and Waves (EFW) data</Description>
       </AccessURL>

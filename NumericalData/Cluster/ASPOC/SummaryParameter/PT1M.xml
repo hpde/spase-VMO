@@ -77,7 +77,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb web site for access to Cluster II Summary Parameter ASPOC Data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/asp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/asp</URL>
         <ProductKey>CL_SP_ASP</ProductKey>
         <Description>Summary Parameter Active Spacecraft Potential Control (ASPOC) data on Cluster II</Description>
       </AccessURL>

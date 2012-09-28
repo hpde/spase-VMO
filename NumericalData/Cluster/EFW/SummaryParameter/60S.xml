@@ -205,7 +205,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Electric Field and Waves Data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/efw</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/efw</URL>
         <ProductKey>CL_SP_EFW</ProductKey>
         <Description>Cluster II Summary Parameter Electric Field and Waves (EFW) Data</Description>
       </AccessURL>

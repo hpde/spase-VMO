@@ -134,7 +134,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Rumba Prime Parameter Cluster Ion Spectrometry data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/cis</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/pp/cis</URL>
         <ProductKey>C1_PP_CIS</ProductKey>
         <Description>Cluster II Rumba Prime Parameter Cluster Ion Spectrometry (CIS) data</Description>
       </AccessURL>

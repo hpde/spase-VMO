@@ -41,7 +41,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP download</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/cpi_hpamom</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/cpi_hpamom</URL>
         <ProductKey>GE_H1_CPI</ProductKey>
       </AccessURL>
       <Format>CDF</Format>

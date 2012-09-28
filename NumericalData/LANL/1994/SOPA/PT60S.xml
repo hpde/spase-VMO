@@ -35,7 +35,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/lanl/94_spa/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/lanl/94_spa/</URL>
         <Description>Synchronous Orbit Particle Analyzer data on LANL 084.</Description>
       </AccessURL>
       <Format>CDF</Format>

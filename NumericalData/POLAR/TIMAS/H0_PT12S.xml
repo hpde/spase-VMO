@@ -48,7 +48,7 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/timas_h0</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/timas_h0</URL>
         <ProductKey>PO_H0_TIM</ProductKey>
         <Description>FTP repository of high-resolution Polar TIMAS data in CDF format at CDAWeb</Description>
       </AccessURL>

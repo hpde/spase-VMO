@@ -21,7 +21,7 @@
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF/CDAWeb</RepositoryID>
       <AccessURL>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/aux</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/aux</URL>
         <ProductKey>CL_SP_AUX</ProductKey>
       </AccessURL>
       <Format>CDF</Format>

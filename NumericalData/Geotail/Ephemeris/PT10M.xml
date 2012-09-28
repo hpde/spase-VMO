@@ -22,7 +22,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/def_or</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/def_or</URL>
         <ProductKey>GE_OR_DEF</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>

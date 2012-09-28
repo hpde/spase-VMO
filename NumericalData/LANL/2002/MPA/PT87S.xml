@@ -34,7 +34,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/lanl/02a_mpa/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/lanl/02a_mpa/</URL>
         <ProductKey>A2_K0_MPA</ProductKey>
         <Description>Magnetospheric Plasma Analyzer data on LANL 02A.</Description>
       </AccessURL>

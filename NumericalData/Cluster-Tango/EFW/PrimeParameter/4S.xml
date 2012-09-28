@@ -178,7 +178,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Tango Prime Parameter Electric Field and Waves data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c4/pp/efw</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c4/pp/efw</URL>
         <ProductKey>C4_PP_EFW</ProductKey>
         <Description>Cluster II Tango Prime Parameter Electric Field and Waves (EFW) data</Description>
       </AccessURL>

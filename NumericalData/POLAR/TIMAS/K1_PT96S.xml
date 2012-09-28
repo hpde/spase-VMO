@@ -31,7 +31,7 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/timas_k1</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/timas_k1</URL>
         <ProductKey>PO_K1_TIM</ProductKey>
         <Description>FTP repository of Polar TIMAS key parameter data in CDF format at CDAWeb</Description>
       </AccessURL>

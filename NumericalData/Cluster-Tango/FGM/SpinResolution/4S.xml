@@ -29,7 +29,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster Tango Spin Resolution Fluxgate Magnetometer data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c4/cp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c4/cp</URL>
         <ProductKey>C4_CP_FGM_SPIN</ProductKey>
         <Description>Cluster Tango Spin Resolution Fluxgate Magnetometer (FGM) data</Description>
       </AccessURL>

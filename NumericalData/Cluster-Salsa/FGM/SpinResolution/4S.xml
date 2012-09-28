@@ -29,7 +29,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster Salsa Spin Resolution Fluxgate Magnetometer data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/cp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/cp</URL>
         <ProductKey>C2_CP_FGM_SPIN</ProductKey>
         <Description>Cluster Salsa Spin Resolution Fluxgate Magnetometer (FGM) data</Description>
       </AccessURL>

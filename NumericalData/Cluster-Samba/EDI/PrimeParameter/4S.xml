@@ -94,7 +94,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Samba Prime Parameter Electron Drift Instrument data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c3/pp/edi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c3/pp/edi</URL>
         <ProductKey>C3_PP_EDI</ProductKey>
         <Description>Cluster II Samba Prime Parameter Electron Drift Instrument (EDI) data</Description>
       </AccessURL>

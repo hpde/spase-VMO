@@ -110,7 +110,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Rumba Prime Parameter Research with Adaptive Particle Imaging Detectors data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/rap</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/pp/rap</URL>
         <ProductKey>C1_PP_RAP</ProductKey>
         <Description>Cluster II Rumba Prime Parameter Research with Adaptive Particle Imaging Detectors (RAPID) data</Description>
       </AccessURL>

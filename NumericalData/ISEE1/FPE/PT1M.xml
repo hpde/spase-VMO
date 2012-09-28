@@ -23,7 +23,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>SPDF CDF ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/isee/isee1/1min_fpe/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/isee/isee1/1min_fpe/</URL>
         <ProductKey>ISEE1_H1_FPE</ProductKey>
         <Description>For ftp retrieval of daily CDF files</Description>
       </AccessURL>

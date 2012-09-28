@@ -158,7 +158,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Rumba Prime Parameter Plasma Electron and Current Experiment data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/pp/pea</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/pp/pea</URL>
         <ProductKey>C1_PP_PEA</ProductKey>
         <Description>Cluster II Rumba Prime Parameter Plasma Electron and Current Experiment (PEACE) data</Description>
       </AccessURL>

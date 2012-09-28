@@ -41,7 +41,7 @@ about the data processing.</Description>
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb FTP area</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/tide_h0</URL>
+                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/tide_h0</URL>
             </AccessURL>
             <Format>CDF</Format>
         </AccessInformation>

@@ -85,7 +85,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/dwp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/dwp</URL>
         <ProductKey>CL_SP_DWP</ProductKey>
         <Description>Cluster Digital Wave Processor (DWP) summary parameter data at CDAWeb.</Description>
       </AccessURL>

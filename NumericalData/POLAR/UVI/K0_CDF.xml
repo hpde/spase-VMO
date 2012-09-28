@@ -36,7 +36,7 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/uvi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/uvi</URL>
         <ProductKey>PO_K0_UVI</ProductKey>
       </AccessURL>
       <Format>CDF</Format>

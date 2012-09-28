@@ -30,7 +30,7 @@ access to the data</Description>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>In CDF via ftp from SPDF</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mag_15sec/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/imp8/mag_15sec/</URL>
         <ProductKey>I8_15SEC_MAG</ProductKey>
         <Description>An ftp repository hosting 15s magnetic field data from IMP-8.</Description>
       </AccessURL>
@@ -42,7 +42,7 @@ access to the data</Description>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb Web Service</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data</URL>
         <ProductKey>I8_15SEC_MAG</ProductKey>
         <Description>Subset, plot and list data via CDAWeb</Description>
       </AccessURL>

@@ -18,7 +18,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/or_ssc</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/imp8/or_ssc</URL>
         <ProductKey>I8_OR_SSC</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>

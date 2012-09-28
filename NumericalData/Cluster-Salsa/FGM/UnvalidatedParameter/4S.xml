@@ -38,7 +38,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Salsa Unvalidated Prime Parameter Fluxgate Magnetometer data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/up/fgm</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/up/fgm</URL>
         <ProductKey>C2_UP_FGM</ProductKey>
         <Description>Cluster II Salsa Unvalidated Prime Parameter Fluxgate Magnetometer (FGM) data</Description>
       </AccessURL>

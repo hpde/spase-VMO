@@ -97,7 +97,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Waves of HF and Sounder for Probing Electron Density by Relaxation data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/whi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/whi</URL>
         <ProductKey>CL_SP_WHI</ProductKey>
         <Description>Cluster II Summary Parameter Waves of HF and Sounder for Probing Electron Density by Relaxation (WHISPER) data</Description>
       </AccessURL>

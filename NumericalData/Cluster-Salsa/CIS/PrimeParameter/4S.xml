@@ -134,7 +134,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Salsa Prime Parameter Cluster Ion Spectrometry data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c2/pp/cis</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c2/pp/cis</URL>
         <ProductKey>C2_PP_CIS</ProductKey>
         <Description>Cluster II Salsa Prime Parameter Cluster Ion Spectrometry (CIS) data</Description>
       </AccessURL>

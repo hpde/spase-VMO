@@ -76,7 +76,7 @@
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>CDAWeb FTP area</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/timas_h2</URL>
+                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/timas_h2</URL>
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb</Name>

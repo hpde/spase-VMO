@@ -41,7 +41,7 @@ and several parameters that describe the instrument status and details about the
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb FTP area</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/tide_h1</URL>
+                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/tide_h1</URL>
                 <Description>CDAWeb TIDE H1 CDF viewer</Description>
             </AccessURL>
             <Format>CDF</Format>

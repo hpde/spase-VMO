@@ -29,7 +29,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster Rumba Spin Resolution Fluxgate Magnetometer data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c1/cp</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c1/cp</URL>
         <ProductKey>C1_CP_FGM_SPIN</ProductKey>
         <Description>Cluster Rumba Spin Resolution Fluxgate Magnetometer (FGM) data</Description>
       </AccessURL>

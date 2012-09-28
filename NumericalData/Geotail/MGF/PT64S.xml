@@ -44,7 +44,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP download</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/mgf</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/mgf</URL>
         <ProductKey>GE_K0_MGF</ProductKey>
       </AccessURL>
       <Format>CDF</Format>

@@ -90,7 +90,7 @@ plasma_mit/sw_msheath_min/aareadme.txt</URL>
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>In CDF via ftp from SPDF</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/imp8/mitplasma_h0</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/imp8/mitplasma_h0</URL>
       </AccessURL>
       <Format>CDF</Format>
     </AccessInformation>

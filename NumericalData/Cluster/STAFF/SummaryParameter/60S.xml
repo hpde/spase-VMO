@@ -97,7 +97,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/sta</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/sta</URL>
         <ProductKey>CL_SP_STA</ProductKey>
         <Description>Cluster II Summary Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) data</Description>
       </AccessURL>

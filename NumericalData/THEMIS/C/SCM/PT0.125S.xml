@@ -33,7 +33,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/themis/thc/l2/scm/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/thc/l2/scm/</URL>
         <ProductKey>THC_L2_SCM</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>

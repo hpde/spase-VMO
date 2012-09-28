@@ -137,7 +137,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Summary Parameter Research with Adaptive Particle Imaging Detectors data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/cl/sp/rap</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/rap</URL>
         <ProductKey>CL_SP_RAP</ProductKey>
         <Description>Cluster II Summary Parameter Research with Adaptive Particle Imaging Detectors (RAPID) data</Description>
       </AccessURL>

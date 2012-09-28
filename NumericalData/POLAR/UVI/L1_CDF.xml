@@ -37,7 +37,7 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/polar/uvi_level1</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/uvi_level1</URL>
         <Description>FTP repository of Polar Level 1 UVI image data in CDF format at CDAWeb. This repository mirrors data from NSSTC.</Description>
       </AccessURL>
       <Format>CDF</Format>

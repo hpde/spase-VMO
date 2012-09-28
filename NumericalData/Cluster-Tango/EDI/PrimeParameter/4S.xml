@@ -94,7 +94,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb link to Cluster II Tango Prime Parameter Electron Drift Instrument data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/cluster/c4/pp/edi</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c4/pp/edi</URL>
         <ProductKey>C4_PP_EDI</ProductKey>
         <Description>Cluster II Tango Prime Parameter Electron Drift Instrument (EDI) data</Description>
       </AccessURL>

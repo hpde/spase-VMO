@@ -36,7 +36,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>CDAWeb FTP download</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/istp/geotail/eda3sec_mgf</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/eda3sec_mgf</URL>
         <ProductKey>GE_EDA3SEC_MGF</ProductKey>
       </AccessURL>
       <Format>CDF</Format>
