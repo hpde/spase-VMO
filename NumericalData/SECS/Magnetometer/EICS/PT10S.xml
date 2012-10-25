@@ -61,8 +61,8 @@
     <TemporalDescription>
       <TimeSpan>
         <StartDate>2007-01-01T00:00:00</StartDate>
-        <StopDate>2008-03-31T23:59:59</StopDate>
-        <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000'</Note>
+        <StopDate>2011-01-31T23:59:59</StopDate>
+        <Note>Time format in data files is: day, month, year hour, min, seconds. Ex: '01-Jan-1981 00:00:00.000.' Data are not complete from 2007 to 2011. Availables months include: 2007/06, 2007/11-2008/03, 2008/10-2009/03, 2009/10-2010/01, and 2011/01</Note>
       </TimeSpan>
       <Cadence>PT10S</Cadence>
     </TemporalDescription>
