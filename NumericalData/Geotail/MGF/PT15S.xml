@@ -33,8 +33,13 @@ The Geotail position vector in GSE coordinates is included.</Description>
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-         <Name>FTP access to daily ASCII files at nssdcftp</Name>
-         <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/geotail/mag_sw_15s/</URL>
+         <Name>SPDF FTP area</Name>
+         <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/mag_sw_15s/</URL>
+      </AccessURL>
+      <AccessURL>
+         <Name>SPDF HTTP area</Name>
+         <URL>http://spdf.gsfc.nasa.gov/pub/data/geotail/mag_sw_15s/</URL>
+         <Description>In CDF via HTTP from SPDF</Description>
       </AccessURL>
       <AccessURL>
          <Name>OMNIWeb-Plus</Name>
