@@ -82,7 +82,7 @@ Pathway to 1-min, 5-min, 1-day, 27-day averages.</Description>
       </AccessURL>
       <AccessURL>
         <Name>in ASCII via ftp from nssdcftp</Name>
-        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
+        <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/omni_cdaweb/hourly/</URL>
         <Description>ftp access to annual ASCII files of 1-hour OMNI data 
 and to one full-time-span file for each 1-day and 27-day averages.</Description>
       </AccessURL>

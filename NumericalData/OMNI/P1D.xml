@@ -80,10 +80,15 @@ Distributions.  Means, medians, standard deviations in distributions.
 Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
       </AccessURL>
       <AccessURL>
-        <Name>in ASCII via ftp from nssdcftp</Name>
-        <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/</URL>
+        <Name>SPDF FTP area</Name>
+        <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/</URL>
         <Description>ftp access to annual ASCII files of 1-hour OMNI data 
 and to one full-time-span file for each 1-day and 27-day averages.</Description>
+      </AccessURL>
+      <AccessURL>
+        <Name>SPDF HTTP</Name>
+        <URL>http://spdf.gsfc.nasa.gov/pub/data/omni/</URL>
+        <Description>In CDF via HTTP from SPDF</Description>
       </AccessURL>
       <Format>Text</Format>
       <DataExtent>
