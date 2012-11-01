@@ -1,7 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-    <Version>2.2.1</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/DE1/MAGA/PT6S</ResourceID>
         <ResourceHeader>
@@ -41,28 +39,38 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>nssdcftp</Name>
-                <URL>http://nssdcftp.gsfc.nasa.gov/spacecraft_data/de/de1/magnetic_fields_maga/gms_6s_ascii/</URL>
-                <Description>data for the MAGA instrument that flew on the DE 1spacecraft.</Description>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/6sec_magagms_cdaweb/</URL>
             </AccessURL>
             <AccessURL>
-                <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <Description>DE1_6SEC_MAGAGMS</Description>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/6sec_magagms_cdaweb/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
-            <Format>Text</Format>
-            <Encoding>ASCII</Encoding>
-            <Acknowledgement>NASA; Masahisa Sugiura; VMO</Acknowledgement>
+            <Format>CDF</Format>
         </AccessInformation>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>In CDF via ftp from CDAWeb</Name>
-                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/de/de1/6sec_magagms/</URL>
+                <Name>CDAWeb</Name>
+                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <Description>DE1_6SEC_MAGAGMS</Description>
             </AccessURL>
-            <Format>CDF</Format>
+            <AccessURL>
+                <Name>SPDF FTP area (originally nssdcftp area)</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/gms_6s_ascii/</URL>
+                <Description>data for the MAGA instrument that flew on the DE 1spacecraft.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/gms_6s_ascii/</URL>
+                <Description>data for the MAGA instrument that flew on the DE 1spacecraft.</Description>
+            </AccessURL>
+            <Format>Text</Format>
+            <Encoding>ASCII</Encoding>
+            <Acknowledgement>NASA; Masahisa Sugiura; VMO</Acknowledgement>
         </AccessInformation>
         <ProcessingLevel>Calibrated</ProcessingLevel>
         <ProviderResourceName>Dynamics Explorer 1 Tri-axial fluxgate magnetometer</ProviderResourceName>

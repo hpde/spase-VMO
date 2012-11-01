@@ -1,25 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
-    <Version>2.1.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema">
+    <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/IMP8/Propagated/PT1M</ResourceID>
         <ResourceHeader>
             <ResourceName>IMP 8 MAG PLS 1-min field and plasma data at bow shock nose</ResourceName>
             <AlternateName>IMP 8 at BSN</AlternateName>
-            <ReleaseDate>2010-04-06T17:27:28Z</ReleaseDate>
-            <Description>Solar wind magnetic field and plasma data at 1-min resolution created from IMP 8 data shifted to the Earth's bow shock nose (BSN).</Description>
-            <Acknowledgement>We acknowledge A.Szabo and R. Lepping of the MAG team, A. Lazarus of the PLS team and J. King and N. Papitashvili of NASA/SPDF and ADNET who created this product.</Acknowledgement>
+            <ReleaseDate>2009-08-01T00:00:00</ReleaseDate>
+            <Description>Solar wind magnetic field and plasma data at 1-min resolution 
+created from IMP 8 data shifted to the Earth's bow shock nose (BSN).</Description>
+            <Acknowledgement>We acknowledge A.Szabo and R. Lepping of the MAG team, A. Lazarus 
+of the PLS team and J. King and N. Papitashvili of NASA/SPDF and ADNET 
+who created this product.</Acknowledgement>
             <Contact>
                 <PersonID>spase://SMWG/Person/Joseph.H.King</PersonID>
                 <Role>DataProducer</Role>
             </Contact>
-            <Contact>                
+            <Contact>
                 <PersonID>spase://SMWG/Person/Natalia.E.Papitashvili</PersonID>
                 <Role>DataProducer</Role>
             </Contact>
             <InformationURL>
-                <Name>Readme at nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/sc_specific/00readme.txt</URL>
+                <Name>Readme file at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/high_res_omni/sc_specific/00readme.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -39,16 +41,21 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>nssdcftp</Name>
-                <URL>ftp://nssdcftp.gsfc.nasa.gov/spacecraft_data/omni/high_res_omni/sc_specific</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/high_res_omni/sc_specific</URL>
                 <Description>FTP path at SPDF/NSSDC</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/omni/high_res_omni/sc_specific</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>Text</Format>
             <Encoding>None</Encoding>
             <DataExtent>
-                 <Quantity>129</Quantity>
-                 <Units>MB</Units>
-                 <Per>P1Y</Per>
+                <Quantity>129</Quantity>
+                <Units>MB</Units>
+                <Per>P1Y</Per>
             </DataExtent>
         </AccessInformation>
         <ProviderResourceName>IMP 8 MAG PLS Data at BSN</ProviderResourceName>
@@ -58,8 +65,8 @@
         <MeasurementType>ThermalPlasma</MeasurementType>
         <TemporalDescription>
             <TimeSpan>
-                <StartDate>1973-01-01T00:00:00</StartDate>
-                <StopDate>2000-12-12T23:59:00</StopDate>
+                <StartDate>1994-01-01T00:00:00</StartDate>
+                <StopDate>2000-06-10T00:00:00</StopDate>
             </TimeSpan>
             <Cadence>PT1M</Cadence>
         </TemporalDescription>
@@ -77,22 +84,22 @@
                 <Size>3</Size>
                 <Description>Magnetic field vector, GSE</Description>
                 <Element>
-                     <Name>Bx(GSE)</Name>
-                     <Index>1</Index>
-                     <ParameterKey>Column13</ParameterKey>
-                     <Units>nT</Units>
+                    <Name>Bx(GSE)</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Column13</ParameterKey>
+                    <Units>nT</Units>
                 </Element>
                 <Element>
-                     <Name>By(GSE)</Name>
-                     <Index>2</Index>
-                     <ParameterKey>Column14</ParameterKey>
-                     <Units>nT</Units>
+                    <Name>By(GSE)</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Column14</ParameterKey>
+                    <Units>nT</Units>
                 </Element>
                 <Element>
-                     <Name>Bz(GSE)</Name>
-                     <Index>3</Index>
-                     <ParameterKey>Column15</ParameterKey>
-                     <Units>nT</Units>
+                    <Name>Bz(GSE)</Name>
+                    <Index>3</Index>
+                    <ParameterKey>Column15</ParameterKey>
+                    <Units>nT</Units>
                 </Element>
             </Structure>
             <Field>
@@ -114,22 +121,22 @@
                 <Size>3</Size>
                 <Description>Magnetic field vector, GSM</Description>
                 <Element>
-                     <Name>Bx(GSM)</Name>
-                     <Index>1</Index>
-                     <ParameterKey>Column13</ParameterKey>
-                     <Units>nT</Units>
+                    <Name>Bx(GSM)</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Column13</ParameterKey>
+                    <Units>nT</Units>
                 </Element>
                 <Element>
-                     <Name>By(GSM)</Name>
-                     <Index>2</Index>
-                     <ParameterKey>Column16</ParameterKey>
-                     <Units>nT</Units>
+                    <Name>By(GSM)</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Column16</ParameterKey>
+                    <Units>nT</Units>
                 </Element>
                 <Element>
-                     <Name>Bz(GSM)</Name>
-                     <Index>3</Index>
-                     <ParameterKey>Column17</ParameterKey>
-                     <Units>nT</Units>
+                    <Name>Bz(GSM)</Name>
+                    <Index>3</Index>
+                    <ParameterKey>Column17</ParameterKey>
+                    <Units>nT</Units>
                 </Element>
             </Structure>
             <Field>
@@ -165,7 +172,8 @@
         <Parameter>
             <Name>Magnetic field magnitude standard deviation</Name>
             <ParameterKey>Column20</ParameterKey>
-            <Description>Standard deviation in the average of magnetic field magnitudes</Description>
+            <Description>Standard deviation in the average of magnetic field 
+magnitudes</Description>
             <Cadence>PT1M</Cadence>
             <Units>nT</Units>
             <Field>
@@ -199,22 +207,22 @@
                 <Size>3</Size>
                 <Description>Flow velocity vector, GSE</Description>
                 <Element>
-                     <Name>Vx(GSE)</Name>
-                     <Index>1</Index>
-                     <ParameterKey>Column24</ParameterKey>
-                     <Units>km/s</Units>
+                    <Name>Vx(GSE)</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Column24</ParameterKey>
+                    <Units>km/s</Units>
                 </Element>
                 <Element>
-                     <Name>Vy(GSE)</Name>
-                     <Index>2</Index>
-                     <ParameterKey>Column25</ParameterKey>
-                     <Units>km/s</Units>
+                    <Name>Vy(GSE)</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Column25</ParameterKey>
+                    <Units>km/s</Units>
                 </Element>
                 <Element>
-                     <Name>Vz(GSE)</Name>
-                     <Index>3</Index>
-                     <ParameterKey>Column26</ParameterKey>
-                     <Units>km/s</Units>
+                    <Name>Vz(GSE)</Name>
+                    <Index>3</Index>
+                    <ParameterKey>Column26</ParameterKey>
+                    <Units>km/s</Units>
                 </Element>
             </Structure>
             <Particle>
@@ -247,7 +255,8 @@
         </Parameter>
         <Parameter>
             <Name>Spacecraft position</Name>
-            <Description>Position of IMP 8 spacecraft, GSE cartesian components</Description>
+            <Description>Position of IMP 8 spacecraft, GSE cartesian 
+components</Description>
             <Cadence>PT1M</Cadence>
             <Units>Re</Units>
             <CoordinateSystem>
@@ -258,31 +267,32 @@
                 <Size>3</Size>
                 <Description>Spacecraft position vector, GSE</Description>
                 <Element>
-                     <Name>X(IMP8,GSE)</Name>
-                     <Index>1</Index>
-                     <ParameterKey>Column29</ParameterKey>
-                     <Units>Re</Units>
+                    <Name>X(IMP8,GSE)</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Column29</ParameterKey>
+                    <Units>Re</Units>
                 </Element>
                 <Element>
-                     <Name>Y(IMP8,GSE)</Name>
-                     <Index>2</Index>
-                     <ParameterKey>Column30</ParameterKey>
-                     <Units>Re</Units>
+                    <Name>Y(IMP8,GSE)</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Column30</ParameterKey>
+                    <Units>Re</Units>
                 </Element>
                 <Element>
-                     <Name>Z(IMP8,GSE)</Name>
-                     <Index>3</Index>
-                     <ParameterKey>Column31</ParameterKey>
-                     <Units>Re</Units>
+                    <Name>Z(IMP8,GSE)</Name>
+                    <Index>3</Index>
+                    <ParameterKey>Column31</ParameterKey>
+                    <Units>Re</Units>
                 </Element>
             </Structure>
             <Support>
-                 <SupportQuantity>Positional</SupportQuantity>
+                <SupportQuantity>Positional</SupportQuantity>
             </Support>
         </Parameter>
         <Parameter>
             <Name>Bow shock nose position</Name>
-            <Description>Bow shock nose position, as computed from observed data and models, 3 cartesian components</Description>
+            <Description>Bow shock nose position, as computed from observed data 
+and models, 3 cartesian components</Description>
             <Cadence>PT1M</Cadence>
             <Units>Re</Units>
             <CoordinateSystem>
@@ -293,58 +303,62 @@
                 <Size>3</Size>
                 <Description>Bow shock nose (BSN) position vector, GSE</Description>
                 <Element>
-                     <Name>X(BSN,GSE)</Name>
-                     <Index>1</Index>
-                     <ParameterKey>Column32</ParameterKey>
-                     <Units>Re</Units>
+                    <Name>X(BSN,GSE)</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Column32</ParameterKey>
+                    <Units>Re</Units>
                 </Element>
                 <Element>
-                     <Name>Y(BSN,GSE)</Name>
-                     <Index>2</Index>
-                     <ParameterKey>Column33</ParameterKey>
-                     <Units>Re</Units>
+                    <Name>Y(BSN,GSE)</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Column33</ParameterKey>
+                    <Units>Re</Units>
                 </Element>
                 <Element>
-                     <Name>Z(BSN,GSE)</Name>
-                     <Index>3</Index>
-                     <ParameterKey>Column34</ParameterKey>
-                     <Units>Re</Units>
+                    <Name>Z(BSN,GSE)</Name>
+                    <Index>3</Index>
+                    <ParameterKey>Column34</ParameterKey>
+                    <Units>Re</Units>
                 </Element>
             </Structure>
             <Support>
-                 <SupportQuantity>Other</SupportQuantity>
+                <SupportQuantity>Other</SupportQuantity>
             </Support>
         </Parameter>
         <Parameter>
             <Name>Mean time shift</Name>
             <ParameterKey>Column08</ParameterKey>
-            <Description>Time shift from observation time to bow shock nose (BSN) arrival time, as averaged over all 15-16 sec B values with BSN arrival times in minute of interest</Description>
+            <Description>Time shift from observation time to bow shock nose (BSN)
+arrival time, as averaged over all 15-16 sec B values with BSN arrival times in 
+minute of interest</Description>
             <Cadence>PT1M</Cadence>
             <Units>sec</Units>
             <Support>
-                 <SupportQuantity>Other</SupportQuantity>
+                <SupportQuantity>Other</SupportQuantity>
             </Support>
         </Parameter>
         <Parameter>
             <Name>Numbers of points in field and plasma averages</Name>
-            <Description>Numbers of fine scale points in field and plasma averages</Description>
+            <Description>Numbers of fine scale points in field and plasma 
+averages</Description>
             <Cadence>PT1M</Cadence>
             <Structure>
                 <Size>2</Size>
-                <Description>Numbers of fine scale points in field and plasma averages</Description>
+                <Description>Numbers of fine scale points in field and plasma 
+averages</Description>
                 <Element>
-                     <Name>Numbers of fine scale points in field averages</Name>
-                     <Index>1</Index>
-                     <ParameterKey>Column05</ParameterKey>
+                    <Name>Numbers of fine scale points in field averages</Name>
+                    <Index>1</Index>
+                    <ParameterKey>Column05</ParameterKey>
                 </Element>
                 <Element>
-                     <Name>Numbers of fine scale points in plasma averages</Name>
-                     <Index>2</Index>
-                     <ParameterKey>Column22</ParameterKey>
+                    <Name>Numbers of fine scale points in plasma averages</Name>
+                    <Index>2</Index>
+                    <ParameterKey>Column22</ParameterKey>
                 </Element>
             </Structure>
             <Support>
-                 <SupportQuantity>Other</SupportQuantity>
+                <SupportQuantity>Other</SupportQuantity>
             </Support>
         </Parameter>
     </NumericalData>
