@@ -80,7 +80,7 @@ Pathway to 1-min, 5-min, 1-hour, 1-day, 27-day averages.</Description>
             </AccessURL>
             <AccessURL>
                 <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni</URL>
                 <Description>ftp access to annual ASCII files of 1-hour OMNI data 
 and to one full-time-span file for each 1-day and 27-day averages.</Description>
             </AccessURL>

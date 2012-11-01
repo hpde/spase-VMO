@@ -72,7 +72,7 @@
             </AccessURL>
             <AccessURL>
                 <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni</URL>
                 <Description>ftp access to file of 27-day OMNI data</Description>
             </AccessURL>
             <AccessURL>
