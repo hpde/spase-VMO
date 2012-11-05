@@ -93,12 +93,12 @@ and to one full-time-span file for each 1-day and 27-day averages.</Description>
             </AccessURL>
             <AccessURL>
                 <Name>SPDF FTP area (originally nssdcftp area)</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/hourly_ascii/</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>SPDF HTTP area (originally nssdcftp area)</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/omni/hourly_ascii/</URL>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
