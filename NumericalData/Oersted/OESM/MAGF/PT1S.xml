@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
-  <Version>2.2.2</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
+  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_3.xsd">
+  <Version>2.2.3</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/Oersted/OESM/MAGF/PT1S</ResourceID>
     <ResourceHeader>
@@ -14,7 +15,7 @@
       </Contact>
       <Contact>
         <PersonID>spase://SMWG/Person/Ib.Laursen</PersonID>
-        <Role>Co-Investigator</Role>
+        <Role>CoInvestigator</Role>
       </Contact>
       <InformationURL>
         <Name>NSSDC's Master Catalog</Name>
@@ -163,7 +164,7 @@
     11. Vector magnetometer temperature information: 0 = unavailable, 1 = available.
     12. Not currently used = 0.
     13. Torquer coils: 0 = on, 1 = off.
-    14. Torquer coils disturbance: 0 = >1nT, 1 = <1nT.
+    14. Torquer coils disturbance: 0 gt.equal.to 1nT, 1 lt.equal.to 1nT.
     15. Scalar magnetometer power: 0 = on, 1 = off.
     16. Not currently used = 0. 
 
