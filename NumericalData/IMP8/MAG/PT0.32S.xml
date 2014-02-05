@@ -58,7 +58,7 @@ x            <AccessURL>
             </AccessURL>
             <AccessURL>
                 <Name>OMNIWeb-Plus</Name>
-                <URL>http://ftpbrowser.gsfc.nasa.gov/imp_mag_320ms_cln.html</URL>
+                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/imp_mag_320ms_cln.html</URL>
                 <Description>FTPBrowser graphical display interface to ASCII data</Description>
             </AccessURL>
             <Format>Text</Format>

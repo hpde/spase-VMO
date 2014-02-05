@@ -111,7 +111,7 @@ Pathway to 1-min, 5-min, 1-day, 27-day averages.</Description>
             </AccessURL>
             <AccessURL>
                 <Name>COHOWeb</Name>
-                <URL>http://cohoweb.gsfc.nasa.gov/</URL>
+                <URL>http://omniweb.gsfc.nasa.gov/coho/</URL>
             </AccessURL>
             <Format>Text</Format>
             <DataExtent>
