@@ -45,7 +45,7 @@
             </AccessURL>
             <AccessURL>
                 <Name>FTPBrowser</Name>
-                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/prognoz6.html</URL>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/prognoz6.html</URL>
                 <Description>Subset, plot and list Prognoz 6 data</Description>
             </AccessURL>
             <Format>Text.ASCII</Format>

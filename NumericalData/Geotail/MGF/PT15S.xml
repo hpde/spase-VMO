@@ -39,7 +39,7 @@ The Geotail position vector in GSE coordinates is included.</Description>
             </AccessURL>
             <AccessURL>
                 <Name>OMNIWeb-Plus</Name>
-                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/geotail_mag15s.html</URL>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/geotail_mag15s.html</URL>
                 <Description>FTPBrowser graphical display interface to ASCII data</Description>
             </AccessURL>
             <Format>Text</Format>

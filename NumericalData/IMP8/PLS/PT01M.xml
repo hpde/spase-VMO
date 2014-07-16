@@ -1,5 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-    <Version>2.2.1</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/IMP8/PLS/PT01M</ResourceID>
         <ResourceHeader>
@@ -66,12 +66,12 @@ which you accessed the data.</Acknowledgement>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_mit/mitplasma_h0</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_mit</URL>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_mit/mitplasma_h0</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_mit</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
@@ -83,20 +83,12 @@ which you accessed the data.</Acknowledgement>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>I8_H0_MITPLASMA</ProductKey>
                 <Description>With subset, plot and list functionalities</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF FTP area (originally nssdcftp area)</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_mit/sw_msheath_min/</URL>
-            </AccessURL>
-            <AccessURL>
-                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/plasma_mit/sw_msheath_min/</URL>
-                <Description>In CDF via HTTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
                 <Name>FTPBrowser</Name>
-                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/imp_mit_min.html</URL>
+                <URL>http://ftpbrowser.gsfc.nasa.gov/imp_mit_min.html</URL>
                 <Description>With subset, plot and list functionalities</Description>
             </AccessURL>
             <Format>Text</Format>
@@ -245,6 +237,7 @@ of increasing energy; those eight electron windows are thus covered in a sequenc
                 <CoordinateSystemName>GSE</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Xgse</Name>
                     <Qualifier>Component.I</Qualifier>
