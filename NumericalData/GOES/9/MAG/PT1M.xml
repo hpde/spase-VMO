@@ -38,7 +38,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>1-minute GOES 9 MAG data at CDAWeb</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/goes/9_mag/</URL>
+        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/goes/goes09/mag_k0</URL>
         <Description>An ftp repository hosting 1-minute GOES 9 MAG data</Description>
       </AccessURL>
       <Format>CDF</Format>

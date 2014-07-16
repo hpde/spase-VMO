@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-  <Version>2.1.0</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+  <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/GOES/2/MFM/PT3S</ResourceID>
     <ResourceHeader>
@@ -40,12 +40,12 @@
       </InformationURL>
       <InformationURL>
         <Name>GOES 2 Space Environment Monitor</Name>
-        <URL>http://goes.ngdc.noaa.gov/data/full/readme.txt</URL>
+        <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/full/readme.txt</URL>
         <Description>Additional GOES MFM information.</Description>
       </InformationURL>
       <InformationURL>
         <Name>GOES 2 MFM Example ASCII file</Name>
-        <URL>http://goes.ngdc.noaa.gov/software/mag.txt</URL>
+        <URL>http://satdat.ngdc.noaa.gov/sem/goes/software/mag.txt</URL>
         <Description>Additional GOES MFM header information.</Description>
       </InformationURL>
     </ResourceHeader>
@@ -55,10 +55,10 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>Direct access to the GOES 2 MFM data</Name>
-        <URL>http://goes.ngdc.noaa.gov/data/full/magnetometer/</URL>
-        <Description>Direct link to the GOES 2 MFM data in FITS format as well as the magnetometer data from other GOES spacecraft. The data are sorted by year. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, M0137607.FIT indicates  magnetometer data (M) for spacecraft 1 (01) at 3 second resolution (3) from July 1976 (7607). Note that spacecraft IDs 91 and 92 refer to SMS satellites, not GOES.</Description>
+        <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/full/magnetometer/</URL>
+        <Description>Direct link to the GOES 2 MFM data in CSV (text ascii) format as well as the magnetometer data from other GOES spacecraft. The data are sorted by year. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, M0137607.FIT indicates  magnetometer data (M) for spacecraft 1 (01) at 3 second resolution (3) from July 1976 (7607). Note that spacecraft IDs 91 and 92 refer to SMS satellites, not GOES.</Description>
       </AccessURL>
-      <Format>FITS</Format>
+      <Format>Text.ASCII</Format>
       <Encoding>None</Encoding>
       <Acknowledgement>NASA, Dr. Joseph N. Barfield</Acknowledgement>
     </AccessInformation>
@@ -71,7 +71,7 @@
       <TimeSpan>
         <StartDate>1977-08-01T00:00:00</StartDate>
         <StopDate>1983-05-31T00:00:00</StopDate>
-        <Note>Time format in data files is seconds of the month. the year and month are derived from the file name.</Note>
+        <Note>Time format in data files is year-month-day hour:minute:seconds. The year and month are derived from the file name.</Note>
       </TimeSpan>
       <Cadence>PT3S</Cadence>
     </TemporalDescription>
@@ -84,9 +84,18 @@
     <Parameter>
       <Name>Seconds of the Month</Name>
       <ParameterKey>Time</ParameterKey>
-      <Description>Time is given as seconds of the month. The year and month values are derived from the file name.</Description>
+      <Description>Time is given as year-month-day hour:minute:seconds (i.e., YYYY-MM-DD HH:MM:SS). The year and month values are derived from the file name.</Description>
       <Support>
         <SupportQuantity>Temporal</SupportQuantity>
+      </Support>
+    </Parameter>
+    <Parameter>
+      <Name>Unknown Flag</Name>
+      <ParameterKey>Unknown Flag</ParameterKey>
+      <Description>Contains '\N'.</Description>
+      <Cadence>PT3S</Cadence>
+      <Support>
+        <SupportQuantity>Other</SupportQuantity>
       </Support>
     </Parameter>
     <Parameter>
