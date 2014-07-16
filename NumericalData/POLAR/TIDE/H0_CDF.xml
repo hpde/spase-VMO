@@ -1,7 +1,8 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
     <Version>2.2.2</Version>
     <NumericalData>
-        <ResourceID>spase://VMO/NumericalData/POLAR/TIDE/H0-CDF</ResourceID>
+        <ResourceID>spase://VMO/NumericalData/POLAR/TIDE/H0_CDF</ResourceID>
         <ResourceHeader>
             <ResourceName>Polar TIDE 6-s H, He, O Data</ResourceName>
             <ReleaseDate>2009-09-18T00:00:00</ReleaseDate>
@@ -37,7 +38,6 @@ about the data processing.</Description>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>PO_H0_TID</ProductKey>
             </AccessURL>
             <AccessURL>
                 <Name>FTP access to files at SPDF</Name>
@@ -50,6 +50,16 @@ about the data processing.</Description>
             </AccessURL>
             <Format>CDF</Format>
         </AccessInformation>
+     <!--   <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/NSSTC/POLAR.TIDE</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>TIDE NSSTC data archive</Name>
+                <URL>http://tideuvira.nsstc.nasa.gov/tide/archive/tid_cdf/h0_tid/</URL>
+            </AccessURL>
+            <Format>CDF</Format>
+        </AccessInformation>  -->
         <ProcessingLevel>Calibrated</ProcessingLevel>
         <ProviderProcessingLevel>Level 1</ProviderProcessingLevel>
         <InstrumentID>spase://SMWG/Instrument/POLAR/TIDE</InstrumentID>

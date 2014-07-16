@@ -1,5 +1,6 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/POLAR/TIDE/H1_CDF</ResourceID>
         <ResourceHeader>
@@ -36,7 +37,6 @@ and several parameters that describe the instrument status and details about the
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>PO_H1_TID</ProductKey>
                 <Description>CDAWeb TIDE H1 CDF viewer</Description>
             </AccessURL>
             <AccessURL>

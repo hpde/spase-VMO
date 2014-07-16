@@ -1,4 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
     <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/POLAR/UVI/L1_CDF</ResourceID>
@@ -41,7 +42,6 @@ to the UVI data archive, to lists of UVI publications and presentations, and sev
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>PO_LEVEL1_UVI</ProductKey>
             </AccessURL>
             <Format>CDF</Format>
         </AccessInformation>

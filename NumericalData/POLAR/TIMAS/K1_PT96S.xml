@@ -1,5 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+    <Version>2.0.1</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K1_PT96S</ResourceID>
         <ResourceHeader>
@@ -18,7 +18,7 @@
             </InformationURL>
             <InformationURL>
                 <Name>TIMAS PAPCO Module</Name>
-                <URL>http://lasp.colorado.edu/timas/info/PAPCO/timas.html </URL>
+                <URL>http://lasp.colorado.edu/timas/info/PAPCO/timas.html</URL>
                 <Description>A PAPCO module for reading and displaying TIMAS (and other POLAR) data.</Description>
             </InformationURL>
             <InformationURL>
@@ -32,19 +32,18 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>FTP access to files at SPDF</Name>
+                <Name>SPDF FTP area</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/polar/timas/timas_k1</URL>
                 <Description>FTP repository of Polar TIMAS key parameter data in CDF format at CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>HTTP access to files at SPDF</Name>
+                <Name>SPDF HTTP area</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/polar/timas/timas_k1</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>PO_K1_TIM</ProductKey>
             </AccessURL>
             <Format>CDF</Format>
         </AccessInformation>

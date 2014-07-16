@@ -1,5 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+    <Version>2.0.1</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
         <ResourceHeader>
@@ -75,18 +75,17 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>FTP access to files at SPDF</Name>
+                <Name>SPDF FTP area</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/polar/timas/timas_h2</URL>
             </AccessURL>
             <AccessURL>
-                <Name>HTTP access to files at SPDF</Name>
+                <Name>SPDF HTTP area</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/polar/timas/timas_h2</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>PO_H2_TIM</ProductKey>
                 <Description>PO_H2_TIM</Description>
             </AccessURL>
             <AccessURL>
@@ -118,7 +117,8 @@
         <Keyword>Energetic Ion Mass-Energy Spectra</Keyword>
         <Keyword>Net outflowing number flux</Keyword>
         <InputResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H0_PT12S</InputResourceID>
-        <InputResourceID>spase://VHO/NumericalData/Wind/MFI/PT03S</InputResourceID>
+        <InputResourceID>spase://VHO/NumericalData/WIND/MFI/PT03S</InputResourceID>
+        <InputResourceID>spase://VHO/NumericalData/WIND/SWE/apbimax</InputResourceID>
         <InputResourceID>spase://VMO/NumericalData/POLAR/MFE/PT06S</InputResourceID>
         <Parameter>
             <Name>Center Epoch for H_Fluence</Name>

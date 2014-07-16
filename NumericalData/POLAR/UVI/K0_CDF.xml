@@ -1,5 +1,6 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+    <Version>2.0.1</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/POLAR/UVI/K0_CDF</ResourceID>
         <ResourceHeader>
@@ -44,7 +45,6 @@
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>PO_K0_UVI</ProductKey>
             </AccessURL>
             <Format>CDF</Format>
         </AccessInformation>
@@ -79,8 +79,8 @@
                 <Size>228 200</Size>
             </Structure>
             <Wave>
-                <WaveType>Photon</WaveType>
                 <Qualifier>Integral</Qualifier>
+                <WaveType>Photon</WaveType>
                 <WaveQuantity>Intensity</WaveQuantity>
                 <WavelengthRange>
                     <SpectralRange>Ultraviolet</SpectralRange>

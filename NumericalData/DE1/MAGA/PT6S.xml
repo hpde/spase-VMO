@@ -39,12 +39,12 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>FTP access to files at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga</URL>
+                <Name>SPDF FTP area</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/6sec_magagms_cdaweb/</URL>
             </AccessURL>
             <AccessURL>
-                <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga</URL>
+                <Name>SPDF HTTP area</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/6sec_magagms_cdaweb/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
@@ -56,8 +56,17 @@
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>DE1_6SEC_MAGAGMS</ProductKey>
                 <Description>DE1_6SEC_MAGAGMS</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF FTP area (originally nssdcftp area)</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/gms_6s_ascii/</URL>
+                <Description>data for the MAGA instrument that flew on the DE 1spacecraft.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/gms_6s_ascii/</URL>
+                <Description>data for the MAGA instrument that flew on the DE 1spacecraft.</Description>
             </AccessURL>
             <Format>Text</Format>
             <Encoding>ASCII</Encoding>

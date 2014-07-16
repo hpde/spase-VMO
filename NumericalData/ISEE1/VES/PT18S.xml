@@ -1,5 +1,5 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
+    <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S</ResourceID>
         <ResourceHeader>
@@ -26,7 +26,7 @@ Harvey and Mozer experiments.</Description>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Adolfo.Figueroa-Vinas</PersonID>
+                <PersonID>spase://SMWG/Person/Adolfo Figueroa-Vinas</PersonID>
                 <Role>GeneralContact</Role>
             </Contact>
             <InformationURL>
@@ -39,12 +39,12 @@ Harvey and Mozer experiments.</Description>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>FTP access to files at SPDF</Name>
+                <Name>SPDF FTP area</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/isee/isee1/isee1_cdaweb/h0/fe/</URL>
                 <Description>For ftp retrieval of daily CDF files</Description>
             </AccessURL>
             <AccessURL>
-                <Name>HTTP access to files at SPDF</Name>
+                <Name>SPDF HTTP area</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/isee/isee1/isee1_cdaweb/h0/fe/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
@@ -64,7 +64,6 @@ and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>ISEE1_H0_FE</ProductKey>
                 <Description>For CDAWeb subset, plot and list capabilities</Description>
             </AccessURL>
             <Format>Text</Format>
