@@ -2,7 +2,7 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
    <Version>2.2.2</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/GOES/14/EPS/maged_19me15_PT5M</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/GOES/14/EPEAD/maged_19me15_PT5M</ResourceID>
       <ResourceHeader>
          <ResourceName>GOES 14 Magnetospheric Electron Detector (MAGED) data at 5 m Resolution in Spacecraft Coordinates</ResourceName>
          <AlternateName>GOES 14 MAGED 19ME15 data</AlternateName>

@@ -1,4 +1,4 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
     <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/GOES/10/MAG/PT0.512S</ResourceID>
@@ -402,7 +402,6 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
             <UnitsConversion>1e-9&gt;T</UnitsConversion>
             <CoordinateSystem>
                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
-                <CoordinateSystemName></CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
                 <Size>3</Size>

@@ -2,7 +2,7 @@
 <Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
    <Version>2.2.2</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/GOES/15/EPEAD/epead_a16ew_PT32S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/GOES/15/EPEAD/epead_a16w_PT32S</ResourceID>
       <ResourceHeader>
          <ResourceName>GOES 15 Energetic Proton, Electron and Alpha Detector (EPEAD) alpha particle fluxes data at 32 s Resolution in Spacecraft Coordinates</ResourceName>
          <AlternateName>GOES 15 EPEAD A16W data</AlternateName>
