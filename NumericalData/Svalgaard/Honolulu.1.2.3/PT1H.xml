@@ -34,7 +34,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>VMO Data Repository</Name>
-            <URL>http://vmo.igpp.ucla.edu/data1/HON.TXT</URL>
+            <URL>http://vmo.igpp.ucla.edu/data1/Svalgaard/HON.TXT</URL>
             <Description>The Virtual Magnetospheric Observatory Data Repository hosted by the Institute of Geophysics and Planetary Physics, University of California, Los Angeles.</Description>
          </AccessURL>
          <Format>Text</Format>
