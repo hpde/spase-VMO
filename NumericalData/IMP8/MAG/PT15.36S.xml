@@ -124,6 +124,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
                 <CoordinateSystemName>GSE</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Xgse</Name>
                     <Qualifier>Component.I</Qualifier>
@@ -159,6 +160,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
                 <CoordinateSystemName>GSM</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Xgsm</Name>
                     <Qualifier>Component.I</Qualifier>
@@ -189,8 +191,6 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
             <Cadence>PT15.36S</Cadence>
             <Units>nT</Units>
             <UnitsConversion>1e-9&gt;T</UnitsConversion>
-            <Structure>
-         </Structure>
             <ValidMin>0.0</ValidMin>
             <ValidMax>100.0</ValidMax>
             <FillValue>-1.0e+31</FillValue>
@@ -212,6 +212,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
                 <CoordinateSystemName>GSE</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Bx GSE</Name>
                     <Qualifier>Component.I</Qualifier>
@@ -249,6 +250,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
                 <CoordinateSystemName>GSM</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Bx GSM</Name>
                     <Qualifier>Component.I</Qualifier>
@@ -286,6 +288,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
                 <CoordinateSystemName>GSE</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Bxx GSE</Name>
                     <Index>1</Index>
@@ -319,6 +322,7 @@ tag. On average, however, it should be about 15.36 seconds.</Caveats>
                 <CoordinateSystemName>GSE</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Byx GSE</Name>
                     <Index>1</Index>

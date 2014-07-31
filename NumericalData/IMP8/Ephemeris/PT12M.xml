@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/IMP8/Ephemeris/PT12M</ResourceID>
     <ResourceHeader>
       <ResourceName>IMP 8 Spacecraft Positions</ResourceName>
-      <ReleaseDate>2012-02-23T16:21:02Z</ReleaseDate>
+      <ReleaseDate>2014-07-31T00:00:00.00</ReleaseDate>
       <Description>IMP-8 spacecraft positions in various coordinate systems</Description>
       <Contact>
         <PersonID>spase://SMWG/Person/Adam.Szabo</PersonID>
@@ -21,6 +21,11 @@
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/imp8/or_ssc</URL>
         <ProductKey>I8_OR_SSC</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/orbit/or_ssc</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
       </AccessURL>
       <Format>CDF</Format>
       <Encoding>None</Encoding>
@@ -34,6 +39,11 @@
         <URL>http://cdaweb.gsfc.nasa.gov</URL>
         <ProductKey>I8_OR_SSC</ProductKey>
         <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>SSCWeb</Name>
+                <URL>http://sscweb.gsfc.nasa.gov/cgi-bin/Locator.cgi</URL>
+                <ProductKey>imp8</ProductKey>
       </AccessURL>
       <Format>Text</Format>
       <Acknowledgement> Please acknowledge the CDAWeb team at GSFC/SPDF.</Acknowledgement>

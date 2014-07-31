@@ -83,6 +83,7 @@ which you accessed the data.</Acknowledgement>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>I8_H0_MITPLASMA</ProductKey>
                 <Description>With subset, plot and list functionalities</Description>
             </AccessURL>
             <AccessURL>
@@ -245,6 +246,7 @@ of increasing energy; those eight electron windows are thus covered in a sequenc
                 <CoordinateSystemName>GSE</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
+                <Size>3</Size>
                 <Element>
                     <Name>Xgse</Name>
                     <Qualifier>Component.I</Qualifier>
