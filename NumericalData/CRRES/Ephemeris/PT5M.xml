@@ -28,6 +28,7 @@
          </InformationURL>
          <Association>
             <AssociationID>spase://SMWG/Observatory/CRRES</AssociationID>
+                <AssociationType>Other</AssociationType>
          </Association>
       </ResourceHeader>
       <AccessInformation>
@@ -41,6 +42,18 @@
          <Format>Text</Format>
          <Encoding>ASCII</Encoding>
          <Acknowledgement>NASA; Department of Defense-Department of the Air Force (United States); AFRL; Dr. Susan Gussenhoven-Shea; Dr. David L. Reasoner</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>SSCWeb</Name>
+                <URL>http://sscweb.gsfc.nasa.gov/cgi-bin/Locator.cgi</URL>
+                <ProductKey>crres</ProductKey>
+            </AccessURL>
+            <Format>Text</Format>
+            <Encoding>None</Encoding>
       </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>CRRES Orbital Information</ProviderResourceName>
