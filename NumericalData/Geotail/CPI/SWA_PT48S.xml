@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/CPI/SWA_PT48S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail CPI Definitive Solar Wind Moments</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:18Z</ReleaseDate>
+      <ReleaseDate>2014-07-31T00:00:00.000</ReleaseDate>
       <Description>The CPI Solar Wind analyzer definitive plasma moments. The CPI/SW data are good in the solar wind and may be usefull in the magnetosheath.
          </Description>
       <Contact>
@@ -31,6 +31,15 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/cpi_h0</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/geotail/cpi_h0</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
         <Name>CDAWeb FTP download</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/cpi_h0</URL>
         <ProductKey>GE_H0_CPI</ProductKey>
@@ -49,7 +58,7 @@
       <Format>Text</Format>
       <Encoding>ASCII</Encoding>
     </AccessInformation>
-    <InstrumentID>spase://SMWG/Instrument/Geotail/CPI</InstrumentID>
+        <InstrumentID>spase://SMWG/Instrument/Geotail/CPI/SWA</InstrumentID>
     <MeasurementType>ThermalPlasma</MeasurementType>
     <MeasurementType>IonComposition</MeasurementType>
     <TemporalDescription>

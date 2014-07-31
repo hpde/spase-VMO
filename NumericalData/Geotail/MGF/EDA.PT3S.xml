@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/MGF/EDA.PT3S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Editor-A 3-second Magnetic Field Data</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:19Z</ReleaseDate>
+      <ReleaseDate>2014-07-31T00:00:00.000</ReleaseDate>
       <Description>3-second Editor-A magnetic field data from the Geotail spacecraft.
 
             As of February 1 2008 the Bz component of the magnetic field has been corrected in the data set.
@@ -35,6 +35,15 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/eda3sec_mgf</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/geotail/eda3sec_mgf</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
         <Name>CDAWeb FTP download</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/eda3sec_mgf</URL>
         <ProductKey>GE_EDA3SEC_MGF</ProductKey>

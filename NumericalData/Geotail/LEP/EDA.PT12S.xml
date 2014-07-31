@@ -5,7 +5,7 @@
     <ResourceID>spase://VMO/NumericalData/Geotail/LEP/EDA.PT12S</ResourceID>
     <ResourceHeader>
       <ResourceName>Geotail Editor-A 12 second Low-Energy Particles</ResourceName>
-      <ReleaseDate>2012-02-23T04:07:19Z</ReleaseDate>
+      <ReleaseDate>2014-07-31T00:00:00.000</ReleaseDate>
       <Description>12-second Editor-A low-energy particle data from the Geotail spacecraft.
 
             Editor-A data are only acquired with the real-time operation in Usuda Deep Space Center (UDSC),Japan, while the Editor-B data are 24-hours continuouslyrecorded in the onboard tape recorders and are dumpedover the NASA/JPL Deep Space Network (DSN) stations.
@@ -37,6 +37,15 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/eda12sec_lep</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/geotail/eda12sec_lep</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
         <Name>CDAWeb FTP download</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/geotail/eda12sec_lep</URL>
         <ProductKey>GE_EDA12SEC_LEP</ProductKey>
