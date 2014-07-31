@@ -38,6 +38,7 @@ about the data processing.</Description>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>PO_H0_TID</ProductKey>
             </AccessURL>
             <AccessURL>
                 <Name>FTP access to files at SPDF</Name>

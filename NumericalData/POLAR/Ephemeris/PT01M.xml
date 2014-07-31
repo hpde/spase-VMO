@@ -19,7 +19,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>CDAWeb FTP Access</Name>
-            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/pre_or</URL>
+            <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/polar/orbit/pre_or</URL>
             <Description>NASA/GSFC CDAWeb ftp access to POLAR orbital data.</Description>
          </AccessURL>
          <Format>CDF</Format>
