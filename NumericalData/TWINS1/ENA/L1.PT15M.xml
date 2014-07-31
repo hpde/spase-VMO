@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" 
-  xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-  <Version>2.2.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/TWINS1/ENA/L1.PT15M</ResourceID>
     <ResourceHeader>
@@ -34,13 +33,13 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/twins/twins1/imager/</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/twins/twins1/imager/</URL>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
       <AccessURL>
-        <Name>CDAWeb HTTP area</Name>
-        <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/data/twins/twins1/imager/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/twins/twins1/imager/</URL>
         <Description>NASA/GSFC CDAWeb http access to the data.</Description>
       </AccessURL>
       <Format>CDF</Format>
@@ -53,6 +52,7 @@
       <AccessURL>
         <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov/sp_phys/</URL>
+                <ProductKey>TWINS1_L1_IMAGER</ProductKey>
         <Description>Level-1 Magnetospheric Images at full resolution with subset, plot, list functionalities from CDAWeb</Description>
       </AccessURL>
       <Format>Text</Format>
