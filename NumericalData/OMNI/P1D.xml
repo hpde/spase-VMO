@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
     <Version>2.2.0</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/OMNI/P1D</ResourceID>
         <ResourceHeader>
             <ResourceName>OMNI Daily Data Set</ResourceName>
-            <ReleaseDate>2010-04-30T00:00:00Z</ReleaseDate>
+            <ReleaseDate>2014-07-31T00:00:00Z</ReleaseDate>
             <Description>Daily averaged, multi-source, near-Earth solar wind magnetic 
 field, plasma and energetic proton flux data, plus AE, AU, AL, Kp, ap, and Dst 
 geomagnetic indices, Polar Cap (Thule) index, F10.7 index, and Rz (sunspot number).  
