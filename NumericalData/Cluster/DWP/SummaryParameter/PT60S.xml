@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster Digital Wave Processor (DWP) summary parameter data at about 60 sec resolution (spin averaged) in GSE Coordinates</ResourceName>
       <AlternateName>Cluster Summary Parameter DWP data</AlternateName>
-      <ReleaseDate>2012-02-23T17:07:24Z</ReleaseDate>
+      <ReleaseDate>2014-07-31T00:00:00Z</ReleaseDate>
       <Description>Cluster Digital Wave Processor (DWP) data set contains various instrument status and data status flags as well as particle correlator information. </Description>
       <Acknowledgement>NASA; ESA; Dr. Hugo Alleyne</Acknowledgement>
       <Contact>
@@ -84,6 +84,16 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/cluster/cl/sp/dwp</URL>
+                <Description>Cluster Digital Wave Processor (DWP) summary parameter data at CDAWeb.</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/cluster/cl/sp/dwp</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
         <Name>CDAWeb</Name>
         <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/cl/sp/dwp</URL>
         <ProductKey>CL_SP_DWP</ProductKey>

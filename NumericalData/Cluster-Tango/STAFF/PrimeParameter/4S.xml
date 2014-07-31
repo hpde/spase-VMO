@@ -6,7 +6,7 @@
     <ResourceHeader>
       <ResourceName>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) Data</ResourceName>
       <AlternateName>Cluster 4 Prime Parameter STAFF Data</AlternateName>
-      <ReleaseDate>2012-02-23T17:07:23Z</ReleaseDate>
+      <ReleaseDate>2014-07-31T00:00:00Z</ReleaseDate>
       <Description>The Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) experiment provides magnetic field power spectral density values parallel and perpendicular to the magnetic field and the electric field power spectral density values for several frequency ranges. For more details of the Cluster mission, the spacecraft, and its instruments, see the report Cluster: mission, payload and supporting activities, March 1993, ESA SP-1159, and the included article The STAFF (Spatio-Temporal Analysis of Field Fluctuations) Experiment for the Cluster Mission, by N. Cornilleau-Wehrlin et al., from which this information was obtained.</Description>
       <Acknowledgement>NASA, Nicole Cornilleau-Wehrlin</Acknowledgement>
       <Contact>
@@ -69,8 +69,18 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <Name>CDAWeb link to Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations data</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/cluster/c4/pp/sta</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/cluster/c4/pp/sta</URL>
+                <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) data</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/cluster/c4/pp/sta</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>CDAWeb</Name>
+                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
         <ProductKey>C4_PP_STA</ProductKey>
         <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) data</Description>
       </AccessURL>
@@ -169,7 +179,7 @@
     <Parameter>
       <Name>Magnetic Field Spectral Power Parallel to Bo (0.3-10 Hz)</Name>
       <ParameterKey>B_par_f1__C4_PP_STA</ParameterKey>
-      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power parallel to the mean magnetic &#xFB01;eld as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 0.3-10 Hz (f1) frequency range at spin time resolution</Description>
+      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power parallel to the mean magnetic field as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 0.3-10 Hz (f1) frequency range at spin time resolution</Description>
       <Cadence>PT4S</Cadence>
       <Units>nT^2 Hz^-1</Units>
       <UnitsConversion>1.0e-18&gt;T^2 Hz^-1</UnitsConversion>
@@ -194,7 +204,7 @@
     <Parameter>
       <Name>Magnetic Field Spectral Power Parallel to Bo (10-180 Hz)</Name>
       <ParameterKey>B_par_f2__C4_PP_STA</ParameterKey>
-      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power parallel to the mean magnetic &#xFB01;eld as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 10-180 Hz (f2) frequency range at spin time resolution</Description>
+      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power parallel to the mean magnetic field as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 10-180 Hz (f2) frequency range at spin time resolution</Description>
       <Cadence>PT4S</Cadence>
       <Units>nT^2 Hz^-1</Units>
       <UnitsConversion>1.0e-18&gt;T^2 Hz^-1</UnitsConversion>
@@ -219,7 +229,7 @@
     <Parameter>
       <Name>Magnetic Field Spectral Power Parallel to Bo (180-4000 Hz)</Name>
       <ParameterKey>B_par_f3__C4_PP_STA</ParameterKey>
-      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power parallel to the mean magnetic &#xFB01;eld as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 180-4000 Hz (f3) frequency range at spin time resolution</Description>
+      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power parallel to the mean magnetic field as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 180-4000 Hz (f3) frequency range at spin time resolution</Description>
       <Cadence>PT4S</Cadence>
       <Units>nT^2 Hz^-1</Units>
       <UnitsConversion>1.0e-18&gt;T^2 Hz^-1</UnitsConversion>
@@ -244,7 +254,7 @@
     <Parameter>
       <Name>Magnetic Field Spectral Power Perpendicular to Bo (0.3-10 Hz)</Name>
       <ParameterKey>B_perp_f1__C4_PP_STA</ParameterKey>
-      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power perpendicular to the mean magnetic &#xFB01;eld as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 0.3-10 Hz (f1) frequency range at spin time resolution</Description>
+      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power perpendicular to the mean magnetic field as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 0.3-10 Hz (f1) frequency range at spin time resolution</Description>
       <Cadence>PT4S</Cadence>
       <Units>nT^2 Hz^-1</Units>
       <UnitsConversion>1.0e-18&gt;T^2 Hz^-1</UnitsConversion>
@@ -269,7 +279,7 @@
     <Parameter>
       <Name>Magnetic Field Spectral Power Perpendicular to Bo (10-180 Hz)</Name>
       <ParameterKey>B_perp_f2__C4_PP_STA</ParameterKey>
-      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power perpendicular to the mean magnetic &#xFB01;eld as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 10-180 Hz (f2) frequency range at spin time resolution</Description>
+      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power perpendicular to the mean magnetic field as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 10-180 Hz (f2) frequency range at spin time resolution</Description>
       <Cadence>PT4S</Cadence>
       <Units>nT^2 Hz^-1</Units>
       <UnitsConversion>1.0e-18&gt;T^2 Hz^-1</UnitsConversion>
@@ -294,7 +304,7 @@
     <Parameter>
       <Name>Magnetic Field Spectral Power Perpendicular to Bo (180-4000 Hz)</Name>
       <ParameterKey>B_perp_f3__C4_PP_STA</ParameterKey>
-      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power perpendicular to the mean magnetic &#xFB01;eld as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 180-4000 Hz (f3) frequency range at spin time resolution</Description>
+      <Description>Cluster II Tango Prime Parameter Spatio-Temporal Analysis of Magnetic Field Fluctuations (STAFF) magnetic field spectral power perpendicular to the mean magnetic field as measured by the onboard Cluster Fluxgate Magnetometer (FGM) in the 180-4000 Hz (f3) frequency range at spin time resolution</Description>
       <Cadence>PT4S</Cadence>
       <Units>nT^2 Hz^-1</Units>
       <UnitsConversion>1.0e-18&gt;T^2 Hz^-1</UnitsConversion>
