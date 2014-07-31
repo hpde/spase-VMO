@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_0.xsd">
-  <Version>2.0.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+    <Version>2.2.2</Version>
   <NumericalData>
     <ResourceID>spase://VMO/NumericalData/FAST/Ephemeris/PT1M</ResourceID>
     <ResourceHeader>
-      <ResourceName>FAST Positions</ResourceName>
-      <ReleaseDate>2012-02-17T20:28:32Z</ReleaseDate>
+            <ResourceName>FAST Spacecraft Positions</ResourceName>
+      <ReleaseDate>2014-07-31T00:00:00.000</ReleaseDate>
       <Description>FAST Positions</Description>
       <Contact>
         <!-- Jan Merka -->
@@ -24,6 +24,17 @@
       </AccessURL>
       <Format>Text</Format>
       <Encoding>None</Encoding>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>SSCWeb</Name>
+                 <URL>http://sscweb.gsfc.nasa.gov/cgi-bin/Locator.cgi</URL>
+                <ProductKey>fast</ProductKey>
+            </AccessURL>
+            <Format>Text</Format>
     </AccessInformation>
     <InstrumentID>spase://SMWG/Instrument/FAST/Ephemeris</InstrumentID>
     <MeasurementType>Ephemeris</MeasurementType>
