@@ -1,10 +1,10 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-    <Version>2.2.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S</ResourceID>
         <ResourceHeader>
             <ResourceName>ISEE 1 VES Electron Data at 9s or 18s</ResourceName>
-            <ReleaseDate>2011-06-25T00:00:00</ReleaseDate>
+            <ReleaseDate>2014-07-31T00:00:00.00</ReleaseDate>
             <Description>This data set, held in CDAWeb as ISEE1_H0_FE,
 contains electron moments from the Vector Electron Spectrometer
 (VES), and spacecraft position vectors, at 9s or 18s resolution, 
@@ -26,7 +26,7 @@ Harvey and Mozer experiments.</Description>
                 <Role>PrincipalInvestigator</Role>
             </Contact>
             <Contact>
-                <PersonID>spase://SMWG/Person/Adolfo Figueroa-Vinas</PersonID>
+                <PersonID>spase://SMWG/Person/Adolfo.Figueroa-Vinas</PersonID>
                 <Role>GeneralContact</Role>
             </Contact>
             <InformationURL>

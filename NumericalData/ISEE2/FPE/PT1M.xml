@@ -1,39 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
-  <Version>2.2.2</Version>
-  <NumericalData>
-    <ResourceID>spase://VMO/NumericalData/ISEE2/FPE/PT1M</ResourceID>
-    <ResourceHeader>
-      <ResourceName>ISEE 2 FPE plasma parameters, 6 Re to bow shock</ResourceName>
-      <ReleaseDate>2012-02-23T17:07:19Z</ReleaseDate>
-      <Description/>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling</Acknowledgement>
-      <Contact>
-        <PersonID>spase://SMWG/Person/John.T.Gosling</PersonID>
-        <Role>PrincipalInvestigator</Role>
-      </Contact>
-      <InformationURL>
-        <Name>Skeleton table at CDAWeb/SPDF</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/CDAWlib/0SKELTABLES/isee2_h1_fpe_00000000_v01.skt</URL>
-      </InformationURL>
-    </ResourceHeader>
-    <AccessInformation>
-      <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
-      <Availability>Online</Availability>
-      <AccessRights>Open</AccessRights>
-      <AccessURL>
-        <Name>SPDF CDF ftp area</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/isee/isee2/1min_fpe/</URL>
-        <ProductKey>ISEE2_H1_FPE</ProductKey>
-        <Description>For ftp retrieval of daily CDF files</Description>
-      </AccessURL>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
+    <NumericalData>
+        <ResourceID>spase://VMO/NumericalData/ISEE2/FPE/PT1M</ResourceID>
+        <ResourceHeader>
+            <ResourceName>ISEE 2 FPE plasma parameters, 6 Re to bow shock</ResourceName>
+            <ReleaseDate>2011-07-06T00:00:00</ReleaseDate>
+            <Description>TBD</Description>
+            <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling</Acknowledgement>
+            <Contact>
+                <PersonID>spase://SMWG/Person/John.T.Gosling</PersonID>
+                <Role>PrincipalInvestigator</Role>
+            </Contact>
+            <InformationURL>
+                <Name>Skeleton table at CDAWeb/SPDF</Name>
+                <URL>ftp://cdaweb.gsfc.nasa.gov/pub/software/cdawlib/0SKELTABLES/isee2_h1_fpe_00000000_v01.skt</URL>
+            </InformationURL>
+        </ResourceHeader>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/isee/isee2/isee2_cdaweb/1min_fpe/</URL>
+                <Description>For ftp retrieval of daily CDF files</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/isee/isee2/isee2_cdaweb/1min_fpe/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
       <Format>CDF</Format>
       <DataExtent>
         <Quantity>80</Quantity>
         <Units>KB</Units>
         <Per>P1D</Per>
       </DataExtent>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling andthe Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </AccessInformation>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
@@ -46,7 +49,7 @@
         <Description>For CDAWeb subset, plot and list capabilities</Description>
       </AccessURL>
       <Format>Text</Format>
-      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling andthe Space Physics Data Facility at NASA/GSFC</Acknowledgement>
+      <Acknowledgement>Please acknowledge the FPE PI, Dr. John Gosling and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
     </AccessInformation>
     <ProcessingLevel>Calibrated</ProcessingLevel>
     <InstrumentID>spase://SMWG/Instrument/ISEE2/FPE</InstrumentID>
@@ -99,7 +102,7 @@
     <Parameter>
       <Name>Xsc component of bulk velocity</Name>
       <ParameterKey>VX</ParameterKey>
-      <Description>X component of plasma bulk velocity, spacecraftcoordinates (close to GSE)</Description>
+      <Description>X component of plasma bulk velocity, spacecraft coordinates (close to GSE)</Description>
       <Units>km/s</Units>
       <Particle>
         <ParticleType>Proton</ParticleType>
@@ -110,7 +113,7 @@
     <Parameter>
       <Name>Ysc component of bulk velocity</Name>
       <ParameterKey>VY</ParameterKey>
-      <Description>Y component of plasma bulk velocity, spacecraftcoordinates (close to GSE)</Description>
+      <Description>Y component of plasma bulk velocity, spacecraft coordinates (close to GSE)</Description>
       <Units>km/s</Units>
       <Particle>
         <ParticleType>Proton</ParticleType>
@@ -160,7 +163,7 @@
     <Parameter>
       <Name>Energy range flag</Name>
       <ParameterKey>LH</ParameterKey>
-      <Description>Energy range flag whose value is 0 for a 50 eV - 20 keVper charge range and is 1 for a 70 eV - 40 keV per charge range</Description>
+      <Description>Energy range flag whose value is 0 for a 50 eV - 20 keV per charge range and is 1 for a 70 eV - 40 keV per charge range</Description>
       <Support>
         <SupportQuantity>InstrumentMode</SupportQuantity>
       </Support>

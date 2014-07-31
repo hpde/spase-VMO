@@ -31,7 +31,15 @@
         <ProductKey>ISEE1_4SEC_MFI</ProductKey>
         <Description>ftp access to CDF files</Description>
       </AccessURL>
-      <Format>CDF</Format>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/isee/isee1/isee1_cdaweb/4sec_mfi/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <Format>CDF</Format>
+            <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
+        </AccessInformation>
+            <Format>Text</Format>
       <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
     </AccessInformation>
     <AccessInformation>
