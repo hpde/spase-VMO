@@ -30,14 +30,20 @@
       <Availability>Online</Availability>
       <AccessRights>Open</AccessRights>
       <AccessURL>
-        <Name>CDAWeb FTP Access</Name>
-        <URL>ftp://cdaweb.gsfc.nasa.gov/pub/data/themis/tha/l2/esa</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/themis/tha/l2/esa/</URL>
         <ProductKey>THA_L2_ESA</ProductKey>
         <Description>NASA/GSFC CDAWeb ftp access to the data.</Description>
       </AccessURL>
-      <AccessURL>
-        <Name>ASCII, CDF, and plots from CDAWeb</Name>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/themis/tha/l2/esa/</URL>
+                <Description>In CDF via HTTP from SPDF</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>CDAWeb</Name>
         <URL>http://cdaweb.gsfc.nasa.gov</URL>
+                <ProductKey>THA_L2_ESA</ProductKey>
         <Description>Access to ASCII, CDF, and plots via NASA/GSFC CDAWeb</Description>
       </AccessURL>
       <Format>CDF</Format>
@@ -50,7 +56,7 @@
     <MeasurementType>ThermalPlasma</MeasurementType>
     <TemporalDescription>
       <TimeSpan>
-        <StartDate>2007-03-07T18:53:57</StartDate>
+                <StartDate>2007-02-16T00:00:00Z</StartDate>
         <RelativeStopDate>-P7D</RelativeStopDate>
       </TimeSpan>
     </TemporalDescription>

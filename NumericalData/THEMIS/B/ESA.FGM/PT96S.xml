@@ -1,11 +1,11 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
-    <Version>2.2.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/THEMIS/B/ESA.FGM/PT96S</ResourceID>
         <ResourceHeader>
             <ResourceName>ARTEMIS P1 field-plasma merged data, near moon</ResourceName>
             <AlternateName>THEMIS-B field-plasma merged data, near moon</AlternateName>
-            <ReleaseDate>2011-03-08T21:24:03Z</ReleaseDate>
+            <ReleaseDate>2014-07-31T21:24:03Z</ReleaseDate>
             <Description>This data set contains 96s and 384s resolution
 magnetic field and plasma ion data from the THEMIS-B ESA and FGM 
 instruments during the near moon (ARTEMIS) phase of the spacecraft
@@ -61,10 +61,31 @@ and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/merged/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
+            <Format>CDF</Format>
+            <Acknowledgement>Please acknowledge Vassilis Angelopoulos,
+THEMIS mission Principal Investigator, Charles.W.Carlson and 
+Karl-Heinz.Glassmeier, Co-Investigators for ESA and FGM respectively,
+and Natalia Papitashvili at GSFC/SPDF</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>THB_L2_MERGED</ProductKey>
                 <Description>For CDAWeb subset plot and list capabilities</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>FTP access to ASCII files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/merged/ascii/</URL>
+                <Description>For ftp retrieval of annual ASCII files</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to ASCII files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/themis/thb/l2/merged/ascii/</URL>
+                <Description>For http retrieval of annual ASCII files</Description>
             </AccessURL>
             <AccessURL>
                 <Name>LunaSOX plots, lists</Name>
