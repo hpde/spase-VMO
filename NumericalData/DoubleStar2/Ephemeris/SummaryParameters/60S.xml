@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_1_0.xsd">
-   <Version>2.1.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+    <Version>2.2.2</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/DoubleStar2/Ephemeris/SummaryParameters/60S</ResourceID>
       <ResourceHeader>
          <ResourceName>Double Star 2 Spacecraft Auxiliary Summary Parameters Data</ResourceName>
          <AlternateName>Double Star 2 Auxiliary Summary Parameters Data</AlternateName>
-         <ReleaseDate>2010-09-13T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2014-07-31T00:00:00.000</ReleaseDate>
          <Description>The Double Star 2 auxiliary summary parameter data set contains various parameters in GSE coordinates at 60 s resolution. These parameters include universal time, orbit number, GSE position, GSE spacecraft velocity vector, longitude, and dipole tilt. These parameters are available through Double Star Science Data Centre The Data Ring with restricted access.</Description>
          <Acknowledgement>European Space Agency/International</Acknowledgement>
          <Contact>
@@ -48,6 +48,17 @@
          </AccessURL>
          <Format>CDF</Format>
          <Acknowledgement>ESA, Double Star, Center for Space Science and Applied Research, and the Chinese Academy of Sciences</Acknowledgement>
+        </AccessInformation>
+        <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>SSCWeb</Name>
+                <URL>http://sscweb.gsfc.nasa.gov/cgi-bin/Locator.cgi</URL>
+                <ProductKey>doublestar2</ProductKey>
+            </AccessURL>
+            <Format>Text</Format>
       </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>Double Star 2 Auxiliary Summary Parameters Data</ProviderResourceName>

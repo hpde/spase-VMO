@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_0.xsd">
     <Version>2.2.2</Version>
     <NumericalData>
@@ -43,8 +44,8 @@
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/6sec_magagms_cdaweb/</URL>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga/6sec_magagms_cdaweb/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/de/de1/magnetic_fields_maga</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
@@ -56,6 +57,7 @@
             <AccessURL>
                 <Name>CDAWeb</Name>
                 <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>DE1_6SEC_MAGAGMS</ProductKey>
                 <Description>DE1_6SEC_MAGAGMS</Description>
             </AccessURL>
             <AccessURL>

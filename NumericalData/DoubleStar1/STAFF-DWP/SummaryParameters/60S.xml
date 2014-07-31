@@ -1,12 +1,12 @@
-<?xml version="1.0"?>
-<Spase xmlns="http://www.spase-group.org/data/schema">
-   <Version>2.1.0</Version>
+<?xml version="1.0" encoding="UTF-8" ?>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+    <Version>2.2.2</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/DoubleStar1/STAFF-DWP/SummaryParameters/60S</ResourceID>
       <ResourceHeader>
          <ResourceName>Double Star 1 Spacecraft Spatio-Temporal Analyzer of Field Fluctuations and Digital Wave Processor (STAFF-DWP) Summary Parameters Data</ResourceName>
          <AlternateName>Double Star 1 STAFF-DWP Summary Parameters Data</AlternateName>
-         <ReleaseDate>2012-09-22T12:00:00.000</ReleaseDate>
+         <ReleaseDate>2014-07-31T00:00:00.000</ReleaseDate>
          <Description>The Double Star 1 Spatio-Temporal Analyzer of Field Fluctuations and Digital Wave Processor summary parameter data set contains various parameters at 60 s. These parameters include universal time, the instrument status, and magnetic field spectral power from FGM data for various frequency ranges. Frequency ranges not clear. These parameters are available through Double Star Science Data Centre The Data Ring with restricted access.</Description>
          <Acknowledgement>Prof. C. Carr, Dr. Tielong Zhang, European Space Agency/International</Acknowledgement>
          <Contact>
