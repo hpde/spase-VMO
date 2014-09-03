@@ -26,7 +26,7 @@
             </Contact>
             <InformationURL>
                 <Name>Readme file at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/prognoz/prognoz7/aareadme.txt</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/prognoz/prognoz7/fluxgate_magnetometers/aareadme.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
