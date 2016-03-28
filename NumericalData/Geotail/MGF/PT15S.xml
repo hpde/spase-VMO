@@ -20,7 +20,7 @@ The Geotail position vector in GSE coordinates is included.</Description>
             </Contact>
             <InformationURL>
                 <Name>Readme file at SPDF</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/mag_sw_15s/00readme</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/mgf/mag_sw_15s_ascii/00readme</URL>
                 <Description>Details on creation of this data set</Description>
             </InformationURL>
         </ResourceHeader>
@@ -29,17 +29,17 @@ The Geotail position vector in GSE coordinates is included.</Description>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/mag_sw_15s/</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/geotail/mgf/mag_sw_15s_ascii/</URL>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/geotail/mag_sw_15s/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>http://spdf.gsfc.nasa.gov/pub/data/geotail/mgf/mag_sw_15s_ascii/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>OMNIWeb-Plus</Name>
-                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/geotail_mag15s.html</URL>
+                <URL>http://omniweb.sci.gsfc.nasa.gov/ftpbrowser/geotail_mag15s.html</URL>
                 <Description>FTPBrowser graphical display interface to ASCII data</Description>
             </AccessURL>
             <Format>Text</Format>

@@ -19,7 +19,7 @@
             </Contact>
             <InformationURL>
                 <Name>Readme file at SPDF</Name>
-                <URL>spdf.gsfc.nasa.gov/pub/data/omni/omni/high_res_omni/sc_specific/00readme.txt</URL>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/high_res_omni/sc_specific/00readme.txt</URL>
             </InformationURL>
         </ResourceHeader>
         <AccessInformation>
@@ -39,12 +39,12 @@
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
+                <Name>FTP access to files at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/omni/high_res_omni/sc_specific</URL>
                 <Description>FTP path at SPDF/NSSDC</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
+                <Name>HTTP access to files at SPDF</Name>
                 <URL>http://spdf.gsfc.nasa.gov/pub/data/omni/high_res_omni/sc_specific</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
