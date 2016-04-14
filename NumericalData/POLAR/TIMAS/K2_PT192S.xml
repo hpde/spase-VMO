@@ -4,7 +4,7 @@
         <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/K2_PT192S</ResourceID>
         <ResourceHeader>
             <ResourceName>Polar TIMAS K2 Mass Spectral Data</ResourceName>
-            <ReleaseDate>2011-02-20T12:34:56.789</ReleaseDate>
+            <ReleaseDate>2016-04-14T00:00:00.000</ReleaseDate>
             <Description>Mass spectra count rates for survey  purposes only from the POLAR TIMAS instrument. The mass spectral data product consists of 64 mass steps covering the full detector range, for each of 6 large solid angles, for 8 selected energy steps. The data product is accumulated for 2, 4, 8, 16, or 32 spin (6 s) periods. Because of telemetry restrictions only selected data products were telemetered to the ground.
 
 The 6 angular bins cover the full instrumental range and nearly 4pi steradians. Two of the look directions are centered on the spacecraft spin axis. For the first part of the mission, the spin axis was orbit normal and the pitch angles sampled in these look directions are near 90 degrees. The other 4 look directions are in the spin plane. Data are de-spun on board based on the spin rate and time of the "sun pulse". The digital data product provides the center pitch angle of each of the 6 look directions and an estimate of the variation of the pitch angle during the accumulation time.
@@ -17,7 +17,7 @@ The 6 angular bins cover the full instrumental range and nearly 4pi steradians. 
             </Contact>
             <InformationURL>
                 <Name>TIMAS Home Page</Name>
-                <URL>http://lasp.colorado.edu/timas/TIMAS_description.html</URL>
+                <URL>http://lasp.colorado.edu/home/timas/full/</URL>
             </InformationURL>
             <InformationURL>
                 <Name>TIMAS K2 product page</Name>
@@ -25,12 +25,12 @@ The 6 angular bins cover the full instrumental range and nearly 4pi steradians. 
             </InformationURL>
             <InformationURL>
                 <Name>Lennartsson et al., Adv. Space Res., 2000</Name>
-                <URL>http://lasp.colorado.edu/timas/papers/Lennartsson/COSPAR98.pdf</URL>
+                <URL>http://lasp.colorado.edu/media/projects/timas/pdf/COSPAR98.pdf</URL>
                 <Description>Polar/TIMAS Statistical Results on the Outflow of Molecular Ions From Earth at Solar Minimum, O.W. Lennartsson, H.L. Collin, W.K. Peterson, and E.G. Shelley, Advances in Space Research, 25, 2417, 2000.</Description>
             </InformationURL>
             <InformationURL>
                 <Name>Lennartsson et al., JASTP, 2000</Name>
-                <URL>http://lasp.colorado.edu/timas/papers/Lennartsson/Molecular_two.pdf</URL>
+                <URL>http://lasp.colorado.edu/media/projects/timas/pdf/Molecular_two.pdf</URL>
                 <Description>A Statistical Comparison of the Outflow of N2+, NO+, and O2+ Molecular Ions with that of Atomic O+ Ions using Polar/TIMAS Observations, O.W. Lennartsson, H.L. Collin, A.G. Ghielmetti, and W.K. Peterson, Journal of Atmospheric and Solar-Terrestrial Physics (JASTP), 62, 477, 2000.</Description>
             </InformationURL>
         </ResourceHeader>
