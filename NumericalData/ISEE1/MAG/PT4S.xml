@@ -38,9 +38,6 @@
             </AccessURL>
             <Format>CDF</Format>
             <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
-        </AccessInformation>
-            <Format>Text</Format>
-      <Acknowledgement>UCLA ISEE Magnetometer and GSFC CDAWeb teams</Acknowledgement>
     </AccessInformation>
     <AccessInformation>
       <RepositoryID>spase://SMWG/Repository/UCLA/IGPP.ISEE.Magnetometer.Interactive.Data.Server</RepositoryID>
