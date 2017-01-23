@@ -116,7 +116,7 @@
                      </Contact>
                       <InformationURL>
                              <Name>VG1-J/S/SS-PWS-1-EDR-WFRM-60MS-V1.0</Name>
-                             <URL>http://ppi.pds.nasa.gov/data/VG1-J/S/SS-PWS-1-EDR-WFRM-60MS-V1.0/AAREADME.TXT</URL>
+                             <URL>http://ppi.pds.nasa.gov/data/VG1-J-S-SS-PWS-1-EDR-WFRM-60MS-V1.0/AAREADME.TXT</URL>
                              <Description>The document describing the contents of the collection.</Description>
                              <Language>En</Language>
                      </InformationURL>
@@ -127,7 +127,7 @@
                       <AccessRights>Open</AccessRights>
                       <AccessURL>
                              <Name>PDS/PPI</Name>
-                             <URL>http://ppi.pds.nasa.gov/search/view/?f=yes&amp;id=pds://PPI/VG1-J/S/SS-PWS-1-EDR-WFRM-60MS-V1.0</URL>
+                             <URL>http://ppi.pds.nasa.gov/search/view/?id=pds://PPI/VG1-J_S_SS-PWS-1-EDR-WFRM-60MS-V1.0</URL>
                              <ProductKey>VG1-J/S/SS-PWS-1-EDR-WFRM-60MS-V1.0</ProductKey>
                              <Description>This collection is archived with NASA&apos;s Planetary Data System.</Description>
                              <Language>En</Language>

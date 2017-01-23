@@ -191,7 +191,7 @@
                      </Contact>
                       <InformationURL>
                              <Name>VG2-J/S/U/N/SS-PWS-4-SUMM-SA1HOUR-V1.0</Name>
-                             <URL>http://ppi.pds.nasa.gov/data/VG2-J/S/U/N/SS-PWS-4-SUMM-SA1HOUR-V1.0/AAREADME.TXT</URL>
+                             <URL>http://ppi.pds.nasa.gov/data/VG2-J-S-U-N-SS-PWS-4-SUMM-SA1HOUR-V1.0/AAREADME.TXT</URL>
                              <Description>The document describing the contents of the collection.</Description>
                              <Language>En</Language>
                      </InformationURL>
@@ -202,7 +202,7 @@
                       <AccessRights>Open</AccessRights>
                       <AccessURL>
                              <Name>PDS/PPI</Name>
-                             <URL>http://ppi.pds.nasa.gov/search/view/?f=yes&amp;id=pds://PPI/VG2-J/S/U/N/SS-PWS-4-SUMM-SA1HOUR-V1.0</URL>
+                             <URL>http://ppi.pds.nasa.gov/search/view/?id=pds://PPI/VG2-J_S_U_N_SS-PWS-4-SUMM-SA1HOUR-V1.0</URL>
                              <ProductKey>VG2-J/S/U/N/SS-PWS-4-SUMM-SA1HOUR-V1.0</ProductKey>
                              <Description>This collection is archived with NASA&apos;s Planetary Data System.</Description>
                              <Language>En</Language>

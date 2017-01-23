@@ -40,7 +40,7 @@ in the DATA_SET_OR_INST_PARM_DESC:
                      </Contact>
                       <InformationURL>
                              <Name>VG1-S-CRS-4-SUMM-D1/D2-192SEC-V1.0</Name>
-                             <URL>http://ppi.pds.nasa.gov/data/VG1-S-CRS-4-SUMM-D1/D2-192SEC-V1.0/AAREADME.TXT</URL>
+                             <URL>http://ppi.pds.nasa.gov/data/VG1-S-CRS-4-SUMM-D1D2-192SEC-V1.0/AAREADME.TXT</URL>
                              <Description>The document describing the contents of the collection.</Description>
                              <Language>En</Language>
                      </InformationURL>
@@ -51,7 +51,7 @@ in the DATA_SET_OR_INST_PARM_DESC:
                       <AccessRights>Open</AccessRights>
                       <AccessURL>
                              <Name>PDS/PPI</Name>
-                             <URL>http://ppi.pds.nasa.gov/search/view/?f=yes&amp;id=pds://PPI/VG1-S-CRS-4-SUMM-D1/D2-192SEC-V1.0</URL>
+                             <URL>http://ppi.pds.nasa.gov/search/view/?id=pds://PPI/VG1-S-CRS-4-SUMM-D1_D2-192SEC-V1.0</URL>
                              <ProductKey>VG1-S-CRS-4-SUMM-D1/D2-192SEC-V1.0</ProductKey>
                              <Description>This collection is archived with NASA&apos;s Planetary Data System.</Description>
                              <Language>En</Language>
