@@ -3,8 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/LECP/Jupiter/PT0.400S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 LECP 0.4 SEC HIGH RESOLUTION JUPITER NEAR ENCOUNTER DATA</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:12.15</ReleaseDate>
+                      <ResourceName>Voyager 1 LECP 0.4-s High-Res Jupiter Near Encounter Data</ResourceName>
+                     <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>
 
   Data Set Overview

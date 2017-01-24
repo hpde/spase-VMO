@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/MAG/Saturn/PT48.0S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 SAT MAG RESAMPLED HELIOGRAPHIC (RTN)
-                                      COORDS 48.0SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:27.19</ReleaseDate>
+                      <ResourceName>Voyager 1 Saturn Mag Resampled Heliographic (RTN) Coords 48.0-s V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
     Data Set Overview                                                         

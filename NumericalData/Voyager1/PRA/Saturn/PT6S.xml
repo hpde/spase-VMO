@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/PRA/Saturn/PT6S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 SAT PRA CALIBRATED HI-RES LOW FREQ. 
-                                        REC. BAND DATA V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:33.44</ReleaseDate>
+                      <ResourceName>Voyager 1 Saturn PRA Calibrated High-Res Low-Freq Rec Band Data V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
       Data Set Overview                                                       

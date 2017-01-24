@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/PLS/Saturn/PT96S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 SAT PLS DERIVED ION SOLAR WIND      
-                                      96SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:33.68</ReleaseDate>
+                      <ResourceName>Voyager 2 Saturn PLS Derived Ion Solar Wind 96-s V1.0</ResourceName>
+                     <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
       Data Set Overview                                                       

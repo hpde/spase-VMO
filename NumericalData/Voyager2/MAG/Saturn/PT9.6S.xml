@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/MAG/Saturn/PT9.6S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 SAT MAG RESAMPLED KRONOGRAPHIC (L1) 
-                                     COORDS 9.6SEC V1.1</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:30.32</ReleaseDate>
+                      <ResourceName>Voyager 2 Saturn Mag Resampled Kronographic (L1)Coords 9.6-s V1.1</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
       Data Set Overview                                                       

@@ -3,10 +3,9 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/Ephemeris/Jupiter/PT97S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 JUP EPHEMERIS HELIOGRAPHIC COORDS  
-                                        BROWSE V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:19.82</ReleaseDate>
-                      <Description>                                       
+                      <ResourceName>Voyager 1 Jupiter Ephemeris Heliographic Coords Browse V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
+<Description>                                       
                                                                              
   Data Set Overview                                                          
   =================                                                          

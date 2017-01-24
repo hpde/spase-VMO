@@ -3,8 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/PLS/Heliosphere/PT96S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VOYAGER 1 SOLAR WIND PLS FINE RES V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:35.63</ReleaseDate>
+                      <ResourceName>Voyager 1 Solar Wind PLS Fine Resolution V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                       
       Voyager 1 plasma data of the solar wind, fine resolution data.         
 The files in this directory contain the Voyager fine resolution plasma data. 

@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/PLS/Jupiter/PT96.0S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 JUP PLS PLASMA DERIVED ION MOMENTS
-                                         96.0 SEC V1.1</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:19.39</ReleaseDate>
+                      <ResourceName>Voyager 1 Jupiter PLS Plasma Derived Ion Moments 96.0-s V1.1</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                      
                                                                              
   Data Set Overview                                                          

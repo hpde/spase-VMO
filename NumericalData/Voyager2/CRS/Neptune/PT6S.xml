@@ -3,8 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/CRS/Neptune/PT6S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 NEP CRS CALIB RDR D1 RATE HI RESOLUTION ELEC 6SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:15.64</ReleaseDate>
+                      <ResourceName>Voyager 2 Neptune CRS Calib Rdr D1 Rate High-Res Electron 6-s V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
   Data Set Overview                                                           

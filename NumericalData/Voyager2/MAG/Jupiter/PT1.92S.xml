@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/MAG/Jupiter/PT1.92S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 JUP MAG RESAMPLED SYSTEM III (1965) 
-COORDS 1.92SEC V1.1</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:07.08</ReleaseDate>
+                      <ResourceName>Voyager 2 Jupiter Mag Resempled System III (1965)Coords 1.92-s V1.1</ResourceName>
+                     <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
       Data Set Overview                                                       

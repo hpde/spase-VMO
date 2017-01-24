@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/MAG/Neptune/PT1.92S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 NEP MAG RESAMP RDR HELIOGRAPHIC    
-                                       COORDINATES 1.92SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:19.03</ReleaseDate>
+                      <ResourceName>Voyager 2 Neptune Mag Resampled RDR Heliographic Coors 1.92-s V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                       
                                                                               
   Data Set Overview                                                           

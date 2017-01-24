@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/PRA/Uranus/PT48S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 URA PRA RESAMPLED SUMMARY BROWSE   
-                                      48SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:47.59</ReleaseDate>
+                      <ResourceName>Voyager 2 Uranus PRA Resampled Summary Browse 48-s V1.0</ResourceName>
+                     <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                       
 This dataset consists of edited browse data derived from an                  
 original dataset obtained from the Voyager 2 Planetary Radio                 

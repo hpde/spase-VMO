@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/CRS/Jupiter/PT15M</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 JUP CRS DERIVED PROTON/ION/ELECTRON
-                                          FLUX BROWSE V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:11.12</ReleaseDate>
+                      <ResourceName>Voyager 1 Jupiter CRS Derived Proton_Ion_Electron Flux Browse V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>
 
   Data Set Overview

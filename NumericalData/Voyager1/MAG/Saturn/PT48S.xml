@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/MAG/Saturn/PT48S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 SAT MAG RESAMPLED KRONOGRAPHIC (L1) 
-                                      COORDS 48.0SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:28.64</ReleaseDate>
+                      <ResourceName>Voyager 1 Saturn Mag Resampled kronographic (L1) Coords 48.0-s V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
     Data Set Overview                                                         

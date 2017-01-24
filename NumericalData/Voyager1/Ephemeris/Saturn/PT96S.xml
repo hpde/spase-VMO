@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/Ephemeris/Saturn/PT96S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 SAT EPHEMERIS KRONOGRAPHIC (L1)     
-COORDS BROWSE V1.1</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:33.02</ReleaseDate>
+                      <ResourceName>Voyager 1 Saturn Ephemeris Kronographic (L1)Coords Browse V1.1</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                        
                                                                               
       Data Set Overview                                                       

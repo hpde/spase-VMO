@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/Ephemeris/Uranus/PT48S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 URA TRAJECTORY DERIVED SUMM U1
-                                          COORDS 48SEC V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:46.39</ReleaseDate>
+                      <ResourceName>Voyager 2 Uranus Trajectory Derived Summary U1 Coords 48-s V1.0</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>
       This dataset contains Voyager 2 spacecraft position vectors relative
       to Uranus in minus U1 coordinates.  The U1 or Uranus West Longitude

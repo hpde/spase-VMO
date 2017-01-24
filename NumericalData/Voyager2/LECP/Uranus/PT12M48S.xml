@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager2/LECP/Uranus/PT12M48S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG2 URA LECP RESAMPLED RDR STEPPING    
-                                      SECTOR 12.8MIN V1.0</ResourceName>
-                      <ReleaseDate>2014-12-01T10:16:40.94</ReleaseDate>
+                      <ResourceName>Voyager 2 Uranus LECP Resampled RDR Stepping Sector 12.8-min V1.0</ResourceName>
+                     <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                       
 This data consists of resampled data from the Low Energy
 Charged Particle (LECP) Experiment on the Voyager 2 Spacecraft

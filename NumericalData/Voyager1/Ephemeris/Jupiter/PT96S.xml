@@ -3,9 +3,8 @@
 <NumericalData>
                <ResourceID>spase://VMO/NumericalData/Voyager1/Ephemeris/Jupiter/PT96S</ResourceID>
                <ResourceHeader>
-                      <ResourceName>VG1 JUP EPHEMERIS SYSTEM III (1965)   
-                                        COORDS BROWSE V1.1</ResourceName>
-                      <ReleaseDate>2014-12-01T10:06:20.28</ReleaseDate>
+                      <ResourceName>Voyager 1 Jupiter Ephemeris System III (1965)Coords Browse V1.1</ResourceName>
+                      <ReleaseDate>2017-01-19T10:00:00.00</ReleaseDate>
                       <Description>                                       
                                                                              
   Data Set Overview                                                          
