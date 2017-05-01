@@ -114,7 +114,7 @@
                      </Contact>
                       <InformationURL>
                              <Name>VG2-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1</Name>
-                             <URL>http://ppi.pds.nasa.gov/data/VG2-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1/AAREADME.TXT</URL>
+                             <URL>http://pds-ppi.igpp.ucla.edu/data/VG2-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1/AAREADME.TXT</URL>
                              <Description>The document describing the contents of the collection.</Description>
                              <Language>En</Language>
                      </InformationURL>
@@ -125,7 +125,7 @@
                       <AccessRights>Open</AccessRights>
                       <AccessURL>
                              <Name>PDS/PPI</Name>
-                             <URL>http://ppi.pds.nasa.gov/search/view/?f=yes&amp;id=pds://PPI/VG2-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1</URL>
+                             <URL>http://pds-ppi.igpp.ucla.edu/search/view/?f=yes&amp;id=pds://PPI/VG2-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1</URL>
                              <ProductKey>VG2-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1</ProductKey>
                              <Description>This collection is archived with NASA&apos;s Planetary Data System.</Description>
                              <Language>En</Language>
