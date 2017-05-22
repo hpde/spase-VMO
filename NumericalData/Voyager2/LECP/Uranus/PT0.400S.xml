@@ -151,7 +151,7 @@
                      </Contact>
                       <InformationURL>
                              <Name>VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0</Name>
-                             <URL>http://ppi.pds.nasa.gov/data/VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0/AAREADME.TXT</URL>
+                             <URL>http://pds-ppi.igpp.ucla.edu/data/VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0/AAREADME.TXT</URL>
                              <Description>The document describing the contents of the collection.</Description>
                              <Language>En</Language>
                      </InformationURL>
@@ -162,7 +162,7 @@
                       <AccessRights>Open</AccessRights>
                       <AccessURL>
                              <Name>PDS/PPI</Name>
-                             <URL>http://ppi.pds.nasa.gov/search/view/?f=yes&amp;id=pds://PPI/VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0</URL>
+                             <URL>http://pds-ppi.igpp.ucla.edu/search/view/?f=yes&amp;id=pds://PPI/VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0</URL>
                              <ProductKey>
                                     VG2-U-LECP-3-RDR-FAR-ENC-400MSEC-V1.0</ProductKey>
                              <Description>This collection is archived with NASA&apos;s Planetary Data System.</Description>
