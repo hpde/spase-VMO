@@ -1,10 +1,10 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_1.xsd">
-    <Version>2.2.1</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
+    <Version>2.2.2</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/IMP8/MAG/PT15.36S</ResourceID>
         <ResourceHeader>
             <ResourceName>IMP 8 MAG 15.36s Magnetic Field Measurements</ResourceName>
-            <ReleaseDate>2011-03-08T20:30:15Z</ReleaseDate>
+            <ReleaseDate>2017-05-10T00:00:00.000</ReleaseDate>
             <Description>IMP 8 magnetic field measurements from tri-axis magnetometer. 
 Time resolution is 15.36 second.  Data are based on a 2010 data reprocessing
 by the PI team.  Parameter details below are based on the version of the data 
@@ -18,7 +18,7 @@ these data.</Acknowledgement>
             </Contact>
             <InformationURL>
                 <Name>IMP-8 Magnetometer Experiment Home Page</Name>
-                <URL>http://wind.nasa.gov/imp8/</URL>
+                <URL>https://wind.nasa.gov/imp8/</URL>
                 <Description>A web site hosting instrument information and providing 
 access to the data</Description>
             </InformationURL>
@@ -28,13 +28,13 @@ access to the data</Description>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/mag/mag_15sec_cdaweb/</URL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/mag</URL>
                 <Description>An ftp repository hosting 15s magnetic field data from IMP-8.</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/mag/mag_15sec_cdaweb/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/imp/imp8/mag</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
@@ -45,22 +45,13 @@ access to the data</Description>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+                <URL>https://cdaweb.gsfc.nasa.gov/cdaweb/sp_phys/</URL>
+                <ProductKey>I8_15SEC_MAG</ProductKey>
                 <Description>Subset, plot and list data via CDAWeb</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF FTP area (originally nssdcftp area) </Name>
-                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/imp/imp8/mag/15s_ascii_v3/</URL>
-                <Description>In ASCII via ftp from nssdcftp</Description>
-            </AccessURL>
-            <AccessURL>
-                <Name>SPDF HTTP area (originally nssdcftp area)</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/imp/imp8/mag/15s_ascii_v3/</URL>
-                <Description>In  ASCII via HTTP from SPDF</Description>
-            </AccessURL>
-            <AccessURL>
                 <Name>FTPBrowser</Name>
-                <URL>http://omniweb.gsfc.nasa.gov/ftpbrowser/imp_mag15s.html</URL>
+                <URL>https://omniweb.sci.gsfc.nasa.gov/ftpbrowser/imp_mag15s.html</URL>
                 <Description>Subset, plot and list data via FTPBrowser</Description>
             </AccessURL>
             <Format>Text</Format>

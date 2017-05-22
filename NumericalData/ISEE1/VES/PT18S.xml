@@ -4,7 +4,7 @@
         <ResourceID>spase://VMO/NumericalData/ISEE1/VES/PT18S</ResourceID>
         <ResourceHeader>
             <ResourceName>ISEE 1 VES Electron Data at 9s or 18s</ResourceName>
-            <ReleaseDate>2014-07-31T00:00:00.00</ReleaseDate>
+            <ReleaseDate>2017-05-10T00:00:00.000</ReleaseDate>
             <Description>This data set, held in CDAWeb as ISEE1_H0_FE,
 contains electron moments from the Vector Electron Spectrometer
 (VES), and spacecraft position vectors, at 9s or 18s resolution, 
@@ -39,13 +39,13 @@ Harvey and Mozer experiments.</Description>
             <Availability>Online</Availability>
             <AccessRights>Open</AccessRights>
             <AccessURL>
-                <Name>SPDF FTP area</Name>
+                <Name>FTP access to files at SPDF</Name>
                 <URL>ftp://spdf.gsfc.nasa.gov/pub/data/isee/isee1/isee1_cdaweb/h0/fe/</URL>
                 <Description>For ftp retrieval of daily CDF files</Description>
             </AccessURL>
             <AccessURL>
-                <Name>SPDF HTTP area</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/isee/isee1/isee1_cdaweb/h0/fe/</URL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/isee/isee1/isee1_cdaweb/h0/fe/</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <Format>CDF</Format>
@@ -63,7 +63,8 @@ and the Space Physics Data Facility at NASA/GSFC</Acknowledgement>
             <AccessRights>Open</AccessRights>
             <AccessURL>
                 <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <URL>https://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>ISEE1_H0_FE</ProductKey>
                 <Description>For CDAWeb subset, plot and list capabilities</Description>
             </AccessURL>
             <Format>Text</Format>
