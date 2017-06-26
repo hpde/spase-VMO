@@ -32,12 +32,12 @@
       </InformationURL>
       <InformationURL>
         <Name>GOES 1 Energetic Particle Monitor Data File Information</Name>
-        <URL>http://goes.ngdc.noaa.gov/software/part.txt</URL>
+        <URL>https://satdat.ngdc.noaa.gov/sem/goes/software/part.txt</URL>
         <Description>Additional GOES EPM information, e.g. the muliplex counter lookup table.</Description>
       </InformationURL>
       <InformationURL>
         <Name>GOES 1 Energetic Particle Monitor Additional Data File Information</Name>
-        <URL>ftp://satdat.ngdc.noaa.gov/sem/goes/data/full/readme.txt</URL>
+        <URL>ftp://satdat.ngdc.noaa.gov/sem/goes/goes_docs/full/readme.txt</URL>
         <Description>Additional GOES EPM dtaa file information.</Description>
       </InformationURL>
       <PriorID>spase://VMO/NumericalData/GOES/1/EPM/HighRes/PT3S</PriorID>
@@ -49,7 +49,7 @@
       <AccessRights>Open</AccessRights>
       <AccessURL>
         <Name>Direct access to the GOES 1 EPM data</Name>
-        <URL>ftp://satdat.ngdc.noaa.gov/sem/goes/data/full/particles/</URL>
+        <URL>ftp://satdat.ngdc.noaa.gov/sem/goes/data/full/</URL>
         <Description>Direct link to the GOES 1 EPM data in FITS format as well as the energetic particle data from other GOES spacecraft. The data are sorted by year. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, P0137607.FIT indicates particle data (P) for spacecraft 1 (01) at 3 second resolution (3) from July 1976 (7607). Note that spacecraft IDs 91 and 92 refer to SMS satellites, not GOES.</Description>
       </AccessURL>
       <Format>FITS</Format>
@@ -87,7 +87,7 @@
     <Parameter>
       <Name>Flag Word</Name>
       <ParameterKey>Flag Word</ParameterKey>
-      <Description>The flag word contains packed information about the data such as the multiplex counter, data processing error flag, the satellite command state, and archive version number. The multiplex counter value indicates the 3 data channels from which the counts per second are recorded. Because the multiplex counter can change every 3 sec is is not possible to give the data channel, energy range, and other information in the next 3 parameters. To calculate the multiplex counter, multiplex counter = flagword mod 16. With the multiplex counter use the look up table at see http://goes.ngdc.noaa.gov/software/part.txt to determine the energy channels, the associated particle, and the energy range.</Description>
+      <Description>The flag word contains packed information about the data such as the multiplex counter, data processing error flag, the satellite command state, and archive version number. The multiplex counter value indicates the 3 data channels from which the counts per second are recorded. Because the multiplex counter can change every 3 sec is is not possible to give the data channel, energy range, and other information in the next 3 parameters. To calculate the multiplex counter, multiplex counter = flagword mod 16. With the multiplex counter use the look up table at see https://satdat.ngdc.noaa.gov/sem/goes/software/part.txt to determine the energy channels, the associated particle, and the energy range.</Description>
       <Support>
         <SupportQuantity>Other</SupportQuantity>
       </Support>

@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-   <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+   <Version>2.2.8</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/GOES/8/EPS/PT5M</ResourceID>
       <ResourceHeader>
          <ResourceName>GOES 8 Energetic Particle Monitor Data at 5 min Resolution</ResourceName>
          <AlternateName>GOES 8 EPS data</AlternateName>
          <AlternateName>GOES 8 EP8 data</AlternateName>
-         <ReleaseDate>2014-01-07T00:00:00.000</ReleaseDate>
+         <ReleaseDate>2017-06-12T00:00:00.000</ReleaseDate>
          <Description>The energetic particle sensor (now called EP8 instead of EPS or EPM) data consists of electron, proton, and alpha particle data. The electrons consists of 3 energy flux channels with energies greater than 0.6 MeV. The protons consist of 7 energy channels from 0.6 to 500 MeV and the alpha particles consist of 6 energy channels from 4 to 500 MeV. </Description>
          <Acknowledgement>NOAA Environmental Research Laboratories;   Dr. Terry Onsager;  </Acknowledgement>
          <Contact>
@@ -25,12 +24,12 @@
          </InformationURL>
          <InformationURL>
             <Name>GOES 8 Energetic Particle Sensor Data File Information</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/avg/readme.txt</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/goes_docs/avg/readme.txt</URL>
             <Description>Additional GOES EPM information.</Description>
          </InformationURL>
          <InformationURL>
             <Name>GOES 8 Energetic Particle Sensor Additional Data File Information</Name>
-            <URL>ftp://satdat.ngdc.noaa.gov/sem/goes/data/full/readme.txt</URL>
+            <URL>ftp://satdat.ngdc.noaa.gov/sem/goes/goes_docs/full/readme.txt</URL>
             <Description>Additional GOES EPM data file information.</Description>
          </InformationURL>
       </ResourceHeader>
@@ -40,13 +39,33 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the GOES 8 SEM data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/</URL>
             <Description>Direct link to the GOES 8 EPS data in ASCII format as well as the energetic particle data from other GOES spacecraft. The data are sorted by year, month, spacecraft. The file names indicates the spacecraft number, data type, and time range. For example, g08_eps_5m_19960401_19960430.csv indicates the GOES 8 spacecraft EPS data from 19960401 to 19960401.</Description>
          </AccessURL>
          <Format>Text</Format>
          <Encoding>None</Encoding>
          <Acknowledgement>NOAA Environmental Research Laboratories;  Dr. Terry Onsager; </Acknowledgement>
       </AccessInformation>
+       <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/goes/goes08/ep8_k0</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/goes/goes08/ep8_k0</URL>
+                <Description>In CDF via HTTP from CDAWeb</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>CDAWeb</Name>
+                <URL>https://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>G8_K0_EP8</ProductKey>
+            </AccessURL>
+            <Format>CDF</Format>
+        </AccessInformation>
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>NOAA GOES</ProviderResourceName>
       <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
@@ -60,7 +79,7 @@
          </TimeSpan>
          <Cadence>PT5M</Cadence>
       </TemporalDescription>
-      <Caveats></Caveats>
+      <Caveats/>
       <Keyword>5 min</Keyword>
       <Keyword>geosynchronous</Keyword>
       <Keyword>GOES</Keyword>
@@ -75,9 +94,9 @@
          </Support>
       </Parameter>           
       <Parameter>
-      		<Name>Flux of electrons with energy >.6 MeV.</Name>
+      		<Name>Flux of electrons with energy &gt;.6 MeV.</Name>
       		<ParameterKey>e1_flux_ic</ParameterKey>
-      		<Description>E1 Electron integral flux > 0.6 MeV corrected unreliable during ion storms.</Description>
+      		<Description>E1 Electron integral flux &gt; 0.6 MeV corrected unreliable during ion storms.</Description>
       		<Units>e/(cm^2 s sr)</Units>
       		<ValidMin>1.0000E-02</ValidMin>
       		<ValidMax>1.0000E+08</ValidMax>
@@ -88,9 +107,9 @@
       		</Particle> 
       </Parameter>   
       <Parameter>
-      		<Name>Flux of electrons with energy >2 MeV.</Name>
+      		<Name>Flux of electrons with energy &gt;2 MeV.</Name>
       		<ParameterKey>e2_flux_ic</ParameterKey>
-      		<Description>E2 Electron integral flux > 2.0 MeV corrected unreliable during ion storms.</Description>
+      		<Description>E2 Electron integral flux &gt; 2.0 MeV corrected unreliable during ion storms.</Description>
       		<Units>e/(cm^2 s sr)</Units>
       		<ValidMin>1.0000E-02</ValidMin>
       		<ValidMax>1.0000E+06</ValidMax>
@@ -101,9 +120,9 @@
       		</Particle> 
       </Parameter> 
       <Parameter>
-      		<Name>Flux of electrons with energy >4 MeV.</Name>
+      		<Name>Flux of electrons with energy &gt;4 MeV.</Name>
       		<ParameterKey>e3_flux_ic</ParameterKey>
-      		<Description>Electron integral flux > 4.0 MeV corrected unreliable during ion storms.</Description>
+      		<Description>Electron integral flux &gt; 4.0 MeV corrected unreliable during ion storms.</Description>
       		<Units>e/(cm^2 s sr)</Units>
       		<ValidMin>1.0000E-02</ValidMin>
       		<ValidMax>1.0000E+06</ValidMax>
@@ -474,9 +493,9 @@
       		</Particle>
       </Parameter>  
      <Parameter>
-      		<Name>Integral flux of protons with energies > 1 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 1 MeV.</Name>
       		<ParameterKey>p1_flux_ic</ParameterKey>
-      		<Description>P1 Proton integral > 1 MeV corrected.</Description>
+      		<Description>P1 Proton integral &gt; 1 MeV corrected.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>
@@ -487,9 +506,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Integral flux of protons with energies > 5 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 5 MeV.</Name>
       		<ParameterKey>p2_flux_ic</ParameterKey>
-      		<Description>P2 Proton integral > 5 MeV corrected.</Description>
+      		<Description>P2 Proton integral &gt; 5 MeV corrected.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>
@@ -500,9 +519,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Integral flux of protons with energies > 10 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 10 MeV.</Name>
       		<ParameterKey>p3_flux_ic</ParameterKey>
-      		<Description>P3 Proton ingegral > 10 MeV corrected..</Description>
+      		<Description>P3 Proton ingegral &gt; 10 MeV corrected..</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>
@@ -513,9 +532,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Integral flux of protons with energies > 30 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 30 MeV.</Name>
       		<ParameterKey>p4_flux_ic</ParameterKey>
-      		<Description>P4 Proton ingegral > 30 MeV corrected.</Description>
+      		<Description>P4 Proton ingegral &gt; 30 MeV corrected.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>
@@ -526,9 +545,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Integral flux of protons with energies > 50 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 50 MeV.</Name>
       		<ParameterKey>p5_flux_ic</ParameterKey>
-      		<Description>P5 Proton ingegral > 50 MeV corrected.</Description>
+      		<Description>P5 Proton ingegral &gt; 50 MeV corrected.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>
@@ -539,9 +558,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Integral flux of protons with energies > 60 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 60 MeV.</Name>
       		<ParameterKey>p6_flux_ic</ParameterKey>
-      		<Description>P6 Proton ingegral > 60 MeV corrected.</Description>
+      		<Description>P6 Proton ingegral &gt; 60 MeV corrected.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>
@@ -552,9 +571,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Integral flux of protons with energies > 100 MeV.</Name>
+      		<Name>Integral flux of protons with energies &gt; 100 MeV.</Name>
       		<ParameterKey>p7_flux_ic</ParameterKey>
-      		<Description>P7 Proton ingegral > 100 MeV corrected.</Description>
+      		<Description>P7 Proton ingegral &gt; 100 MeV corrected.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-04</ValidMin>
       		<ValidMax>1.0000E+05</ValidMax>

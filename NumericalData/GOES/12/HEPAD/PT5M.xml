@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
    <Version>2.2.2</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/GOES/12/HEPAD/PT5M</ResourceID>
       <ResourceHeader>
-         <ResourceName>GOES 12 High Energy Proton and Alpha Detector (HEPAD) data at 5 m Resolution in Spacecraft Coordinates</ResourceName>
+         <ResourceName>GOES 12 High Energy Proton and Alpha Detector (HEPAD) AP data at 5 m Resolution in Spacecraft Coordinates</ResourceName>
          <AlternateName>GOES 12 HEPAD AP data</AlternateName>
-         <ReleaseDate>2014-01-13T00:00:00.000</ReleaseDate>
-         <Description>The GOES 12 High Energy Proton and Alpha Detector (HEPAD) provides flux measurements of high energy proton and alpha particles.  This data set consists of protons in 4 energy channels from 350 to >700 MeV and the alpha particles consist of 2 energy channels from 2560 to >3400 MeV.</Description>
+         <ReleaseDate>2017-06-12T00:00:00.000</ReleaseDate>
+         <Description>The GOES 12 High Energy Proton and Alpha Detector (HEPAD) provides flux measurements of high energy proton and alpha particles.  This data set consists of protons in 4 energy channels from 350 to &gt;700 MeV and the alpha particles consist of 2 energy channels from 2560 to &gt;3400 MeV.</Description>
          <Acknowledgement>NASA-Office of Space Science Applications (United States); NOAA National Environmental Satellite Service (United States); Dr. Terry G. Onsager</Acknowledgement>
          <Contact>
             <PersonID>spase://SMWG/Person/Terry.Onsager</PersonID>
@@ -24,7 +23,7 @@
          </InformationURL>
          <InformationURL>
             <Name>GOES 12 Energetic Particle Sensor Data File Information</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/avg/readme.txt</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/goes_docs/avg/readme.txt</URL>
             <Description>Additional GOES EPS information.</Description>
          </InformationURL>
       </ResourceHeader>
@@ -34,7 +33,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the GOES 12 High Energy Proton and Alpha Detector data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/new_full/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/data/new_full/</URL>
             <Description>Direct link to the GOES 12 High Energy Proton and Alpha Detector (HEPAD) data in CSV format as well as the energetic particle data from other GOES spacecraft. The data are sorted by year, month, spacecraft, and file type. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, g12_hepad_5m_20100401_20100430.csv, indicates GOES 12 magnetometer data at 5 min resolution from start of April 1, 2010 to the end of April 30, 2010.</Description>
          </AccessURL>
          <Format>Text.ASCII</Format>
@@ -122,9 +121,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Flux of protons with energies >700 MeV.</Name>
+      		<Name>Flux of protons with energies &gt;700 MeV.</Name>
       		<ParameterKey>p4_flux</ParameterKey>
-      		<Description>P11 Proton integral > 700.0 MeV</Description>
+      		<Description>P11 Proton integral &gt; 700.0 MeV</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-06</ValidMin>
       		<ValidMax>1.0000E+03</ValidMax>
@@ -153,9 +152,9 @@
       		</Particle>
       </Parameter>
       <Parameter>
-      		<Name>Flux of Alpha-particles with energies >3400 MeV.</Name>
+      		<Name>Flux of Alpha-particles with energies &gt;3400 MeV.</Name>
       		<ParameterKey>a2_flux</ParameterKey>
-      		<Description>A8 Alpha-Particles  > 3400 MeV/Nucleon.</Description>
+      		<Description>A8 Alpha-Particles  &gt; 3400 MeV/Nucleon.</Description>
       		<Units>a/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-06</ValidMin>
       		<ValidMax>1.0000E+03</ValidMax>

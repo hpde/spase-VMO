@@ -1,10 +1,10 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_4.xsd'">
+    <Version>2.2.4</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/GOES/10/MAG/PT0.512S</ResourceID>
         <ResourceHeader>
             <ResourceName>GOES 10 high-resolution magnetometer data</ResourceName>
-            <ReleaseDate>2011-07-19T21:40:59Z</ReleaseDate>
+            <ReleaseDate>2017-01-26T00:00:00</ReleaseDate>
             <Description>GOES 10 magnetic field data at 0.512 second time resolution. The vector magnetic field is given in the spacecraft (s/c) earth-referenced coordinate system:  Hp, He, Hn, and Ht, where  Hp is perpendicular to the satellite orbital plane, or parallel to Earth's spin axis in the case of a zero degree inclination orbit; He is perpendicular to Hp and directed earthwards; Hn is perpendicular to both Hp and He and directed eastwards; and Ht is the total field.
       
       This data product also provides GOES 10 satellite positions and velocities derived from SSCWEB GEI ephemeris, interpolated to one minute time resolution.
@@ -56,7 +56,7 @@ Approximate coefficients are:
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <URL>https://cdaweb.gsfc.nasa.gov/</URL>
                 <ProductKey>G10_L2_MAG</ProductKey>
                 <Description>For CDAWeb subset, plot and list capabilities</Description>
             </AccessURL>
@@ -402,6 +402,7 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
             <UnitsConversion>1e-9&gt;T</UnitsConversion>
             <CoordinateSystem>
                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                <CoordinateSystemName>ENP</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
                 <Size>3</Size>

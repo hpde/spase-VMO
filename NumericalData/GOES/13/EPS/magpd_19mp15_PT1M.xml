@@ -4,9 +4,9 @@
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/GOES/13/EPS/magpd_19mp15_PT1M</ResourceID>
       <ResourceHeader>
-         <ResourceName>GOES 13 Magnetospheric Proton Detector (MAGPD) data at 1 min Resolution in Spacecraft Coordinates</ResourceName>
+         <ResourceName>GOES 13 Magnetospheric Proton Detector (MAGPD) data with average energy of 95 keV at 1 min Resolution in Spacecraft Coordinates</ResourceName>
          <AlternateName>GOES 13 MAGPD 19MP15 data</AlternateName>
-         <ReleaseDate>2017-06-14T00:00:00.000</ReleaseDate>
+         <ReleaseDate>2017-06-12T00:00:00.000</ReleaseDate>
          <Description>The GOES 13 Magnetospheric Proton Detector (MAGPD) are essentially the same as the Energetic Particle Sensor (EPS) on GOES 8-12. For more information, please see T. G. Onsager et al. (1996), Operational uses of the GOES energetic particle detectors, in GOES-8 and Beyond, Proc. SPIE, Vol. 2812, edited by E. R. Washwell, pp. 281-290, Bellingham, WA.  These data file contain mainly information on the proton count rates and fluxes from 95-475 keV. Data files contain long descriptive header.</Description>
          <Acknowledgement>NASA-Office of Space Science Applications (United States); NOAA National Environmental Satellite Service (United States); Dr. Terry G. Onsager</Acknowledgement>
          <Contact>
@@ -23,7 +23,7 @@
             <Description>Information about the magnetometers onboard GOES 13.</Description>
             <Language>en</Language>
          </InformationURL>
-		<PriorID>spase://VMO/NumericalData/GOES/13/EPEAD/magpd_19mp15_PT1M</PriorID>
+      <PriorID>spase://VMO/NumericalData/GOES/13/EPEAD/magpd_19mp15_PT1M</PriorID>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/NOAA/SEC</RepositoryID>
@@ -31,7 +31,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the GOES 13 Magnetospheric Proton Detector (MAGPD) data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/</URL>
             <Description>Direct link to the GOES 13 Magnetospheric Proton Detector (MAGPD) data in CSV format as well as the energetic particle data from other GOES spacecraft. The data are sorted by year, month, spacecraft, and file type. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, g13_magpd_19mp15_1m_20110101_20110131.csv, indicates goes 13 magnetometer data at 1 min resolution from start of Jan 1, 2011 to the end of Jan 31, 2011.</Description>
          </AccessURL>
          <Format>Text.ASCII</Format>

@@ -1,10 +1,10 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_4.xsd'">
+    <Version>2.2.4</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/GOES/11/MAG/PT0.512S</ResourceID>
         <ResourceHeader>
             <ResourceName>GOES 11 high-resolution magnetometer data</ResourceName>
-            <ReleaseDate>2011-07-19T21:41:00Z</ReleaseDate>
+            <ReleaseDate>2017-01-26T00:00:00</ReleaseDate>
             <Description>GOES 11 magnetic field data at 0.512 second time resolution. The vector magnetic field is given in the spacecraft (s/c) earth-referenced coordinate system:  Hp, He, Hn, and Ht, where  Hp is perpendicular to the satellite orbital plane, or parallel to Earth's spin axis in the case of a zero degree inclination orbit; He is perpendicular to Hp and directed earthwards; Hn is perpendicular to both Hp and He and directed eastwards; and Ht is the total field.
       
       This data product also provides GOES 11 satellite positions and velocities derived from SSCWEB GEI ephemeris, interpolated to one minute time resolution.
@@ -48,17 +48,31 @@ Approximate coefficients are:
             </InformationURL>
             <PriorID>spase://VMO/NumericalData/GOES11/MAG/PT0.512S</PriorID>
         </ResourceHeader>
+      <AccessInformation>
+            <RepositoryID>spase://SMWG/Repository/NASA/GSFC/SPDF</RepositoryID>
+            <Availability>Online</Availability>
+            <AccessRights>Open</AccessRights>
+            <AccessURL>
+                <Name>FTP access to files at SPDF</Name>
+                <URL>ftp://spdf.gsfc.nasa.gov/pub/data/goes/goes11/mag_l2/</URL>
+            </AccessURL>
+            <AccessURL>
+                <Name>HTTP access to files at SPDF</Name>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/goes/goes11/mag_l2/</URL>
+                <Description>In CDF via HTTP from CDAWeb</Description>
+            </AccessURL>
+            <AccessURL>
+                <Name>CDAWeb</Name>
+                <URL>https://cdaweb.gsfc.nasa.gov/</URL>
+                <ProductKey>G11_L2_MAG</ProductKey>
+            </AccessURL>
+            <Format>CDF</Format>
+       </AccessInformation>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/UCB/THEMIS</RepositoryID>
             <AccessURL>
                 <Name>GOES 11 Level2 0.512S Magnetic Field Data</Name>
                 <URL>http://themis.ssl.berkeley.edu/data/goes/mag/g11/l2/</URL>
-            </AccessURL>
-            <AccessURL>
-                <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
-                <ProductKey>G11_L2_MAG</ProductKey>
-                <Description>For CDAWeb subset, plot and list capabilities</Description>
             </AccessURL>
             <Format>CDF</Format>
             <Encoding>None</Encoding>
@@ -400,6 +414,7 @@ GOES 8-12 spacecraft are 3-axis stabilized and there is only one opportunity for
             <UnitsConversion>1e-9&gt;T</UnitsConversion>
             <CoordinateSystem>
                 <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                <CoordinateSystemName>ENP</CoordinateSystemName>
             </CoordinateSystem>
             <Structure>
                 <Size>3</Size>

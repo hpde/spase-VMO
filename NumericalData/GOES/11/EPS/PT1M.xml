@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
    <Version>2.2.2</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/GOES/11/EPS/PT1M</ResourceID>
       <ResourceHeader>
          <ResourceName>GOES 11 Energetic Particle Sensor Data at 1 min Resolution</ResourceName>
          <AlternateName>GOES 11 EPS data</AlternateName>
-         <ReleaseDate>2014-01-07T00:00:00.000</ReleaseDate>
+         <ReleaseDate>2017-06-12T00:00:00.000</ReleaseDate>
          <Description>The energetic particle sensor data consists of electron and proton data. The electrons consists of 3 energy flux channels with energies greater than 0.6 MeV. The proton fluxes consist of 7 energy channels from 0.6 to 500 MeV.</Description>
          <Acknowledgement>NOAA Environmental Research Laboratories;   Dr. Terry Onsager; </Acknowledgement>
          <Contact>
@@ -24,7 +23,7 @@
          </InformationURL>
          <InformationURL>
             <Name>GOES 11 Energetic Particle Sensor Data File Information</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/avg/readme.txt</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/goes_docs/avg/readme.txt</URL>
             <Description>Additional GOES EPS information.</Description>
          </InformationURL>
       </ResourceHeader>
@@ -34,7 +33,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the GOES 11 SEM data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/data/new_avg/</URL>
             <Description>Direct link to the GOES 11 EPS data in ASCII format as well as the energetic particle data from other GOES spacecraft. The data are sorted by year, month, spacecraft. The file names indicates the spacecraft number, data type, and time range. For example, g08_eps_1m_19950801_19950131.csv indicates the GOES 8 spacecraft EPS data from 19950801 to 19950131.</Description>
          </AccessURL>
          <Format>Text</Format>
@@ -54,7 +53,7 @@
          </TimeSpan>
          <Cadence>PT1M</Cadence>
       </TemporalDescription>
-      <Caveats></Caveats>
+      <Caveats/>
       <Keyword>1 min</Keyword>
       <Keyword>geosynchronous</Keyword>
       <Keyword>GOES</Keyword>
@@ -69,9 +68,9 @@
          </Support>
       </Parameter>       
       <Parameter>
-      		<Name>Flux of electrons with energy >.6 MeV.</Name>
+      		<Name>Flux of electrons with energy &gt;.6 MeV.</Name>
       		<ParameterKey>e1_flux_i</ParameterKey>
-      		<Description>E1 Electron integral flux > 0.6 MeV unreliable during ion storms.</Description>
+      		<Description>E1 Electron integral flux &gt; 0.6 MeV unreliable during ion storms.</Description>
       		<Units>e/(cm^2 s sr)</Units>
       		<ValidMin>1.0000E-02</ValidMin>
       		<ValidMax>1.0000E+08</ValidMax>
@@ -82,9 +81,9 @@
       		</Particle> 
       </Parameter>   
       <Parameter>
-      		<Name>Flux of electrons with energy >2 MeV.</Name>
+      		<Name>Flux of electrons with energy &gt;2 MeV.</Name>
       		<ParameterKey>e2_flux_i</ParameterKey>
-      		<Description>E2 Electron integral flux > 2 MeV unreliable during ion storms.</Description>
+      		<Description>E2 Electron integral flux &gt; 2 MeV unreliable during ion storms.</Description>
       		<Units>e/(cm^2 s sr)</Units>
       		<ValidMin>1.0000E-02</ValidMin>
       		<ValidMax>1.0000E+06</ValidMax>
@@ -95,9 +94,9 @@
       		</Particle> 
       </Parameter> 
       <Parameter>
-      		<Name>Flux of electrons with energy >4 MeV.</Name>
+      		<Name>Flux of electrons with energy &gt;4 MeV.</Name>
       		<ParameterKey>e3_flux_i</ParameterKey>
-      		<Description>E3 Electron integral flux > 4 MeV unreliable during ion storms.</Description>
+      		<Description>E3 Electron integral flux &gt; 4 MeV unreliable during ion storms.</Description>
       		<Units>e/(cm^2 s sr)</Units>
       		<ValidMin>1.0000E-02</ValidMin>
       		<ValidMax>1.0000E+06</ValidMax>

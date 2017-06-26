@@ -4,9 +4,9 @@
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/GOES/14/EPS/meged_19me4_PT16S</ResourceID>
       <ResourceHeader>
-         <ResourceName>GOES 14 Magnetospheric Electron Detector (MAGED) data at 16 s Resolution in Spacecraft Coordinates</ResourceName>
+         <ResourceName>GOES 14 Magnetospheric Electron Detector (MAGED) data with energy from 200-350 keV at 16 s Resolution in Spacecraft Coordinates</ResourceName>
          <AlternateName>GOES 14 MAGED 19ME4 data</AlternateName>
-         <ReleaseDate>2015-05-07T00:00:00.000</ReleaseDate>
+         <ReleaseDate>2017-06-12T00:00:00.000</ReleaseDate>
          <Description>The GOES 14 Magnetospheric Electron Detector (MAGED) are essentially the same as the Energetic Particle Sensor (EPS) on GOES 8-12. For more information, please see T. G. Onsager et al. (1996), Operational uses of the GOES energetic particle detectors, in GOES-8 and Beyond, Proc. SPIE, Vol. 2812, edited by E. R. Washwell, pp. 281-290, Bellingham, WA.  These data file contain mainly information on the electron count rates and fluxes from 200-350 keV. Data files contain long descriptive header.</Description>
          <Acknowledgement>NASA-Office of Space Science Applications (United States); NOAA National Environmental Satellite Service (United States); Dr. Terry G. Onsager</Acknowledgement>
          <Contact>
@@ -23,6 +23,7 @@
             <Description>Information about the magnetometers onboard GOES 14.</Description>
             <Language>en</Language>
          </InformationURL>
+         <PriorID>spase://VMO/NumericalData/GOES/14/EPEAD/meged_19me4_PT16S</PriorID>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/NOAA/SEC</RepositoryID>
@@ -30,7 +31,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the GOES 14 Magnetospheric Electron Detector (MAGED) data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/goes/data/new_full/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/goes/data/new_full/</URL>
             <Description>Direct link to the GOES 14 Magnetospheric Electron Detector (MAGED) data in CSV format as well as the energetic particle data from other GOES spacecraft. The data are sorted by year, month, spacecraft, and file type. The file names indicates the data type, spacecraft number, year, month, and resolution. For example, g14_maged_19me3_4s_20110617_20110617.csv, indicates goes 14 magnetometer data at 4 s resolution from start of June 17, 2011 to the end of June 17, 2011.</Description>
          </AccessURL>
          <Format>Text.ASCII</Format>
