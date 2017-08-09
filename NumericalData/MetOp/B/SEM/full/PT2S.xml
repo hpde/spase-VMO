@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
-   <Version>2.2.4</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_8.xsd">
+   <Version>2.2.8</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/MetOp/B/SEM/full/PT2S</ResourceID>
       <ResourceHeader>
-         <ResourceName>Meteorological Operational (METOP) B Space Environment Monitor (SEM) processed, uncorrectecd data at 2 s Resolution</ResourceName>
+         <ResourceName>Meteorological Operational B (MetOp B) Space Environment Monitor 2 (SEM-2) Processed, Uncorrectecd Data at 2 s Resolution</ResourceName>
          <AlternateName>MetOp-B SEM data</AlternateName>
-         <ReleaseDate>2016-03-07T00:00:00.000</ReleaseDate>
+         <ReleaseDate>2017-07-28T00:00:00.000</ReleaseDate>
          <Description>The MetOp-B SEM data consists of  location information, magnetic field estimates,  energy fluxes, and total energies from the Medium Energy Proton/Electron Detector (MEPED) and the Total Energy Detector (TED).</Description>
          <Acknowledgement>European Space Agency; EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites)</Acknowledgement>
          <Contact>
@@ -19,7 +19,7 @@
          </Contact>      
          <InformationURL>
             <Name>European Organisation for the Exploitation of Meteorological Satellites SEM page</Name>
-            <URL>http://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/SEM/index.html</URL>
+            <URL>https://www.eumetsat.int/website/home/Satellites/CurrentSatellites/Metop/MetopDesign/SEM/index.html</URL>
             <Description>Information about the Space Environment Monitor-2 (SEM-2) experiment on the MetOp-B mission.</Description>
          </InformationURL>
          <InformationURL>
@@ -34,7 +34,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the NOAA MetOp SEM data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/poes/data/processed/ngdc/uncorrected/full/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/poes/data/processed/ngdc/uncorrected/full/</URL>
             <Description>Direct link to theNOAA MetOp SEM processed full resolution netcdf data. The data are sorted by year and spacecraft. The data files are daily files.</Description>
          </AccessURL>
          <Format>NetCDF</Format>
@@ -44,12 +44,12 @@
       <ProcessingLevel>Uncalibrated</ProcessingLevel>
       <ProviderResourceName>MetOp-B SEM-2</ProviderResourceName>
       <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
-      <InstrumentID>spase://SMWG/Instrument/MetOp/B/SEM</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/MetOp/B/SEM-2</InstrumentID>
       <MeasurementType>EnergeticParticles</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
             <StartDate>2013-01-01T00:00:00</StartDate>
-            <StopDate>2014-08-13T23:59:00</StopDate>
+            <RelativeStopDate>-P1D</RelativeStopDate>
             <Note>Time format in data files is year month day hour minute seconds.</Note>
          </TimeSpan>
          <Cadence>PT2S</Cadence>

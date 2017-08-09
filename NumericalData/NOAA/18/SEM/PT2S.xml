@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_2.xsd">
-   <Version>2.2.2</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_8.xsd">
+   <Version>2.2.8</Version>
    <NumericalData>
       <ResourceID>spase://VMO/NumericalData/NOAA/18/SEM/PT2S</ResourceID>
       <ResourceHeader>
-         <ResourceName>National Oceanic and Atmospheric Administration (NOAA) 18 Polar Operational Environmental Satellite (POES) Space Environment Monitor (SEM) data at 2 s Resolution</ResourceName>
+         <ResourceName>NOAA 18 POES Space Environment Monitor-2 (SEM-2) raw full resolution NetCDF data at 2 s Resolution</ResourceName>
          <AlternateName>NOAA 18 POES SEM data</AlternateName>
-         <ReleaseDate>2014-05-22T00:00:00.000</ReleaseDate>
+         <ReleaseDate>2017-08-01T00:00:00.000</ReleaseDate>
          <Description>The NOAA POES SEM data consists of geographic location information, counts/s from the Medium Energy Proton/Electron Detector (MEPED), energy fluxes, and total energies from the Total Energy Detector (TED).</Description>
          <Acknowledgement>NOAA National Environmental Satellite Service (United States); Dr. R. Bushnell</Acknowledgement>
          <Contact>
@@ -18,21 +18,15 @@
             <Role>MetadataContact</Role>
          </Contact>      
          <InformationURL>
-            <Name>NOAA SEM average SEM data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/poes/data/readme.txt</URL>
-            <Description>Information about the NOAA POES SEM averaged data.</Description>
+            <Name>Archive and Instrument Documentation at NOAA National Geophysical Data Center (NGDC)</Name>
+            <URL>https://www.ngdc.noaa.gov/stp/satellite/poes/</URL>
+            <Description>Information about the NOAA POES MEPED and TED instruments.</Description>
             <Language>en</Language>
          </InformationURL>
          <InformationURL>
-            <Name>NOAA SEM average MEPED and TED data</Name>
-            <URL>http://www.swpc.noaa.gov/tiger/Meped.html</URL>
-            <Description>Information about the NOAA POES MEPED and TED averaged data.</Description>
-            <Language>en</Language>
-         </InformationURL>
-         <InformationURL>
-            <Name>NOAA SEM average SEM data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/poes/docs/sem2_docs/2006/SEM2v2.0.pdf</URL>
-            <Description>Information about the NOAA POES SEM data.</Description>
+            <Name>NOAA SEM Instrument Descriptions and Archive Data Documentation</Name>
+            <URL>https://satdat.ngdc.noaa.gov/sem/poes/docs/sem2_docs/2006/SEM2v2.0.pdf</URL>
+            <Description>Information about the NOAA POES SEM documentation.</Description>
             <Language>en</Language>
          </InformationURL>
       </ResourceHeader>
@@ -42,7 +36,7 @@
          <AccessRights>Open</AccessRights>
          <AccessURL>
             <Name>Direct access to the NOAA POES SEM data</Name>
-            <URL>http://satdat.ngdc.noaa.gov/sem/poes/data/raw/ngdc/</URL>
+            <URL>https://satdat.ngdc.noaa.gov/sem/poes/data/raw/ngdc/</URL>
             <Description>Direct link to the NOAA POES SEM raw full resolution netcdf data. The data are sorted by year and spacecraft. The data files are daily files.</Description>
          </AccessURL>
          <Format>NetCDF</Format>
@@ -52,12 +46,12 @@
       <ProcessingLevel>Calibrated</ProcessingLevel>
       <ProviderResourceName>NOAA POES 18 SEM-2</ProviderResourceName>
       <ProviderProcessingLevel>Level-0</ProviderProcessingLevel>
-      <InstrumentID>spase://SMWG/Instrument/NOAA/18/SEM</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/NOAA/18/SEM-2</InstrumentID>
       <MeasurementType>EnergeticParticles</MeasurementType>
       <TemporalDescription>
          <TimeSpan>
             <StartDate>2013-01-01T00:00:00</StartDate>
-            <StopDate>2014-08-13T23:59:00</StopDate>
+            <RelativeStopDate>-P1D</RelativeStopDate>
             <Note>Time format in data files is year month day hour minute seconds.</Note>
          </TimeSpan>
          <Cadence>PT2S</Cadence>
