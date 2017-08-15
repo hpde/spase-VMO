@@ -103,7 +103,7 @@
       		</Particle>
       </Parameter>   
       <Parameter>
-      		<Name>Quality flag for > 3400 MeV alpha particles.</Name>
+      		<Name>Quality flag for &gt;3400 MeV alpha particles.</Name>
       		<ParameterKey>A8_QUAL_FLAG</ParameterKey>
       		<Description>Quality flag non-zero value indicates data quality issue.</Description>
       		<Units>qf</Units>
@@ -115,7 +115,7 @@
       		</Support>
       </Parameter>   
       <Parameter>
-      		<Name>Number of > 3400 MeV alpha particles per average.</Name>
+      		<Name>Number of &gt;3400 MeV alpha particles per average.</Name>
       		<ParameterKey>A8_NUM_PTS</ParameterKey>
       		<Description>Data points per average.</Description>
       		<Units>points/avg</Units>
@@ -130,7 +130,7 @@
       <Parameter>
       		<Name>Average flux of alpha particles.</Name>
       		<ParameterKey>A8_FLUX</ParameterKey>
-      		<Description>Average flux of alpha particles with energy >3400 MeV.</Description>
+      		<Description>Average flux of alpha particles with energy &gt;3400 MeV.</Description>
       		<Units>a/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-05</ValidMin>
       		<ValidMax>1.0000E+03</ValidMax>
@@ -255,7 +255,7 @@
       		</Particle>
       </Parameter>     
       <Parameter>
-      		<Name>Quality flag for >700 MeV protons.</Name>
+      		<Name>Quality flag for &gt;700 MeV protons.</Name>
       		<ParameterKey>P11_QUAL_FLAG</ParameterKey>
       		<Description>Quality flag non-zero value indicates data quality issue.</Description>
       		<Units>qf</Units>
@@ -267,7 +267,7 @@
       		</Support>
       </Parameter>   
       <Parameter>
-      		<Name>Number of >700 MeV protons per average.</Name>
+      		<Name>Number of &gt;700 MeV protons per average.</Name>
       		<ParameterKey>P11_NUM_PTS</ParameterKey>
       		<Description>Data points per average.</Description>
       		<Units>points/avg</Units>
@@ -282,7 +282,7 @@
       <Parameter>
       		<Name>Average flux of protons.</Name>
       		<ParameterKey>P11_FLUX</ParameterKey>
-      		<Description>Average flux of >700 MeV protons.</Description>
+      		<Description>Average flux of &gt;700 MeV protons.</Description>
       		<Units>p/(cm^2 s sr MeV)</Units>
       		<ValidMin>1.0000E-05</ValidMin>
       		<ValidMax>1.0000E+03</ValidMax>
