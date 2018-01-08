@@ -1,10 +1,10 @@
 <Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema  http://www.spase-group.org/data/schema/spase-2_2_2.xsd'">
-    <Version>2.2.2</Version>
+    <Version>2.2.8</Version>
     <NumericalData>
         <ResourceID>spase://VMO/NumericalData/POLAR/TIMAS/H2_PT12S</ResourceID>
         <ResourceHeader>
             <ResourceName>Polar TIMAS H2 Level 1 Ion Upflowing Fluxes Data</ResourceName>
-            <ReleaseDate>2016-04-14T00:00:00.000</ReleaseDate>
+            <ReleaseDate>2017-12-26T00:00:00.000</ReleaseDate>
             <Description>H+, O+, He+ and He++ upflowing fluxes and statistical uncertainties processed by the TIMAS science team.These data were used in preparing several papers, see Information URLs.
             Includes also non-TIMAS Data:
             UT,
@@ -61,12 +61,12 @@
             </InformationURL>
             <InformationURL>
                 <Name>Peterson et al., JGR, 2001</Name>
-                <URL>http://www.agu.org/pubs/crossref/2001/2000JA003006.shtml</URL>
+                <URL>http://onlinelibrary.wiley.com/doi/10.1029/2000JA003006/abstract</URL>
                 <Description>Polar/TIMAS Observations of Suprathermal Ion Outflow During Solar Minimum Conditions, W.K. Peterson, H.L. Collin, A.W. Yau, and O.W. Lennartsson, J. Geophys. Res., 106, 6059, 2001.</Description>
             </InformationURL>
             <InformationURL>
                 <Name>Collin et al., GRL, 1998</Name>
-                <URL>http://www.agu.org/pubs/crossref/1998/1998GL900090.shtml</URL>
+                <URL>http://onlinelibrary.wiley.com/doi/10.1029/1998GL900090/abstract</URL>
                 <Description>The Seasonal Variation of Auroral Ion Beams, H.L. Collin, W.K. Peterson, O.W. Lennartsson, and J.F. Drake, Geophysical Research Letters, 25, 4071, 1998.</Description>
             </InformationURL>
         </ResourceHeader>
@@ -80,12 +80,12 @@
             </AccessURL>
             <AccessURL>
                 <Name>HTTP access to files at SPDF</Name>
-                <URL>http://spdf.gsfc.nasa.gov/pub/data/polar/timas/timas_h2</URL>
+                <URL>https://spdf.gsfc.nasa.gov/pub/data/polar/timas/timas_h2</URL>
                 <Description>In CDF via HTTP from SPDF</Description>
             </AccessURL>
             <AccessURL>
                 <Name>CDAWeb</Name>
-                <URL>http://cdaweb.gsfc.nasa.gov/</URL>
+                <URL>https://cdaweb.gsfc.nasa.gov/</URL>
                 <ProductKey>PO_H2_TIM</ProductKey>
                 <Description>PO_H2_TIM</Description>
             </AccessURL>
