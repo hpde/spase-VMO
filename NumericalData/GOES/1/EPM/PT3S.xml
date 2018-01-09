@@ -69,7 +69,7 @@
       </TimeSpan>
       <Cadence>PT3S</Cadence>
     </TemporalDescription>
-    <Caveats>Flags=32711000</Caveats>
+    <Caveats>Flags=32711000. These data are temporarily offline until further notice.</Caveats>
     <Keyword>3 sec</Keyword>
     <Keyword>geosynchronous</Keyword>
     <Keyword>GOES</Keyword>
