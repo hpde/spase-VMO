@@ -1,10 +1,10 @@
-<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-1_3_0.xsd" lang="en">
-    <Version>2.2.0</Version>
+<Spase xmlns="http://www.spase-group.org/data/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_9.xsd" lang="en">
+    <Version>2.2.9</Version>
     <NumericalData>
-        <ResourceID>spase://VMO/NumericalData/AMPTE_UKS/Plasma/FTR_PT5S</ResourceID>
+        <ResourceID>spase://VMO/NumericalData/AMPTE-UKS/Plasma/FTR_PT5S</ResourceID>
         <ResourceHeader>
             <ResourceName>AMPTE/UKS Ion Plasma Data</ResourceName>
-            <ReleaseDate>2008-08-26T22:09:23Z</ReleaseDate>
+            <ReleaseDate>2018-04-18T00:00:00.000Z</ReleaseDate>
             <Description>AMPTE/UKS 5-second (spin) averaged ion plasma moments</Description>
             <Acknowledgement>UKS/IRM Prime Parameters, UKS/IRM High Resolution Data, or products derived from them may NOT be published or shown in any form without the consent of the Principal Investigators concerned. Acknowledgements to the PI and the UK CDHF would
 be appropriate in any published work; full-authorship may be required
@@ -28,6 +28,7 @@ a PI response.</Acknowledgement>
                 <URL>http://www.mssl.ucl.ac.uk/www_plasma/missions/ampte.php</URL>
                 <Description>An overview of the AMPTE missions with some description of the instruments</Description>
             </InformationURL>
+            <PriorID>spase://VMO/NumericalData/AMPTE_UKS/Plasma/FTR_PT5S</PriorID>
         </ResourceHeader>
         <AccessInformation>
             <RepositoryID>spase://SMWG/Repository/NASA/GSFC/VHO-VMO</RepositoryID>
@@ -59,7 +60,6 @@ a PI response.</Acknowledgement>
             <Name>Epoch</Name>
             <ParameterKey>Column 1</ParameterKey>
             <Description>The start of the accumulation time interval for the data point, in DA/MO/YR HR:MI:SS.MS format.</Description>
-            <Structure/>
             <Support>
                 <SupportQuantity>Temporal</SupportQuantity>
             </Support>
@@ -70,17 +70,14 @@ a PI response.</Acknowledgement>
             <Description>Ion density</Description>
             <Units>cm^-3</Units>
             <UnitsConversion>1e6&gt;m^-3</UnitsConversion>
-            <Structure/>
             <FillValue>-1e31</FillValue>
-            <Measured>
-                <Particle>
+            <Particle>
                     <ParticleType>Proton</ParticleType>
                     <ParticleType>Ion</ParticleType>
-                    <ParticleQualifier>Moment</ParticleQualifier>
-                    <ParticleQualifier>Scalar</ParticleQualifier>
+                    <Qualifier>Moment</Qualifier>
+                    <Qualifier>Scalar</Qualifier>
                     <ParticleQuantity>NumberDensity</ParticleQuantity>
-                </Particle>
-            </Measured>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>Ti</Name>
@@ -88,17 +85,14 @@ a PI response.</Acknowledgement>
             <Description>Ion temperature</Description>
             <Units>eV</Units>
             <UnitsConversion>1.16045e4&gt;K</UnitsConversion>
-            <Structure/>
             <FillValue>-1e31</FillValue>
-            <Measured>
-                <Particle>
-                    <ParticleType>Proton</ParticleType>
-                    <ParticleType>Ion</ParticleType>
-                    <ParticleQualifier>Moment</ParticleQualifier>
-                    <ParticleQualifier>Scalar</ParticleQualifier>
-                    <ParticleQuantity>Temperature</ParticleQuantity>
-                </Particle>
-            </Measured>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Moment</Qualifier>
+                <Qualifier>Scalar</Qualifier>
+                <ParticleQuantity>Temperature</ParticleQuantity>
+            </Particle>
         </Parameter>
         <Parameter>
             <Name>Vi</Name>
@@ -113,33 +107,31 @@ a PI response.</Acknowledgement>
                 <Size>3</Size>
                 <Element>
                     <Name>Vx</Name>
-                    <Component>X</Component>
+                    <Qualifier>Component.I</Qualifier>
                     <Index>1</Index>
                     <ParameterKey>Column 4</ParameterKey>
                 </Element>
                 <Element>
                     <Name>Vy</Name>
-                    <Component>Y</Component>
+                    <Qualifier>Component.J</Qualifier>
                     <Index>2</Index>
                     <ParameterKey>Column 5</ParameterKey>
                 </Element>
                 <Element>
                     <Name>Vz</Name>
-                    <Component>Z</Component>
+                    <Qualifier>Component.K</Qualifier>
                     <Index>3</Index>
                     <ParameterKey>Column 6</ParameterKey>
                 </Element>
             </Structure>
             <FillValue>-1e31</FillValue>
-            <Measured>
-                <Particle>
-                    <ParticleType>Proton</ParticleType>
-                    <ParticleType>Ion</ParticleType>
-                    <ParticleQualifier>Moment</ParticleQualifier>
-                    <ParticleQualifier>Vector</ParticleQualifier>
-                    <ParticleQuantity>Velocity</ParticleQuantity>
-                </Particle>
-            </Measured>
+            <Particle>
+                <ParticleType>Proton</ParticleType>
+                <ParticleType>Ion</ParticleType>
+                <Qualifier>Moment</Qualifier>
+                <Qualifier>Vector</Qualifier>
+                <ParticleQuantity>Velocity</ParticleQuantity>
+            </Particle>
         </Parameter>
     </NumericalData>
 </Spase>

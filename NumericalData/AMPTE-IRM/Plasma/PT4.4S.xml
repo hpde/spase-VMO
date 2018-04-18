@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_0_1.xsd">
-   <Version>2.0.1</Version>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.spase-group.org/data/schema" xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-2_2_9.xsd">
+   <Version>2.2.9</Version>
    <NumericalData>
-      <ResourceID>spase://VMO/NumericalData/AMPTE_IRM/Plasma/PT4.4S</ResourceID>
+      <ResourceID>spase://VMO/NumericalData/AMPTE-IRM/Plasma/PT4.4S</ResourceID>
       <ResourceHeader>
          <ResourceName>AMPTE/IRM Plasma Data</ResourceName>
-         <ReleaseDate>2010-03-11T12:34:56.789</ReleaseDate>
+         <ReleaseDate>2018-04-18T00:00:00.000Z</ReleaseDate>
          <Description>AMPTE/IRM spin-averaged plasma moments at ~4.4 second resolution.</Description>
          <Acknowledgement>User will acknowledge the AMPTE/IRM 3-D Plasma Analyser team in any publication resulting from the use of these data.</Acknowledgement>
          <Contact>
@@ -23,6 +23,7 @@
             <URL>http://www-ssg.sr.unh.edu/index.html?tof/Missions/Ampte-irm</URL>
             <Description>Information on the AMPTE/IRM data</Description>
          </InformationURL>
+         <PriorID>spase://VMO/NumericalData/AMPTE_IRM/Plasma/PT4.4S</PriorID>
       </ResourceHeader>
       <AccessInformation>
          <RepositoryID>spase://SMWG/Repository/NASA/GSFC/VHO-VMO</RepositoryID>
@@ -36,7 +37,7 @@
          <Format>Text</Format>
          <Encoding>ASCII</Encoding>
       </AccessInformation>
-      <InstrumentID>spase://SMWG/Instrument/AMPTE_IRM/Plasma</InstrumentID>
+      <InstrumentID>spase://SMWG/Instrument/AMPTE-IRM/Plasma</InstrumentID>
       <MeasurementType>Ephemeris</MeasurementType>
       <MeasurementType>ThermalPlasma</MeasurementType>
       <TemporalDescription>
@@ -82,6 +83,7 @@
             <CoordinateSystemName>GSE</CoordinateSystemName>
          </CoordinateSystem>
          <Structure>
+		    <Size>1</Size>
             <Element>
                <Name>Xgse</Name>
                <Qualifier>Component.I</Qualifier>
@@ -103,10 +105,11 @@
             <CoordinateSystemName>GSE</CoordinateSystemName>
          </CoordinateSystem>
          <Structure>
+		    <Size>1</Size>
             <Element>
                <Name>Ygse</Name>
                <Qualifier>Component.J</Qualifier>
-               <Index>2</Index>
+               <Index>1</Index>
             </Element>
          </Structure>
          <Support>
@@ -124,10 +127,11 @@
             <CoordinateSystemName>GSE</CoordinateSystemName>
          </CoordinateSystem>
          <Structure>
+		    <Size>1</Size>
             <Element>
                <Name>Zgse</Name>
                <Qualifier>Component.K</Qualifier>
-               <Index>3</Index>
+               <Index>1</Index>
             </Element>
          </Structure>
          <Support>
